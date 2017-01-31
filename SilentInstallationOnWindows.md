@@ -20,3 +20,7 @@ By passing the command line parameter "/S" to the installer all operations will 
 * Specify installation directory with silent installation:
 
   `italc-x.y.z-win64-setup.exe /S /D=C:\iTALC`
+
+* Automatically appy iTALC configuration from file after installation (replace `%cd%` with a different absolute path if desired):
+
+  `italc-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.xml`
