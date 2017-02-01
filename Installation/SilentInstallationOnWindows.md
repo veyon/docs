@@ -27,6 +27,8 @@ By passing the command line parameter "/S" to the installer all operations will 
   italc-x.y.z-win64-setup.exe /S /D=C:\iTALC
   ```
 
+  **Please note that due to a bug in NSIS the `/D=...` switch always has to be passed as last argument.**
+
 * Automatically appy iTALC configuration from file after installation (replace `%cd%` with a different absolute path if desired):
 
   ```shell
