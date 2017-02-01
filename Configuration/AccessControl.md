@@ -1,4 +1,4 @@
-# iTALC Configurator - Access Control
+# Configuring access control
 
 ## Introduction
 
