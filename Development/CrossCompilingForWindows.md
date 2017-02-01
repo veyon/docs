@@ -8,9 +8,11 @@
 
 * Install the add-apt-repository tool and the mingw repisitory
 
- `sudo apt-get install python-software-properties
-  sudo add-apt-repository ppa:tobydox/mingw-w64`
-
+  ```
+  sudo apt-get install python-software-properties
+  sudo add-apt-repository ppa:tobydox/mingw-w64
+  ```
+    
   and update your package list cache (e.g. `apt-get update` or similiar)
 
 * Install the following packages:
@@ -22,7 +24,7 @@
   * qt5base-mingw-w64
   * qt5tools-mingw-w64
   * libz-mingw-w64-dev
-  * libjpeg-mingw-w64
+  * libjpeg-turbo-mingw-w64
   * libpng-mingw-w64
   * openssl-mingw-w64
   * openldap-mingw-w64
@@ -32,10 +34,12 @@
 
 * Change into the iTALC source directory and type
 
- `mkdir b
+  ```
+  mkdir b
   cd b
   ../cmake/build_mingw32
-  make win-nsi`
+  make win-nsi
+  ```
 
 * This will build a ready-to-use Win32 installer like the ones you can download
   from the iTALC website.
