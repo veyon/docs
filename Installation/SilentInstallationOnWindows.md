@@ -32,7 +32,8 @@ By passing the command line parameter "/S" to the installer all operations will 
 * Automatically appy iTALC configuration from file after installation:
 
   ```shell
-  italc-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.xml
+  italc-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
+  
   ```
   
   **IMPORTANT:** You have to specify an absolute path for the configuration file as the iTALC Configurator (which is used internally for applying the configuration) is not launched with the installer directory as current directory. Therefore either use the proposed `%cd%` variable or replace it with an absolute path. 
