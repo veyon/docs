@@ -14,41 +14,40 @@ Examples
 
 * Install Veyon silently:
 
-  ```shell
-  veyon-x.y.z-win64-setup.exe /S
-  ```
+.. code-block:: sh
+
+	veyon-x.y.z-win64-setup.exe /S
 
 * Uninstall Veyon silently:
 
-  ```shell
-  C:\Program Files\Veyon\uninstall.exe /S
-  ```
+.. code-block:: sh
+
+	C:\Program Files\Veyon\uninstall.exe /S
 
 * Specify installation directory with silent installation:
 
-  ```shell
-  veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
-  ```
+.. code-block:: sh
 
-  **Please note that due to a bug in NSIS the `/D=...` switch always has to be passed as last argument.**
+	veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
+
+**Please note that due to a bug in NSIS the /D=... switch always has to be passed as last argument.**
 
 * Automatically appy Veyon configuration from file after installation:
 
-  ```shell
-  veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
+.. code-block:: sh
+
+	veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
   
-  ```
-  
-  **IMPORTANT:** You have to specify an absolute path for the configuration file as the Veyon Configurator (which is used internally for applying the configuration) is not launched with the installer directory as current directory. Therefore either use the proposed `%cd%` variable or replace it with an absolute path. 
+**IMPORTANT:** You have to specify an absolute path for the configuration file as the Veyon Configurator (which is used internally for applying the configuration) is not launched with the installer directory as current directory. Therefore either use the proposed `%cd%` variable or replace it with an absolute path. 
 
 * Silent auto installation without Master component:
 
-  ```shell
-  veyon-x.y.z-win64-setup.exe /S /NoMaster
-  ```
+.. code-block:: sh
+
+	veyon-x.y.z-win64-setup.exe /S /NoMaster
 
 * Clear configuration during uninstallation:
 
-  ```shell
-  C:\Program Files\Veyon\uninstall.exe /ClearConfig
-  ```
+.. code-block:: sh
+
+	C:\Program Files\Veyon\uninstall.exe /ClearConfig
