@@ -8,6 +8,8 @@ Welcome to Veyon documentation!
 	installation
 	configuration
 	userguide
+	faq
+	glossary
 
 
 Indices and tables
