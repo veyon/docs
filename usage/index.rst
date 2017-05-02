@@ -1,7 +1,0 @@
-Usage
-=====
-
-.. toctree::
-
-   introduction
-

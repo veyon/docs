@@ -2,14 +2,12 @@ Welcome to Veyon documentation!
 ===============================
 
 .. toctree::
-   :glob:
-   :numbered:
-   :maxdepth: 2
-   :caption: Contents:
+	:numbered:
 
-   installation/index
-   configuration/index
-   usage/index
+	introduction
+	installation
+	configuration
+	userguide
 
 
 Indices and tables

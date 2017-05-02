@@ -2,6 +2,7 @@ Configuration
 =============
 
 .. toctree::
+	:maxdepth: 2
 
-   access-control
+	configuration/access-control
 
