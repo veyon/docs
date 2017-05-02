@@ -2,7 +2,7 @@ Welcome to Veyon documentation!
 ===============================
 
 .. toctree::
-	:numbered:
+	:maxdepth: 2
 
 	introduction
 	installation
