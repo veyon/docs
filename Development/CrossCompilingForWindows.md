@@ -1,4 +1,4 @@
-# Cross compiling iTALC for Windows on Linux
+# Cross compiling Veyon for Windows on Linux
 
 ## Preparations
 
@@ -32,7 +32,7 @@
 
 ## Compiling and building the installer
 
-* Change into the iTALC source directory and type
+* Change into the Veyon source directory and type
 
   ```
   mkdir b
@@ -42,7 +42,7 @@
   ```
 
 * This will build a ready-to-use Win32 installer like the ones you can download
-  from the iTALC website.
+  from the Veyon website.
 
 * If you want to build a Win64 installer, run the `build_mingw64` script instead.
 

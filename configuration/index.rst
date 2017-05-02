@@ -1,7 +1,7 @@
-Configuration
-=============
+Usage
+=====
 
 .. toctree::
 
-   access-control
+   introduction
 

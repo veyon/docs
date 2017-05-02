@@ -4,11 +4,11 @@ Access control
 Introduction
 ------------
 
-The configuration page "Access control" allows to configure which users are allowed to access computers in an iTALC network in detail. Access control is performed during the connection initialization after the authentication. While the authentication is validating the authenticity of an accessing user, the access control functionality restricts the computer access to authorized users such as teachers.
+The configuration page "Access control" allows to configure which users are allowed to access computers in an Veyon network in detail. Access control is performed during the connection initialization after the authentication. While the authentication is validating the authenticity of an accessing user, the access control functionality restricts the computer access to authorized users such as teachers.
 
 The desired access control mode can be selected at the top of the access control configuration page. If authentication is sufficient (e.g. when using key authentication with limited access to the authentication keys) you can select the first option which does not perform any further access control at all. Select the second option to restrict access to members of certain user groups. The third option allows to configure fine-grained access control using custom access control rules. It is the most flexible mode while the initial configuration can be more complex to set up.
 
-The access control configuration is part of the whole (machine-)local iTALC configuration just like all settings in the other configuration pages. The configuration has to be transfered to and applied on all client computers in order to work properly. Use the iTALC Configurator to easily perform this task in an automated manner (see section "Configuration management").
+The access control configuration is part of the whole (machine-)local Veyon configuration just like all settings in the other configuration pages. The configuration has to be transfered to and applied on all client computers in order to work properly. Use the Veyon Configurator to easily perform this task in an automated manner (see section "Configuration management").
 
 
 Simple access control by user groups

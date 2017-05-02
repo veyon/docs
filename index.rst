@@ -9,6 +9,7 @@ Welcome to Veyon documentation!
 
    installation/index
    configuration/index
+   usage/index
 
 
 Indices and tables

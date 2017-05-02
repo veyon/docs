@@ -4,7 +4,7 @@ Silent installation on Windows
 Introduction
 ------------
 
-The NSIS installers provided by the iTALC project can be run in silent mode. This is useful for automated deployments in larger environments and should integrate easily with most software distribution mechanisms.
+The NSIS installers provided by the Veyon project can be run in silent mode. This is useful for automated deployments in larger environments and should integrate easily with most software distribution mechanisms.
 
 By passing the command line parameter "/S" to the installer all operations will be performed silently. The same applies to the uninstaller.
 
@@ -12,43 +12,43 @@ By passing the command line parameter "/S" to the installer all operations will 
 Examples
 --------
 
-* Install iTALC silently:
+* Install Veyon silently:
 
   ```shell
-  italc-x.y.z-win64-setup.exe /S
+  veyon-x.y.z-win64-setup.exe /S
   ```
 
-* Uninstall iTALC silently:
+* Uninstall Veyon silently:
 
   ```shell
-  C:\Program Files\iTALC\uninstall.exe /S
+  C:\Program Files\Veyon\uninstall.exe /S
   ```
 
 * Specify installation directory with silent installation:
 
   ```shell
-  italc-x.y.z-win64-setup.exe /S /D=C:\iTALC
+  veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
   ```
 
   **Please note that due to a bug in NSIS the `/D=...` switch always has to be passed as last argument.**
 
-* Automatically appy iTALC configuration from file after installation:
+* Automatically appy Veyon configuration from file after installation:
 
   ```shell
-  italc-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
+  veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
   
   ```
   
-  **IMPORTANT:** You have to specify an absolute path for the configuration file as the iTALC Configurator (which is used internally for applying the configuration) is not launched with the installer directory as current directory. Therefore either use the proposed `%cd%` variable or replace it with an absolute path. 
+  **IMPORTANT:** You have to specify an absolute path for the configuration file as the Veyon Configurator (which is used internally for applying the configuration) is not launched with the installer directory as current directory. Therefore either use the proposed `%cd%` variable or replace it with an absolute path. 
 
 * Silent auto installation without Master component:
 
   ```shell
-  italc-x.y.z-win64-setup.exe /S /NoMaster
+  veyon-x.y.z-win64-setup.exe /S /NoMaster
   ```
 
 * Clear configuration during uninstallation:
 
   ```shell
-  C:\Program Files\iTALC\uninstall.exe /ClearConfig
+  C:\Program Files\Veyon\uninstall.exe /ClearConfig
   ```
