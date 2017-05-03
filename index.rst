@@ -7,7 +7,6 @@ Welcome to Veyon documentation!
 	introduction
 	installation
 	configuration
-	userguide
 	faq
 	glossary
 
