@@ -6,5 +6,3 @@ Veyon User Manual
 
 	introduction
 
-* :ref:`search`
-

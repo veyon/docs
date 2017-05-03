@@ -10,5 +10,3 @@ Veyon Administrator Manual
 	faq
 	glossary
 
-* :ref:`search`
-

@@ -4,8 +4,6 @@ Veyon Documentation
 .. toctree::
 	:maxdepth: 1
 
-	admin/index
-	user/index
-
-* :ref:`search`
+	Veyon Administrator Manual <http://veyon-admin-manual.readthedocs.io/>
+	Veyon User Manual <http://veyon-user-manual.readthedocs.io/>
 
