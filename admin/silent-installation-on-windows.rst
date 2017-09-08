@@ -32,7 +32,7 @@ Examples
 
 **Please note that due to a bug in NSIS the /D=... switch always has to be passed as last argument.**
 
-* Automatically appy Veyon configuration from file after installation:
+* Automatically apply Veyon configuration from file after installation:
 
 .. code-block:: sh
 
