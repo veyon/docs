@@ -51,8 +51,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Veyon'
-copyright = '2017, Tobias Doerffel'
-author = 'Tobias Doerffel'
+copyright = '2017, Tobias Junghans'
+author = 'Tobias Junghans'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -132,7 +132,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'veyon.tex', 'Veyon Documentation',
-     'Tobias Doerffel', 'manual'),
+     'Tobias Junghans', 'manual'),
 ]
 
 
