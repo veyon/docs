@@ -9,6 +9,8 @@ Veyon Administrator Manual
 	introduction
 	installation
 	configuration
+	troubleshooting
 	faq
 	glossary
 
+* :ref:`genindex`
