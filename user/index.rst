@@ -7,4 +7,5 @@ Veyon User Manual
 	:maxdepth: 2
 
 	introduction
+	glossary
 
