@@ -40,7 +40,7 @@ Is it possible to use the Veyon master on several computers?
 The used of Veyon master on several computers is possible without any problems. To that end it must be ensured
 that an identical configuration is used on all master computers. This also holds true for the client computers. 
 If the login-authentication is used, there are no further steps required.
-If the key-authentication is uesd, the private key has to be distributed to all master computers. 
+If the key-authentication is used, the private key has to be distributed to all master computers. 
 
 Can I import or use a self-generated file with room and computer information?
 -----------------------------------------------------------------------------
