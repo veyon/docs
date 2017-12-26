@@ -1,99 +1,65 @@
-.. index:: troubleshooting, error analysis, debugging, error correction
+.. index:: troubleshooting, debugging, error analysis, error correction
 
 .. _Troubleshooting:
 
-Troubleshooting (Error Analysis and Correction)
-===============================================
+Troubleshooting
+===============
 
-.. important:: If you should experience any problems in master-client-interaction, make sure that all computers are running an identical Veyon configuration. To avoid errors it is generally recommended not to import the configuration manually through Veyon Configurator, but to automate this process using the :ref:`Installation <AutoInstall>` or the :ref:`command line interface`. If you make any changes to the configuration in the debugging process, the updated configuration must always be mirrored to all affected computers. 
+.. important:: If you encounter interaction or connection problems betwen master and client computers you should always ensure that an identical Veyon configuration is used on all computers. To avoid problems in general it's recommended to automate the configuration transfer during :ref:`installation <AutoInstall>` or via the :ref:`command line interface <CLI>` instead of importing the configuration manually using the Veyon Configurator. During debugging the configuration needs to be transfered onto all computers on every change.
 
-Access to a computer is not possible
-------------------------------------
+Computers can't be accessed
+---------------------------
 
-If a computer cannot be accessed through the Veyon Master, there can be several potential causes.
+There are multiple causes which can prevent the access to a computer using Veyon Master.
 
-Problems with the network
-+++++++++++++++++++++++++
+Networking problems
++++++++++++++++++++
 
-As a first step, the reachability of the computer from the network should be checked. 
-For this purpose take advantage of the program ``ping`` that usually comes with every operating system to
-diagnose :index:`connection errors`. 
+First of all the general network connectivity of the computer should be checked. Use the utility ``ping`` (which is usually included with every operating system) to diagnose :index:`connectivity problems`.
 
 Problems with the Veyon Service
 +++++++++++++++++++++++++++++++
 
-If the computer is reachable via ``ping``, it has to be checked whether the Veyon Service is running correctly.
-Open the Veyon Configurator and open configuration page :ref:`Service Configuration`. In section 
-:ref:`ServiceGeneral` the status of the service should read *running*. Otherwise the service can be started
-by pressing the :guilabel:`Start Service` button. If the service is not successfully started, a reinstallation
-of Veyon could be the remedy. If a reinstallation doesn't change the situation, search the logfiles of the 
-Veyon Service and the system logs of the operating system for reported errors and potential causes. Additionally,
-the service management of the operating system might offer more hints or configuration possibilities.
+If the computer can be pinged you should check whether the Veyon Service is running correctly. Open the Veyon Configurator and open the configuration page :ref:`Service configuration`. In the section :ref:`ServiceGeneral` the status of the service should be displayed with status *Running*. Otherwise the service can be started using the button :guilabel:`Start service`. If this is not successful you should try a reinstallation of Veyon. If a reinstallation does not help you can check the log files of the Veyon Service as well as the logging messages of the operation system for error messages and possible causes. Additionally you can find more hints or possibilities for adjustments in the service management of your operating system.
 
 .. index:: telnet, netstat
 
-Service and Firewall Configuration
-++++++++++++++++++++++++++++++++++
+Service and firewall settings
++++++++++++++++++++++++++++++
 
-If the service is running, is must be assured, that it is listening on the right port for incoming connections.
-This can be verified on the local computer using ``telnet``:
+If the service is running you have to ensure that it is listening on the correct network port for incoming connections. You can verify that on the local computer using ``telnet``:
 
 .. code-block:: none
 
     telnet localhost 11100
 
-Among general program output the string ``RFB 003.008`` must be printed. If the output is not as expected, 
-the :ref:`network settings <Networksettings>`, especially the primary service port, have to be checked and
-probably reset to their default values.
+Besides general program output the string ``RFB 003.008`` has to be displayed. If the output does not match the expectations you should check the :ref:`Network settings`, especially the primary service port, and reset them to their default values.
 
-In the next step the same access must be possible from another computer on the network. You can use ``telnet``
-for diagnosis too, but the program argument ``localhost`` must be replaced with the name or IP-address of the
-computer. If ``telnet`` access fails, it must be verified that the option :guilabel:`Only allow connections
-from the local host` in the :ref:`network settings <Networksettings>` is disabled. :ref:`Computer access control`
-should be disabled as well, since the service is automatically listening to ``localhost``, if external access is
-prohibited by the current access control rule set. If both settings are okay, the output of
+Next the same access has to be possible from a different computer in the network. The utility ``telnet`` can be used again for the diagnosis. The program argument ``localhost`` has to be replaced with the name or IP address of the corresponding computer. If the access fails please ensure that the option :guilabel:`Allow connections from localhost only` in the :ref:`Network settings` is disabled. Additionally :ref:`Computer access control` should be disabled initially, as the service listens on ``localhost`` only if the external access would be denied because of currently matching rules. If both settings are correct the output of
 
 .. code-block:: none
 
     netstat -a
 
-should reveal, that the service on port ``11100`` is not (only) listening to ``localhost`` resp. ``127.0.0.1``
-(status ``LISTEN``).
+has to indicate that the service is not (only) listening on ``localhost`` or ``127.0.0.1`` (status ``LISTEN`` or similar).
 
-If external :index:`port access` continues to fail, a firewall might prohibit the access and therefore must be
-reconfigured. Under Linux this affects the settings of ``iptables``, ``ufw`` and the like. See the manuals of the
-used software for further help. Under Windows the Windows-firewall which is integrated into the operating system
-is automatically configured by Veyon if the option :guilabel:`Activate Firewall-exception` in the 
-:ref:`network settings <Networksettings>` is set to its default value (*activated*). If a third-party firewall 
-is used, it has to be configured in a way that TCP ports 11100 (primary service port) and 11400 (demo server) 
-are reachable. 
+If the external :index:`port access` still fails usually a :index:`firewall` prevents the access and has to be reconfigured accordingly. On Linux this concerns settings of ``iptables``, ``ufw`` etc. Consult the corresponding manuals of the software used. On Windows the integrated Windows Firewall is configured by Veyon automatically as long as the option :guilabel:`Enable firewall exception` in the :ref:`Network settings` is set to its default value (*enabled*). If a 3rd party firewall solution is used it has to be configured such that the TCP ports 11100 (primary service port) as well as 11400 (demo server) can be accessed externally.
 
-Authentication Settings
+Authentication settings
 +++++++++++++++++++++++
 
-Another cause for errors could be false or unsufficient :ref:`authentication settings <Authentication>`. For first
-tests during debugging both(!) computers should always have :ref:`Login-authentication <LoginAuthentication>` 
-activated and *Keyfile-authentication* disabled. As soon as the login-authentication at the local computer has
-been successfully tested, external access will also work.
+Another cause of error can be wrong or insufficient :ref:`Authentication settings`. For initial tests you should (on both computers!) enable :ref:`Logon authentication` and disable *Key file authentication*. As soon as the logon authentication is successful at the local computer external access should work too.
 
-If the :ref:`Keyfile-authentication <KeyfileAuthentication>` is used, it has to be activated and the key files
-on master and client computer must be matching. The file containing the public key must be identical on client
-and master computer. If access is not possible nevertheless, the :index:`access rights` may be wrong. The 
-Veyon Service must have :index:`read access` to the *public key file*, whereas the user of Veyon Master must be
-able to read the *private key file*. If the problem persists, the :ref:`Base Directories <BaseDirectories>` for
-the key pairs must be deleted on all computers and the Master computer must generate a substitute key pair. 
-Afterwards all client computers will have to import the public key again. 
+When using :ref:`Key file authentication` it has to be enabled and the key files on master and client computers have to correspond. On client computers the public key file needs to have the same content as on the master computer. If the access still fails in some circumstances the :index:`access permissions` are wrong. The Veyon Service needs to have :index:`read permissions` on the *public key file* while the user of Veyon Master has to be able to read the *private key file*. If the problem remains the :ref:`Base directories` of the key files should be deleted on all computers and a new keypair generated on the master computer. Then the public key needs to be imported again on all client computers.
 
-Settings for Computer Access Control
+Settings for computer access control
 ++++++++++++++++++++++++++++++++++++
 
-A corrupt configuration of the computer access control may result in users not being able to access computers.
-As a first step we recommend to disable :ref:`computer access control` completely through the Veyon Configurator.
-Afterwards it can be determined which of the specific methods for computer access control has been configured
-in a wrong way.
+An erroneous configuration of computer access control can lead to problems with accessing computers. Initially it's recommended to disable the :ref:`Computer access control` completely using the Veyon Configurator. Now you can determine which configured computer access control method is configured improperly.
 
-If :ref:`authorizes user groups for computer access` are being used, it has to be checked, whether the list of
-authorized user groups is complete and if the accessing user is a member of one of these user groups. 
+When using :ref:`User groups authorized for computer access` you have to check whether the list of authorized user groups is complete and whether the accessing user is member of one of these groups.
+
+Improperly configured :ref:`Access control rules` can also cause problems with accessing computers. There always has to be at least one rule which allows the access under certain conditions. Once ensured for further debugging a temporary test rule can be inserted at the end of the list which has the option :guilabel:`Always process rule and ignore conditions` enabled and the action :guilabel:`Allow access` selected. This rule stepwise can be moved upwards inside the rule list until the access works or the test gives the desired positive results. The access rule below the temporary test rule likely causes the access being denied and can be examined in detail and corrected appropriately.
 
 Another potential cause in case of prohibited computer access may be the :ref:`access control rules`. There always
 has to be at least one rule granting access under certain conditions. Using this method, you can add another
@@ -101,23 +67,23 @@ rule at the bottom of the list for debugging purposes. This rule should have the
 :guilabel:`Always process rule and ignore conditions` activated and the action :guilabel:`Allow Access` should
 be selected. This rule can now be moved upwards step by step until access is granted or the test produces the
 desired results. In this case the access rule directly below the test rule has to be the cause for the denial
-of access and can be closely inspected and corrected accordingly. 
+of access and can be closely inspected and corrected accordingly.
 
 Settings are not correctly saved/loaded
 ---------------------------------------
 
 Following the update of early beta-versions of Veyon 4 it may be the case that some configuration keys are
-inconsistent and must be recreated. This may imply that settings cannot be correctly saved or reloaded, for 
+inconsistent and must be recreated. This may imply that settings cannot be correctly saved or reloaded, for
 example local information on room and computers. In this case the configuration should be reset completely
-(:ref:`Completely Reset Configuration <ConfigClear>`) and recreated from scratch using the default values. 
+(:ref:`Completely Reset Configuration <ConfigClear>`) and recreated from scratch using the default values.
 
-Rooms and computers from the LDAP-directory are not displayed in Master
+Rooms and computers from the LDAP directory are not displayed in Master
 -----------------------------------------------------------------------
 
 Please make sure that:
 
 * the :ref:`network object directory` on configuration page :guilabel:`General` is set to *LDAP*
-* LDAP-integration tests :guilabel:`List all members of a computer room` and :guilabel:`List all computer rooms` are successful and return objects
+* LDAP integration tests :guilabel:`List all members of a computer room` and :guilabel:`List all computer rooms` are successful and return objects
 * all options for fine tuning the behavior on configuration page :guilabel:`Master` are set to their default values
 
 Automated switching to the current room doesn't work
@@ -126,15 +92,15 @@ Automated switching to the current room doesn't work
 If the :ref:`option for automated switching to the current room <RoomAutoSwitch>` is activated, but doesn't show
 any effect when starting Veyon Master, it should be ensured, that the master computer is set as computer for the
 respective room in the :ref:`network object directory`. Independent from this option, the master computer can
-be hid in the computer room management using the option :ref:`Hide local computer in computer room management <AutoHideLocalComputer>`. 
+be hid in the computer room management using the option :ref:`Hide local computer in computer room management <AutoHideLocalComputer>`.
 
 If all entries in the network object directory are correct, there arguably is a problem with the DNS-configuration
 in the network. Make sure that computer names can be converted into IP-addresses and vice versa. Most common
-operating systems offer the diagnosis tool ``nslookup`` for this purpose. Calling the program with the local 
+operating systems offer the diagnosis tool ``nslookup`` for this purpose. Calling the program with the local
 computer name as a parameter should return a valid IP-address. A second call with the returned IP-address should
 in turn return the computer name.
 
-In case the function doesn't work as desired despite a correct DNS setup, it can be useful to set the 
+In case the function doesn't work as desired despite a correct DNS setup, it can be useful to set the
 :ref:`Loglevel <Loglevel>` to the highest value (*Debug*) and search the log file ``VeyonMaster.log`` in the
 :ref:`Logfile Directory <LogfileDirectory>` for potential causes. Thereby the messages *"initializing rooms"* and
 *"found local rooms"* might be particularly helpful to detect possible problems.
@@ -142,9 +108,9 @@ In case the function doesn't work as desired despite a correct DNS setup, it can
 Screen lock can be bypassed with Ctrl+Alt+Del
 ---------------------------------------------
 
-In order to completely block all keyboard input and shortcuts in screen lock mode, under Windows a reboot is 
+In order to completely block all keyboard input and shortcuts in screen lock mode, under Windows a reboot is
 required after completion of the Veyon installation. Without a reboot the Veyon-specific driver for input devices
-is not yet active and keyboard input cannot be caught. 
+is not yet active and keyboard input cannot be caught.
 
 When in demo mode, client computer screens just show a black screen or a black window
 -------------------------------------------------------------------------------------
