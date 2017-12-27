@@ -30,7 +30,7 @@ default settings should normally not be changed.
 All setting on configuration page :ref:`Master Configuration` concern only behavior and functionality of the 
 Veyon Master and apply system-wide for all users. 
 
-.. hint:: For a :index:`quick start` to get to know the software you just have to activate the :ref:`Login-Authentication <LoginAuthentication>` on configuration page :ref:`Authentication Configuration` and add one room and some computers on configuration page :ref:`Local Data`. After the configuration has been :ref:`exported to all computers <ImportExportConfiguration>` the Veyon Master can already be started and used.
+.. hint:: For a :index:`quick start` to get to know the software you just have to activate the :ref:`Logon authentication <LogonAuthentication>` on configuration page :ref:`Authentication Configuration` and add one room and some computers on configuration page :ref:`Local Data`. After the configuration has been :ref:`exported to all computers <ImportExportConfiguration>` the Veyon Master can already be started and used.
 
 
 .. index:: Authentication, Authentication methods
@@ -50,10 +50,10 @@ The configuration can be done on configuration page :ref:`Authentication Configu
 Authentication Methods
 ++++++++++++++++++++++
 
-In essence Veyon offers two different authentication methods, the keyfile-authentication and login-authentication,
+In essence Veyon offers two different authentication methods, the keyfile authentication and logon authentication,
 that may be used singly or in parallel. 
 
-**Keyfile-authentication** is based on `Public-Key-Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography>` _,
+**Keyfile authentication** is based on `Public-Key-Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography>`_,
 meaning that a public key and a respective private key are used. Thereby the private key is just accessible for
 specific users. In case of a :index:`connection request` the Veyon Service sends a random char sequence to the
 Veyon Master and the Master signs this random data with his private key. The :index:`signature` is sent back to
@@ -61,8 +61,8 @@ the Veyon Service and checked with the corresponding public key. This check is o
 has been generated with the matching private key. In this case the authenticity of the signing party is guaranteed.
 If the signature check fails, the connection is closed.
 
-In case of the **login-authentication** the counterpart encrypts his :index:`user name` and :index:`password`
-for the Veyon Service. Using this :index:`login data` the Veyon Service attempts to connect to the local system. 
+In case of the **logon authentication** the counterpart encrypts his :index:`user name` and :index:`password`
+for the Veyon Service. Using this :index:`logon data` the Veyon Service attempts to connect to the local system. 
 If the attempt fails, the conection is closed. Otherwise user name and password are correct, such that the 
 authenticity of the counterpart is guaranteed.
 
@@ -73,7 +73,7 @@ the security requirement and desire for user comfort.
 
 .. _KeyAuthentication:
 
-**Keyfile-authentication**
+**Keyfile authentication**
 
 +-------------------------------------------------+-------------------------------------------------+
 | Advantages                                      | Disadvantages                                   |
@@ -87,11 +87,11 @@ the security requirement and desire for user comfort.
 +-------------------------------------------------+-------------------------------------------------+
 
 
-.. index:: login-authentication, username, password
+.. index:: logon-authentication, username, password
 
-.. _LoginAuthentication:
+.. _LogonAuthentication:
 
-**Login-authentication**
+**Logon authentication**
 
 +-------------------------------------------------+-------------------------------------------------+
 | Advantages                                      | Disadvantages                                   |
