@@ -79,11 +79,10 @@ the security requirement and desire for user comfort.
 | Advantages                                      | Disadvantages                                   |
 +=================================================+=================================================+
 | * no login with username and password required  | * more effort during configuration              |
-|   when starting Veyon Master			          | * user identity can not be assured even after   |
-| * access to computers can be centrally handled  |   successful signature check		            |
+|   when starting Veyon Master                    | * user identity can not be assured even after   |
+| * access to computers can be centrally handled  |   successful signature check                    |
 |   by access rights to the file containing       | * exchange of compromised key pairs must be     |
-|   the private key		                          |   done system-wide                              |
-|                                                 |   												|
+|   the private key                               |   done system-wide                              |
 +-------------------------------------------------+-------------------------------------------------+
 
 
@@ -99,7 +98,7 @@ the security requirement and desire for user comfort.
 | * configuration with low expenditure            | * login with username and password necessary    |
 | * identity of counterpart can be assured,       |   whenever Veyon Master is used                 |
 |   allowing for effective and secure access      |                                                 |
-|   control               						  |                                                 |
+|   control                                       |                                                 |
 +-------------------------------------------------+-------------------------------------------------+
 
 The chosen authentication method can be activated and configured as described in section :ref:`authentication configuration`
