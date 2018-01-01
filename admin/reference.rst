@@ -1,4 +1,4 @@
-.. _ConfigurationReference:
+.. _Configuration reference:
 
 Configuration Reference
 =======================
@@ -450,7 +450,7 @@ Authorized User Groups for Computer Access
 ++++++++++++++++++++++++++++++++++++++++++
 
 Configuration of this access control mode is straightforward. The left list contains all user groups provided by
-the data backend. By default these are all local user groups. If :ref:`LDAP-/AD-Integration <LDAP>` is configured,
+the data backend. By default these are all local user groups. If :ref:`LDAP/AD Integration <LDAP>` is configured,
 all LDAP user groups are shown. You can now select one or more groups and move them to the right list using the
 corresponding buttons between the two lists. All members of each group in the right list can access the computer.
 Remember to mirror the configuration to all computers. 

@@ -18,7 +18,7 @@ The list can vary depending on the installed Veyon-plugins:
     $ veyon-ctl help
     Available modules:
         config - Commands for administering the Veyon-configuration
-        ldap - Commands for configuring and testing the LDAP-/AD-integration
+        ldap - Commands for configuring and testing the LDAP/AD integration
         service - Commands for configuring and controlling the Veyon-service
         remoteaccess - Remote view or remote control of a computer
 

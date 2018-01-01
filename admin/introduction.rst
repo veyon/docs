@@ -3,6 +3,7 @@ Introduction
 
 About this manual
 -----------------
+
 This manual describes the installation and configuration of Veyon in a computer network and is addressed to
 system administrators and technically adept users. For end users there is a separate user manual explaining 
 usage and specific functions of the user program (Veyon Master). 
@@ -13,8 +14,8 @@ for putting Veyon into operation.
 Chapter :ref:`Installation` deals with the installation von Veyon on a Windows or Linux computer. It also
 contains hints on how to perform or implement an automated installation. 
 
-Chapter :ref:`Cofiguration`describes configuration and integration using the graphical configuration tool, whereas
-the :ref:`configuration reference` deals with the details of configuration options. Chapter :ref:`LDAP` explains
+Chapter :ref:`Configuration` describes configuration and integration using the graphical configuration tool, whereas
+the :ref:`Configuration reference` deals with the details of configuration options. Chapter :ref:`LDAP` explains
 in detail how to connect to an existing LDAP-/ActiveDirectory server. 
 
 Veyon is furthermore equipped with a command line interface (:index:`CLI`) that can be used for editing 
