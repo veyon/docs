@@ -5,7 +5,7 @@
 Troubleshooting
 ===============
 
-.. important:: If you encounter interaction or connection problems betwen master and client computers you should always ensure that an identical Veyon configuration is used on all computers. To avoid problems in general it's recommended to automate the configuration transfer during :ref:`installation <AutoInstall>` or via the :ref:`command line interface <CLI>` instead of importing the configuration manually using the Veyon Configurator. During debugging the configuration needs to be transfered onto all computers on every change.
+.. important:: If you encounter interaction or connection problems between master and client computers you should always ensure that an identical Veyon configuration is used on all computers. To avoid problems in general it's recommended to automate the configuration transfer during :ref:`installation <AutoInstall>` or via the :ref:`command line interface <CLI>` instead of importing the configuration manually using the Veyon Configurator. During debugging the configuration needs to be transfered onto all computers on every change.
 
 Computers can't be accessed
 ---------------------------
