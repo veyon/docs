@@ -283,7 +283,7 @@ After successful configuration of the LDAP integration, the LDAP backend can be 
 be customized. Only after the network object directory has been changed to *LDAP* the room and computer information
 from the LDAP directory are used in Veyon Master. 
 
-.. atterntion:: After the database backend has been reconfigured for the computer access control, the previously configured access rules should under all circumstances be checked, since group and room information change and in most cases access rules will no longer be valid or not be processed correctly.
+.. attention:: After the database backend has been reconfigured for the computer access control, the previously configured access rules should under all circumstances be checked, since group and room information change and in most cases access rules will no longer be valid or not be processed correctly.
 
 
 .. _LDAPCLI:
