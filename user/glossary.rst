@@ -8,7 +8,7 @@ From Wikipedia, the free encyclopedia
 .. glossary::
 
     ACL
-      Access Contol List
+      Access Control List
 
     Client
       a computer system that accesses a (remote) service on another computer by some kind of network.	
