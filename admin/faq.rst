@@ -42,6 +42,11 @@ that an identical configuration is used on all master computers. This also holds
 If logon authentication is used, there are no further steps required.
 If key authentication is used, the private key has to be distributed to all master computers. 
 
+How can an existing VNC server be used in conjunction with Veyon?
+-----------------------------------------------------------------
+
+In some environments a VNC server is already installed (e. g. UltraVNC) or is being provided by the system (e. g. VNC-based access to virtual desktops in VDI environments). This can lead to performance losses or conflicts with the Veyon-internal VNC server in some circumstances. In such cases it's recommended to configure Veyon to use the existing (external) VNC server instead of starting its internal VNC server. The configuration is done through the Veyon Configurator in the configuration page :ref:`Service configuration` in section :ref:`VNCServer`.
+
 Can I import or use a self-generated file with room and computer information?
 -----------------------------------------------------------------------------
 
