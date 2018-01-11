@@ -34,13 +34,10 @@ Whilst the configuration of authentication methods is very similar, the configur
 done via the Veyon configurator and not via the master anymore. In this context you should check, whether the new
 :ref:`LDAP/AD Integration <LDAP>` can be used to make rooms and computers automatically available in Veyon.
 
-Is it possible to use the Veyon master on several computers?
-------------------------------------------------------------
+Is it possible to use Veyon Master on multiple computers?
+---------------------------------------------------------
 
-The used of Veyon master on several computers is possible without any problems. To that end it must be ensured
-that an identical configuration is used on all master computers. This also holds true for the client computers. 
-If logon authentication is used, there are no further steps required.
-If key authentication is used, the private key has to be distributed to all master computers. 
+The usage of Veyon Master on multiple computers is possible without any problems. For this to work an identical configuration has to be used on all master computers like its required for client computers in general. If logon authentication is used no further steps are necessary. If key authentication is used the same private key has to be distributed to all master computers.
 
 How can an existing VNC server be used in conjunction with Veyon?
 -----------------------------------------------------------------
