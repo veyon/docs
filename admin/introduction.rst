@@ -85,3 +85,14 @@ In a more detailed view there are several :index:`program components` that inter
 	A command line tool serving as an addition to the Veyon configurator that allows reconfiguration and the use
 	of some Veyon functions without	graphical interaction. This program is run either interactively on the 
 	command line or script controlled with (usually) administrator's privileges. 
+
+
+Network architecture
+--------------------
+
+From a network perspective the following components and TCP ports are involved:
+
+.. image:: images/network-architecture.png
+   :scale: 50 %
+   :align: center
+
