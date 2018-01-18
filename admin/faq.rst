@@ -47,8 +47,12 @@ In some environments a VNC server is already installed (e. g. UltraVNC) or is be
 Can I import or use a self-generated file with room and computer information?
 -----------------------------------------------------------------------------
 
-This is not possible with Veyon 4.0, but Veyon 4.1 will provide a possibility for import and a command line 
-interface to the room and computer administration.
+This is not possible with Veyon 4.0, but Veyon 4.1 will provide a an import feature as well as a command line interface for room and computer administration.
+
+How can I view or control all monitors of a remote computer?
+------------------------------------------------------------
+
+On Windows by default only the primary monitor of a computer is accessible with Veyon. You can however change this behaviour in the :ref:`VNCServer` configuration. Select the VNC server plugin :guilabel:`Builtin VNC server` and activate the option :guilabel:`Enable dual monitor support`.
 
 How can I import or export the selection of displayed computers?
 ----------------------------------------------------------------

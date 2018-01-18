@@ -211,7 +211,9 @@ Only allow connections from the local computer
 
 .. index:: VNC server, internal VNC server, external VNC server
 
-VNC-Server
+.. _VNCServer:
+
+VNC server
 ++++++++++
 
 Plugin
@@ -530,7 +532,7 @@ TMP, TEMP	  User specific directory for :index:`temporary files`, under Windows 
 .. _ServiceParameters:
 
 Program Parameters for Veyon Service
------------------------------------
+------------------------------------
 
 Dependening on the operating system under which Veyon is run, the Veyon Service can take various
 :index:`program parameters`. The desired parameters have to be entered in the :ref:`general service settings <ServiceGeneral>`. 
