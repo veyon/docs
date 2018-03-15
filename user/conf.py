@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Veyon'
-copyright = '2017, Tobias Junghans'
+copyright = '2017-2018, Tobias Junghans'
 author = 'Tobias Junghans'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -59,7 +59,7 @@ author = 'Tobias Junghans'
 # built documents.
 #
 # The short X.Y version.
-version = '4.0.3'
+version = '4.0.5'
 # The full version, including alpha/beta/rc tags.
 release = version
 
