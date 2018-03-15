@@ -431,6 +431,11 @@ Computer Access Control
 	the local configuration; see also section :ref:`local data`. If an LDAP connection is used, you should 
 	select the backend *LDAP* here. 
 
+Enable usage of domain groups
+    When using computer access control in combination with the :ref:`local data:` backend only the local system groups are available per default. By enabling this option all groups of the domain can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups computer access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use the *LDAP* backend.
+
+    **Default:** *disabled*
+
 Grant access to all authenticated users (default)
 	If the predefined authentication is sufficient (e.g. when using a keyfile authentication with restricted
 	access to the key files), this option can be selected. In this mode no further access control is performed.
