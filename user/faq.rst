@@ -2,7 +2,7 @@ FAQ - Frequently Asked Questions
 ================================
 
 Can other users see my screen?
-==============================
+------------------------------
 
 Which user can access which computer under which circumstances depends on the system settings your administrator
 has configured. Usually the software should be configured in a way that the course instructor can access the computers
