@@ -121,3 +121,7 @@ Please make sure that:
 * all firewall exceptions for the master computer are activated on configuration page :guilabel:`Service` or a used third-party firewall is configured to allow incoming connections on port ``11400``.
 * the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). In a rule set there may exist a rule prohibiting access to a computer if a teacher is signed in. In this case you should create a rule with activated condition *accessing computer is localhost* as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher PC's screen content and distribute it to the client computers.  
 
+The server crashes with XIO or XCB errors on Linux
+---------------------------------------------------
+
+There are known issues with specific KDE and Qt versions on Linux causing the Veyon Server to crash. This affects several other VNC server implementations as well. In case you're affected by such crashes consider upgrading KDE/Qt. As a last resort you can disable the X Damage extension in the VNC server configuration. This will however likely decrease overall performance.
