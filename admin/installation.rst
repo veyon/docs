@@ -93,7 +93,7 @@ Specify an :index:`installation directory` for an automated installation:
 
 	veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
 
-.. note:: Because of a shortcoming of the installer software (NSIS) the option ``\D=...`` always has to be the last argument.
+.. note:: Because of a shortcoming of the installer software (NSIS) the option ``/D=...`` always has to be the last argument.
 
 .. _InstallationConfigurationImport:
 
