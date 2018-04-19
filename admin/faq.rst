@@ -13,7 +13,7 @@ porting Veyon to MacOS and Android.
 How can I add computers in order to access them?
 ------------------------------------------------
 
-If the preconfigured :ref:`network object register` is used, the only action required is adding the respective
+If the preconfigured :ref:`network object directory` is used, the only action required is adding the respective
 rooms and computers on the configuration page :ref:`local data`. Afterwards the added resources are available 
 to the Veyon master. 
 
