@@ -156,6 +156,8 @@ Computer :index:`MAC address` attribute
 	to be entered here, since the MAC address is required for this function. Typical examples are ``hwAddress``
 	or ``dhcpAddress``. 
 
+.. hint:: A standard Active Directory does not have an attribute for storing MAC addresses. You'll need to populate MAC addresses manually in an existing unused attribute such as ``wwwHomepage`` or extend the AD scheme. Additionally you can grant computers group write access to ``SELF`` and let them store the MAC address of the first physical LAN adapter by using a PowerShell startup script.
+
 Computer room attribute
 	If the LDAP scheme for computer objects needs a special attribute for the mapping to a room, this attribute
 	name can be entered here. You can use the :guilabel:`Test` button to verify, whether the members of a 
