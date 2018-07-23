@@ -99,7 +99,7 @@ Access control
 
 With the help of the :index:`Access control` module it can be specified in detail which users may access a computer. Access control is performed during :index:`connection initialisation` after the authentication.  While authentication assures the authenticity of an accessing user, the access control functionality restricts :index:`computer access` to authorised users, e.g. teachers.
 
-Setup is done from the :guilabel:`Access control` configuration page and is described in detail in the configuratoin reference in section :ref:`Access control`.
+Setup is done from the :guilabel:`Access control` configuration page and is described in detail in chapter :ref:`Computer access control`.
 
 .. important:: The configuration of the access control is like all settings part of the local Veyon configuration. The configuration must therefore be :ref:`transferred to all other computers <ImportExportConfiguration>` to work properly.
 
