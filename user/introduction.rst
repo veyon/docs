@@ -22,16 +22,32 @@ Enter here your username and password or, if given, the access data of a special
 User Interface
 ----------------
 
-After starting the program you will see :index:`User Interface` with :index:`Toolbar` (1), :index:`Desktop` (2) and the :index:`Status Bar` with various controls (3):
+After starting the program you will see a :index:`user interface` with a :index:`toolbar` (1), a :index:`workspace` (2) and a :index:`status bar` with various controls (3):
 
 .. image:: images/master-user-interface.png
    :align: center
 
-The toolbar contains a number of buttons for activating various functions. A detailed description of the individual functions can be found in the chapter :ref:`Program Functions`. The appearance and behavior of the toolbar can be adjusted as described in the section :ref:`Toolbar`.
+The toolbar contains a number of buttons for activating different functions. A detailed description of the individual functions can be found in the chapter :ref:`Program features`. The appearance and behavior of the toolbar can be adjusted as described in the section :ref:`Toolbar`.
 
-In the workspace, all computers to be observed are displayed in a :index:`Tile view`. Depending on the system configuration and previous program launches, you will already see the computers of the current room here. You can use the `Computer Room Management`_ to show or hide computers or entire computer rooms.
+In the workspace, all computers to be monitored are displayed in a :index:`tile view`. Depending on the system configuration and previous program launches, you will already see the computers of the current room here. You can use the `Computer rooms`_ to show or hide computers or entire computer rooms.
 
-The elements in the status bar are used to control the program interface. This allows you to enable views such as `Computer Room Management`_ or `Screenshot Management`_. Use the slider to control the size of the displayed computer screens. An automatic adjustment to an optimal size is done by pressing the button :guilabel:`Auto`. The button :guilabel:`About` opens a dialog with information about the program, such as Version, Author and License terms.
+The elements in the status bar are used to control the program interface and are described in more detail in the following section.
+
+Status bar
+----------
+
+Using the :guilabel:`Computer rooms` and :guilabel:`Screenshots` buttons, you can open and close views such as :ref:`Computer rooms` or :ref:`Screenshots`.
+
+The search bar allows you to filter the computers displayed using search terms such as computer names or user names. Technically savvy users can even enter regular expressions here to implement advanced search filters.
+
+The |powered-on| button hides all computers that are not turned on or accessible. This allows simultaneous observation of a large number of computers or only partially occupied rooms while simultaneously focusing on the actually active computers.
+
+Use the slider to control the size of the computer screens displayed. With the :kbd:`Ctrl` key pressed, the size can also be changed using the mouse scroll wheel. An automatic adjustment to the optimal size is done by pressing the button |zoom-fit-best| (:guilabel:`Set optimal size`) to the right of it.
+
+Since Veyon 4.1 it is possible to use a user-defined computer arrangement, e.g. to map the actual arrangement of computers in the classroom. After activating the |exchange-positions-zorder| button (:guilabel:`Use custom computer placement`), each computer can be moved individually or in a selected group with the mouse button pressed and arranged as desired. To align all computers after arranging them, you can use the |align-grid| button (:guilabel:`Align computers to grid`). If the sorted default arrangement is to be used again, simply deactivate the |exchange-positions-zorder| button.
+
+The |help-about| (:guilabel:`About`) button opens a dialog with information about Veyon such as version, manufacturer and license terms.
+
 
 .. _Toolbar:
 
@@ -47,14 +63,14 @@ If you click the entry :guilabel:`Disable Balloon Tooltips` you will no longer s
 
 The option :guilabel:`Show Icons Only` causes a compact representation of the buttons in the toolbar by hiding the labels and displaying only icons. On smaller screens, this option may be necessary to display all the buttons.
 
-.. _`Computer Room Management`:
+.. _`Computer room`:
 
-Computer Room Management
-----------------------
+Computer rooms
+--------------
 
-.. index:: `Computer Room Management`
+.. index:: `Computer rooms`
 
-You can use the button :guilabel:`Computer Rooms` in the :index:`Status Bar` to open the Computer Space Administration. This view displays all available computer rooms in a tree view. Individual room entries can be expanded by means of a usually triangular symbol.
+You can use the button :guilabel:`Computer Rooms` in the :index:`Status Bar` to open the computer rooms view. This view displays all available computer rooms in a tree structure. Individual room entries can be expanded using a usually triangular symbol.
 
 You can activate individual computers or entire rooms by clicking on them. All activated computers are displayed in the workspace.
 
@@ -70,14 +86,14 @@ Depending on the system configuration, the button :guilabel:`Add room` is also a
 
 You can filter the list using the input field, that is, enter a search term. In the list then only the room names are displayed, in which the entered search term occurs. Advanced users can also use regular expressions for the filter. Then you can select a room and confirm with :guilabel:`OK`. The selected room is now available in the room list until the next program restart. You can also remove an added room by clicking on a room and pressing the :kbd:`Del` key.
 
-.. _`Screenshot Management`:
+.. _`Screenshots`:
 
-Screenshot Management
-------------------------
+Screenshots
+-----------
 
-.. index:: `Screenshot Management`
+.. index:: `Screenshots`
 
-Screen Capture Management View allows you to view and delete captured screenshots. In the chapter :ref:`Program Functions` the function for creating a screenshot in the section: ref:` Screenshot` is explained.
+The management view for screenshots allows you to view and delete captured screenshots. See the :ref:`Program Functions` chapter in section :ref:`Screenshot` for an explanation on how to take screenshots.
 
 .. image:: images/screenshot-management.png
    :align: center
