@@ -128,6 +128,7 @@ LDAP
 
 The commands available in the ``ldap`` module are documented in section :ref:`LDAP-CLI` in chapter :ref:`LDAP`.
 
+.. _NetworkObjectDirectoryCLI:
 
 Network object directory
 ------------------------

@@ -103,7 +103,7 @@ In Veyon a :index:`network object directory` provides information about :index:`
 Network objects include computers and rooms that computer are based in. THe data from the network object directory
 is used by Veyon Master to supply the :index:`computer room management` with entries. On top of that data from the
 network object directory is used for access control. By default a backend is used, that stores the data in the 
-local Veyon configuration and queries them from this location. See section :ref:`local data` for more information.
+local Veyon configuration and queries them from this location. See section :ref:`Rooms and computers` for more information.
 
 :index:`Backend`
 	You can use this option to define the desired backend for the network object directory. Depending on the 
@@ -428,11 +428,11 @@ Computer Access Control
 	A data backend is required as a data base for access control. It provides users and groups as well as
 	computers and rooms. Thereby you can choose between the standard backend and other plugin-specific backends
 	such as LDAP. With a standard backend local users and groups as well as computers and rooms are loaded from
-	the local configuration; see also section :ref:`local data`. If an LDAP connection is used, you should 
+	the local configuration; see also section :ref:`Rooms and computers`. If an LDAP connection is used, you should 
 	select the backend *LDAP* here. 
 
 Enable usage of domain groups
-    When using computer access control in combination with the :ref:`local data:` backend only the local system groups are available per default. By enabling this option all groups of the domain can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups computer access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use the *LDAP* backend.
+    When using computer access control in combination with the :ref:`Rooms and computers:` backend only the local system groups are available per default. By enabling this option all groups of the domain can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups computer access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use the *LDAP* backend.
 
     **Default:** *disabled*
 
