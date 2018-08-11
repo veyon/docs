@@ -126,9 +126,9 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 LDAP
 ----
 
-The commands available in the ``ldap`` module are documented in section :ref:`LDAP-CLI` in chapter :ref:`LDAP`.
+The commands available in the ``ldap`` module are documented in section :ref:`LDAPCLI` in chapter :ref:`LDAP`.
 
-.. _NetworkObjectDirectoryCLI:
+.. _CLINetworkObjectDirectory:
 
 Network object directory
 ------------------------

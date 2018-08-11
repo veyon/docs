@@ -11,7 +11,7 @@ Currently Veyon is only available for Linux- or Windows-based environments. Supp
 How can I add computers in order to access them?
 ------------------------------------------------
 
-If the default :ref:`network object directory` is used, all you need to do is add the appropriate rooms and computers on the :ref:`Rooms and computers` configuration page. Afterwards the added resources are available in the Veyon master.
+If the default :ref:`RefNetworkObjectDirectory` is used, all you need to do is add the appropriate rooms and computers on the :ref:`ConfRoomsAndComputers` configuration page. Afterwards the added resources are available in the Veyon master.
 
 If :ref:`LDAP/AD Integration <LDAP>` is configured the network object directory has to be changed to *LDAP* so that the computers from the directory are displayed in the Veyon master.
 
@@ -32,33 +32,33 @@ The usage of Veyon Master on multiple computers is possible without any problems
 How can an existing VNC server be used in conjunction with Veyon?
 -----------------------------------------------------------------
 
-In some environments a VNC server is already installed (e. g. UltraVNC) or is being provided by the system (e. g. VNC-based access to virtual desktops in VDI environments). This can lead to performance losses or conflicts with the Veyon-internal VNC server in some circumstances. In such cases it's recommended to configure Veyon to use the existing (external) VNC server instead of starting its internal VNC server. The configuration is done through the Veyon Configurator in the configuration page :ref:`Service configuration` in section :ref:`VNCServer`.
+In some environments a VNC server is already installed (e. g. UltraVNC) or is being provided by the system (e. g. VNC-based access to virtual desktops in VDI environments). This can lead to performance losses or conflicts with the Veyon-internal VNC server in some circumstances. In such cases it's recommended to configure Veyon to use the existing (external) VNC server instead of starting its internal VNC server. The configuration is done through the Veyon Configurator in the configuration page :ref:`RefService` in section :ref:`RefVNCServer`.
 
 
 Can I import or use a self-generated file with room and computer information?
 -----------------------------------------------------------------------------
 
-Since Veyon 4.1 there is a new `ref:`module for the command line interface <NetworkObjectDirectoryCLI>`. This module can be used to import rooms and computers from text files like CSV files into the network object directory.
+Since Veyon 4.1 there is a new `ref:`module for the command line interface <CLINetworkObjectDirectory>`. This module can be used to import rooms and computers from text files like CSV files into the network object directory.
 
 
 How can I view or control all monitors of a remote computer?
 ------------------------------------------------------------
 
-On Windows by default only the primary monitor of a computer is accessible with Veyon. You can however change this behaviour in the :ref:`VNCServer` configuration. Select the VNC server plugin :guilabel:`Builtin VNC server` and enable the option :guilabel:`Enable dual monitor support`.
+On Windows by default only the primary monitor of a computer is accessible with Veyon. You can however change this behaviour in the :ref:`RefVNCServer` configuration. Select the VNC server plugin :guilabel:`Builtin VNC server` and enable the option :guilabel:`Enable dual monitor support`.
 
 
 How can I import or export the selection of displayed computers?
 ----------------------------------------------------------------
 
-The selection of displayed computers is saved in the personal :ref:`User Configuration <User Configuration>`. To extend this more multiple user, there a two options. First, the user configuration file can be copied into the respective profile of the user, using login scripts for example. Second the user configuration can be moved to a shared directory (e.g. a network drive) and the :ref:`Setting <User Configuration>` has to be changed accordingly, such that the user configuration is loaded from this directory. However, you have to ensure that the access rights may have to be changed, for that changes made by the user are not rewritten into the global user configuration.
+The selection of displayed computers is saved in the personal :ref:`user configuration <RefUserConfiguration>`. To extend this more multiple user, there a two options. First, the user configuration file can be copied into the respective profile of the user, using login scripts for example. Second the user configuration can be moved to a shared directory (e.g. a network drive) and the :ref:`setting <RefUserConfiguration>` has to be changed accordingly, such that the user configuration is loaded from this directory. However, you have to ensure that the access rights may have to be changed, for that changes made by the user are not rewritten into the global user configuration.
 
-In this context we point you to the function for :ref:`Automatic switch to current classroom <RoomAutoSwitch>`, that may permit to realize the desired behavior directly.
+In this context we point you to the function for :ref:`Automatic switch to current classroom <RefRoomAutoSwitch>`, that may permit to realize the desired behavior directly.
 
 
 How can I hide the master computer from computer rooms?
 -------------------------------------------------------
 
-All you need to do is enable the option :ref:`Hide local computer <AutoHideLocalComputer>` in the master configuration page.
+All you need to do is enable the option :ref:`Hide local computer <RefAutoHideLocalComputer>` in the master configuration page.
 
 
 What happens if there is no matching access control rule?

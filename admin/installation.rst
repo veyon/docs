@@ -3,10 +3,17 @@
 Installation
 ============
 
-System Requirements
--------------------
+Hardware and software requirements
+----------------------------------
 
-Veyon is designed to run on standard computers running Windows or Linux. There are no special :index:`minimum requirements` for the hardware. However, an up-to-date :index:`operating system` supported by the manufacturer or the community must be run. Those include:
+Veyon is designed to run on standard computers running Windows or Linux. The :index:`minimum requirements` for the hardware depend on the usage scenario and size of the environment in which Veyon is deployed. While there are no special requirements for client computers all master computers should be equipped with enough RAM and processors to monitor the desired number of client computers.
+
+* At least 2 GB RAM - Veyon Master requires 20-30 MB per client computer, depending on the client's screen resolution
+* Multi-core system (2-4 CPUs) highly recommended
+
+All computers must be connected through a TCP-/IP-compatible network. Both wired and wireless network connections work. For using Veyon with more than 10 computers a Gigabit network is recommended, otherwise the performance of the demo mode feature (see user manual) may not be satisfactory. The same applies to wireless networks (:index:`Wifi`) where at least the IEEE 802.11n standard should be used.
+
+On the software side an up-to-date :index:`operating system` supported by the vendor or the community must be run. Those include:
 
 * Windows 7, 8 or 10 (32/64 Bit)
 * Linux with at least version 5.5 of Qt
@@ -16,29 +23,24 @@ Veyon is designed to run on standard computers running Windows or Linux. There a
     * Fedora 24 or higher
     * CentOS 7.3 or higher
 
-:index:`Parallel usage` of Windows and Linux computers is easily possible. All computers must be connected through a TCP-/IP-compatible network, where the transmission technology (wired/wireless) is only of importance concerning the maximum performance. For the use of Veyon with more than 10 computers a Gigabit network is recommended, otherwise the demo mode (see user manual) may not work well enough. The same applies to wireless networks (:index:`Wifi`) where at least standard IEEE 802.11n should be used.
+Mixing Windows and Linux computers is no problem.
 
-
-Preparing the Installation
+Preparing the installation
 --------------------------
 
-First of all download the installation files for your platform from the Veyon download page [#releases]_.  For Windows computers it's recommended to use the 64-bit variant (`win64`). For 32-bit-installations, the 32-bit variant (`win32`) has to be used.
-
-.. [#releases] https://github.com/veyon/veyon/releases/
+First of all download the installation files for your platform from the `Veyon download page <https://download.veyon.io>`_. For Windows computers it's recommended to use the 64-bit variant (`win64`). For 32-bit-installations, the 32-bit variant (`win32`) has to be used.
 
 Installation on a Windows computer
 ----------------------------------
 
-Run the :index:`installation file` with administrator privileges and follow the instructions on the screen. On computers on which no master application is required (e.g. student computers) you uncheck the component *Veyon Master* in the *Choose components* dialogue.
+Run the :index:`installer file` with administrative privileges and follow the displayed instructions. On all computers on which no master application is required (e.g. student computers) you uncheck the component *Veyon Master* in the *Choose components* dialogue.
 
-After the installation is finished the *Veyon Configurator* is started by default. This is a tool for setting up and customizing your installation. In the next chapter :ref:`Configuration` the usage is described in detail.
+After the installation is finished the *Veyon Configurator* is launched by default. This program allows to set up and customize your Veyon installation. In the next chapter :ref:`Configuration` the usage is described in detail.
 
 Installation on a Linux computer
 --------------------------------
 
-The installation of Veyon on :index:`Linux` strongly depends on the distribution used. Usually you can install the program through your software management, if Veyon is available in the package archive of your distribution. Otherwise there is always the possibility to compile and install a current version of Veyon from the sources and install it afterwards. For further information please visit the project's page on github [#github].
-
-.. [#github] https://github.com/veyon/veyon/
+The installation of Veyon on :index:`Linux` heavily depends on the distribution used. If Veyon is available in the package archive of your distribution you can install the program through the appropriate software management application. Alternatively up-to-date binary packages for different distributions are available at the `Veyon download page <https://download.veyon.io>`_. In all other cases it's always possible to compile and install a current version of Veyon from source. For further information please visit the `Github page of Veyon <https://github.com/veyon/veyon/>`_.
 
 
 .. index:: automated installation, unattended installation, silent installation, deinstallation, uninstalling
@@ -50,7 +52,7 @@ Automated installation (silent installation)
 Basics
 ++++++
 
-The Veyon Windows installer provided by the community can be executed in *silent* mode, meaning that there is no user interaction and installation is done automatically. This is especially helpful for automated deployments in larger environments. Veyon can thus be easily integrated with all common software distribution/deployment mechanisms.
+The Veyon Windows installer provided by the community can be executed in *silent* mode, meaning that there is no user interaction and the installation is performed automatically. This is especially helpful for automated deployments in larger environments. Veyon can thus be easily integrated with all common software distribution/deployment mechanisms.
 
 After the :index:`installer` has been run with command line parameter ``/S``, all further operations are executed without requests for feedback or output. The same applies to the uninstaller.
 

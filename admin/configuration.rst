@@ -9,32 +9,32 @@ To start the setup, start the Veyon Configurator if that has not already been do
    :scale: 75 %
    :align: center
 
-The :ref:`Configuration Reference` describes all configuration pages and configuration options with their respective meanings.
+The :ref:`ConfigurationReference` describes all configuration pages and configuration options with their respective meanings.
 
 
 Overview
 --------
 
-The basic settings in the configuration page :ref:`General` affect all :ref:`components` of Veyon. These include settings for the :ref:`user interface`, :ref:`logging`, :ref:`authentication` as well as the :ref:`network object directory` which stores the rooms and computers displayed in the Veyon Master.
+The basic settings in the configuration page :ref:`RefGeneral` affect all :ref:`components` of Veyon. These include settings for the :ref:`RefUserInterface`, :ref:`RefLogging`, :ref:`RefAuthentication` as well as the :ref:`RefNetworkObjectDirectory` which stores the rooms and computers displayed in the Veyon Master.
 
-The settings in the configuration page :ref:`Service Configuration` influence the functionality of the Veyon Service and are used for fine-tuning and adaptation to implement special application scenarious. For smooth operation the default settings should normally not be changed.
+The settings in the configuration page :ref:`RefService` influence the functionality of the Veyon Service and are used for fine-tuning and adaptation to implement special application scenarious. For smooth operation the default settings should normally not be changed.
 
-All setting on configuration page :ref:`Master Configuration` only affect the behavior and functions of the Veyon Master and apply system-wide for all users.
+All setting on configuration page :ref:`RefMaster` only affect the behavior and functions of the Veyon Master and apply system-wide for all users.
 
-.. hint:: For a :index:`quick start` to get to know the software you only need to add a room and individual computers in configuration page :ref:`Rooms and computers`. After the configuration has been :ref:`exported to all computers <ImportExportConfiguration>` the Veyon Master can already be started and used. It should be ensured that the user used at logon exists with the same password on all computers.
+.. hint:: For a :index:`quick start` to get to know the software you only need to add a room and individual computers in configuration page :ref:`ConfRoomsAndComputers`. After the configuration has been :ref:`exported to all computers <ConfImportExport>` the Veyon Master can already be started and used. It should be ensured that the user used at logon exists with the same password on all computers.
 
 .. index:: Authentication, Authentication methods
 
-.. _Authentication:
+.. _ConfAuthentication:
 
 Authentication
 --------------
 
-In order to access a computer running the Veyon Service the accessing user has to authenticate himself at first, meaning that he has to prove his identity resp. usage authorization. Otherwise an unrestricted access from every user on every computer running the Veyon Service would be possible. Access without authentication is not possible. The configuration can be done in the configuration page :ref:`General` in section :ref:`Authentication` in Veyon Configurator.
+In order to access a computer running the Veyon Service the accessing user has to authenticate himself at first, meaning that he has to prove his identity resp. usage authorization. Otherwise an unrestricted access from every user on every computer running the Veyon Service would be possible. Access without authentication is not possible. The configuration can be done in the configuration page :ref:`RefGeneral` in section :ref:`RefAuthentication` in Veyon Configurator.
 
-.. _Authentication methods:
+.. _ConfAuthenticationMethods:
 
-Authentication Methods
+Authentication methods
 ++++++++++++++++++++++
 
 Basically Veyon offers two different authentication methods, key file authentication and logon authentication.
@@ -47,7 +47,7 @@ Both methods have advantages and disadvantages so the choice of the right method
 
 .. index:: key file authentication, public-key-cryptography, public key, private key, key file
 
-.. _KeyAuthentication:
+.. _ConfKeyFileAuthentication:
 
 **Key file authentication**
 
@@ -64,7 +64,7 @@ Both methods have advantages and disadvantages so the choice of the right method
 
 .. index:: logon-authentication, username, password
 
-.. _LogonAuthentication:
+.. _ConfLogonAuthentication:
 
 **Logon authentication**
 
@@ -77,41 +77,41 @@ Both methods have advantages and disadvantages so the choice of the right method
 |   control                                       |                                                 |
 +-------------------------------------------------+-------------------------------------------------+
 
-The authentication method can be chosen and configured as described in section :ref:`authentication configuration` of the configuration reference.
+The authentication method can be chosen and configured as described in section :ref:`RefAuthentication` of the configuration reference.
 
 
-Key Management
+Key management
 ++++++++++++++
 
-In order to use the key file authentication, at first a :index:`key pair` consisting of a public and a private key has to be generated.  The configuration page :ref:`Authentication keys` is available for this purpose. A new key pair is generated via the `guilabel:`Create key pair` button. A short, concise term such as ``teacher`` should be chosen as the name. An access group must then be set for both private and public keys. The private key access group may only include users who are to be allowed to access other computers via the Veyon Master. The public key should be assigned to a global access group so that the key is readable by all users and the operating system.
+In order to use the key file authentication, at first a :index:`key pair` consisting of a public and a private key has to be generated.  The configuration page :ref:`RefAuthenticationKeys` is available for this purpose. A new key pair is generated via the `guilabel:`Create key pair` button. A short, concise term such as ``teacher`` should be chosen as the name. An access group must then be set for both private and public keys. The private key access group may only include users who are to be allowed to access other computers via the Veyon Master. The public key should be assigned to a global access group so that the key is readable by all users and the operating system.
 
-As soon as the keyfile-authentication is set up and working with one client computer, the keys can be deposited on a shared network drive and the :ref:`Base Directories <BaseDirectories>` can be changed accordingly. Now the client computers just have to import the Veyon configuration, however, the files containing the keys don't have to be manually imported.
+As soon as the keyfile-authentication is set up and working with one client computer, the keys can be deposited on a shared network drive and the :ref:`RefKeyFileDirectories` can be changed accordingly. Now the client computers just have to import the Veyon configuration, however, the files containing the keys don't have to be manually imported.
 
 .. attention:: The private key file shall only be accessible for users that should have access to other computers. If the file is stored on a network drive, it must be thoroughly ensured that file access is restricted with an ACL or similar!
 
 
 .. index:: computer access control
 
-.. _AccessControl:
+.. _ConfAccessControl:
 
 Access control
 --------------
 
 With the help of the :index:`Access control` module it can be specified in detail which users may access a computer. Access control is performed during :index:`connection initialisation` after the authentication.  While authentication assures the authenticity of an accessing user, the access control functionality restricts :index:`computer access` to authorised users, e.g. teachers.
 
-Setup is done from the :guilabel:`Access control` configuration page and is described in detail in chapter :ref:`Computer access control`.
+Setup is done from the :guilabel:`Access control` configuration page and is described in detail in chapter :ref:`AccessControlRules`.
 
-.. important:: The configuration of the access control is like all settings part of the local Veyon configuration. The configuration must therefore be :ref:`transferred to all other computers <ImportExportConfiguration>` to work properly.
+.. important:: The configuration of the access control is like all settings part of the local Veyon configuration. The configuration must therefore be :ref:`transferred to all other computers <ConfImportExport>` to work properly.
 
 
 .. index:: Rooms and computers
 
-.. _Rooms and computers:
+.. _ConfRoomsAndComputers:
 
 Rooms & computers
 -----------------
 
-In the configuration page :guilabel:`Rooms & computers` you can create the :index:`rooms and computers` that are displayed in Veyon Master when the :ref:`network object directory`-backend *Builtin* is used. Unlike backends such as :ref:`LDAP <LDAP>` this information is stored in the local configuration and must therefore be transferred to all computers.
+In the configuration page :guilabel:`Rooms & computers` you can create the :index:`rooms and computers` that are displayed in Veyon Master when the :ref:`RefNetworkObjectDirectory`-backend *Builtin* is used. Unlike backends such as :ref:`LDAP <LDAP>` this information is stored in the local configuration and must therefore be transferred to all computers.
 
 The configuration page consists of two lists. The left list contains all configured rooms. Using the two buttons below the list, rooms may be added or deleted. Existing rooms can be edited and renamed by double-clicking.
 
@@ -126,29 +126,29 @@ All information about connecting Veyon to an LDAP-compatible server such as *Ope
 
 .. index:: export configuration, import configuration, load settings, save settings
 
-.. _ImportExportConfiguration:
+.. _ConfImportExport:
 
-Importing/Exporting a Configuration
+Importing/exporting a configuration
 -----------------------------------
 
 An imported prerequisite for the use of Veyon is an identical configuration on all computers. A transfer of the Veyon configuration to another computer can be done manually at first, but should be automated later. Different methods are available for both ways.
 
 In the Veyon Configurator you can find the entry :guilabel:`Save settings to file` in menu :guilabel:`File`. This entry can be used to export the current configuration in JSON format to a file. This file can be imported to another computer using the entry :guilabel:`Load settings from file` in the same menu. Please note, that the settings are loaded into the user interface during the import, but are only applied and saved in the system only after pressing the :guilabel:`Apply` button.
 
-The :ref:`Configuration management` module of the :ref:`command line interface` can be used to automate or script both configuration import and export.
+The :ref:`ConfigurationManagement` module of the :ref:`CommandLineInterface` can be used to automate or script both configuration import and export.
 
 Additionally, when performing an :ref:`automated installation <AutoInstall>` the configuration can be imported without any further interaction. In the example section you find an :ref:`Example <InstallationConfigurationImport>` for the install parameter ``/ApplyConfig``.
 
 
 .. index:: reset configuration, reset settings, delete configuration
 
-.. _ConfigClear:
+.. _ConfClear:
 
 Reset configuration
 -------------------
 
 In some error situations it may be advisable to reset the Veyon configuration completely and then restart with the default values. For this purpose you can use the entry :guilabel:`Reset configuration` in the :guilabel:`File` menu within Veyon Configurator.
 
-Alternatively the configuration can also be reset using the :ref:`configuration management` within the :ref:`command line interface` module.
+Alternatively the configuration can also be reset using the :ref:`ConfigurationManagement` within the :ref:`CommandLineInterface` module.
 
 Furthermore the saved configuration can be reset on operating system level. Under Linux the file ``etc/xdg/Veyon Solutions/Veyon.conf`` has to be deleted, whereas under Windows the registry key ``HKLM\Software\Veyon Solutions`` and all of its subkeys have to be deleted.

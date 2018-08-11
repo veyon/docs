@@ -10,7 +10,7 @@ The further sections of this chapter contain basic information about Veyon and i
 
 Chapter :ref:`Installation` deals with the installation of Veyon on a Windows or Linux computer. It also contains information on how to perform or implement an automated installation.
 
-Chapter :ref:`Configuration` explains how to configure and integrate Veyon using the graphical configuration tool, whereas the :ref:`Configuration reference` describes all available configuration options in detail. Information and examples on how to connect Veyon to an LDAP or ActiveDirectory server can be found in chapter :ref:`LDAP`.
+Chapter :ref:`Configuration` explains how to configure and integrate Veyon using the graphical configuration tool, whereas the :ref:`ConfigurationReference` describes all available configuration options in detail. Information and examples on how to connect Veyon to an LDAP or ActiveDirectory server can be found in chapter :ref:`LDAP`.
 
 Veyon is furthermore equipped with a command line interface (:index:`CLI`) that can be used for modifying the configuration, automate Veyon-related tasks and for using or controlling specific program functions. All modules and commands of the command line tool are listed and explained in chapter :ref:`CommandLineInterface`.
 

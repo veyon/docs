@@ -1,9 +1,9 @@
 .. index:: access control, access control rules, rule set, computer access rules
 
-.. _Computer access control:
+.. _AccessControlRules:
 
-Computer access control
-=======================
+Access control rules
+====================
 
 Introduction
 ------------
@@ -12,7 +12,7 @@ In case a detailed control over access to specific computers under specific circ
 
 If a user tries to access a computer, all previously defined access control rules are flicked through until all conditions of a rule match. As soon as all activated conditions of a rule match, no further rules will be processed and the defined action will be triggered. (Exception: the rule is disabled.)
 
-The rules can be configured through the Veyon Configurator at the configuration page :ref:`Access Control` in section :guilabel:`Access Control Rules`. By default the :index:`list of rules` is empty. In this case all attempts for access are denied, since there is no rule explicitly granting access. It follows, that there must be at least one rule defined which allows access under certain conditions.
+The rules can be configured through the Veyon Configurator at the configuration page :ref:`ConfAccessControl` in section :guilabel:`Access Control Rules`. By default the :index:`list of rules` is empty. In this case all attempts for access are denied, since there is no rule explicitly granting access. It follows, that there must be at least one rule defined which allows access under certain conditions.
 
 Add and modify rules
 ----------------------
@@ -37,10 +37,10 @@ Conditions
 For a rule to be processed, one or more :index:`conditions` must be satisfied.
 
 User is member of group
-    With this condition you can define that either the accessing or the locally signed in user must be a member of a specific group. The desired group can be choosen. If no or only wrong groups are selectable, you might adjust the *data backend* in the general settings for :ref:`computer access control`.
+    With this condition you can define that either the accessing or the locally signed in user must be a member of a specific group. The desired group can be choosen. If no or only wrong groups are selectable, you might adjust the *data backend* in the general settings for :ref:`ComputerAccessControl`.
 
 Computer is based in room
-    With this condition you can define that either the accessing or the local computer has to be based in a specific room. The desired room can be choosen. If no or only wrong rooms are selectable, you might adjust the *data backend* in the general settings for :ref:`computer access control`.
+    With this condition you can define that either the accessing or the local computer has to be based in a specific room. The desired room can be choosen. If no or only wrong rooms are selectable, you might adjust the *data backend* in the general settings for :ref:`ComputerAccessControl`.
 
 Accessing computer is based in the same room as the local computer
     With this condition you can define that the accessing and the local computer have to be based in the same room. Thus is can be prohibited that a teacher accesses computers used in a different class in a different room.

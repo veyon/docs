@@ -1,18 +1,18 @@
-.. _Configuration reference:
+.. _ConfigurationReference:
 
-Configuration Reference
+Configuration reference
 =======================
 
 In this chapter all configuration pages within Veyon Configurator as well as all configuration options with their respective meanings are explained in detail. It mainly serves as a reference for looking up detailed configuration options. A manual and hints for the installation can be found in chapter :ref:`Configuration`.
 
-.. _General:
+.. _RefGeneral:
 
 General
 ---------
 
-.. _UserInterface:
+.. _RefUserInterface:
 
-User Interface
+User interface
 ++++++++++++++
 
 :index:`Language`
@@ -32,7 +32,7 @@ User Interface
 	**Default:** *disabled*
 
 
-.. _Logging:
+.. _RefLogging:
 
 Logging
 +++++++
@@ -41,17 +41,15 @@ You have several options at hand to influce the :index:`logging` within Veyon. T
 interest if you are experiencing problems using Veyon. The :index:`log files` may indicate potential causes for errors.
 
 
-.. _LogFileDirectory:
+.. _RefLogFileDirectory:
 
 :index:`Logfile directory`
-	You can use this option to specify in which directory the log files will reside. Normally you should use a
-	placeholder variable in this place. A more detailed description about possible values can be found
-	in section :ref:`placeholder variables`.
+	You can use this option to specify in which directory the log files will reside. Normally you should use a placeholder variable in this place. A more detailed description about possible values can be found in section :ref:`RefPlaceholderVariables`.
 
 	**Default:** *$TEMP*
 
 
-.. _Loglevel:
+.. _RefLogLevel:
 
 :index:`Loglevel`
 	The loglevel defines how detailed logging messages are recorded. For analysis of program failures it may be
@@ -92,47 +90,41 @@ You can use the :guilabel:`Clear all Logfiles` button to delete all Veyon logfil
 current user as well as the ones of the system service.
 
 
-.. _Network object directory:
+.. _RefNetworkObjectDirectory:
 
-Network Object Directory
+Network object directory
 ++++++++++++++++++++++++
 
-In Veyon a :index:`network object directory` provides information about :index:`network objects`.
-Network objects include computers and rooms that computer are based in. THe data from the network object directory
-is used by Veyon Master to supply the :index:`computer room management` with entries. On top of that data from the
-network object directory is used for access control. By default a backend is used, that stores the data in the
-local Veyon configuration and queries them from this location. See section :ref:`Rooms and computers` for more information.
+In Veyon a :index:`NetworkObjectDirectory` provides information about :index:`network objects`. Network objects include computers and rooms that computer are based in. The data from the network object directory is used by Veyon Master to supply the :index:`computer room management` with entries. On top of that data from the network object directory is used for access control. By default a backend is used, that stores the data in the local Veyon configuration and queries them from this location. See section :ref:`ConfRoomsAndComputers` for more information.
 
 :index:`Backend`
-	You can use this option to define the desired backend for the network object directory. Depending on the
-	installation there may be several backends such as :ref:`LDAP` available beside the default backend.
+	You can use this option to define the desired backend for the network object directory. Depending on the installation there may be several backends such as :ref:`LDAP` available beside the default backend.
 
 	**Default:** *Standard (store objects in local configuration)*
 
 :index:`Update interval`
-	The network object directory can be automatically updated in the background which may come in handy if
-	dynamic backends such as LDAP are used. The time interval for these updates can be altered with this option.
+	The network object directory can be automatically updated in the background which may come in handy if dynamic backends such as LDAP are used. The time interval for these updates can be altered with this option.
 
 	**Default:** *60 seconds*
 
-.. _Authentication configuration:
+.. _RefAuthentication:
 
 Authentication
 ++++++++++++++
 
-The :ref:`Installation` chapter describes the :ref:`Authentication methods` available in Veyon.
+The :ref:`Configuration` chapter describes the :ref:`ConfAuthenticationMethods` available in Veyon.
 
 :index:`Method:`
-    This option defines which authentication method to use. Logon authentication does not require any further setup and can be used immediately. To use the :ref:`Key file authentication <KeyAuthentication>`, appropriate authentication keys must first be created and distributed.
+    This option defines which authentication method to use. :ref:`Logon authentication <ConfLogonAuthentication>` does not require any further setup and can be used immediately. To use the :ref:`Key file authentication <ConfKeyFileAuthentication>`, appropriate authentication keys must first be created and distributed.
 
     **Default:** *Logon authentication*
 
-.. _ServiceConfiguration:
+.. _RefService:
 
 Service
 -------
 
-.. _ServiceGeneral:
+.. _RefServiceGeneral:
 
 General
 +++++++
@@ -150,7 +142,7 @@ index:`Show notification` on failed authentication attempts
     **Default:** *activated*
 
 :index:`Show notification` on remote connection
-    If the user is to be informed that his computer is being remotely accessed, he can be notified. This option must be activated for this. However, if the user is to be asked for permission, appropriate access control rules must be configured. More information can be found in the chapter :ref:`Computer access control`.
+    If the user is to be informed that his computer is being remotely accessed, he can be notified. This option must be activated for this. However, if the user is to be asked for permission, appropriate access control rules must be configured. More information can be found in the chapter :ref:`AccessControlRules`.
 
     **Default:** *deactivated*
 
@@ -164,15 +156,8 @@ Activate :index:`SAS generation` in the software (Ctrl+Alt+Del)
 
 	**Default:** *activated*
 
-Additional parameters
-	If the Veyon service is registered as a system service, you can use this option to supply additional parameters
-	which the operating system passes to the Veyon service upon starting. A more detailed explanation of possible
-	options can be found in section :ref:`ServiceParameters`.
 
-	**Default:** *<empty>*
-
-
-.. _Network settings:
+.. _RefNetwork:
 
 Network
 +++++++
@@ -210,7 +195,7 @@ Only allow connections from the local computer
 
 .. index:: VNC server, internal VNC server, external VNC server
 
-.. _VNCServer:
+.. _RefVNCServer:
 
 VNC server
 ++++++++++
@@ -221,7 +206,7 @@ Plugin
 	**Default:** *Built-in VNC server*
 
 
-.. _MasterConfiguration:
+.. _RefMaster:
 
 Master
 ------
@@ -231,9 +216,9 @@ Basic settings
 
 **Directories**
 
-In order to make a configuration generic and independent of the user, you should use placeholder variables instead of absolute paths in the directory settings. A more detailed explanation of possible values can be found in section :ref:`placeholder variables`.
+In order to make a configuration generic and independent of the user, you should use placeholder variables instead of absolute paths in the directory settings. A more detailed explanation of possible values can be found in section :ref:`RefPlaceholderVariables`.
 
-.. _UserConfiguration:
+.. _RefUserConfiguration:
 
 :index:`User configuration`
 	The user specific configuration of the Master program resides in the directory defined here. This configuration
@@ -275,19 +260,19 @@ In the tab :guilabel:`Behaviour` settings are available to change the behaviour 
 **Program start**
 
 Perform access control at program start
-	You can use this option to define whether the possibly configured :ref:`computer access control` should also be perform whenever the Veyon Master is started. Even though access control is enforced on client-side in every case, this additional option assures, that users without proper access rights can not even start the Veyon Master, hence making security even more visible.
+	You can use this option to define whether the possibly configured :ref:`ComputerAccessControl` should also be perform whenever the Veyon Master is started. Even though access control is enforced on client-side in every case, this additional option assures, that users without proper access rights can not even start the Veyon Master, hence making security even more visible.
 
 	**Default:** *disabled*
 
-.. _RoomAutoSwitch:
+.. _RefRoomAutoSwitch:
 
 Automatically switch to current room
-	By default all computers that have been selected the previous time are displayed after starting Veyon Master. If instead all computers in the Master computer's room shall be displayed, this option can be activated. The Veyon Master will then try to solve which room the local computer belongs to using the configured :ref:`network object directory`. All computers in the room are listed in this case. Precondition for this function is a correctly working DNS setup in the network which translated computer names to IP addresses and vice versa.
+	By default all computers that have been selected the previous time are displayed after starting Veyon Master. If instead all computers in the Master computer's room shall be displayed, this option can be activated. The Veyon Master will then try to solve which room the local computer belongs to using the configured :ref:`RefNetworkObjectDirectory`. All computers in the room are listed in this case. Precondition for this function is a correctly working DNS setup in the network which translated computer names to IP addresses and vice versa.
 
 	**Default:** *disabled*
 
 Automatically adjust computer thumbnail at start
-	If the size of the computers' thumbnail is to be automatically adjusted upon starting Veyon Master (takes the same effect as clicking the :guilabel:`Auto` button), this option can be activated. The previously configured size will be ignored. This functionality primarily comes into play in conjunction with the :ref:`automatic room change <RoomAutoSwitch>`.
+	If the size of the computers' thumbnail is to be automatically adjusted upon starting Veyon Master (takes the same effect as clicking the :guilabel:`Auto` button), this option can be activated. The previously configured size will be ignored. This functionality primarily comes into play in conjunction with the :ref:`automatic room change <RefRoomAutoSwitch>`.
 
 	**Default:** *disabled*
 
@@ -300,9 +285,7 @@ Automatically open computer rooms widget
 **Computer rooms**
 
 Only show current room
-	As a default, the computer management lists all rooms in the configured :ref:`network object directory`.
-	By activating this option you can assure that only the room the Master computer is based in is listed.
-	This can increase lucidity especially in larger environments.
+	As a default, the computer management lists all rooms in the configured :ref:`RefNetworkObjectDirectory`. By activating this option you can assure that only the room the Master computer is based in is listed. This can increase lucidity especially in larger environments.
 
 	**Default:** *disabled*
 
@@ -311,7 +294,7 @@ Allow adding rooms manually
 
     **Default:** *disabled*
 
-.. _AutoHideLocalComputer:
+.. _RefAutoHideLocalComputer:
 
 Hide local computer
 	In normal operation mode it is often not desired to display one's own computer and activated room-wide activated function on one's own computer as well (e.g. screen lock). Hiding a local computer can be activated through this option.
@@ -319,7 +302,7 @@ Hide local computer
 	**Default:** *disabled*
 
 Hide empty rooms
-	Under certain circumstanced the :ref:`network object directory` contains rooms without computers, for example due to specific LDAP filters. These empty rooms can be hid away from the computer management through this option.
+	Under certain circumstanced the :ref:`RefNetworkObjectDirectory` contains rooms without computers, for example due to specific LDAP filters. These empty rooms can be hid away from the computer management through this option.
 
 	**Default:** *disabled*
 
@@ -355,15 +338,17 @@ With the help of the two lists in the :guilabel:`Features` tab is can be defined
 A feature can be moved from one list to the other by marking and confirming the respective button with the arrow keys. A double-click has the same effect on a feature.
 
 
+.. _RefAuthenticationKeys:
+
 Authentication keys
 -------------------
+
+.. _RefKeyFileDirectories:
 
 Key file directories
 ++++++++++++++++++++
 
-.. _BaseDirectories:
-
-Placeholder variables should be used for both base directories. A detailed description of possible values can be found in the :ref:`configuration reference` in section :ref:`placeholder variables`. Under Windows `UNC paths <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>` _ can be used instead of absolute paths.
+Placeholder variables should be used for both base directories. A detailed description of possible values can be found in the :ref:`ConfigurationReference` in section :ref:`RefPlaceholderVariables`. Under Windows `UNC paths <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>` _ can be used instead of absolute paths.
 
 :index:`Base directory` of the public key file
 	The keyfile-assistant places the role specific public key files in this directory after the keys have been generated or imported. On top of that the Veyon Service loads the respective public key file for authentication purposes from this directory.
@@ -378,23 +363,19 @@ Base directory of the private key file
 
 .. _RefAccessControl:
 
-Access Control
+Access control
 --------------
 
 .. _ComputerAccessControl:
 
-Computer Access Control
+Computer access control
 +++++++++++++++++++++++
 
 :index:`Data backend`
-	A data backend is required as a data base for access control. It provides users and groups as well as
-	computers and rooms. Thereby you can choose between the standard backend and other plugin-specific backends
-	such as LDAP. With a standard backend local users and groups as well as computers and rooms are loaded from
-	the local configuration; see also section :ref:`Rooms and computers`. If an LDAP connection is used, you should
-	select the backend *LDAP* here.
+	A data backend is required as a data base for access control. It provides users and groups as well as computers and rooms. Thereby you can choose between the standard backend and other plugin-specific backends such as LDAP. With a standard backend local users and groups as well as computers and rooms are loaded from the local configuration; see also section :ref:`ConfRoomsAndComputers`. If an LDAP connection is used, you should select the backend *LDAP* here.
 
 Enable usage of domain groups
-    When using computer access control in combination with the :ref:`Rooms and computers` backend only the local system groups are available per default. By enabling this option all groups of the domain can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups computer access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use the *LDAP* backend.
+    When using computer access control in combination with the :ref:`ConfRoomsAndComputers` backend only the local system groups are available per default. By enabling this option all groups of the domain can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups computer access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use the *LDAP* backend.
 
     **Default:** *disabled*
 
@@ -403,7 +384,7 @@ Grant access to all authenticated users (default)
 	access to the key files), this option can be selected. In this mode no further access control is performed.
 
 Restrict access to members of specific user groups
-	In this mode access to a computer is restricted to members of specific user groups. These authorized user groups can be configured in section :ref:`user groups authorized for computer access`.
+	In this mode access to a computer is restricted to members of specific user groups. These authorized user groups can be configured in section :ref:`RefAuthorizedUserGroups`.
 
 Process access control rules
 	This mode allows for a detailed access control using user defined access control rules and offers maximum
@@ -412,7 +393,7 @@ Process access control rules
 
 .. index:: Authorized user groups
 
-.. _User groups authorized for computer access:
+.. _RefAuthorizedUserGroups:
 
 User groups authorized for computer access
 ++++++++++++++++++++++++++++++++++++++++++
@@ -427,12 +408,12 @@ Using the :guilabel:`Test` button in section :guilabel:`Computer Access Control`
 specific user could potentially access a computer through the current group configuration.
 
 
-.. _AccessControlRules:
+.. _RefAccessControlRules:
 
-Access Control Rules
+Access control rules
 ++++++++++++++++++++
 
-Configuration of a rule set for access control including use cases are described in detail in chapter :ref:`Computer access control`.
+Configuration of a rule set for access control including use cases are described in detail in chapter :ref:`AccessControlRules`.
 
 
 LDAP
@@ -477,35 +458,35 @@ Memory limit
 	**Default:** 128 MB*
 
 
-.. _Placeholder variables:
+.. _RefPlaceholderVariables:
 
-Placeholder Variables for File Paths
+Placeholder variables for file paths
 ------------------------------------
 
 :index:`Placeholder variables` can be used with each operating system in both the Windows and Linux format
 ``$VARIABLE`` and ``%VARIABLE%``.
 
 ============= =============
-Variable      Expanded Path
+Variable      Expanded path
 ============= =============
-APPDATA   	  User specific directory for :index:`application data` from Veyon, e.g. ```...\User\AppData\Veyon`` under Windows or ``~/.veyon`` under Linux
+APPDATA   	  User specific directory for :index:`application data` from Veyon, e.g. ``...\User\AppData\Veyon`` under Windows or ``~/.veyon`` under Linux
 HOME, PROFILE :index:`Home directory` of the signed in user, e.g. ``C:\Users\Admin`` under Windows or ``/home/admin`` under Linux
 GLOBALAPPDATA System-wide directory for application data from Veyon, e.g. ``C:\ProgramData\Admin`` under Windows or ``/home/admin`` under Linux
 TMP, TEMP	  User specific directory for :index:`temporary files`, under Windows ``C:\Windows\Temp`` is used for the Veyon Service and ``/tmp`` under Linux
 ============= =============
 
 
-.. _ServiceParameters:
+.. _RefEnvironmentVariables:
 
-Program Parameters for Veyon Service
-------------------------------------
+Environment variables
+---------------------
 
-Dependening on the operating system under which Veyon is run, the Veyon Service can take various
-:index:`program parameters`. The desired parameters have to be entered in the :ref:`general service settings <ServiceGeneral>`.
+Veyon evaluates different optional environment variables allowing to override defaults for runtime settings such as session ID, log level and authentication keys to use.
 
-====================== ================= =======
-Parameter              Operating System  Meaning
-====================== ================= =======
-``-session <ID>``       *<all>*          An integer between ``0`` and ``99`` can be used as optional :index:`session-ID`, to have multiple instances of the Veyon Service running in different user sessions on the same computer. The session-ID is added to the number of the port configured in the :ref:`network settings`, such that each instace of the Veyon Service is working with different ports. You have to enter the absolute port (primary service port plus session-ID) together with the computer/IP-address, e.g. ``192.168.2.3:11104``.
-``<x11vnc-parameter>``  Linux			 The Veyon Service can take all parameters supported by the program ``x11vnc``. For more information on this topic, please see the `x11vnc manual <http://...>` _.
-====================== ================= =======
+========================= ========================
+Variable                  Description
+========================= ========================
+``VEYON_AUTH_KEY_NAME``   This variable allows to explicitely specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
+``VEYON_LOG_LEVEL``       This variable allows to override the configured log level at runtime, e.g. for debugging purposes.
+``VEYON_SESSION_ID``      This variable allows to specify the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically.
+========================= ========================
