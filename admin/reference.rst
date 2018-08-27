@@ -24,13 +24,6 @@ User interface
 
     **Default:** *use system language settings*
 
-:index:`High-DPI-Scaling`
-	In case Veyon is used on high resolution screens with a high pixel density (DPI>150) this option should be
-	activated. In this case the user interfaces are displayed larger such that readability especially of visual elements with
-	text caption is improved.
-
-	**Default:** *disabled*
-
 
 .. _RefLogging:
 
