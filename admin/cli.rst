@@ -145,10 +145,10 @@ As described in the section `ref:`Rooms and Computers`, Veyon provides a built-i
     This command outputs the complete network object directory as a flat table. Each property such as object UID, type or name is displayed as a separate column.
 
 ``export <FILE> [room <ROOM>] [format <FORMAT-STRING-WITH-VARIABLES>]``
-    This command can be used to export either the complete network object dictionary or only the specified room to a text file. The formatting can be controlled via a format string and the variables it contains, so that, for example, a CSV file can be generated. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%room%``.
+    This command can be used to export either the complete network object dictionary or only the specified room to a text file. The formatting can be controlled via a format string and the variables it contains, so that, for example, a CSV file can be generated. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%room%``. Various examples are given in the command help (``veyon-ctl networkobjects help export``).
 
 ``import <FILE> [room < SPACE>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]``
-    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression and contained variables. This way both CSV files and otherwise structured data can be imported. Valid variables are ``%name%``, ``%host%``, ``%mac%`` and ``%room%``. Various examples are given in the command help.
+    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression and contained variables. This way both CSV files and otherwise structured data can be imported. Valid variables are ``%name%``, ``%host%``, ``%mac%`` and ``%room%``. Various examples are given in the command help (``veyon-ctl networkobjects help import``).
 
 ``list``
     This command prints the complete network object directory as a formatted list. Unlike the ``dump`` command, the hierarchy of rooms and computers is represented by appropriate formatting.
