@@ -4,7 +4,7 @@ Introduction
 Veyon is an application that allows you to map, keep track of, control, and perform various functions on a centralized computer (such as a teacher's PC), a cluster of computers (such as classrooms or labs) and modes to use.
 
 Program start and registration
----------------------------
+------------------------------
 
 The program is started via the :index:`start menu` or an :index:`desktop icon`:
 
@@ -40,13 +40,33 @@ Using the :guilabel:`Computer rooms` and :guilabel:`Screenshots` buttons, you ca
 
 The search bar allows you to filter the computers displayed using search terms such as computer names or user names. Technically savvy users can even enter regular expressions here to implement advanced search filters.
 
-The |powered-on| button hides all computers that are not turned on or accessible. This allows simultaneous observation of a large number of computers or only partially occupied rooms while simultaneously focusing on the actually active computers.
+The |powered-on| (:guilabel:`Only show powered on computers`) button hides all computers that are not turned on or accessible. This allows simultaneous observation of a large number of computers or only partially occupied rooms while simultaneously focusing on the actually active computers.
 
-Use the slider to control the size of the computer screens displayed. With the :kbd:`Ctrl` key pressed, the size can also be changed using the mouse scroll wheel. An automatic adjustment to the optimal size is done by pressing the button |zoom-fit-best| (:guilabel:`Set optimal size`) to the right of it.
+Use the slider to control the size of the computer screens displayed. With the :kbd:`Ctrl` key pressed, the size can also be changed using the mouse scroll wheel. An automatic adjustment to the optimal size is done by pressing the button |zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it.
 
 Since Veyon 4.1 it is possible to use a user-defined computer arrangement, e.g. to map the actual arrangement of computers in the classroom. After activating the |exchange-positions-zorder| button (:guilabel:`Use custom computer placement`), each computer can be moved individually or in a selected group with the mouse button pressed and arranged as desired. To align all computers after arranging them, you can use the |align-grid| button (:guilabel:`Align computers to grid`). If the sorted default arrangement is to be used again, simply deactivate the |exchange-positions-zorder| button.
 
-The |help-about| (:guilabel:`About`) button opens a dialog with information about Veyon such as version, manufacturer and license terms.
+The |help-about| button (:guilabel:`About`) opens a dialog with information about Veyon such as version, manufacturer and license terms.
+
+.. |zoom-fit-best| image:: images/zoom-fit-best.png
+  :scale: 20%
+  :align: middle
+
+.. |align-grid| image:: images/align-grid.png
+  :scale: 20%
+  :align: middle
+
+.. |exchange-positions-zorder| image:: images/exchange-positions-zorder.png
+  :scale: 20%
+  :align: middle
+
+.. |powered-on| image:: images/powered-on.png
+  :scale: 20%
+  :align: middle
+
+.. |help-about| image:: images/help-about.png
+  :scale: 20%
+  :align: middle
 
 
 .. _Toolbar:
