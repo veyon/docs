@@ -238,6 +238,8 @@ There are several LDAP specific opertions provided through the :ref:`CommandLine
 
     ``veyon-ctl ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/``
 
+.. hint:: Special characters especially in the password (such as ``@`` or ``:``) can be encoded using `URL percent-encoding <https://en.wikipedia.org/wiki/Percent-encoding>`_.
+
 ``query``
     This command allows querying LDAP objects (``rooms``, ``computers``, ``groups``, ``users``) and is designed mainly for debugging purposes. However, the function can also be used for developing scripts that may be helpful for system integration.
 
