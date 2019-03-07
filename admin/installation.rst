@@ -63,19 +63,19 @@ Install Veyon in *silent* mode:
 
 .. code-block:: none
 
-	veyon-x.y.z-win64-setup.exe /S
+    veyon-x.y.z-win64-setup.exe /S
 
 Uninstall Veyon in *silent* mode:
 
 .. code-block:: none
 
-	C:\Program Files\Veyon\uninstall.exe /S
+    C:\Program Files\Veyon\uninstall.exe /S
 
 Specify an :index:`installation directory` for an automated installation:
 
 .. code-block:: none
 
-	veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
+    veyon-x.y.z-win64-setup.exe /S /D=C:\Veyon
 
 .. note:: Because of a shortcoming of the installer software (NSIS) the option ``/D=...`` always has to be the last argument.
 
@@ -85,7 +85,7 @@ Apply Veyon configuration automatically after the installation:
 
 .. code-block:: none
 
-	veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
+    veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
 
 .. important:: You must provide an absolute path to the :index:`configuration file`, since the internally called command line tool (*Veyon Control*) is not listed as working directory in the installation directory. Please use either the suggested ``%cd``-variable or replace with an absolute path.
 
@@ -93,10 +93,10 @@ Automated installation without Veyon Master:
 
 .. code-block:: none
 
-	veyon-x.y.z-win64-setup.exe /S /NoMaster
+    veyon-x.y.z-win64-setup.exe /S /NoMaster
 
 Delete all Veyon-related settings during uninstalling:
 
 .. code-block:: none
 
-	C:\Program Files\Veyon\uninstall.exe /ClearConfig
+    C:\Program Files\Veyon\uninstall.exe /ClearConfig

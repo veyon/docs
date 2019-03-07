@@ -229,20 +229,20 @@ After successful configuration of the LDAP integration, the LDAP backend can be 
 Command line interface
 ----------------------
 
-There are several LDAP specific opertions provided through the :ref:`CommandLineInterface` of Veyon. All operations are provided through the ``ldap`` module. All list of all supported commands is printed on entering ``veyon-ctl ldap help``, whilst command specific help texts can be shown via ``veyon-ctl ldap help <Command>``.
+There are several LDAP specific opertions provided through the :ref:`CommandLineInterface` of Veyon. All operations are provided through the ``ldap`` module. All list of all supported commands is printed on entering ``veyon-cli ldap help``, whilst command specific help texts can be shown via ``veyon-cli ldap help <Command>``.
 
 ``autoconfigurebasedn``
     This command can be used to automatically determine the used Base DN and permanently write it to the configuration. An LDAP server URL and optionally a naming context attribute have to be supplied as parameters:
 
-    ``veyon-ctl ldap autoconfigurebasedn ldap://192.168.1.2/ namingContexts``
+    ``veyon-cli ldap autoconfigurebasedn ldap://192.168.1.2/ namingContexts``
 
-    ``veyon-ctl ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/``
+    ``veyon-cli ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/``
 
 .. hint:: Special characters such as ``@`` or ``:`` – especially in the password - can be specified by using `URL percent-encoding <https://en.wikipedia.org/wiki/Percent-encoding>`_.
 
 ``query``
     This command allows querying LDAP objects (``rooms``, ``computers``, ``groups``, ``users``) and is designed mainly for debugging purposes. However, the function can also be used for developing scripts that may be helpful for system integration.
 
-    ``veyon-ctl ldap query users``
+    ``veyon-cli ldap query users``
 
-    ``veyon-ctl ldap query computers``
+    ``veyon-cli ldap query computers``

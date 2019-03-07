@@ -80,7 +80,7 @@ Please make sure that:
 Automated switching to the current room doesn't work
 ----------------------------------------------------
 
-If the :ref:`option for automated switching to the current room <RefRoomAutoSwitch>` is activated, but doesn't show any effect when starting Veyon Master, it should be ensured, that the master computer is set as computer for the respective room in the :ref:`RefNetworkObjectDirectory`. Independent from this option, the master computer can be hid in the computer room management using the option :ref:`Hide local computer in computer room management <RefAutoHideLocalComputer>`.
+If the :ref:`option for automated switching to the current room <RefAutoSelectLocation>` is activated, but doesn't show any effect when starting Veyon Master, it should be ensured, that the master computer is set as computer for the respective room in the :ref:`RefNetworkObjectDirectory`. Independent from this option, the master computer can be hid in the computer room management using the option :ref:`Hide local computer in computer room management <RefAutoHideLocalComputer>`.
 
 If all entries in the network object directory are correct, there arguably is a problem with the DNS-configuration in the network. Make sure that computer names can be converted into IP-addresses and vice versa. Most common operating systems offer the diagnosis tool ``nslookup`` for this purpose. Calling the program with the local computer name as a parameter should return a valid IP-address. A second call with the returned IP-address should
 in turn return the computer name.
@@ -101,7 +101,7 @@ Please make sure that:
 
 * the demo server's port under :ref:`RefNetwork` on configuration page :guilabel:`Service` is set to a default value of ``11400``.
 * all firewall exceptions for the master computer are activated on configuration page :guilabel:`Service` or a used third-party firewall is configured to allow incoming connections on port ``11400``.
-* the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). In a rule set there may exist a rule prohibiting access to a computer if a teacher is signed in. In this case you should create a rule with activated condition *accessing computer is localhost* as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher PC's screen content and distribute it to the client computers.  
+* the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). In a ruleset there may exist a rule prohibiting access to a computer if a teacher is signed in. In this case you should create a rule with activated condition *accessing computer is localhost* as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher PC's screen content and distribute it to the client computers.
 
 The server crashes with XIO or XCB errors on Linux
 ---------------------------------------------------

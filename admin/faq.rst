@@ -64,5 +64,5 @@ All you need to do is enable the option :ref:`Hide local computer <RefAutoHideLo
 What happens if there is no matching access control rule?
 ---------------------------------------------------------
 
-If there is no previously defined access control rule that matches all activated conditions, access is denied and the connection is closed. In doing so we prohibit that an attacker may have access because of an unfinished rule set.
+If there is no previously defined access control rule that matches all activated conditions, access is denied and the connection is closed. In doing so we prohibit that an attacker may have access because of an unfinished ruleset.
 

@@ -51,22 +51,22 @@ In detail there are several :index:`program components` that interact with each 
    :align: center
 
 :index:`Veyon Master`
-	An application program that can be used for monitoring and controlling other computers as well as for accessing Veyon features. Usually the program is started by the end user. It accesses other computers through the Veyon Service.
+    An application program that can be used for monitoring and controlling other computers as well as for accessing Veyon features. Usually the program is started by the end user. It accesses other computers through the Veyon Service.
 
 :index:`Veyon Service`
-	A non-graphical service application which monitors user sessions on a computer and starts Veyon Server instances within these sessions. The service and its server subprocesses are required to run on all computers including teacher computers.
+    A non-graphical service application which monitors user sessions on a computer and starts Veyon Server instances within these sessions. The service and its server subprocesses are required to run on all computers including teacher computers.
 
 :index:`Veyon Server`
-	A server application which provides access to a computer as well as control and application functions. Under normal conditions this program is started by the Veyon Service automatically and with elevated privileges so it can't be terminated by users.
+    A server application which provides access to a computer as well as control and application functions. Under normal conditions this program is started by the Veyon Service automatically and with elevated privileges so it can't be terminated by users.
 
 :index:`Veyon Worker`
-	A helper program started by the server to provide specific functions in an isolated environment or in the context of the user that is currently logged in. Those specific functions include the demo server for the teacher computer and the demo client on the student computers.
+    A helper program started by the server to provide specific functions in an isolated environment or in the context of the user that is currently logged in. Those specific functions include the demo server for the teacher computer and the demo client on the student computers.
 
 :index:`Veyon Configurator`
-	A :index:`configuration tool` which allows to configure and customize all components of a local Veyon installation through a graphical user interface. The program is started by the administrator with elevated privileges whenever necessary.
+    A :index:`configuration tool` which allows to configure and customize all components of a local Veyon installation through a graphical user interface. The program is started by the administrator with elevated privileges whenever necessary.
 
-:index:`Veyon Control`
-	A command line tool that in addition to the Veyon Configurator allows various configuration adjustments, automated tasks and the use of some Veyon functions without graphical interaction. The program is run either interactively on the command line or script controlled with usually elevated privileges.
+:index:`Veyon CLI`
+    A command line tool that in addition to the Veyon Configurator allows various configuration adjustments, automated tasks and the use of some Veyon functions without graphical interaction. The program is run either interactively on the command line or script controlled with usually elevated privileges.
 
 
 Network architecture
