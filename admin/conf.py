@@ -158,4 +158,5 @@ texinfo_documents = [
 ]
 
 
-
+locale_dirs = [ 'locale/' ]
+gettext_compact = True
