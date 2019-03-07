@@ -11,7 +11,7 @@ Currently Veyon is only available for Linux- or Windows-based environments. Supp
 How can I add computers in order to access them?
 ------------------------------------------------
 
-If the default :ref:`RefNetworkObjectDirectory` is used, all you need to do is add the appropriate rooms and computers on the :ref:`ConfRoomsAndComputers` configuration page. Afterwards the added resources are available in the Veyon master.
+If the default :ref:`RefNetworkObjectDirectory` is used, all you need to do is add the appropriate rooms and computers on the :ref:`ConfLocationsAndComputers` configuration page. Afterwards the added resources are available in the Veyon master.
 
 If :ref:`LDAP/AD Integration <LDAP>` is configured the network object directory has to be changed to *LDAP* so that the computers from the directory are displayed in the Veyon master.
 
@@ -52,7 +52,7 @@ How can I import or export the selection of displayed computers?
 
 The selection of displayed computers is saved in the personal :ref:`user configuration <RefUserConfiguration>`. To extend this more multiple user, there a two options. First, the user configuration file can be copied into the respective profile of the user, using login scripts for example. Second the user configuration can be moved to a shared directory (e.g. a network drive) and the :ref:`setting <RefUserConfiguration>` has to be changed accordingly, such that the user configuration is loaded from this directory. However, you have to ensure that the access rights may have to be changed, for that changes made by the user are not rewritten into the global user configuration.
 
-In this context we point you to the function for :ref:`Automatic switch to current classroom <RefRoomAutoSwitch>`, that may permit to realize the desired behavior directly.
+In this context we point you to the function for :ref:`Automatic switch to current classroom <RefAutoSelectLocation>`, that may permit to realize the desired behavior directly.
 
 
 How can I hide the master computer from computer rooms?

@@ -21,7 +21,7 @@ The settings in the configuration page :ref:`RefService` influence the functiona
 
 All setting on configuration page :ref:`RefMaster` only affect the behavior and functions of the Veyon Master and apply system-wide for all users.
 
-.. hint:: For a :index:`quick start` to get to know the software you only need to add a room and individual computers in configuration page :ref:`ConfRoomsAndComputers`. After the configuration has been :ref:`exported to all computers <ConfImportExport>` the Veyon Master can already be started and used. It should be ensured that the user used at logon exists with the same password on all computers.
+.. hint:: For a :index:`quick start` to get to know the software you only need to add a room and individual computers in configuration page :ref:`ConfLocationsAndComputers`. After the configuration has been :ref:`exported to all computers <ConfImportExport>` the Veyon Master can already be started and used. It should be ensured that the user used at logon exists with the same password on all computers.
 
 .. index:: Authentication, Authentication methods
 
@@ -104,14 +104,14 @@ Setup is done from the :guilabel:`Access control` configuration page and is desc
 .. important:: The configuration of the access control is like all settings part of the local Veyon configuration. The configuration must therefore be :ref:`transferred to all other computers <ConfImportExport>` to work properly.
 
 
-.. index:: Rooms and computers
+.. index:: Locations and computers
 
-.. _ConfRoomsAndComputers:
+.. _ConfLocationsAndComputers:
 
-Rooms & computers
------------------
+Locations & computers
+---------------------
 
-In the configuration page :guilabel:`Rooms & computers` you can create the :index:`rooms and computers` that are displayed in Veyon Master when the :ref:`RefNetworkObjectDirectory`-backend *Builtin* is used. Unlike backends such as :ref:`LDAP <LDAP>` this information is stored in the local configuration and must therefore be transferred to all computers.
+In the configuration page :guilabel:`Locations & computers` you can create the :index:`rooms and computers` that are displayed in Veyon Master when the :ref:`RefNetworkObjectDirectory`-backend *Builtin* is used. Unlike backends such as :ref:`LDAP <LDAP>` this information is stored in the local configuration and must therefore be transferred to all computers.
 
 The configuration page consists of two lists. The left list contains all configured rooms. Using the two buttons below the list, rooms may be added or deleted. Existing rooms can be edited and renamed by double-clicking.
 
