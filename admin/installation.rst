@@ -9,7 +9,7 @@ Hardware and software requirements
 Veyon is designed to run on standard computers running Windows or Linux. The :index:`minimum requirements` for the hardware depend on the usage scenario and size of the environment in which Veyon is deployed. While there are no special requirements for client computers all master computers should be equipped with enough RAM and processors to monitor the desired number of client computers.
 
 * At least 2 GB RAM - Veyon Master requires 20-30 MB per client computer, depending on the client's screen resolution
-* Multi-core system (2-4 CPUs) highly recommended
+* Multi-core system (2-4 CPU cores) highly recommended
 
 All computers must be connected through a TCP-/IP-compatible network. Both wired and wireless network connections work. For using Veyon with more than 10 computers a Gigabit network is recommended, otherwise the performance of the demo mode feature (see user manual) may not be satisfactory. The same applies to wireless networks (:index:`Wifi`) where at least the IEEE 802.11n standard should be used.
 

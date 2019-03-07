@@ -39,11 +39,11 @@ For a rule to be processed, one or more :index:`conditions` must apply.
 User is member of group
     With this condition you can define that either the accessing or the locally logged on user must be a member of a specific group. The desired group can be chosen. If no or only wrong groups are selectable, the *User groups backend* under the general settings for :ref:`ComputerAccessControl` may have to be adjusted.
 
-Computer is located in room
-    With this condition you can define that either the accessing or the local computer has to be located in a specific room. The desired room can be chosen. If no or only wrong rooms are selectable, the :ref:`RefNetworkObjectDirectory` has to be adjusted.
+Computer is located at
+    With this condition you can define that either the accessing or the local computer has to be located at a specific location. The desired location can be chosen. If no or only wrong locations are selectable the :ref:`RefNetworkObjectDirectory` has to be adjusted.
 
-Accessing computer is located in the same room as local computer
-    With this condition you can determine that the accessing computer and the local computer have to be located in the same room. This can for example prevent a teacher from accessing computers in another classroom.
+Accessing computer and local computer are at the same location
+    With this condition you can determine that the accessing computer and the local computer have to be located at the same location. This can for example prevent a teacher from accessing computers in another classroom.
 
 Accessing computer is :index:`localhost`
     If this condition is enabled, the rule applies only if the accessing computer is the local computer. This ensures for example that teachers can access the local Veyon Service. This access is necessary for the Veyon Master to execute specific functions via the Veyon Service (e.g. the server for demo mode).
@@ -55,7 +55,7 @@ Accessing user is logged on user
     As an alternative to the condition *accessing computer is localhost* you can also allow a user to access his own sessions. This condition must be activated for this purpose.
 
 Accessing user is already connected
-    In conjunction with the condition *accessing computer is located in the same room as the local computer* an extended ruleset can be created allowing access to other rooms under certain conditions. This includes the possibility to access a computer if the accessing user is already connected. For example, if the teacher logs on to a teacher computer in room A and B simultaneously and displays the computers of room B displayed in Veyon Master, the computers in room B have a connection from the teacher. Then the teacher can also access room B from Veyon Master in room A if this condition is activated with an allow action.
+    In conjunction with the condition *Accessing computer and local computer are at the same location* an extended ruleset can be created allowing access to other locations under certain conditions. This includes the possibility to access a computer if the accessing user is already connected. For example, if the teacher logs on to a teacher computer in room A and B simultaneously and displays the computers of room B displayed in Veyon Master, the computers in room B have a connection from the teacher. Then the teacher can also access room B from Veyon Master in room A if this condition is activated with an allow action.
 
 No user logged on
     This condition determines how a computer can be accessed when no user is logged on. For example, to assist with computer administration, it can be helpful to always be able to access a computer when no user is logged in.

@@ -20,7 +20,7 @@ User interface
 :index:`Language`
 	The selected language can be configured for the graphical user interfaces as well as the command line tools. You can choose from all languages which have been translated so far. Please note that changing the language will require a program restart in order to take effect. Per default Veyon uses the language of the operating system if a translation is available for that language. Otherwise English will be used as a fallback.
 
-    **Default:** *use system language settings*
+    **Default:** *Use system language setting*
 
 
 .. _RefAuthentication:
@@ -40,7 +40,7 @@ The :ref:`Configuration` chapter describes the :ref:`ConfAuthenticationMethods` 
 Network object directory
 ++++++++++++++++++++++++
 
-In Veyon a :index:`NetworkObjectDirectory` provides information about :index:`network objects`. Network objects can either be computers or their locations. The data supplied by the network object directory is used by Veyon Master to populate the :index:`locations & computers view` with entries. The data from the network object directory is also used for access control rules making use of computer location information. By default a backend is used which stores computers and locations in the local Veyon configuration and queries them from the configuration whenever required. See section :ref:`ConfLocationsAndComputers` for details.
+In Veyon a :index:`Network object directory` provides information about :index:`network objects`. Network objects can either be computers or their locations. The data supplied by the network object directory is used by Veyon Master to populate the :index:`locations & computers view` with entries. The data from the network object directory is also used for access control rules making use of computer location information. By default a backend is used which stores computers and locations in the local Veyon configuration and queries them from the configuration whenever required. See section :ref:`ConfLocationsAndComputers` for details.
 
 :index:`Backend`
 	You can use this setting to set the desired backend for the network object directory. Depending on the installation there may be several backends such as :ref:`LDAP` available beside the default backend.
@@ -112,7 +112,7 @@ General
 
 	**Default:** *disabled*
 
-index:`Show notification` on failed authentication attempts
+:index:`Show notification` on failed authentication attempts
     This option specifies whether a notification should be displayed if there was a failed logon attempt to the Veyon Service. These messages usually indicate that the authentication settings are not set up correctly. Typical failure reasons are invalid authentication keys or (when using logon authentication) invalid user credentials (username/password).
 
     **Default:** *enabled*
@@ -216,7 +216,7 @@ In order to make a configuration generic and independent of the user, you should
 Thumbnail update interval
     This setting determines the time interval in which the computer thumbnails in Veyon Master are updated. The shorter the interval, the higher the processor load on the master machine and the overall network load.
 
-    **Default:*** *1000 ms*
+    **Default:** *1000 ms*
 
 Background color
     This setting allows to customize the background color of the computer monitoring view.
@@ -246,19 +246,19 @@ In the tab :guilabel:`Behaviour` settings are available to change the behaviour 
 
 **Program start**
 
-Perform access control at program start
+Perform access control
 	You can use this option to define whether the possibly configured :ref:`ComputerAccessControl` should also be perform whenever the Veyon Master is started. Even though access control is enforced client-side in every case, this additional option assures, that users without proper access rights can not even start the Veyon Master, making security even more visible.
 
 	**Default:** *disabled*
 
 .. _RefAutoSelectLocation:
 
-Automatically select current location at start
+Automatically select current location
 	By default all computers that have been selected the previous time are displayed after starting Veyon Master. If you want to display all computers at the master computer's location instead, this option can be enabled. Veyon Master will then try to determine the location of the local computer by using the configured :ref:`RefNetworkObjectDirectory`. All computers at the same location will then be selected and displayed. For this function to work properly, a correctly functioning DNS setup in the network is required such that both computer names can be resolved to IP addresses and reverse lookups for IP addresses return valid computer names.
 
 	**Default:** *disabled*
 
-Automatically adjust computer thumbnail size at start
+Automatically adjust computer thumbnail size
 	If the size of the computer thumbnails should be adjusted automatically upon starting Veyon Master (same effect as clicking the :guilabel:`Auto` button manually), this option can be enabled. The previously configured size will be ignored. This functionality is especially useful in conjunction with the :ref:`automatic location change <RefAutoSelectLocation>`.
 
 	**Default:** *disabled*
@@ -308,7 +308,7 @@ Enforce selected mode for client computers
 
 	**Default:** *disabled*
 
-Show confirm dialog for potential dangerous actions
+Show confirm dialog for potentially unsafe actions
 	Actions such as rebooting a computer or logging off users can have bad side effects such as data loss due to unsaved files. In order to prevent unintentional activation of such features a confirmation dialog can be enabled through this option.
 
 	**Default:** *disabled*
