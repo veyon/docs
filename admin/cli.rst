@@ -5,7 +5,7 @@
 Command line interface
 ======================
 
-For administrative tasks, the *Veyon Configurator* and the command line tool *Veyon CLI* are available. The program can be started via the command ``veyon-cli`` in the command line. On Windows there's an additional non-console version ``veyon-wcli`` which allows to automate tasks without irritating command line window popups. If the ``$PATH`` (Linux) or ``%PATH%`` (Windows) environment variable does not contain the Veyon installation directory, you must first change to the installation directory or prepend the directory to the program name.
+For administrative tasks, the *Veyon Configurator* and the command line tool *Veyon CLI* are available. The program can be started via the command ``veyon-cli`` in the command line. On Windows there's an additional non-console version ``veyon-wcli`` which allows to automate tasks without irritating command line window popups. If the :envvar:`$PATH` (Linux) or :envvar:`%PATH%` (Windows) environment variable does not contain the Veyon installation directory, you must first change to the installation directory or prepend the directory to the program name.
 
 If the program is called with the ``help`` parameter, a list of all available modules is displayed. The list can vary depending on the installed Veyon plugins:
 
@@ -50,25 +50,32 @@ Authentication key management
 
 The ``authkeys`` module allows the management of authentication keys so that common operations such as importing an authentication key or assigning a user group can be automated easily.
 
-``create <NAME>``
+.. describe:: create <NAME>
+
     This command creates a authentication key pair with name <NAME> and saves private and public key to the configured key directories. The parameter must be a name for the key, which may only contain letters.
 
-``delete <KEY>``
+.. describe:: delete <KEY>
+
     This command deletes the authentication key <KEY> from the configured key directory. Please note that a key can't be recovered once it has been deleted.
 
-``export <KEY> [<FILE>]``
+.. describe:: export <KEY> [<FILE>]
+
     This command exports the <KEY> to <FILE> authentication key. If <FILE> is not specified a name will be constructed from name and type of <KEY>.
 
-``extract <KEY>``
+.. describe:: extract <KEY>
+
     This command extracts the public key part from the private key <KEY> and saves it as the associated public key. When setting up another master computer, it is therefore sufficient to transfer the private key only. The public key can then be extracted.
 
-``import <KEY> [<FILE>]``
+.. describe:: import <KEY> [<FILE>]
+
     This command imports the authentication key <KEY> from <FILE>. If <FILE> is not specified a name will be constructed from name and type of <KEY>.
 
-``list [details]``
-    This command lists all available authentication keys in the configured key directory. If the option "details" option is specified a table with key details will be displayed instead. Some details might be missing if a key is not accessible e.g. due to the lack of read permissions.
+.. describe:: list [details]
 
-``setaccessgroup <KEY> <ACCESS GROUP>``
+    This command lists all available authentication keys in the configured key directory. If the ``details`` option is specified a table with key details will be displayed instead. Some details might be missing if a key is not accessible e.g. due to the lack of read permissions.
+
+.. describe:: setaccessgroup <KEY> <ACCESS GROUP>
+
     This command adjusts file access permissions to <KEY> such that only the user group <ACCESS GROUP> has read access to it.
 
 
@@ -79,48 +86,58 @@ Configuration management
 
 The local Veyon configuration can be managed using the ``config`` module. Both the complete configuration as individual `:index:`configuration keys` can be read or written.
 
-``clear``
-    This command resets the entire local configuration by deleting all configuration keys. Use this command to recreate a defined state without old settings before importing a configuration:
+.. describe:: clear
 
-    ``veyon-cli config clear``
+    This command resets the entire local configuration by deleting all configuration keys. Use this command to recreate a defined state without old settings before importing a configuration.
 
-``export``
+.. describe:: export
+
     This command exports the local configuration to a file. The name of the destination file must be specified as an additional parameter:
 
-    ``veyon-cli config export myconfig.json``
+    .. code-block:: none
 
-``import``
+        veyon-cli config export myconfig.json
+
+.. describe:: import
+
     This command imports a previously exported configuration file into the local configuration. The name of the configuration file to be imported must be specified as an additional argument:
 
-    ``veyon-cli config import myconfig.json``
+    .. code-block:: none
 
-``list``
-    This command shows a list of all configuration keys and their corresponding values.
+        veyon-cli config import myconfig.json
 
-    ``veyon-cli config list``
+.. describe:: list
 
-    This way you can get the names of the configuration keys in order to read or write them individually via the ``get`` or ``set`` commands.
+    This command shows a list of all configuration keys and their corresponding values. This way you can get the names of the configuration keys in order to read or write them individually via the ``get`` or ``set`` commands.
 
-``get``
+.. describe:: get
+
     This command allows reading a single configuration key. The name of the key must be supplied as a parameter.
 
-    ``veyon-cli config get Network/PrimaryServicePort``
+    .. code-block:: none
 
-``set``
+        veyon-cli config get Network/PrimaryServicePort
+
+.. describe:: set
+
     This command can be used to write a single configuration key. The name of the key and the desired value must be passed as additional arguments:
 
-    ``veyon-cli config set Network/PrimaryServicePort 12345``
+    .. code-block:: none
 
-    ``veyon-cli config set Service/Autostart true``
+        veyon-cli config set Network/PrimaryServicePort 12345
+        veyon-cli config set Service/Autostart true
+        veyon-cli config set UI/Language de_DE
 
-    ``veyon-cli config set UI/Language de_DE``
+.. describe:: unset
 
-``unset``
     With this command a single configuration key can be deleted, i.e. Veyon then uses the internal :index:`default value`. The name of the key must be passed as an additional argument:
 
-    ``veyon-cli config unset Directories/Screenshots``
+    .. code-block:: none
 
-``upgrade``
+        veyon-cli config unset Directories/Screenshots
+
+.. describe:: upgrade
+
     With this command the configuration of Veyon and all plugins can be updated and saved. This may be necessary if settings or configuration formats have changed due to program or plugin updates.
 
 
@@ -136,25 +153,32 @@ Network object directory
 
 As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a built-in network object directory that can be used when no LDAP server is available. This network object directory can be managed in the Veyon Configurator as well as on the command line. Certain operations such as CSV import are currently only available on the command line. For most commands, a detailed description with examples is available in the command-specific help. The following commands can be used in the ``networkobjects`` module:
 
-``add <TYPE> <NAME> [<HOST ADDRESS> <MAC ADDRESS> <PARENT>]``
+.. describe:: add <TYPE> <NAME> [<HOST ADDRESS> <MAC ADDRESS> <PARENT>]
+
     This command adds an object, where ``<TYPE>`` can be ``location`` or ``computer``. ``<PARENT>`` can be specified as name or UUID.
 
-``clear``
+.. describe:: clear
+
     This command resets the entire network object directory, i.e. all locations and computers are removed. This operation is particularly useful before any automated import.
 
-``dump``
+.. describe:: dump
+
     This command outputs the complete network object directory as a flat table. Each property such as object UID, type or name is displayed as a separate column.
 
-``export <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>]``
+.. describe:: export <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>]
+
     This command can be used to export either the complete network object dictionary or only the specified location to a text file. The formatting can be controlled via a format string with variables inside. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
 
-``import <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]``
+.. describe:: import <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]
+
     This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression with variables inside. This way both CSV files and other types of structured data can be imported. Valid variables are ``%name%``, ``%host%``, ``%mac%`` and ``%room%``. Various examples are given in the command help (``veyon-cli networkobjects help import``).
 
-``list``
+.. describe:: list
+
     This command prints the complete network object directory as a formatted list. Unlike the ``dump`` command, the hierarchy of locations and computers is represented by appropriate formatting.
 
-``remove <OBJECT>``
+.. describe:: remove <OBJECT>
+
     This command removes the specified object from the directory. OBJECT can be specified by name or UUID. Removing a location will also remove all related computers.
 
 
@@ -163,7 +187,8 @@ Power
 
 The ``power`` module allows to use power-related functions from the command line.
 
-``on <MAC ADDRESS>``
+.. describe:: on <MAC ADDRESS>
+
     This command broadcasts a Wake-on-LAN (WOL) packet to the network in order to power on the computer with the given MAC address.
 
 
@@ -172,16 +197,21 @@ Remote access
 
 The ``remoteaccess`` module provides functions for a graphical remote access to computers. These are the same function that can be accessed from the Veyon Master. The function provided by the command line tool can be used for example to create an :index:`program shortcut` for direct access to a specific computer.
 
-``control``
+.. describe:: control
+
     This command opens a window with the :index:`remote control` function that can be used to control a remote computer. The computer name or IP address (and optionally the TCP port) must be passed as an argument:
 
-    ``veyon-cli remoteaccess control 192.168.1.2``
-    ``veyon-cli remoteaccess control 192.168.1.2``
+    .. code-block:: none
 
-``view``
+        veyon-cli remoteaccess control 192.168.1.2
+
+.. describe:: view
+
     This command opens a window with the :index:`remote view` function to monitor a remote computer. In this mode the screen content is displayed in real time, but interaction with the computer is not possible until the corresponding button on the tool bar has been clicked. The computer or IP address (and optionally the TCP port) has to be passed as an argument:
 
-    ``veyon-cli remoteaccess view pc5:5900``
+    .. code-block:: none
+
+        veyon-cli remoteaccess view pc5:5900
 
 
 Service control
@@ -189,35 +219,29 @@ Service control
 
 The ``service`` module can be used to control the local Veyon Service.
 
-``register``
+.. describe:: register
+
     This command registers the Veyon Service as a service in the operating system so that it is automatically started when the computer boots.
 
-    ``veyon-cli service register``
+.. describe:: unregister
 
-``unregister``
     This command removes the :index:`service registration` in the operating system so that the Veyon Service us no longer automatically started at boot time.
 
-    ``veyon-cli service unregister``
+.. describe:: start
 
-``start``
     This command starts the Veyon Service.
 
-    ``veyon-cli service start``
+.. describe:: stop
 
-``stop``
     This command stops the Veyon Service.
 
-    ``veyon-cli service stop``
+.. describe:: restart
 
-``restart``
     This command restarts the Veyon Service.
 
-    ``veyon-cli service restart``
+.. describe:: status
 
-``status``
     This command queries and displays the status of the Veyon Service.
-
-    ``veyon-cli service status``
 
 
 Shell
@@ -227,6 +251,7 @@ Simple shell functionalities are provided by the ``shell`` module. If this modul
 
 Furthermore the module can be used for automated processing of commands in a text file in order to implement simple batch processing:
 
-``run <FILE>``
+.. describe:: run <FILE>
+
     This command executes the commands specified in the text file line by line. Operations are executed independently of the result of previous operations, i.e. an error does not lead to termination.
 

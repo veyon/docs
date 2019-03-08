@@ -432,14 +432,21 @@ Placeholder variables for file paths
 
 :index:`Placeholder variables` have to be supplied in the format ``%VARIABLE%`` on all platforms.
 
-=================== =============
-Variable            Expanded path
-=================== =============
-``%APPDATA%``       User-specific directory for :index:`application data` stored by Veyon, e.g. ``...\User\AppData\Veyon`` on Windows or ``~/.veyon`` on Linux
-``%HOME%``          :index:`Home directory`/:index:`User profile directory` of the logged on user, e.g. ``C:\Users\Admin`` on Windows or ``/home/admin`` on Linux
-``%GLOBALAPPDATA%`` System-wide directory for Veyon's application data,  e.g. ``C:\ProgramData\Veyon`` on Windows or ``/etc/veyon`` on Linux
-``%TEMP%``          User specific directory for :index:`temporary files`, on Windows ``C:\Windows\Temp`` is used for the Veyon Service and ``/tmp`` on Linux
-=================== =============
+.. describe:: %APPDATA%
+
+    This variable is expanded to the user-specific directory for :index:`application data` stored by Veyon, e.g. :file:`...\\User\\AppData\\Veyon` on Windows or :file:`~/.veyon` on Linux
+
+.. describe:: %HOME%
+
+    This variable is expanded to the :index:`home directory`/:index:`user profile directory` of the logged on user, e.g. :file:`C:\\Users\\Admin` on Windows or :file:`/home/admin` on Linux
+
+.. describe:: %GLOBALAPPDATA%
+
+    This variable is expanded to the system-wide directory for Veyon's application data,  e.g. :file:`C:\\ProgramData\\Veyon` on Windows or :file:`/etc/veyon` on Linux
+
+.. describe:: %TEMP%
+
+    This variable is expanded to the user-specific directory for :index:`temporary files`, on Windows :file:`C:\\Windows\\Temp` is used for the Veyon Service and :file:`/tmp` on Linux
 
 
 .. _RefEnvironmentVariables:
@@ -449,10 +456,14 @@ Environment variables
 
 Veyon evaluates various optional environment variables allowing to override default settings for runtime settings such as session ID, log level and authentication keys to use.
 
-========================= ========================
-Variable                  Description
-========================= ========================
-``VEYON_AUTH_KEY_NAME``   This variable allows to explicitely specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
-``VEYON_LOG_LEVEL``       This variable allows to override the configured log level at runtime, e.g. for debugging purposes.
-``VEYON_SESSION_ID``      This variable allows to specify the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port (Primary service port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.
-========================= ========================
+.. envvar:: VEYON_AUTH_KEY_NAME
+
+    This variable allows to explicitely specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
+
+.. envvar:: VEYON_LOG_LEVEL
+
+    This variable allows to override the configured log level at runtime, e.g. for debugging purposes.
+
+.. envvar:: VEYON_SESSION_ID
+
+    This variable allows to specify the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port (Primary service port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.
