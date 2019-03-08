@@ -143,7 +143,7 @@ Network
 
     **Default:** *11100*
 
-Interval VNC server port
+Internal VNC server port
     You can use this setting to define the (localhost only) network port used by the internal :index:`VNC server`. The VNC server will only listen to it at ``localhost`` so it never is reachable from the network directly. It's solely accessed by the Veyon Service which forwards screen data from and user inputs to the internal VNC server.
 
     **Default:** *11200*
@@ -242,7 +242,7 @@ Sort order
 Behaviour
 +++++++++
 
-In the tab :guilabel:`Behaviour` settings are available to change the behaviour of Veyon Master regarding to *program start*, *computer rooms* as well as *modes and features*.
+In the tab :guilabel:`Behaviour` settings are available to change the behaviour of Veyon Master regarding to *program start*, *computer locations* as well as *modes and features*.
 
 **Program start**
 
@@ -308,15 +308,15 @@ Enforce selected mode for client computers
 
     **Default:** *disabled*
 
-Show confirm dialog for potentially unsafe actions
-    Actions such as rebooting a computer or logging off users can have bad side effects such as data loss due to unsaved files. In order to prevent unintentional activation of such features a confirmation dialog can be enabled through this option.
+Show confirmation dialog for potentially unsafe actions
+    Actions such as rebooting a computer or logging off users can have undesired side effects such as data loss due to unsaved documents. In order to prevent unintentional activation of such features a confirmation dialog can be enabled through this option.
 
     **Default:** *disabled*
 
 Feature on :index:`double click`
     This setting allows to define a feature to be triggered whenever a computer is double-clicked. In most cases it's desired to use the *remote control* or *remote view* feature here.
 
-    **Default:** *<no function>*
+    **Default:** *no function*
 
 
 Features
@@ -384,7 +384,7 @@ Authentication keys
 Key file directories
 ++++++++++++++++++++
 
-Placeholder variables should be used for both base directories. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`. On Windows `UNC paths <https://de.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used instead of absolute paths.
+Placeholder variables should be used for both base directories. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`. On Windows `UNC paths <https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used instead of absolute paths.
 
 :index:`Public key file base directory`
     The specified base directory contains subdirectories for each key name (e.g. user role) with the actual public key file inside. This allows to set individual access permissions for the subdirectories. The public key files are placed in the corresponding subdirectory below the base directory on both creation and import. When loading the respective public key file for authentication the Veyon Service uses this base directory as well.
@@ -398,7 +398,7 @@ Placeholder variables should be used for both base directories. All information 
 
 
 
-Demo Server
+Demo server
 -----------
 
 In the configuration page for the demo server, you can make some fine tunings to improve the performance of the demo mode. These settings should only be changed if the performance is not satisfactory or if only a small network bandwidth is available for data transfer.
@@ -432,14 +432,14 @@ Placeholder variables for file paths
 
 :index:`Placeholder variables` have to be supplied in the format ``%VARIABLE%`` on all platforms.
 
-============= =============
-Variable      Expanded path
-============= =============
-APPDATA       User-specific directory for :index:`application data` stored by Veyon, e.g. ``...\User\AppData\Veyon`` on Windows or ``~/.veyon`` on Linux
-HOME          :index:`Home directory`/:index:`User profile directory` of the logged on user, e.g. ``C:\Users\Admin`` on Windows or ``/home/admin`` on Linux
-GLOBALAPPDATA System-wide directory for Veyon's application data,  e.g. ``C:\ProgramData\Veyon`` on Windows or ``/etc/veyon`` on Linux
-TMP, TEMP     User specific directory for :index:`temporary files`, on Windows ``C:\Windows\Temp`` is used for the Veyon Service and ``/tmp`` on Linux
-============= =============
+=================== =============
+Variable            Expanded path
+=================== =============
+``%APPDATA%``       User-specific directory for :index:`application data` stored by Veyon, e.g. ``...\User\AppData\Veyon`` on Windows or ``~/.veyon`` on Linux
+``%HOME%``          :index:`Home directory`/:index:`User profile directory` of the logged on user, e.g. ``C:\Users\Admin`` on Windows or ``/home/admin`` on Linux
+``%GLOBALAPPDATA%`` System-wide directory for Veyon's application data,  e.g. ``C:\ProgramData\Veyon`` on Windows or ``/etc/veyon`` on Linux
+``%TEMP%``          User specific directory for :index:`temporary files`, on Windows ``C:\Windows\Temp`` is used for the Veyon Service and ``/tmp`` on Linux
+=================== =============
 
 
 .. _RefEnvironmentVariables:
