@@ -16,8 +16,8 @@ builds = [
 	{ 'language': 'uk', 'paper': 'a4paper', 'babel': 'ukrainian' },
 ]
 
-for manual in [ 'admin', 'user' ]:
-	for i in builds:
+for i in builds:
+	for manual in [ 'admin', 'user' ]:
 		language = i['language']
 		print( 'Building for language "%s"' % ( language ) )
 		subprocess.Popen( ['msgfmt', 'locale/%s/LC_MESSAGES/%s.po' % ( language, manual ), '-o',
