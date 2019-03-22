@@ -433,6 +433,9 @@ msgid ""
 "directory. Please note that a key can't be recovered once it has been "
 "deleted."
 msgstr ""
+"Questo comando cancella la chiave di autenticazione <KEY> dalla directory "
+"delle chiavi configurata. Si prega di notare che una chiave non può essere "
+"recuperata una volta che è stata cancellata."
 
 msgid ""
 "This command exports the <KEY> to <FILE> authentication key. If <FILE> is "
@@ -2175,7 +2178,7 @@ msgid ""
 msgstr ""
 
 msgid "User login name attribute"
-msgstr ""
+msgstr "Attributo del nome di accesso dell'utente"
 
 msgid ""
 "This attribute must hold the login name of a user. The attribute is used to "
@@ -2221,6 +2224,8 @@ msgid ""
 "Hostnames stored as fully qualified domain names (FQDN, e.g. "
 "myhost.example.org)"
 msgstr ""
+"Nomi host memorizzati come nomi di dominio completi (FQDN, ad es. "
+"Myhost.example.org)"
 
 msgid ""
 "This option specifies whether to use the `fully qualified domain name (FQDN)"
@@ -2369,6 +2374,8 @@ msgstr ""
 msgid ""
 "Configured attribute for user login name or computer hostname (OpenLDAP)"
 msgstr ""
+"Attributo configurato per il nome di accesso dell'utente o il nome host del "
+"computer (OpenLDAP)"
 
 msgid ""
 "This option has to be chosen, if the login name of a user (username) or the "
@@ -2377,7 +2384,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer locations"
-msgstr ""
+msgstr "Ubicazioni del computer"
 
 msgid ""
 "Veyon offers several methods to represent computer locations in an LDAP "
@@ -3008,7 +3015,7 @@ msgid "**Program start**"
 msgstr ""
 
 msgid "Perform access control"
-msgstr ""
+msgstr "Eseguire il controllo degli accessi"
 
 msgid ""
 "You can use this option to define whether the possibly configured "
@@ -3020,7 +3027,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically select current location"
-msgstr ""
+msgstr "Seleziona automaticamente la posizione corrente"
 
 msgid ""
 "By default all computers that have been selected the previous time are "
@@ -3036,7 +3043,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically adjust computer thumbnail size"
-msgstr ""
+msgstr "Regola automaticamente le dimensioni della miniatura del computer"
 
 msgid ""
 "If the size of the computer thumbnails should be adjusted automatically upon"
@@ -3047,7 +3054,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically open computer select panel"
-msgstr ""
+msgstr "Apri automaticamente il pannello di selezione del computer"
 
 msgid ""
 "You can use this option to define that the computer select panel is opened "
@@ -3058,7 +3065,7 @@ msgid "**Computer locations**"
 msgstr ""
 
 msgid "Show current location only"
-msgstr ""
+msgstr "Mostra solo la posizione corrente"
 
 msgid ""
 "Per default, the computer select panel lists all locations provided by the "
@@ -3069,7 +3076,7 @@ msgid ""
 msgstr ""
 
 msgid "Allow adding hidden locations manually"
-msgstr ""
+msgstr "Consenti l'aggiunta di posizioni nascoste manualmente"
 
 msgid ""
 "When the option :ref:`Show current location only "
@@ -3090,7 +3097,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide empty locations"
-msgstr ""
+msgstr "Nascondi posizioni vuote"
 
 msgid ""
 "In some situations the :ref:`network object directory "
@@ -3123,6 +3130,8 @@ msgstr ""
 
 msgid "Show confirmation dialog for potentially unsafe actions"
 msgstr ""
+"Mostra la finestra di dialogo di conferma per le azioni potenzialmente "
+"pericolose"
 
 msgid ""
 "Actions such as rebooting a computer or logging off users can have undesired"
@@ -3193,7 +3202,7 @@ msgid ""
 msgstr ""
 
 msgid "Restrict access to members of specific user groups"
-msgstr ""
+msgstr "Limita l'accesso a specifici membri di gruppi utenti "
 
 msgid ""
 "In this mode access to a computer is restricted to members of specific user "
