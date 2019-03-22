@@ -12,6 +12,7 @@ builds = [
 	{ 'language': 'en', 'paper': 'letterpaper', 'babel': 'USenglish' },
 	{ 'language': 'es', 'paper': 'a4paper', 'babel': 'spanish' },
 	{ 'language': 'fr', 'paper': 'a4paper', 'babel': 'french' },
+	{ 'language': 'hu', 'paper': 'a4paper', 'babel': 'magyar' },
 	{ 'language': 'it', 'paper': 'a4paper', 'babel': 'italian' },
 	{ 'language': 'sl', 'paper': 'a4paper', 'babel': 'slovene' },
 	{ 'language': 'uk', 'paper': 'a4paper', 'babel': 'ukrainian' },
