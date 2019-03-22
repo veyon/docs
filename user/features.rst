@@ -1,241 +1,237 @@
 .. _ProgramFeatures:
 
 Program features
-=================
+================
 
-Veyon offers a variety of features that can be used to control and access computers. All functions are neatly arranged in the toolbar. They are also accessible via the context menu of the students' PCs.
+Veyon offers a variety of features that let you control and access computers. All available features are accessible through the buttons in the toolbar as well as the context menu of individual computers.
 
-If you hover over the single buttons in the toolbar, a :index:`tooltip` with a short help message is displayed, unless you have not deactivated this behavior. Pressing a button activates the desired function for all displayed computers.
+If you move the mouse over the individual buttons in the toolbar, a tooltip with a short help text is displayed unless you have disabled tooltips. Pressing a button activates the desired feature on all displayed computers.
 
 
-.. _SelectingComputers:
-.. index:: selecting computers
+.. _NonGlobalFeatureActivation:
 
-Selecting computers
--------------------
+Using functions on individual computers
+---------------------------------------
 
-If you want to apply a function only on a single computer, click it with the right mouse button and choose the desired function via the context menu. The entries in the context menu are dynamically displayed depending on the currently active functions.
+If you only want to activate a function on a single computer, right-click the computer in the monitor view and select the desired function from the context menu. The entries in the context menu are displayed dynamically depending on the active functions.
 
 .. image:: images/computer-context-menu.png
    :scale: 75 %
    :align: center
 
-You can also select multiple computers by creating a rectangle with the mouse that includes all desired computers:
+You can also select multiple computers in the monitor view by drawing a selection rectangle with the mouse that includes all desired computers:
 
 .. image:: images/select-computers.png
    :scale: 75 %
    :align: center
 
-Alternatively, you can use the :kbd:`Ctrl` key and add computers to your selection one by one by clicking.
+Alternatively, you can press the :kbd:`Ctrl` key and add computers individually to the selection via mouse click.
 
 
 Monitoring mode
 ---------------
 
-By default Veyon is running in monitoring mode. In this mode you have an overview of all computers and see their screen contents in small thumbnails, depending on the position of the zoom slider. The screen contents are updated almost in real time so that you can monitor all activities in the room.
+.. index:: Monitoring mode, Monitoring, Observation, Computer overview
 
-As soon as the connection to a computer is interrupted, a computer icon is shown instead of the screen content. After the program has started, this icon is colored in grey at first. As soon as the program notices that a computer is not reachable or the access to it is denied, the icon's color changes to red.
+By default Veyon is running in monitoring mode. In this mode you have an overview of all computers and see their screen contents in thumbnails. The screen content is updated almost in real time, so you can monitor all activity at the selected locations.
 
-Some of the functions described in the upcoming sections change the mode of a remote computer. You can stop each mode by simply returning to monitoring mode.
+As long as there is no connection to a computer, a computer icon is displayed instead of the screen content. After the program has been started, the icon is initially colored gray. As soon as the program detects that the computer is unreachable or access is denied, the color changes to red.
 
+Some of the features described in the next sections switch the remote computers to a different mode. You can exit the respective mode by activating monitoring mode again.
 
-.. index:: demonstration mode, full screen demo, window demo, demo mode, demonstration, presentation
 
 Demonstration mode
 ------------------
 
-You can use the demonstration mode (or demo mode for short) to start a presentation. In this mode your screen content is broadcasted to and displayed at all remote computers in real time. Here you can choose between a full screen or a window demo.
+.. index:: Demonstration mode, Fullscreen demo, Window demo, Demo mode, Demonstration, Presentation, Screen broadcast
 
-As the name indicates, during a full screen demo, you screen content is displayed in full screen. The remote computers can not be operated in this mode as all input devices are locked. This way you can get the whole attention of your course participants.
+You can use the demonstration mode (demo mode) to start a presentation. In this mode, your screen content is broadcasted to all remote computers and displayed in real time. You can choose between a full screen and a window demo.
 
-By contrast, a window demo allows for the users to switch between the demo window and their own applications or even arrange the windows next to each other to comprehend the shown processes themselves. Hence the input devices are not locked.
+During a full screen demo your screen content will be displayed in full screen. Logged-in users cannot use their computers for other tasks in this mode because all input devices are locked. In this way you will gain the full attention of your students.
 
-In order to start a full screen or window demo, you just have to press the :guilabel:`Full Screen Demo` resp. :guilabel:`Window Demo` button:
+By contrast, a window demo allows users to switch between the demo window and their own applications. For example, course participants can arrange the windows side by side and try out the demonstrated steps themselves in parallel. The input devices are therefore not locked in this mode.
+
+In order to start a full screen or window demo, you just have to press the :guilabel:`Fullscreen demo` or :guilabel:`Window demo` button:
 
 .. image:: images/demo.png
    :align: center
 
-If you want to leave the demonstration mode, just press the respective button again or press the :guilabel:`Observe` button to switch back into monitoring mode globally. Using the context menu, the demonstration mode can also be quit for single computers.
+If you want to leave the demonstration mode again, simply press the button again or click on the :guilabel:`Monitoring` button to switch back to monitoring mode globally. The context menu can also be used to stop the demonstration mode on individual computers.
 
-
-.. index:: screen lock, lock, locked, input devices, lock screen
 
 Lock screens
 ------------
 
-Another method to enhance resp. control attention is the function which locks the screens.
-As with the full screen demo, all input devices on the course participants' computers are locked
-and cannot be operated. A lock screen is shown additionally such that one cannot be distracted by previous
-screen contents.
+.. index:: Screen lock, Lock screen, Lock computers, Lock input devices
+
+Another way to draw students' attention is to use the screen lock feature. As during a full-screen demonstration, all input devices on the students' computers are locked. The computers can then no longer be used. In addition, a blocking image is displayed to prevent distractions caused by open applications.
 
 Press the :guilabel:`Lock` button to lock all displayed computers:
 
 .. image:: images/screenlock.png
    :align: center
 
-If the screens shall be unlocked, just press the button again or press the :guilabel:`Observe` button,
-to switch back to monitoring mode globally.
+If you want to unlock the screens, simply press the button again or click the :guilabel:`Monitoring` button to switch back to monitoring mode globally.
 
-In case only single computers shall be locked, you can select these as described in section :ref:`selecting computers`
-and select the function in the context menu. The screen lock can be disabled either through the
-:guilabel:`Unlock` entry or through the :guilabel:`Observe` entry. The screen lock can also be globally
-activated at first and disabled individually for specific computers later on using the context menu.
+If only individual computers are to be locked, you can select them as described in section :ref:`NonGlobalFeatureActivation` and select the feature in the context menu. The screen lock can then be deactivated either by selecting :guilabel:`Unlock` or switching back to :guilabel:`Monitoring` mode. The screen lock can also be activated globally at first and later deactivated for individual computers via the context menu.
 
-.. note:: Due to the operating system's security concept, the lock screen cannot be displayed if there is no signed in user. Nevertheless, the input devices are locked thus making a login impossible.
+.. note:: Due to security restrictions of most operating systems, the lock screen can not be displayed if no used is logged on. The input devices are still locked, so that no user logon is possible.
 
-.. index:: remote access, remote control, remote view
 
 Remote access
 -------------
 
-The function group *remote access* consists of two rather similar functions: :guilabel:`Remote View` and :guilabel:`Remote Control`. Both access modes retrieve the screen data of a remote computer and display it in full screen mode in a separate window. In contrast to the monitoring mode in the main window, you can the observe events on a computer in detail and interact, if necessary.
+.. index:: Remote access, Remote control, Remote view
 
-These functions can be activated in various ways. Depending on the system configuration, one of the two starts by double-clicking a computer. Alternatively you can open the context menu by clicking the right mouse button and choose the desired function.
+The feature group *remote access* consists of two very similar features :guilabel:`Remote view` and :guilabel:`Remote control`. In both access modes, the screen of a remote computer is displayed in full size in a separate window. In contrast to the monitoring mode in the main window, you can watch the activities on a computer in detail or intervene yourself.
 
-If you want to access a computer that is not shown in the workspace, you can use the button in the toolbar:
+The features can be activated in different ways. Depending on the system configuration, one of the two features is usually started by double-clicking on a computer. Alternatively, you can click the right mouse button to open the context menu and select the desired feature.
+
+If you want to access a computer that does not appear in the monitor view, use the corresponding toolbar button:
 
 .. image:: images/remoteaccess.png
    :align: center
 
-Upon confirmation a dialogue opens up that prompts you for the computer name:
+After pressing this button, a dialog is opened and asks for the hostname of the computer to access:
 
 .. image:: images/remoteaccess-hostdialog.png
    :scale: 75 %
    :align: center
 
-In all cases a new windows containing the remote view opens up:
+Afterwards a new window opens with the remote access view:
 
 .. image:: images/remoteaccess-connecting.png
    :scale: 75 %
    :align: center
 
-The remote screen is usually displayed within a few seconds and is updated in real time. As in the main application you have a toolbar with buttons on the window's upper border. This toolbar is automatically hid after a few seconds.  You can show it at any time by moving the cursor to the window's upper border.
+The remote screen is then displayed within a few seconds and updated in real time. At the top of the window you will see a toolbar with buttons similar to the main application. The toolbar disappears automatically a few seconds after the connection is established. You can show it again at any time by moving the mouse pointer to the top of the screen.
 
-Even during a running remote access session you can change the access mode at any time. For this it is sufficient to click the :guilabel:`Control from remote` resp. :guilabel:`Observe only` button. Please note, that these buttons do not indicate the current access mode, but the access mode that is switched to if the button is pressed.
+You can also change the access mode at any time during a running remote access session. All you need to do is click on the :guilabel:`Remote control` or :guilabel:`View only` button. The button does not show the current access mode, but the access mode that is changed when pressed.
 
-As soon as you have entered the :guilabel:`Control from remote` mode, your keystrokes, mouse movements and mouse clicks are transmitted to the remote computer. Thus you can control it as you are used to.  Depending on the system configuration there may be exceptions concerning some special keys or keystroke combinations (shortcuts) such as e.g. :kbd:`Ctrl+Alt+Del`. If you want to use these shortcuts, you can use the additional :guilabel:`Send Shortcut` button. After clicking it, a menu opens up which allows for you to select the desired shortcut:
+As soon as you have entered the :guilabel:`Remote control` mode, your keystrokes, mouse movements and clicks are transmitted to the remote computer so that you can operate it as usual. However, depending on the operating system, certain special keys or key shortcuts such as :kbd:`Ctrl+Alt+Del` cannot be used directly. If you want to use these shortcuts, you can use the button :guilabel:`Send shortcut`.  Clicking this button opens a menu where you can select the desired shortcut:
 
 .. image:: images/remoteaccess-shortcutmenu.png
    :align: center
 
-You can close the menu without triggering an action with a repeated click or the :kbd:`Esc` key.
+If the menu was opened accidentally, it can also be closed again without triggering an action by clicking the button again or pressing the :kbd:`Esc` key.
 
-If you want to switch to full screen mode, you can use the :guilabel:`Full Screen` button. In full screen mode you can use the same button -- now with the caption :guilabel:`Window` -- to switch back to window mode.
+If you want to switch to fullscreen mode, you can use the :guilabel:`Fullscreen` button. In full screen mode, the button label changes to :guilabel:`Window`. You can easily switch back to window mode by clicking on it again.
 
-The function :guilabel:`Screenshot`  creates a screenshot an saves in to a file that can be viewed later on. A more detailed description can be found in sections :ref:`screenshot` and :ref:`screenshot management`.
+The :guilabel:`Screenshot` function captures the current screen content and saves it to a file that can be displayed later. More information regarding screenshots can be found in sections :ref:`Screenshots panel <ScreenshotsPanel>` and :ref:`Screenshots <FeatureScreenshot>`.
 
-You can use the :guilabel:`Exit` button to close the window and terminate the remote access.
+With the button :guilabel:`Exit` the remote access window is closed.
 
 
-Boot, restart and shutdown a computer
--------------------------------------
+Power on, restart and shutdown computers
+----------------------------------------
 
-.. index:: boot, shutdown, restart, WoL, Wake-on-LAN
+.. index:: Power on, Turn on, Switch on, Power down, Shutdown, Turn off, Restart, Reboot, WoL, Wake-on-LAN
 
-It can be helpful for administrative purposes as well as for preparation and post-processing of courses and IT-supported exams to use the functions :guilabel:`Boot`, :guilabel:`Restart` and :guilabel:`Shutdown` for a computer. You find the respective buttons in the toolbar:
+The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power down` are helpful both for administrative purposes and for the preparation and follow-up of courses and exams. Using these functions, you can remotely power on, restart, or shut down computers. The corresponding buttons can be found in the toolbar:
 
 .. image:: images/powercontrol.png
    :align: center
 
-You can activate the respective button to boot, restart or shutdown all displayed computers. If you intend to use the function only for single computers, you can select them and choose the desired entry from the context menu.
+Click the appropriate button to power on, restart, or shut down all displayed computers. If you want to use a feature for individual computers only, you can select the respective computers and select the desired item in the context menu.
 
-.. attention:: Please note, that neither restart nor shutdown require the consent of the signed in user. Therefore make sure, that the signed in user has no unsaved work.
+.. attention:: Please note that, depending on the program configuration, the computers will be restarted or shut down without further confirmation queries. Therefore, always make sure that the logged in users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
 
-.. note:: Depending on the configuration of the network and the system settings of the single computer, booting may work only under specific technical conditions. At the same time there is no check for access control while booting such that you may be able to boot computers in other rooms or parts of the building. Please check the selected computers carefully if you use this function.
+.. note:: Depending on the configuration of the network and the system settings of the individual computers, powering on only works under certain technical conditions. At the same time, there is no access permission check when you power on, so you may be able to power on computers in other rooms or locations. For this reason, pay attention to the selected computers when using this feature.
 
 
-.. index:: log out, user log out, end of course
+Log off users
+-------------
 
-Log out user
-------------
+.. index:: Log off, Log out, User log out, Log off users, End of lesson
 
-The function :guilabel:`Log out User` complements the options described in the previous section in terms of controlling basic computer states. That's what the respective button in the toolbar looks like:
+The :guilabel:`Log off` feature complements the possibilities described in the previous section to control basic computer states. A corresponding button in the toolbar is available for this purpose:
 
-.. image:: images/logout-user.png
+.. image:: images/logoff-user.png
    :align: center
 
-Activate this button to log out all users on all displayed computers. If you intend to use the function only for single computers, you can select them and choose the desired entry from the context menu.
+Activate this button to log off all users from all displayed computers. If you want to use this feature for individual computers only, you can select the respective computers and select the desired item in the context menu.
 
-.. hint:: A typical use case for this function could consist of terminating a course for all participants at a specified time.
+.. hint:: A typical use case for this feature can be to end a course for all participants at the same time.
 
-.. attention:: Please note, that the logout process does not require the consent of the signed in uesr. Hence make sure that the signed in user does not have any unsaved work.
+.. attention:: Please note that the logged on users – depending on the program configuration – are logged off without further confirmation queries. Therefore, always make sure that the logged on users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
 
-
-.. index:: text message, message, message window
 
 Send text message
 -----------------
 
-A further possibility for interaction consists of sending text messages to one or all course participants. This message is displayed as a message window on the respective participant's computer. You can use the :guilabel:`Text Message` button to this end:
+.. index:: Text message, Message, Message window
+
+Another possibility for user interaction is to send a text message to individual or all course participants. The text message is displayed on the computers in the form of a message window. The :guilabel:`Text message` button is available for this purpose:
 
 .. image:: images/textmessage.png
    :align: center
 
-After pressing the button, a dialogue window opens up. Here you can enter the message to be transmitted:
+After pressing the button, a dialog window opens in which you can enter the message to be displayed:
 
 .. image:: images/textmessage-dialog.png
    :align: center
 
-You can send the typed message by pressing :guilabel:`OK`.
+Click on :guilabel:`OK` to send the entered message.
 
-If you intend to use the function only for single computers, you can select them and choose the entry :guilabel:`Text Message` from the context menu.
+If you want to use this feature for individual computers only, you can select the respective computers and select the desired item in the context menu.
 
 
-.. index:: start program, program start, execute, commands, open document
+Run program
+-----------
 
-Start program
--------------
+.. index:: Run program, Start program, Execute programm, Commands, Open document
 
-If a specific application is to be opened on all computers, you can use the :guilabel:`Start Program` function from the toolbar. To do this click the button shown:
+If a specific program is to be opened on all computers, you can use the :guilabel:`Run program` feature in the toolbar. For this purpose, click on the button shown:
 
 .. image:: images/run-program.png
    :align: center
 
-If programs have been predefined by the administrator, a menu with the predefined programs opens. In this menu you can click on the desired program.
+If no programs have been predefined by the administrator, a menu with the predefined programs opens. In this menu you can click on the desired program.
 
-If you want to start a program that is not included in the menu, click on the last entry `guilabel:`Custom program`. Then the same dialog appears, which also appears if no programs are predefined. In this dialog box you can enter the name of the desired program file, e.g. ``notepad``:
+If you want to start a program that is not included in the menu, click on the last item :guilabel:`Custom program`. Afterwards the same dialog appears, which also appears if no programs are predefined. In this dialog window you can enter the name of the desired program file, e.g. ``notepad``:
 
 .. image:: images/run-program-dialog.png
    :align: center
 
-Subsequently confirm the dialogue with :guilabel:`OK`. Please note, that the requested program often does not reside in the program path environment such that you have to specify the complete path to the program, e.g. ``C:\Programme\VideoLAN\VLC\vlc.exe``.
+Then confirm the dialog with :guilabel:`OK`. Please note, that the requested program often does not located in the program path environment so that you have to specify the complete path to the program, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe"``.
 
-.. hint:: Most programs offer the option of getting passed an additional parameter containing the name of a file that is to be opened automatically. For example, if you want to play a video simultaneously on all computers, just add the path of the video file separated by a blank, e.g. ``C:\Programme\VideoLAN\VLC\vlc.exe X:\Videos\Beispiel.mp4``.
+.. hint:: You can pass an argument to most programs with the name of a file that you want it to open automatically. For example, if you want to automatically play a video on all computers, add the path to the video file separated by a space, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe" X:\Videos\Example.mp4``.
 
-.. attention:: In case the program path or file name contains blanks, the complete path and file name has to be enclosed in quotes. Otherwise parts of the input can be interpreted as parameters. Example: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``
+.. attention:: In case the program path or file name contains spaces, you always have to enclose the complete path and file name in quotation marks. Otherwise parts of the input will be interpreted as parameters. Example: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``.
 
 
-.. index:: website, open website, browser, URL, web address
-
-Open Website
+Open website
 ------------
 
-If all course participants shall navigate to a specific website, you can have this website automatically opened on all computers. Use the :guilabel:`Open Website` button for this:
+.. index:: Open website, Website, Open browser, Browser, URL, Web address
+
+If you want all students to navigate to a specific website, you can automatically let that website open on all computers. Use the :guilabel:`Open website` button to do so:
 
 .. image:: images/open-website.png
    :align: center
 
-If no websites have been predefined by the administrator, a dialog box opens in which you can enter the address of the website to be opened:
+If no websites have been predefined by the administrator, a dialog window opens in which you can enter the address of the website to be opened:
 
 .. image:: images/open-website-dialog.png
    :align: center
 
-Confirm this dialogue with :guilabel:`OK`.
+Confirm this dialog with :guilabel:`OK`.
 
-Otherwise, a menu with the predefined websites opens from which you can select and click on the desired website. If you want to open a website that is not included in the menu, select the last item `:guilabel:`Custom Website`. The dialog shown above then opens.
+Otherwise, a menu with the predefined websites will open from which you can select the desired website. If you want to open a website that is not included in the menu, select the last item :guilabel:`Custom website`. The dialog shown above wll then open.
 
 
-.. index:: screenshot
-.. _Screenshot:
+.. _FeatureScreenshot:
 
 Screenshot
 ----------
 
-With Veyon it is possible to save the current screen content of single or all computers in an image file. You can press the :guilabel:`Screenshot` button to make screenshots of all displayed computers:
+.. index:: Screenshot, Snapshot
+
+Veyon allows you to save the current screen content of single or all computers in image files. By clicking the button :guilabel:`Screenshot` you trigger the feature for all displayed computers:
 
 .. image:: images/screenshot.png
    :align: center
 
-If you intend to use this function only for single computers, you can select them and choose the entry :guilabel:`Screenshot` from the context menu.
+If you want to use this feature for individual computers only, you can select the respective computers and select the item :guilabel:`Screenshot` from the context menu.
 
-Afterwards a message informs you about the successful completion of this action. Now you can view the images through the :ref:`screenshot management` as well as delete them if necessary.
+You will then receive an information message about how many screenshots have been taken. You can now view the images in the :ref:`screenshots panel <ScreenshotsPanel>` and delete them if necessary.

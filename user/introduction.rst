@@ -1,50 +1,58 @@
 Introduction
 ============
 
-Veyon is an application that allows you to map, keep track of, control, and perform various functions on a centralized computer (such as a teacher's PC), a cluster of computers (such as classrooms or labs) and modes to use.
+Veyon is an application that lets you monitor and control a group of computers (e.g. classrooms) on a central computer (e.g. an instructor's computer) and use various features and modes.
 
-Program start and registration
-------------------------------
 
-The program is started via the :index:`start menu` or an :index:`desktop icon`:
+Program start and login
+------------------------
+
+.. index:: Start menu, Desktop icon
+
+The program is started via the start menu or a desktop icon:
 
 .. image:: images/desktop-symbol.png
    :align: center
 
-Depending on the system configuration you will be prompted for :index:`username` and :index:`password`:
+.. index:: Login, Username, Password
+
+Depending on the system configuration you will be prompted for your username and your password:
 
 .. image:: images/logon-dialog.png
    :align: center
 
-Enter here your username and password or, if given, the access data of a special teacher account. If the entered data is correct and you can log in, the program starts. Otherwise, the :index:`Login` is denied and an error message is displayed. You can try reentering in this case.
+Enter your username and password here or – if given – the credentials of a special teacher account. If the entered data is correct and and a a login can be performed, the program will start. Otherwise, the login will be denied and an error message will be displayed. In this case you can try the login with corrected data again.
 
 
-User Interface
-----------------
+User interface
+--------------
 
-After starting the program you will see a :index:`user interface` with a :index:`toolbar` (1), a :index:`workspace` (2) and a :index:`status bar` with various controls (3):
+.. index:: User interface, Toolbar, Monitor view, Status bar
+
+After the program start you will see the user interface with the toolbar (1), the monitor view (2) and the status bar with various controls (3):
 
 .. image:: images/master-user-interface.png
    :align: center
 
-The toolbar contains a number of buttons for activating different functions. A detailed description of the individual functions can be found in the chapter :ref:`Program features`. The appearance and behavior of the toolbar can be adjusted as described in the section :ref:`Toolbar`.
+The toolbar contains a number of buttons for activating different features. A detailed description of the individual features can be found in chapter :ref:`ProgramFeatures`. The appearance and behavior of the toolbar can be customized as described in section :ref:`Toolbar`.
 
-In the workspace, all computers to be monitored are displayed in a :index:`tile view`. Depending on the system configuration and previous program launches, you will already see the computers of the current room here. You can use the `Computer rooms`_ to show or hide computers or entire computer rooms.
+In the monitor view all computers to be monitored are displayed in a tile view. Depending on the system configuration and previous program starts you can already see the computers at your current location here. The :ref:`computer select panel <ComputerSelectPanel>` allows you to show or hide computers or entire locations.
 
-The elements in the status bar are used to control the program interface and are described in more detail in the following section.
+The elements in the status bar are used to control the program interface and are described in detail in the following section.
+
 
 Status bar
 ----------
 
-Using the :guilabel:`Computer rooms` and :guilabel:`Screenshots` buttons, you can open and close views such as :ref:`Computer rooms` or :ref:`Screenshots`.
+Using the :guilabel:`Locations & computers` and :guilabel:`Screenshots` buttons, you can open and close the :ref:`computer select panel <ComputerSelectPanel>` and the :ref:`screenshots panel <ScreenshotsPanel>`.
 
-The search bar allows you to filter the computers displayed using search terms such as computer names or user names. Technically savvy users can even enter regular expressions here to implement advanced search filters.
+The search bar allows you to filter the computers displayed using computer names or user names as search terms. Technically savvy users can even enter regular expressions here to define advanced search filters.
 
-The |powered-on| (:guilabel:`Only show powered on computers`) button hides all computers that are not turned on or accessible. This allows simultaneous observation of a large number of computers or only partially occupied rooms while simultaneously focusing on the actually active computers.
+The |powered-on| (:guilabel:`Only show powered on computers`) button hides all computers that are not powered on, disconnected or not reachable for some other reason. This allows simultaneous monitoring of a large number of computers or partially occupied rooms while focusing on the actually active computers.
 
-Use the slider to control the size of the computer screens displayed. With the :kbd:`Ctrl` key pressed, the size can also be changed using the mouse scroll wheel. An automatic adjustment to the optimal size is done by pressing the button |zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it.
+Use the slider to control the size of the computer screens displayed. When holding then :kbd:`Ctrl` key, the size can also be changed using the mouse scroll wheel. The size is adjusted automatically by clicking the button |zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it.
 
-Since Veyon 4.1 it is possible to use a user-defined computer arrangement, e.g. to map the actual arrangement of computers in the classroom. After activating the |exchange-positions-zorder| button (:guilabel:`Use custom computer placement`), each computer can be moved individually or in a selected group with the mouse button pressed and arranged as desired. To align all computers after arranging them, you can use the |align-grid| button (:guilabel:`Align computers to grid`). If the sorted default arrangement is to be used again, simply deactivate the |exchange-positions-zorder| button.
+It is also possible to use a custom computer arrangement, e.g. to represent the actual arrangement of computers in classrooms. After clicking the button |exchange-positions-zorder| (:guilabel:`Use custom computer arrangement`) each computer individually or a selection of computers can be moved with the left mouse button pressed and arranged as desired. To align all computers in the custom arrangement, click the |align-grid| (:guilabel:`Align computers to grid`) button. If you want to use the sorted standard arrangement again, simply deactivate the |exchange-positions-zorder| button.
 
 The |help-about| button (:guilabel:`About`) opens a dialog with information about Veyon such as version, manufacturer and license terms.
 
@@ -72,50 +80,50 @@ The |help-about| button (:guilabel:`About`) opens a dialog with information abou
 .. _Toolbar:
 
 Toolbar
---------------
+-------
 
-You can customize the look and feel of the toolbar to your liking. With a right-click on a free area as well as a button, a context menu opens for several entries:
+You can customize the appearance and behavior of the toolbar. A right click on either a free section or a button opens a context menu with several entries:
 
 .. image:: images/toolbar-contextmenu.png
    :align: center
 
-If you click the entry :guilabel:`Disable Balloon Tooltips` you will no longer see any tooltips when you move the mouse over the buttons. You can open the context menu again at any time and remove the hook with a click.
+If you click the entry :guilabel:`Disable balloon tooltips` no tooltips will be displayed anymore whenever you hover the mouse over the buttons. You can open the context menu at any time and uncheck the item again.
 
-The option :guilabel:`Show Icons Only` causes a compact representation of the buttons in the toolbar by hiding the labels and displaying only icons. On smaller screens, this option may be necessary to display all the buttons.
+The :guilabel:`Show icons only` option gives a compact view of the toolbar buttons by hiding the labels and displaying only icons. On smaller screens this option may be necessary to display all buttons.
 
-.. _`Computer room`:
+.. _ComputerSelectPanel:
 
-Computer rooms
---------------
+Computer select panel
+---------------------
 
-.. index:: `Computer rooms`
+.. index:: Computer select panel
 
-You can use the button :guilabel:`Computer Rooms` in the :index:`Status Bar` to open the computer rooms view. This view displays all available computer rooms in a tree structure. Individual room entries can be expanded using a usually triangular symbol.
+The :guilabel:`Locations & Computers` button in the status bar opens the computer select panel. This panel displays all available computer locations in a tree structure. You can expand individual location entries by clicking on the corresponding symbol in front of them.
 
-You can activate individual computers or entire rooms by clicking on them. All activated computers are displayed in the workspace.
+You can activate individual computers or entire locations by checking them. All checked computers will then be displayed in the monitoring view.
 
 .. image:: images/computer-room-management.png
    :align: center
 
-With the button :guilabel:`Save computer/user List` you can save the list of computers and logged in users in a CSV file. A typical use case for this is a presence check at a later time.
+With the :guilabel:`Save computer/user list` button you can save the list of computers and logged in users in a CSV file. Typical use cases for this are subsequent presence checks or IT-based exams.
 
-Depending on the system configuration, the button :guilabel:`Add room` is also available. You can add more computer rooms to view. A click on the button opens a dialog in which you can see all available rooms:
+Depending on the system configuration, the button :guilabel:`Add location` is also available. This allows you to add more computer locations to the view. A click on the button opens a dialog where you can see all available locations:
 
 .. image:: images/room-selection.png
    :align: center
 
-You can filter the list using the input field, that is, enter a search term. In the list then only the room names are displayed, in which the entered search term occurs. Advanced users can also use regular expressions for the filter. Then you can select a room and confirm with :guilabel:`OK`. The selected room is now available in the room list until the next program restart. You can also remove an added room by clicking on a room and pressing the :kbd:`Del` key.
+You can filter the list using the input field, i.e. enter a search term. The list then only displays the location names containing the specified search term. Advanced users can also use regular expressions for the filter. Next you can select the location and confirm with :guilabel:`OK`. The selected location is now available in the location list until the next program start. You can also remove a previously added location by clicking on the location and pressing the :kbd:`Del` key.
 
-.. _`Screenshots`:
+.. _ScreenshotsPanel:
 
-Screenshots
------------
+Screenshots panel
+-----------------
 
-.. index:: `Screenshots`
+.. index:: Screenshots panel
 
-The management view for screenshots allows you to view and delete captured screenshots. See the :ref:`Program Functions` chapter in section :ref:`Screenshot` for an explanation on how to take screenshots.
+Using the screenshot management panel, you can view and delete all captured screenshots. Information on how to take screenshots are given in the :ref:`Program features <ProgramFeatures>` chapter in section :ref:`Screenshot <FeatureScreenshot>`.
 
 .. image:: images/screenshot-management.png
    :align: center
 
-You can now select individual screenshots in the list. It will then display details about the screen shot, such as shooting date, user name, and computer in the table below. The button :guilabel:`Show` or a double-click in the list displays the selected screenshot in full size. If you no longer need the screenshot, you can permanently delete it using the :guilabel:`Delete` button. Please note that this process can not be undone and the files are not moved to the trash.
+You can now select individual screenshots from the list. Details of the screenshot, such as the date it was taken, user name, and computer, are then displayed in the table below. The :guilabel:`Show` button or a double-click in the list displays the selected screenshot in full size. If you no longer need the screenshot, you can permanently delete it using the :guilabel:`Delete` button. Please note that this process cannot be undone and the files will not be moved to the trash.
