@@ -35,7 +35,7 @@ The usage of Veyon Master on multiple computers is possible without any restrict
 How can an existing VNC server be used in conjunction with Veyon?
 -----------------------------------------------------------------
 
-In some environments a VNC server is already installed (e. g. UltraVNC) or is provided by the system (e. g. VNC-based access to virtual desktops in VDI environments). This may result in degraded performance or conflicts with the Veyon-internal VNC server. In such cases it is recommended to configure Veyon to use the existing (external) VNC server instead of starting the internal VNC server. The configuration is done through the Veyon Configurator in the configuration page :ref:`RefService` in section :ref:`RefVNCServer`.
+In some environments a VNC server is already installed (e. g. UltraVNC) or is provided by the system (e. g. VNC-based access to virtual desktops in VDI environments). This may result in degraded performance or conflicts with the Veyon-internal VNC server. In such cases it is recommended to configure Veyon to use the existing (external) VNC server instead of starting the internal VNC server. The configuration is done through the Veyon Configurator on the configuration page :ref:`RefService` in section :ref:`RefVNCServer`.
 
 
 Can I import/use an existing or generated file with location and computer information?

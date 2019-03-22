@@ -1,13 +1,13 @@
-.. index:: LDAP, Active Directory, OpenLDAP, Samba, directory service
+.. index:: LDAP, Active Directory, OpenLDAP, Samba, Directory service
 
 .. _LDAP:
 
 LDAP/AD integration
 ===================
 
-This chapter deals with connecting LDAP-compatible servers to Veyon. Below we will just use the generic term *LDAP* and thereby mean all LDAP-compatible products and technologies such as *OpenLDAP*, *Samba* or *Active Directory*. LDAP integration enables you to use most of the information about users, user groups, computers and rooms from existing environments, instead of manually reshaping them through the Veyon configuration. On the one hand LDAP users and user groups may serve as data base for :ref:`ComputerAccessControl` and on the other hand the Veyon Master can load rooms and computers to be displayed directly from the directory service.
+This chapter covers the setup of Veyon for connecting it to LDAP-compatible servers. In the following the generic term *LDAP* will be used and refers to all LDAP-compatible products and technologies such as *OpenLDAP*, *Samba* or *Active Directory*. LDAP integration enables you to use information about users, user groups, computers and locations that already exist in most environments, instead of manually replicating it in the Veyon configuration. Once configured Veyon Master can retrieve locations and computers to be displayed directly from the directory service. Additionally LDAP users and user groups can serve as a base for :ref:`ComputerAccessControl`.
 
-The configuration of LDAP integration can be done on configuration page :guilabel:`LDAP` in Veyon Configurator. The page is divided into several subpages for :ref:`LDAPBasicSettings`, :ref:`LDAPEnvironmentSettings`, :ref:`LDAPAdvancedSettings` and :ref:`LDAPIntegrationTests`.
+The configuration of the LDAP integration is done on configuration page :guilabel:`LDAP` in Veyon Configurator. The page is divided into several subpages for :ref:`LDAPBasicSettings`, :ref:`LDAPEnvironmentSettings`, :ref:`LDAPAdvancedSettings` and :ref:`LDAPIntegrationTests`.
 
 
 .. _LDAPBasicSettings:
@@ -15,55 +15,71 @@ The configuration of LDAP integration can be done on configuration page :guilabe
 Basic settings
 --------------
 
-The basic settings affect all basic parameters for accessing an :index:`LDAP server`. They are mandatory for a properly working LDAP integration.
+The basic settings affect all basic parameters for accessing an LDAP server. They are mandatory for a properly working LDAP integration.
 
 General
 +++++++
 
-LDAP server and port
-    Enter the address of the LDAP server (name or IP address) here. If a different port than the default LDAP port 389 is used, the port parameter has to be adjusted accordingly.
+.. index:: LDAP server
 
-Anonymous Bind / Bind credentials
-    Depending on the environment and configuration of the LDAP server, LDAP queries can be performed either as an anonymous user or only with proper user name and password. If the server access requires a user name and password, the option :guilabel:`Bind credentials` has to be activated and the credentials have to be entered into the following input fields. Otherwise the default option :guilabel:`Anonymous Bind` can be used.
+LDAP server and port
+    Enter the address of the LDAP server (hostname or IP address) here. If a port other than the default LDAP port 389 is used, the port parameter has to be adjusted accordingly.
+
+.. index:: Anonymous bind, Use bind credentials
+
+Anonymous bind / Use bind credentials
+    Depending on the environment and configuration of the LDAP server, LDAP queries can be performed either as an anonymous user or with valid usernames and passwords only. If the server access requires a username and password, the option :guilabel:`Use bind credentials` has to be selected and the credentials have to be entered in the input fields below. Otherwise the default option :guilabel:`Anonymous bind` can be used.
+
+.. index:: Bind DN
 
 Bind DN
-    The :index:`Bind DN` is the user name needed for a login at the server in order to process LDAP operations. However, the required format vastly depends on the LDAP server and its configuration. Possible formats include ``User``, ``DOMAIN\User`` or ``cn=User,…,dc=example,dc=org``.
+    The bind DN is the username used to log in at the server in order to perform LDAP operations. However, the required format heavily depends on the LDAP server and its configuration. Possible formats include ``User``, ``DOMAIN\User`` or ``cn=User,…,dc=example,dc=org``.
 
-Bind Password
-    In connection with the Bind DN the respective password has to be entered.
+.. index:: Bind password
 
-You can use the :guilabel:`Test` button to verify, whether server access is working with the supplied set of parameters.
+Bind password
+    In addition to the bind DN the corresponding password has to be entered.
 
-.. hint:: Veyon exclusively perform reading LDAP operations. For security reasons it may be a good option to create a read-only user, for example "Veyon-LDAP-RO". Access to relevant attributes can be further restricted for this user.
+You can use the :guilabel:`Test` button to verify, whether server access is working with the supplied parameters.
+
+.. hint:: Veyon only requires read access to the LDAP directory. As an additional security measure on the LDAP server a dedicated user with read-only access to the LDAP directory can be created, e.g. "Veyon-LDAP-RO". Access to relevant attributes can be further restricted for this user.
 
 Connection security
 +++++++++++++++++++
 
-Veyon can establish an encrypted connection with the LDAP server. For this purpose, settings are available in the section `:guilabel:`Connection security`.
+Veyon can establish encrypted connections to the LDAP server. For this purpose, settings are available in the section :guilabel:`Connection security`.
 
 Encryption protocol
     You can choose between the encryption protocols *None*, *TLS* and *SSL*. The use of the modern TLS protocol is recommended.
 
-    Default: *None*
+    **Default:** *None*
+
+.. index:: TLS certificate verification
 
 TLS certificate verification
-    This setting determines how the certificate of the LDAP server is to be checked when the encrypted connection is established. The default setting *System defaults* attempts to verify the certificate against the root certificates installed system-wide, depending on the operating system. The Windows certificate store is not taken into account here, so that a separate CA certificate file may have to be stored. The *Never* setting does not verify the server certificate at all, but this allows man-in-the-middle attacks and should therefore only be used in exceptional cases. The *User-defined CA certificate file* setting ensures that the certificate check is performed on the basis of a specified CA certificate file.
+    This setting determines how the security certificate of the LDAP server is to be checked when the encrypted connection is established. With the default setting *System defaults*, depending on the operating system, an attempt is made to verify the certificate using the root certificates installed system-wide. The Windows certificate store is not taken into account here, so that a separate CA certificate file may have to be stored. With the the *Never* setting, the server certificate is not verified at all. This however allows for case man-in-the-middle attacks and should therefore only be used in exceptional cases. The *User-defined CA certificate file* setting ensures that the certificate check is performed on the basis of a specified CA certificate file.
 
-    Default: *System defaults*
+    **Default:** *System defaults*
 
-User-defined CA certificate file
+.. index:: Custom CA certificate file
+
+Custom CA certificate file
     If you use your own certification authority (CA), it may be necessary to store their certificate in a PEM file format so that Veyon can check the certificate of the LDAP server.
+
+.. index:: Base DN
 
 Base DN
 +++++++
 
-An essential foundation which holds all objects that are to be used, is defined through the :index:`Base DN`. This foundation usually is taken from the DNS or AD domain (see also `RFC 2247 <https://www.ietf.org/rfc/rfc2247.txt>`_).
+The base DN defines the address of the root object in the directory. All objects are stored below the base DN. Usually the base DN comes from the DNS or AD domain (see also `RFC 2247 <https://www.ietf.org/rfc/rfc2247.txt>`_).
 
-In case a fixed Base DN is used, the default option :guilabel:`Fixed Base DN` has to be activated and the Base DN has to be entered in the input field. You can use the :guilabel:`Test` button to verify, whether the settings are correct and new entries can be found.
+In most cases a fixed base DN is used so the default option :guilabel:`Fixed base DN` has to be chosen. The base DN then has to be entered in the corresponding input field or seleted from the server by using the :guilabel:`Browse` button. You can use the :guilabel:`Test` button to verify, whether the settings are correct and entries can be found.
 
-If a generic Veyon configuration is to be used for example at several sites with different Base DNs, Veyon can be configured such that the Base DN is always dynamically queried using the :index:`LDAP naming contexts`. Therefore the equally named option has to be activated and the naming context attribute must be changed. You can use the :guilabel:`Test` button to verify, whether a Base DN can be found.
+.. index:: LDAP naming contexts
 
-After importing a generic Veyon configuration without a fixed Base DN it is also possible to find the Base DN through the :ref:`LDAPCLI` and write it to the local configuration.
+If a generic Veyon configuration is to be used across multiple sites with different base DNs, Veyon can be configured so that the base DN is always queried dynamically using LDAP naming contexts. For this to work the :guilabel:`Discover base DN by naming context` has to be chosen and the naming context attribute must be adapted. You can use the :guilabel:`Test` button to verify, whether a Base DN could be determined.
+
+After importing a generic Veyon configuration without a fixed base DN it is also possible to determine the base DN through the :ref:`LDAPCLI` and write it to the local configuration.
 
 
 .. _LDAPEnvironmentSettings:
@@ -71,87 +87,118 @@ After importing a generic Veyon configuration without a fixed Base DN it is also
 Environment settings
 --------------------
 
-After the basic settings have been configured and tested, the environment settings can be processed. These settings define which trees hold objects and how particular object attributes are named. Using these
-parameters, Veyon can query the information needed from the LDAP directory.
+After the basic settings have been configured and tested, the environment-specific settings can now be made. These settings determine which trees contain objects of certain types as well as the names of certain object attributes. With these parameters Veyon can retrieve all required information from the LDAP directory.
+
+.. index:: LDAP object trees, LDAP Common Names, LDAP Organizational Units
 
 Object trees
 ++++++++++++
 
-:index:`Object Trees` are organizational and structural units, in which specific types of objects (users, groups, computers) reside. The corresponding CNs (Common Names) or OUs (:index:`Organizational Units`) must be entered in the respective input field, if *no Base DN* is used. Next to each input field there is a button to check the corresponding object tree.
+Object trees are organizational or structural units in which certain types of objects (users, groups, computers) are stored. The respective CNs (Common Names) or OUs (Organizational Units) must be entered **without the base DN part** in the respective input field. Next to each input field there are buttons for opening browse dialogs and for testing the individual setting.
 
-:index:`User Tree`
-    Enter the LDAP tree (without Base DN) the users (user objects) reside in. Typical examples are ``OU=Users`` or ``CN=Users``.
+.. index:: User tree
 
-:index:`Group Tree`
-    Enter the LDAP tree (without Base DN) the groups (group objects) reside in. Typical examples are ``OU=Groups`` or ``CN=Groups``.
+User tree
+    The LDAP tree (without base DN) in which the user objects are located must be entered here, e.g. ``OU=Users`` or ``CN=Users``.
 
-:index:`Computer Tree`
-    Enter the LDAP tree (without Base DN) the computers (computer objects) reside in. Typical examples are ``OU=Computers`` or ``CN=Computers``.
+.. index:: Group tree
+
+Group tree
+    The LDAP tree (without base DN) in which the group objects are located must be entered here, e.g. ``OU=Groups`` or ``CN=Groups``.
+
+.. index:: Computer tree
+
+Computer tree
+    The LDAP tree (without base DN) in which the computer objects are located must be entered here, e.g. ``OU=Computers`` or ``CN=Computers``.
+
+.. _LDAPComputerGroupTree:
+
+.. index:: Computer group tree
+
+Computer group tree
+    If the computer groups are located in a different tree than the regular user groups or in a subtree, the corresponding LDAP tree can be specified here. Otherwise the group tree is used to query computer groups and to filter them with a specific :ref:`object filter <LDAPObjectFilters>` if necessary.
+
+.. index:: Recursive search operations
+
+Perform recursive search operations in object trees
+    This option can be used to control whether objects should be queried recursively. The search then takes place not only in the specified tree but also in any existing subtrees.
+
+    **Default:** *disabled*
+
+.. hint:: If objects of one type are stored in different object trees (e.g. users in both ``CN=Teachers`` and in ``CN=Students``), the parameter for the corresponding object tree can be left empty and the option :guilabel:`Perform recursive search operations in object trees` can be activated. A recursive search is then performed in the entire LDAP directory starting from the base DN. In this case, however it is strongly recommended to set the :ref:`object filters <LDAPObjectFilters>` for the respective object type.
 
 
-.. _ComputerGroupTree:
-
-:index:`Computer Group Tree`
-    If the computer groups are located in different tree than the regular (user-)groups or in a subtree, the respective LDAP tree can be entered here. Otherwise the group tree is also used to query :index:`computer groups` and filter them with a specific :ref:`object filter <LdapObjectFilters>` if necessary.
-
-Perform :index:`recursive search operations` in object trees
-    You can use this option to control whether objects shall be queried recursively. In this case the search is not only performed in the determined tree but also in all possible subtrees.
-
-    Default: *disabled*
-
-.. hint:: If objects of a single type reside in various object trees (e.g. users in ``CN=Teachers`` and also in ``CN=Students``), the parameter for the respective object tree can be left empty and the option :guilabel:`Perform recursive search operations in object trees` can be activated. In this case a recursive search through the complete LDAP directory starting from the Base DN is performed. However, you should by all means set the :ref:`object filter <LdapObjectFilters>` for the respective object type.
-
+.. index:: LDAP object attributes
 
 Object attributes
 +++++++++++++++++
 
-In order for Veyon to retrieve the required information from the queried objects, the names of some :index:`object attributes` have to be configured, as they may vary broadly depending on the specific environment and LDAP server. Next to each input field there is a button that can be used to check each attribute name.
+For Veyon to be able to retrieve the required information from the queried objects, the names of some object attributes have to be configured, as these differ substantially depending on the environment and LDAP server. Next to each input field buttons for browsing the attribute of an existing object and testing the respective attribute name are available.
 
-:index:`User Login` attribute
-    This attribute must contain the login name of a user. It is used to determine the :index:`LDAP user object` belonging to a specific user. In an OpenLDAP environment often the attribute name ``uid`` is used to this end, whereas Active Directory frequently uses ``sAMAccountName``.
 
-:index:`Group Member` attribute
-    Members of a group are listed in group objects through this attribute. It is used to determine the groups a particular user is a member of. Depending on the configuration they attribute also also used
-    for mapping computers and rooms. In an OpenLDAP environment often the attribute name ``member`` is used to this end, whereas Active Directory frequently uses ``memberUid``.
+.. index:: User login name attribute, LDAP user object
 
-:index:`Computer Name` attribute
-    This attribute takes the DNS name of the computer. It is used to determine the LDAP computer object belonging to a specific computer name (host name). In an OpenLDAP environment often the attribute name
-    ``name`` is used to this end, whereas Active Directory frequently uses ``dNSHostName``.
+User login name attribute
+    This attribute must hold the login name of a user. The attribute is used to determine the LDAP user object associated with a particular username. In an OpenLDAP environment often the attribute name ``uid`` is used while the name ``sAMAccountName`` is common in Active Directories.
 
-Computer names are saves as :index:`fully qualified domain names`.
-    This option determines whether the `fully qualified domain name (FQDN) <https://de.wikipedia.org/wiki/Fully-Qualified_Host_Name>`_ is used for the mapping of computer names to LDAP computer objects. If the computer names are saved without the domain part in the LDAP directory, this option has to be disabled.
+.. index:: Group member attribute
 
-    Default: *disabled*
+Group member attribute
+    Members of a group are listed in group objects through this attribute. The attribute is used to determine the groups a particular user is a member of. Depending on the configuration the attribute also also used map computers to locations. In an OpenLDAP environment often the attribute name ``member`` is used while the name ``memberUid`` is common in Active Directories.
 
-Computer :index:`MAC address` attribute
-    Additionally to the computer name the MAC addresses of computers are stored in the LDAP directory in some environments, for example, if the DHCP server is also accessing the LDAP directory. If the Veyon function `Wake-on-LAN <https://de.wikipedia.org/wiki/Wake_On_LAN>`_ shall be used, the respective attribute name has to be entered here, since the MAC address is required for this function. Typical examples are ``hwAddress`` or ``dhcpAddress``.
+.. index:: Computer display name attribute
 
-.. hint:: A standard Active Directory does not have an attribute for storing MAC addresses. You'll need to populate MAC addresses manually in an existing unused attribute such as ``wwwHomepage`` or extend the AD scheme. Additionally you can grant computers group write access to ``SELF`` and let them store the MAC address of the first physical LAN adapter by using a PowerShell startup script.
+Computer display name attribute
+    The content of this optional attribute is used to determine the name of a computer displayed in Veyon Master. If left blank the common name (``cn``) is used instead.
 
-Computer room attribute
-    If the LDAP scheme for computer objects needs a special attribute for the mapping to a room, this attribute name can be entered here. You can use the :guilabel:`Test` button to verify, whether the members of a computer room can be correctly queried using the configured attribute. In the advanced settings, you can configure in section :ref:`LdapComputerRooms` that the computer room attribute is used.
+    **Default:** *cn*
 
-Computer room name attribute
-    If computer groups or computer contains are used as rooms, instead of the *Common Names* of these groups or objects, the value of a specific attribute for the displayed room name can be used. For example, if computer groups have an attribute ``name`` or ``description``, you can store a meaningful room declaration in this place.
+.. index:: Computer host name attribute, LDAP computer object
+
+Computer host name attribute
+    This attribute must hold the DNS name of the computer. It is used to determine the LDAP computer object associated with a particular computer hostname. In an OpenLDAP environment often the attribute name ``name`` is used while the name ``dNSHostName`` is common in Active Directories.
+
+.. index:: Fully qualified domain names
+
+Hostnames stored as fully qualified domain names (FQDN, e.g. myhost.example.org)
+    This option specifies whether to use the `fully qualified domain name (FQDN) <https://en.wikipedia.org/wiki/Fully_qualified_domain_name>`_ for mapping computer names to LDAP computer objects. If the computer names are stored without the domain part in the LDAP directory, this option has to be left disabled, otherwise it must be enabled.
+
+    **Default:** *disabled*
+
+.. index:: Computer MAC address attribute, MAC address
+
+Computer MAC address attribute
+    In addition to the computer name the MAC addresses of computers are stored in the LDAP directory in some environments, for example if the DHCP server also accesses the LDAP directory. If the Veyon feature is to be used to switch on computers via `Wake-on-LAN <https://en.wikipedia.org/wiki/Wake-on-LAN>`_, the corresponding attribute name must be entered here, since the MAC address is required for this functionality. Typical attribute names are ``hwAddress`` or ``dhcpAddress``.
+
+.. hint:: In a standard Active Directory there is no attribute which stores MAC addresses. You must therefore populate MAC addresses manually in an existing unused attribute such as ``wwwHomepage`` or extend the AD schema. Additionally you can grant computers group write access to ``SELF`` and use a PowerShell script to make each computer automatically store the MAC address of its first physical LAN adapter when booting.
+
+.. index:: Computer location attribute, Computer location
+
+Computer location attribute
+    If the LDAP schema for computer objects provides a special attribute for the mapping to a location, this attribute name can be entered here. The :guilabel:`Test` button can be used to verify whether the computers at a location can be queried correctly using the configured attribute. In the advanced settings, you can then specify in section :ref:`LDAPComputerLocations` that the computer location attribute is used.
+
+.. index:: Location name attribute
+
+Location name attribute
+    When identifying computer locations via computer groups or computer containers, the value of a certain attribute can be displayed as the location name instead of the *Common Names* of these groups or objects. If, for example, computer groups have an attribute called ``name`` or ``description``, a meaningful location name can be stored in this attribute and the attribute name can be entered here.
 
 .. _LDAPAdvancedSettings:
 
 Advanced settings
 -----------------
 
-With the advanced settings the LDAP integration and usage of information from the LDAP directory can be tailored
-to fit individual needs.
+With the advanced settings the LDAP integration and the use of the information from the LDAP directory can be customized to individual needs.
 
-.. index:: object filters, LDAP object filter
+.. index:: Object filters, LDAP object filter, LDAP filters
 
 .. _LDAPObjectFilters:
 
 Optional object filters
 +++++++++++++++++++++++
 
-By using LDAP filters the LDAP objects used by Veyon can be limited, e.g., if computer objects such as printers should not be displayed in Veyon Master. Next to each input field there is a button to check the respective attribute name.
+With LDAP filters, the LDAP objects used by Veyon can be narrowed down if, for example, computer objects such as printers are not to be displayed in the Veyon Master. Next to each input field there is a button for checking the respective object filter.
 
-Since Veyon 4.1 the optional filters follow the well-known scheme for :index:`LDAP filters` (see for example `RFC 2254 <https://www.ietf.org/rfc/rfc2254.txt>`_ or `Active Directory: LDAP Syntax Filters <https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx>`_), e.g. ``(objectClass=XYZ)``.
+As of Veyon 4.1 the optional filters follow the well-known scheme for LDAP filters (see for example `RFC 2254 <https://www.ietf.org/rfc/rfc2254.txt>`_ or `Active Directory: LDAP Syntax Filters <https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx>`_) such as ``(objectClass=XYZ)``.
 
 Filter for users
     You can define an LDAP filter for users here, e.g. ``(objectClass=person)`` or ``(&(objectClass=person)(objectClass=veyonUser))``.
@@ -162,49 +209,49 @@ Filter for user groups
 Filter for computers
     You can define an LDAP filter for computers here, e.g. ``(objectClass=computer)`` or ``(&(!(cn=printer*))(!(cn=scanner*)))``.
 
-.. _ComputerGroupFilter:
+.. _LDAPComputerGroupsFilter:
 
 Filter for computer groups
-    You can define an LDAP filter for computer groups here, e.g. ``(objectClass=room)`` or ``(cn=Room*)``. If computer groups are used as rooms, you can limit the rooms to be displayed with this method.
+    You can define an LDAP filter for computer groups here, e.g. ``(objectClass=room)`` or ``(cn=Room*)``. If computer groups are used as locations, you can filter the displayed locations this way.
 
-.. _ComputerContainerFilter:
+.. _LDAPComputerContainersFilter:
 
-Filter for computer container
-    You can define an LDAP filter for computer groups here, e.g. ``(objectClass=container)`` or ``(objectClass=organizationalUnit)``. If container/OUs are used as rooms, you can limit the rooms to be displayed with this method.
+Filter for computer containers
+    You can define an LDAP filter for computer groups here, e.g. ``(objectClass=container)`` or ``(objectClass=organizationalUnit)``. If containers/OUs are used as locations, you can filter the displayed locations this way.
 
 
-Identification of group members
-+++++++++++++++++++++++++++++++
+Group member identification
++++++++++++++++++++++++++++
 
-The content of the group membership attributes varies across different LDAP implementations. Whilst in Active Directory the :index:`distinguished name (DN)` of an object is stored in a member attribute, OpenLDAP usually stores the login name of a user (``uid`` or similar) or the computer name. In order for Veyon to use the correct value for querying a user's groups or computers, the correct setting has to be chosen.
+The content of the group membership attributes varies across different LDAP implementations. While in Active Directory the *distinguished name (DN)* of an object is stored in the member attribute, OpenLDAP usually stores the user login name (``uid`` or similar) or the computer name. In order for Veyon to use the correct value for querying groups of a user or computer, the appropriate setting must be chosen here.
 
 Distinguished name (Samba/AD)
     This option has to be chosen, if the distinguished name (DN) of an object is stored in a member attribute of the group. Usually Samba and AD server use this scheme.
 
-Configured attribute for user login or computer name (OpenLDAP)
-    This option has to be chosen , if the user login name or computer name is stored in a member attribute of a group. Usually OpenLDAP server use this scheme.
+Configured attribute for user login name or computer hostname (OpenLDAP)
+    This option has to be chosen, if the login name of a user (username) or the hostname of a computer is stored in the member attributes of a group. Usually OpenLDAP server use this scheme.
 
-.. _LDAPComputerRooms:
+.. _LDAPComputerLocations:
 
-Computer rooms
-++++++++++++++
+Computer locations
+++++++++++++++++++
 
-Veyon provides several methods to map computer rooms to an LDAP directory. In the most simple case there is one :index:`computer group` for every :index:`computer room` which all computers of a room are a member of.  If computers reside in containers or Organizational Units (OUs), these superior objects can be used as rooms. In both cases do not entail an update of the LDAP scheme. As a third possibility the room name can be stored as special attribute in each computer object.
+Veyon offers several methods to represent computer locations in an LDAP directory. In the simple case there is one computer group for every location (e.g. room). All computers at a specific location are members of the corresponding group. If computers instead are organized in containers or organizational units (OUs), these parent objects can be used as locations. Both procedures do not require any adaptation of the LDAP schema. As a third possibility, the location name can also be stored as a special attribute in each computer object.
 
 Computer groups
-    You can use this option to define, that computer rooms are mapping using computer groups. All computer groups will be displayed as rooms in Veyon Master. In each room all computers that are members of the specific group are displayed. In case not all LDAP groups shall be displayed as rooms, you must either configure a dedicated computer group tree or restrict the computer groups by using a computer group filter.
+    This option specifies that computer locations are identified through computer groups. All computer groups are then displayed as locations in the Veyon Master. For each location all computers that are members of the corresponding group are displayed. If not all LDAP groups are to be displayed as locations, either a dedicated :ref:`computer group tree <LDAPComputerGroupTree>` must be configured or the computer groups must be restricted using a :ref:`computer group filter <LDAPComputerGroupsFilter>`.
 
-    Default: *activated*
+    **Default:** *enabled*
 
-Computer container or OUs
-    This settings defines that the containers/OUs in which the computer objects reside are used as computer rooms. Containers are objects that are superior to computer objects in the LDAP tree. In case not all containers shall be displayed as rooms, a respective computer container filter can be defined.
+Computer containers or OUs
+    This option specifies that the containers/OUs containing computer objects are used as computer locations. Containers are objects that are parents to computer objects in the LDAP tree. If not all containers are to be displayed as locations, a corresponding :ref:`computer container filter <LDAPComputerContainersFilter>` can be set up.
 
-    Default: *disabled*
+    **Default:** *disabled*
 
-Common attribute
-    If the LDAP scheme expects a special attribute for the mapping of computer objects to a room, this option can be activated and the attribute name can be entered. You can use the :guilabel:`Test` button to check, whether the members of a computer room can be queried correctly with the configured attribute.
+Location attribute in computer objects
+    If the LDAP schema for computer objects provides a special attribute for mapping computer objects to locations, this option can be enabled and the attribute name can be entered. The :guilabel:`Test` button can be used to check whether the members of a computer location can be queried correctly using the configured attribute.
 
-    Default: *disabled*
+    **Default:** *disabled*
 
 
 .. _LDAPIntegrationTests:
@@ -212,37 +259,43 @@ Common attribute
 Integration tests
 -----------------
 
-By using :index:`integration tests` the LDAP integration as a whole can be tested. The buttons allow for various tests to be performed. All tests should be run successfully and return valid results before the LDAP connection is used in production.
+.. index:: LDAP integration tests
 
+The integration tests can be used to check the LDAP integration as a whole. The buttons allow various tests to be performed. All tests should be successful and provide valid results before the LDAP connection is used in production.
 
-.. index:: LDAP backend
 
 Using LDAP backends
 -------------------
 
-After successful configuration of the LDAP integration, the LDAP backend can be activated. Both :ref:`RefNetworkObjectDirectory` as well as the user groups backend for the :ref:`ComputerAccessControl` have to changed. Only after the network object directory has been changed to *LDAP* the room and computer information from the LDAP directory are used in Veyon Master.
+.. index:: LDAP backend
 
-.. attention:: After the backend has been changed for the computer access control, all previously configured access rules should under all circumstances be checked, since group and room information change and in most cases access rules will no longer be valid or not be processed correctly.
+With the successful configuration and testing of the LDAP integration, the LDAP backends can now be activated. For this, the :ref:`network object directory <RefNetworkObjectDirectory>` and the user groups backend for the :ref:`computer access control <ComputerAccessControl>` must be adapted. Only after switching the network object directory to *LDAP* the location and computer information from the LDAP directory are used in the Veyon Master.
+
+.. attention:: After changing the backend for the computer access control, all previously configured access rules should under all circumstances be checked, since group and location information change and in most cases access rules will no longer be valid or not be processed correctly.
 
 .. _LDAPCLI:
 
 Command line interface
 ----------------------
 
-There are several LDAP specific opertions provided through the :ref:`CommandLineInterface` of Veyon. All operations are provided through the ``ldap`` module. All list of all supported commands is printed on entering ``veyon-cli ldap help``, whilst command specific help texts can be shown via ``veyon-cli ldap help <Command>``.
+The :ref:`CommandLineInterface` of Veyon allows some LDAP-specific operations. All operations are available using the ``ldap`` module. A list of all supported commands is displayed via ``veyon-cli ldap help``, while command-specific help texts can be displayed via ``veyon-cli ldap help <command>``.
 
-``autoconfigurebasedn``
-    This command can be used to automatically determine the used Base DN and permanently write it to the configuration. An LDAP server URL and optionally a naming context attribute have to be supplied as parameters:
+.. describe:: autoconfigurebasedn
 
-    ``veyon-cli ldap autoconfigurebasedn ldap://192.168.1.2/ namingContexts``
+    This command can be used to automatically determine the used base DN and permanently write it to the configuration. An LDAP server URL and optionally a naming context attribute have to be supplied as parameters:
 
-    ``veyon-cli ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/``
+    .. code-block:: none
+
+        veyon-cli ldap autoconfigurebasedn ldap://192.168.1.2/ namingContexts
+        veyon-cli ldap autoconfigurebasedn ldap://Administrator:MYPASSWORD@192.168.1.2:389/
 
 .. hint:: Special characters such as ``@`` or ``:`` – especially in the password - can be specified by using `URL percent-encoding <https://en.wikipedia.org/wiki/Percent-encoding>`_.
 
-``query``
-    This command allows querying LDAP objects (``rooms``, ``computers``, ``groups``, ``users``) and is designed mainly for debugging purposes. However, the function can also be used for developing scripts that may be helpful for system integration.
+.. describe:: query
 
-    ``veyon-cli ldap query users``
+    This command allows to query LDAP objects (``locations``, ``computers``, ``groups``, ``users``) and is mainly used for testing. The function can also be used to develop scripts for system integration tasks.
 
-    ``veyon-cli ldap query computers``
+    .. code-block:: none
+
+        veyon-cli ldap query users
+        veyon-cli ldap query computers

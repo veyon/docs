@@ -1,4 +1,4 @@
-.. index:: Command Line Interface, Command Line Tool, Command Line
+.. index:: Command line interface, Command line tool, Command line, CLI, Veyon CLI
 
 .. _CommandLineInterface:
 
@@ -22,7 +22,7 @@ If the program is called with the ``help`` parameter, a list of all available mo
         service - Commands for configuring and controlling Veyon Service
         shell - Commands for shell functionalities
 
-Each :index:`module` supports the ``help`` command, so that a list of all available commands can be displayed for each module. Sample output for the ``config`` module:
+Each CLI module supports the ``help`` command, so that a list of all available commands can be displayed for each module. Sample output for the ``config`` module:
 
 .. code-block:: none
 
@@ -37,7 +37,7 @@ Each :index:`module` supports the ``help`` command, so that a list of all availa
         unset - Unset (remove) given configuration key
         upgrade - Upgrade and save configuration of program and plugins
 
-For some modules the ``help`` command can be supplied with a :index:`command name` as an additional argument to get specific help for a command:
+For some modules the ``help`` command can be supplied with a command name as an additional argument to get specific help for a command:
 
 .. code-block:: none
 
@@ -76,7 +76,7 @@ The ``authkeys`` module allows the management of authentication keys so that com
 
 .. describe:: setaccessgroup <KEY> <ACCESS GROUP>
 
-    This command adjusts file access permissions to <KEY> such that only the user group <ACCESS GROUP> has read access to it.
+    This command adjusts file access permissions to <KEY> so that only the user group <ACCESS GROUP> has read access to it.
 
 
 .. _ConfigurationManagement:
@@ -84,7 +84,9 @@ The ``authkeys`` module allows the management of authentication keys so that com
 Configuration management
 ------------------------
 
-The local Veyon configuration can be managed using the ``config`` module. Both the complete configuration as individual `:index:`configuration keys` can be read or written.
+.. index:: Configuration key
+
+The local Veyon configuration can be managed using the ``config`` module. Both the complete configuration as individual configuration keys can be read or written.
 
 .. describe:: clear
 
@@ -130,7 +132,7 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 
 .. describe:: unset
 
-    With this command a single configuration key can be deleted, i.e. Veyon then uses the internal :index:`default value`. The name of the key must be passed as an additional argument:
+    With this command a single configuration key can be deleted, i.e. Veyon then uses the internal default value. The name of the key must be passed as an additional argument:
 
     .. code-block:: none
 
@@ -195,11 +197,11 @@ The ``power`` module allows to use power-related functions from the command line
 Remote access
 -------------
 
-The ``remoteaccess`` module provides functions for a graphical remote access to computers. These are the same function that can be accessed from the Veyon Master. The function provided by the command line tool can be used for example to create an :index:`program shortcut` for direct access to a specific computer.
+The ``remoteaccess`` module provides functions for a graphical remote access to computers. These are the same function that can be accessed from the Veyon Master. The function provided by the command line tool can be used for example to create an program shortcut for direct access to a specific computer.
 
 .. describe:: control
 
-    This command opens a window with the :index:`remote control` function that can be used to control a remote computer. The computer name or IP address (and optionally the TCP port) must be passed as an argument:
+    This command opens a window with the remote control function that can be used to control a remote computer. The computer name or IP address (and optionally the TCP port) must be passed as an argument:
 
     .. code-block:: none
 
@@ -207,7 +209,7 @@ The ``remoteaccess`` module provides functions for a graphical remote access to 
 
 .. describe:: view
 
-    This command opens a window with the :index:`remote view` function to monitor a remote computer. In this mode the screen content is displayed in real time, but interaction with the computer is not possible until the corresponding button on the tool bar has been clicked. The computer or IP address (and optionally the TCP port) has to be passed as an argument:
+    This command opens a window with the remote view function to monitor a remote computer. In this mode the screen content is displayed in real time, but interaction with the computer is not possible until the corresponding button on the tool bar has been clicked. The computer or IP address (and optionally the TCP port) has to be passed as an argument:
 
     .. code-block:: none
 
@@ -217,6 +219,8 @@ The ``remoteaccess`` module provides functions for a graphical remote access to 
 Service control
 ---------------
 
+.. index:: Service control, Service registration
+
 The ``service`` module can be used to control the local Veyon Service.
 
 .. describe:: register
@@ -225,7 +229,7 @@ The ``service`` module can be used to control the local Veyon Service.
 
 .. describe:: unregister
 
-    This command removes the :index:`service registration` in the operating system so that the Veyon Service us no longer automatically started at boot time.
+    This command removes the service registration in the operating system so that the Veyon Service us no longer automatically started at boot time.
 
 .. describe:: start
 

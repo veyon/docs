@@ -13,5 +13,6 @@ Veyon Administrator Manual
 	reference
 	troubleshooting
 	faq
+	glossary
 
 * :ref:`genindex`
