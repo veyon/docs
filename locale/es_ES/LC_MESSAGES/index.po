@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Lachaux Patrick, 2019
+# José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,37 +13,37 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-22 20:36+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Lachaux Patrick, 2019\n"
-"Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
+"Last-Translator: José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2019\n"
+"Language-Team: Spanish (Spain) (https://www.transifex.com/veyon-solutions/teams/65452/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Veyon Documentation"
-msgstr "Documentation Veyon"
+msgstr "Documentación de Veyon"
 
 msgid "Online documentation"
-msgstr "Documentation en ligne"
+msgstr "Documentación en línea"
 
 msgid "PDF download"
-msgstr "Téléchargement PDF"
+msgstr "Descargar PDF"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.2.0/veyon-admin-manual-"
 "en_4.2.0.pdf>`_"
 msgstr ""
-"`Manuel PDF de l'Administateur Veyon "
+"`Manual PDF de Administrador de Veyon "
 "<https://github.com/veyon/docs/releases/download/v4.2.0/veyon-admin-manual-"
-"fr_4.2.0.pdf>`_"
+"es_4.2.0.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.2.0/veyon-user-manual-"
 "en_4.2.0.pdf>`_"
 msgstr ""
-"`Manuel PDF de l'Utilisateur Veyon "
+"`Manual PDF de Usuario de Veyon "
 "<https://github.com/veyon/docs/releases/download/v4.2.0/veyon-user-manual-"
-"fr_4.2.0.pdf>`_"
+"es_4.2.0.pdf>`_"
