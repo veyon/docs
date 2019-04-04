@@ -61,7 +61,7 @@ Veyon Master
 .. index:: Veyon Service
 
 Veyon Service
-    A non-graphical service application which monitors user sessions on a computer and starts Veyon Server instances within these sessions. The service and its server subprocesses are required to run on all computers including teacher computers.
+    A non-graphical service application which monitors user sessions on a computer and starts Veyon Server instances within these sessions. The service and its server subprocesses are required to run on all computers including teacher computers. If Veyon Server instances are started manually the Veyon Service is not required.
 
 .. index:: Veyon Server
 
@@ -71,7 +71,7 @@ Veyon Server
 .. index:: Veyon Worker
 
 Veyon Worker
-    A helper program started by the server to provide specific functions in an isolated environment or in the context of the currently logged-on user. Those specific functions include the demo server for the teacher computer and the demo client on the student computers.
+    A helper program started by the server to provide specific functions in an isolated environment or in the context of the currently logged-on user. Those specific functions include the tray icon, the demo server on the teacher computer and the demo client on the student computers.
 
 .. index:: Veyon Configurator, Configuration tool
 
