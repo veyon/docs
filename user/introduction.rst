@@ -18,7 +18,7 @@ The program is started via the start menu or a desktop icon:
 
 Depending on the system configuration you will be prompted for your username and your password:
 
-.. image:: images/logon-dialog.png
+.. image:: images/LogonDialog.png
    :align: center
 
 Enter your username and password here or – if given – the credentials of a special teacher account. If the entered data is correct and and a a login can be performed, the program will start. Otherwise, the login will be denied and an error message will be displayed. In this case you can try the login with corrected data again.
@@ -109,7 +109,7 @@ With the :guilabel:`Save computer/user list` button you can save the list of com
 
 Depending on the system configuration, the button :guilabel:`Add location` is also available. This allows you to add more computer locations to the view. A click on the button opens a dialog where you can see all available locations:
 
-.. image:: images/room-selection.png
+.. image:: images/LocationDialog.png
    :align: center
 
 You can filter the list using the input field, i.e. enter a search term. The list then only displays the location names containing the specified search term. Advanced users can also use regular expressions for the filter. Next you can select the location and confirm with :guilabel:`OK`. The selected location is now available in the location list until the next program start. You can also remove a previously added location by clicking on the location and pressing the :kbd:`Del` key.
@@ -123,7 +123,7 @@ Screenshots panel
 
 Using the screenshot management panel, you can view and delete all captured screenshots. Information on how to take screenshots are given in the :ref:`Program features <ProgramFeatures>` chapter in section :ref:`Screenshot <FeatureScreenshot>`.
 
-.. image:: images/screenshot-management.png
+.. image:: images/ScreenshotManagementPanel.png
    :align: center
 
 You can now select individual screenshots from the list. Details of the screenshot, such as the date it was taken, user name, and computer, are then displayed in the table below. The :guilabel:`Show` button or a double-click in the list displays the selected screenshot in full size. If you no longer need the screenshot, you can permanently delete it using the :guilabel:`Delete` button. Please note that this process cannot be undone and the files will not be moved to the trash.
