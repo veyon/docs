@@ -50,6 +50,8 @@ Authentication key management
 
 The ``authkeys`` module allows the management of authentication keys so that common operations such as importing an authentication key or assigning a user group can be automated easily.
 
+.. note:: ``<KEY>`` parameter always refers to a key name consisting of a name and a type, e.g. ``teacher/public``. A name must consist of letters only. The type has to be either ``private`` or ``public``.
+
 .. describe:: create <NAME>
 
     This command creates a authentication key pair with name <NAME> and saves private and public key to the configured key directories. The parameter must be a name for the key, which may only contain letters.
