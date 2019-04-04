@@ -4,29 +4,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Giancarlo Orru <giancarlo.orru@gmail.com>, 2019
-# Marco Ciampa <ciampix@posteo.net>, 2019
 # Tobias Junghans, 2019
-# Rino Andriano <andriano@itccolamonico.it>, 2019
-# Alessandro Scatolini <ascatol@tin.it>, 2019
-# Marco Moraschi <it@itsluigicasale.mobi>, 2019
-# Giuseppe Aniello <g.aniello@gmail.com>, 2019
-# 328eb5bddd7816477f83755cf11f9d00, 2019
-# albanobattistella <albano_battistella@hotmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-22 11:36+0100\n"
+"POT-Creation-Date: 2019-03-22 20:36+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2019\n"
-"Language-Team: Italian (Italy) (https://www.transifex.com/veyon-solutions/teams/65452/it_IT/)\n"
+"Last-Translator: Tobias Junghans, 2019\n"
+"Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it_IT\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Access control rules"
