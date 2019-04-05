@@ -11,6 +11,7 @@ Veyon Administrator Manual
 	ldap
 	cli
 	reference
+	platform-notes
 	troubleshooting
 	faq
 	glossary

@@ -158,6 +158,15 @@ Enable SAS generation by software (Ctrl+Alt+Del)
 
     **Default:** *enabled*
 
+.. _RefUserAuthenticationMechanism:
+
+.. index:: User authentication, Authentication mechanism
+
+Use alternative user authentication mechanism
+    When using :ref:`logon authentication <ConfLogonAuthentication>` the Veyon Service verifies user credentials using operating system specific logon mechanisms. In case the default mechanism is not working in your environment you can try to use an alternative fallback mechanism. See chapter :ref:`PlatformNotes` for details.
+
+    **Default:** *disabled*
+
 .. index:: Autostart, System service
 
 Autostart
@@ -228,6 +237,7 @@ Plugin
 
     **Default:** *Builtin VNC server*
 
+.. hint:: Platform-specific information on how to configure the individual internal VNC server can be found in chapter :ref:`PlatformNotes`.
 
 .. _RefMaster:
 
