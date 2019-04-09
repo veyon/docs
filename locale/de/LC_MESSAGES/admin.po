@@ -2483,7 +2483,7 @@ msgid ""
 "purpose, settings are available in the section :guilabel:`Connection "
 "security`."
 msgstr ""
-"Veyon kann verschlüsselte Verbindungen zum LDAP-Server aufbauen. Hiefür "
+"Veyon kann verschlüsselte Verbindungen zum LDAP-Server aufbauen. Hierfür "
 "stehen Einstellungen im Abschnitt :guilabel:`Verbindungssicherheit` zur "
 "Verfügung."
 
