@@ -32,7 +32,7 @@ The mixed operation of Veyon on Windows and Linux computers works without any re
 Preparing the installation
 --------------------------
 
-First of all download the installation files for your platform from the `Veyon download page <https://download.veyon.io>`_. For Windows computers it is recommended to use the 64-bit version (`win64`). For 32-bit-installations you have to use the 32-bit version (`win32`) has to be used.
+First of all download the installation files for your platform from the `Veyon download page <https://download.veyon.io>`_. For Windows computers it is recommended to use the 64-bit version (`win64`). For 32-bit installations the 32-bit version (`win32`) has to be used.
 
 Installation on a Windows computer
 ----------------------------------
