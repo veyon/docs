@@ -10,10 +10,14 @@ This chapter contains notes on platform-specific configuration options and pecul
 Windows
 -------
 
-.. _UserLogonMechanismsWindows:
+.. _UserAuthMechanismsWindows:
 
-User logon mechanisms
-+++++++++++++++++++++
+User authentication mechanisms
+++++++++++++++++++++++++++++++
+
+Veyon implements two different mechanisms to authenticate a user (i.e. verify its username and password) on Windows. The default mechanisms has been used successfully for many years. It is is based on the `Security Support Provider Interface <https://en.wikipedia.org/wiki/Security_Support_Provider_Interface>`_ and works in almost every environment. To verify that the mechanisms works properly in your environment you can change the :ref:`authentication method <RefAuthentication>` to :guilabel:`Logon authentication` and click the :guilabel:`Test` button.
+
+If the default mechanism doesn't work for some reason you can enable the :ref:`alternative user authentication mechanism <RefUserAuthenticationMechanism>`. This mechanism utilizes a high level function in the operating system which performs a network user logon internally to verify the user credentials. This logon process can be slower than the simple authentication performed by the default mechanism. It should therefore only be used as a last resort.
 
 .. _UltraVNCServerSettings:
 
@@ -52,11 +56,11 @@ Low accuracy (turbo mode)
 Linux
 -----
 
-.. _UserLogonMechanismsLinux:
+.. _UserAuthMechanismsLinux:
 
-User logon mechanisms
-+++++++++++++++++++++
+User authentication mechanisms
+++++++++++++++++++++++++++++++
 
-Per default the Veyon Server launches the Veyon Authentication helper (``veyon-auth-helper``). This small program actually performs the user authentication via `Linux PAM <https://en.wikipedia.org/wiki/Linux_PAM>`_. In almost every Linux installation several PAM services are configured and usually managed by Linux distribution specific tools. The PAM service ``login`` is used per default, i.e. authentication is performed through the modules configured in ``/etc/pam.d/login`` (Veyon 4.0/4.1 used ``/etc/pam.d/su``).
+In order to authenticate a user (i.e. verify its username and password) on Linux the Veyon Server launches the Veyon Authentication helper (``veyon-auth-helper``). This small program actually performs the user authentication via `Linux PAM <https://en.wikipedia.org/wiki/Linux_PAM>`_. In almost every Linux installation several PAM services are configured and usually managed by Linux distribution specific tools. Veyon uses the PAM service ``login`` per default, i.e. authentication is performed through the modules configured in ``/etc/pam.d/login`` (Veyon 4.0/4.1 used ``/etc/pam.d/su``).
 
-If you want to use a dedicated PAM service configuration for Veyon you can enable the :ref:`alternative user authentication mechanism <RefUserAuthenticationMechanism>` option. Once enabled the Veyon Authentication helper will use the PAM service ``veyon``, i.e. configuration is taken from ``/etc/pam.d/veyon``. This allows to use dedicated PAM modules for authenticating Veyon users.
+If you want to use a dedicated PAM service configuration for Veyon you can enable the :ref:`alternative user authentication mechanism <RefUserAuthenticationMechanism>` option. Once enabled the Veyon Authentication helper will use the PAM service ``veyon``, i.e. configuration is taken from ``/etc/pam.d/veyon``. This allows to use dedicated PAM modules for authenticating Veyon users. Please make sure to provide the PAM service configuration file before enabling the alternative mechanism. Otherwise authentication will always fail.
