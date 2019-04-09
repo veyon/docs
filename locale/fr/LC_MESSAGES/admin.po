@@ -6,8 +6,8 @@
 # Translators:
 # Alexis Deville <adeville8@gmail.com>, 2019
 # emmanuel keith <planctonscream@gmail.com>, 2019
-# ÉricB. <eric.bugnet@gmail.com>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2019
+# ÉricB. <eric.bugnet@gmail.com>, 2019
 # Lachaux Patrick, 2019
 # 
 #, fuzzy
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-04 14:20+0200\n"
+"POT-Creation-Date: 2019-04-09 09:59+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Lachaux Patrick, 2019\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
@@ -1635,14 +1635,9 @@ msgstr "Préparation de l'installation"
 msgid ""
 "First of all download the installation files for your platform from the "
 "`Veyon download page <https://download.veyon.io>`_. For Windows computers it"
-" is recommended to use the 64-bit version (`win64`). For 32-bit-"
-"installations you have to use the 32-bit version (`win32`) has to be used."
+" is recommended to use the 64-bit version (`win64`). For 32-bit "
+"installations the 32-bit version (`win32`) has to be used."
 msgstr ""
-"Tout d’abord, téléchargez les fichiers d’installation de votre plate-forme à"
-" partir de la `page de téléchargement de Veyon "
-"<https://download.veyon.io>`_. Pour les ordinateurs Windows, il est "
-"recommandé d’utiliser la version 64 bits (`win64`). Pour les installations "
-"32 bits, vous devez utiliser la version 32 bits (`win32`)."
 
 msgid "Installation on a Windows computer"
 msgstr "Installation sur un ordinateur Windows"
@@ -2714,6 +2709,135 @@ msgstr ""
 msgid "LDAP backend"
 msgstr ""
 
+msgid "Platform specific notes"
+msgstr ""
+
+msgid ""
+"This chapter contains notes on platform-specific configuration options and "
+"pecularities."
+msgstr ""
+
+msgid "Windows"
+msgstr ""
+
+msgid "User authentication mechanisms"
+msgstr ""
+
+msgid ""
+"Veyon implements two different mechanisms to authenticate a user (i.e. "
+"verify its username and password) on Windows. The default mechanisms has "
+"been used successfully for many years. It is is based on the `Security "
+"Support Provider Interface "
+"<https://en.wikipedia.org/wiki/Security_Support_Provider_Interface>`_ and "
+"works in almost every environment. To verify that the mechanisms works "
+"properly in your environment you can change the :ref:`authentication method "
+"<RefAuthentication>` to :guilabel:`Logon authentication` and click the "
+":guilabel:`Test` button."
+msgstr ""
+
+msgid ""
+"If the default mechanism doesn't work for some reason you can enable the "
+":ref:`alternative user authentication mechanism "
+"<RefUserAuthenticationMechanism>`. This mechanism utilizes a high level "
+"function in the operating system which performs a network user logon "
+"internally to verify the user credentials. This logon process can be slower "
+"than the simple authentication performed by the default mechanism. It should"
+" therefore only be used as a last resort."
+msgstr ""
+
+msgid "UltraVNC server settings"
+msgstr ""
+
+msgid ""
+"Veyon uses a lightweight version of UltraVNC as a builtin VNC server on "
+"Windows. While the Veyon Server manages most UltraVNC settings on its own a "
+"few performance and system integration related settings can be changed "
+"manually. In general you should not need to change the default values unless"
+" you encounter problems while accessing or controlling remote computers."
+msgstr ""
+
+msgid "Enable capturing of layered (semi-transparent) windows"
+msgstr "Activer la capture des fenêtres semi-transparentes"
+
+msgid ""
+"When using the traditional screen mirroring driver (i.e. Windows 7 is used "
+"or Desktop Duplication Engine is disabled) the VNC server can't capture "
+"semi-transparent windows. This can result in large parts of the screen not "
+"being captured if the Windows Aero theme is used. To circumvent this issue "
+"capturing of semi-transparent windows is enabled per default. Besides "
+"potentially lower performance this can also make the mouse cursor flicker on"
+" client computers."
+msgstr ""
+
+msgid "Enable multi monitor support"
+msgstr "Activer le support multi moniteur"
+
+msgid ""
+"This option says whether to capture only the first of all monitors. On "
+"client computers it usually is desirable to see all monitors. On master "
+"computers this option can be disabled in order to broadcast only the "
+"contents of the first screen in demo mode. This way the teacher does not "
+"have to share its whole desktop. Broadcasting less screen data also improves"
+" performance."
+msgstr ""
+
+msgid "Enable Desktop Duplication Engine on Windows 8 and newer"
+msgstr ""
+"Activer le processus de duplication du bureau sur Windows 8 ou supérieur"
+
+msgid ""
+"When this option is enabled UltraVNC uses the new Desktop Duplication Engine"
+" on Windows 8 and newer. This engine is a new driver backend for capturing "
+"screen data and provides much better performance compared to the traditional"
+" screen mirroring driver. Additionally it also captures windows with "
+"DirectX-rendered content, e.g. allowing to view and control DirectX-based "
+"CAD applications remotely."
+msgstr ""
+
+msgid "Poll full screen (leave this enabled per default)"
+msgstr "Sondage en plein écran (laissez activé par défaut)"
+
+msgid ""
+"If no suitable driver for capturing screen data is found this determines "
+"whether to scan the whole screen for changed pixels. Otherwise only the "
+"foreground window is scanned which can reduce CPU load. It should only be "
+"disabled as a last resort if CPU load is an issue."
+msgstr ""
+
+msgid "Low accuracy (turbo mode)"
+msgstr "Résolution faible (mode turbo)"
+
+msgid ""
+"Enabling this option will make the VNC server use a scan raster to detect "
+"changed screen areas which need to be sent to the viewer. As changes of "
+"individual pixels might only be detected every 4th scan pass, partial "
+"updates can be delayed by a few hundred milliseconds in some cases. At the "
+"same time this option greatly improves performance and reduces the CPU load "
+"caused by the VNC server."
+msgstr ""
+
+msgid ""
+"In order to authenticate a user (i.e. verify its username and password) on "
+"Linux the Veyon Server launches the Veyon Authentication helper (``veyon-"
+"auth-helper``). This small program actually performs the user authentication"
+" via `Linux PAM <https://en.wikipedia.org/wiki/Linux_PAM>`_. In almost every"
+" Linux installation several PAM services are configured and usually managed "
+"by Linux distribution specific tools. Veyon uses the PAM service ``login`` "
+"per default, i.e. authentication is performed through the modules configured"
+" in ``/etc/pam.d/login`` (Veyon 4.0/4.1 used ``/etc/pam.d/su``)."
+msgstr ""
+
+msgid ""
+"If you want to use a dedicated PAM service configuration for Veyon you can "
+"enable the :ref:`alternative user authentication mechanism "
+"<RefUserAuthenticationMechanism>` option. Once enabled the Veyon "
+"Authentication helper will use the PAM service ``veyon``, i.e. configuration"
+" is taken from ``/etc/pam.d/veyon``. This allows to use dedicated PAM "
+"modules for authenticating Veyon users. Please make sure to provide the PAM "
+"service configuration file before enabling the alternative mechanism. "
+"Otherwise authentication will always fail."
+msgstr ""
+
 msgid "Configuration reference"
 msgstr ""
 
@@ -2994,6 +3118,17 @@ msgstr ""
 "ordinateur contrôlé à distance ou de connecter un utilisateur, car dans la "
 "plupart des cas, le raccourci :kbd:`Ctrl+Alt+Del` doit être produit avant."
 
+msgid "Use alternative user authentication mechanism"
+msgstr "Utiliser une autre méthode pour l'authentification de l'utilisateur"
+
+msgid ""
+"When using :ref:`logon authentication <ConfLogonAuthentication>` the Veyon "
+"Server verifies user credentials using operating system specific mechanisms."
+" In case the default mechanism is not working in your environment you can "
+"try to use an alternative fallback mechanism. See chapter "
+":ref:`PlatformNotes` for details."
+msgstr ""
+
 msgid "Autostart"
 msgstr "Démarrage automatique"
 
@@ -3108,6 +3243,11 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Builtin VNC server*"
+msgstr ""
+
+msgid ""
+"Platform-specific information on how to configure the individual internal "
+"VNC server can be found in chapter :ref:`PlatformNotes`."
 msgstr ""
 
 msgid "Master"
@@ -3705,6 +3845,12 @@ msgstr ""
 
 msgid "Ctrl+Alt+Del"
 msgstr "Ctrl+Alt+Del"
+
+msgid "User authentication"
+msgstr ""
+
+msgid "Authentication mechanism"
+msgstr ""
 
 msgid "System service"
 msgstr ""
