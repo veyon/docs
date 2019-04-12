@@ -137,7 +137,31 @@ The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power down`
 
 Click the appropriate button to power on, restart, or shut down all displayed computers. If you want to use a feature for individual computers only, you can select the respective computers and select the desired item in the context menu.
 
-.. attention:: Please note that, depending on the program configuration, the computers will be restarted or shut down without further confirmation queries. Therefore, always make sure that the logged in users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
+Veyon 4.2 and newer provide additional power down options. These options can be selected from a menu which opens when clicking the :guilabel:`Power down` button:
+
+.. image:: images/PowerDownOptions.png
+   :align: center
+
+The following actions are available:
+
+Power down now
+    The computers will be powered down immediately without further confirmation dialogs.
+
+Install updates and power down
+    If supported by the operating system all available system updates will be installed during the shut down process. If no updates are available the respective computer will be powered down immediately.
+
+Power down after user confirmation
+    With this option each logged on user will be asked whether to shut down the respective computer. If no user is logged on a particular computer, it will be powered down immediately.
+
+Power down after timeout
+    Selecting this option opens a dialog window where you can set a time after which the computers will be powered down:
+    
+    .. image:: images/PowerDownTimeInputDialog.png
+       :align: center
+    
+    After accepting the dialog a countdown window is displayed on all computers telling the users to save their work and close all applications.
+
+.. attention:: Please note that, depending on the program configuration, the computers will be restarted or shut down without further confirmation dialogs. Therefore, always make sure that the logged in users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
 
 .. note:: Depending on the configuration of the network and the system settings of the individual computers, powering on only works under certain technical conditions. At the same time, there is no access permission check when you power on, so you may be able to power on computers in other rooms or locations. For this reason, pay attention to the selected computers when using this feature.
 
@@ -156,7 +180,7 @@ Activate this button to log off all users from all displayed computers. If you w
 
 .. hint:: A typical use case for this feature can be to end a course for all participants at the same time.
 
-.. attention:: Please note that the logged on users – depending on the program configuration – are logged off without further confirmation queries. Therefore, always make sure that the logged on users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
+.. attention:: Please note that the logged on users – depending on the program configuration – are logged off without further confirmation dialogs. Therefore, always make sure that the logged on users have saved all open documents etc. and closed all programs if possible. This prevents unwanted data loss.
 
 
 Send text message

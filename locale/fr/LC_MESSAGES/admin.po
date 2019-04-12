@@ -3249,6 +3249,8 @@ msgid ""
 "Platform-specific information on how to configure the individual internal "
 "VNC server can be found in chapter :ref:`PlatformNotes`."
 msgstr ""
+"Des informations spécifiques à la configuration du serveur VNC interne de "
+"votre environement sont disponibles au chapitre :ref:`PlatformNotes`."
 
 msgid "Master"
 msgstr "Maître"
