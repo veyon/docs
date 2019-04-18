@@ -16,6 +16,8 @@ Veyon also has a command line interface (CLI) which can be used to modify the co
 
 In case Veyon causes problem during its installation or configuration actions can be taken as described in chapter :ref:`Troubleshooting`. Frequently asked questions are answered in chapter :ref:`FAQ`.
 
+Before upgrading to a new release series of Veyon it's recommended to carefully read the :ref:`ReleaseNotes` for the respective version.
+
 
 About Veyon
 -----------

@@ -140,6 +140,8 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 
         veyon-cli config unset Directories/Screenshots
 
+.. _CLIConfigUpgrade:
+
 .. describe:: upgrade
 
     With this command the configuration of Veyon and all plugins can be updated and saved. This may be necessary if settings or configuration formats have changed due to program or plugin updates.

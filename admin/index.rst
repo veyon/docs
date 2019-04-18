@@ -12,6 +12,7 @@ Veyon Administrator Manual
 	cli
 	reference
 	platform-notes
+	release-notes
 	troubleshooting
 	faq
 	glossary
