@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 09:59+0200\n"
+"POT-Creation-Date: 2019-04-19 12:01+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Tobias Junghans, 2019\n"
 "Language-Team: Slovenian (https://www.transifex.com/veyon-solutions/teams/65452/sl/)\n"
@@ -2006,6 +2006,11 @@ msgstr ""
 "V primeru, da Veyon povzroča težave med namestitvijo ali konfiguracijo, je "
 "mogoče ukrepati, kot je opisano v poglavju :ref:`Troubleshooting`. Pogosto "
 "zastavljena vprašanja najdete v poglavju :ref:`FAQ`."
+
+msgid ""
+"Before upgrading to a new release series of Veyon it's recommended to "
+"carefully read the :ref:`ReleaseNotes` for the respective version."
+msgstr ""
 
 msgid "About Veyon"
 msgstr "O programu"
@@ -4477,6 +4482,403 @@ msgstr "Domači imenik"
 
 msgid "Temporary files"
 msgstr "Začasne datoteke"
+
+msgid "Release notes"
+msgstr ""
+
+msgid ""
+"This chapter contains information on changes in different Veyon release "
+"series. You should read them carefully before upgrading from an older "
+"version of Veyon. If not migrated properly, using newer versions of Veyon "
+"with old settings in the worst case can lead to security issues such as "
+"misbehaving access control rules."
+msgstr ""
+
+msgid ""
+"Release notes for the individual releases can be found at the `Veyon "
+"releases page <https://github.com/veyon/veyon/releases>`_."
+msgstr ""
+
+msgid "Upgrading configuration"
+msgstr ""
+
+msgid ""
+"Due to changes in Veyon and its plugins it may happen that both "
+"configuration keys and values change between the release series of Veyon. In"
+" general Veyon has builtin mechanisms to read old configuration keys and "
+"values and migrate them internally at runtime. This ensures that Veyon keeps"
+" running normally after upgrading the software only. It is still highly "
+"recommended to always upgrade the Veyon configuration stored in the system. "
+"This can be done in two ways:"
+msgstr ""
+
+msgid ""
+"Open Veyon Configurator and click the :guilabel:`Apply` button to save and "
+"apply the runtime-migrated configuration permanently."
+msgstr ""
+
+msgid ""
+"Use the :ref:`CommandLineInterface` to upgrade the configuration through the"
+" :ref:`upgrade command of the config module <CLIConfigUpgrade>`."
+msgstr ""
+
+msgid ""
+"If not using the second method in an automated manner on all computers, the "
+"upgraded configuration needs to be :ref:`exported to all other computers "
+"<ConfImportExport>` afterwards."
+msgstr ""
+
+msgid ""
+"If configuration keys are renamed, the old keys are always kept for "
+"compatibility reasons allowing to switch back to a previous version more "
+"easily. There'll be a clean up mechanism in a future release which will "
+"remove all legacy configuration keys."
+msgstr ""
+
+msgid "Veyon 4.2"
+msgstr ""
+
+msgid ""
+"Veyon 4.2 continues the Veyon 4 major release series with many internal "
+"modernizations, user interface optimizations and performance improvements in"
+" many areas. Veyon 4.2 lays the foundation for commercial addons offered "
+"starting in the second half of 2019. The following new features and "
+"improvements can be found in Veyon 4.2:"
+msgstr ""
+
+msgid "Core"
+msgstr ""
+
+msgid ""
+"The network object management layer has been revised to allow using multi-"
+"level hierarchies in commercial addons."
+msgstr ""
+
+msgid ""
+"The automatic detection of user interface language in some countries has "
+"been improved (e.g. use German in Austria or Switzerland)."
+msgstr ""
+
+msgid "The computer sort order can now be configured."
+msgstr ""
+
+msgid ""
+"The internal data models have been improved leading to more stability and "
+"reliability."
+msgstr ""
+
+msgid ""
+"The connection and message handling has been improved to reduce latencies."
+msgstr ""
+
+msgid "Configurator"
+msgstr ""
+
+msgid "New view modes \"Standard\" and \"Advanced\" have been added."
+msgstr ""
+
+msgid "An authentication test functionality has been added."
+msgstr ""
+
+msgid "Plugins"
+msgstr ""
+
+msgid ""
+"The new file transfer plugin allows to send files to all users and open them"
+" automatically if requested."
+msgstr ""
+
+msgid "Wake-on-LAN can be used in the CLI via the power module."
+msgstr ""
+
+msgid ""
+"The builtin network object directory gained support for importing CSV files "
+"with a type column."
+msgstr ""
+
+msgid ""
+"The power down feature supports additional options to install updates, "
+"confirm shutdown or power down after timeout."
+msgstr ""
+
+msgid "Users can now add custom programs and websites to the respective menu."
+msgstr ""
+
+msgid "Browse buttons have been added to the configuration pages."
+msgstr ""
+
+msgid "A new attribute for the computer display name has been added."
+msgstr ""
+
+msgid ""
+"Computer attribute queries have been optimized to decrease load on the "
+"LDAP/AD server."
+msgstr ""
+
+msgid "The result messages of the integration tests have been improved."
+msgstr ""
+
+msgid ""
+"The PAM service ``login`` instead of ``su`` is now used to authenticate "
+"users."
+msgstr ""
+
+msgid "Support for alternative PAM service ``veyon`` has been added."
+msgstr ""
+
+msgid ""
+"Platform-specific network code has been improved for more reliable network "
+"connections."
+msgstr ""
+
+msgid ""
+"An alternative authentication mechanism has been added for cases where the "
+"SSPI-based mechanism does not work."
+msgstr ""
+
+msgid ""
+"The underlying Qt framework has been updated to the LTS version 5.12 leading"
+" to better Windows 10 support."
+msgstr ""
+
+msgid ""
+"Performance and security of the builtin UltraVNC server have been improved."
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid ""
+"Starting with Veyon 4.2 the more generic term *location* instead of *room* "
+"is used wherever appropriate. This affects both the user interface and "
+"configuration key names. The wording has been changed to better reflect "
+"where computers are located in multi-level hierarchies."
+msgstr ""
+
+msgid ""
+"In Veyon 4.2 the command line utility has been renamed to ``veyon-cli``. All"
+" occurrences of the old name ``veyon-ctl`` in your scripts and installation "
+"routines have to be replaced accordingly. On Windows there's also a new non-"
+"console version ``veyon-wcli`` which allows to automate tasks without "
+"irritating command line window popups."
+msgstr ""
+
+msgid ""
+"On Linux the systemd unit has been renamed from ``veyon-service.service`` to"
+" ``veyon.service``."
+msgstr ""
+
+msgid ""
+"The Veyon Configurator no longer shows all configuration options per default"
+" in order to present a cleaner user interface. If you miss certain advanced "
+"options you can switch the view to :guilabel:`Advanced` through the "
+":guilabel:`View` menu."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid ""
+"Several configuration keys have been renamed in Veyon 4.2. When upgrading to"
+" Veyon 4.2 or newer the new configuration keys will be populated with the "
+"value of the old keys automatically."
+msgstr ""
+
+msgid "Old name"
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "``Master/AutoSwitchToCurrentRoom``"
+msgstr ""
+
+msgid "``Master/AutoSelectCurrentLocation``"
+msgstr ""
+
+msgid "``Master/OnlyCurrentRoomVisible``"
+msgstr ""
+
+msgid "``Master/ShowCurrentLocationOnly``"
+msgstr ""
+
+msgid "``Master/ManualRoomAdditionAllowed``"
+msgstr ""
+
+msgid "``Master/AllowAddingHiddenLocations``"
+msgstr ""
+
+msgid "``Master/EmptyRoomsHidden``"
+msgstr ""
+
+msgid "``Master/HideEmptyLocations``"
+msgstr ""
+
+msgid "``Master/OpenComputerManagementAtStart``"
+msgstr ""
+
+msgid "``Master/AutoOpenComputerSelectPanel``"
+msgstr ""
+
+msgid "``Master/ConfirmDangerousActions``"
+msgstr ""
+
+msgid "``Master/ConfirmUnsafeActions``"
+msgstr ""
+
+msgid "``LDAP/UserLoginAttribute``"
+msgstr ""
+
+msgid "``LDAP/UserLoginNameAttribute``"
+msgstr ""
+
+msgid "``LDAP/ComputerRoomMembersByAttribute``"
+msgstr ""
+
+msgid "``LDAP/ComputerLocationsByAttribute``"
+msgstr ""
+
+msgid "``LDAP/ComputerRoomMembersByContainer``"
+msgstr ""
+
+msgid "``LDAP/ComputerLocationsByContainer``"
+msgstr ""
+
+msgid "``LDAP/ComputerRoomAttribute``"
+msgstr ""
+
+msgid "``LDAP/ComputerLocationAttribute``"
+msgstr ""
+
+msgid "``LDAP/ComputerRoomNameAttribute``"
+msgstr ""
+
+msgid "``LDAP/LocationNameAttribute``"
+msgstr ""
+
+msgid "Veyon 4.1"
+msgstr ""
+
+msgid ""
+"Veyon 4.1 was the first feature release series of Veyon 4. Even though not "
+"visible to the end user the most notable change is the platform support "
+"modularization, i.e. all platform-specific functions have been moved to "
+"distinct plugins. This has significantly improved the support of the "
+"individual platforms and makes it easier to support further platforms in the"
+" future. In addition to that Veyon 4.1 offers many improvements and new "
+"features compared to 4.0:"
+msgstr ""
+
+msgid "All passwords in configuration are now encrypted."
+msgstr ""
+
+msgid "Platform-specific code has been moved into platform plugins."
+msgstr ""
+
+msgid "Computers can now be arranged via drag and drop."
+msgstr ""
+
+msgid "A button for hiding powered off computers has been added."
+msgstr ""
+
+msgid ""
+"Refresh interval, background color and thumbnail caption are now "
+"configurable."
+msgstr ""
+
+msgid ""
+"Authentication key management for both Configurator and command line has "
+"been revised completely."
+msgstr ""
+
+msgid "Computers and rooms can now be managed at the command line."
+msgstr ""
+
+msgid "Computers and rooms can now be imported from CSV and text files."
+msgstr ""
+
+msgid ""
+"Predefined programs and websites for \"run program\" and \"open website\" "
+"features can be configured."
+msgstr ""
+
+msgid "Support for encrypted SSL/TLS connections has been added."
+msgstr ""
+
+msgid "Full systemd service support"
+msgstr ""
+
+msgid ""
+"The shutdown/reboot/session logout mechanisms have been rewritten to use "
+"DBus calls."
+msgstr ""
+
+msgid ""
+"All builds are based on an updated toolchain with GCC 7.3, Qt 5.9 LTS and "
+"OpenSSL 1.1."
+msgstr ""
+
+msgid ""
+"As part of the changes for systemd support on Linux, in Veyon 4.1 the Veyon "
+"Service component has been split into two separate components. The Veyon "
+"Service no longer contains the actual functions to provide access to a "
+"computer. These functions have been moved into the new Veyon Server "
+"component which runs as a standalone process in user sessions. The Veyon "
+"Service now only monitors user sessions on a computer and starts Veyon "
+"Server instances within these sessions."
+msgstr ""
+
+msgid ""
+"The ``LocalData`` plugin has been split into the ``BuiltinDirectory`` and "
+"``SystemUserGroups`` plugins. This allows to use different data sources for "
+"access control, e.g. computers from an LDAP directory in combination with "
+"local user groups. After upgrading you should verify that the appropriate "
+"network object directory and access control user groups backend are selected"
+" as desired."
+msgstr ""
+
+msgid "The following configuration keys have changed in Veyon 4.1:"
+msgstr ""
+
+msgid ""
+"In Veyon 4.0 this key contained the unencrypted password for an external VNC"
+" server. Starting with Veyon 4.1 this password is always stored encrypted. "
+"It will be encrypted automatically when upgrading the configuration to 4.1. "
+"There's no way to encrypt the password manually. When downgrading to 4.0 the"
+" password needs to be set explicitely again."
+msgstr ""
+
+msgid ""
+"In Veyon 4.0 this key contained the unencrypted LDAP bind password. Starting"
+" with Veyon 4.1 this password is always stored encrypted. It will be "
+"encrypted automatically when upgrading the configuration to 4.1. There's no "
+"way to encrypt the password manually. When downgrading to 4.0 the password "
+"needs to be set explicitely again."
+msgstr ""
+
+msgid ""
+"Veyon 4.0 used a non-standard syntax for LDAP filters. This has been fixed "
+"in Veyon 4.1 where all filter expressions must be placed in parentheses. The"
+" expressions will be adjusted automatically when upgrading the configuration"
+" to 4.1."
+msgstr ""
+
+msgid ""
+"In Veyon 4.0 the builtin network object directory was provided by a "
+"different plugin. Starting with Veyon 4.1 locations and computers are stored"
+" in ``BuiltinDirectory/NetworkObjects`` instead of "
+"``LocalData/NetworkObjects``."
+msgstr ""
+
+msgid "Veyon 4.0"
+msgstr ""
+
+msgid ""
+"Veyon 4.0 was the first release series of Veyon 4, the successor of iTALC. "
+"It features a modular architecture, a rewritten Master application and "
+"LDAP/AD support. As of December 2018 the Veyon 4.0.x series is marked end-"
+"of-life and will not receive updates any longer."
+msgstr ""
 
 msgid "Troubleshooting"
 msgstr "Odpravljanje težav"
