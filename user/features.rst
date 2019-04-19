@@ -244,7 +244,7 @@ If no websites have been predefined by the administrator, a dialog window opens 
 
 Confirm this dialog with :guilabel:`OK`.
 
-Otherwise, a menu with the predefined websites will open from which you can select the desired website. If you want to open a website that is not included in the menu, select the last item :guilabel:`Custom website`. The dialog shown above wll then open.
+Otherwise, a menu with the predefined websites will open from which you can select the desired website. If you want to open a website that is not included in the menu, select the last item :guilabel:`Custom website`. The dialog shown above will then open.
 
 
 .. _FeatureScreenshot:

@@ -9,7 +9,7 @@ Which user can access which computer under which circumstances depends on the sy
 How frequently are the computer thumbnails updated?
 ---------------------------------------------------
 
-Usually the computer thumbnails in the monitoring view are updated once a second. Depending on the utilization of the network and the computer, there may be slight deviations. In contrast when remote controlling or viewing a computer, you see In contrast whe screen content of the remote computer in real time.
+Usually the computer thumbnails in the monitoring view are updated once a second. Depending on the utilization of the network and the computer, there may be slight deviations. In contrast when remote controlling or viewing a computer, you see the screen content of the remote computer in real time.
 
 What happens if I accidentally close the Veyon Master application window?
 -------------------------------------------------------------------------
