@@ -31,12 +31,12 @@ From Wikipedia, the free encyclopedia:
       .. seealso:: https://en.wikipedia.org/wiki/Input_device
 
     Keyboard shortcut
-      A keyboard shortcut is a series of one or several keys, such as "Ctrl+F" to search a character string. Such a directive invokes a software or operating system operation (in other words, cause an event) when triggered by the user.  
+      A keyboard shortcut is a series of one or several keys, such as "Ctrl+F" to search a character string. Such a directive invokes a software or operating system operation (in other words, cause an event) when triggered by the user.
 
       .. seealso:: https://en.wikipedia.org/wiki/Keyboard_shortcut
 
     Password
-      A password is a word or string of characters used for user authentication to prove identity or access approval to gain access to a resource (example: an access code is a type of password), which is to be kept secret from those not allowed access.  
+      A password is a word or string of characters used for user authentication to prove identity or access approval to gain access to a resource (example: an access code is a type of password), which is to be kept secret from those not allowed access.
 
       .. seealso:: https://en.wikipedia.org/wiki/Password
 
@@ -46,7 +46,7 @@ From Wikipedia, the free encyclopedia:
       .. seealso:: https://en.wikipedia.org/wiki/Screenshot
 
     Status bar
-      A status bar is a graphical control element which poses an information area typically found at the window's bottom.[1] It can be divided into sections to group information. Its job is primarily to display information about the current state of its window, although some status bars have extra functionality. For example, many web browsers have clickable sections that pop up a display of security or privacy information. 
+      A status bar is a graphical control element which poses an information area typically found at the window's bottom. It can be divided into sections to group information. Its job is primarily to display information about the current state of its window, although some status bars have extra functionality. For example, many web browsers have clickable sections that pop up a display of security or privacy information.
 
       .. seealso:: https://en.wikipedia.org/wiki/Status_bar
 

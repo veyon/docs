@@ -233,7 +233,7 @@ The ``service`` module can be used to control the local Veyon Service.
 
 .. describe:: unregister
 
-    This command removes the service registration in the operating system so that the Veyon Service us no longer automatically started at boot time.
+    This command removes the service registration in the operating system so that the Veyon Service is no longer automatically started at boot time.
 
 .. describe:: start
 

@@ -15,7 +15,7 @@ Windows
 User authentication mechanisms
 ++++++++++++++++++++++++++++++
 
-Veyon implements two different mechanisms to authenticate a user (i.e. verify its username and password) on Windows. The default mechanisms has been used successfully for many years. It is is based on the `Security Support Provider Interface <https://en.wikipedia.org/wiki/Security_Support_Provider_Interface>`_ and works in almost every environment. To verify that the mechanisms works properly in your environment you can change the :ref:`authentication method <RefAuthentication>` to :guilabel:`Logon authentication` and click the :guilabel:`Test` button.
+Veyon implements two different mechanisms to authenticate a user (i.e. verify its username and password) on Windows. The default mechanisms has been used successfully for many years. It is based on the `Security Support Provider Interface <https://en.wikipedia.org/wiki/Security_Support_Provider_Interface>`_ and works in almost every environment. To verify that the mechanisms works properly in your environment you can change the :ref:`authentication method <RefAuthentication>` to :guilabel:`Logon authentication` and click the :guilabel:`Test` button.
 
 If the default mechanism doesn't work for some reason you can enable the :ref:`alternative user authentication mechanism <RefUserAuthenticationMechanism>`. This mechanism utilizes a high level function in the operating system which performs a network user logon internally to verify the user credentials. This logon process can be slower than the simple authentication performed by the default mechanism. It should therefore only be used as a last resort.
 

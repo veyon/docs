@@ -21,7 +21,7 @@ Depending on the system configuration you will be prompted for your username and
 .. image:: images/LogonDialog.png
    :align: center
 
-Enter your username and password here or – if given – the credentials of a special teacher account. If the entered data is correct and and a a login can be performed, the program will start. Otherwise, the login will be denied and an error message will be displayed. In this case you can try the login with corrected data again.
+Enter your username and password here or – if given – the credentials of a special teacher account. If the entered data is correct and and a login can be performed, the program will start. Otherwise, the login will be denied and an error message will be displayed. In this case you can try the login with corrected data again.
 
 
 User interface

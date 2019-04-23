@@ -57,7 +57,7 @@ Encryption protocol
 .. index:: TLS certificate verification
 
 TLS certificate verification
-    This setting determines how the security certificate of the LDAP server is to be checked when the encrypted connection is established. With the default setting *System defaults*, depending on the operating system, an attempt is made to verify the certificate using the root certificates installed system-wide. The Windows certificate store is not taken into account here, so that a separate CA certificate file may have to be stored. With the the *Never* setting, the server certificate is not verified at all. This however allows for case man-in-the-middle attacks and should therefore only be used in exceptional cases. The *User-defined CA certificate file* setting ensures that the certificate check is performed on the basis of a specified CA certificate file.
+    This setting determines how the security certificate of the LDAP server is to be checked when the encrypted connection is established. With the default setting *System defaults*, depending on the operating system, an attempt is made to verify the certificate using the root certificates installed system-wide. The Windows certificate store is not taken into account here, so that a separate CA certificate file may have to be stored. With the *Never* setting, the server certificate is not verified at all. This however allows for case man-in-the-middle attacks and should therefore only be used in exceptional cases. The *User-defined CA certificate file* setting ensures that the certificate check is performed on the basis of a specified CA certificate file.
 
     **Default:** *System defaults*
 
@@ -73,7 +73,7 @@ Base DN
 
 The base DN defines the address of the root object in the directory. All objects are stored below the base DN. Usually the base DN comes from the DNS or AD domain (see also `RFC 2247 <https://www.ietf.org/rfc/rfc2247.txt>`_).
 
-In most cases a fixed base DN is used so the default option :guilabel:`Fixed base DN` has to be chosen. The base DN then has to be entered in the corresponding input field or seleted from the server by using the :guilabel:`Browse` button. You can use the :guilabel:`Test` button to verify, whether the settings are correct and entries can be found.
+In most cases a fixed base DN is used so the default option :guilabel:`Fixed base DN` has to be chosen. The base DN then has to be entered in the corresponding input field or selected from the server by using the :guilabel:`Browse` button. You can use the :guilabel:`Test` button to verify, whether the settings are correct and entries can be found.
 
 .. index:: LDAP naming contexts
 
@@ -144,7 +144,7 @@ User login name attribute
 .. index:: Group member attribute
 
 Group member attribute
-    Members of a group are listed in group objects through this attribute. The attribute is used to determine the groups a particular user is a member of. Depending on the configuration the attribute also also used map computers to locations. In an OpenLDAP environment often the attribute name ``member`` is used while the name ``memberUid`` is common in Active Directories.
+    Members of a group are listed in group objects through this attribute. The attribute is used to determine the groups a particular user is a member of. Depending on the configuration the attribute also used map computers to locations. In an OpenLDAP environment often the attribute name ``member`` is used while the name ``memberUid`` is common in Active Directories.
 
 .. index:: Computer display name attribute
 
@@ -217,7 +217,7 @@ Filter for computer groups
 .. _LDAPComputerContainersFilter:
 
 Filter for computer containers
-    You can define an LDAP filter for computer groups here, e.g. ``(objectClass=container)`` or ``(objectClass=organizationalUnit)``. If containers/OUs are used as locations, you can filter the displayed locations this way.
+    You can define an LDAP filter for computer containers here, e.g. ``(objectClass=container)`` or ``(objectClass=organizationalUnit)``. If containers/OUs are used as locations, you can filter the displayed locations this way.
 
 
 Group member identification

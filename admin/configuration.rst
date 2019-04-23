@@ -17,9 +17,9 @@ Overview
 
 The basic settings on the configuration page :ref:`RefGeneral` apply to all :ref:`components` of Veyon. These include settings for the :ref:`RefUserInterface`, :ref:`RefLogging`, :ref:`RefAuthentication` as well as the :ref:`RefNetworkObjectDirectory` which stores the locations and computers displayed in the Veyon Master.
 
-The settings on the configuration page :ref:`RefService` influence the functionality of the Veyon Service and are used for fine-tuning and adaptation to implement special application scenarious. For smooth operation the default settings should normally not be changed.
+The settings on the configuration page :ref:`RefService` influence the functionality of the Veyon Service and are used for fine-tuning and adaptation to implement special application scenarios. For smooth operation the default settings should normally not be changed.
 
-All setting on configuration page :ref:`RefMaster` only affect the behavior and functions of the Veyon Master application and apply system-wide for all users.
+All settings on configuration page :ref:`RefMaster` only affect the behavior and functions of the Veyon Master application and apply system-wide for all users.
 
 .. index:: Quick start
 
@@ -41,7 +41,7 @@ Authentication methods
 
 Basically Veyon offers two different authentication methods: key file authentication and logon authentication.
 
-**Key file authentication** is based on `Public-Key-Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography>`_, meaning that a public key and a associated private key are used. Only certain users may have access to the private key. On each connection request the Veyon Service sends a random character sequence to Veyon Master, which Veyon Master has to sign cryptographically using the private key. The signature is sent back to the Veyon Service and verified with the corresponding public key. This verifiction only succeeds if the signature was generated with the appropriate private key. The authenticity of the counterpart is then guaranteed. If the signature verification fails, the connection is closed.
+**Key file authentication** is based on `Public-Key-Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography>`_, meaning that a public key and a associated private key are used. Only certain users may have access to the private key. On each connection request the Veyon Service sends a random character sequence to Veyon Master, which Veyon Master has to sign cryptographically using the private key. The signature is sent back to the Veyon Service and verified with the corresponding public key. This verification only succeeds if the signature was generated with the appropriate private key. The authenticity of the counterpart is then guaranteed. If the signature verification fails, the connection is closed.
 
 With **logon authentication** the counterpart encrypts its username and password and sends this data to the Veyon Service. The Veyon Service then attempts to perform an internal user login to the local system using the decrypted credentials. If this process is successful, the username and password are correct and the authenticity of the counterpart is ensured. If the login fails, the connection is closed.
 
@@ -139,7 +139,7 @@ In the Veyon Configurator you can find the entry :guilabel:`Save settings to fil
 
 The :ref:`ConfigurationManagement` module of the :ref:`CommandLineInterface` can be used to automate/script configuration import and export.
 
-Additionally, when performing an :ref:`automated installation <AutoInstall>` the configuration can be imported without requiring any further user interaction. In the example section an :ref:`example <InstallationConfigurationImport>` is given for for the installer parameter ``/ApplyConfig``.
+Additionally, when performing an :ref:`automated installation <AutoInstall>` the configuration can be imported without requiring any further user interaction. In the example section an :ref:`example <InstallationConfigurationImport>` is given for the installer parameter ``/ApplyConfig``.
 
 
 .. index:: Reset configuration, Reset settings, Clear configuration, Delete configuration

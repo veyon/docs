@@ -6,7 +6,7 @@ Installation
 Hardware and software requirements
 ----------------------------------
 
-.. index:: Minium requirements, Operating system
+.. index:: Minimum requirements, Operating system
 
 Veyon is designed to run on standard computers running Windows or Linux. The minimum requirements for the hardware depend on the usage scenario and size of the environment in which Veyon is deployed. While there are no special requirements for client computers all master computers should be equipped with enough RAM and CPU cores to monitor the desired number of client computers.
 

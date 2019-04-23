@@ -78,7 +78,7 @@ If you want to unlock the screens, simply press the button again or click the :g
 
 If only individual computers are to be locked, you can select them as described in section :ref:`NonGlobalFeatureActivation` and select the feature in the context menu. The screen lock can then be deactivated either by selecting :guilabel:`Unlock` or switching back to :guilabel:`Monitoring` mode. The screen lock can also be activated globally at first and later deactivated for individual computers via the context menu.
 
-.. note:: Due to security restrictions of most operating systems, the lock screen can not be displayed if no used is logged on. The input devices are still locked, so that no user logon is possible.
+.. note:: Due to security restrictions of most operating systems, the lock screen can not be displayed if no user is logged on. The input devices are still locked, so that no user logon is possible.
 
 
 Remote access

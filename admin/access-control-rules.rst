@@ -28,7 +28,7 @@ General
 
 A name for the rule should be defined in input field :guilabel:`Rule name` first. The name is later used to identify the rule and is displayed in the rules list. For documentation purposes an optional description can be added to the :guilabel:`Rule description` input field.
 
-The option :guilabel:`Always process rule and ignore conditions` causes the conditions set below not to be examined for rule processing and the set action is always executed. This particularly useful for fallback rules at the botton of the rules list, where you can specify that the logged on user is asked for permission if no other rules apply.
+The option :guilabel:`Always process rule and ignore conditions` causes the conditions set below not to be examined for rule processing and the set action is always executed. This particularly useful for fallback rules at the bottom of the rules list, where you can specify that the logged on user is asked for permission if no other rules apply.
 
 You can use the :guilabel:`Invert all conditions` option to determine that all activated conditions are inverted before evaluation, meaning that activated conditions must not apply. For example, if the condition *No user logged on* is activated, the rule only applies if one or more users are logged on. If a condition is configured so that a user must be a member of a specific group, the rule only applies, if the said user is *not* a member of the group.
 
@@ -109,7 +109,7 @@ Logical concatenation of rules
 
 If more than one condition is activated in a rule, *each* condition must apply for the rule to be applied (logical AND). If only one of several rules should apply (logical OR), several access control rules must be defined.
 
-With basic knowledge of Boolean algebra, the option *Invert all conditions* can be used as negation operator in conjunction with inverted actions to model extended scenarios. For example, if a user must be a member of two specific groups to allow access to a computer, two seperate rules can be created that deny access, if the user is *not* a member of either group.
+With basic knowledge of Boolean algebra, the option *Invert all conditions* can be used as negation operator in conjunction with inverted actions to model extended scenarios. For example, if a user must be a member of two specific groups to allow access to a computer, two separate rules can be created that deny access, if the user is *not* a member of either group.
 
 .. note:: If there is no matching access control rule so that all activated conditions apply, access is denied and the connection is closed. This prevents an attacker from being accidentally allowed access due to an incomplete ruleset.
 
