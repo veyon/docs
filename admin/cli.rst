@@ -201,7 +201,7 @@ The ``power`` module allows to use power-related functions from the command line
 Remote access
 -------------
 
-The ``remoteaccess`` module provides functions for a graphical remote access to computers. These are the same function that can be accessed from the Veyon Master. The function provided by the command line tool can be used for example to create an program shortcut for direct access to a specific computer.
+The ``remoteaccess`` module provides functions for a graphical remote access to computers. These are the same functions that can be accessed from the Veyon Master. The function provided by the command line tool can be used for example to create an program shortcut for direct access to a specific computer.
 
 .. describe:: control
 

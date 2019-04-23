@@ -29,7 +29,7 @@ While the configuration of authentication methods is very similar, the configura
 Is it possible to use Veyon Master on more than one computer?
 -------------------------------------------------------------
 
-The usage of Veyon Master on multiple computers is possible without any restrictions. For this to work an identical configuration has to be used on all master computers like its required for client computers in general. If logon authentication is used no further steps are necessary. If key file authentication is used the same private key has to be distributed to all master computers.
+The usage of Veyon Master on multiple computers is possible without any restrictions. For this to work an identical configuration has to be used on all master computers like it's required for client computers in general. If logon authentication is used no further steps are necessary. If key file authentication is used the same private key has to be distributed to all master computers.
 
 
 How can an existing VNC server be used in conjunction with Veyon?
