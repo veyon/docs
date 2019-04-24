@@ -151,22 +151,6 @@ Show notification on remote connection
 
     **Default:** *disabled*
 
-.. index:: SAS generation, Secure Attention Sequence, Ctrl+Alt+Del
-
-Enable SAS generation by software (Ctrl+Alt+Del)
-    On Windows per default it's impossible for applications to generate the *Secure Attention Sequence* (Ctrl+Alt+Del) in order to simulate the press of these keys. When enabling this option a policy is written to the Windows registry which changes this behavior. It is recommended to leave this option enabled in order to be able to send :kbd:`Ctrl+Alt+Del` when remote controlling a computer. Otherwise it may be impossible to unlock a remotely controlled computer or logging on a user since in most cases the shortcut :kbd:`Ctrl+Alt+Del` has to be issued first.
-
-    **Default:** *enabled*
-
-.. _RefUserAuthenticationMechanism:
-
-.. index:: User authentication, Authentication mechanism
-
-Use alternative user authentication mechanism
-    When using :ref:`logon authentication <ConfLogonAuthentication>` the Veyon Server verifies user credentials using operating system specific mechanisms. In case the default mechanism is not working in your environment you can try to use an alternative fallback mechanism. See chapter :ref:`PlatformNotes` for details.
-
-    **Default:** *disabled*
-
 .. index:: Autostart, System service
 
 Autostart

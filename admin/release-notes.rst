@@ -30,6 +30,7 @@ Veyon 4.2 continues the Veyon 4 major release series with many internal moderniz
 * Core
    - The network object management layer has been revised to allow using multi-level hierarchies in commercial addons.
    - The automatic detection of user interface language in some countries has been improved (e.g. use German in Austria or Switzerland).
+   - Context information in log messages have been improved.
 * Master
    - The computer sort order can now be configured.
    - The internal data models have been improved leading to more stability and reliability.
@@ -43,17 +44,22 @@ Veyon 4.2 continues the Veyon 4 major release series with many internal moderniz
    - The builtin network object directory gained support for importing CSV files with a type column.
    - The power down feature supports additional options to install updates, confirm shutdown or power down after timeout.
    - Users can now add custom programs and websites to the respective menu.
+   - Thumbnail updates can be slowed down while the demo mode is active. This improves performance and reduces network traffic.
 * LDAP
    - Browse buttons have been added to the configuration pages.
    - A new attribute for the computer display name has been added.
    - Computer attribute queries have been optimized to decrease load on the LDAP/AD server.
+   - Computer location queries used by access control have been fixed if containers/OUs are used as locations.
    - The result messages of the integration tests have been improved.
 * Linux
+   - A configuration page with platform-specific settings has been added.
    - The PAM service ``login`` instead of ``su`` is now used to authenticate users.
-   - Support for alternative PAM service ``veyon`` has been added.
+   - Support for using a custom PAM service such as ``veyon`` has been added.
 * Windows
+   - A configuration page with platform-specific settings has been added.
    - Platform-specific network code has been improved for more reliable network connections.
    - An alternative authentication mechanism has been added for cases where the SSPI-based mechanism does not work.
+   - The screen lock feature can now disable and hide the taskbar, start button and start menu.
    - The underlying Qt framework has been updated to the LTS version 5.12 leading to better Windows 10 support.
    - Performance and security of the builtin UltraVNC server have been improved.
 
@@ -79,6 +85,9 @@ Several configuration keys have been renamed in Veyon 4.2. When upgrading to Vey
 
   * - Old name
     - New name
+
+  * - ``Service/SoftwareSASEnabled``
+    - ``Windows/SoftwareSASEnabled``
 
   * - ``Master/AutoSwitchToCurrentRoom``
     - ``Master/AutoSelectCurrentLocation``
