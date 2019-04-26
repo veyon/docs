@@ -20,7 +20,7 @@ User interface
 .. index:: Language
 
 Language
-    The selected language can be configured for the graphical user interfaces as well as the command line tools. You can choose from all languages which have been translated so far. Please note that changing the language will require a program restart in order to take effect. Per default Veyon uses the language of the operating system if a translation is available for that language. Otherwise English will be used as a fallback.
+    The selected language can be configured for the graphical user interfaces as well as the command line tools. You can choose from all the languages which have been translated so far. Please note that changing the language will require a program restart in order to take effect. Per default Veyon uses the language of the operating system if a translation is available for that language. Otherwise English will be used as a fallback.
 
     **Default:** *Use system language setting*
 
@@ -69,14 +69,14 @@ Logging
 
 .. index:: Logging
 
-Veyon can log various kinds of messages to component-specific log files or the logging system of the operating system. These information can be very helpful when troubleshooting issues with Veyon. The following logging settings allow to change the logging behaviour.
+Veyon can log various kinds of messages to component-specific log files or the logging system of the operating system. This information can be very helpful when troubleshooting issues with Veyon. The following logging settings allow to change the logging behaviour.
 
 .. _RefLogFileDirectory:
 
 .. index:: Log file directory
 
 Log file directory
-    You can use this setting to specify which directory the log files will written in. It's strongly recommended to use placeholder variables here. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
+    You can use this setting to specify which directory the log files will be written in. It's strongly recommended to use placeholder variables here. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
 
     **Default:** *%TEMP%*
 
@@ -85,7 +85,7 @@ Log file directory
 .. index:: Log level
 
 Log level
-    The log level defines the minimum severity for which log messages are written. When analyzing program failures it may be useful to set the log level to :guilabel:`Debug messages and everything else`. This will generate huge amount of log data and is not recommended for production environments. The default log level *Warnings and errors* or higher should be used instead.
+    The log level defines the minimum severity for which log messages are written. When analyzing program failures it may be useful to set the log level to :guilabel:`Debug messages and everything else`. This will generate a huge amount of log data and is not recommended for production environments. The default log level *Warnings and errors* or higher should be used instead.
 
     **Default:** *Warnings and errors*
 
@@ -197,14 +197,14 @@ Demo server port
 .. index:: Firewall exception, Firewall, Windows firewall
 
 Enable firewall exception
-    Depending on the system configuration it may be impossible to access a listening ports such as the Veyon Service port from the network. On Windows the Windows firewall usually will block any incoming connections. In order to provide access to the service port and the demo server port, exceptions for the Windows-Firewall must be configured. This is done automatically during the installation process. If this behavior is not desired and manual configuration is preferred, this option can be disabled.
+    Depending on the system configuration it may be impossible to access listening ports such as the Veyon Server port from the network. On Windows the Windows firewall usually will block any incoming connections. In order to allow access to the service port and the demo server port, exceptions for the Windows-Firewall must be configured. This is done automatically during the installation process. If this behavior is not desired and manual configuration is preferred, this option can be disabled.
 
     **Default:** *enabled*
 
 .. index:: localhost
 
 Allow connections from localhost only
-    If you do not want the Veyon Service to be available to other computers in the network, you can use this option. This option must not be activated for normal computers that should be accessible from the Veyon Master application. However, this option can be useful for teacher computers to provide additional security beyond the access control functionality. Access to the demo server is not affected by this option.
+    If you do not want the Veyon Server to be available to other computers in the network, you can use this option. This option must not be activated for normal computers that should be accessible from the Veyon Master application. However, this option can be useful for teacher computers to provide additional security beyond the access control functionality. Access to the demo server is not affected by this option.
 
     **Default:** *disabled*
 
@@ -302,7 +302,7 @@ In the tab :guilabel:`Behaviour` settings are available to change the behaviour 
 **Program start**
 
 Perform access control
-    You can use this option to define whether the possibly configured :ref:`ComputerAccessControl` should also be perform whenever the Veyon Master application is started. Even though access control is enforced client-side in every case, this additional option assures, that users without proper access rights can not even start Veyon Master, making security even more visible.
+    You can use this option to define whether the possibly configured :ref:`ComputerAccessControl` should also be performed whenever the Veyon Master application is started. Even though access control is enforced client-side in every case, this additional option assures, that users without proper access rights can not even start Veyon Master, making security even more visible.
 
     **Default:** *disabled*
 
@@ -356,7 +356,7 @@ Hide local computer
 .. index:: Empty locations
 
 Hide empty locations
-    In some situations the :ref:`network object directory <RefNetworkObjectDirectory>` may contains locations without computers, for example due to specific LDAP filters. Such empty locations can be hidden automatically in the computer select panel by enabling this option.
+    In some situations the :ref:`network object directory <RefNetworkObjectDirectory>` may contain locations without computers, for example due to specific LDAP filters. Such empty locations can be hidden automatically in the computer select panel by enabling this option.
 
     **Default:** *disabled*
 
@@ -462,14 +462,14 @@ Placeholder variables should be used for both base directories. All information 
 .. index:: Public key file base directory
 
 Public key file base directory
-    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual public key file inside. This allows to set individual access permissions for the subdirectories. The public key files are placed in the corresponding subdirectory below the base directory on both creation and import. When loading the respective public key file for authentication the Veyon Service uses this base directory as well.
+    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual public key file inside. This allows to set individual access permissions for the subdirectories. The public key files are placed in the corresponding subdirectory below the base directory on both creation and import. When loading the respective public key file for authentication the Veyon Server uses this base directory as well.
 
     **Default:** *%GLOBALAPPDATA%/keys/public*
 
 .. index:: Private key file base directory
 
 Private key file base directory
-    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual private key file inside. This makes it possible to define individual access rights for the subdirectories. During creation and import, the private key files are placed in the corresponding subdirectory below the base directory. Veyon Master searches for accessible private key files under this base directory and uses the private key files to authenticate against the Veyon Service on client computers.
+    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual private key file inside. This makes it possible to define individual access rights for the subdirectories. During creation and import, the private key files are placed in the corresponding subdirectory below the base directory. Veyon Master searches for accessible private key files under this base directory and uses the private key files to authenticate against the Veyon Server on client computers.
 
     **Default:** *%GLOBALAPPDATA%/keys/private*
 
@@ -512,19 +512,19 @@ Placeholder variables have to be supplied in the format ``%VARIABLE%`` on all pl
 
 .. describe:: %APPDATA%
 
-    This variable is expanded to the user-specific directory for application data stored by Veyon, e.g. :file:`...\\User\\AppData\\Veyon` on Windows or :file:`~/.veyon` on Linux
+    This variable is expanded to the user-specific directory for application data stored by Veyon, e.g. :file:`...\\User\\AppData\\Veyon` on Windows or :file:`~/.veyon` on Linux.
 
 .. describe:: %HOME%
 
-    This variable is expanded to the home directory/user profile directory of the logged on user, e.g. :file:`C:\\Users\\Admin` on Windows or :file:`/home/admin` on Linux
+    This variable is expanded to the home directory/user profile directory of the logged on user, e.g. :file:`C:\\Users\\Admin` on Windows or :file:`/home/admin` on Linux.
 
 .. describe:: %GLOBALAPPDATA%
 
-    This variable is expanded to the system-wide directory for Veyon's application data,  e.g. :file:`C:\\ProgramData\\Veyon` on Windows or :file:`/etc/veyon` on Linux
+    This variable is expanded to the system-wide directory for Veyon's application data,  e.g. :file:`C:\\ProgramData\\Veyon` on Windows or :file:`/etc/veyon` on Linux.
 
 .. describe:: %TEMP%
 
-    This variable is expanded to the user-specific directory for temporary files, on Windows :file:`C:\\Windows\\Temp` is used for the Veyon Service and :file:`/tmp` on Linux
+    This variable is expanded to the user-specific directory for temporary files, e.g. :file:`...\\User\\AppData\\Local\\Temp` on Windows or :file:`/tmp` (or any path specified in the :envvar:`$TMPDIR` environment variable) on Linux. Processes running with system privileges (Veyon Service, Veyon Server and all sub processes) use :file:`C:\\Windows\\Temp` on Windows and :file:`/tmp` on Linux.
 
 
 .. _RefEnvironmentVariables:
@@ -536,7 +536,7 @@ Veyon evaluates various optional environment variables allowing to override defa
 
 .. envvar:: VEYON_AUTH_KEY_NAME
 
-    This variable allows to explicitely specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
+    This variable allows to explicitly specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
 
 .. envvar:: VEYON_LOG_LEVEL
 

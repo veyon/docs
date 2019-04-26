@@ -164,11 +164,11 @@ The following configuration keys have changed in Veyon 4.1:
 
 .. describe:: ExternalVncServer/Password
 
-    In Veyon 4.0 this key contained the unencrypted password for an external VNC server. Starting with Veyon 4.1 this password is always stored encrypted. It will be encrypted automatically when upgrading the configuration to 4.1. There's no way to encrypt the password manually. When downgrading to 4.0 the password needs to be set explicitely again.
+    In Veyon 4.0 this key contained the unencrypted password for an external VNC server. Starting with Veyon 4.1 this password is always stored encrypted. It will be encrypted automatically when upgrading the configuration to 4.1. There's no way to encrypt the password manually. When downgrading to 4.0 the password needs to be set explicitly again.
 
 .. describe:: LDAP/BindPassword
 
-    In Veyon 4.0 this key contained the unencrypted LDAP bind password. Starting with Veyon 4.1 this password is always stored encrypted. It will be encrypted automatically when upgrading the configuration to 4.1. There's no way to encrypt the password manually. When downgrading to 4.0 the password needs to be set explicitely again.
+    In Veyon 4.0 this key contained the unencrypted LDAP bind password. Starting with Veyon 4.1 this password is always stored encrypted. It will be encrypted automatically when upgrading the configuration to 4.1. There's no way to encrypt the password manually. When downgrading to 4.0 the password needs to be set explicitly again.
 
 .. describe:: LDAP/UsersFilter, LDAP/UserGroupsFilter, LDAP/ComputersFilter, LDAP/ComputerGroupsFilter, LDAP/ComputerContainersFilter
 

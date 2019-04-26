@@ -10,7 +10,7 @@ Troubleshooting
 Computers can't be accessed
 ---------------------------
 
-There are multiple causes which can prevent the access to a computer using Veyon Master.
+There are multiple causes which can prevent access to a computer using Veyon Master.
 
 Networking problems
 +++++++++++++++++++
@@ -22,7 +22,7 @@ First of all the general network connectivity of the computer should be checked.
 Problems with the Veyon Service
 +++++++++++++++++++++++++++++++
 
-If the computer can be pinged you should verify that the Veyon Service is running correctly. Open the Veyon Configurator and open the configuration page :ref:`RefService`. In the section :ref:`RefServiceGeneral` the status of the service should be displayed with status *Running*. Otherwise the service can be started using the button :guilabel:`Start service`. If this is not successful you should try reinstalling Veyon. If a new installation does not help you can check the log files of the Veyon Service as well as the logging messages of the operation system for error messages and possible causes. Additionally you can find more hints or settings in the service management of your operating system.
+If the computer can be pinged you should verify that the Veyon Service is running correctly. Open the Veyon Configurator and open the configuration page :ref:`RefService`. In the section :ref:`RefServiceGeneral` the status of the service should be displayed with status *Running*. Otherwise the service can be started using the button :guilabel:`Start service`. If this is not successful you should try reinstalling Veyon. If a new installation does not help you can check the log files of the Veyon Service as well as the logging messages of the operating system for error messages and possible causes. Additionally you can find more hints or settings in the service management of your operating system.
 
 .. index:: telnet, netstat
 
@@ -50,7 +50,7 @@ If the port access from remote computers still fails usually a firewall prevents
 Authentication settings
 +++++++++++++++++++++++
 
-Another cause of error can be wrong or insufficient :ref:`authentication settings <RefAuthentication>`. For first tests you should select :ref:`logon authentication <ConfLogonAuthentication>` instead of :ref:`key file authentication <ConfKeyFileAuthentication>` on both computers. As soon as the authentication test is successful on the local computer external access will also work.
+Another cause of the error can be wrong or insufficient :ref:`authentication settings <RefAuthentication>`. For first tests you should select :ref:`logon authentication <ConfLogonAuthentication>` instead of :ref:`key file authentication <ConfKeyFileAuthentication>` on both computers. As soon as the authentication test is successful on the local computer external access will also work.
 
 If :ref:`key file authentication <ConfKeyFileAuthentication>` is used the key files on master and client computers must match exactly. On client computers the public key file must have exactly the same content as on the master computer. If the access still fails the access permissions to the key files may be wrong. The Veyon Service needs to have read permissions on the *public key file* while the user of Veyon Master has to be able to read the *private key file*. If the problem persists the :ref:`key file directories <RefKeyFileDirectories>` of the key files should be deleted on all computers and a new keypair generated on the master computer. The public key must then be imported again on all client computers.
 
@@ -59,7 +59,7 @@ Settings for computer access control
 
 An incorrect configuration of computer access control can also lead to computers being inaccessible. Initially it's recommended to disable :ref:`computer access control <ComputerAccessControl>` completely using the Veyon Configurator. This allows to determine which method for computer access control is possibly incorrectly configured.
 
-If :ref:`authorized user groups for computer access <RefAuthorizedUserGroups>` are used you should check whether the list of authorized user groups is complete and whether the accessing user is member of one of these user groups.
+If :ref:`authorized user groups for computer access <RefAuthorizedUserGroups>` are used you should check whether the list of authorized user groups is complete and whether the accessing user is a member of one of these user groups.
 
 Improperly configured :ref:`access control rules <AccessControlRules>` can also cause problems with accessing computers. It is necessary to always specify at least one rule to allow access under certain conditions. If this is ensured, a temporary test rule can be inserted at the end of the list for further debugging. This rule should be configured so that the option :guilabel:`Always process rule and ignore conditions` is enabled and the action :guilabel:`Allow access` is selected. This rule can then be moved up in the rule list step by step until the test returns the desired positive results and the access works. The access rule located directly below the test rule is then the cause for the access denial and can be examined more closely and corrected accordingly. Don't forget to remove the test rule afterwards to prevent unauthorized access.
 
@@ -83,7 +83,7 @@ Selecting current location automatically doesn't work
 
 If the :ref:`option automatically selecting the current location <RefAutoSelectLocation>` is activated, but has no effect when starting Veyon Master, you should first make sure that the master computer is also listed as a computer for the respective room in the :ref:`network object directory <RefNetworkObjectDirectory>`.
 
-If the problem persists although all entries in the network object directory are correct, there is usually a problem with the DNS configuration in the network. Make sure that computer names can be resolved to IP addresses and reverse lookups of IP addresses return the corresponding computer names. On most operating systems, the DNS diagnostic tool ``nslookup`` is available for this purpose. Calling the program with the local computer name as argument must return a valid IP address. A second call with the determined IP address must again return the computer name.
+If the problem persists although all entries in the network object directory are correct, there is usually a problem with the DNS configuration in the network. Make sure that computer names can be resolved to IP addresses and reverse lookups of IP addresses return the corresponding computer names. On most operating systems, the DNS diagnostic tool ``nslookup`` is available for this purpose. Calling the program with the local computer name as an argument must return a valid IP address. A second call with the determined IP address must again return the computer name.
 
 If the function does not work as desired despite correct DNS setup, in the second step the :ref:`log level <RefLoglevel>` can be set to the highest value (*Debug messages and everything else*). After restarting Veyon Master, you can search the log file ``VeyonMaster.log`` in the :ref:`log file directory <RefLogFileDirectory>` for further error causes. The lines with the messages *"initializing locations"* and *"found locations"* indicate which host names and IP addresses were used to determine the location and which locations were eventually determined on the basis of these information.
 
