@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
+# albanobattistella <albano_battistella@hotmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 20:00+0200\n"
+"POT-Creation-Date: 2019-04-26 13:24+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2019\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2551,15 +2552,30 @@ msgid ""
 msgstr ""
 
 msgid "Windows"
+msgstr "Windows"
+
+msgid "Enable SAS generation by software (Ctrl+Alt+Del)"
+msgstr "Abilita generazione SAS via software (Ctrl+Alt+Del)"
+
+msgid ""
+"On Windows per default it's impossible for applications to generate the "
+"*Secure Attention Sequence* (Ctrl+Alt+Del) in order to simulate the press of"
+" these keys. When enabling this option a policy is written to the Windows "
+"registry which changes this behavior. It is recommended to leave this option"
+" enabled in order to be able to send :kbd:`Ctrl+Alt+Del` when remote "
+"controlling a computer. Otherwise it may be impossible to unlock a remotely "
+"controlled computer or logging on a user since in most cases the shortcut "
+":kbd:`Ctrl+Alt+Del` has to be issued first."
 msgstr ""
 
-msgid "User authentication mechanisms"
-msgstr ""
+msgid "User authentication"
+msgstr "Autenticazione utente"
 
 msgid ""
 "Veyon implements two different mechanisms to authenticate a user (i.e. "
-"verify its username and password) on Windows. The default mechanisms has "
-"been used successfully for many years. It is based on the `Security Support "
+"verify its username and password) on Windows when using :ref:`logon "
+"authentication <ConfLogonAuthentication>`. The default mechanism has been "
+"used successfully for many years. It is based on the `Security Support "
 "Provider Interface "
 "<https://en.wikipedia.org/wiki/Security_Support_Provider_Interface>`_ and "
 "works in almost every environment. To verify that the mechanisms works "
@@ -2568,14 +2584,50 @@ msgid ""
 ":guilabel:`Test` button."
 msgstr ""
 
+msgid "Use alternative user authentication mechanism"
+msgstr "Utilizzare un meccanismo di autenticazione utente alternativo"
+
 msgid ""
-"If the default mechanism doesn't work for some reason you can enable the "
-":ref:`alternative user authentication mechanism "
-"<RefUserAuthenticationMechanism>`. This mechanism utilizes a high level "
-"function in the operating system which performs a network user logon "
+"In case the default mechanism is not working in your environment you can try"
+" to use an alternative fallback mechanism. This mechanism utilizes a high "
+"level function in the operating system which performs a network user logon "
 "internally to verify the user credentials. This logon process can be slower "
 "than the simple authentication performed by the default mechanism. It should"
 " therefore only be used as a last resort."
+msgstr ""
+
+msgid "Screen lock"
+msgstr "Blocco schermo"
+
+msgid ""
+"The screen lock feature per default disables all input devices and hides "
+"parts of the operating system user interface. This behaviour can be changed "
+"for cases where parts of the operating system user interface no longer "
+"function properly after a computer is unlocked."
+msgstr ""
+
+msgid "Hide taskbar"
+msgstr "Nascondi la barra delle applicazioni"
+
+msgid ""
+"This option defines whether the taskbar and the start button should be "
+"disabled and hidden by the screen lock feature."
+msgstr ""
+
+msgid "Hide start menu"
+msgstr "Nasconde il menu di avvio"
+
+msgid ""
+"This option defines whether the start menu should be disabled and hidden by "
+"the screen lock feature."
+msgstr ""
+
+msgid "Hide desktop"
+msgstr "Nascondi desktop"
+
+msgid ""
+"This option defines whether the desktop should be disabled and hidden by the"
+" screen lock feature."
 msgstr ""
 
 msgid "UltraVNC server settings"
@@ -2660,15 +2712,35 @@ msgid ""
 " in ``/etc/pam.d/login`` (Veyon 4.0/4.1 used ``/etc/pam.d/su``)."
 msgstr ""
 
+msgid "Custom PAM service for user authentication"
+msgstr "Servizio PAM personalizzato per l'autenticazione dell'utente"
+
 msgid ""
-"If you want to use a dedicated PAM service configuration for Veyon you can "
-"enable the :ref:`alternative user authentication mechanism "
-"<RefUserAuthenticationMechanism>` option. Once enabled the Veyon "
-"Authentication helper will use the PAM service ``veyon``, i.e. configuration"
-" is taken from ``/etc/pam.d/veyon``. This allows to use dedicated PAM "
-"modules for authenticating Veyon users. Please make sure to provide the PAM "
-"service configuration file before enabling the alternative mechanism. "
-"Otherwise authentication will always fail."
+"If you want to use a dedicated PAM service configuration to authenticate "
+"Veyon users you can enter a custom PAM service name here. A simple "
+"identifier such as ``veyon`` should be used. If for example set to "
+"``veyon``, the Veyon Authentication helper will use the PAM service "
+"``veyon``, i.e. configuration is taken from the file ``/etc/pam.d/veyon``. "
+"Please make sure to provide the PAM service configuration file before using "
+"this setting. Otherwise authentication will always fail."
+msgstr ""
+
+msgid ""
+"To verify that the custom PAM service is set up properly you can change the "
+":ref:`authentication method <RefAuthentication>` to :guilabel:`Logon "
+"authentication` and click the :guilabel:`Test` button."
+msgstr ""
+
+msgid "SAS generation"
+msgstr ""
+
+msgid "Secure Attention Sequence"
+msgstr ""
+
+msgid "Ctrl+Alt+Del"
+msgstr "Ctrl+Alt+Canc"
+
+msgid "Authentication mechanism"
 msgstr ""
 
 msgid "Configuration reference"
@@ -2886,31 +2958,6 @@ msgid ""
 " by enabling this option. In case the user has to be asked for permission "
 "instead appropriate access control rules have to be configured. More "
 "information can be found in chapter :ref:`AccessControlRules`."
-msgstr ""
-
-msgid "Enable SAS generation by software (Ctrl+Alt+Del)"
-msgstr "Abilita generazione SAS via software (Ctrl+Alt+Del)"
-
-msgid ""
-"On Windows per default it's impossible for applications to generate the "
-"*Secure Attention Sequence* (Ctrl+Alt+Del) in order to simulate the press of"
-" these keys. When enabling this option a policy is written to the Windows "
-"registry which changes this behavior. It is recommended to leave this option"
-" enabled in order to be able to send :kbd:`Ctrl+Alt+Del` when remote "
-"controlling a computer. Otherwise it may be impossible to unlock a remotely "
-"controlled computer or logging on a user since in most cases the shortcut "
-":kbd:`Ctrl+Alt+Del` has to be issued first."
-msgstr ""
-
-msgid "Use alternative user authentication mechanism"
-msgstr "Utilizzare un meccanismo di autenticazione utente alternativo"
-
-msgid ""
-"When using :ref:`logon authentication <ConfLogonAuthentication>` the Veyon "
-"Server verifies user credentials using operating system specific mechanisms."
-" In case the default mechanism is not working in your environment you can "
-"try to use an alternative fallback mechanism. See chapter "
-":ref:`PlatformNotes` for details."
 msgstr ""
 
 msgid "Autostart"
@@ -3571,21 +3618,6 @@ msgstr ""
 msgid "Remote connection notification"
 msgstr ""
 
-msgid "SAS generation"
-msgstr ""
-
-msgid "Secure Attention Sequence"
-msgstr ""
-
-msgid "Ctrl+Alt+Del"
-msgstr "Ctrl+Alt+Canc"
-
-msgid "User authentication"
-msgstr ""
-
-msgid "Authentication mechanism"
-msgstr ""
-
 msgid "System service"
 msgstr ""
 
@@ -3734,6 +3766,9 @@ msgid ""
 "been improved (e.g. use German in Austria or Switzerland)."
 msgstr ""
 
+msgid "Context information in log messages have been improved."
+msgstr ""
+
 msgid "The computer sort order can now be configured."
 msgstr ""
 
@@ -3779,6 +3814,11 @@ msgstr ""
 msgid "Users can now add custom programs and websites to the respective menu."
 msgstr ""
 
+msgid ""
+"Thumbnail updates can be slowed down while the demo mode is active. This "
+"improves performance and reduces network traffic."
+msgstr ""
+
 msgid "Browse buttons have been added to the configuration pages."
 msgstr ""
 
@@ -3790,7 +3830,15 @@ msgid ""
 "LDAP/AD server."
 msgstr ""
 
+msgid ""
+"Computer location queries used by access control have been fixed if "
+"containers/OUs are used as locations."
+msgstr ""
+
 msgid "The result messages of the integration tests have been improved."
+msgstr ""
+
+msgid "A configuration page with platform-specific settings has been added."
 msgstr ""
 
 msgid ""
@@ -3798,7 +3846,8 @@ msgid ""
 "users."
 msgstr ""
 
-msgid "Support for alternative PAM service ``veyon`` has been added."
+msgid ""
+"Support for using a custom PAM service such as ``veyon`` has been added."
 msgstr ""
 
 msgid ""
@@ -3809,6 +3858,11 @@ msgstr ""
 msgid ""
 "An alternative authentication mechanism has been added for cases where the "
 "SSPI-based mechanism does not work."
+msgstr ""
+
+msgid ""
+"The screen lock feature can now disable and hide the taskbar, start button "
+"and start menu."
 msgstr ""
 
 msgid ""
@@ -3863,6 +3917,12 @@ msgid "Old name"
 msgstr ""
 
 msgid "New name"
+msgstr ""
+
+msgid "``Service/SoftwareSASEnabled``"
+msgstr ""
+
+msgid "``Windows/SoftwareSASEnabled``"
 msgstr ""
 
 msgid "``Master/AutoSwitchToCurrentRoom``"
