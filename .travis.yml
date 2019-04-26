@@ -1,6 +1,7 @@
 services:
     - docker
 dist: xenial
+if: tag IS present
 script:
     - docker pull veyon/docbuilder:latest || docker build -t veyon/docbuilder:latest ${TRAVIS_BUILD_DIR}
     - docker run -v ${TRAVIS_BUILD_DIR}:/docs:rw -w /docs veyon/docbuilder:latest /docs/build-manuals.py
