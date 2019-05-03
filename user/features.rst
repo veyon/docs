@@ -208,24 +208,26 @@ Run program
 
 .. index:: Run program, Start program, Execute programm, Commands, Open document
 
-If a specific program is to be opened on all computers, you can use the :guilabel:`Run program` feature in the toolbar. For this purpose, click on the button shown:
+If a specific program is to be started on all computers, you can use the :guilabel:`Run program` feature in the toolbar. For this purpose, click on the button shown:
 
 .. image:: images/FeatureRunProgram.png
    :align: center
 
-If no programs have been predefined by the administrator, a menu with the predefined programs opens. In this menu you can click on the desired program.
+Depending on whether you added programs before or programs have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available programs are listed in the menu:
 
-If you want to start a program that is not included in the menu, click on the last item :guilabel:`Custom program`. Afterwards the same dialog appears, which also appears if no programs are predefined. In this dialog window you can enter the name of the desired program file, e.g. ``notepad``:
+.. image:: images/RunProgramMenu.png
+   :align: center
+
+Click the desired item to start the respective program. Alternatively click the last item :guilabel:`Custom program` to run a program that is not listed. This will open a new dialog window. In this dialog you can enter the name of the program to run:
 
 .. image:: images/RunProgramDialog.png
    :align: center
 
-Then confirm the dialog with :guilabel:`OK`. Please note, that the requested program often does not located in the program path environment so that you have to specify the complete path to the program, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe"``.
+Confirm this dialog with :guilabel:`OK` to run the program. Please note, that a program often is not located in the program path environment so that you have to specify the complete path to the program, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe"``.
 
-.. hint:: You can pass an argument to most programs with the name of a file that you want it to open automatically. For example, if you want to automatically play a video on all computers, add the path to the video file separated by a space, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe" X:\Videos\Example.mp4``.
+.. hint:: You can pass an argument to most programs with the name of a file that you want it to open automatically. For example, if you want to play a video on all computers, add the path to the video file separated by a space, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe" X:\Videos\Example.mp4``.
 
 .. attention:: In case the program path or file name contains spaces, you always have to enclose the complete path and file name in quotation marks. Otherwise parts of the input will be interpreted as parameters. Example: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``.
-
 
 Open website
 ------------
@@ -237,15 +239,17 @@ If you want all students to navigate to a specific website, you can automaticall
 .. image:: images/FeatureOpenWebsite.png
    :align: center
 
-If no websites have been predefined by the administrator, a dialog window opens in which you can enter the address of the website to be opened:
+Depending on whether you added websites before or websites have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available websites are listed in the menu:
+
+.. image:: images/OpenWebsiteMenu.png
+   :align: center
+
+Click the desired item to open the respective website. Alternatively click the last item :guilabel:`Custom website` to open a website that is not listed. This will open a new dialog window. In this dialog you can enter the address of the website to open:
 
 .. image:: images/OpenWebsiteDialog.png
    :align: center
 
-Confirm this dialog with :guilabel:`OK`.
-
-Otherwise, a menu with the predefined websites will open from which you can select the desired website. If you want to open a website that is not included in the menu, select the last item :guilabel:`Custom website`. The dialog shown above will then open.
-
+Confirm this dialog with :guilabel:`OK` to open the website.
 
 .. _FeatureScreenshot:
 
