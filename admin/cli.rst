@@ -177,7 +177,7 @@ As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a b
 
 .. describe:: import <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]
 
-    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression with variables inside. This way both CSV files and other types of structured data can be imported. Valid variables are ``%name%``, ``%host%``, ``%mac%`` and ``%room%``. Various examples are given in the command help (``veyon-cli networkobjects help import``).
+    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression with variables inside. This way both CSV files and other types of structured data can be imported. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help import``).
 
 .. describe:: list
 
