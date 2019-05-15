@@ -63,6 +63,11 @@ If :ref:`authorized user groups for computer access <RefAuthorizedUserGroups>` a
 
 Improperly configured :ref:`access control rules <AccessControlRules>` can also cause problems with accessing computers. It is necessary to always specify at least one rule to allow access under certain conditions. If this is ensured, a temporary test rule can be inserted at the end of the list for further debugging. This rule should be configured so that the option :guilabel:`Always process rule and ignore conditions` is enabled and the action :guilabel:`Allow access` is selected. This rule can then be moved up in the rule list step by step until the test returns the desired positive results and the access works. The access rule located directly below the test rule is then the cause for the access denial and can be examined more closely and corrected accordingly. Don't forget to remove the test rule afterwards to prevent unauthorized access.
 
+Anti-virus software
++++++++++++++++++++
+
+It has been reported by some users that an installed anti-virus software caused problems with Veyon, especially regarding the Veyon Service. As part of the troubleshooting process you should temporarily disable the anti-virus software in order to figure out whether the anti-virus software is the cause of error. If so, try to add an exception for the Veyon Service after enabling the anti-virus software again. Alternatively contact the vendor of your anti-virus software for further assistance.
+
 Settings are not correctly saved/loaded
 ---------------------------------------
 
