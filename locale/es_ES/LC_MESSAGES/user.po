@@ -11,9 +11,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.2.0\n"
+"Project-Id-Version: Veyon 4.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-03 11:17+0200\n"
+"POT-Creation-Date: 2019-05-15 08:43+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2019\n"
 "Language-Team: Spanish (Spain) (https://www.transifex.com/veyon-solutions/teams/65452/es_ES/)\n"
@@ -908,7 +908,7 @@ msgstr ""
 " confirmando una acción."
 
 msgid "https://en.wikipedia.org/wiki/Button_(computing)"
-msgstr "https://es.wikipedia.org/wiki/Botón_(informática)"
+msgstr "https://es.wikipedia.org/wiki/Bot%C3%B3n_(inform%C3%A1tica)"
 
 msgid "Context menu"
 msgstr "Menú contextual"
@@ -924,7 +924,7 @@ msgstr ""
 "derecho."
 
 msgid "https://en.wikipedia.org/wiki/Context_menu"
-msgstr "https://es.wikipedia.org/wiki/Menú_(informática)"
+msgstr "https://es.wikipedia.org/wiki/Men%C3%BA_(inform%C3%A1tica)"
 
 msgid "FAQ"
 msgstr "FAQ"
@@ -968,7 +968,7 @@ msgstr ""
 "interactivos, generalmente se hace tocando la pantalla táctil."
 
 msgid "https://en.wikipedia.org/wiki/Graphical_user_interface"
-msgstr "https://es.wikipedia.org/wiki/Interfaz_gráfica_de_usuario"
+msgstr "https://es.wikipedia.org/wiki/Interfaz_gr%C3%A1fica_de_usuario"
 
 msgid "Input device"
 msgstr "Dispositivo de entrada"
@@ -982,7 +982,7 @@ msgstr ""
 "posible la interacción con los programas informáticos."
 
 msgid "https://en.wikipedia.org/wiki/Input_device"
-msgstr "https://es.wikipedia.org/wiki/Periférico_de_entrada"
+msgstr "https://es.wikipedia.org/wiki/Perif%C3%A9rico_de_entrada"
 
 msgid "Keyboard shortcut"
 msgstr "Atajo de teclado"
@@ -1017,7 +1017,7 @@ msgstr ""
 "no tienen permitido el acceso."
 
 msgid "https://en.wikipedia.org/wiki/Password"
-msgstr "https://es.wikipedia.org/wiki/Contraseña"
+msgstr "https://es.wikipedia.org/wiki/Contrase%C3%B1a"
 
 msgid ""
 "A screenshot, also called screen capture or screen grab, is a digital image "
@@ -1075,7 +1075,7 @@ msgstr ""
 "información sobre el elemento sobre el que se desplaza."
 
 msgid "https://en.wikipedia.org/wiki/Tooltip"
-msgstr "https://es.wikipedia.org/wiki/Información_sobre_herramientas"
+msgstr "https://es.wikipedia.org/wiki/Informaci%C3%B3n_sobre_herramientas"
 
 msgid "Username"
 msgstr "Nombre de usuario"
@@ -1090,7 +1090,7 @@ msgstr ""
 "se utiliza para iniciar sesión en una cuenta de usuario y requiere registro."
 
 msgid "https://en.wikipedia.org/wiki/User_(computing)"
-msgstr "https://es.wikipedia.org/wiki/Usuario_(informática)"
+msgstr "https://es.wikipedia.org/wiki/Usuario_(inform%C3%A1tica)"
 
 msgid "Veyon User Manual"
 msgstr "Manual de Usuario de Veyon"
