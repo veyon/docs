@@ -8,6 +8,7 @@
 # emmanuel keith <planctonscream@gmail.com>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2019
 # ÉricB. <eric.bugnet@gmail.com>, 2019
+# Benjamin BALET <benjamin.balet@gmail.com>, 2019
 # Lachaux Patrick, 2019
 # 
 #, fuzzy
@@ -116,6 +117,12 @@ msgid ""
 "the bottom of the rules list, where you can specify that the logged on user "
 "is asked for permission if no other rules apply."
 msgstr ""
+"L'option :guilabel:`Toujours traiter les règles et ignorer les conditions` "
+"fait en sorte que les conditions définies ci-dessous ne soient pas examinées"
+" pour le traitement des règles et que l'action définie soit toujours "
+"exécutée. C'est particulièrement utile pour les règles de secours au bas de "
+"la liste des règles, où vous pouvez spécifier que l'utilisateur connecté "
+"doit demander une autorisation si aucune autre règle ne s'applique."
 
 msgid ""
 "You can use the :guilabel:`Invert all conditions` option to determine that "
@@ -329,6 +336,10 @@ msgid ""
 " processing the next rule. This option can be used to create an inactive "
 "dummy entry to visually subdivide the rules list."
 msgstr ""
+"Cette action fait en sorte que la règle soit ignorée. Le contrôle d'accès se"
+" poursuivra en examinant la prochaine règle. Cette option peut être utilisée"
+" pour créer une entrée fictive désactivée. Les entrées fictives peuvent "
+"servir à diviser visuellement la liste des règles."
 
 msgid ""
 "By clicking the :guilabel:`OK` button the rule and the changes made are "
@@ -345,6 +356,10 @@ msgid ""
 "order of the list. The action of the first matching rule is executed, even "
 "if subsequent rules would also apply and lead to a different action."
 msgstr ""
+"Les règles de contrôle d'accès définies sont traitées les unes après les "
+"autres dans l'ordre de la liste. L'action de la première règle concordante "
+"est exécutée, même si des règles ultérieures seraient également applicables "
+"et entraîneraient une action différente."
 
 msgid ""
 "All rules can be reordered via the buttons with the arrow symbols. Rules "
@@ -353,6 +368,12 @@ msgid ""
 "follow below. Rules for the implementation of fallback behaviour should be "
 "at the bottom."
 msgstr ""
+"Toutes les règles peuvent être réorganisées via les boutons avec les "
+"flèches. Les règles qui devraient fondamentalement empêcher ou autoriser "
+"l'accès sur la base de certains critères doivent être placées aussi haut que"
+" possible. Les règles pour couvrir les cas particuliers peuvent suivre ci-"
+"dessous. Les règles pour la mise en œuvre d'un comportement de secours "
+"doivent être en bas."
 
 msgid "Logical concatenation of rules"
 msgstr "Concaténation logique des règles"
@@ -362,6 +383,10 @@ msgid ""
 "apply for the rule to be applied (logical AND). If only one of several rules"
 " should apply (logical OR), several access control rules must be defined."
 msgstr ""
+"Si plus d'une condition est activée dans une règle, *chaque* condition doit "
+"s'appliquer pour que la règle soit appliquée (ET logique). Si une seule "
+"règle sur plusieurs doit s'appliquer (OU logique), plusieurs règles de "
+"contrôle d'accès doivent être définies."
 
 msgid ""
 "With basic knowledge of Boolean algebra, the option *Invert all conditions* "
@@ -370,6 +395,13 @@ msgid ""
 "specific groups to allow access to a computer, two separate rules can be "
 "created that deny access, if the user is *not* a member of either group."
 msgstr ""
+"Avec des connaissances de base en algèbre booléenne, l'option *Inverser "
+"toutes les conditions* peut être utilisée comme opérateur de négation "
+"conjointement avec des actions inversées pour modéliser des scénarios "
+"étendus. Par exemple, si un utilisateur doit être membre de deux groupes "
+"spécifiques pour autoriser l'accès à un ordinateur, vous pouvez créer deux "
+"règles distinctes qui interdisent l'accès, si l'utilisateur n'est *pas* "
+"membre de l'un ou l'autre groupe."
 
 msgid ""
 "If there is no matching access control rule so that all activated conditions"
@@ -377,6 +409,10 @@ msgid ""
 "attacker from being accidentally allowed access due to an incomplete "
 "ruleset."
 msgstr ""
+"S'il n'y a pas de règle de contrôle d'accès correspondante, de sorte que "
+"toutes les conditions activées s'appliquent, l'accès est refusé et la "
+"connexion est fermée. Cela empêche l'accès malveillant accidentellement à un"
+" attaquant en raison d'un ensemble de règles incomplet."
 
 msgid "Testing a ruleset"
 msgstr "Tester un ensemble de règles"
@@ -408,13 +444,13 @@ msgid "Computer access rules"
 msgstr "Règles d'accès ordinateur"
 
 msgid "Fallback access rule"
-msgstr ""
+msgstr "Règle d'accès de secours"
 
 msgid "Access control rule condition"
 msgstr "Condition de la règle de contrôle d'accès"
 
 msgid "Access control rule action"
-msgstr ""
+msgstr "Action de règle de contrôle d'accès"
 
 msgid "Negation operator"
 msgstr "Opérateur de négation"
@@ -444,6 +480,9 @@ msgid ""
 "available modules is displayed. The list can vary depending on the installed"
 " Veyon plugins:"
 msgstr ""
+"Si le programme est appelé avec le paramètre ``help``, une liste de tous les"
+" modules disponibles est affichée. La liste peut varier en fonction des "
+"plugins Veyon installés:"
 
 msgid ""
 "Each CLI module supports the ``help`` command, so that a list of all "
@@ -618,6 +657,9 @@ msgid ""
 "and computers are removed. This operation is particularly useful before any "
 "automated import."
 msgstr ""
+"Cette commande réinitialise l’ensemble du répertoire des objets réseau, "
+"c’est-à-dire que tous les emplacements et ordinateurs sont supprimés. Cette "
+"opération est particulièrement utile avant toute importation automatisée."
 
 msgid ""
 "This command outputs the complete network object directory as a flat table. "
@@ -1966,19 +2008,19 @@ msgid "Student computer"
 msgstr "Ordinateur de l'élève"
 
 msgid "Master computer"
-msgstr ""
+msgstr "Ordinateur maître"
 
 msgid "Client computer"
-msgstr ""
+msgstr "Ordinateur client"
 
 msgid "Software components"
-msgstr ""
+msgstr "Composants logiciel"
 
 msgid "Configuration tool"
-msgstr ""
+msgstr "Outil de configuration"
 
 msgid "LDAP/AD integration"
-msgstr ""
+msgstr "Intégration LDAP/AD"
 
 msgid ""
 "This chapter covers the setup of Veyon for connecting it to LDAP-compatible "
@@ -2094,9 +2136,11 @@ msgid ""
 "You can choose between the encryption protocols *None*, *TLS* and *SSL*. The"
 " use of the modern TLS protocol is recommended."
 msgstr ""
+"Vous pouvez choisir entre les protocoles de cryptage *Aucun*, *TLS* et "
+"*SSL*. L'utilisation du protocole moderne TLS est recommandé."
 
 msgid "**Default:** *None*"
-msgstr ""
+msgstr "**Défaut:** *Aucun*"
 
 msgid "TLS certificate verification"
 msgstr "Certificat de vérification TLS"
@@ -2116,7 +2160,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *System defaults*"
-msgstr ""
+msgstr "**Défaut:** *Système par défaut*"
 
 msgid "Custom CA certificate file"
 msgstr "Fichier personnel de certificat CA"
@@ -2239,7 +2283,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled*"
-msgstr ""
+msgstr "**Défaut:** *désactivé*"
 
 msgid ""
 "If objects of one type are stored in different object trees (e.g. users in "
@@ -2303,7 +2347,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *cn*"
-msgstr ""
+msgstr "**Défaut:** *cn*"
 
 msgid "Computer host name attribute"
 msgstr "Attribut du nom de l'ordinateur hôte"
@@ -2542,7 +2586,7 @@ msgstr ""
 "<LDAPComputerGroupsFilter>`."
 
 msgid "**Default:** *enabled*"
-msgstr ""
+msgstr "**Défaut:** *activé*"
 
 msgid "Computer containers or OUs"
 msgstr "Conteneurs d'ordinateur ou bien OU"
@@ -2648,16 +2692,16 @@ msgid "Active Directory"
 msgstr ""
 
 msgid "OpenLDAP"
-msgstr ""
+msgstr "OpenLDAP"
 
 msgid "Samba"
-msgstr ""
+msgstr "Samba"
 
 msgid "Directory service"
 msgstr ""
 
 msgid "LDAP server"
-msgstr ""
+msgstr "Serveur LDAP"
 
 msgid "Anonymous bind"
 msgstr "Authentification anonyme"
@@ -2699,7 +2743,7 @@ msgid "Computer location"
 msgstr ""
 
 msgid "Object filters"
-msgstr ""
+msgstr "Filtres objet"
 
 msgid "LDAP object filter"
 msgstr ""
@@ -2811,7 +2855,7 @@ msgid ""
 msgstr ""
 
 msgid "UltraVNC server settings"
-msgstr ""
+msgstr "Paramètres serveur UltraVNC"
 
 msgid ""
 "Veyon uses a lightweight version of UltraVNC as a builtin VNC server on "
@@ -2915,7 +2959,7 @@ msgstr ""
 ":guilabel:`Logon authentication` et cliquer sur le bouton  :guilabel:`Test`."
 
 msgid "SAS generation"
-msgstr ""
+msgstr "Génération touches SAS"
 
 msgid "Secure Attention Sequence"
 msgstr ""
@@ -2924,7 +2968,7 @@ msgid "Ctrl+Alt+Del"
 msgstr "Ctrl+Alt+Del"
 
 msgid "Authentication mechanism"
-msgstr ""
+msgstr "Mécanisme d'authentification"
 
 msgid "Configuration reference"
 msgstr ""
@@ -2951,7 +2995,7 @@ msgid "User interface"
 msgstr "Interface de l'utilisateur"
 
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 msgid ""
 "The selected language can be configured for the graphical user interfaces as"
@@ -2963,7 +3007,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Use system language setting*"
-msgstr ""
+msgstr "**Défaut:** *Utiliser les paramètres du système*"
 
 msgid ""
 "The :ref:`Configuration` chapter describes the "
@@ -2973,7 +3017,7 @@ msgstr ""
 ":ref:`ConfAuthenticationMethods` disponible dans Veyon."
 
 msgid "Method"
-msgstr ""
+msgstr "Méthode"
 
 msgid ""
 "This option defines which authentication method to use. :ref:`Logon "
@@ -2989,7 +3033,7 @@ msgstr ""
 "d'authentification appropriées doivent d'abord être créées et distribuées."
 
 msgid "**Default:** *Logon authentication*"
-msgstr ""
+msgstr "**Défaut:** *Authentification par ouverture de session*"
 
 msgid ""
 "In Veyon a network object directory provides information about network "
@@ -3041,7 +3085,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *60 seconds*"
-msgstr ""
+msgstr "**Défaut:** *60 secondes*"
 
 msgid "Logging"
 msgstr "Journalisation"
@@ -3064,7 +3108,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%TEMP%*"
-msgstr ""
+msgstr "**Défaut:** *%TEMP%*"
 
 msgid "Log level"
 msgstr "Niveau de journalisation"
@@ -3079,7 +3123,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Warnings and errors*"
-msgstr ""
+msgstr "**Défaut:** *Avertissements et erreurs*"
 
 msgid "Limit log file size"
 msgstr "Taille maximum du fichier de journalisation"
@@ -3091,7 +3135,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled / 100 MB*"
-msgstr ""
+msgstr "**Défaut:** *désactivé / 100 Mo*"
 
 msgid "Rotate log files"
 msgstr "Rotation des fichiers de journalisation"
@@ -3106,7 +3150,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled / 10x*"
-msgstr ""
+msgstr "**Défaut:** *désactivé/ 10x*"
 
 msgid "Log to standard error output"
 msgstr "Journaliser via la sortie standard"
@@ -3206,7 +3250,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11100*"
-msgstr ""
+msgstr "**Défaut:** *11100*"
 
 msgid "Internal VNC server port"
 msgstr "Port du serveur interne VNC"
@@ -3220,7 +3264,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11200*"
-msgstr ""
+msgstr "**Défaut:** *11200*"
 
 msgid "Feature manager port"
 msgstr "Port du gestionnaire de fonction"
@@ -3235,7 +3279,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11300*"
-msgstr ""
+msgstr "**Défaut:** *11300*"
 
 msgid "Demo server port"
 msgstr "Port du serveur de démonstration"
@@ -3247,7 +3291,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11400*"
-msgstr ""
+msgstr "**Défaut:** *11400*"
 
 msgid "Enable firewall exception"
 msgstr "Autoriser une exception pour le pare-feu"
@@ -3278,7 +3322,7 @@ msgid "VNC server"
 msgstr "Serveur VNC"
 
 msgid "Plugin"
-msgstr ""
+msgstr "Greffon"
 
 msgid ""
 "By default Veyon uses an internal platform-specific VNC server "
@@ -3291,7 +3335,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Builtin VNC server*"
-msgstr ""
+msgstr "**Défaut:** *Serveur VNC Intégré*"
 
 msgid ""
 "Platform-specific information on how to configure the individual internal "
@@ -3309,7 +3353,7 @@ msgid ""
 msgstr ""
 
 msgid "**Directories**"
-msgstr ""
+msgstr "**Répertoires**"
 
 msgid ""
 "In order to make a configuration generic and independent of the user, you "
@@ -3333,7 +3377,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%APPDATA%/Config*"
-msgstr ""
+msgstr "**Défaut:** *%APPDATA%/Configuration*"
 
 msgid "Screenshots"
 msgstr "Captures d'écrans"
@@ -3345,10 +3389,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%APPDATA%/Screenshots*"
-msgstr ""
+msgstr "**Défaut:** *%APPDATA%/Captures_ecrans*"
 
 msgid "**User interface**"
-msgstr ""
+msgstr "**Interface utilisateur**"
 
 msgid "Thumbnail update interval"
 msgstr "Intervalle de rafraichissement des miniatures d'écran"
@@ -3360,7 +3404,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *1000 ms*"
-msgstr ""
+msgstr "**Défaut:** *1000 ms*"
 
 msgid "Background color"
 msgstr "Couleur de fond"
@@ -3370,7 +3414,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *white*"
-msgstr ""
+msgstr "**Défaut:** *blanc*"
 
 msgid "Text color"
 msgstr "Couleur du texte"
@@ -3381,7 +3425,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *black*"
-msgstr ""
+msgstr "**Défaut:** *noir*"
 
 msgid "Computer thumbnail caption"
 msgstr "Légende de la vignette ordinateur"
@@ -3393,7 +3437,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *User and computer name*"
-msgstr ""
+msgstr "**Défaut:** *Utilisateur et nom de l'ordinateur*"
 
 msgid "Sort order"
 msgstr "Ordre de tri"
@@ -3405,7 +3449,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Computer and user name*"
-msgstr ""
+msgstr "**Défaut:** *Ordinateur et nom d'utilisateur*"
 
 msgid "Behaviour"
 msgstr "Comportement"
@@ -3417,7 +3461,7 @@ msgid ""
 msgstr ""
 
 msgid "**Program start**"
-msgstr ""
+msgstr "**Démarrage programme**"
 
 msgid "Perform access control"
 msgstr "Effectuer un contrôle d'accès"
@@ -3484,7 +3528,7 @@ msgid ""
 msgstr ""
 
 msgid "**Computer locations**"
-msgstr ""
+msgstr "**Emplacements ordinateur**"
 
 msgid "Show current location only"
 msgstr "Afficher seulement l'emplacement actuel"
@@ -3550,7 +3594,7 @@ msgid ""
 msgstr ""
 
 msgid "**Modes and features**"
-msgstr ""
+msgstr "**Modes et fonctionnalités**"
 
 msgid "Enforce selected mode for client computers"
 msgstr "Forcer le mode sélectionné pour les ordinateurs"
@@ -3575,7 +3619,7 @@ msgid ""
 msgstr ""
 
 msgid "Feature on double click"
-msgstr ""
+msgstr "Fonctionnalité au double clic"
 
 msgid ""
 "This setting allows to define a feature to be triggered whenever a computer "
@@ -3584,7 +3628,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *no function*"
-msgstr ""
+msgstr "**Défaut:** *pas de fonction*"
 
 msgid "Features"
 msgstr "Fonctionnalités"
@@ -3735,7 +3779,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%GLOBALAPPDATA%/keys/public*"
-msgstr ""
+msgstr "**Défaut:** *%GLOBALAPPDATA%/clés/publique*"
 
 msgid "Private key file base directory"
 msgstr "Répertoire de base des clés d'accès privées"
@@ -3751,7 +3795,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%GLOBALAPPDATA%/keys/private*"
-msgstr ""
+msgstr "**Défaut:** *%GLOBALAPPDATA%/clés/privé*"
 
 msgid "Demo server"
 msgstr "Serveur de démo"
@@ -3771,7 +3815,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *100 ms*"
-msgstr ""
+msgstr "**Défaut:** *100 ms*"
 
 msgid "Key frame interval"
 msgstr "Intervalle entre les images clés "
@@ -3788,7 +3832,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *10 s*"
-msgstr ""
+msgstr "**Défaut:** *10 s*"
 
 msgid "Memory limit"
 msgstr "Limite de mémoire"
@@ -3806,7 +3850,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** 128 MB*"
-msgstr ""
+msgstr "**Défaut:** 128 Mo*"
 
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
@@ -3853,7 +3897,7 @@ msgid ""
 msgstr ""
 
 msgid "Environment variables"
-msgstr ""
+msgstr "Variables d'environnement"
 
 msgid ""
 "Veyon evaluates various optional environment variables allowing to override "
@@ -3899,7 +3943,7 @@ msgstr ""
 "exemple. ``192.168.2.3:11104``."
 
 msgid "Authentication method"
-msgstr ""
+msgstr "Méthode d'authentification"
 
 msgid "Network objects"
 msgstr "Objets réseau"
@@ -3914,10 +3958,10 @@ msgid "Standard error output"
 msgstr ""
 
 msgid "Windows event log"
-msgstr ""
+msgstr "Journal des évènements Windows"
 
 msgid "Program version"
-msgstr ""
+msgstr "Version du programme"
 
 msgid "Failed authentication notification"
 msgstr ""
@@ -3929,25 +3973,25 @@ msgid "System service"
 msgstr ""
 
 msgid "Network settings"
-msgstr ""
+msgstr "Paramètres réseau"
 
 msgid "Network port"
-msgstr ""
+msgstr "Port réseau"
 
 msgid "Internal VNC server"
-msgstr ""
+msgstr "Serveur VNC interne"
 
 msgid "Feature manager"
 msgstr ""
 
 msgid "Firewall exception"
-msgstr ""
+msgstr "Exception du Pare-feu"
 
 msgid "Firewall"
-msgstr ""
+msgstr "Pare-feu"
 
 msgid "Windows firewall"
-msgstr ""
+msgstr "Pare-feu Windows"
 
 msgid "localhost"
 msgstr ""
@@ -3956,25 +4000,25 @@ msgid "External VNC server"
 msgstr "Serveur VNC Externe"
 
 msgid "Current location"
-msgstr ""
+msgstr "Emplacement actuel"
 
 msgid "Computer thumbnail size"
 msgstr ""
 
 msgid "Thumbnail size"
-msgstr ""
+msgstr "Taille de la vignette"
 
 msgid "Computer select panel"
 msgstr "Panneau de sélection ordinateur"
 
 msgid "Empty locations"
-msgstr ""
+msgstr "Emplacements vides"
 
 msgid "Computer filter"
-msgstr ""
+msgstr "Filtre ordinateur"
 
 msgid "Double click"
-msgstr ""
+msgstr "Double clic"
 
 msgid "Domain groups"
 msgstr ""
@@ -3995,7 +4039,7 @@ msgid "Home directory"
 msgstr ""
 
 msgid "Temporary files"
-msgstr ""
+msgstr "Fichiers temporaires"
 
 msgid "Release notes"
 msgstr ""
@@ -4014,7 +4058,7 @@ msgid ""
 msgstr ""
 
 msgid "Upgrading configuration"
-msgstr ""
+msgstr "Mise à niveau de la configuration"
 
 msgid ""
 "Due to changes in Veyon and its plugins it may happen that both "
@@ -4056,7 +4100,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.2"
-msgstr ""
+msgstr "Veyon 4.2"
 
 msgid ""
 "Veyon 4.2 continues the Veyon 4 major release series with many internal "
@@ -4067,7 +4111,7 @@ msgid ""
 msgstr ""
 
 msgid "Core"
-msgstr ""
+msgstr "Cœur"
 
 msgid ""
 "The network object management layer has been revised to allow using multi-"
@@ -4095,7 +4139,7 @@ msgid ""
 msgstr ""
 
 msgid "Configurator"
-msgstr ""
+msgstr "Configurateur"
 
 msgid "New view modes \"Standard\" and \"Advanced\" have been added."
 msgstr ""
@@ -4104,7 +4148,7 @@ msgid "An authentication test functionality has been added."
 msgstr ""
 
 msgid "Plugins"
-msgstr ""
+msgstr "Greffons"
 
 msgid ""
 "The new file transfer plugin allows to send files to all users and open them"
@@ -4188,7 +4232,7 @@ msgid ""
 msgstr ""
 
 msgid "Structural changes"
-msgstr ""
+msgstr "Changements structurels"
 
 msgid ""
 "Starting with Veyon 4.2 the more generic term *location* instead of *room* "
@@ -4218,7 +4262,7 @@ msgid ""
 msgstr ""
 
 msgid "Configuration changes"
-msgstr ""
+msgstr "Changements de configuration"
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"
@@ -4227,10 +4271,10 @@ msgid ""
 msgstr ""
 
 msgid "Old name"
-msgstr ""
+msgstr "Ancien nom"
 
 msgid "New name"
-msgstr ""
+msgstr "Nouveau nom"
 
 msgid "``Service/SoftwareSASEnabled``"
 msgstr ""
@@ -4305,7 +4349,7 @@ msgid "``LDAP/LocationNameAttribute``"
 msgstr ""
 
 msgid "Veyon 4.1"
-msgstr ""
+msgstr "Veyon 4.1"
 
 msgid ""
 "Veyon 4.1 was the first feature release series of Veyon 4. Even though not "
@@ -4419,7 +4463,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.0"
-msgstr ""
+msgstr "Veyon 4.0"
 
 msgid ""
 "Veyon 4.0 was the first release series of Veyon 4, the successor of iTALC. "
@@ -4429,7 +4473,7 @@ msgid ""
 msgstr ""
 
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Dépannage"
 
 msgid ""
 "If you encounter interaction or connection problems between master and "
@@ -4443,7 +4487,7 @@ msgid ""
 msgstr ""
 
 msgid "Computers can't be accessed"
-msgstr ""
+msgstr "Les ordinateurs ne sont pas accessibles"
 
 msgid ""
 "There are multiple causes which can prevent access to a computer using Veyon"
@@ -4451,7 +4495,7 @@ msgid ""
 msgstr ""
 
 msgid "Networking problems"
-msgstr ""
+msgstr "Problèmes de réseau"
 
 msgid ""
 "First of all the general network connectivity of the computer should be "
@@ -4476,7 +4520,7 @@ msgid ""
 msgstr ""
 
 msgid "Service and firewall settings"
-msgstr ""
+msgstr "Paramètres de service et de pare-feu"
 
 msgid ""
 "If the service is running you have to ensure that it is listening for "
@@ -4522,7 +4566,7 @@ msgid ""
 msgstr ""
 
 msgid "Authentication settings"
-msgstr ""
+msgstr "Paramètres d'authentification"
 
 msgid ""
 "Another cause of the error can be wrong or insufficient :ref:`authentication"
@@ -4547,7 +4591,7 @@ msgid ""
 msgstr ""
 
 msgid "Settings for computer access control"
-msgstr ""
+msgstr "Paramètres de contrôle d'accès à l'ordinateur"
 
 msgid ""
 "An incorrect configuration of computer access control can also lead to "

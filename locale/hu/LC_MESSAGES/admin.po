@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
+# Nagy Gergő, 2019
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
 # Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019
 # 
@@ -629,13 +630,13 @@ msgid "Command line tool"
 msgstr ""
 
 msgid "Command line"
-msgstr ""
+msgstr "Parancssor"
 
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 msgid "Veyon CLI"
-msgstr ""
+msgstr "Veyon CLI"
 
 msgid "Configuration key"
 msgstr ""
@@ -945,7 +946,7 @@ msgid "Public key"
 msgstr ""
 
 msgid "Private key"
-msgstr ""
+msgstr "Privát kulcs"
 
 msgid "Key file"
 msgstr ""
@@ -960,7 +961,7 @@ msgid "Password"
 msgstr "Jelszó"
 
 msgid "Key pair"
-msgstr ""
+msgstr "Kulcspár"
 
 msgid "Locations and computers"
 msgstr ""
@@ -975,7 +976,7 @@ msgid "Load settings"
 msgstr ""
 
 msgid "Save settings"
-msgstr ""
+msgstr "Beállítások mentése"
 
 msgid "Reset settings"
 msgstr ""
@@ -984,7 +985,7 @@ msgid "Clear configuration"
 msgstr ""
 
 msgid "Delete configuration"
-msgstr ""
+msgstr "Konfiguráció törlése"
 
 msgid "FAQ - Frequently Asked Questions"
 msgstr "GYIK - Gyakran Ismételt Kérdések"
@@ -1192,16 +1193,16 @@ msgid "Technical glossary"
 msgstr ""
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr ""
+msgstr "A Wikipédiáról, a szabad enciklopédiák:"
 
 msgid "ACL"
-msgstr ""
+msgstr "ACL"
 
 msgid "Access Control List"
 msgstr ""
 
 msgid "Client"
-msgstr ""
+msgstr "Kliens"
 
 msgid ""
 "a piece of computer hardware or software that accesses a service made "
@@ -1212,7 +1213,7 @@ msgid "https://en.wikipedia.org/wiki/Client_(computing)"
 msgstr ""
 
 msgid "FAQ"
-msgstr ""
+msgstr "Gyik"
 
 msgid ""
 "a list of frequently asked questions (FAQs) and answers on a particular "
@@ -1220,7 +1221,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/FAQ"
 
 msgid "Host"
 msgstr ""
@@ -1236,7 +1237,7 @@ msgid "https://en.wikipedia.org/wiki/Host_(network)"
 msgstr ""
 
 msgid "Hostname"
-msgstr ""
+msgstr "Gépnév"
 
 msgid ""
 "a label that is assigned to a device connected to a computer network and "
@@ -1248,7 +1249,7 @@ msgid "https://en.wikipedia.org/wiki/Hostname"
 msgstr ""
 
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgid ""
 "the principal communications protocol in the Internet protocol suite for "
@@ -1268,7 +1269,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/IP_address"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/IP_address"
 
 msgid "IPv6"
 msgstr ""
@@ -1296,7 +1297,7 @@ msgid "https://en.wikipedia.org/wiki/Port_(computer_networking)"
 msgstr ""
 
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 msgid ""
 "one of the main protocols of the Internet protocol suite. It originated in "
@@ -1458,7 +1459,7 @@ msgid "Install Veyon in *silent* mode:"
 msgstr ""
 
 msgid "Uninstall Veyon in *silent* mode:"
-msgstr ""
+msgstr "Veyon eltávolítása *csendes* módba:"
 
 msgid "Specify an installation directory for an automated installation:"
 msgstr ""
@@ -1487,16 +1488,16 @@ msgid "Delete all Veyon-related settings during uninstallation:"
 msgstr ""
 
 msgid "Minimum requirements"
-msgstr ""
+msgstr "Minimális követelmények"
 
 msgid "Operating system"
-msgstr ""
+msgstr "Operációs rendszer"
 
 msgid "Wifi"
-msgstr ""
+msgstr "Wifi"
 
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 msgid "Automated installation"
 msgstr ""
@@ -1505,19 +1506,19 @@ msgid "Unattended installation"
 msgstr ""
 
 msgid "Silent installation"
-msgstr ""
+msgstr "Csendes telepítése"
 
 msgid "Uninstallation"
 msgstr ""
 
 msgid "Uninstalling"
-msgstr ""
+msgstr "Eltávolítás"
 
 msgid "Installation directory"
 msgstr ""
 
 msgid "About this manual"
-msgstr ""
+msgstr "A leírás névjegye"
 
 msgid ""
 "This manual describes the installation and configuration of Veyon in a "
@@ -1581,7 +1582,7 @@ msgid ""
 msgstr ""
 
 msgid "Remote view or control computers"
-msgstr ""
+msgstr "Számítógépek távoli megtekintése vagy vezérlése"
 
 msgid ""
 "Broadcast the teacher's screen to all other computers in real time (full "
@@ -1595,19 +1596,19 @@ msgid "Distribute documents and other files to students"
 msgstr ""
 
 msgid "Send text messages to students"
-msgstr ""
+msgstr "Szöveg küldés a diákoknak"
 
 msgid "Power on, reboot or shutdown computers remotely"
 msgstr ""
 
 msgid "Log out users"
-msgstr ""
+msgstr "Felhasználók kijelentkeztetése"
 
 msgid "Launch programs and open websites"
-msgstr ""
+msgstr "Programok indítása és weboldalak megnyitása"
 
 msgid "Components"
-msgstr ""
+msgstr "Komponensek"
 
 msgid ""
 "Veyon basically consists of a master and a service component which realize "
@@ -1687,10 +1688,10 @@ msgid ""
 msgstr ""
 
 msgid "Teacher computer"
-msgstr ""
+msgstr "Tanári számítógép"
 
 msgid "Student computer"
-msgstr ""
+msgstr "Tanulói számítógép"
 
 msgid "Master computer"
 msgstr ""
@@ -1699,7 +1700,7 @@ msgid "Client computer"
 msgstr ""
 
 msgid "Software components"
-msgstr ""
+msgstr "Szoftverkomponensek"
 
 msgid "Configuration tool"
 msgstr ""
@@ -1802,7 +1803,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *None*"
-msgstr ""
+msgstr "**Alapértelmezett:** *Nincs*"
 
 msgid "TLS certificate verification"
 msgstr "TLS tanúsítványhitelesítés"
@@ -1822,7 +1823,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *System defaults*"
-msgstr ""
+msgstr "**Alapértelmezett:** *Alapértelmezett rendszerbeállítások*"
 
 msgid "Custom CA certificate file"
 msgstr "Egyéni CA tanúsítványfájl"
@@ -1986,7 +1987,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *cn*"
-msgstr ""
+msgstr "**Alapértelmezett:** *cn*"
 
 msgid "Computer host name attribute"
 msgstr "Számítógép kiszolgálónév attribútuma"
@@ -2346,7 +2347,7 @@ msgid ""
 msgstr ""
 
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 msgid "Enable SAS generation by software (Ctrl+Alt+Del)"
 msgstr "SAS generáció bekapcsolása szoftverrel (Ctrl+Alt+Del)"
@@ -2363,7 +2364,7 @@ msgid ""
 msgstr ""
 
 msgid "User authentication"
-msgstr ""
+msgstr "Felhasználó hitelesítés"
 
 msgid ""
 "Veyon implements two different mechanisms to authenticate a user (i.e. "
@@ -2391,7 +2392,7 @@ msgid ""
 msgstr ""
 
 msgid "Screen lock"
-msgstr ""
+msgstr "Képernyő zárolása"
 
 msgid ""
 "The screen lock feature per default disables all input devices and hides "
@@ -2401,7 +2402,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide taskbar"
-msgstr ""
+msgstr "Tálca elrejtése"
 
 msgid ""
 "This option defines whether the taskbar and the start button should be "
@@ -2409,7 +2410,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide start menu"
-msgstr ""
+msgstr "Start menü elrejtése"
 
 msgid ""
 "This option defines whether the start menu should be disabled and hidden by "
@@ -2417,7 +2418,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide desktop"
-msgstr ""
+msgstr "Asztal elrejtése"
 
 msgid ""
 "This option defines whether the desktop should be disabled and hidden by the"
@@ -2506,7 +2507,7 @@ msgid ""
 msgstr ""
 
 msgid "Custom PAM service for user authentication"
-msgstr ""
+msgstr "Személyre szabott felhasználó-hitelesítő PAM szolgáltatás"
 
 msgid ""
 "If you want to use a dedicated PAM service configuration to authenticate "
@@ -3542,7 +3543,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.2"
-msgstr ""
+msgstr "Veyon 4.2"
 
 msgid ""
 "Veyon 4.2 continues the Veyon 4 major release series with many internal "
@@ -3553,7 +3554,7 @@ msgid ""
 msgstr ""
 
 msgid "Core"
-msgstr ""
+msgstr "Core"
 
 msgid ""
 "The network object management layer has been revised to allow using multi-"
@@ -3590,7 +3591,7 @@ msgid "An authentication test functionality has been added."
 msgstr ""
 
 msgid "Plugins"
-msgstr ""
+msgstr "Bővítmények"
 
 msgid ""
 "The new file transfer plugin allows to send files to all users and open them"
@@ -3713,10 +3714,10 @@ msgid ""
 msgstr ""
 
 msgid "Old name"
-msgstr ""
+msgstr "Korábbi név"
 
 msgid "New name"
-msgstr ""
+msgstr "Új név"
 
 msgid "``Service/SoftwareSASEnabled``"
 msgstr ""
@@ -3791,7 +3792,7 @@ msgid "``LDAP/LocationNameAttribute``"
 msgstr ""
 
 msgid "Veyon 4.1"
-msgstr ""
+msgstr "Veyon 4.1"
 
 msgid ""
 "Veyon 4.1 was the first feature release series of Veyon 4. Even though not "
@@ -3905,7 +3906,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.0"
-msgstr ""
+msgstr "Veyon 4.0"
 
 msgid ""
 "Veyon 4.0 was the first release series of Veyon 4, the successor of iTALC. "
@@ -3929,7 +3930,7 @@ msgid ""
 msgstr ""
 
 msgid "Computers can't be accessed"
-msgstr ""
+msgstr "A számítógépek nem érhetőek el"
 
 msgid ""
 "There are multiple causes which can prevent access to a computer using Veyon"
@@ -3937,7 +3938,7 @@ msgid ""
 msgstr ""
 
 msgid "Networking problems"
-msgstr ""
+msgstr "Hálózati problémák"
 
 msgid ""
 "First of all the general network connectivity of the computer should be "
@@ -4066,7 +4067,7 @@ msgid ""
 msgstr ""
 
 msgid "Anti-virus software"
-msgstr ""
+msgstr "Antivírus-szoftver"
 
 msgid ""
 "It has been reported by some users that an installed anti-virus software "
@@ -4196,7 +4197,7 @@ msgid ""
 msgstr ""
 
 msgid "Debugging"
-msgstr ""
+msgstr "Hibakeresés"
 
 msgid "Error analysis"
 msgstr ""
@@ -4205,10 +4206,10 @@ msgid "Error correction"
 msgstr ""
 
 msgid "Connectivity problems"
-msgstr ""
+msgstr "Kapcsolódási problémák"
 
 msgid "telnet"
-msgstr ""
+msgstr "telnet"
 
 msgid "netstat"
-msgstr ""
+msgstr "netstat"
