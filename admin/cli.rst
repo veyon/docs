@@ -173,7 +173,7 @@ As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a b
 
 .. describe:: export <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>]
 
-    This command can be used to export either the complete network object dictionary or only the specified location to a text file. The formatting can be controlled via a format string with variables inside. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
+    This command can be used to export either the complete network object directory or only the specified location to a text file. The formatting can be controlled via a format string with variables inside. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
 
 .. describe:: import <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]
 
