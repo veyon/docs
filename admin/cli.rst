@@ -173,11 +173,15 @@ As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a b
 
 .. describe:: export <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>]
 
-    This command can be used to export either the complete network object directory or only the specified location to a text file. The formatting can be controlled via a format string with variables inside. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
+    This command can be used to export either the complete network object directory or only the specified location to a text file. The formatting can be controlled via a format string containing placeholder variables. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
+
+.. note:: When using this command in batch files or through scheduled tasks on Windows make sure to properly escape the percent sign, i.e. use ``%%type%%`` instead of ``%type%``. Otherwise the individual parts of the format strings will be treated as environment variables and substituted with empty strings in most cases. This will lead to unexpected parse errors.
 
 .. describe:: import <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>] [regex <REGULAR-EXPRESSION-WITH-VARIABLES>]
 
-    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression with variables inside. This way both CSV files and other types of structured data can be imported. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help import``).
+    This command can be used to import a text file into the network object directory. The processing of the input data can be controlled via a format string or a regular expression containing placeholder variables. This way both CSV files and other types of structured data can be imported. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help import``).
+
+.. note:: When using this command in batch files or through scheduled tasks on Windows make sure to properly escape the percent sign, i.e. use ``%%type%%`` instead of ``%type%``. Otherwise the individual parts of the format strings will be treated as environment variables and substituted with empty strings in most cases. This will lead to unexpected parse errors.
 
 .. describe:: list
 
