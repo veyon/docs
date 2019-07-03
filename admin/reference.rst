@@ -137,10 +137,10 @@ Hide tray icon
 
     **Default:** *disabled*
 
-.. index:: Failed authentication notification
+.. index:: Blocked access notification, Unauthorized access
 
-Show notification on failed authentication attempts
-    This option specifies whether a notification should be displayed if there was a failed logon attempt to the Veyon Service. These messages usually indicate that the authentication settings are not set up correctly. Typical failure reasons are invalid authentication keys or (when using logon authentication) invalid user credentials (username/password).
+Show notification when an unauthorized access is blocked
+    This option specifies whether a notification should be displayed if the access to the local computer was blocked, either due to an authentication failure or access control denying the access. Especially during the deployment and setup of Veyon these notifications often indicate problems with the authentication settings. Typical failure reasons are invalid authentication keys or (when using logon authentication) invalid user credentials (username/password).
 
     **Default:** *enabled*
 
