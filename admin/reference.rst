@@ -151,6 +151,11 @@ Show notification on remote connection
 
     **Default:** *disabled*
 
+.. index:: Terminal server, Remote desktop server, RDP, Multi-session mode
+
+Multi session mode (for terminal and remote desktop servers)
+    Enabling this option will make the service launch a server process for every interactive session on a computer. Typically this is required to support terminal servers. The server instances will listen on individual network ports based on the :ref:`primary service port <RefPrimaryServerPort>` and the session ID.
+
 .. index:: Autostart, System service
 
 Autostart
@@ -167,6 +172,8 @@ Network
 +++++++
 
 .. index:: Primary service port, Network port
+
+.. _RefPrimaryServerPort:
 
 Primary service port
     You can use this setting to define the primary network port which the Veyon Server is listening at for incoming connections.
