@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
-# albanobattistella <albano_battistella@hotmail.com>, 2019
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -14,29 +14,25 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-03 09:09+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2019\n"
-"Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
+"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2019\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Access control rules"
-msgstr "Regole di controllo d'accesso"
+msgstr "存取控制規則"
 
 msgid "Introduction"
-msgstr "Introduzione"
+msgstr "介紹"
 
 msgid ""
 "Access control rules can be used to provide detailed control over which "
 "users can access specific computers under specific circumstances. In the "
 "following, the term *rule* is used as a synonym for *access control rule*."
 msgstr ""
-"Le regole di controllo dell'accesso possono essere utilizzate per fornire un"
-" controllo dettagliato su cui gli utenti possono accedere a computer "
-"specifici in circostanze specifiche. Di seguito, il termine * regola * è "
-"usato come sinonimo di * regola di controllo accessi *."
 
 msgid ""
 "When a user attempts to access a computer, the defined access control rules "
@@ -44,12 +40,6 @@ msgid ""
 "soon as all activated conditions of a rule apply, no further rules are "
 "processed and the stored action is executed (exception: rule is disabled)."
 msgstr ""
-"Quando un utente tenta di accedere a un computer, le regole di controllo di "
-"accesso definite vengono elaborate una dopo l'altra fino a quando non si "
-"applicano tutte le condizioni di una regola. Non appena vengono applicate "
-"tutte le condizioni attivate di una regola, non vengono elaborate ulteriori "
-"regole e viene eseguita l'azione memorizzata (eccezione: la regola è "
-"disabilitata)."
 
 msgid ""
 "The rules can be configured through the Veyon Configurator on the "
@@ -61,17 +51,13 @@ msgid ""
 msgstr ""
 
 msgid "Add and modify rules"
-msgstr "Aggiungi e modifica le regole"
+msgstr "加入和修改規則"
 
 msgid ""
 "Upon clicking the button :guilabel:`+` a dialog opens which allows the "
 "creation of a new rule. Existing rules can be opened or edited by double-"
 "clicking them or by clicking the button with the pen symbol."
 msgstr ""
-"Facendo clic sul pulsante: guilabel: `+` si apre una finestra di dialogo che"
-" consente la creazione di una nuova regola. Le regole esistenti possono "
-"essere aperte o modificate facendo doppio clic su di esse o facendo clic sul"
-" pulsante con il simbolo della penna."
 
 msgid ""
 "A rule basically consists of general settings, conditions and an action that"
@@ -81,7 +67,7 @@ msgid ""
 msgstr ""
 
 msgid "General"
-msgstr "Generale"
+msgstr "一般"
 
 msgid ""
 "A name for the rule should be defined in input field :guilabel:`Rule name` "
@@ -89,11 +75,6 @@ msgid ""
 "rules list. For documentation purposes an optional description can be added "
 "to the :guilabel:`Rule description` input field."
 msgstr ""
-"Nel campo di immissione deve essere definito un nome per la regola: "
-"guilabel: `Nome regola` prima. Successivamente, il nome viene utilizzato per"
-" identificare la regola e viene visualizzato nell'elenco delle regole. A "
-"scopo di documentazione, è possibile aggiungere una descrizione facoltativa "
-"al campo di input guilabel: `Descrizione regola`."
 
 msgid ""
 "The option :guilabel:`Always process rule and ignore conditions` causes the "
@@ -114,13 +95,13 @@ msgid ""
 msgstr ""
 
 msgid "Conditions"
-msgstr "Condizioni"
+msgstr "條件"
 
 msgid "For a rule to be processed, one or more conditions must apply."
-msgstr ""
+msgstr "為了處理規則，必須套用一個或多個條件。"
 
 msgid "User is member of group"
-msgstr "L'utente è membro del gruppo"
+msgstr "使用者是群組成員屬於"
 
 msgid ""
 "With this condition you can define that either the accessing or the locally "
@@ -131,7 +112,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer is located at"
-msgstr "Il computer si trova a"
+msgstr "電腦位於"
 
 msgid ""
 "With this condition you can define that either the accessing or the local "
@@ -141,8 +122,7 @@ msgid ""
 msgstr ""
 
 msgid "Accessing computer and local computer are at the same location"
-msgstr ""
-"L'accesso al computer e al computer locale si trovano nella stessa posizione"
+msgstr "存取電腦和本機電腦位於同一位置"
 
 msgid ""
 "With this condition you can determine that the accessing computer and the "
@@ -150,13 +130,9 @@ msgid ""
 " be used to prevent teachers from accessing computers in different "
 "classroom."
 msgstr ""
-"Con questa condizione è possibile determinare che il computer di accesso e "
-"il computer locale devono trovarsi nella stessa posizione. Ad esempio, "
-"questo può essere utilizzato per impedire agli insegnanti di accedere ai "
-"computer in diverse classi."
 
 msgid "Accessing computer is localhost"
-msgstr "Il computer in cui si sta entrando è localhost"
+msgstr "存取電腦是 localhost"
 
 msgid ""
 "If this condition is enabled, the rule applies only if the accessing "
@@ -165,41 +141,28 @@ msgid ""
 "Master to execute specific functions via the Veyon Service (e.g. the server "
 "for demo mode)."
 msgstr ""
-"Se questa condizione è abilitata, la regola si applica solo se il computer "
-"di accesso è il computer locale. Ciò garantisce ad esempio che gli "
-"insegnanti possano accedere al servizio Veyon locale. Questo accesso è "
-"necessario affinché Veyon Master esegua funzioni specifiche tramite il "
-"servizio Veyon (ad esempio il server per la modalità demo)."
 
 msgid ""
 "Accessing user has one or more groups in common with local (logged on) user"
-msgstr ""
-"L'utente a cui si sta accedendo ha uno o più gruppi in comune con l'utente "
-"locale (l'utente ora loggato)."
+msgstr "存取使用者與本機 (登入的) 使用者有一個或數個群組在通用"
 
 msgid ""
 "You can use this condition to specify that the accessing and the local user "
 "have to be members of at least one common group, for example a user group "
 "for a class or a seminar."
 msgstr ""
-"È possibile utilizzare questa condizione per specificare che l'accesso e "
-"l'utente locale devono essere membri di almeno un gruppo comune, ad esempio "
-"un gruppo di utenti per una classe o un seminario."
 
 msgid "Accessing user is logged on user"
-msgstr "L'utente che sta entrando è registrato sull'utente"
+msgstr "存取使用者是登入的使用者"
 
 msgid ""
 "As an alternative to the condition *accessing computer is localhost* you can"
 " also allow a user to access his own sessions. This condition must be "
 "activated for this purpose."
 msgstr ""
-"In alternativa alla condizione * l'accesso al computer è localhost * è "
-"inoltre possibile consentire a un utente di accedere alle proprie sessioni. "
-"Questa condizione deve essere attivata per questo scopo."
 
 msgid "Accessing user is already connected"
-msgstr "L'utente che sta entrando è già connesso"
+msgstr "存取使用者已經連線"
 
 msgid ""
 "In conjunction with the condition *Accessing computer and local computer are"
@@ -212,19 +175,9 @@ msgid ""
 " teacher can also access room B from Veyon Master in room A if this "
 "condition is activated with an allow action."
 msgstr ""
-"In combinazione con la condizione * Accesso al computer e al computer locale"
-" si trovano nella stessa posizione * È possibile creare un set di regole "
-"esteso che consente l'accesso al computer in altre posizioni in determinate "
-"condizioni. Ciò include la possibilità di accedere a un computer se l'utente"
-" che accede è già connesso. Ad esempio, se l'insegnante accede a un computer"
-" insegnante nella stanza A e B contemporaneamente e visualizza i computer "
-"della stanza B visualizzati in Veyon Master, i computer nella stanza B hanno"
-" una connessione dall'insegnante. Quindi l'insegnante può anche accedere "
-"alla stanza B da Veyon Master nella stanza A se questa condizione viene "
-"attivata con un'azione di autorizzazione."
 
 msgid "No user logged on"
-msgstr "Nessun utente connesso"
+msgstr "沒有使用者登入"
 
 msgid ""
 "This condition determines how a computer can be accessed when no user is "
@@ -233,7 +186,7 @@ msgid ""
 msgstr ""
 
 msgid "Action"
-msgstr "Azione"
+msgstr "動作"
 
 msgid ""
 "If all the enabled conditions of a rule apply, a specific action is "
@@ -242,45 +195,34 @@ msgid ""
 msgstr ""
 
 msgid "Allow access"
-msgstr "Permette l'accesso"
+msgstr "允許存取"
 
 msgid ""
 "Access to a computer is allowed and further rules are not processed. If "
 "there is a rule in the rules list below that would deny access, access is "
 "still allowed. There must be at least one rule with this action."
 msgstr ""
-"È consentito l'accesso a un computer e non vengono elaborate ulteriori "
-"regole. Se nell'elenco delle regole è presente una regola che negherà "
-"l'accesso, l'accesso è ancora consentito. Ci deve essere almeno una regola "
-"con questa azione."
 
 msgid "Deny access"
-msgstr "Nega l'accesso"
+msgstr "拒絕存取"
 
 msgid ""
 "Access to a computer is denied and further rules are not processed. If there"
 " is a rule in the rules list below that would allow access, access is still "
 "denied."
 msgstr ""
-"L'accesso a un computer viene negato e non vengono elaborate ulteriori "
-"regole. Se nell'elenco sottostante è presente una regola che consente "
-"l'accesso, l'accesso viene comunque negato."
 
 msgid "Ask logged on user for permission"
-msgstr "Chiedi permesso all'utente collegato "
+msgstr "詢問登入使用者的權限"
 
 msgid ""
 "This action displays a dialog on the computer that allows the logged-in user"
 " to choose whether to allow or deny access. No further rules are processed "
 "regardless of the user's decision."
 msgstr ""
-"Questa azione visualizza una finestra di dialogo sul computer che consente "
-"all'utente loggato di scegliere se consentire o negare l'accesso. Non "
-"vengono elaborate ulteriori regole indipendentemente dalla decisione "
-"dell'utente."
 
 msgid "None (rule disabled)"
-msgstr "Nessuna (regola disabilitata)"
+msgstr "無 (停用規則)"
 
 msgid ""
 "This action makes the rule being ignore. Access control will be continued by"
@@ -294,7 +236,7 @@ msgid ""
 msgstr ""
 
 msgid "Sorting rules"
-msgstr ""
+msgstr "排序規則"
 
 msgid ""
 "The defined access control rules are processed one after the other in the "
@@ -311,7 +253,7 @@ msgid ""
 msgstr ""
 
 msgid "Logical concatenation of rules"
-msgstr ""
+msgstr "規則的邏輯串聯"
 
 msgid ""
 "If more than one condition is activated in a rule, *each* condition must "
@@ -335,7 +277,7 @@ msgid ""
 msgstr ""
 
 msgid "Testing a ruleset"
-msgstr ""
+msgstr "測試規則集"
 
 msgid ""
 "In section :guilabel:`Computer access control` the configured ruleset can be"
@@ -346,37 +288,37 @@ msgid ""
 msgstr ""
 
 msgid "Access control"
-msgstr "Controllo accessi"
+msgstr "存取控制"
 
 msgid "Computer access control"
-msgstr "Controllo accesso al computer"
+msgstr "電腦存取控制"
 
 msgid "Ruleset"
-msgstr ""
+msgstr "規則集"
 
 msgid "Computer access rules"
-msgstr ""
+msgstr "電腦存取規則"
 
 msgid "Fallback access rule"
-msgstr ""
+msgstr "Fallback 存取規則"
 
 msgid "Access control rule condition"
-msgstr ""
+msgstr "存取控制規則條件"
 
 msgid "Access control rule action"
-msgstr ""
+msgstr "存取控制規則動作"
 
 msgid "Negation operator"
-msgstr ""
+msgstr "否定運算子"
 
 msgid "Inverse rule"
-msgstr ""
+msgstr "反向規則"
 
 msgid "Inverse condition"
-msgstr ""
+msgstr "反向條件"
 
 msgid "Command line interface"
-msgstr ""
+msgstr "命令列介面"
 
 msgid ""
 "For administrative tasks, the *Veyon Configurator* and the command line tool"
@@ -407,7 +349,7 @@ msgid ""
 msgstr ""
 
 msgid "Authentication key management"
-msgstr ""
+msgstr "身份驗證金鑰管理"
 
 msgid ""
 "The ``authkeys`` module allows the management of authentication keys so that"
@@ -432,10 +374,7 @@ msgid ""
 "This command deletes the authentication key <KEY> from the configured key "
 "directory. Please note that a key can't be recovered once it has been "
 "deleted."
-msgstr ""
-"Questo comando cancella la chiave di autenticazione <KEY> dalla directory "
-"delle chiavi configurata. Si prega di notare che una chiave non può essere "
-"recuperata una volta che è stata cancellata."
+msgstr "這個命令從組態的金鑰目錄中刪除身份驗證金鑰 <KEY>。 請注意，金鑰刪除後將無法恢復。"
 
 msgid ""
 "This command exports the <KEY> to <FILE> authentication key. If <FILE> is "
@@ -452,9 +391,7 @@ msgstr ""
 msgid ""
 "This command imports the authentication key <KEY> from <FILE>. If <FILE> is "
 "not specified a name will be constructed from name and type of <KEY>."
-msgstr ""
-"Questo comando importa la chiave di autenticazione. Se non viene specificato"
-" un nome sarà costruito dal nome e tipo."
+msgstr "這個命令從 <FILE> 匯入驗證金鑰 <KEY>。 如果沒有指定 <FILE>，將根據 <KEY> 的名稱和類型構造名稱。"
 
 msgid ""
 "This command lists all available authentication keys in the configured key "
@@ -469,7 +406,7 @@ msgid ""
 msgstr ""
 
 msgid "Configuration management"
-msgstr ""
+msgstr "組態管理"
 
 msgid ""
 "The local Veyon configuration can be managed using the ``config`` module. "
@@ -531,7 +468,7 @@ msgid ""
 msgstr ""
 
 msgid "Network object directory"
-msgstr "Directory dell'oggetto di rete"
+msgstr "網路物件目錄"
 
 msgid ""
 "As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides"
@@ -600,7 +537,7 @@ msgid ""
 msgstr ""
 
 msgid "Power"
-msgstr ""
+msgstr "電源"
 
 msgid ""
 "The ``power`` module allows to use power-related functions from the command "
@@ -610,12 +547,10 @@ msgstr ""
 msgid ""
 "This command broadcasts a Wake-on-LAN (WOL) packet to the network in order "
 "to power on the computer with the given MAC address."
-msgstr ""
-"Questo comando trasmette un pacchetto Wake-on-LAN (WOL) alla rete per "
-"accendere il computer con l'indirizzo MAC specificato."
+msgstr "這個命令將 Wake-on-LAN (WOL) 封包廣播到網路，以便使用給予的 MAC 位址開啟電腦電源。"
 
 msgid "Remote access"
-msgstr "Accesso remoto"
+msgstr "遠端存取"
 
 msgid ""
 "The ``remoteaccess`` module provides functions for a graphical remote access"
@@ -640,10 +575,10 @@ msgid ""
 msgstr ""
 
 msgid "Service control"
-msgstr "Controllo del servizio"
+msgstr "服務控制"
 
 msgid "The ``service`` module can be used to control the local Veyon Service."
-msgstr ""
+msgstr "「服務」模組可用於控制本機 Veyon 服務。"
 
 msgid ""
 "This command registers the Veyon Service as a service in the operating "
@@ -656,19 +591,19 @@ msgid ""
 msgstr ""
 
 msgid "This command starts the Veyon Service."
-msgstr ""
+msgstr "這個命令啟動 Veyon 服務。"
 
 msgid "This command stops the Veyon Service."
-msgstr ""
+msgstr "這個命令停止 Veyon 服務。"
 
 msgid "This command restarts the Veyon Service."
-msgstr ""
+msgstr "這個命令重新啟動 Veyon 服務。"
 
 msgid "This command queries and displays the status of the Veyon Service."
-msgstr ""
+msgstr "這個命令查詢並顯示 Veyon 服務的狀態。"
 
 msgid "Shell"
-msgstr ""
+msgstr "殼層"
 
 msgid ""
 "Simple shell functionalities are provided by the ``shell`` module. If this "
@@ -690,25 +625,25 @@ msgid ""
 msgstr ""
 
 msgid "Command line tool"
-msgstr ""
+msgstr "命令列工具"
 
 msgid "Command line"
-msgstr ""
+msgstr "命令列"
 
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 msgid "Veyon CLI"
 msgstr "Veyon CLI"
 
 msgid "Configuration key"
-msgstr ""
+msgstr "組態金鑰"
 
 msgid "Service registration"
-msgstr ""
+msgstr "服務註冊"
 
 msgid "Configuration"
-msgstr "Configurazione"
+msgstr "組態"
 
 msgid ""
 "To begin with the setup, start the Veyon Configurator if this has not "
@@ -718,24 +653,15 @@ msgid ""
 "configuration pages. Depending on the installed plugins there may be "
 "additional configuration pages."
 msgstr ""
-"Per iniziare con la configurazione, avviare Veyon Configurator se questo non"
-" è già stato fatto automaticamente dopo l'installazione. Con questo "
-"programma è possibile impostare e personalizzare un'installazione locale di "
-"Veyon. L'interfaccia utente grafica è suddivisa in diverse pagine di "
-"configurazione relative all'argomento o ai componenti. A seconda dei plugin "
-"installati ci possono essere pagine di configurazione aggiuntive."
 
 msgid ""
 "The :ref:`ConfigurationReference` describes all configuration pages and "
 "configuration options with their individual definitions and possible "
 "configuration values."
 msgstr ""
-"Il: rif: `Riferimento di configurazione` descrive tutte le pagine di "
-"configurazione e le opzioni di configurazione con le loro singole "
-"definizioni e possibili valori di configurazione."
 
 msgid "Overview"
-msgstr "Panoramica"
+msgstr "總覽"
 
 msgid ""
 "The basic settings on the configuration page :ref:`RefGeneral` apply to all "
@@ -768,7 +694,7 @@ msgid ""
 msgstr ""
 
 msgid "Authentication"
-msgstr "Autenticazione"
+msgstr "身份驗證"
 
 msgid ""
 "In order to access a computer running the Veyon Service the accessing user "
@@ -780,14 +706,12 @@ msgid ""
 msgstr ""
 
 msgid "Authentication methods"
-msgstr "Metodi di autenticazione"
+msgstr "身份驗證方法"
 
 msgid ""
 "Basically Veyon offers two different authentication methods: key file "
 "authentication and logon authentication."
 msgstr ""
-"Fondamentalmente Veyon offre due diversi metodi di autenticazione: "
-"autenticazione di file chiave e autenticazione di accesso."
 
 msgid ""
 "**Key file authentication** is based on `Public-Key-Cryptography "
@@ -816,60 +740,48 @@ msgid ""
 "method depends on the environment, security requirements and desire for user"
 " comfort."
 msgstr ""
-"Entrambi i metodi presentano vantaggi e svantaggi, pertanto la scelta del "
-"metodo giusto dipende dall'ambiente, dalle esigenze di sicurezza e dal "
-"desiderio di comfort dell'utente."
 
 msgid "**Key file authentication**"
-msgstr "** Autenticazione file chiave **"
+msgstr "**金鑰檔身份驗證**"
 
 msgid "Advantages"
-msgstr "Vantaggi"
+msgstr "優勢"
 
 msgid "Disadvantages"
-msgstr "Svantaggi"
+msgstr "劣勢"
 
 msgid ""
 "no login with username and password required when starting Veyon Master"
 msgstr ""
-"nessun login con username e password richiesti all'avvio di Veyon Master"
 
 msgid ""
 "access to computers can be handled centrally by access rights to the file "
 "containing the private key"
 msgstr ""
-"l'accesso ai computer può essere gestito centralmente tramite i diritti di "
-"accesso al file contenente la chiave privata"
 
 msgid "more effort for the setup"
-msgstr "più impegno per l'installazione"
+msgstr "設定的更多努力"
 
 msgid "user identity can not be assured even after successful signature check"
-msgstr ""
-"l'identità dell'utente non può essere garantita anche dopo il controllo "
-"della firma"
+msgstr "即使在成功的簽名檢查後，使用者身份也無法保證"
 
 msgid "system-wide exchange of key files necessary if compromised"
-msgstr "Scambio a livello di sistema di file chiave necessari se compromessi"
+msgstr "在損壞的情況下進行必要的系統範圍內的關鍵檔案交換"
 
 msgid "**Logon authentication**"
-msgstr "** Autenticazione di accesso **"
+msgstr "**登入身份驗證**"
 
 msgid "easy and effortless setup"
-msgstr "installazione facile e senza sforzo"
+msgstr "簡單且輕鬆的設定"
 
 msgid ""
 "identity of counterpart can be assured, allowing to use "
 ":ref:`AccessControlRules`"
 msgstr ""
-"l'identità della controparte può essere assicurata, consentendo di "
-"utilizzare: rif: `Regole di controllo accessi»"
 
 msgid ""
 "login with username and password necessary whenever Veyon Master is used"
 msgstr ""
-"login con username e password necessari ogni volta che viene utilizzato "
-"Veyon Master"
 
 msgid ""
 "The respective authentication method can be chosen and configured as "
@@ -878,7 +790,7 @@ msgid ""
 msgstr ""
 
 msgid "Key management"
-msgstr "Gestione delle chiavi"
+msgstr "金鑰管理"
 
 msgid ""
 "In order to use the key file authentication, first a key pair consisting of "
@@ -907,10 +819,6 @@ msgid ""
 "therefore crucial to ensure that file access is restricted with using file "
 "ACLs or similar!"
 msgstr ""
-"Il file della chiave privata potrebbe essere accessibile solo agli utenti "
-"che dovrebbero avere accesso ad altri computer. Se il file è memorizzato su "
-"un'unità di rete, è quindi fondamentale assicurarsi che l'accesso ai file "
-"sia limitato con l'uso di file ACL o simili!"
 
 msgid ""
 "The access control module can be used to specify in detail which users may "
@@ -935,7 +843,7 @@ msgid ""
 msgstr ""
 
 msgid "Locations & computers"
-msgstr "Posizioni e computers"
+msgstr "位置 & 電腦"
 
 msgid ""
 "On the configuration page :guilabel:`Locations & computers` you can create "
@@ -951,10 +859,6 @@ msgid ""
 " added or removed. Existing locations can be edited and renamed by double-"
 "clicking."
 msgstr ""
-"La pagina di configurazione è composta da due elenchi. L'elenco di sinistra "
-"contiene tutte le posizioni configurate. Utilizzando i due pulsanti sotto "
-"l'elenco, le posizioni possono essere aggiunte o rimosse. Le posizioni "
-"esistenti possono essere modificate e rinominate facendo doppio clic."
 
 msgid ""
 "The list on the right contains all computers stored for the currently "
@@ -973,7 +877,7 @@ msgid ""
 msgstr ""
 
 msgid "Importing/exporting a configuration"
-msgstr "Importazione / esportazione di una configurazione"
+msgstr "匯入/匯出組態"
 
 msgid ""
 "An imported prerequisite for the use of Veyon is an identical configuration "
@@ -981,11 +885,6 @@ msgid ""
 "can be done manually at first, but should be automated later. Different "
 "methods are available for both ways."
 msgstr ""
-"Un prerequisito importato per l'uso di Veyon è una configurazione identica "
-"su tutti i computer. Il trasferimento della configurazione di Veyon su un "
-"altro computer può essere fatto manualmente all'inizio, ma dovrebbe essere "
-"automatizzato in un secondo momento. Diversi metodi sono disponibili per "
-"entrambi i modi."
 
 msgid ""
 "In the Veyon Configurator you can find the entry :guilabel:`Save settings to"
@@ -1011,7 +910,7 @@ msgid ""
 msgstr ""
 
 msgid "Reset configuration"
-msgstr "Reimposta configurazione"
+msgstr "重設組態"
 
 msgid ""
 "In some error situations it may be advisable to completely reset the Veyon "
@@ -1033,64 +932,64 @@ msgid ""
 msgstr ""
 
 msgid "Quick start"
-msgstr ""
+msgstr "快速開始"
 
 msgid "Key file authentication"
-msgstr "Autenticazione con File chiave"
+msgstr "金鑰檔身分驗證"
 
 msgid "Public-key-cryptography"
-msgstr ""
+msgstr "公開金鑰加密"
 
 msgid "Public key"
-msgstr ""
+msgstr "公開金鑰"
 
 msgid "Private key"
-msgstr ""
+msgstr "私密金鑰"
 
 msgid "Key file"
-msgstr ""
+msgstr "金鑰檔"
 
 msgid "Logon authentication"
-msgstr "Autenticazione di accesso (Logon)"
+msgstr "登入驗證"
 
 msgid "Username"
-msgstr "Nome Utente"
+msgstr "使用者名稱"
 
 msgid "Password"
-msgstr "Password"
+msgstr "密碼"
 
 msgid "Key pair"
-msgstr ""
+msgstr "金鑰配對"
 
 msgid "Locations and computers"
-msgstr ""
+msgstr "位置和電腦"
 
 msgid "Export configuration"
-msgstr ""
+msgstr "匯出組態"
 
 msgid "Import configuration"
-msgstr ""
+msgstr "匯入組態"
 
 msgid "Load settings"
-msgstr ""
+msgstr "載入設定"
 
 msgid "Save settings"
-msgstr ""
+msgstr "儲存設定"
 
 msgid "Reset settings"
-msgstr ""
+msgstr "重設設定"
 
 msgid "Clear configuration"
-msgstr ""
+msgstr "清除組態"
 
 msgid "Delete configuration"
-msgstr ""
+msgstr "刪除組態"
 
 msgid "FAQ - Frequently Asked Questions"
-msgstr "FAQ - Domande frequenti"
+msgstr "FAQ - 常見問答集"
 
 msgid "Does Veyon run under Chrome OS (ChromeBooks) or MacOS?"
-msgstr "Veyon funziona con Chrome OS (ChromeBooks) o MacOS?"
+msgstr "Veyon 是否執行在Chrome OS (ChromeBooks) 或 MacOS?"
 
 msgid ""
 "Currently Veyon is only available for Linux- and Windows-based environments."
@@ -1098,13 +997,9 @@ msgid ""
 "relies on the help of experienced software developers, especially for "
 "porting Veyon to macOS and Android."
 msgstr ""
-"Attualmente Veyon è disponibile solo per ambienti basati su Linux e Windows."
-" Tuttavia, il supporto per altre piattaforme e' in lavorazione. Il progetto "
-"Veyon si basa sull'aiuto di sviluppatori di software esperti, in particolare"
-" per il porting di Veyon su macOS e Android."
 
 msgid "How can I add computers in order to access them?"
-msgstr "Come posso aggiungere computer per accedervi?"
+msgstr "如何加入電腦以便存取訪問它們?"
 
 msgid ""
 "If the default :ref:`RefNetworkObjectDirectory` is used, all you need to do "
@@ -1118,12 +1013,9 @@ msgid ""
 "to the appropriate LDAP backend so that the computers from the directory are"
 " displayed in the Veyon Master."
 msgstr ""
-"Se: rif: `LDAP` è configurato, la directory dell'oggetto di rete deve essere"
-" cambiata nel backend LDAP appropriato in modo che i computer della "
-"directory vengano visualizzati in Veyon Master."
 
 msgid "How can I migrate an existing iTALC installation to Veyon?"
-msgstr "Come posso migrare un'installazione iTALC esistente su Veyon?"
+msgstr "如何將現有的 iTALC 安裝遷移到 Veyon?"
 
 msgid ""
 "Although iTALC and Veyon are conceptually similar, a complete new "
@@ -1133,13 +1025,6 @@ msgid ""
 "first. It is recommended to reboot the computer afterwards. Veyon can then "
 "be installed and configured in the same way as iTALC."
 msgstr ""
-"Sebbene iTALC e Veyon siano concettualmente simili, è necessaria una nuova "
-"installazione e configurazione completa per utilizzare Veyon, poiché i "
-"formati di configurazione e di file, così come i loro percorsi, sono "
-"cambiati e non sono compatibili. Per una migrazione, è necessario "
-"disinstallare completamente iTALC. Si consiglia di riavviare il computer in "
-"seguito. Veyon può quindi essere installato e configurato allo stesso modo "
-"di iTALC."
 
 msgid ""
 "While the configuration of authentication methods is very similar, the "
@@ -1148,14 +1033,9 @@ msgid ""
 "whether the new :ref:`LDAP` can be used to make locations and computers "
 "automatically available in Veyon."
 msgstr ""
-"Mentre la configurazione dei metodi di autenticazione è molto simile, la "
-"configurazione delle posizioni e dei computer viene eseguita tramite Veyon "
-"Configurator e non più nell'applicazione Master. In questo contesto, "
-"dovresti controllare se il nuovo: rif: `LDAP` può essere usato per rendere "
-"automaticamente disponibili posizioni e computer in Veyon."
 
 msgid "Is it possible to use Veyon Master on more than one computer?"
-msgstr "È possibile utilizzare Veyon Master su più di un computer?"
+msgstr ""
 
 msgid ""
 "The usage of Veyon Master on multiple computers is possible without any "
@@ -1167,9 +1047,7 @@ msgid ""
 msgstr ""
 
 msgid "How can an existing VNC server be used in conjunction with Veyon?"
-msgstr ""
-"Come può essere utilizzato un server VNC esistente in combinazione con "
-"Veyon?"
+msgstr "如何與 Veyon 結合使用現有 VNC 伺服器?"
 
 msgid ""
 "In some environments a VNC server is already installed (e. g. UltraVNC) or "
@@ -1181,21 +1059,11 @@ msgid ""
 "Configurator on the configuration page :ref:`RefService` in section "
 ":ref:`RefVNCServer`."
 msgstr ""
-"In alcuni ambienti è già installato un server VNC (ad esempio UltraVNC) o "
-"fornito dal sistema (ad esempio l'accesso basato su VNC ai desktop virtuali "
-"in ambienti VDI). Ciò potrebbe comportare prestazioni ridotte o conflitti "
-"con il server VNC interno Veyon. In questi casi, si consiglia di configurare"
-" Veyon per utilizzare il server VNC esistente (esterno) anziché avviare il "
-"server VNC interno. La configurazione viene eseguita tramite Veyon "
-"Configurator nella pagina di configurazione: rif: `RefService` nella "
-"sezione: ref:` RefVNCServer`."
 
 msgid ""
 "Can I import/use an existing or generated file with location and computer "
 "information?"
 msgstr ""
-"Posso importare / utilizzare un file esistente o generato con informazioni "
-"su stanza e computer?"
 
 msgid ""
 "As of Veyon 4.1, there is a new :ref:`module for the command line interface "
@@ -1203,14 +1071,9 @@ msgid ""
 "and computers from any kind of text files (including CSV files) into the "
 "builtin network object directory."
 msgstr ""
-"A partire da Veyon 4.1, c'è un nuovo: rif: `modulo per l'interfaccia a riga "
-"di comando <CLINetworkObjectDirectory>`. Questo modulo può essere utilizzato"
-" per importare stanze e computer da qualsiasi tipo di file di testo (inclusi"
-" i file CSV) nella directory dell'oggetto di rete incorporato."
 
 msgid "How can I view or control all monitors of a remote computer?"
-msgstr ""
-"Come posso visualizzare o controllare tutti i monitor di un computer remoto?"
+msgstr "如何檢視或控制遠端電腦的所有監視器?"
 
 msgid ""
 "On Windows by default only the primary monitor of a computer is accessible "
@@ -1220,8 +1083,7 @@ msgid ""
 msgstr ""
 
 msgid "How can I import or export the selection of displayed computers?"
-msgstr ""
-"Come posso importare o esportare la selezione dei computer visualizzati?"
+msgstr "如何匯入或匯出顯示電腦的選取?"
 
 msgid ""
 "The selection of displayed computers is saved in the personal :ref:`user "
@@ -1235,41 +1097,23 @@ msgid ""
 "rights may have to be adjusted so that changes made by users are not written"
 " back into the global user configuration."
 msgstr ""
-"La selezione dei computer visualizzati viene salvata nel personale: rif: "
-"`configurazione utente <RefUserConfiguration>`. Esistono due modi per "
-"condividere questa configurazione con più utenti. Il file di configurazione "
-"dell'utente può essere copiato nel profilo dell'utente, ad es. tramite "
-"script di accesso. In alternativa, la configurazione utente può anche essere"
-" memorizzata in una directory condivisa (ad esempio un'unità di rete) e la "
-"rif: `impostazioni di configurazione utente<RefUserConfiguration>`deve "
-"essere modificato di conseguenza in modo che la configurazione utente venga "
-"caricata da questa directory. Si noti che i diritti di accesso potrebbero "
-"dover essere regolati in modo che le modifiche apportate dagli utenti non "
-"vengano riscritte nella configurazione utente globale."
 
 msgid ""
 "In this context please also refer the function :ref:`Automatic switch to "
 "current classroom <RefAutoSelectLocation>`, which can be used to directly "
 "realize the desired behavior."
 msgstr ""
-"In questo contesto, si prega di consultare anche la funzione: rif: "
-"`Passaggio automatico alla classe corrente <RefAutoSelectLocation>`, che può"
-" essere usato per realizzare direttamente il comportamento desiderato."
 
 msgid "How can I hide the master computer from computer locations?"
-msgstr "Come posso nascondere il computer principale dai computer?"
+msgstr "如何從電腦位置隱藏主機電腦?"
 
 msgid ""
 "All you need to do is enable the option :ref:`Hide local computer "
 "<RefAutoHideLocalComputer>` in the master configuration page."
 msgstr ""
-"Tutto quello che devi fare è abilitare l'opzione: rif: `Nascondi computer "
-"locale <RefAutoHideLocalComputer>` nella pagina di configurazione "
-"principale."
 
 msgid "What happens if there is no matching access control rule?"
 msgstr ""
-"Cosa succede se non ci sono regole di controllo accessi corrispondenti?"
 
 msgid ""
 "If there is no rule where all activated conditions apply when processing the"
@@ -1277,29 +1121,24 @@ msgid ""
 "closed. This prevents an attacker from being accidentally granted access due"
 " to an incomplete ruleset."
 msgstr ""
-"Se non esiste una regola in cui tutte le condizioni attivate si applicano "
-"durante l'elaborazione delle regole di controllo di accesso configurate, "
-"l'accesso viene negato e la connessione viene chiusa. Ciò impedisce a un "
-"utente malintenzionato di accedere accidentalmente a causa di un set di "
-"regole incompleto."
 
 msgid "iTALC"
 msgstr "iTALC"
 
 msgid "Technical glossary"
-msgstr ""
+msgstr "技術術語表"
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr ""
+msgstr "從 Wikipedia，免費的百科全書:"
 
 msgid "ACL"
-msgstr ""
+msgstr "ACL"
 
 msgid "Access Control List"
-msgstr ""
+msgstr "存取控制清單"
 
 msgid "Client"
-msgstr ""
+msgstr "用戶端"
 
 msgid ""
 "a piece of computer hardware or software that accesses a service made "
@@ -1307,10 +1146,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Client_(computing)"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Client_(computing)"
 
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 msgid ""
 "a list of frequently asked questions (FAQs) and answers on a particular "
@@ -1318,10 +1157,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/FAQ"
 
 msgid "Host"
-msgstr ""
+msgstr "主機"
 
 msgid ""
 "a computer or other device connected to a computer network. A network host "
@@ -1331,10 +1170,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Host_(network)"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Host_(network)"
 
 msgid "Hostname"
-msgstr ""
+msgstr "主機名稱"
 
 msgid ""
 "a label that is assigned to a device connected to a computer network and "
@@ -1343,10 +1182,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Hostname"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Hostname"
 
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgid ""
 "the principal communications protocol in the Internet protocol suite for "
@@ -1355,10 +1194,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Internet_Protocol"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Internet_Protocol"
 
 msgid "IP Address"
-msgstr ""
+msgstr "IP 位址"
 
 msgid ""
 "a numerical label assigned to each device connected to a computer network "
@@ -1366,10 +1205,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/IP_address"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/IP_address"
 
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 msgid ""
 "the most recent version of the Internet Protocol (IP), the communications "
@@ -1378,10 +1217,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/IPv6"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/IPv6"
 
 msgid "Port"
-msgstr ""
+msgstr "連接埠"
 
 msgid ""
 "an endpoint of communication. Physical as well as wireless connections are "
@@ -1391,10 +1230,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Port_(computer_networking)"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Port_(computer_networking)"
 
 msgid "TCP"
-msgstr ""
+msgstr "TCP"
 
 msgid ""
 "one of the main protocols of the Internet protocol suite. It originated in "
@@ -1404,7 +1243,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
 
 msgid "URL"
 msgstr "URL"
@@ -1415,19 +1254,19 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/URL"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/URL"
 
 msgid "Veyon Administrator Manual"
-msgstr "Manuale Amministratore di Veyon"
+msgstr "Veyon 管理員手冊"
 
 msgid ":ref:`genindex`"
-msgstr ":rif:`indice generale`"
+msgstr ":ref:`genindex`"
 
 msgid "Installation"
-msgstr "Installazione"
+msgstr "安裝"
 
 msgid "Hardware and software requirements"
-msgstr "Requisiti hardware e software"
+msgstr "軟硬體需求"
 
 msgid ""
 "Veyon is designed to run on standard computers running Windows or Linux. The"
@@ -1437,22 +1276,14 @@ msgid ""
 "with enough RAM and CPU cores to monitor the desired number of client "
 "computers."
 msgstr ""
-"Veyon è progettato per funzionare su computer standard che eseguono Windows "
-"o Linux. I requisiti minimi per l'hardware dipendono dallo scenario di "
-"utilizzo e dalle dimensioni dell'ambiente in cui viene distribuito Veyon. "
-"Sebbene non esistano requisiti speciali per i computer client, tutti i "
-"computer master dovrebbero essere dotati di RAM e core CPU sufficienti per "
-"monitorare il numero desiderato di computer client."
 
 msgid ""
 "At least 2 GB RAM - Veyon Master requires 20-30 MB per client computer, "
 "depending on the client's screen resolution"
 msgstr ""
-"Almeno 2 GB di RAM - Veyon Master richiede 20-30 MB per computer client, a "
-"seconda della risoluzione dello schermo del client"
 
 msgid "Multi-core system (2-4 CPU cores) highly recommended"
-msgstr "Il sistema multi-core (2-4 core della CPU) è altamente raccomandato"
+msgstr "強烈建議多核心系統 (2-4 CPU 核心)"
 
 msgid ""
 "All computers must be connected through a TCP-/IP-compatible network. Both "
@@ -1462,53 +1293,41 @@ msgid ""
 "applies to wireless networks (*Wifi*) where at least the IEEE 802.11n "
 "standard should be used."
 msgstr ""
-"Tutti i computer devono essere connessi tramite una rete compatibile con TCP"
-" / IP. Funzionano entrambe le connessioni di rete cablate e wireless. Per "
-"utilizzare Veyon con più di 10 computer è consigliata una rete Gigabit, "
-"altrimenti le prestazioni della funzione di modalità demo (vedere il manuale"
-" dell'utente) potrebbero non essere soddisfacenti. Lo stesso vale per le "
-"reti wireless (* Wifi *) dove dovrebbe essere utilizzato almeno lo standard "
-"IEEE 802.11n."
 
 msgid ""
 "From a software point of view, an up-to-date operating system supported by "
 "the manufacturer or the community must be used. The following operating "
 "systems are supported:"
 msgstr ""
-"Da un punto di vista del software, deve essere utilizzato un sistema "
-"operativo aggiornato supportato dal produttore o dalla comunità. Sono "
-"supportati i seguenti sistemi operativi:"
 
 msgid "Windows 7, 8 or 10 (32/64 Bit)"
-msgstr "Windows 7, 8 o 10 (32/64 Bit)"
+msgstr "Windows 7, 8 或 10 (32/64 位元)"
 
 msgid "Linux with at least version 5.5 of Qt"
-msgstr "Linux con almeno la versione 5.5 di Qt"
+msgstr "至少具有 5.5 版本 Qt 的 Linux"
 
 msgid "Debian 9 or higher"
-msgstr "Debian 9 o versioni successive"
+msgstr "Debian 9 或以上"
 
 msgid "Ubuntu 16.04 or higher"
-msgstr "Ubuntu 16.04 o successivo"
+msgstr "Ubuntu 16.04 或更高版本"
 
 msgid "openSUSE 42.2 or higher"
-msgstr "openSUSE 42.2 o versione successiva"
+msgstr "openSUSE 42.2 或以上"
 
 msgid "Fedora 24 or higher"
-msgstr "Fedora 24 o superiore"
+msgstr "Fedora 24 或以上"
 
 msgid "CentOS 7.3 or higher"
-msgstr "CentOS 7.3 o successivo"
+msgstr "CentOS 7.3 或以上"
 
 msgid ""
 "The mixed operation of Veyon on Windows and Linux computers works without "
 "any restrictions."
-msgstr ""
-"L'operazione mista di Veyon su computer Windows e Linux funziona senza "
-"alcuna restrizione."
+msgstr "Veyon 在 Windows 和 Linux 電腦上的混合操作沒有任何限制。"
 
 msgid "Preparing the installation"
-msgstr "Preparare l'installazione"
+msgstr "修復安裝"
 
 msgid ""
 "First of all download the installation files for your platform from the "
@@ -1518,7 +1337,7 @@ msgid ""
 msgstr ""
 
 msgid "Installation on a Windows computer"
-msgstr "Installazione su un computer Windows"
+msgstr "在 Windows 電腦上安裝"
 
 msgid ""
 "Run the installer file with administrative privileges and follow the "
@@ -1526,10 +1345,6 @@ msgid ""
 "application (e.g. student computers) you can deselect the component *Veyon "
 "Master* in the *Choose Components* dialog."
 msgstr ""
-"Eseguire il file di installazione con privilegi amministrativi e seguire le "
-"istruzioni visualizzate. Sui computer che non richiedono l'applicazione "
-"Veyon Master (ad es. Computer per studenti) è possibile deselezionare il "
-"componente * Veyon Master * nella finestra di dialogo * Scegli componenti *."
 
 msgid ""
 "After the installation is finished the *Veyon Configurator* is started by "
@@ -1537,13 +1352,9 @@ msgid ""
 "installation. In the next chapter :ref:`Configuration` the usage is "
 "described in detail."
 msgstr ""
-"Al termine dell'installazione, * Veyon Configurator * viene avviato per "
-"impostazione predefinita. Questo programma consente di configurare e "
-"personalizzare l'installazione di Veyon. Nel prossimo capitolo: rif: "
-"`Configurazione` l'utilizzo è descritto in dettaglio."
 
 msgid "Installation on a Linux computer"
-msgstr "Installazione su un computer Linux"
+msgstr "在 Linux 電腦上安裝"
 
 msgid ""
 "The installation of Veyon on Linux differs depending on the distribution "
@@ -1556,21 +1367,12 @@ msgid ""
 "information please visit the `Github page of Veyon "
 "<https://github.com/veyon/veyon/>`_."
 msgstr ""
-"L'installazione di Veyon su Linux varia a seconda della distribuzione "
-"utilizzata. Se Veyon è disponibile nell'archivio dei pacchetti della "
-"distribuzione, è possibile installare il programma tramite l'apposita "
-"applicazione di gestione del software. In alternativa pacchetti binari "
-"aggiornati per la maggior parte delle principali distribuzioni sono "
-"disponibili nella pagina di download di `Veyon <https://download.veyon.io>` "
-"_. In tutti gli altri casi è sempre possibile creare e installare una "
-"versione corrente di Veyon dal sorgente. Per ulteriori informazioni visita "
-"la pagina Github di Veyon <https://github.com/veyon/veyon/> `_."
 
 msgid "Automated/silent installation"
-msgstr "Installazione automatica / silenziosa"
+msgstr "自動/無訊息安裝"
 
 msgid "Basics"
-msgstr "Informazioni di base"
+msgstr "基礎"
 
 msgid ""
 "The Veyon Windows installer provided by the community can be executed in "
@@ -1579,50 +1381,34 @@ msgid ""
 "automated deployments in larger environments. This way Veyon can be easily "
 "integrated with all common software distribution solutions and mechanisms."
 msgstr ""
-"Il programma di installazione di Veyon per Windows fornito dalla comunità "
-"può essere eseguito in modalità * silenziosa *, il che significa che non vi "
-"è alcuna interazione da parte dell'utente e l'installazione viene eseguita "
-"automaticamente. Questo è particolarmente utile per le distribuzioni "
-"automatizzate in ambienti più grandi. In questo modo Veyon può essere "
-"facilmente integrato con tutte le comuni soluzioni e meccanismi di "
-"distribuzione del software."
 
 msgid ""
 "By running the installer with the command line parameter ``/S``, all "
 "operations are performed without further questions and dialogs. The same "
 "applies to the uninstaller."
 msgstr ""
-"Eseguendo il programma di installazione con il parametro della riga di "
-"comando `` / S``, tutte le operazioni vengono eseguite senza ulteriori "
-"domande e finestre di dialogo. Lo stesso vale per il programma di "
-"disinstallazione."
 
 msgid "Examples"
-msgstr "Esempi"
+msgstr "範例"
 
 msgid "Install Veyon in *silent* mode:"
-msgstr "Installa Veyon in modalità * silenziosa *:"
+msgstr "以 *無訊息* 模式下安裝 Veyon:"
 
 msgid "Uninstall Veyon in *silent* mode:"
-msgstr "Disinstallare Veyon in modalità * silenziosa*:"
+msgstr "在 *無訊息* 模式下解除安裝 Veyon:"
 
 msgid "Specify an installation directory for an automated installation:"
-msgstr ""
-"Specificare una directory di installazione per un'installazione automatica:"
+msgstr "指定自動安裝的安裝目錄:"
 
 msgid ""
 "Because of a shortcoming of the installer software (NSIS) the option "
 "``/D=...`` always has to be the last argument."
 msgstr ""
-"A causa di una mancanza del software di installazione (NSIS) l'opzione `` / "
-"D = ... `` deve sempre essere l'ultimo argomento."
 
 msgid ""
 "Import and apply a given Veyon configuration automatically after the "
 "installation:"
 msgstr ""
-"Importare e applicare automaticamente una determinata configurazione Veyon "
-"dopo l'installazione:"
 
 msgid ""
 "You must specify an absolute path for the configuration file, since the "
@@ -1630,24 +1416,18 @@ msgid ""
 "different working directory. Please use either the suggested "
 "``%cd``-variable or replace with an absolute path."
 msgstr ""
-"È necessario specificare un percorso assoluto per il file di configurazione,"
-" poiché lo strumento da riga di comando internamente chiamato (* Veyon CLI "
-"*) viene eseguito con una diversa directory di lavoro. Si prega di "
-"utilizzare il suggerito ``%cd``-variabile o sostituire con un percorso "
-"assoluto."
 
 msgid "Automated installation without the Veyon Master component:"
-msgstr "Installazione automatica senza il componente Veyon Master:"
+msgstr "不含 Veyon Master 元件的自動安裝:"
 
 msgid "Delete all Veyon-related settings during uninstallation:"
-msgstr ""
-"Elimina tutte le impostazioni relative a Veyon durante la disinstallazione:"
+msgstr "解除安裝期間刪除所有與 Veyon 相關的設定:"
 
 msgid "Minimum requirements"
-msgstr ""
+msgstr "最小需求"
 
 msgid "Operating system"
-msgstr "Sistema operativo"
+msgstr "作業系統"
 
 msgid "Wifi"
 msgstr "Wifi"
@@ -1656,25 +1436,25 @@ msgid "Linux"
 msgstr "Linux"
 
 msgid "Automated installation"
-msgstr "Installazione automatizzata"
+msgstr "自動安裝"
 
 msgid "Unattended installation"
-msgstr "Installazione automatica"
+msgstr "無操作安裝"
 
 msgid "Silent installation"
-msgstr "Installazione silenziosa"
+msgstr "無訊息安裝"
 
 msgid "Uninstallation"
-msgstr "Disinstallazione"
+msgstr "解除安裝"
 
 msgid "Uninstalling"
-msgstr "Disinstallare"
+msgstr "解除安裝"
 
 msgid "Installation directory"
-msgstr "Directory di installazione"
+msgstr "安裝目錄"
 
 msgid "About this manual"
-msgstr "Informazioni su questo manuale"
+msgstr "關於本手冊"
 
 msgid ""
 "This manual describes the installation and configuration of Veyon in a "
@@ -1683,29 +1463,18 @@ msgid ""
 "describes the usage and individual functions of the user program (Veyon "
 "Master)."
 msgstr ""
-"Questo manuale descrive l'installazione e la configurazione di Veyon in una "
-"rete di computer ed è rivolto agli amministratori di sistema e agli utenti "
-"con esperienza tecnica. Per gli utenti finali è disponibile un manuale "
-"utente separato che descrive l'utilizzo e le singole funzioni del programma "
-"utente (Veyon Master)."
 
 msgid ""
 "In the following sections of this chapter you will find basic information "
 "about Veyon and its components which are of fundamental importance for "
 "putting Veyon into operation."
 msgstr ""
-"Nelle sezioni seguenti di questo capitolo troverai le informazioni di base "
-"su Veyon e le sue componenti che sono di fondamentale importanza per mettere"
-" in funzione Veyon."
 
 msgid ""
 "Chapter :ref:`Installation` covers the installation of Veyon on a Windows or"
 " Linux computer. It also contains information on how to perform or implement"
 " an automated installation."
 msgstr ""
-"Capitolo: rIf: `Installazione` copre l'installazione di Veyon su un computer"
-" Windows o Linux. Contiene inoltre informazioni su come eseguire o "
-"implementare un'installazione automatica."
 
 msgid ""
 "Chapter :ref:`Configuration` explains how to configure and integrate Veyon "
@@ -1714,12 +1483,6 @@ msgid ""
 " and options in detail. Information and examples on how to connect Veyon to "
 "an LDAP or ActiveDirectory server can be found in chapter :ref:`LDAP`."
 msgstr ""
-"Capitolo: rif: `Configurazione` spiega come configurare e integrare Veyon "
-"usando lo strumento di configurazione grafico, mentre il: rif:` "
-"Configurazione di riferimento` descrive in dettaglio tutte le impostazioni "
-"di configurazione e le opzioni disponibili. Informazioni ed esempi su come "
-"collegare Veyon a un server LDAP o ActiveDirectory sono disponibili nel "
-"capitolo: rif: `LDAP`."
 
 msgid ""
 "Veyon also has a command line interface (CLI) which can be used to modify "
@@ -1727,21 +1490,12 @@ msgid ""
 "certain program features. All modules and commands of the command line tool "
 "are listed and explained in chapter :ref:`CommandLineInterface`."
 msgstr ""
-"Veyon ha anche un'interfaccia a riga di comando (CLI) che può essere "
-"utilizzata per modificare la configurazione, automatizzare le attività "
-"relative a Veyon e utilizzare o controllare determinate funzionalità del "
-"programma. Tutti i moduli e i comandi dello strumento della riga di comando "
-"sono elencati e spiegati nel capitolo: rif: `interfaccia a riga di comando`."
 
 msgid ""
 "In case Veyon causes problem during its installation or configuration "
 "actions can be taken as described in chapter :ref:`Troubleshooting`. "
 "Frequently asked questions are answered in chapter :ref:`FAQ`."
 msgstr ""
-"Nel caso in cui Veyon causi problemi durante l'installazione o nella "
-"configurazione, possono essere intraprese le azioni come descritto nel "
-"capitolo: rif: `Risoluzione dei problemi`. Le risposte alle domande più "
-"frequenti sono riportate nel capitolo: ref: `FAQ`."
 
 msgid ""
 "Before upgrading to a new release series of Veyon it's recommended to "
@@ -1749,7 +1503,7 @@ msgid ""
 msgstr ""
 
 msgid "About Veyon"
-msgstr "Informazioni su Veyon"
+msgstr "關於 Veyon"
 
 msgid ""
 "Veyon is a free and open source software for computer monitoring and class "
@@ -1757,64 +1511,51 @@ msgid ""
 "to interact with users, e.g. students. The following features are available "
 "in Veyon:"
 msgstr ""
-"Veyon è un software gratuito e open source per il monitoraggio dei computer "
-"e la gestione delle classi. Consente di monitorare e controllare le stanze "
-"dei computer e di interagire con gli utenti, ad es. studenti. Le seguenti "
-"funzionalità sono disponibili in Veyon:"
 
 msgid ""
 "Monitoring: overview of a (class) room with screen contents of computers "
 "being shown in thumbnails"
 msgstr ""
-"Monitoraggio: panoramica di una stanza (di classe) con il contenuto dello "
-"schermo dei computer mostrati nelle miniature"
 
 msgid "Remote view or control computers"
-msgstr "Computer di controllo o visualizzazione remota"
+msgstr "遠端檢視或控制電腦"
 
 msgid ""
 "Broadcast the teacher's screen to all other computers in real time (full "
 "screen/window demo)"
-msgstr ""
-"Trasmetti lo schermo dell'insegnante a tutti gli altri computer in tempo "
-"reale (demo a schermo intero / finestra)"
+msgstr "即時向所有其它電腦廣播老師螢幕 (全螢幕/視窗演示)"
 
 msgid "Lock computers to control attention"
-msgstr "Blocca i computer per controllare l'attenzione"
+msgstr "鎖定電腦以控制注意力"
 
 msgid "Distribute documents and other files to students"
-msgstr "Distribuisci documenti e altri file agli studenti"
+msgstr "向學生分發文件和其它檔案"
 
 msgid "Send text messages to students"
-msgstr "Invia messaggi di testo agli studenti"
+msgstr "向學生傳送簡訊"
 
 msgid "Power on, reboot or shutdown computers remotely"
-msgstr "Accendi, riavvia o spegni i computer da remoto"
+msgstr "遠端開機、重新開機或關閉電腦"
 
 msgid "Log out users"
-msgstr "Disconnetti gli utenti"
+msgstr "登出使用者"
 
 msgid "Launch programs and open websites"
-msgstr "Avvia programmi e apri siti web"
+msgstr "啟動程式和開啟網站"
 
 msgid "Components"
-msgstr "Componenti"
+msgstr "元件"
 
 msgid ""
 "Veyon basically consists of a master and a service component which realize "
 "the interaction between teacher and student computers (also referred to as "
 "*master computer* and *client computer*):"
 msgstr ""
-"Veyon consiste fondamentalmente in un master e un componente di servizio che"
-" realizzano l'interazione tra computer insegnante e studente (chiamati anche"
-" * computer principale * e * computer client *):"
 
 msgid ""
 "In detail there are several software components that interact with each "
 "other in different ways:"
 msgstr ""
-"Nel dettaglio ci sono diversi componenti software che interagiscono tra loro"
-" in modi diversi:"
 
 msgid "Veyon Master"
 msgstr "Veyon Master"
@@ -1824,13 +1565,9 @@ msgid ""
 "computers and utilize further Veyon features. In normal use, the program is "
 "started by the end user and accesses other computers via the Veyon Service."
 msgstr ""
-"Un programma applicativo che può essere utilizzato per monitorare e "
-"controllare altri computer e utilizzare ulteriori funzionalità di Veyon. "
-"Nell'uso normale, il programma viene avviato dall'utente finale e accede ad "
-"altri computer tramite il servizio Veyon."
 
 msgid "Veyon Service"
-msgstr "Servizio Veyon"
+msgstr "Veyon 服務"
 
 msgid ""
 "A non-graphical service application which monitors user sessions on a "
@@ -1841,7 +1578,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon Server"
-msgstr "Veyon Server"
+msgstr "Veyon 伺服器"
 
 msgid ""
 "A server application which provides access to a computer as well as control "
@@ -1849,13 +1586,9 @@ msgid ""
 "the Veyon Service automatically and with elevated privileges so it can't be "
 "terminated by users."
 msgstr ""
-"Un'applicazione server che fornisce l'accesso a un computer e funzioni di "
-"controllo e applicazione. Durante il normale funzionamento, questo programma"
-" viene avviato automaticamente dal servizio Veyon e con privilegi elevati, "
-"pertanto non può essere terminato dagli utenti."
 
 msgid "Veyon Worker"
-msgstr ""
+msgstr "Veyon 工作員"
 
 msgid ""
 "A helper program started by the server to provide specific functions in an "
@@ -1865,7 +1598,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon Configurator"
-msgstr "Configurazione Veyon"
+msgstr "Veyon 組態器"
 
 msgid ""
 "A configuration tool which allows to configure and customize all components "
@@ -1873,10 +1606,6 @@ msgid ""
 "program is started by the administrator with elevated privileges whenever "
 "necessary."
 msgstr ""
-"Uno strumento di configurazione che consente di configurare e personalizzare"
-" tutti i componenti di un'installazione Veyon locale tramite un'interfaccia "
-"utente grafica. Il programma viene avviato dall'amministratore con privilegi"
-" elevati quando necessario."
 
 msgid ""
 "A command line tool that in addition to the Veyon Configurator allows "
@@ -1885,42 +1614,35 @@ msgid ""
 "interactively on the command line or script-controlled with usually "
 "administrative privileges."
 msgstr ""
-"Uno strumento da riga di comando che, oltre al  Configuratore Veyon, "
-"consente varie regolazioni di configurazione, attività automatizzate e l'uso"
-" di alcune funzionalità di Veyon senza interazione grafica. Il programma "
-"viene eseguito in modo interattivo sulla riga di comando o controllato da "
-"script con i privilegi di solito amministrativi."
 
 msgid "Network architecture"
-msgstr "Architettura di rete"
+msgstr "網路架構"
 
 msgid ""
 "From a network perspective the following components and TCP ports are "
 "involved:"
-msgstr ""
-"Dal punto di vista della rete sono coinvolti i seguenti componenti e porte "
-"TCP:"
+msgstr "從網路角度來看，涉及以下元件和 TCP 埠:"
 
 msgid "Teacher computer"
-msgstr "Computer Insegnante"
+msgstr "老師電腦"
 
 msgid "Student computer"
-msgstr "Computer Studente"
+msgstr "學生電腦"
 
 msgid "Master computer"
-msgstr "Computer principale"
+msgstr "主電腦"
 
 msgid "Client computer"
-msgstr "Computer client"
+msgstr "用戶端電腦"
 
 msgid "Software components"
-msgstr "Componenti software"
+msgstr "軟體元件"
 
 msgid "Configuration tool"
-msgstr "Strumento di configurazione"
+msgstr "組態工具"
 
 msgid "LDAP/AD integration"
-msgstr ""
+msgstr "LDAP/AD 整合"
 
 msgid ""
 "This chapter covers the setup of Veyon for connecting it to LDAP-compatible "
@@ -1942,24 +1664,25 @@ msgid ""
 msgstr ""
 
 msgid "Basic settings"
-msgstr "Impostazioni di base"
+msgstr "基本設定"
 
 msgid ""
 "The basic settings affect all basic parameters for accessing an LDAP server."
 " They are mandatory for a properly working LDAP integration."
-msgstr ""
+msgstr "基本設定影響存取 LDAP 伺服器的所有基本參數。 它們對於正常工作的 LDAP 整合是必需的。"
 
 msgid "LDAP server and port"
-msgstr "Indirizzo e porta del server LDAP"
+msgstr "LDAP 伺服器和埠"
 
 msgid ""
 "Enter the address of the LDAP server (hostname or IP address) here. If a "
 "port other than the default LDAP port 389 is used, the port parameter has to"
 " be adjusted accordingly."
 msgstr ""
+"在此處輸入 LDAP 伺服器的位址 (主機名稱或 IP 位址)。 如果使用預設 LDAP 埠 389 以外的埠，則埠參數必須相應地進行調整。"
 
 msgid "Anonymous bind / Use bind credentials"
-msgstr ""
+msgstr "匿名繫結 / 使用繫結認證"
 
 msgid ""
 "Depending on the environment and configuration of the LDAP server, LDAP "
@@ -1971,7 +1694,7 @@ msgid ""
 msgstr ""
 
 msgid "Bind DN"
-msgstr "Bind DN"
+msgstr "綁定 DN"
 
 msgid ""
 "The bind DN is the username used to log in at the server in order to perform"
@@ -1981,7 +1704,7 @@ msgid ""
 msgstr ""
 
 msgid "Bind password"
-msgstr "Bind password"
+msgstr "綁定密碼"
 
 msgid ""
 "In addition to the bind DN the corresponding password has to be entered."
@@ -2000,7 +1723,7 @@ msgid ""
 msgstr ""
 
 msgid "Connection security"
-msgstr "Sicurezza della connessione"
+msgstr "連線安全性"
 
 msgid ""
 "Veyon can establish encrypted connections to the LDAP server. For this "
@@ -2009,18 +1732,18 @@ msgid ""
 msgstr ""
 
 msgid "Encryption protocol"
-msgstr "Protocollo di crittografia"
+msgstr "加密協定"
 
 msgid ""
 "You can choose between the encryption protocols *None*, *TLS* and *SSL*. The"
 " use of the modern TLS protocol is recommended."
-msgstr ""
+msgstr "您可以在 *None*, *TLS* 和 *SSL* 之間選擇加密協定。 建議使用現代 TLS 協定。"
 
 msgid "**Default:** *None*"
-msgstr ""
+msgstr "**預設:** *無*"
 
 msgid "TLS certificate verification"
-msgstr "Verifica del certificato TLS"
+msgstr "TLS 憑證驗證"
 
 msgid ""
 "This setting determines how the security certificate of the LDAP server is "
@@ -2037,10 +1760,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *System defaults*"
-msgstr ""
+msgstr "**預設值:** *系統預設值*"
 
 msgid "Custom CA certificate file"
-msgstr "File certificato CA personalizzato"
+msgstr "自訂 CA 憑證檔"
 
 msgid ""
 "If you use your own certification authority (CA), it may be necessary to "
@@ -2049,7 +1772,7 @@ msgid ""
 msgstr ""
 
 msgid "Base DN"
-msgstr "Base DN"
+msgstr "基礎 DN"
 
 msgid ""
 "The base DN defines the address of the root object in the directory. All "
@@ -2081,7 +1804,7 @@ msgid ""
 msgstr ""
 
 msgid "Environment settings"
-msgstr "Impostazioni ambiente"
+msgstr "環境設定"
 
 msgid ""
 "After the basic settings have been configured and tested, the environment-"
@@ -2092,7 +1815,7 @@ msgid ""
 msgstr ""
 
 msgid "Object trees"
-msgstr "Alberatura oggetti"
+msgstr "物件樹"
 
 msgid ""
 "Object trees are organizational or structural units in which certain types "
@@ -2103,7 +1826,7 @@ msgid ""
 msgstr ""
 
 msgid "User tree"
-msgstr "Alberatura utenti"
+msgstr "使用者樹"
 
 msgid ""
 "The LDAP tree (without base DN) in which the user objects are located must "
@@ -2111,7 +1834,7 @@ msgid ""
 msgstr ""
 
 msgid "Group tree"
-msgstr "Alberatura gruppi"
+msgstr "群組樹"
 
 msgid ""
 "The LDAP tree (without base DN) in which the group objects are located must "
@@ -2119,7 +1842,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer tree"
-msgstr "Alberatura Pc"
+msgstr "電腦樹"
 
 msgid ""
 "The LDAP tree (without base DN) in which the computer objects are located "
@@ -2127,7 +1850,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer group tree"
-msgstr "Albero gruppo computer"
+msgstr "電腦群組樹"
 
 msgid ""
 "If the computer groups are located in a different tree than the regular user"
@@ -2137,7 +1860,7 @@ msgid ""
 msgstr ""
 
 msgid "Perform recursive search operations in object trees"
-msgstr "Ricerca anche nelle sottocartelle"
+msgstr "在物件樹中執行遞迴搜尋操作"
 
 msgid ""
 "This option can be used to control whether objects should be queried "
@@ -2146,7 +1869,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled*"
-msgstr ""
+msgstr "**預設值:** *停用*"
 
 msgid ""
 "If objects of one type are stored in different object trees (e.g. users in "
@@ -2160,7 +1883,7 @@ msgid ""
 msgstr ""
 
 msgid "Object attributes"
-msgstr "Attributi degli oggetti"
+msgstr "物件屬性"
 
 msgid ""
 "For Veyon to be able to retrieve the required information from the queried "
@@ -2171,7 +1894,7 @@ msgid ""
 msgstr ""
 
 msgid "User login name attribute"
-msgstr "Attributo del nome di accesso dell'utente"
+msgstr "使用者登入名稱屬性"
 
 msgid ""
 "This attribute must hold the login name of a user. The attribute is used to "
@@ -2181,7 +1904,7 @@ msgid ""
 msgstr ""
 
 msgid "Group member attribute"
-msgstr "Attributo del gruppo del membro"
+msgstr "群組成員屬性"
 
 msgid ""
 "Members of a group are listed in group objects through this attribute. The "
@@ -2192,7 +1915,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer display name attribute"
-msgstr "Attributo del nome di visualizzazione del computer"
+msgstr "電腦顯示名稱屬性"
 
 msgid ""
 "The content of this optional attribute is used to determine the name of a "
@@ -2201,10 +1924,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *cn*"
-msgstr ""
+msgstr "**預設值:** *cn*"
 
 msgid "Computer host name attribute"
-msgstr "Attributo del nome del computer host"
+msgstr "電腦主機名稱屬性"
 
 msgid ""
 "This attribute must hold the DNS name of the computer. It is used to "
@@ -2216,9 +1939,7 @@ msgstr ""
 msgid ""
 "Hostnames stored as fully qualified domain names (FQDN, e.g. "
 "myhost.example.org)"
-msgstr ""
-"Nomi host memorizzati come nomi di dominio completi (FQDN, ad es. "
-"Myhost.example.org)"
+msgstr "主機名稱存儲為完全限定網域名稱 (FQDN, 例如: myhost.example.org)"
 
 msgid ""
 "This option specifies whether to use the `fully qualified domain name (FQDN)"
@@ -2229,7 +1950,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer MAC address attribute"
-msgstr "Attributo dell'indirizzo MAC del computer"
+msgstr "電腦 MAC 位址屬性"
 
 msgid ""
 "In addition to the computer name the MAC addresses of computers are stored "
@@ -2251,7 +1972,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer location attribute"
-msgstr "Attributo di posizione del computer"
+msgstr "電腦位置屬性"
 
 msgid ""
 "If the LDAP schema for computer objects provides a special attribute for the"
@@ -2263,7 +1984,7 @@ msgid ""
 msgstr ""
 
 msgid "Location name attribute"
-msgstr "Attributo del nome della posizione"
+msgstr "位置名稱屬性"
 
 msgid ""
 "When identifying computer locations via computer groups or computer "
@@ -2275,7 +1996,7 @@ msgid ""
 msgstr ""
 
 msgid "Advanced settings"
-msgstr "Impostazioni avanzate"
+msgstr "進階設定"
 
 msgid ""
 "With the advanced settings the LDAP integration and the use of the "
@@ -2283,7 +2004,7 @@ msgid ""
 msgstr ""
 
 msgid "Optional object filters"
-msgstr "Filtro per oggetti opzionale"
+msgstr "可選的物件篩選器"
 
 msgid ""
 "With LDAP filters, the LDAP objects used by Veyon can be narrowed down if, "
@@ -2301,40 +2022,48 @@ msgid ""
 msgstr ""
 
 msgid "Filter for users"
-msgstr "Filtro Users"
+msgstr "使用者的篩選器"
 
 msgid ""
 "You can define an LDAP filter for users here, e.g. ``(objectClass=person)`` "
 "or ``(&(objectClass=person)(objectClass=veyonUser))``."
 msgstr ""
+"您可以在此定義使用者的 LDAP 篩選器，例如:  ``(objectClass=person)`` 或 "
+"``(&(objectClass=person)(objectClass=veyonUser))``。"
 
 msgid "Filter for user groups"
-msgstr "Filtro per gruppo utenti"
+msgstr "使用者群組的篩選器"
 
 msgid ""
 "You can define an LDAP filter for user groups here, e.g. "
 "``(objectClass=group)`` or ``(|(cn=teachers)(cn=students)(cn=admins))``."
 msgstr ""
+"您可以在此定義使用者群組的 LDAP 篩選器，例如: ``(objectClass=group)`` 或 "
+"``(|(cn=teachers)(cn=students)(cn=admins))``。"
 
 msgid "Filter for computers"
-msgstr "Filtra per computer"
+msgstr "電腦的篩選器"
 
 msgid ""
 "You can define an LDAP filter for computers here, e.g. "
 "``(objectClass=computer)`` or ``(&(!(cn=printer*))(!(cn=scanner*)))``."
 msgstr ""
+"您可以在此定義電腦的 LDAP 篩選器，例如: ``(objectClass=computer)`` 或 "
+"``(&(!(cn=printer*))(!(cn=scanner*)))``。"
 
 msgid "Filter for computer groups"
-msgstr "Filtro Gruppo computer"
+msgstr "電腦群組的篩選器"
 
 msgid ""
 "You can define an LDAP filter for computer groups here, e.g. "
 "``(objectClass=room)`` or ``(cn=Room*)``. If computer groups are used as "
 "locations, you can filter the displayed locations this way."
 msgstr ""
+"您可以在此定義電腦群組的 LDAP 篩選器，例如: ``(objectClass=room)`` 或 ``(cn=Room*)`\"。 "
+"如果電腦群組用作位置，則可以通過這種方式篩選顯示的位置。"
 
 msgid "Filter for computer containers"
-msgstr "Filtra per contenitori computer"
+msgstr "電腦容器篩選"
 
 msgid ""
 "You can define an LDAP filter for computer containers here, e.g. "
@@ -2342,9 +2071,11 @@ msgid ""
 "containers/OUs are used as locations, you can filter the displayed locations"
 " this way."
 msgstr ""
+"您可以在此定義電腦容器的 LDAP 篩選器，例如: ``(objectClass=container)`` 或 "
+"``(objectClass=organizationalUnit)``。 如果容器/OU 用作位置，則可以通過這種方式篩選顯示的位置。"
 
 msgid "Group member identification"
-msgstr "Identificazione membro del gruppo"
+msgstr "群組成員身份"
 
 msgid ""
 "The content of the group membership attributes varies across different LDAP "
@@ -2356,7 +2087,7 @@ msgid ""
 msgstr ""
 
 msgid "Distinguished name (Samba/AD)"
-msgstr "Nome distinto (Samba/AD)"
+msgstr "可分辨名稱 (Samba/AD)"
 
 msgid ""
 "This option has to be chosen, if the distinguished name (DN) of an object is"
@@ -2366,9 +2097,7 @@ msgstr ""
 
 msgid ""
 "Configured attribute for user login name or computer hostname (OpenLDAP)"
-msgstr ""
-"Attributo configurato per il nome di accesso dell'utente o il nome host del "
-"computer (OpenLDAP)"
+msgstr "為使用者登入名稱或電腦主機名稱組態的屬性 (OpenLDAP)"
 
 msgid ""
 "This option has to be chosen, if the login name of a user (username) or the "
@@ -2377,7 +2106,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer locations"
-msgstr "Ubicazioni del computer"
+msgstr "電腦位置"
 
 msgid ""
 "Veyon offers several methods to represent computer locations in an LDAP "
@@ -2391,7 +2120,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer groups"
-msgstr "Gruppi computer"
+msgstr "電腦群組"
 
 msgid ""
 "This option specifies that computer locations are identified through "
@@ -2404,10 +2133,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *enabled*"
-msgstr ""
+msgstr "**預設值:** *啟用*"
 
 msgid "Computer containers or OUs"
-msgstr "Contenitoru computer o OUs"
+msgstr "電腦容器或組織單位 (OU)"
 
 msgid ""
 "This option specifies that the containers/OUs containing computer objects "
@@ -2418,7 +2147,7 @@ msgid ""
 msgstr ""
 
 msgid "Location attribute in computer objects"
-msgstr "Attributo di posizione negli oggetti del computer"
+msgstr "電腦物件中的位置屬性"
 
 msgid ""
 "If the LDAP schema for computer objects provides a special attribute for "
@@ -2429,7 +2158,7 @@ msgid ""
 msgstr ""
 
 msgid "Integration tests"
-msgstr "Test integrazione"
+msgstr "整合測試"
 
 msgid ""
 "The integration tests can be used to check the LDAP integration as a whole. "
@@ -2439,7 +2168,7 @@ msgid ""
 msgstr ""
 
 msgid "Using LDAP backends"
-msgstr ""
+msgstr "使用 LDAP 後台"
 
 msgid ""
 "With the successful configuration and testing of the LDAP integration, the "
@@ -2484,87 +2213,87 @@ msgid ""
 msgstr ""
 
 msgid "Active Directory"
-msgstr ""
+msgstr "Active Directory"
 
 msgid "OpenLDAP"
-msgstr ""
+msgstr "OpenLDAP"
 
 msgid "Samba"
-msgstr ""
+msgstr "Samba"
 
 msgid "Directory service"
-msgstr ""
+msgstr "目錄服務"
 
 msgid "LDAP server"
-msgstr ""
+msgstr "LDAP 伺服器"
 
 msgid "Anonymous bind"
-msgstr "Anonymous bind"
+msgstr "匿名綁定"
 
 msgid "Use bind credentials"
-msgstr "Use bind credentials"
+msgstr "使用綁定認證"
 
 msgid "LDAP naming contexts"
-msgstr ""
+msgstr "LDAP 命名內容"
 
 msgid "LDAP object trees"
-msgstr ""
+msgstr "LDAP 物件樹"
 
 msgid "LDAP Common Names"
-msgstr ""
+msgstr "LDAP 通用名稱"
 
 msgid "LDAP Organizational Units"
-msgstr ""
+msgstr "LDAP 組織單位"
 
 msgid "Recursive search operations"
-msgstr ""
+msgstr "遞迴搜尋操作"
 
 msgid "LDAP object attributes"
-msgstr ""
+msgstr "LDAP 物件屬性"
 
 msgid "LDAP user object"
-msgstr ""
+msgstr "LDAP 使用者物件"
 
 msgid "LDAP computer object"
-msgstr ""
+msgstr "LDAP 電腦物件"
 
 msgid "Fully qualified domain names"
-msgstr ""
+msgstr "完全限定的功能變數名稱"
 
 msgid "MAC address"
-msgstr "indirizzo MAC"
+msgstr "MAC 位址"
 
 msgid "Computer location"
-msgstr ""
+msgstr "電腦位置"
 
 msgid "Object filters"
-msgstr ""
+msgstr "物件篩選器"
 
 msgid "LDAP object filter"
-msgstr ""
+msgstr "LDAP 物件篩選器"
 
 msgid "LDAP filters"
-msgstr ""
+msgstr "LDAP 篩選器"
 
 msgid "LDAP integration tests"
-msgstr ""
+msgstr "LDAP 整合測試"
 
 msgid "LDAP backend"
-msgstr ""
+msgstr "LDAP 後台"
 
 msgid "Platform specific notes"
-msgstr ""
+msgstr "平臺特定備註"
 
 msgid ""
 "This chapter contains notes on platform-specific configuration options and "
 "pecularities."
-msgstr ""
+msgstr "本章包含有關特定于平臺的配置選項和參數的說明。"
 
 msgid "Windows"
 msgstr "Windows"
 
 msgid "Enable SAS generation by software (Ctrl+Alt+Del)"
-msgstr "Abilita generazione SAS via software (Ctrl+Alt+Del)"
+msgstr "以軟體啟用 SAS 產生 (Ctrl + Alt + Del)"
 
 msgid ""
 "On Windows per default it's impossible for applications to generate the "
@@ -2576,9 +2305,13 @@ msgid ""
 "controlled computer or logging on a user since in most cases the shortcut "
 ":kbd:`Ctrl+Alt+Del` has to be issued first."
 msgstr ""
+"在 Windows ，每個預設值應用程式無法產生 [安全注意序列] (Ctrl_Alt_Del) 以模擬按下這些鍵。 "
+"啟用此選項時，原則將寫入變更此行為的 Windows 登錄檔。 建議在遠端控制電腦時保留啟用這個選項，以便能夠傳送 "
+":kbd:'Ctrl_Alt_Del'。 否則，可能無法解鎖遠端控制的電腦或登入使用者，因為在大多數情況下，快速鍵 "
+":kbd:'Ctrl_Alt_Del' 必須首先發出。"
 
 msgid "User authentication"
-msgstr "Autenticazione utente"
+msgstr "使用者身份驗證"
 
 msgid ""
 "Veyon implements two different mechanisms to authenticate a user (i.e. "
@@ -2594,7 +2327,7 @@ msgid ""
 msgstr ""
 
 msgid "Use alternative user authentication mechanism"
-msgstr "Utilizzare un meccanismo di autenticazione utente alternativo"
+msgstr "使用替代使用者身份驗證機制"
 
 msgid ""
 "In case the default mechanism is not working in your environment you can try"
@@ -2606,7 +2339,7 @@ msgid ""
 msgstr ""
 
 msgid "Screen lock"
-msgstr "Blocco schermo"
+msgstr "螢幕鎖定"
 
 msgid ""
 "The screen lock feature per default disables all input devices and hides "
@@ -2616,7 +2349,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide taskbar"
-msgstr "Nascondi la barra delle applicazioni"
+msgstr "隱藏工作列"
 
 msgid ""
 "This option defines whether the taskbar and the start button should be "
@@ -2624,7 +2357,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide start menu"
-msgstr "Nasconde il menu di avvio"
+msgstr "隱藏 [開始] 功能表"
 
 msgid ""
 "This option defines whether the start menu should be disabled and hidden by "
@@ -2632,7 +2365,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide desktop"
-msgstr "Nascondi desktop"
+msgstr "隱藏桌面"
 
 msgid ""
 "This option defines whether the desktop should be disabled and hidden by the"
@@ -2640,7 +2373,7 @@ msgid ""
 msgstr ""
 
 msgid "UltraVNC server settings"
-msgstr ""
+msgstr "UltraVNC 伺服器設定"
 
 msgid ""
 "Veyon uses a lightweight version of UltraVNC as a builtin VNC server on "
@@ -2651,7 +2384,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable capturing of layered (semi-transparent) windows"
-msgstr "Abilita cattura di finestre in livelli (semi-trasparente)"
+msgstr "啟用層次 (半透明) 視窗擷取"
 
 msgid ""
 "When using the traditional screen mirroring driver (i.e. Windows 7 is used "
@@ -2664,7 +2397,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable multi monitor support"
-msgstr "Abilita il supporto per più monitor"
+msgstr "啟用多部顯示器支援"
 
 msgid ""
 "This option says whether to capture only the first of all monitors. On "
@@ -2676,8 +2409,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable Desktop Duplication Engine on Windows 8 and newer"
-msgstr ""
-"Abilita motore di duplicazione Desktop su versioni di Windows 8 e successive"
+msgstr "在 Windows 8 和以上啟用「桌面複製引擎」"
 
 msgid ""
 "When this option is enabled UltraVNC uses the new Desktop Duplication Engine"
@@ -2689,7 +2421,7 @@ msgid ""
 msgstr ""
 
 msgid "Poll full screen (leave this enabled per default)"
-msgstr "Schermo pieno (lasciarlo abilitato per default)"
+msgstr "輪詢全螢幕 (每個預設值保持這個已啟用)"
 
 msgid ""
 "If no suitable driver for capturing screen data is found this determines "
@@ -2699,7 +2431,7 @@ msgid ""
 msgstr ""
 
 msgid "Low accuracy (turbo mode)"
-msgstr "Bassa qualità (modalità turbo)"
+msgstr "低精確度 (快速模式)"
 
 msgid ""
 "Enabling this option will make the VNC server use a scan raster to detect "
@@ -2722,7 +2454,7 @@ msgid ""
 msgstr ""
 
 msgid "Custom PAM service for user authentication"
-msgstr "Servizio PAM personalizzato per l'autenticazione dell'utente"
+msgstr "自訂使用者身份驗證的 PAM 服務"
 
 msgid ""
 "If you want to use a dedicated PAM service configuration to authenticate "
@@ -2741,19 +2473,19 @@ msgid ""
 msgstr ""
 
 msgid "SAS generation"
-msgstr ""
+msgstr "SAS 產生"
 
 msgid "Secure Attention Sequence"
-msgstr ""
+msgstr "安全注意序列"
 
 msgid "Ctrl+Alt+Del"
-msgstr "Ctrl+Alt+Canc"
+msgstr "Ctrl+Alt+Del"
 
 msgid "Authentication mechanism"
-msgstr ""
+msgstr "身份驗證機制"
 
 msgid "Configuration reference"
-msgstr ""
+msgstr "組態參考"
 
 msgid ""
 "In this chapter all configuration pages within Veyon Configurator as well as"
@@ -2766,13 +2498,13 @@ msgstr ""
 msgid ""
 "Some advanced settings are hidden in the standard view. You can switch to "
 "the advanced view using the menu."
-msgstr ""
+msgstr "某些進階設定隱藏在標準檢視中。 您可以使用功能表切換到進階檢視。"
 
 msgid "User interface"
-msgstr "Interfaccia Utente"
+msgstr "使用者介面"
 
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 msgid ""
 "The selected language can be configured for the graphical user interfaces as"
@@ -2784,15 +2516,16 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Use system language setting*"
-msgstr ""
+msgstr "**預設值:** *使用系統語言設定*"
 
 msgid ""
 "The :ref:`Configuration` chapter describes the "
 ":ref:`ConfAuthenticationMethods` available in Veyon."
 msgstr ""
+" :ref:`Configuration` 章節描述:ref:`ConfAuthenticationMethods` 在 Veyon 可用。"
 
 msgid "Method"
-msgstr ""
+msgstr "方式"
 
 msgid ""
 "This option defines which authentication method to use. :ref:`Logon "
@@ -2803,7 +2536,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Logon authentication*"
-msgstr ""
+msgstr "**預設值:** *登入身分驗證*"
 
 msgid ""
 "In Veyon a network object directory provides information about network "
@@ -2818,7 +2551,7 @@ msgid ""
 msgstr ""
 
 msgid "Backend"
-msgstr "Backend"
+msgstr "後台"
 
 msgid ""
 "You can use this setting to set the desired backend for the network object "
@@ -2828,10 +2561,10 @@ msgstr ""
 
 msgid ""
 "**Default:** *Builtin (computers and locations in local configuration)*"
-msgstr ""
+msgstr "**預設值:** *內建 (本機組態中電腦和位置)*"
 
 msgid "Update interval"
-msgstr "Intervallo di aggiornamento"
+msgstr "更新間隔"
 
 msgid ""
 "The network object directory automatically updates in background which "
@@ -2840,10 +2573,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *60 seconds*"
-msgstr ""
+msgstr "**預設值:** *60 秒*"
 
 msgid "Logging"
-msgstr "Fase di autenticazione"
+msgstr "紀錄"
 
 msgid ""
 "Veyon can log various kinds of messages to component-specific log files or "
@@ -2853,7 +2586,7 @@ msgid ""
 msgstr ""
 
 msgid "Log file directory"
-msgstr "Cartella per il Log file"
+msgstr "紀錄檔目錄"
 
 msgid ""
 "You can use this setting to specify which directory the log files will be "
@@ -2863,10 +2596,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%TEMP%*"
-msgstr ""
+msgstr "**預設值:** *%TEMP%*"
 
 msgid "Log level"
-msgstr "Livello di Log"
+msgstr "紀錄等級"
 
 msgid ""
 "The log level defines the minimum severity for which log messages are "
@@ -2878,10 +2611,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Warnings and errors*"
-msgstr ""
+msgstr "**預設值:** *警告和錯誤*"
 
 msgid "Limit log file size"
-msgstr "Limite per il file di log"
+msgstr "限制紀錄檔大小"
 
 msgid ""
 "In order for log files not to become too large and occupy disk space "
@@ -2890,10 +2623,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled / 100 MB*"
-msgstr ""
+msgstr "**預設值:** *停用 / 100 MB*"
 
 msgid "Rotate log files"
-msgstr "Ruotare i file di registro"
+msgstr "旋轉日誌檔"
 
 msgid ""
 "In conjunction with limiting the size of log files it additionally may be "
@@ -2905,10 +2638,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *disabled / 10x*"
-msgstr ""
+msgstr "**預設值:** *停用 / 10x*"
 
 msgid "Log to standard error output"
-msgstr "Log sullo standard error output"
+msgstr "紀錄到標準錯誤輸出"
 
 msgid ""
 "When program components of Veyon are executed from a command line window "
@@ -2918,7 +2651,7 @@ msgid ""
 msgstr ""
 
 msgid "Write to logging system of operating system"
-msgstr "Scrivi nel sistema di log del sistema operativo"
+msgstr "寫入到作業系統的記錄系統"
 
 msgid ""
 "In some environments it may be desired to write log messages directly to the"
@@ -2934,10 +2667,10 @@ msgid ""
 msgstr ""
 
 msgid "Service"
-msgstr "Servizio"
+msgstr "服務"
 
 msgid "Hide tray icon"
-msgstr "Nascondi l'icona tray"
+msgstr "隱藏通知區域圖示"
 
 msgid ""
 "By default the Veyon Service displays a tray icon (also called *system "
@@ -2948,7 +2681,7 @@ msgid ""
 msgstr ""
 
 msgid "Show notification when an unauthorized access is blocked"
-msgstr ""
+msgstr "未授權的存取已封鎖時顯示通知"
 
 msgid ""
 "This option specifies whether a notification should be displayed if the "
@@ -2961,7 +2694,7 @@ msgid ""
 msgstr ""
 
 msgid "Show notification on remote connection"
-msgstr "Mostra notifica sulla connessione remota"
+msgstr "遠端連線時顯示通知"
 
 msgid ""
 "In some environments it may be desired or even required to inform the user "
@@ -2972,7 +2705,7 @@ msgid ""
 msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
-msgstr ""
+msgstr "多工作階段模式 (適用於終端機和遠端桌面伺服器)"
 
 msgid ""
 "Enabling this option will make the service launch a server process for every"
@@ -2983,7 +2716,7 @@ msgid ""
 msgstr ""
 
 msgid "Autostart"
-msgstr "Avvio automatico"
+msgstr "自動啟動"
 
 msgid ""
 "Upon the installation of Veyon the Veyon Service is registered as a system "
@@ -2994,10 +2727,10 @@ msgid ""
 msgstr ""
 
 msgid "Network"
-msgstr "Rete"
+msgstr "網路"
 
 msgid "Primary service port"
-msgstr "Porta servizio primario"
+msgstr "主服務埠"
 
 msgid ""
 "You can use this setting to define the primary network port which the Veyon "
@@ -3005,10 +2738,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11100*"
-msgstr ""
+msgstr "**預設值:** *11100*"
 
 msgid "Internal VNC server port"
-msgstr "Porta interna server VNC"
+msgstr "內部 VNC 伺服器埠"
 
 msgid ""
 "You can use this setting to define the (localhost only) network port used by"
@@ -3019,10 +2752,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11200*"
-msgstr ""
+msgstr "**預設值:** *11200*"
 
 msgid "Feature manager port"
-msgstr "Porta manager funzionalita'"
+msgstr "功能管理員埠"
 
 msgid ""
 "You can use this setting to define the (localhost only) network port used by"
@@ -3034,10 +2767,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11300*"
-msgstr ""
+msgstr "**預設值:** *11300*"
 
 msgid "Demo server port"
-msgstr "Porta per la modalità Presentazione"
+msgstr "展示伺服器連接埠"
 
 msgid ""
 "You can use this setting to define the network port which the demo server is"
@@ -3046,10 +2779,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *11400*"
-msgstr ""
+msgstr "**預設值:** *11400*"
 
 msgid "Enable firewall exception"
-msgstr "Abilita le eccezioni del firewall"
+msgstr "啟用防火牆例外"
 
 msgid ""
 "Depending on the system configuration it may be impossible to access "
@@ -3062,7 +2795,7 @@ msgid ""
 msgstr ""
 
 msgid "Allow connections from localhost only"
-msgstr "Consenti connessioni solo da questo computer 'localhost'"
+msgstr "只允許來自 localhost 的連線"
 
 msgid ""
 "If you do not want the Veyon Server to be available to other computers in "
@@ -3074,10 +2807,10 @@ msgid ""
 msgstr ""
 
 msgid "VNC server"
-msgstr "Server VNC"
+msgstr "VNC 伺服器"
 
 msgid "Plugin"
-msgstr ""
+msgstr "外掛程式"
 
 msgid ""
 "By default Veyon uses an internal platform-specific VNC server "
@@ -3090,7 +2823,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Builtin VNC server*"
-msgstr ""
+msgstr "**預設值:** *Builtin VNC 伺服器*"
 
 msgid ""
 "Platform-specific information on how to configure the individual internal "
@@ -3098,7 +2831,7 @@ msgid ""
 msgstr ""
 
 msgid "Master"
-msgstr "Principale"
+msgstr "主要"
 
 msgid ""
 "All settings on this page influence the appearance, behaviour and features "
@@ -3106,7 +2839,7 @@ msgid ""
 msgstr ""
 
 msgid "**Directories**"
-msgstr ""
+msgstr "**目錄**"
 
 msgid ""
 "In order to make a configuration generic and independent of the user, you "
@@ -3116,7 +2849,7 @@ msgid ""
 msgstr ""
 
 msgid "User configuration"
-msgstr "Configurazione utente"
+msgstr "使用者組態"
 
 msgid ""
 "The user specific configuration of Veyon Master is stored in this directory."
@@ -3125,10 +2858,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%APPDATA%/Config*"
-msgstr ""
+msgstr "**預設值:** *%APPDATA%/Config*"
 
 msgid "Screenshots"
-msgstr "Catture dello schermo"
+msgstr "螢幕快照"
 
 msgid ""
 "All image files that have been generated by using the screenshot feature are"
@@ -3137,13 +2870,13 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%APPDATA%/Screenshots*"
-msgstr ""
+msgstr "**預設值:** *%APPDATA%/Screenshots*"
 
 msgid "**User interface**"
-msgstr ""
+msgstr "**使用者介面**"
 
 msgid "Thumbnail update interval"
-msgstr "Intervallo di aggiornamento delle miniature"
+msgstr "縮圖更新間隔"
 
 msgid ""
 "This setting determines the time interval in which the computer thumbnails "
@@ -3152,20 +2885,20 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *1000 ms*"
-msgstr ""
+msgstr "**預設值:** *1000 毫秒*"
 
 msgid "Background color"
-msgstr "Colore di sfondo"
+msgstr "背景色"
 
 msgid ""
 "This setting allows to customize the background color of the monitor view."
 msgstr ""
 
 msgid "**Default:** *white*"
-msgstr ""
+msgstr "**預設值:** *白色*"
 
 msgid "Text color"
-msgstr "Colore del testo"
+msgstr "文字色彩"
 
 msgid ""
 "This setting allows to customize the color which is used for displaying the "
@@ -3173,10 +2906,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *black*"
-msgstr ""
+msgstr "**預設值:** *黑色*"
 
 msgid "Computer thumbnail caption"
-msgstr "Miniatura anteprima computer"
+msgstr "電腦縮圖標題"
 
 msgid ""
 "This setting allows to define the caption for computer thumbnails in the "
@@ -3185,10 +2918,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *User and computer name*"
-msgstr ""
+msgstr "**預設值:** *使用者和電腦名稱*"
 
 msgid "Sort order"
-msgstr "Ordinamento"
+msgstr "排序"
 
 msgid ""
 "This setting allows to specify the sort order for computers in the monitor "
@@ -3197,10 +2930,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *Computer and user name*"
-msgstr ""
+msgstr "**預設值:** *電腦和使用者名稱*"
 
 msgid "Behaviour"
-msgstr "Comportamento"
+msgstr "行為"
 
 msgid ""
 "In the tab :guilabel:`Behaviour` settings are available to change the "
@@ -3209,10 +2942,10 @@ msgid ""
 msgstr ""
 
 msgid "**Program start**"
-msgstr ""
+msgstr "**程式啟動**"
 
 msgid "Perform access control"
-msgstr "Eseguire il controllo degli accessi"
+msgstr "執行存取控制"
 
 msgid ""
 "You can use this option to define whether the possibly configured "
@@ -3224,7 +2957,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically select current location"
-msgstr "Seleziona automaticamente la posizione corrente"
+msgstr "自動選取目前位置"
 
 msgid ""
 "By default all computers that have been selected the previous time are "
@@ -3240,7 +2973,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically adjust computer thumbnail size"
-msgstr "Regola automaticamente le dimensioni della miniatura del computer"
+msgstr "自動調整電腦縮圖大小"
 
 msgid ""
 "If the size of the computer thumbnails should be adjusted automatically upon"
@@ -3251,7 +2984,7 @@ msgid ""
 msgstr ""
 
 msgid "Automatically open computer select panel"
-msgstr "Apri automaticamente il pannello di selezione del computer"
+msgstr "自動開啟電腦選取面板"
 
 msgid ""
 "You can use this option to define that the computer select panel is opened "
@@ -3259,10 +2992,10 @@ msgid ""
 msgstr ""
 
 msgid "**Computer locations**"
-msgstr ""
+msgstr "**電腦位置**"
 
 msgid "Show current location only"
-msgstr "Mostra solo la posizione corrente"
+msgstr "只顯示目前位置"
 
 msgid ""
 "Per default, the computer select panel lists all locations provided by the "
@@ -3273,7 +3006,7 @@ msgid ""
 msgstr ""
 
 msgid "Allow adding hidden locations manually"
-msgstr "Consenti l'aggiunta di posizioni nascoste manualmente"
+msgstr "允許手動加入隱藏位置"
 
 msgid ""
 "When the option :ref:`Show current location only "
@@ -3284,7 +3017,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide local computer"
-msgstr "Nascondi il computer locale"
+msgstr "隱藏本機電腦"
 
 msgid ""
 "In regular usage scenarios it often is not desired to display the own "
@@ -3294,7 +3027,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide empty locations"
-msgstr "Nascondi posizioni vuote"
+msgstr "隱藏空位置"
 
 msgid ""
 "In some situations the :ref:`network object directory "
@@ -3304,7 +3037,7 @@ msgid ""
 msgstr ""
 
 msgid "Hide computer filter field"
-msgstr "Nascondi il campo filtri computer"
+msgstr "隱藏電腦篩選欄位"
 
 msgid ""
 "The filter field for searching computers can be hidden through this option. "
@@ -3313,10 +3046,10 @@ msgid ""
 msgstr ""
 
 msgid "**Modes and features**"
-msgstr ""
+msgstr "**模式和功能**"
 
 msgid "Enforce selected mode for client computers"
-msgstr "Applicare la modalita' selezionata per i client computer"
+msgstr "對用戶端電腦強制選取的模式"
 
 msgid ""
 "Some of Veyon's features change the operating mode of a computer e.g. the "
@@ -3326,9 +3059,7 @@ msgid ""
 msgstr ""
 
 msgid "Show confirmation dialog for potentially unsafe actions"
-msgstr ""
-"Mostra la finestra di dialogo di conferma per le azioni potenzialmente "
-"pericolose"
+msgstr "顯示潛在不安全動作的確認對話方塊"
 
 msgid ""
 "Actions such as rebooting a computer or logging off users can have undesired"
@@ -3338,7 +3069,7 @@ msgid ""
 msgstr ""
 
 msgid "Feature on double click"
-msgstr ""
+msgstr "按兩下功能"
 
 msgid ""
 "This setting allows to define a feature to be triggered whenever a computer "
@@ -3347,10 +3078,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *no function*"
-msgstr ""
+msgstr "**預設值:** *沒有功能*"
 
 msgid "Features"
-msgstr "Funzionalita'"
+msgstr "功能"
 
 msgid ""
 "The two lists in the :guilabel:`Features` allow to define which features are"
@@ -3367,7 +3098,7 @@ msgid ""
 msgstr ""
 
 msgid "User groups backend"
-msgstr ""
+msgstr "使用者群組後台"
 
 msgid ""
 "A user group backend provides user groups and their members (users) required"
@@ -3377,7 +3108,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable usage of domain groups"
-msgstr "Abilitare l'utilizzo di gruppi di dominio"
+msgstr "啟用網域群組使用"
 
 msgid ""
 "When using access control in combination with the default backend only the "
@@ -3390,7 +3121,7 @@ msgid ""
 msgstr ""
 
 msgid "Grant access to every authenticated user (default)"
-msgstr "Garantire l'accesso a tutti gli utenti autenticati (predefinito)"
+msgstr "每個經過驗證的使用者授予存取權限 (預設值)"
 
 msgid ""
 "If the selected authentication scheme is sufficient (e.g. when using a key "
@@ -3399,7 +3130,7 @@ msgid ""
 msgstr ""
 
 msgid "Restrict access to members of specific user groups"
-msgstr "Limita l'accesso a specifici membri di gruppi utenti "
+msgstr "限制對指定使用者群組成員的存取"
 
 msgid ""
 "In this mode access to a computer is restricted to members of specific user "
@@ -3408,7 +3139,7 @@ msgid ""
 msgstr ""
 
 msgid "Process access control rules"
-msgstr "Elabora le regole di controllo di accesso"
+msgstr "處理程序存取控制規則"
 
 msgid ""
 "This mode allows detailed access control based on user-defined access "
@@ -3418,7 +3149,7 @@ msgid ""
 msgstr ""
 
 msgid "User groups authorized for computer access"
-msgstr "Gruppi di utenti autorizzati all'accesso al computer"
+msgstr "授權電腦存取的使用者群組"
 
 msgid ""
 "Configuration of this access control mode is straightforward. The left list "
@@ -3443,10 +3174,10 @@ msgid ""
 msgstr ""
 
 msgid "Authentication keys"
-msgstr "Chiavi di autenticazione"
+msgstr "身份驗證金鑰"
 
 msgid "Key file directories"
-msgstr "Cartelle per i file delle chiavi"
+msgstr "金鑰檔目錄"
 
 msgid ""
 "Placeholder variables should be used for both base directories. All "
@@ -3457,7 +3188,7 @@ msgid ""
 msgstr ""
 
 msgid "Public key file base directory"
-msgstr "Cartella chiave Pubblica"
+msgstr "公開金鑰檔基礎目錄"
 
 msgid ""
 "The specified base directory contains subdirectories for each key name (e.g."
@@ -3469,10 +3200,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%GLOBALAPPDATA%/keys/public*"
-msgstr ""
+msgstr "**預設值:** *%GLOBALAPPDATA%/keys/public*"
 
 msgid "Private key file base directory"
-msgstr "Cartella chiave Privata"
+msgstr "私密金鑰檔基礎目錄"
 
 msgid ""
 "The specified base directory contains subdirectories for each key name (e.g."
@@ -3485,10 +3216,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *%GLOBALAPPDATA%/keys/private*"
-msgstr ""
+msgstr "**預設值:** *%GLOBALAPPDATA%/keys/private*"
 
 msgid "Demo server"
-msgstr "Server per la modalità Presentazione"
+msgstr "展示伺服器"
 
 msgid ""
 "In the configuration page for the demo server, you can make some fine "
@@ -3505,10 +3236,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *100 ms*"
-msgstr ""
+msgstr "**預設值:** *100 毫秒*"
 
 msgid "Key frame interval"
-msgstr "Intervallo del Key frame"
+msgstr "關鍵框架間隔"
 
 msgid ""
 "During a screen broadcast, only changed screen areas are sent to the client "
@@ -3522,10 +3253,10 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** *10 s*"
-msgstr ""
+msgstr "**預設值:** *10 秒*"
 
 msgid "Memory limit"
-msgstr "Limite memoria"
+msgstr "記憶體限制"
 
 msgid ""
 "All screen update data is stored by the demo server in an internal buffer "
@@ -3540,7 +3271,7 @@ msgid ""
 msgstr ""
 
 msgid "**Default:** 128 MB*"
-msgstr ""
+msgstr "**預設值:** 128 MB*"
 
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
@@ -3583,7 +3314,7 @@ msgid ""
 msgstr ""
 
 msgid "Environment variables"
-msgstr ""
+msgstr "環境變數"
 
 msgid ""
 "Veyon evaluates various optional environment variables allowing to override "
@@ -3617,25 +3348,25 @@ msgid ""
 msgstr ""
 
 msgid "Authentication method"
-msgstr ""
+msgstr "身份驗證方法"
 
 msgid "Network objects"
-msgstr "Oggetti di rete"
+msgstr "網路物件"
 
 msgid "Network object directory backend"
-msgstr ""
+msgstr "網路物件目錄後台"
 
 msgid "Network object directory update interval"
-msgstr ""
+msgstr "網路物件目錄更新間隔"
 
 msgid "Standard error output"
-msgstr ""
+msgstr "標準錯誤輸出"
 
 msgid "Windows event log"
-msgstr ""
+msgstr "Windows 事件記錄"
 
 msgid "Program version"
-msgstr ""
+msgstr "程式版本"
 
 msgid "Blocked access notification"
 msgstr ""
@@ -3644,7 +3375,7 @@ msgid "Unauthorized access"
 msgstr ""
 
 msgid "Remote connection notification"
-msgstr ""
+msgstr "遠端連線通知"
 
 msgid "Terminal server"
 msgstr ""
@@ -3659,79 +3390,79 @@ msgid "Multi-session mode"
 msgstr ""
 
 msgid "System service"
-msgstr ""
+msgstr "系統服務"
 
 msgid "Network settings"
-msgstr ""
+msgstr "網路設定"
 
 msgid "Network port"
-msgstr ""
+msgstr "網路埠"
 
 msgid "Internal VNC server"
-msgstr ""
+msgstr "內部 VNC 伺服器"
 
 msgid "Feature manager"
-msgstr ""
+msgstr "功能管理員"
 
 msgid "Firewall exception"
-msgstr ""
+msgstr "防火牆例外"
 
 msgid "Firewall"
-msgstr ""
+msgstr "防火牆"
 
 msgid "Windows firewall"
-msgstr ""
+msgstr "Windows 防火牆"
 
 msgid "localhost"
-msgstr ""
+msgstr "localhost"
 
 msgid "External VNC server"
-msgstr "Server VNC esterno"
+msgstr "外部 VNC 伺服器"
 
 msgid "Current location"
-msgstr ""
+msgstr "目前位置"
 
 msgid "Computer thumbnail size"
-msgstr ""
+msgstr "電腦縮圖大小"
 
 msgid "Thumbnail size"
-msgstr ""
+msgstr "縮圖大小"
 
 msgid "Computer select panel"
-msgstr ""
+msgstr "電腦選取面板"
 
 msgid "Empty locations"
-msgstr ""
+msgstr "空的位置"
 
 msgid "Computer filter"
-msgstr ""
+msgstr "電腦篩選器"
 
 msgid "Double click"
-msgstr ""
+msgstr "按兩下"
 
 msgid "Domain groups"
-msgstr ""
+msgstr "網域群組"
 
 msgid "Authorized user groups"
-msgstr "Gruppi di utenti autorizzati"
+msgstr "授權的使用者群組"
 
 msgid "Placeholder variables"
-msgstr ""
+msgstr "預留位置變數"
 
 msgid "Application data"
-msgstr ""
+msgstr "應用程式資料"
 
 msgid "User profile directory"
-msgstr ""
+msgstr "使用者設定檔目錄"
 
 msgid "Home directory"
-msgstr ""
+msgstr "家目錄"
 
 msgid "Temporary files"
-msgstr ""
+msgstr "暫存檔案"
 
 msgid "Release notes"
-msgstr ""
+msgstr "發佈說明"
 
 msgid ""
 "This chapter contains information on changes in different Veyon release "
@@ -3747,7 +3478,7 @@ msgid ""
 msgstr ""
 
 msgid "Upgrading configuration"
-msgstr ""
+msgstr "升級組態"
 
 msgid ""
 "Due to changes in Veyon and its plugins it may happen that both "
@@ -3783,7 +3514,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.2"
-msgstr ""
+msgstr "Veyon 4.2"
 
 msgid ""
 "Veyon 4.2 continues the Veyon 4 major release series with many internal "
@@ -3794,7 +3525,7 @@ msgid ""
 msgstr ""
 
 msgid "Core"
-msgstr ""
+msgstr "核心"
 
 msgid ""
 "The network object management layer has been revised to allow using multi-"
@@ -3807,10 +3538,10 @@ msgid ""
 msgstr ""
 
 msgid "Context information in log messages have been improved."
-msgstr ""
+msgstr "日誌訊息中的內文資訊已改進。"
 
 msgid "The computer sort order can now be configured."
-msgstr ""
+msgstr "現在可以組態電腦排序順序。"
 
 msgid ""
 "The internal data models have been improved leading to more stability and "
@@ -3819,10 +3550,10 @@ msgstr ""
 
 msgid ""
 "The connection and message handling has been improved to reduce latencies."
-msgstr ""
+msgstr "改進了連線和訊息處理，以減少延遲。"
 
 msgid "Configurator"
-msgstr ""
+msgstr "組態器"
 
 msgid "New view modes \"Standard\" and \"Advanced\" have been added."
 msgstr ""
@@ -3831,7 +3562,7 @@ msgid "An authentication test functionality has been added."
 msgstr ""
 
 msgid "Plugins"
-msgstr ""
+msgstr "外掛程式"
 
 msgid ""
 "The new file transfer plugin allows to send files to all users and open them"
@@ -3852,7 +3583,7 @@ msgid ""
 msgstr ""
 
 msgid "Users can now add custom programs and websites to the respective menu."
-msgstr ""
+msgstr "使用者現在可以將自訂程式和網站加入到相應的功能表。"
 
 msgid ""
 "Thumbnail updates can be slowed down while the demo mode is active. This "
@@ -3915,7 +3646,7 @@ msgid ""
 msgstr ""
 
 msgid "Structural changes"
-msgstr ""
+msgstr "結構變更"
 
 msgid ""
 "Starting with Veyon 4.2 the more generic term *location* instead of *room* "
@@ -3945,7 +3676,7 @@ msgid ""
 msgstr ""
 
 msgid "Configuration changes"
-msgstr ""
+msgstr "組態更改"
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"
@@ -3954,85 +3685,85 @@ msgid ""
 msgstr ""
 
 msgid "Old name"
-msgstr ""
+msgstr "舊名稱"
 
 msgid "New name"
-msgstr ""
+msgstr "新名稱"
 
 msgid "``Service/SoftwareSASEnabled``"
-msgstr ""
+msgstr "``Service/SoftwareSASEnabled``"
 
 msgid "``Windows/SoftwareSASEnabled``"
-msgstr ""
+msgstr "``Windows/SoftwareSASEnabled``"
 
 msgid "``Master/AutoSwitchToCurrentRoom``"
-msgstr ""
+msgstr "``Master/AutoSwitchToCurrentRoom``"
 
 msgid "``Master/AutoSelectCurrentLocation``"
-msgstr ""
+msgstr "``Master/AutoSelectCurrentLocation``"
 
 msgid "``Master/OnlyCurrentRoomVisible``"
-msgstr ""
+msgstr "``Master/OnlyCurrentRoomVisible``"
 
 msgid "``Master/ShowCurrentLocationOnly``"
-msgstr ""
+msgstr "``Master/ShowCurrentLocationOnly``"
 
 msgid "``Master/ManualRoomAdditionAllowed``"
-msgstr ""
+msgstr "``Master/ManualRoomAdditionAllowed``"
 
 msgid "``Master/AllowAddingHiddenLocations``"
-msgstr ""
+msgstr "``Master/AllowAddingHiddenLocations``"
 
 msgid "``Master/EmptyRoomsHidden``"
-msgstr ""
+msgstr "``Master/EmptyRoomsHidden``"
 
 msgid "``Master/HideEmptyLocations``"
-msgstr ""
+msgstr "``Master/HideEmptyLocations``"
 
 msgid "``Master/OpenComputerManagementAtStart``"
-msgstr ""
+msgstr "``Master/OpenComputerManagementAtStart``"
 
 msgid "``Master/AutoOpenComputerSelectPanel``"
-msgstr ""
+msgstr "``Master/AutoOpenComputerSelectPanel``"
 
 msgid "``Master/ConfirmDangerousActions``"
-msgstr ""
+msgstr "``Master/ConfirmDangerousActions``"
 
 msgid "``Master/ConfirmUnsafeActions``"
-msgstr ""
+msgstr "``Master/ConfirmUnsafeActions``"
 
 msgid "``LDAP/UserLoginAttribute``"
-msgstr ""
+msgstr "``LDAP/UserLoginAttribute``"
 
 msgid "``LDAP/UserLoginNameAttribute``"
-msgstr ""
+msgstr "``LDAP/UserLoginNameAttribute``"
 
 msgid "``LDAP/ComputerRoomMembersByAttribute``"
-msgstr ""
+msgstr "``LDAP/ComputerRoomMembersByAttribute``"
 
 msgid "``LDAP/ComputerLocationsByAttribute``"
-msgstr ""
+msgstr "``LDAP/ComputerLocationsByAttribute``"
 
 msgid "``LDAP/ComputerRoomMembersByContainer``"
-msgstr ""
+msgstr "``LDAP/ComputerRoomMembersByContainer``"
 
 msgid "``LDAP/ComputerLocationsByContainer``"
-msgstr ""
+msgstr "``LDAP/ComputerLocationsByContainer``"
 
 msgid "``LDAP/ComputerRoomAttribute``"
-msgstr ""
+msgstr "``LDAP/ComputerRoomAttribute``"
 
 msgid "``LDAP/ComputerLocationAttribute``"
-msgstr ""
+msgstr "``LDAP/ComputerLocationAttribute``"
 
 msgid "``LDAP/ComputerRoomNameAttribute``"
-msgstr ""
+msgstr "``LDAP/ComputerRoomNameAttribute``"
 
 msgid "``LDAP/LocationNameAttribute``"
-msgstr ""
+msgstr "``LDAP/LocationNameAttribute``"
 
 msgid "Veyon 4.1"
-msgstr ""
+msgstr "Veyon 4.1"
 
 msgid ""
 "Veyon 4.1 was the first feature release series of Veyon 4. Even though not "
@@ -4051,7 +3782,7 @@ msgid "Platform-specific code has been moved into platform plugins."
 msgstr ""
 
 msgid "Computers can now be arranged via drag and drop."
-msgstr ""
+msgstr "電腦現在可以透過拖放來排列。"
 
 msgid "A button for hiding powered off computers has been added."
 msgstr ""
@@ -4064,13 +3795,13 @@ msgstr ""
 msgid ""
 "Authentication key management for both Configurator and command line has "
 "been revised completely."
-msgstr ""
+msgstr "配置器和命令列的身份驗證金鑰管理已完全修訂。"
 
 msgid "Computers and rooms can now be managed at the command line."
-msgstr ""
+msgstr "電腦和教室現在可以在命令列進行管理。"
 
 msgid "Computers and rooms can now be imported from CSV and text files."
-msgstr ""
+msgstr "電腦和教室現在可以從 CSV 和文字檔匯入。"
 
 msgid ""
 "Predefined programs and websites for \"run program\" and \"open website\" "
@@ -4081,7 +3812,7 @@ msgid "Support for encrypted SSL/TLS connections has been added."
 msgstr ""
 
 msgid "Full systemd service support"
-msgstr ""
+msgstr "完整 systemd 服務支援"
 
 msgid ""
 "The shutdown/reboot/session logout mechanisms have been rewritten to use "
@@ -4091,7 +3822,7 @@ msgstr ""
 msgid ""
 "All builds are based on an updated toolchain with GCC 7.3, Qt 5.9 LTS and "
 "OpenSSL 1.1."
-msgstr ""
+msgstr "所有組建都基於具有 GCC 7.3, Qt 5.9 LTS 和 OpenSSL 1.1 的更新工具鏈。"
 
 msgid ""
 "As part of the changes for systemd support on Linux, in Veyon 4.1 the Veyon "
@@ -4146,7 +3877,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon 4.0"
-msgstr ""
+msgstr "Veyon 4.0"
 
 msgid ""
 "Veyon 4.0 was the first release series of Veyon 4, the successor of iTALC. "
@@ -4156,7 +3887,7 @@ msgid ""
 msgstr ""
 
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 msgid ""
 "If you encounter interaction or connection problems between master and "
@@ -4170,7 +3901,7 @@ msgid ""
 msgstr ""
 
 msgid "Computers can't be accessed"
-msgstr ""
+msgstr "無法存取電腦"
 
 msgid ""
 "There are multiple causes which can prevent access to a computer using Veyon"
@@ -4178,7 +3909,7 @@ msgid ""
 msgstr ""
 
 msgid "Networking problems"
-msgstr ""
+msgstr "網路問題"
 
 msgid ""
 "First of all the general network connectivity of the computer should be "
@@ -4187,7 +3918,7 @@ msgid ""
 msgstr ""
 
 msgid "Problems with the Veyon Service"
-msgstr ""
+msgstr "Veyon 服務問題"
 
 msgid ""
 "If the computer can be pinged you should verify that the Veyon Service is "
@@ -4203,7 +3934,7 @@ msgid ""
 msgstr ""
 
 msgid "Service and firewall settings"
-msgstr ""
+msgstr "服務和防火牆設定"
 
 msgid ""
 "If the service is running you have to ensure that it is listening for "
@@ -4249,7 +3980,7 @@ msgid ""
 msgstr ""
 
 msgid "Authentication settings"
-msgstr ""
+msgstr "身份驗證設定"
 
 msgid ""
 "Another cause of the error can be wrong or insufficient :ref:`authentication"
@@ -4307,7 +4038,7 @@ msgid ""
 msgstr ""
 
 msgid "Anti-virus software"
-msgstr ""
+msgstr "防毒軟體"
 
 msgid ""
 "It has been reported by some users that an installed anti-virus software "
@@ -4337,7 +4068,7 @@ msgid ""
 msgstr ""
 
 msgid "Please make sure that:"
-msgstr ""
+msgstr "請確認:"
 
 msgid ""
 "the :ref:`network object directory <RefNetworkObjectDirectory>` on "
@@ -4425,7 +4156,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon Server crashes with XIO or XCB errors on Linux"
-msgstr ""
+msgstr "Veyon 伺服器在 Linux 上出現 XIO 或 XCB 錯誤停止回應"
 
 msgid ""
 "There are known issues with specific KDE and Qt versions on Linux causing "
@@ -4437,19 +4168,19 @@ msgid ""
 msgstr ""
 
 msgid "Debugging"
-msgstr "Debugging"
+msgstr "偵錯"
 
 msgid "Error analysis"
-msgstr ""
+msgstr "分析錯誤"
 
 msgid "Error correction"
-msgstr ""
+msgstr "更正錯誤"
 
 msgid "Connectivity problems"
-msgstr ""
+msgstr "連線問題"
 
 msgid "telnet"
-msgstr ""
+msgstr "telnet"
 
 msgid "netstat"
-msgstr ""
+msgstr "netstat"

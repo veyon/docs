@@ -1,0 +1,976 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Veyon Solutions
+# This file is distributed under the same license as the Veyon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Алексей Черемных <s-r-grass@mail.ru>, 2019
+# Sergio Palma <donbalear@gmail.com>, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Veyon 4.2.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-18 08:56+0200\n"
+"PO-Revision-Date: 2019-03-21 09:29+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "FAQ - Frequently Asked Questions"
+msgstr "ЧАВО - часто задаваемые вопросы"
+
+msgid "Can other users see my screen?"
+msgstr "Могут ли другие пользователи видеть мой экран?"
+
+msgid ""
+"Which user can access which computer under which circumstances depends on "
+"the system settings configured by your administrator. Usually the software "
+"is configured so that the course instructor can access the computers of "
+"course participants, but not vice versa. Whether other course instructors "
+"are able to see your screen or those of other course participants also "
+"depends on the settings. Contact your administrator in order to configure "
+"access control rules according to your needs as described in the "
+"administration manual."
+msgstr ""
+
+msgid "How frequently are the computer thumbnails updated?"
+msgstr ""
+
+msgid ""
+"Usually the computer thumbnails in the monitoring view are updated once a "
+"second. Depending on the utilization of the network and the computer, there "
+"may be slight deviations. In contrast when remote controlling or viewing a "
+"computer, you see the screen content of the remote computer in real time."
+msgstr ""
+
+msgid ""
+"What happens if I accidentally close the Veyon Master application window?"
+msgstr ""
+
+msgid ""
+"Any active functions such as demo mode or screen lock are stopped when the "
+"program is closed. However, you can simply reopen the program and activate "
+"the mode again if necessary."
+msgstr ""
+
+msgid "How can I broadcast the screen of a student to all other screens?"
+msgstr ""
+
+msgid ""
+"If you want to transfer a student's screen instead of your own screen in "
+"demo mode, first activate demo mode for all computers. Then stop demo mode "
+"for the student to be performing the demo using the context menu. Finally "
+"open the remote view for the students computer. This will transfer the "
+"remote view window - and therefore the student's screen - to all other "
+"computers."
+msgstr ""
+
+msgid "Program features"
+msgstr "Возможности программы"
+
+msgid ""
+"Veyon offers a variety of features that let you control and access "
+"computers. All available features are accessible through the buttons in the "
+"toolbar as well as the context menu of individual computers."
+msgstr ""
+
+msgid ""
+"If you move the mouse over the individual buttons in the toolbar, a tooltip "
+"with a short help text is displayed unless you have disabled tooltips. "
+"Pressing a button activates the desired feature on all displayed computers."
+msgstr ""
+
+msgid "Using functions on individual computers"
+msgstr ""
+
+msgid ""
+"If you only want to activate a function on a single computer, right-click "
+"the computer in the monitor view and select the desired function from the "
+"context menu. The entries in the context menu are displayed dynamically "
+"depending on the active functions."
+msgstr ""
+
+msgid ""
+"You can also select multiple computers in the monitor view by drawing a "
+"selection rectangle with the mouse that includes all desired computers:"
+msgstr ""
+
+msgid ""
+"Alternatively, you can press the :kbd:`Ctrl` key and add computers "
+"individually to the selection via mouse click."
+msgstr ""
+
+msgid "Monitoring mode"
+msgstr "Режим мониторинга"
+
+msgid ""
+"By default Veyon is running in monitoring mode. In this mode you have an "
+"overview of all computers and see their screen contents in thumbnails. The "
+"screen content is updated almost in real time, so you can monitor all "
+"activity at the selected locations."
+msgstr ""
+
+msgid ""
+"As long as there is no connection to a computer, a computer icon is "
+"displayed instead of the screen content. After the program has been started,"
+" the icon is initially colored gray. As soon as the program detects that the"
+" computer is unreachable or access is denied, the color changes to red."
+msgstr ""
+
+msgid ""
+"Some of the features described in the next sections switch the remote "
+"computers to a different mode. You can exit the respective mode by "
+"activating monitoring mode again."
+msgstr ""
+
+msgid "Demonstration mode"
+msgstr "Демонстрационный режим"
+
+msgid ""
+"You can use the demonstration mode (demo mode) to start a presentation. In "
+"this mode, your screen content is broadcasted to all remote computers and "
+"displayed in real time. You can choose between a full screen and a window "
+"demo."
+msgstr ""
+
+msgid ""
+"During a full screen demo your screen content will be displayed in full "
+"screen. Logged-in users cannot use their computers for other tasks in this "
+"mode because all input devices are locked. In this way you will gain the "
+"full attention of your students."
+msgstr ""
+
+msgid ""
+"By contrast, a window demo allows users to switch between the demo window "
+"and their own applications. For example, course participants can arrange the"
+" windows side by side and try out the demonstrated steps themselves in "
+"parallel. The input devices are therefore not locked in this mode."
+msgstr ""
+
+msgid ""
+"In order to start a full screen or window demo, you just have to press the "
+":guilabel:`Fullscreen demo` or :guilabel:`Window demo` button:"
+msgstr ""
+
+msgid ""
+"If you want to leave the demonstration mode again, simply press the button "
+"again or click on the :guilabel:`Monitoring` button to switch back to "
+"monitoring mode globally. The context menu can also be used to stop the "
+"demonstration mode on individual computers."
+msgstr ""
+
+msgid "Lock screens"
+msgstr ""
+
+msgid ""
+"Another way to draw students' attention is to use the screen lock feature. "
+"As during a full-screen demonstration, all input devices on the students' "
+"computers are locked. The computers can then no longer be used. In addition,"
+" a blocking image is displayed to prevent distractions caused by open "
+"applications."
+msgstr ""
+
+msgid "Press the :guilabel:`Lock` button to lock all displayed computers:"
+msgstr ""
+
+msgid ""
+"If you want to unlock the screens, simply press the button again or click "
+"the :guilabel:`Monitoring` button to switch back to monitoring mode "
+"globally."
+msgstr ""
+
+msgid ""
+"If only individual computers are to be locked, you can select them as "
+"described in section :ref:`NonGlobalFeatureActivation` and select the "
+"feature in the context menu. The screen lock can then be deactivated either "
+"by selecting :guilabel:`Unlock` or switching back to :guilabel:`Monitoring` "
+"mode. The screen lock can also be activated globally at first and later "
+"deactivated for individual computers via the context menu."
+msgstr ""
+
+msgid ""
+"Due to security restrictions of most operating systems, the lock screen can "
+"not be displayed if no user is logged on. The input devices are still "
+"locked, so that no user logon is possible."
+msgstr ""
+
+msgid "Remote access"
+msgstr "Удалённый доступ"
+
+msgid ""
+"The feature group *remote access* consists of two very similar features "
+":guilabel:`Remote view` and :guilabel:`Remote control`. In both access "
+"modes, the screen of a remote computer is displayed in full size in a "
+"separate window. In contrast to the monitoring mode in the main window, you "
+"can watch the activities on a computer in detail or intervene yourself."
+msgstr ""
+
+msgid ""
+"The features can be activated in different ways. Depending on the system "
+"configuration, one of the two features is usually started by double-clicking"
+" on a computer. Alternatively, you can click the right mouse button to open "
+"the context menu and select the desired feature."
+msgstr ""
+
+msgid ""
+"If you want to access a computer that does not appear in the monitor view, "
+"use the corresponding toolbar button:"
+msgstr ""
+
+msgid ""
+"After pressing this button, a dialog is opened and asks for the hostname of "
+"the computer to access:"
+msgstr ""
+
+msgid "Afterwards a new window opens with the remote access view:"
+msgstr ""
+
+msgid ""
+"The remote screen is then displayed within a few seconds and updated in real"
+" time. At the top of the window you will see a toolbar with buttons similar "
+"to the main application. The toolbar disappears automatically a few seconds "
+"after the connection is established. You can show it again at any time by "
+"moving the mouse pointer to the top of the screen."
+msgstr ""
+
+msgid ""
+"You can also change the access mode at any time during a running remote "
+"access session. All you need to do is click on the :guilabel:`Remote "
+"control` or :guilabel:`View only` button. The button does not show the "
+"current access mode, but the access mode that is changed when pressed."
+msgstr ""
+
+msgid ""
+"As soon as you have entered the :guilabel:`Remote control` mode, your "
+"keystrokes, mouse movements and clicks are transmitted to the remote "
+"computer so that you can operate it as usual. However, depending on the "
+"operating system, certain special keys or key shortcuts such as "
+":kbd:`Ctrl+Alt+Del` cannot be used directly. If you want to use these "
+"shortcuts, you can use the button :guilabel:`Send shortcut`.  Clicking this "
+"button opens a menu where you can select the desired shortcut:"
+msgstr ""
+
+msgid ""
+"If the menu was opened accidentally, it can also be closed again without "
+"triggering an action by clicking the button again or pressing the :kbd:`Esc`"
+" key."
+msgstr ""
+
+msgid ""
+"If you want to switch to fullscreen mode, you can use the "
+":guilabel:`Fullscreen` button. In full screen mode, the button label changes"
+" to :guilabel:`Window`. You can easily switch back to window mode by "
+"clicking on it again."
+msgstr ""
+
+msgid ""
+"The :guilabel:`Screenshot` function captures the current screen content and "
+"saves it to a file that can be displayed later. More information regarding "
+"screenshots can be found in sections :ref:`Screenshots panel "
+"<ScreenshotsPanel>` and :ref:`Screenshots <FeatureScreenshot>`."
+msgstr ""
+
+msgid "With the button :guilabel:`Exit` the remote access window is closed."
+msgstr ""
+
+msgid "Power on, restart and shutdown computers"
+msgstr ""
+
+msgid ""
+"The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power "
+"down` are helpful both for administrative purposes and for the preparation "
+"and follow-up of courses and exams. Using these functions, you can remotely "
+"power on, restart, or shut down computers. The corresponding buttons can be "
+"found in the toolbar:"
+msgstr ""
+
+msgid ""
+"Click the appropriate button to power on, restart, or shut down all "
+"displayed computers. If you want to use a feature for individual computers "
+"only, you can select the respective computers and select the desired item in"
+" the context menu."
+msgstr ""
+
+msgid ""
+"Veyon 4.2 and newer provide additional power down options. These options can"
+" be selected from a menu which opens when clicking the :guilabel:`Power "
+"down` button:"
+msgstr ""
+
+msgid "The following actions are available:"
+msgstr ""
+
+msgid "Power down now"
+msgstr "Отключить сейчас"
+
+msgid ""
+"The computers will be powered down immediately without further confirmation "
+"dialogs."
+msgstr ""
+
+msgid "Install updates and power down"
+msgstr "Установить обновления и выключить"
+
+msgid ""
+"If supported by the operating system all available system updates will be "
+"installed during the shut down process. If no updates are available the "
+"respective computer will be powered down immediately."
+msgstr ""
+
+msgid "Power down after user confirmation"
+msgstr "Отключить после подтверждения"
+
+msgid ""
+"With this option each logged on user will be asked whether to shut down the "
+"respective computer. If no user is logged on a particular computer, it will "
+"be powered down immediately."
+msgstr ""
+
+msgid "Power down after timeout"
+msgstr "Выключить по истечении времени ожидания"
+
+msgid ""
+"Selecting this option opens a dialog window where you can set a time after "
+"which the computers will be powered down:"
+msgstr ""
+
+msgid ""
+"After accepting the dialog a countdown window is displayed on all computers "
+"telling the users to save their work and close all applications."
+msgstr ""
+
+msgid ""
+"Please note that, depending on the program configuration, the computers will"
+" be restarted or shut down without further confirmation dialogs. Therefore, "
+"always make sure that the logged in users have saved all open documents etc."
+" and closed all programs if possible. This prevents unwanted data loss."
+msgstr ""
+
+msgid ""
+"Depending on the configuration of the network and the system settings of the"
+" individual computers, powering on only works under certain technical "
+"conditions. At the same time, there is no access permission check when you "
+"power on, so you may be able to power on computers in other rooms or "
+"locations. For this reason, pay attention to the selected computers when "
+"using this feature."
+msgstr ""
+
+msgid "Log off users"
+msgstr ""
+
+msgid ""
+"The :guilabel:`Log off` feature complements the possibilities described in "
+"the previous section to control basic computer states. A corresponding "
+"button in the toolbar is available for this purpose:"
+msgstr ""
+
+msgid ""
+"Activate this button to log off all users from all displayed computers. If "
+"you want to use this feature for individual computers only, you can select "
+"the respective computers and select the desired item in the context menu."
+msgstr ""
+
+msgid ""
+"A typical use case for this feature can be to end a course for all "
+"participants at the same time."
+msgstr ""
+
+msgid ""
+"Please note that the logged on users – depending on the program "
+"configuration – are logged off without further confirmation dialogs. "
+"Therefore, always make sure that the logged on users have saved all open "
+"documents etc. and closed all programs if possible. This prevents unwanted "
+"data loss."
+msgstr ""
+
+msgid "Send text message"
+msgstr "Послать текстовое сообщение"
+
+msgid ""
+"Another possibility for user interaction is to send a text message to "
+"individual or all course participants. The text message is displayed on the "
+"computers in the form of a message window. The :guilabel:`Text message` "
+"button is available for this purpose:"
+msgstr ""
+
+msgid ""
+"After pressing the button, a dialog window opens in which you can enter the "
+"message to be displayed:"
+msgstr ""
+
+msgid "Click on :guilabel:`OK` to send the entered message."
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the desired item in the context "
+"menu."
+msgstr ""
+
+msgid "Run program"
+msgstr "Запустить программу"
+
+msgid ""
+"If a specific program is to be started on all computers, you can use the "
+":guilabel:`Run program` feature in the toolbar. For this purpose, click on "
+"the button shown:"
+msgstr ""
+
+msgid ""
+"Depending on whether you added programs before or programs have been "
+"predefined by the administrator, a popup menu or a dialog window opens. In "
+"the former case all available programs are listed in the menu:"
+msgstr ""
+
+msgid ""
+"Click the desired item to start the respective program. Alternatively click "
+"the last item :guilabel:`Custom program` to run a program that is not "
+"listed. This will open a new dialog window. In this dialog you can enter the"
+" name of the program to run:"
+msgstr ""
+
+msgid ""
+"Confirm this dialog with :guilabel:`OK` to run the program. Please note, "
+"that a program often is not located in the program path environment so that "
+"you have to specify the complete path to the program, e.g. ``\"C:\\Program "
+"Files\\VideoLAN\\VLC\\vlc.exe\"``."
+msgstr ""
+
+msgid ""
+"You can pass an argument to most programs with the name of a file that you "
+"want it to open automatically. For example, if you want to play a video on "
+"all computers, add the path to the video file separated by a space, e.g. "
+"``\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" X:\\Videos\\Example.mp4``."
+msgstr ""
+
+msgid ""
+"In case the program path or file name contains spaces, you always have to "
+"enclose the complete path and file name in quotation marks. Otherwise parts "
+"of the input will be interpreted as parameters. Example: ``\"C:\\Program "
+"Files\\LibreOffice 5\\program\\swriter.exe\"``."
+msgstr ""
+
+msgid "Open website"
+msgstr "Открыть веб-сайт"
+
+msgid ""
+"If you want all students to navigate to a specific website, you can "
+"automatically let that website open on all computers. Use the "
+":guilabel:`Open website` button to do so:"
+msgstr ""
+
+msgid ""
+"Depending on whether you added websites before or websites have been "
+"predefined by the administrator, a popup menu or a dialog window opens. In "
+"the former case all available websites are listed in the menu:"
+msgstr ""
+
+msgid ""
+"Click the desired item to open the respective website. Alternatively click "
+"the last item :guilabel:`Custom website` to open a website that is not "
+"listed. This will open a new dialog window. In this dialog you can enter the"
+" address of the website to open:"
+msgstr ""
+
+msgid "Confirm this dialog with :guilabel:`OK` to open the website."
+msgstr ""
+
+msgid "Screenshot"
+msgstr "Скриншот "
+
+msgid ""
+"Veyon allows you to save the current screen content of single or all "
+"computers in image files. By clicking the button :guilabel:`Screenshot` you "
+"trigger the feature for all displayed computers:"
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the item :guilabel:`Screenshot` "
+"from the context menu."
+msgstr ""
+
+msgid ""
+"You will then receive an information message about how many screenshots have"
+" been taken. You can now view the images in the :ref:`screenshots panel "
+"<ScreenshotsPanel>` and delete them if necessary."
+msgstr ""
+
+msgid "Monitoring"
+msgstr "Мониторинг"
+
+msgid "Observation"
+msgstr ""
+
+msgid "Computer overview"
+msgstr ""
+
+msgid "Fullscreen demo"
+msgstr "Полноэкранное демо"
+
+msgid "Window demo"
+msgstr "Демо в окне"
+
+msgid "Demo mode"
+msgstr "Демонстрационный режим"
+
+msgid "Demonstration"
+msgstr "Демонстрация"
+
+msgid "Presentation"
+msgstr "Презентация"
+
+msgid "Screen broadcast"
+msgstr ""
+
+msgid "Screen lock"
+msgstr "Блокировка экрана"
+
+msgid "Lock screen"
+msgstr ""
+
+msgid "Lock computers"
+msgstr ""
+
+msgid "Lock input devices"
+msgstr ""
+
+msgid "Remote control"
+msgstr "Удалённое управление"
+
+msgid "Remote view"
+msgstr "Удалённый просмотр"
+
+msgid "Power on"
+msgstr "Включить"
+
+msgid "Turn on"
+msgstr ""
+
+msgid "Switch on"
+msgstr ""
+
+msgid "Power down"
+msgstr "Выключить"
+
+msgid "Shutdown"
+msgstr ""
+
+msgid "Turn off"
+msgstr ""
+
+msgid "Restart"
+msgstr ""
+
+msgid "Reboot"
+msgstr "Перезагрузить"
+
+msgid "WoL"
+msgstr ""
+
+msgid "Wake-on-LAN"
+msgstr ""
+
+msgid "Log off"
+msgstr "Разлогиниться"
+
+msgid "Log out"
+msgstr ""
+
+msgid "User log out"
+msgstr ""
+
+msgid "End of lesson"
+msgstr ""
+
+msgid "Text message"
+msgstr "Текстовое сообщение"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Message window"
+msgstr ""
+
+msgid "Start program"
+msgstr "Запустить программу"
+
+msgid "Execute programm"
+msgstr ""
+
+msgid "Commands"
+msgstr "Команды"
+
+msgid "Open document"
+msgstr "Открыть документ"
+
+msgid "Website"
+msgstr "Веб-сайт"
+
+msgid "Open browser"
+msgstr "Открыть браузер"
+
+msgid "Browser"
+msgstr "Браузер"
+
+msgid "URL"
+msgstr "Адрес"
+
+msgid "Web address"
+msgstr ""
+
+msgid "Snapshot"
+msgstr "Снимок экрана"
+
+msgid "Glossary"
+msgstr ""
+
+msgid "From Wikipedia, the free encyclopedia:"
+msgstr ""
+
+msgid "Button"
+msgstr "Кнопка"
+
+msgid ""
+"The term button (sometimes known as a command button or push button) refers "
+"to any graphical control element that provides the user a simple way to "
+"trigger an event, like searching for a query at a search engine, or to "
+"interact with dialog boxes, like confirming an action."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Button_(computing)"
+msgstr ""
+
+msgid "Context menu"
+msgstr "Контекстное меню"
+
+msgid ""
+"A context menu (also called contextual, shortcut, and pop up or pop-up menu)"
+" is a menu in a graphical user interface (GUI) that appears upon user "
+"interaction, such as a right-click mouse operation."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Context_menu"
+msgstr ""
+
+msgid "FAQ"
+msgstr "ЧАВО"
+
+msgid ""
+"Frequently Asked Questions (FAQs) are a compilation of frequently asked "
+"questions and the corresponding answers to a topic. FAQs have become well-"
+"known in information technology, especially on the Internet, where many "
+"Usenet newsgroups have created a FAQ collection to relieve the pressure on "
+"the forums. Because the principle of the FAQ has proven itself, it exists in"
+" many areas."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/FAQ"
+msgstr ""
+
+msgid "Graphical user interface"
+msgstr "Графический интерфейс пользователя"
+
+msgid ""
+"Graphical user interface (GUI) refers to a form of user interface of a "
+"computer. It has the task of making application software operable on a "
+"computer by means of graphical symbols, controls or widgets. In computers, "
+"this is usually done by using a mouse as a control device to operate or "
+"select the graphic elements; in smartphones, tablets and kiosk systems, it "
+"is usually done by touching a sensor screen."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Graphical_user_interface"
+msgstr ""
+
+msgid "Input device"
+msgstr ""
+
+msgid ""
+"Input devices are all devices that can be used to supply information to a "
+"computer so that interaction with computer programs is possible."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Input_device"
+msgstr ""
+
+msgid "Keyboard shortcut"
+msgstr "Сочетание клавиш"
+
+msgid ""
+"A keyboard shortcut is a series of one or several keys, such as \"Ctrl+F\" "
+"to search a character string. Such a directive invokes a software or "
+"operating system operation (in other words, cause an event) when triggered "
+"by the user."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Keyboard_shortcut"
+msgstr ""
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid ""
+"A password is a word or string of characters used for user authentication to"
+" prove identity or access approval to gain access to a resource (example: an"
+" access code is a type of password), which is to be kept secret from those "
+"not allowed access."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Password"
+msgstr ""
+
+msgid ""
+"A screenshot, also called screen capture or screen grab, is a digital image "
+"of what should be visible on a monitor, television, or other visual output "
+"device. A common screenshot is created by the operating system or software "
+"running on the device. A screenshot or screen capture may also be created by"
+" taking a photo of the screen."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Screenshot"
+msgstr ""
+
+msgid "Status bar"
+msgstr ""
+
+msgid ""
+"A status bar is a graphical control element which poses an information area "
+"typically found at the window's bottom. It can be divided into sections to "
+"group information. Its job is primarily to display information about the "
+"current state of its window, although some status bars have extra "
+"functionality. For example, many web browsers have clickable sections that "
+"pop up a display of security or privacy information."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Status_bar"
+msgstr ""
+
+msgid "Tooltip"
+msgstr "Подсказка"
+
+msgid ""
+"The tooltip or infotip or a hint is a common graphical user interface "
+"element. It is used in conjunction with a cursor, usually a pointer. The "
+"user hovers the pointer over an item, without clicking it, and a tooltip may"
+" appear—a small \"hover box\" with information about the item being hovered "
+"over."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/Tooltip"
+msgstr ""
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid ""
+"A username is a name with which a user can log on to a computer, a website "
+"or a program. On the Internet, it is usually used to log on to a user "
+"account and requires registration."
+msgstr ""
+
+msgid "https://en.wikipedia.org/wiki/User_(computing)"
+msgstr ""
+
+msgid "Veyon User Manual"
+msgstr "Руководство пользователя Veyon"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid "Introduction"
+msgstr "Вступление"
+
+msgid ""
+"Veyon is an application that lets you monitor and control a group of "
+"computers (e.g. classrooms) on a central computer (e.g. an instructor's "
+"computer) and use various features and modes."
+msgstr ""
+
+msgid "Program start and login"
+msgstr ""
+
+msgid "The program is started via the start menu or a desktop icon:"
+msgstr ""
+
+msgid ""
+"Depending on the system configuration you will be prompted for your username"
+" and your password:"
+msgstr ""
+
+msgid ""
+"Enter your username and password here or – if given – the credentials of a "
+"special teacher account. If the entered data is correct and and a login can "
+"be performed, the program will start. Otherwise, the login will be denied "
+"and an error message will be displayed. In this case you can try the login "
+"with corrected data again."
+msgstr ""
+
+msgid "User interface"
+msgstr "Интерфейс пользователя"
+
+msgid ""
+"After the program start you will see the user interface with the toolbar "
+"(1), the monitor view (2) and the status bar with various controls (3):"
+msgstr ""
+
+msgid ""
+"The toolbar contains a number of buttons for activating different features. "
+"A detailed description of the individual features can be found in chapter "
+":ref:`ProgramFeatures`. The appearance and behavior of the toolbar can be "
+"customized as described in section :ref:`Toolbar`."
+msgstr ""
+
+msgid ""
+"In the monitor view all computers to be monitored are displayed in a tile "
+"view. Depending on the system configuration and previous program starts you "
+"can already see the computers at your current location here. The "
+":ref:`computer select panel <ComputerSelectPanel>` allows you to show or "
+"hide computers or entire locations."
+msgstr ""
+
+msgid ""
+"The elements in the status bar are used to control the program interface and"
+" are described in detail in the following section."
+msgstr ""
+
+msgid ""
+"Using the :guilabel:`Locations & computers` and :guilabel:`Screenshots` "
+"buttons, you can open and close the :ref:`computer select panel "
+"<ComputerSelectPanel>` and the :ref:`screenshots panel <ScreenshotsPanel>`."
+msgstr ""
+
+msgid ""
+"The search bar allows you to filter the computers displayed using computer "
+"names or user names as search terms. Technically savvy users can even enter "
+"regular expressions here to define advanced search filters."
+msgstr ""
+
+msgid ""
+"The |powered-on| (:guilabel:`Only show powered on computers`) button hides "
+"all computers that are not powered on, disconnected or not reachable for "
+"some other reason. This allows simultaneous monitoring of a large number of "
+"computers or partially occupied rooms while focusing on the actually active "
+"computers."
+msgstr ""
+
+msgid ""
+"Use the slider to control the size of the computer screens displayed. When "
+"holding then :kbd:`Ctrl` key, the size can also be changed using the mouse "
+"scroll wheel. The size is adjusted automatically by clicking the button "
+"|zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it."
+msgstr ""
+
+msgid ""
+"It is also possible to use a custom computer arrangement, e.g. to represent "
+"the actual arrangement of computers in classrooms. After clicking the button"
+" |exchange-positions-zorder| (:guilabel:`Use custom computer arrangement`) "
+"each computer individually or a selection of computers can be moved with the"
+" left mouse button pressed and arranged as desired. To align all computers "
+"in the custom arrangement, click the |align-grid| (:guilabel:`Align "
+"computers to grid`) button. If you want to use the sorted standard "
+"arrangement again, simply deactivate the |exchange-positions-zorder| button."
+msgstr ""
+
+msgid ""
+"The |help-about| button (:guilabel:`About`) opens a dialog with information "
+"about Veyon such as version, manufacturer and license terms."
+msgstr ""
+
+msgid "Toolbar"
+msgstr "Панель инструментов"
+
+msgid ""
+"You can customize the appearance and behavior of the toolbar. A right click "
+"on either a free section or a button opens a context menu with several "
+"entries:"
+msgstr ""
+
+msgid ""
+"If you click the entry :guilabel:`Disable balloon tooltips` no tooltips will"
+" be displayed anymore whenever you hover the mouse over the buttons. You can"
+" open the context menu at any time and uncheck the item again."
+msgstr ""
+
+msgid ""
+"The :guilabel:`Show icons only` option gives a compact view of the toolbar "
+"buttons by hiding the labels and displaying only icons. On smaller screens "
+"this option may be necessary to display all buttons."
+msgstr ""
+
+msgid "Computer select panel"
+msgstr "Панель выбора компьютера"
+
+msgid ""
+"The :guilabel:`Locations & Computers` button in the status bar opens the "
+"computer select panel. This panel displays all available computer locations "
+"in a tree structure. You can expand individual location entries by clicking "
+"on the corresponding symbol in front of them."
+msgstr ""
+
+msgid ""
+"You can activate individual computers or entire locations by checking them. "
+"All checked computers will then be displayed in the monitoring view."
+msgstr ""
+
+msgid ""
+"With the :guilabel:`Save computer/user list` button you can save the list of"
+" computers and logged in users in a CSV file. Typical use cases for this are"
+" subsequent presence checks or IT-based exams."
+msgstr ""
+
+msgid ""
+"Depending on the system configuration, the button :guilabel:`Add location` "
+"is also available. This allows you to add more computer locations to the "
+"view. A click on the button opens a dialog where you can see all available "
+"locations:"
+msgstr ""
+
+msgid ""
+"You can filter the list using the input field, i.e. enter a search term. The"
+" list then only displays the location names containing the specified search "
+"term. Advanced users can also use regular expressions for the filter. Next "
+"you can select the location and confirm with :guilabel:`OK`. The selected "
+"location is now available in the location list until the next program start."
+" You can also remove a previously added location by clicking on the location"
+" and pressing the :kbd:`Del` key."
+msgstr ""
+
+msgid "Screenshots panel"
+msgstr "Панель скриншотов"
+
+msgid ""
+"Using the screenshot management panel, you can view and delete all captured "
+"screenshots. Information on how to take screenshots are given in the "
+":ref:`Program features <ProgramFeatures>` chapter in section "
+":ref:`Screenshot <FeatureScreenshot>`."
+msgstr ""
+
+msgid ""
+"You can now select individual screenshots from the list. Details of the "
+"screenshot, such as the date it was taken, user name, and computer, are then"
+" displayed in the table below. The :guilabel:`Show` button or a double-click"
+" in the list displays the selected screenshot in full size. If you no longer"
+" need the screenshot, you can permanently delete it using the "
+":guilabel:`Delete` button. Please note that this process cannot be undone "
+"and the files will not be moved to the trash."
+msgstr ""
+
+msgid "Start menu"
+msgstr "Меню запуска"
+
+msgid "Desktop icon"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Monitor view"
+msgstr ""

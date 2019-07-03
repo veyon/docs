@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Veyon Solutions
+# This file is distributed under the same license as the Veyon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pascal Janus <pascal_janus@163.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Veyon 4.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-02 18:14+0200\n"
+"PO-Revision-Date: 2019-03-21 09:30+0000\n"
+"Last-Translator: Pascal Janus <pascal_janus@163.com>, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Veyon Documentation"
+msgstr "Veyon 文档"
+
+msgid "Online documentation"
+msgstr "在线文档"
+
+msgid "PDF download"
+msgstr "PDF下载"
+
+msgid ""
+"`Veyon Administrator Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.2.3/veyon-admin-manual-"
+"en_4.2.3.pdf>`_"
+msgstr ""
+"`Veyon 管理员手册 PDF <https://github.com/veyon/docs/releases/download/v4.2.3"
+"/veyon-admin-manual-en_4.2.3.pdf>`_"
+
+msgid ""
+"`Veyon User Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.2.3/veyon-user-manual-"
+"en_4.2.3.pdf>`_"
+msgstr ""
+"`Veyon 用户手册 PDF <https://github.com/veyon/docs/releases/download/v4.2.3"
+"/veyon-user-manual-en_4.2.3.pdf>`_"
