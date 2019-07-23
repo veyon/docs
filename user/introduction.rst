@@ -36,7 +36,7 @@ After the program start you will see the user interface with the toolbar (1), th
 
 The toolbar contains a number of buttons for activating different features. A detailed description of the individual features can be found in chapter :ref:`ProgramFeatures`. The appearance and behavior of the toolbar can be customized as described in section :ref:`Toolbar`.
 
-In the monitor view all computers to be monitored are displayed in a tile view. Depending on the system configuration and previous program starts you can already see the computers at your current location here. The :ref:`computer select panel <ComputerSelectPanel>` allows you to show or hide computers or entire locations.
+In the monitor view computers are displayed in a tile view. Depending on the system configuration and previous program starts you can already see the computers at your current location here. The :ref:`computer select panel <ComputerSelectPanel>` allows you to show or hide individual computers or entire locations.
 
 The elements in the status bar are used to control the program interface and are described in detail in the following section.
 
