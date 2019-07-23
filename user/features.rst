@@ -48,9 +48,9 @@ Demonstration mode
 
 .. index:: Demonstration mode, Fullscreen demo, Window demo, Demo mode, Demonstration, Presentation, Screen broadcast
 
-You can use the demonstration mode (demo mode) to start a presentation. In this mode, your screen content is broadcasted to all remote computers and displayed in real time. You can choose between a full screen and a window demo.
+You can use the demonstration mode (demo mode) to start a presentation. In this mode, your screen content is broadcasted to all computers and displayed in real time. You can choose between a full screen and a window demo.
 
-During a full screen demo your screen content will be displayed in full screen. Logged-in users cannot use their computers for other tasks in this mode because all input devices are locked. In this way you will gain the full attention of your students.
+During a full screen demo your screen content will be displayed in full screen on the remote computers. Logged-in users cannot use their computers for other tasks in this mode because all input devices are locked. In this way you will gain the full attention of your students.
 
 By contrast, a window demo allows users to switch between the demo window and their own applications. For example, course participants can arrange the windows side by side and try out the demonstrated steps themselves in parallel. The input devices are therefore not locked in this mode.
 
@@ -67,7 +67,7 @@ Lock screens
 
 .. index:: Screen lock, Lock screen, Lock computers, Lock input devices
 
-Another way to draw students' attention is to use the screen lock feature. As during a full-screen demonstration, all input devices on the students' computers are locked. The computers can then no longer be used. In addition, a blocking image is displayed to prevent distractions caused by open applications.
+Another way to draw students' attention is to use the screen lock feature. As during a full-screen demonstration, all input devices on the students' computers are locked. The computers can then no longer be used by the students. In addition, a lock symbol is displayed to prevent distractions caused by open applications.
 
 Press the :guilabel:`Lock` button to lock all displayed computers:
 
@@ -76,7 +76,7 @@ Press the :guilabel:`Lock` button to lock all displayed computers:
 
 If you want to unlock the screens, simply press the button again or click the :guilabel:`Monitoring` button to switch back to monitoring mode globally.
 
-If only individual computers are to be locked, you can select them as described in section :ref:`NonGlobalFeatureActivation` and select the feature in the context menu. The screen lock can then be deactivated either by selecting :guilabel:`Unlock` or switching back to :guilabel:`Monitoring` mode. The screen lock can also be activated globally at first and later deactivated for individual computers via the context menu.
+If only individual computers are to be locked, you can select them as described in section :ref:`NonGlobalFeatureActivation` and select the screen lock feature in the context menu. The screen lock can then be deactivated either by selecting :guilabel:`Unlock` or switching back to :guilabel:`Monitoring` mode. The screen lock can also be activated globally at first and later deactivated for individual computers via the context menu.
 
 .. note:: Due to security restrictions of most operating systems, the lock screen can not be displayed if no user is logged on. The input devices are still locked, so that no user logon is possible.
 
@@ -213,12 +213,12 @@ If a specific program is to be started on all computers, you can use the :guilab
 .. image:: images/FeatureRunProgram.png
    :align: center
 
-Depending on whether you added programs before or programs have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available programs are listed in the menu:
+Depending on whether you added custom programs before or programs have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available programs are listed in the menu:
 
 .. image:: images/RunProgramMenu.png
    :align: center
 
-Click the desired item to start the respective program. Alternatively click the last item :guilabel:`Custom program` to run a program that is not listed. This will open a new dialog window. In this dialog you can enter the name of the program to run:
+Click the desired item to start the respective program on all computers. Alternatively click the last item :guilabel:`Custom program` to run a program that is not listed. This will open a new dialog window. In this dialog you can enter the name of the program to run:
 
 .. image:: images/RunProgramDialog.png
    :align: center
@@ -234,17 +234,17 @@ Open website
 
 .. index:: Open website, Website, Open browser, Browser, URL, Web address
 
-If you want all students to navigate to a specific website, you can automatically let that website open on all computers. Use the :guilabel:`Open website` button to do so:
+If you want all students to open a specific website, you can automatically let that website open on all computers. Use the :guilabel:`Open website` button to do so:
 
 .. image:: images/FeatureOpenWebsite.png
    :align: center
 
-Depending on whether you added websites before or websites have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available websites are listed in the menu:
+Depending on whether you added custom websites before or websites have been predefined by the administrator, a popup menu or a dialog window opens. In the former case all available websites are listed in the menu:
 
 .. image:: images/OpenWebsiteMenu.png
    :align: center
 
-Click the desired item to open the respective website. Alternatively click the last item :guilabel:`Custom website` to open a website that is not listed. This will open a new dialog window. In this dialog you can enter the address of the website to open:
+Click the desired item to open the respective website on all computers. Alternatively click the last item :guilabel:`Custom website` to open a website that is not listed. This will open a new dialog window. In this dialog you can enter the address of the website to open:
 
 .. image:: images/OpenWebsiteDialog.png
    :align: center
