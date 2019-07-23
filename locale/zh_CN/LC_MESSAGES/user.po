@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# TeliuTe <teliute@163.com>, 2019
 # Tobias Junghans, 2019
 # Pascal Janus <pascal_janus@163.com>, 2019
+# TeliuTe <teliute@163.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 18:14+0200\n"
+"POT-Creation-Date: 2019-07-23 11:48+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Pascal Janus <pascal_janus@163.com>, 2019\n"
+"Last-Translator: TeliuTe <teliute@163.com>, 2019\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,6 +89,7 @@ msgid ""
 "with a short help text is displayed unless you have disabled tooltips. "
 "Pressing a button activates the desired feature on all displayed computers."
 msgstr ""
+"当您将鼠标划过工具栏中的单个按钮时，一个带有简短帮助文本的工具提示将会显示，除非您禁用了工具提示。按下按钮将在所有显示的计算机上激活您想要的功能。"
 
 msgid "Using functions on individual computers"
 msgstr "在个人计算机上使用功能"
@@ -98,17 +99,17 @@ msgid ""
 "the computer in the monitor view and select the desired function from the "
 "context menu. The entries in the context menu are displayed dynamically "
 "depending on the active functions."
-msgstr ""
+msgstr "如果您只想在单个计算机上激活功能，右击监控视图中的计算机并从上下文菜单中选择想要的功能。上下文菜单的条目将根据活动的功能动态显示。"
 
 msgid ""
 "You can also select multiple computers in the monitor view by drawing a "
 "selection rectangle with the mouse that includes all desired computers:"
-msgstr ""
+msgstr "您也可以使用鼠标画出矩形选择框来选定您想要的多台计算机。"
 
 msgid ""
 "Alternatively, you can press the :kbd:`Ctrl` key and add computers "
 "individually to the selection via mouse click."
-msgstr ""
+msgstr "或者，您可以按下 :kbd:`Ctrl` 键然后使用鼠标点击来逐个选择多台计算机。"
 
 msgid "Monitoring mode"
 msgstr "监控模式"
@@ -119,6 +120,7 @@ msgid ""
 "screen content is updated almost in real time, so you can monitor all "
 "activity at the selected locations."
 msgstr ""
+"默认情况下Veyon运行在监控模式下。在此模式中您可以看到所有计算机的概览并通过缩略图查看它们的屏幕内容。屏幕内容会近实时更新，所以您可以监控选择地点的所有活动。"
 
 msgid ""
 "As long as there is no connection to a computer, a computer icon is "
@@ -126,12 +128,13 @@ msgid ""
 " the icon is initially colored gray. As soon as the program detects that the"
 " computer is unreachable or access is denied, the color changes to red."
 msgstr ""
+"如果没有到一个计算机的连接，则程序将会显示一个计算机图标，而不是屏幕内容。在程序启动后，图标开始会是灰色的。当程序检测到计算机不可达或访问被拒绝时，图标会变成红色。"
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
 "computers to a different mode. You can exit the respective mode by "
 "activating monitoring mode again."
-msgstr ""
+msgstr "在下一节中介绍的一些功能特性会将远程计算机切换到不同的模式。您可以通过重新激活监控模式来退出那些模式。"
 
 msgid "Demonstration mode"
 msgstr "演示模式"
@@ -141,7 +144,7 @@ msgid ""
 "this mode, your screen content is broadcasted to all remote computers and "
 "displayed in real time. You can choose between a full screen and a window "
 "demo."
-msgstr ""
+msgstr "您可以使用演示模式（demo模式）来开始一个演示。在此模式中，您的屏幕内容将被广播到所有远程计算机并实时显示。您可以选择全屏或窗口演示。"
 
 msgid ""
 "During a full screen demo your screen content will be displayed in full "
@@ -149,6 +152,7 @@ msgid ""
 "mode because all input devices are locked. In this way you will gain the "
 "full attention of your students."
 msgstr ""
+"在一个全屏演示中您的屏幕内容将被全屏显示。在此模式中已登录用户不能使用他们的计算机进行其他任务，因为所有输入设备会被锁定。这样您就可以得到您学生的全部注意力。"
 
 msgid ""
 "By contrast, a window demo allows users to switch between the demo window "
@@ -485,6 +489,71 @@ msgstr ""
 msgid "Confirm this dialog with :guilabel:`OK` to open the website."
 msgstr ""
 
+msgid "File transfer"
+msgstr "发布文件"
+
+msgid ""
+"Using the file transfer feature you can easily transfer files to all "
+"students and optionally open the transferred files afterwards. First click "
+"the :guilabel:`File transfer` button to open a file dialog which allows you "
+"to select the files to transfer:"
+msgstr ""
+
+msgid ""
+"After selecting the desired files the actual file transfer dialog opens:"
+msgstr ""
+
+msgid ""
+"In this dialog further options can be chosen before starting the file "
+"transfer. Per default the files only will be transferred to the user's home "
+"or profile directory without overwriting existing files."
+msgstr ""
+
+msgid "Overwrite existing files"
+msgstr "覆盖已存在的文件"
+
+msgid ""
+"Enable this option to overwrite possibly existing files. This can be useful "
+"to replace an old version of a file or document with a new one."
+msgstr ""
+
+msgid "Transfer only"
+msgstr "仅传输"
+
+msgid ""
+"In this mode, only files are transferred without further actions being "
+"performed. Use this mode to silently distribute teaching material in advance"
+" without disturbing the students."
+msgstr ""
+
+msgid "Transfer and open file(s) with associated program"
+msgstr "传输并用关联的程序打开"
+
+msgid ""
+"In this mode, the transferred files will be opened with the corresponding "
+"program which is associated with the respective file type. For example, text"
+" documents will be opened with the installed word processor program. Use "
+"this mode to make students work with the provided materials immediately."
+msgstr ""
+
+msgid "Transfer and open destination folder"
+msgstr "传输并打开目标文件夹"
+
+msgid ""
+"If you intend to transfer many files at once, opening all of them "
+"automatically is not a good choice in most cases. Instead, the destination "
+"folder can be opened in a file manager window where students can view the "
+"transferred files and open the desired ones themselves."
+msgstr ""
+
+msgid ""
+"After choosing the desired options click the :guilabel:`Start` button to "
+"start the file transfer. Depending on the size of the files and the number "
+"of computers this may take a while. A progress bar with the total progress "
+"is shown at the bottom of the dialog. After the transfers have been "
+"completed, you can click the :guilabel:`Close` button to finish:"
+msgstr ""
+
 msgid "Screenshot"
 msgstr "屏幕截图"
 
@@ -628,6 +697,24 @@ msgstr "URL"
 
 msgid "Web address"
 msgstr "网址"
+
+msgid "Files"
+msgstr "文件"
+
+msgid "Transfer files"
+msgstr ""
+
+msgid "Distribute files"
+msgstr ""
+
+msgid "Send files"
+msgstr ""
+
+msgid "Open files"
+msgstr ""
+
+msgid "Destination folder"
+msgstr ""
 
 msgid "Snapshot"
 msgstr "屏幕截图"

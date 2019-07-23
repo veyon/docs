@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# MS-PC, 2019
 # Tobias Junghans, 2019
 # José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2019
+# MS-PC, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.2.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 18:14+0200\n"
+"POT-Creation-Date: 2019-07-23 11:48+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2019\n"
+"Last-Translator: MS-PC, 2019\n"
 "Language-Team: Spanish (Spain) (https://www.transifex.com/veyon-solutions/teams/65452/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -729,6 +729,71 @@ msgstr ""
 msgid "Confirm this dialog with :guilabel:`OK` to open the website."
 msgstr "Confirme este diálogo con :guilabel:`OK` para abrir el sitio web."
 
+msgid "File transfer"
+msgstr "Transferir archivo"
+
+msgid ""
+"Using the file transfer feature you can easily transfer files to all "
+"students and optionally open the transferred files afterwards. First click "
+"the :guilabel:`File transfer` button to open a file dialog which allows you "
+"to select the files to transfer:"
+msgstr ""
+
+msgid ""
+"After selecting the desired files the actual file transfer dialog opens:"
+msgstr ""
+
+msgid ""
+"In this dialog further options can be chosen before starting the file "
+"transfer. Per default the files only will be transferred to the user's home "
+"or profile directory without overwriting existing files."
+msgstr ""
+
+msgid "Overwrite existing files"
+msgstr "Sobrescribir archivos existentes"
+
+msgid ""
+"Enable this option to overwrite possibly existing files. This can be useful "
+"to replace an old version of a file or document with a new one."
+msgstr ""
+
+msgid "Transfer only"
+msgstr "Solo transferencia"
+
+msgid ""
+"In this mode, only files are transferred without further actions being "
+"performed. Use this mode to silently distribute teaching material in advance"
+" without disturbing the students."
+msgstr ""
+
+msgid "Transfer and open file(s) with associated program"
+msgstr "Transferir y abrir archivo/s con programa asociado"
+
+msgid ""
+"In this mode, the transferred files will be opened with the corresponding "
+"program which is associated with the respective file type. For example, text"
+" documents will be opened with the installed word processor program. Use "
+"this mode to make students work with the provided materials immediately."
+msgstr ""
+
+msgid "Transfer and open destination folder"
+msgstr "Transferir y abrir carpeta de destino"
+
+msgid ""
+"If you intend to transfer many files at once, opening all of them "
+"automatically is not a good choice in most cases. Instead, the destination "
+"folder can be opened in a file manager window where students can view the "
+"transferred files and open the desired ones themselves."
+msgstr ""
+
+msgid ""
+"After choosing the desired options click the :guilabel:`Start` button to "
+"start the file transfer. Depending on the size of the files and the number "
+"of computers this may take a while. A progress bar with the total progress "
+"is shown at the bottom of the dialog. After the transfers have been "
+"completed, you can click the :guilabel:`Close` button to finish:"
+msgstr ""
+
 msgid "Screenshot"
 msgstr "Captura"
 
@@ -882,6 +947,24 @@ msgstr "URL"
 
 msgid "Web address"
 msgstr "Dirección web"
+
+msgid "Files"
+msgstr "Archivos"
+
+msgid "Transfer files"
+msgstr ""
+
+msgid "Distribute files"
+msgstr ""
+
+msgid "Send files"
+msgstr ""
+
+msgid "Open files"
+msgstr ""
+
+msgid "Destination folder"
+msgstr ""
 
 msgid "Snapshot"
 msgstr "Captura"
