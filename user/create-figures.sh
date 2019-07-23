@@ -12,7 +12,7 @@ for i in en $(find ../locale/ -mindepth 1 -maxdepth 1 -type d -printf "%f\n") ; 
 	optipng -o9 Feature*png &
 	optipng -o9 *Menu.png &
 	optipng -o9 *Panel.png &
-	optipng -o9 *Dialog.png &
+	optipng -o9 *Dialog*.png &
 	optipng -o9 *Window.png &
 	wait
 	cd ../..
