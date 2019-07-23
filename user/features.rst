@@ -251,6 +251,41 @@ Click the desired item to open the respective website. Alternatively click the l
 
 Confirm this dialog with :guilabel:`OK` to open the website.
 
+File transfer
+-------------
+
+.. index:: Files, File transfer, Transfer files, Distribute files, Send files, Open files, Destination folder
+
+Using the file transfer feature you can easily transfer files to all students and optionally open the transferred files afterwards. First click the :guilabel:`File transfer` button to open a file dialog which allows you to select the files to transfer:
+
+.. image:: images/FeatureFileTransfer.png
+   :align: center
+
+After selecting the desired files the actual file transfer dialog opens:
+
+.. image:: images/FileTransferDialogStart.png
+   :align: center
+
+In this dialog further options can be chosen before starting the file transfer. Per default the files only will be transferred to the user's home or profile directory without overwriting existing files.
+
+Overwrite existing files
+    Enable this option to overwrite possibly existing files. This can be useful to replace an old version of a file or document with a new one.
+
+Transfer only
+    In this mode, only files are transferred without further actions being performed. Use this mode to silently distribute teaching material in advance without disturbing the students.
+
+Transfer and open file(s) with associated program
+    In this mode, the transferred files will be opened with the corresponding program which is associated with the respective file type. For example, text documents will be opened with the installed word processor program. Use this mode to make students work with the provided materials immediately.
+
+Transfer and open destination folder
+    If you intend to transfer many files at once, opening all of them automatically is not a good choice in most cases. Instead, the destination folder can be opened in a file manager window where students can view the transferred files and open the desired ones themselves.
+
+After choosing the desired options click the :guilabel:`Start` button to start the file transfer. Depending on the size of the files and the number of computers this may take a while. A progress bar with the total progress is shown at the bottom of the dialog. After the transfers have been completed, you can click the :guilabel:`Close` button to finish:
+
+.. image:: images/FileTransferDialogFinished.png
+   :align: center
+
+
 .. _FeatureScreenshot:
 
 Screenshot
