@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Ayko Geeraert <mail@aykog.be>, 2019
+# turbo YJ <casco1004@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,31 +13,35 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-02 18:14+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Ayko Geeraert <mail@aykog.be>, 2019\n"
-"Language-Team: Dutch (https://www.transifex.com/veyon-solutions/teams/65452/nl/)\n"
+"Last-Translator: turbo YJ <casco1004@gmail.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/veyon-solutions/teams/65452/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Veyon Documentation"
-msgstr "Veyon Documentatie"
+msgstr "Veyon 문서"
 
 msgid "Online documentation"
-msgstr "Online documentatie"
+msgstr "온라인 문서"
 
 msgid "PDF download"
-msgstr "PDF download"
+msgstr "PDF 다운로드"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.2.3/veyon-admin-manual-"
 "en_4.2.3.pdf>`_"
 msgstr ""
+"`Veyon 관리자 매뉴얼 PDF <https://github.com/veyon/docs/releases/download/v4.2.3"
+"/veyon-admin-manual-en_4.2.3.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.2.3/veyon-user-manual-"
 "en_4.2.3.pdf>`_"
 msgstr ""
+"`Veyon 사용자 매뉴얼 PDF <https://github.com/veyon/docs/releases/download/v4.2.3"
+"/veyon-user-manual-en_4.2.3.pdf>`_"

@@ -1,6 +1,6 @@
 [main]
 host = https://www.transifex.com
-minimum_perc = 25
+minimum_perc = 20
 
 [veyon.admin-manual_4_2]
 file_filter = locale/<lang>/LC_MESSAGES/admin.po
