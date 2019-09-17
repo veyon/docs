@@ -26,7 +26,7 @@ msgid "FAQ - Frequently Asked Questions"
 msgstr "FAQ - 常見問答集"
 
 msgid "Can other users see my screen?"
-msgstr ""
+msgstr "其他使用者能否看到我的螢幕?"
 
 msgid ""
 "Which user can access which computer under which circumstances depends on "
@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 
 msgid "How frequently are the computer thumbnails updated?"
-msgstr ""
+msgstr "更新電腦縮圖的頻率?"
 
 msgid ""
 "Usually the computer thumbnails in the monitoring view are updated once a "
@@ -51,7 +51,7 @@ msgstr ""
 
 msgid ""
 "What happens if I accidentally close the Veyon Master application window?"
-msgstr ""
+msgstr "如果我不小心關閉了 Veyon Master 應用程式視窗，會發生什麼情況?"
 
 msgid ""
 "Any active functions such as demo mode or screen lock are stopped when the "
@@ -60,7 +60,7 @@ msgid ""
 msgstr ""
 
 msgid "How can I broadcast the screen of a student to all other screens?"
-msgstr ""
+msgstr "如何將學生的螢幕廣播到所有其他螢幕?"
 
 msgid ""
 "If you want to transfer a student's screen instead of your own screen in "
@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 
 msgid "Using functions on individual computers"
-msgstr ""
+msgstr "在單獨電腦上使用功能"
 
 msgid ""
 "If you only want to activate a function on a single computer, right-click "
@@ -127,10 +127,10 @@ msgid ""
 "Some of the features described in the next sections switch the remote "
 "computers to a different mode. You can exit the respective mode by "
 "activating monitoring mode again."
-msgstr ""
+msgstr "下一節中描述的一些功能將遠端電腦切換到其它模式。 您可以透過再次啟動監視模式來結束相應的模式。"
 
 msgid "Demonstration mode"
-msgstr "演示模式"
+msgstr "示範模式"
 
 msgid ""
 "You can use the demonstration mode (demo mode) to start a presentation. In "
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 
 msgid "Lock screens"
-msgstr ""
+msgstr "鎖定螢幕"
 
 msgid ""
 "Another way to draw students' attention is to use the screen lock feature. "
@@ -176,7 +176,7 @@ msgid ""
 msgstr ""
 
 msgid "Press the :guilabel:`Lock` button to lock all displayed computers:"
-msgstr ""
+msgstr "按下 :guilabel:`鎖定` 按鈕鎖定所有顯示的電腦"
 
 msgid ""
 "If you want to unlock the screens, simply press the button again or click "
@@ -229,7 +229,7 @@ msgid ""
 msgstr ""
 
 msgid "Afterwards a new window opens with the remote access view:"
-msgstr ""
+msgstr "之後，開啟一個含有遠端存取檢視的新視窗:"
 
 msgid ""
 "The remote screen is then displayed within a few seconds and updated in real"
@@ -277,10 +277,10 @@ msgid ""
 msgstr ""
 
 msgid "With the button :guilabel:`Exit` the remote access window is closed."
-msgstr ""
+msgstr "使用按鈕 :guilabel:`結束` 遠端存取視窗關閉。"
 
 msgid "Power on, restart and shutdown computers"
-msgstr "開機、重新啟動和關閉電腦"
+msgstr "開啟電源、重新開機和關閉電腦"
 
 msgid ""
 "The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power "
@@ -304,7 +304,7 @@ msgid ""
 msgstr ""
 
 msgid "The following actions are available:"
-msgstr ""
+msgstr "以下動作可用:"
 
 msgid "Power down now"
 msgstr "立即關閉電源"
@@ -315,7 +315,7 @@ msgid ""
 msgstr ""
 
 msgid "Install updates and power down"
-msgstr "安裝更新和關閉電源"
+msgstr "安裝更新並關閉電源"
 
 msgid ""
 "If supported by the operating system all available system updates will be "
@@ -324,7 +324,7 @@ msgid ""
 msgstr ""
 
 msgid "Power down after user confirmation"
-msgstr "使用者確認後關機"
+msgstr "使用者確認後關閉電源"
 
 msgid ""
 "With this option each logged on user will be asked whether to shut down the "
@@ -333,12 +333,12 @@ msgid ""
 msgstr ""
 
 msgid "Power down after timeout"
-msgstr "逾時後關機"
+msgstr "逾時後關閉電源"
 
 msgid ""
 "Selecting this option opens a dialog window where you can set a time after "
 "which the computers will be powered down:"
-msgstr ""
+msgstr "選取這個選項將開啟一個對話方塊視窗，您可以在其中設定電腦將關閉電源的時間:"
 
 msgid ""
 "After accepting the dialog a countdown window is displayed on all computers "
@@ -379,7 +379,7 @@ msgstr ""
 msgid ""
 "A typical use case for this feature can be to end a course for all "
 "participants at the same time."
-msgstr ""
+msgstr "這個功能的典型用例是同時結束所有參與者的課程。"
 
 msgid ""
 "Please note that the logged on users – depending on the program "
@@ -405,7 +405,7 @@ msgid ""
 msgstr ""
 
 msgid "Click on :guilabel:`OK` to send the entered message."
-msgstr ""
+msgstr "按一下 :guilabel:`確定` 以傳送輸入的訊息。"
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "
@@ -571,40 +571,40 @@ msgid "Monitoring"
 msgstr "監視"
 
 msgid "Observation"
-msgstr ""
+msgstr "觀察"
 
 msgid "Computer overview"
 msgstr "電腦概述"
 
 msgid "Fullscreen demo"
-msgstr "全螢幕展示"
+msgstr "全螢幕示範"
 
 msgid "Window demo"
-msgstr "視窗展示"
+msgstr "視窗示範"
 
 msgid "Demo mode"
-msgstr "演示模式"
+msgstr "示範模式"
 
 msgid "Demonstration"
-msgstr "演示"
+msgstr "示範"
 
 msgid "Presentation"
-msgstr ""
+msgstr "簡報"
 
 msgid "Screen broadcast"
-msgstr ""
+msgstr "螢幕廣播"
 
 msgid "Screen lock"
 msgstr "螢幕鎖定"
 
 msgid "Lock screen"
-msgstr ""
+msgstr "鎖定螢幕"
 
 msgid "Lock computers"
-msgstr ""
+msgstr "鎖定電腦"
 
 msgid "Lock input devices"
-msgstr ""
+msgstr "鎖定輸入裝置"
 
 msgid "Remote control"
 msgstr "遠端控制"
@@ -613,43 +613,43 @@ msgid "Remote view"
 msgstr "遠端檢視"
 
 msgid "Power on"
-msgstr "開機"
+msgstr "開啟電源"
 
 msgid "Turn on"
-msgstr ""
+msgstr "開啟"
 
 msgid "Switch on"
-msgstr ""
+msgstr "開啟"
 
 msgid "Power down"
-msgstr "關機"
+msgstr "關閉電源"
 
 msgid "Shutdown"
-msgstr ""
+msgstr "關機"
 
 msgid "Turn off"
-msgstr ""
+msgstr "關閉"
 
 msgid "Restart"
-msgstr ""
+msgstr "重新啟動"
 
 msgid "Reboot"
 msgstr "重新開機"
 
 msgid "WoL"
-msgstr ""
+msgstr "WoL"
 
 msgid "Wake-on-LAN"
-msgstr ""
+msgstr "Wake-on-LAN"
 
 msgid "Log off"
 msgstr "登出"
 
 msgid "Log out"
-msgstr ""
+msgstr "登出"
 
 msgid "User log out"
-msgstr ""
+msgstr "使用者登出"
 
 msgid "End of lesson"
 msgstr "課程結束"
@@ -658,13 +658,13 @@ msgid "Text message"
 msgstr "文字訊息"
 
 msgid "Message"
-msgstr ""
+msgstr "訊息"
 
 msgid "Message window"
-msgstr ""
+msgstr "訊息視窗"
 
 msgid "Start program"
-msgstr ""
+msgstr "啟動程式"
 
 msgid "Execute programm"
 msgstr "執行程式"
@@ -673,43 +673,43 @@ msgid "Commands"
 msgstr "命令"
 
 msgid "Open document"
-msgstr ""
+msgstr "開啟文件"
 
 msgid "Website"
 msgstr "網站"
 
 msgid "Open browser"
-msgstr ""
+msgstr "開啟瀏覽器"
 
 msgid "Browser"
-msgstr ""
+msgstr "瀏覽器"
 
 msgid "URL"
 msgstr "URL"
 
 msgid "Web address"
-msgstr ""
+msgstr "網址"
 
 msgid "Files"
 msgstr "檔案"
 
 msgid "Transfer files"
-msgstr ""
+msgstr "傳輸檔案"
 
 msgid "Distribute files"
-msgstr ""
+msgstr "分發檔案"
 
 msgid "Send files"
-msgstr ""
+msgstr "傳送檔案"
 
 msgid "Open files"
-msgstr ""
+msgstr "開啟檔案"
 
 msgid "Destination folder"
-msgstr ""
+msgstr "目的地資料夾"
 
 msgid "Snapshot"
-msgstr "螢幕截圖"
+msgstr "快照"
 
 msgid "Glossary"
 msgstr "詞彙"
@@ -718,7 +718,7 @@ msgid "From Wikipedia, the free encyclopedia:"
 msgstr "從 Wikipedia，免費的百科全書:"
 
 msgid "Button"
-msgstr ""
+msgstr "按鈕"
 
 msgid ""
 "The term button (sometimes known as a command button or push button) refers "
@@ -773,7 +773,7 @@ msgid "https://en.wikipedia.org/wiki/Graphical_user_interface"
 msgstr "https://en.wikipedia.org/wiki/Graphical_user_interface"
 
 msgid "Input device"
-msgstr ""
+msgstr "輸入裝置"
 
 msgid ""
 "Input devices are all devices that can be used to supply information to a "
@@ -784,7 +784,7 @@ msgid "https://en.wikipedia.org/wiki/Input_device"
 msgstr "https://en.wikipedia.org/wiki/Input_device"
 
 msgid "Keyboard shortcut"
-msgstr ""
+msgstr "鍵盤快速鍵"
 
 msgid ""
 "A keyboard shortcut is a series of one or several keys, such as \"Ctrl+F\" "
@@ -880,12 +880,12 @@ msgid "Program start and login"
 msgstr "程式啟動和登入"
 
 msgid "The program is started via the start menu or a desktop icon:"
-msgstr ""
+msgstr "程式透過 [開始] 功能表或桌面圖示啟動:"
 
 msgid ""
 "Depending on the system configuration you will be prompted for your username"
 " and your password:"
-msgstr ""
+msgstr "根據系統組態，系統將提示您輸入使用者名稱和密碼:"
 
 msgid ""
 "Enter your username and password here or – if given – the credentials of a "
@@ -901,7 +901,7 @@ msgstr "使用者介面"
 msgid ""
 "After the program start you will see the user interface with the toolbar "
 "(1), the monitor view (2) and the status bar with various controls (3):"
-msgstr ""
+msgstr "程式啟動後,您將看到帶有工具列 (1)、監視器檢視 (2) 和含有各種控制項狀態列的使用者介面 (3):"
 
 msgid ""
 "The toolbar contains a number of buttons for activating different features. "
@@ -928,6 +928,8 @@ msgid ""
 "buttons, you can open and close the :ref:`computer select panel "
 "<ComputerSelectPanel>` and the :ref:`screenshots panel <ScreenshotsPanel>`."
 msgstr ""
+"使用 :guilabel:`位置 & 電腦` 和 :guilabel:`螢幕快照` 按鈕，您可以開啟和關閉 :ref:`電腦選取面板 "
+"<ComputerSelectPanel>` 及 :ref:`螢幕快照面板 <ScreenshotsPanel>`。"
 
 msgid ""
 "The search bar allows you to filter the computers displayed using computer "
