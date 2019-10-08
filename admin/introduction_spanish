@@ -1,0 +1,25 @@
+Introducción
+============
+
+Sobre este manual
+-----------------
+
+Este manual describe la instalación y configuración de Veyon en una red de ordenadores y está recomendada para administradores de sistema y usuarios con experiencia ténica.
+Existe un manual separado para el usuario finale, el cual describe su uso y funciones individuales del prorama de usuario (Veyon Master).
+
+En las secciones siguientes de este capítulo encontraras información básica sobre Veyon y sus componentes, los cuales son de fundamental importancia para poner Veyon en funcionamiento.
+
+El capítulo :ref:`Instalación` cubre la instalación de Veyon en equipos Windows o Linux. También contiene información sobre como llevar a cabo una instalación automatizada.
+
+El capítulo :ref:`Configuración`explica como configurar e integrar Veyon mediante la herramienta de configuración gráfica, mientras que :ref:`Referencia de configuración`describe todos los ajustes disponibles y las opciones en detalle.
+Información y ejemplos de como conectar Veyon a un LDAP o un servidor ActiveDirectory pueden encontrarseen el capítulo :ref:`LDAP`.
+
+Veyon también cuenta con una interfaz de línea de comando (CLI), la cual puede ser usada para modificar la configuración, automatizar tareas relacionadas con Veyon o controla ciertos programas. Todos los módulos y comandos de la herramienta de línea de comandos están enumerados en el apartado :ref:`Interfaz de líneas de comando`.
+
+En caso de que Veyon cause probelmas durante la instalación o configuración, pueden llevarse a cabo las acciones descritas en el apartado :ref:`Resolución de problemas`. Las preguntas realizadas frecuentemente se encuentran en el apartado :ref:`FAQ`.
+
+Antes de actualizar Veyon a una nueva versión es recomendable leer cuidadosamente the apartado :ref:`ReleaseNotes` de la correspondiente versión.
+
+
+Sobre Veyon
+-----------
