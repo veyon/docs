@@ -35,17 +35,17 @@ Use alternative user authentication mechanism
 User login
 ++++++++++
 
-These advanced setting control the timing when simulating key presses to remotely logging in users.
+These advanced settings control the timing when simulating key presses to remotely logging in users.
 
 Input start delay
 	This value specifies the number of milliseconds to wait between issueing Ctrl+Alt+Del and sending the first character of the username. This value can be increased on slow computers to ensure that the username input field is ready.
 
-	**Default**: 1000 ms
+	**Default:** *1000 ms*
 
 Simulated key presses interval
 	This value specifies the number of milliseconds to wait between the individual simulated key presses. Increase this value if you encounter logon failures caused by missing characters or improperly switched input fields.
 
-	**Default**: 10 ms
+	**Default:** *10 ms*
 
 Screen lock
 +++++++++++
