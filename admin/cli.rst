@@ -110,9 +110,9 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 
         veyon-cli config import myconfig.json
 
-.. describe:: list
+.. describe:: list [defaults | types]
 
-    This command shows a list of all configuration keys and their corresponding values. This way you can get the names of the configuration keys in order to read or write them individually via the ``get`` or ``set`` commands.
+    This command shows a list of all configuration keys and their corresponding values. This way you can get the names of the configuration keys in order to read or write them individually via the ``get`` or ``set`` commands. When additionally specifying ``defaults`` the default value for each configuration key is printed instead of the actual configured value. Alternatively the data types of the configuration keys can be inspected by specifying ``types``.
 
 .. describe:: get
 
