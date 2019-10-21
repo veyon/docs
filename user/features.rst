@@ -251,6 +251,8 @@ Click the desired item to start the respective program on all computers. Alterna
 
 Confirm this dialog with :guilabel:`OK` to run the program. Please note, that a program often is not located in the program path environment so that you have to specify the complete path to the program, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe"``.
 
+.. note:: To remove a previously added custom program, move the mouse over the according item and press the :kbd:`Del` key.
+
 .. hint:: You can pass an argument to most programs with the name of a file that you want it to open automatically. For example, if you want to play a video on all computers, add the path to the video file separated by a space, e.g. ``"C:\Program Files\VideoLAN\VLC\vlc.exe" X:\Videos\Example.mp4``.
 
 .. attention:: In case the program path or file name contains spaces, you always have to enclose the complete path and file name in quotation marks. Otherwise parts of the input will be interpreted as parameters. Example: ``"C:\Program Files\LibreOffice 5\program\swriter.exe"``.
@@ -276,6 +278,8 @@ Click the desired item to open the respective website on all computers. Alternat
    :align: center
 
 Confirm this dialog with :guilabel:`OK` to open the website.
+
+.. note:: To remove a previously added custom website, move the mouse over the according item and press the :kbd:`Del` key.
 
 File transfer
 -------------
