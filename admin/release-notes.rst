@@ -35,7 +35,7 @@ There are no structural changes in Veyon 4.3.
 Configuration changes
 +++++++++++++++++++++
 
-No configuration keys have been changed or renamed. The only new configuration keys are directly related to the new remote log in feature. They can be changed through the Veyon Configurator but usually do not have to be changed.
+No configuration keys have been changed or renamed. The only new configuration keys are directly related to the new remote log in feature and usually do not have to be changed.
 
 Veyon 4.2
 ---------
