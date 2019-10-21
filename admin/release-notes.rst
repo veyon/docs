@@ -19,6 +19,24 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.3
+---------
+
+Overview
+++++++++
+
+Veyon 4.3 is mostly identical to Veyon 4.2. A new plugin has been added which allows to log in a particular user remotely on all computers. The ``config`` CLI module has been improved to handle specific data types (such as JSON data and option indices) more intelligently. Upgrading to Veyon 4.3 does not require any configuration changes. Since only a new plugin has been added and some commands of the ``config`` CLI module have been extended the risk of regressions is very low.
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.3.
+
+Configuration changes
++++++++++++++++++++++
+
+No configuration keys have been changed or renamed. The only new configuration keys are directly related to the new remote log in feature. They can be changed through the Veyon Configurator but usually do not have to be changed.
+
 Veyon 4.2
 ---------
 
