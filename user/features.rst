@@ -166,6 +166,32 @@ Power down after timeout
 .. note:: Depending on the configuration of the network and the system settings of the individual computers, powering on only works under certain technical conditions. At the same time, there is no access permission check when you power on, so you may be able to power on computers in other rooms or locations. For this reason, pay attention to the selected computers when using this feature.
 
 
+Log in users
+-------------
+
+.. index:: Log in, Login, Logon, Log on
+
+The :guilabel:`Log in` feature allows to remotely log in a particular user on all computers. A corresponding button in the toolbar is available for this purpose:
+
+.. image:: images/FeatureUserLogin.png
+   :align: center
+
+After pressing the button, a dialog window opens in which you can enter the username and password to log in:
+
+.. image:: images/UserLoginDialog.png
+   :align: center
+
+Click on :guilabel:`OK` to log in the specified user.
+
+If you want to use this feature for individual computers only, you can select the respective computers and select the desired item in the context menu.
+
+.. note:: This feature is only activated on computers on which no user is logged in. To ensure a consistent state on all computers consider using the :ref:`LogOffUsers` feature beforehand.
+
+.. hint:: A typical use case for this feature can be to prepare a course by logging in all computers and start programs or open websites in advance.
+
+
+.. _LogOffUsers:
+
 Log off users
 -------------
 
