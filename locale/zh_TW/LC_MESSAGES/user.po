@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:50+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -361,6 +361,40 @@ msgid ""
 "using this feature."
 msgstr ""
 
+msgid "Log in users"
+msgstr ""
+
+msgid ""
+"The :guilabel:`Log in` feature allows to remotely log in a particular user "
+"on all computers. A corresponding button in the toolbar is available for "
+"this purpose:"
+msgstr ""
+
+msgid ""
+"After pressing the button, a dialog window opens in which you can enter the "
+"username and password to log in:"
+msgstr ""
+
+msgid "Click on :guilabel:`OK` to log in the specified user."
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the desired item in the context "
+"menu."
+msgstr ""
+
+msgid ""
+"This feature is only activated on computers on which no user is logged in. "
+"To ensure a consistent state on all computers consider using the "
+":ref:`LogOffUsers` feature beforehand."
+msgstr ""
+
+msgid ""
+"A typical use case for this feature can be to prepare a course by logging in"
+" all computers and start programs or open websites in advance."
+msgstr ""
+
 msgid "Log off users"
 msgstr "登出使用者"
 
@@ -406,12 +440,6 @@ msgstr ""
 
 msgid "Click on :guilabel:`OK` to send the entered message."
 msgstr "按一下 :guilabel:`確定` 以傳送輸入的訊息。"
-
-msgid ""
-"If you want to use this feature for individual computers only, you can "
-"select the respective computers and select the desired item in the context "
-"menu."
-msgstr ""
 
 msgid "Run program"
 msgstr "執行程式"
@@ -641,6 +669,18 @@ msgstr "WoL"
 
 msgid "Wake-on-LAN"
 msgstr "Wake-on-LAN"
+
+msgid "Log in"
+msgstr "登入"
+
+msgid "Login"
+msgstr "登入"
+
+msgid "Logon"
+msgstr ""
+
+msgid "Log on"
+msgstr ""
 
 msgid "Log off"
 msgstr "登出"
@@ -1052,9 +1092,6 @@ msgstr "開始功能表"
 
 msgid "Desktop icon"
 msgstr "桌面圖示"
-
-msgid "Login"
-msgstr "登入"
 
 msgid "Monitor view"
 msgstr "顯示器檢視"

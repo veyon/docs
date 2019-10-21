@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:58+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
@@ -608,7 +608,11 @@ msgstr ""
 msgid ""
 "This command shows a list of all configuration keys and their corresponding "
 "values. This way you can get the names of the configuration keys in order to"
-" read or write them individually via the ``get`` or ``set`` commands."
+" read or write them individually via the ``get`` or ``set`` commands. When "
+"additionally specifying ``defaults`` the default value for each "
+"configuration key is printed instead of the actual configured value. "
+"Alternatively the data types of the configuration keys can be inspected by "
+"specifying ``types``."
 msgstr ""
 
 msgid ""
@@ -2849,6 +2853,39 @@ msgid ""
 " therefore only be used as a last resort."
 msgstr ""
 
+msgid "User login"
+msgstr "Identifiant utilisateur"
+
+msgid ""
+"These advanced settings control the timing when simulating key presses to "
+"remotely logging in users."
+msgstr ""
+
+msgid "Input start delay"
+msgstr "Délai de démarrage de l'entrée"
+
+msgid ""
+"This value specifies the number of milliseconds to wait between issueing "
+"Ctrl+Alt+Del and sending the first character of the username. This value can"
+" be increased on slow computers to ensure that the username input field is "
+"ready."
+msgstr ""
+
+msgid "**Default:** *1000 ms*"
+msgstr "**Défaut:** *1000 ms*"
+
+msgid "Simulated key presses interval"
+msgstr "intervalle entre simulations de saisie de touche"
+
+msgid ""
+"This value specifies the number of milliseconds to wait between the "
+"individual simulated key presses. Increase this value if you encounter logon"
+" failures caused by missing characters or improperly switched input fields."
+msgstr ""
+
+msgid "**Default:** *10 ms*"
+msgstr ""
+
 msgid "Screen lock"
 msgstr "Verrouillage d'écran"
 
@@ -3444,9 +3481,6 @@ msgid ""
 "in Veyon Master are updated. The shorter the interval, the higher the "
 "processor load on the master machine and the overall network load."
 msgstr ""
-
-msgid "**Default:** *1000 ms*"
-msgstr "**Défaut:** *1000 ms*"
 
 msgid "Background color"
 msgstr "Couleur de fond"
@@ -4156,6 +4190,34 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.3"
+msgstr ""
+
+msgid ""
+"Veyon 4.3 is mostly identical to Veyon 4.2. A new plugin has been added "
+"which allows to log in a particular user remotely on all computers. The "
+"``config`` CLI module has been improved to handle specific data types (such "
+"as JSON data and option indices) more intelligently. Upgrading to Veyon 4.3 "
+"does not require any configuration changes. Since only a new plugin has been"
+" added and some commands of the ``config`` CLI module have been extended the"
+" risk of regressions is very low."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "Changements structurels"
+
+msgid "There are no structural changes in Veyon 4.3."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "Changements de configuration"
+
+msgid ""
+"No configuration keys have been changed or renamed. The only new "
+"configuration keys are directly related to the new remote log in feature and"
+" usually do not have to be changed."
+msgstr ""
+
 msgid "Veyon 4.2"
 msgstr "Veyon 4.2"
 
@@ -4288,9 +4350,6 @@ msgid ""
 "Performance and security of the builtin UltraVNC server have been improved."
 msgstr ""
 
-msgid "Structural changes"
-msgstr "Changements structurels"
-
 msgid ""
 "Starting with Veyon 4.2 the more generic term *location* instead of *room* "
 "is used wherever appropriate. This affects both the user interface and "
@@ -4317,9 +4376,6 @@ msgid ""
 "options you can switch the view to :guilabel:`Advanced` through the "
 ":guilabel:`View` menu."
 msgstr ""
-
-msgid "Configuration changes"
-msgstr "Changements de configuration"
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"

@@ -7,17 +7,17 @@
 # Tobias Junghans, 2019
 # Nagy Gergő, 2019
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
-# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019
 # miles teg <varota@gmail.com>, 2019
+# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:50+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: miles teg <varota@gmail.com>, 2019\n"
+"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -498,6 +498,42 @@ msgid ""
 "using this feature."
 msgstr ""
 
+msgid "Log in users"
+msgstr ""
+
+msgid ""
+"The :guilabel:`Log in` feature allows to remotely log in a particular user "
+"on all computers. A corresponding button in the toolbar is available for "
+"this purpose:"
+msgstr ""
+
+msgid ""
+"After pressing the button, a dialog window opens in which you can enter the "
+"username and password to log in:"
+msgstr ""
+
+msgid "Click on :guilabel:`OK` to log in the specified user."
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the desired item in the context "
+"menu."
+msgstr ""
+"Ha ezt a funkciót csak egyes számítógépeken kell használni, ki lehet "
+"választani a megfelelő számítógépeket, majd a kívánt elemet a helyi menüből."
+
+msgid ""
+"This feature is only activated on computers on which no user is logged in. "
+"To ensure a consistent state on all computers consider using the "
+":ref:`LogOffUsers` feature beforehand."
+msgstr ""
+
+msgid ""
+"A typical use case for this feature can be to prepare a course by logging in"
+" all computers and start programs or open websites in advance."
+msgstr ""
+
 msgid "Log off users"
 msgstr "Felhasználók kijelentkeztetése"
 
@@ -556,14 +592,6 @@ msgstr ""
 
 msgid "Click on :guilabel:`OK` to send the entered message."
 msgstr "Az :guilabel:`OK` gombra kattintva lehet elküldeni az üzenetet."
-
-msgid ""
-"If you want to use this feature for individual computers only, you can "
-"select the respective computers and select the desired item in the context "
-"menu."
-msgstr ""
-"Ha ezt a funkciót csak egyes számítógépeken kell használni, ki lehet "
-"választani a megfelelő számítógépeket, majd a kívánt elemet a helyi menüből."
 
 msgid "Run program"
 msgstr "Program futtatása"
@@ -837,6 +865,18 @@ msgstr "WoL"
 
 msgid "Wake-on-LAN"
 msgstr "Wake-on-LAN"
+
+msgid "Log in"
+msgstr "Bejelentkezés"
+
+msgid "Login"
+msgstr "Bejelentkezés"
+
+msgid "Logon"
+msgstr ""
+
+msgid "Log on"
+msgstr ""
 
 msgid "Log off"
 msgstr "Kijelentkezés"
@@ -1273,9 +1313,6 @@ msgstr "Start menü"
 
 msgid "Desktop icon"
 msgstr "Asztal ikon"
-
-msgid "Login"
-msgstr "Bejelentkezés"
 
 msgid "Monitor view"
 msgstr "Monitor nézet"

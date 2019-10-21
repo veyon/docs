@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:50+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/veyon-solutions/teams/65452/uk/)\n"
@@ -548,6 +548,43 @@ msgstr ""
 "причини вам слід ретельніше ставитися до вибору комп'ютерів, якщо ви "
 "користуєтеся цією можливістю."
 
+msgid "Log in users"
+msgstr ""
+
+msgid ""
+"The :guilabel:`Log in` feature allows to remotely log in a particular user "
+"on all computers. A corresponding button in the toolbar is available for "
+"this purpose:"
+msgstr ""
+
+msgid ""
+"After pressing the button, a dialog window opens in which you can enter the "
+"username and password to log in:"
+msgstr ""
+
+msgid "Click on :guilabel:`OK` to log in the specified user."
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the desired item in the context "
+"menu."
+msgstr ""
+"Якщо ви хочете скористатися певною можливістю лише для окремих комп'ютерів, "
+"ви можете позначити пункти відповідних комп'ютерів і вибрати бажаний пункт "
+"дії із контекстного меню."
+
+msgid ""
+"This feature is only activated on computers on which no user is logged in. "
+"To ensure a consistent state on all computers consider using the "
+":ref:`LogOffUsers` feature beforehand."
+msgstr ""
+
+msgid ""
+"A typical use case for this feature can be to prepare a course by logging in"
+" all computers and start programs or open websites in advance."
+msgstr ""
+
 msgid "Log off users"
 msgstr "Примусове викидання користувачів з системи"
 
@@ -615,15 +652,6 @@ msgstr ""
 msgid "Click on :guilabel:`OK` to send the entered message."
 msgstr ""
 "Натисніть кнопку :guilabel:`Гаразд`, щоб надіслати введене повідомлення."
-
-msgid ""
-"If you want to use this feature for individual computers only, you can "
-"select the respective computers and select the desired item in the context "
-"menu."
-msgstr ""
-"Якщо ви хочете скористатися певною можливістю лише для окремих комп'ютерів, "
-"ви можете позначити пункти відповідних комп'ютерів і вибрати бажаний пункт "
-"дії із контекстного меню."
 
 msgid "Run program"
 msgstr "Виконати програму"
@@ -929,6 +957,18 @@ msgstr "Пробудження мережею"
 
 msgid "Wake-on-LAN"
 msgstr "Wake-on-LAN"
+
+msgid "Log in"
+msgstr "Увійти"
+
+msgid "Login"
+msgstr "Вхід"
+
+msgid "Logon"
+msgstr ""
+
+msgid "Log on"
+msgstr ""
 
 msgid "Log off"
 msgstr "Вийти"
@@ -1500,9 +1540,6 @@ msgstr "Меню запуску"
 
 msgid "Desktop icon"
 msgstr "Піктограма на стільниці"
-
-msgid "Login"
-msgstr "Вхід"
 
 msgid "Monitor view"
 msgstr "Панель спостереження"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:58+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -471,9 +471,12 @@ msgstr "這個命令將以前匯出的設定檔匯入本機組態。 要匯入�
 msgid ""
 "This command shows a list of all configuration keys and their corresponding "
 "values. This way you can get the names of the configuration keys in order to"
-" read or write them individually via the ``get`` or ``set`` commands."
+" read or write them individually via the ``get`` or ``set`` commands. When "
+"additionally specifying ``defaults`` the default value for each "
+"configuration key is printed instead of the actual configured value. "
+"Alternatively the data types of the configuration keys can be inspected by "
+"specifying ``types``."
 msgstr ""
-"這個命令顯示所有組態金鑰及其相應值的清單。 如此，您可以取得組態金鑰的名稱，以便透過 ``get`` 或 ``set`` 命令單獨讀取或寫入它們。"
 
 msgid ""
 "This command allows reading a single configuration key. The name of the key "
@@ -2588,6 +2591,39 @@ msgstr ""
 "如果預設機制在您的環境中不起作用，您可以嘗試使用替代回復機制。 這個機制利用作業系統中的高等級功能在內部執行網路使用者登入以驗證使用者認證。 "
 "這個登入過程可能比預設機制執行的簡單身份驗證慢。 因此，它只能作為最後的手段使用。"
 
+msgid "User login"
+msgstr "使用者登入"
+
+msgid ""
+"These advanced settings control the timing when simulating key presses to "
+"remotely logging in users."
+msgstr ""
+
+msgid "Input start delay"
+msgstr "輸入啟動延遲"
+
+msgid ""
+"This value specifies the number of milliseconds to wait between issueing "
+"Ctrl+Alt+Del and sending the first character of the username. This value can"
+" be increased on slow computers to ensure that the username input field is "
+"ready."
+msgstr ""
+
+msgid "**Default:** *1000 ms*"
+msgstr "**預設值:** *1000 毫秒*"
+
+msgid "Simulated key presses interval"
+msgstr "模擬按鍵間隔"
+
+msgid ""
+"This value specifies the number of milliseconds to wait between the "
+"individual simulated key presses. Increase this value if you encounter logon"
+" failures caused by missing characters or improperly switched input fields."
+msgstr ""
+
+msgid "**Default:** *10 ms*"
+msgstr ""
+
 msgid "Screen lock"
 msgstr "螢幕鎖定"
 
@@ -3208,9 +3244,6 @@ msgid ""
 "in Veyon Master are updated. The shorter the interval, the higher the "
 "processor load on the master machine and the overall network load."
 msgstr "這個設定決定更新 Veyon Master 中電腦縮圖的時間間隔。 間隔越短，主機電腦上的處理器負載和整體網路負載就越高。"
-
-msgid "**Default:** *1000 ms*"
-msgstr "**預設值:** *1000 毫秒*"
 
 msgid "Background color"
 msgstr "背景色"
@@ -3912,6 +3945,34 @@ msgid ""
 msgstr ""
 "如果重新命名組態機碼，為了相容性原因，則始終保留舊機碼，以便更輕鬆地切換回以前的版本。 將來的版本將有一個清理機制，它將移除所有舊組態機碼。"
 
+msgid "Veyon 4.3"
+msgstr ""
+
+msgid ""
+"Veyon 4.3 is mostly identical to Veyon 4.2. A new plugin has been added "
+"which allows to log in a particular user remotely on all computers. The "
+"``config`` CLI module has been improved to handle specific data types (such "
+"as JSON data and option indices) more intelligently. Upgrading to Veyon 4.3 "
+"does not require any configuration changes. Since only a new plugin has been"
+" added and some commands of the ``config`` CLI module have been extended the"
+" risk of regressions is very low."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "結構變更"
+
+msgid "There are no structural changes in Veyon 4.3."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "組態變更"
+
+msgid ""
+"No configuration keys have been changed or renamed. The only new "
+"configuration keys are directly related to the new remote log in feature and"
+" usually do not have to be changed."
+msgstr ""
+
 msgid "Veyon 4.2"
 msgstr "Veyon 4.2"
 
@@ -4046,9 +4107,6 @@ msgid ""
 "Performance and security of the builtin UltraVNC server have been improved."
 msgstr "內建 UltraVNC 伺服器的效能和安全性得到了改進。"
 
-msgid "Structural changes"
-msgstr "結構變更"
-
 msgid ""
 "Starting with Veyon 4.2 the more generic term *location* instead of *room* "
 "is used wherever appropriate. This affects both the user interface and "
@@ -4082,9 +4140,6 @@ msgid ""
 msgstr ""
 "Veyon 組態器不再顯示每個預設值的所有組態選項，以便顯示更簡潔的使用者介面。 如果您錯過了某些進階選項，您可以透過 :guilabel:`檢視` "
 "功能表將檢視切換到 :guilabel:`進階`。"
-
-msgid "Configuration changes"
-msgstr "組態變更"
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"

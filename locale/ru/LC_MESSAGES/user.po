@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 10:32+0200\n"
+"POT-Creation-Date: 2019-10-21 11:50+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
@@ -362,6 +362,40 @@ msgid ""
 "using this feature."
 msgstr ""
 
+msgid "Log in users"
+msgstr ""
+
+msgid ""
+"The :guilabel:`Log in` feature allows to remotely log in a particular user "
+"on all computers. A corresponding button in the toolbar is available for "
+"this purpose:"
+msgstr ""
+
+msgid ""
+"After pressing the button, a dialog window opens in which you can enter the "
+"username and password to log in:"
+msgstr ""
+
+msgid "Click on :guilabel:`OK` to log in the specified user."
+msgstr ""
+
+msgid ""
+"If you want to use this feature for individual computers only, you can "
+"select the respective computers and select the desired item in the context "
+"menu."
+msgstr ""
+
+msgid ""
+"This feature is only activated on computers on which no user is logged in. "
+"To ensure a consistent state on all computers consider using the "
+":ref:`LogOffUsers` feature beforehand."
+msgstr ""
+
+msgid ""
+"A typical use case for this feature can be to prepare a course by logging in"
+" all computers and start programs or open websites in advance."
+msgstr ""
+
 msgid "Log off users"
 msgstr ""
 
@@ -406,12 +440,6 @@ msgid ""
 msgstr ""
 
 msgid "Click on :guilabel:`OK` to send the entered message."
-msgstr ""
-
-msgid ""
-"If you want to use this feature for individual computers only, you can "
-"select the respective computers and select the desired item in the context "
-"menu."
 msgstr ""
 
 msgid "Run program"
@@ -641,6 +669,18 @@ msgid "WoL"
 msgstr ""
 
 msgid "Wake-on-LAN"
+msgstr ""
+
+msgid "Log in"
+msgstr "Залогиниться"
+
+msgid "Login"
+msgstr ""
+
+msgid "Logon"
+msgstr ""
+
+msgid "Log on"
 msgstr ""
 
 msgid "Log off"
@@ -1050,9 +1090,6 @@ msgid "Start menu"
 msgstr "Меню запуска"
 
 msgid "Desktop icon"
-msgstr ""
-
-msgid "Login"
 msgstr ""
 
 msgid "Monitor view"
