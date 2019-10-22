@@ -6,17 +6,17 @@
 # Translators:
 # ÉricB. <eric.bugnet@gmail.com>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2019
-# Lachaux Patrick, 2019
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
+# Lachaux Patrick, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 11:50+0200\n"
+"POT-Creation-Date: 2019-10-21 13:33+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019\n"
+"Last-Translator: Lachaux Patrick, 2019\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -554,21 +554,28 @@ msgstr ""
 "fonctionnalité."
 
 msgid "Log in users"
-msgstr ""
+msgstr "Connecter les utilisateurs"
 
 msgid ""
 "The :guilabel:`Log in` feature allows to remotely log in a particular user "
 "on all computers. A corresponding button in the toolbar is available for "
 "this purpose:"
 msgstr ""
+"La fonctionnalité :guilabel:`Log in` permet de connecter à distance un "
+"utilisateur particulier sur tous les ordinateurs. Un bouton correspondant "
+"dans la barre d’outils est disponible à cet effet:"
 
 msgid ""
 "After pressing the button, a dialog window opens in which you can enter the "
 "username and password to log in:"
 msgstr ""
+"Après avoir appuyé sur le bouton, une fenêtre de dialogue s'ouvre dans "
+"laquelle vous pouvez entrer le nom d'utilisateur et le mot de passe pour "
+"vous connecter:"
 
 msgid "Click on :guilabel:`OK` to log in the specified user."
 msgstr ""
+"Cliquez sur :guilabel:`OK` pour vous connecter à l'utilisateur spécifié."
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "
@@ -584,11 +591,18 @@ msgid ""
 "To ensure a consistent state on all computers consider using the "
 ":ref:`LogOffUsers` feature beforehand."
 msgstr ""
+"Cette fonctionnalité est uniquement activée sur les ordinateurs sur lesquels"
+" aucun utilisateur n'est connecté. Pour assurer un état cohérent sur tous "
+"les ordinateurs, envisagez d’utiliser au préalable la fonctionnalité "
+":ref:`LogOffUsers`."
 
 msgid ""
 "A typical use case for this feature can be to prepare a course by logging in"
 " all computers and start programs or open websites in advance."
 msgstr ""
+"Un cas typique d'utilisation de cette fonctionnalité peut être de préparer "
+"un cours en se connectant à tous les ordinateurs et de démarrer des "
+"programmes ou des sites Web ouverts à l'avance."
 
 msgid "Log off users"
 msgstr "Déconnecter les utilisateurs"
@@ -705,6 +719,13 @@ msgstr ""
 "Files\\VideoLAN\\VLC\\vlc.exe\"``."
 
 msgid ""
+"To remove a previously added custom program, move the mouse over the "
+"according item and press the :kbd:`Del` key."
+msgstr ""
+"Pour supprimer un programme personnalisé ajouté précédemment, déplacez la "
+"souris sur l'élément correspondant et appuyez sur la touche :kbd:`Del`."
+
+msgid ""
 "You can pass an argument to most programs with the name of a file that you "
 "want it to open automatically. For example, if you want to play a video on "
 "all computers, add the path to the video file separated by a space, e.g. "
@@ -767,6 +788,13 @@ msgid "Confirm this dialog with :guilabel:`OK` to open the website."
 msgstr ""
 "Confirmez cette boîte de dialogue avec :guilabel:`OK` pour ouvrir le site "
 "internet."
+
+msgid ""
+"To remove a previously added custom website, move the mouse over the "
+"according item and press the :kbd:`Del` key."
+msgstr ""
+"Pour supprimer un site Internet personnalisé ajouté précédemment, déplacez "
+"la souris sur l'élément correspondant et appuyez sur la touche :kbd:`Del`."
 
 msgid "File transfer"
 msgstr "Transfert de fichier"
@@ -979,10 +1007,10 @@ msgid "Login"
 msgstr "S'identifier"
 
 msgid "Logon"
-msgstr ""
+msgstr "Connexion"
 
 msgid "Log on"
-msgstr ""
+msgstr "Connexion"
 
 msgid "Log off"
 msgstr "Déconnexion"
