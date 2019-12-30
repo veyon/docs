@@ -21,7 +21,7 @@ master_doc = os.getenv('INDEX', 'index')
 
 # General information about the project.
 project = 'Veyon'
-copyright = '2017-2019, Veyon Solutions'
+copyright = '2017-2020, Veyon Solutions'
 author = 'Veyon Community'
 
 title = os.getenv('TITLE', 'Veyon Documentation')

@@ -7,16 +7,17 @@
 # Tobias Junghans, 2019
 # TeliuTe <teliute@163.com>, 2019
 # Richard Yang <zhongtian.yang@qq.com>, 2019
-# Pascal Janus <pascal_janus@163.com>, 2019
+# jiangsx <jiangsx715@hotmail.com>, 2020
+# Pascal Janus <pascal_janus@163.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 13:33+0200\n"
+"POT-Creation-Date: 2019-12-28 17:48+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Pascal Janus <pascal_janus@163.com>, 2019\n"
+"Last-Translator: Pascal Janus <pascal_janus@163.com>, 2020\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -226,6 +227,7 @@ msgid ""
 "separate window. In contrast to the monitoring mode in the main window, you "
 "can watch the activities on a computer in detail or intervene yourself."
 msgstr ""
+"菜单栏*远程访问*中，由:guilabel:`远程浏览`和:guilabel:`远程控制`两部分组成。在两种模式下，远程计算机的屏幕都会在独立的窗口中显示。与主窗口中的控制模式不同，您可以清除看到远程计算机上的活动或是介入其中。"
 
 msgid ""
 "The features can be activated in different ways. Depending on the system "
@@ -386,7 +388,7 @@ msgstr ""
 "因此，使用此功能时请注意所选的计算机。"
 
 msgid "Log in users"
-msgstr ""
+msgstr "登录用户"
 
 msgid ""
 "The :guilabel:`Log in` feature allows to remotely log in a particular user "
@@ -400,7 +402,7 @@ msgid ""
 msgstr ""
 
 msgid "Click on :guilabel:`OK` to log in the specified user."
-msgstr ""
+msgstr "点击:guilabel:`OK`来以特定用户登录。"
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "

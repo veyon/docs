@@ -3371,7 +3371,7 @@ msgid ""
 "screen, this value should be increased."
 msgstr ""
 
-msgid "**Default:** 128 MB*"
+msgid "**Default:** *128 MB*"
 msgstr ""
 
 msgid ""

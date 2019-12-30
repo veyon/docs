@@ -4,20 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2019
 # Nagy Gergő, 2019
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
 # miles teg <varota@gmail.com>, 2019
 # Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019
+# Tobias Junghans, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:45+0200\n"
+"POT-Creation-Date: 2020-01-08 16:42+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019\n"
+"Last-Translator: Tobias Junghans, 2020\n"
 "Language-Team: Hungarian (https://www.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3391,8 +3391,8 @@ msgid ""
 "screen, this value should be increased."
 msgstr ""
 
-msgid "**Default:** 128 MB*"
-msgstr "**Alapértelmezett:** 128 MB*"
+msgid "**Default:** *128 MB*"
+msgstr "**Alapértelmezett:** *128 MB*"
 
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "

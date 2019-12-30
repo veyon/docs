@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2019
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2019
+# Tobias Junghans, 2020
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:45+0200\n"
+"POT-Creation-Date: 2020-01-08 16:42+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2019\n"
+"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -477,6 +477,8 @@ msgid ""
 "Alternatively the data types of the configuration keys can be inspected by "
 "specifying ``types``."
 msgstr ""
+"這個命令顯示所有組態金鑰及其相應值的清單。 如此，您可以取得組態金鑰的名稱，以便透過 ``get`` 或 ``set`` 命令單獨讀取或寫入它們。 "
+"當另外指定 ``預設值`` 時，將列印每個組態金鑰的預設值，而不是實際組態的值。 或者，可以透過指定 ``類型`` 來檢查組態金鑰的資料類型。"
 
 msgid ""
 "This command allows reading a single configuration key. The name of the key "
@@ -1051,7 +1053,7 @@ msgid "Quick start"
 msgstr "快速開始"
 
 msgid "Key file authentication"
-msgstr "金鑰檔身分驗證"
+msgstr "金鑰檔身份驗證"
 
 msgid "Public-key-cryptography"
 msgstr "公開金鑰加密"
@@ -3698,8 +3700,8 @@ msgstr ""
 "這個限制是軟限制，因此，如果超出此限制，則嘗試關鍵框架更新 (即使關鍵框架間隔尚未過期)，但緩衝區仍保留所有資料。 僅當超過雙精度值 (硬限制) "
 "時，才會重設緩衝區。 如果在廣播畫面時出現重複中斷或延遲，應增加此值。"
 
-msgid "**Default:** 128 MB*"
-msgstr "**預設值:** 128 MB*"
+msgid "**Default:** *128 MB*"
+msgstr "**預設值:** *128 MB*"
 
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
@@ -3979,6 +3981,9 @@ msgid ""
 " added and some commands of the ``config`` CLI module have been extended the"
 " risk of regressions is very low."
 msgstr ""
+"Veyon 4.3 與 Veyon 4.2 基本相同。加入了一個新的外掛程式，允許在所有電腦上遠端登入特定使用者。 ``config`` CLI  "
+"模組已得到改進，可以更智慧地處理特定資料類型 (如 JSON 資料和選項索引)。 升級到 Veyon 4.3 不需要任何組態變更。 "
+"由於只加入了一個新的外掛程式，並且 ``config`` CLI 模組的某些命令已擴展，因此回歸的風險非常低。"
 
 msgid "Structural changes"
 msgstr "結構變更"
@@ -3993,7 +3998,7 @@ msgid ""
 "No configuration keys have been changed or renamed. The only new "
 "configuration keys are directly related to the new remote log in feature and"
 " usually do not have to be changed."
-msgstr ""
+msgstr "未變更或重新命名任何組態金鑰。 唯一的新組態金鑰與新的遠端登入功能直接相關，通常不需要變更。"
 
 msgid "Veyon 4.2"
 msgstr "Veyon 4.2"
@@ -4588,7 +4593,7 @@ msgid ""
 "the :ref:`network object directory <RefNetworkObjectDirectory>` on "
 "configuration page :guilabel:`General` is set to *LDAP Basic* or *LDAP Pro*"
 msgstr ""
-":ref:`網路物件目錄 <RefNetworkObjectDirectory>` 在組態頁面 :guilabel:` 一般` 設定為 *LDAP "
+":ref:`網路物件目錄 <RefNetworkObjectDirectory>` 在組態頁面 :guilabel:`一般` 設定為 *LDAP "
 "Basic* 或 *LDAP Pro*"
 
 msgid ""

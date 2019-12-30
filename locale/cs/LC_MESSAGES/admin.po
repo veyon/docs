@@ -6,15 +6,16 @@
 # Translators:
 # Tobias Junghans, 2019
 # Pavel Borecki <pavel.borecki@gmail.com>, 2019
+# Translator En, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:45+0200\n"
+"POT-Creation-Date: 2020-01-08 16:42+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2019\n"
+"Last-Translator: Translator En, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/veyon-solutions/teams/65452/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1004,7 +1005,7 @@ msgid "Delete configuration"
 msgstr ""
 
 msgid "FAQ - Frequently Asked Questions"
-msgstr ""
+msgstr "FAQ - Časté otázky"
 
 msgid "Does Veyon run under Chrome OS (ChromeBooks) or MacOS?"
 msgstr ""
@@ -3341,7 +3342,7 @@ msgstr ""
 "limit). Pokud jsou zde opakovaná přerušení nebo prodlevy při vysílání "
 "obrazu, je třeba tuto hodnotu zvýšit."
 
-msgid "**Default:** 128 MB*"
+msgid "**Default:** *128 MB*"
 msgstr ""
 
 msgid ""

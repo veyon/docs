@@ -499,7 +499,7 @@ Key frame interval
 Memory limit
     All screen update data is stored by the demo server in an internal buffer and then distributed to clients. To prevent the internal buffer between two key frames from occupying too much memory due to too many incremental updates, the value specified here is used as a limit. This limit is a soft limit, so that if it is exceeded, a key frame update is attempted (even if the key frame interval has not yet expired), but the buffer still retains all data. The buffer is only reset when the double value is exceeded (hard limit). If there are repeated interruptions or delays while broadcasting a screen, this value should be increased.
 
-    **Default:** 128 MB*
+    **Default:** *128 MB*
 
 
 LDAP

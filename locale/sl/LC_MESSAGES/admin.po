@@ -7,16 +7,16 @@
 # Ksenija Koželj <ksenija.kozelj@gmail.com>, 2019
 # Jure Skarabot <jure.eniac@gmail.com>, 2019
 # Stanislav <stanislav.rupar@gmail.com>, 2019
-# Tobias Junghans, 2019
+# Tobias Junghans, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:45+0200\n"
+"POT-Creation-Date: 2020-01-08 16:42+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2019\n"
+"Last-Translator: Tobias Junghans, 2020\n"
 "Language-Team: Slovenian (https://www.transifex.com/veyon-solutions/teams/65452/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4239,8 +4239,8 @@ msgstr ""
 "ponastavi. Če se med oddajanjem zaslona ponavljajo prekinitve ali zamude, je"
 " treba to vrednost povečati."
 
-msgid "**Default:** 128 MB*"
-msgstr "**Privzeto:** 128 MB*"
+msgid "**Default:** *128 MB*"
+msgstr "**Privzeto:** *128 MB*"
 
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "

@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2019
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2020
+# Pavel Borecki <pavel.borecki@gmail.com>, 2019
+# Translator En, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,19 +14,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-28 17:48+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2020\n"
-"Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
+"Last-Translator: Translator En, 2020\n"
+"Language-Team: Czech (https://www.transifex.com/veyon-solutions/teams/65452/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 msgid "FAQ - Frequently Asked Questions"
-msgstr "FAQ - 常見問答集"
+msgstr "FAQ - Časté otázky"
 
 msgid "Can other users see my screen?"
-msgstr "其他使用者能否看到我的螢幕?"
+msgstr "Mohou ostatní uživatelé vidět moji obrazovku?"
 
 msgid ""
 "Which user can access which computer under which circumstances depends on "
@@ -38,9 +38,11 @@ msgid ""
 "access control rules according to your needs as described in the "
 "administration manual."
 msgstr ""
+"Který uživatel má přístup ke kterému počítači, za jakých okolností závisí na nastavení systému nakonfigurovaném správcem. Software je obvykle nakonfigurován tak, aby instruktor kurzu měl přístup k počítačům účastníků kurzu, ale ne naopak. Závisí na nastavení také to, zda jiní instruktoři kurzu vidí vaši obrazovku, nebo instruktoři ostatních účastníků kurzu. Chcete-li nakonfigurovat pravidla řízení přístupu podle svých potřeb, jak je popsáno v příručce pro správu, kontaktujte svého správce.\n"
+" "
 
 msgid "How frequently are the computer thumbnails updated?"
-msgstr "更新電腦縮圖的頻率?"
+msgstr "Jak často jsou ikony počítače aktualizovány"
 
 msgid ""
 "Usually the computer thumbnails in the monitoring view are updated once a "
@@ -48,19 +50,26 @@ msgid ""
 "may be slight deviations. In contrast when remote controlling or viewing a "
 "computer, you see the screen content of the remote computer in real time."
 msgstr ""
+"Počítačové ikony se obvykle v monitorovacím zobrazení aktualizují jednou za "
+"sekundu. V závislosti na využití sítě a počítače mohou existovat malé "
+"odchylky. Naopak při dálkovém ovládání nebo prohlížení počítače vidíte obsah"
+" obrazovky vzdáleného počítače v reálném čase."
 
 msgid ""
 "What happens if I accidentally close the Veyon Master application window?"
-msgstr "如果我不小心關閉了 Veyon Master 應用程式視窗，會發生什麼情況?"
+msgstr "Co se stane, když náhodou zavřu okno aplikace Veyon Master?"
 
 msgid ""
 "Any active functions such as demo mode or screen lock are stopped when the "
 "program is closed. However, you can simply reopen the program and activate "
 "the mode again if necessary."
 msgstr ""
+"Po ukončení programu se zastaví všechny aktivní funkce, jako je demo režim "
+"nebo zámek obrazovky. Program však můžete znovu otevřít a v případě potřeby "
+"režim znovu aktivovat."
 
 msgid "How can I broadcast the screen of a student to all other screens?"
-msgstr "如何將學生的螢幕廣播到所有其他螢幕?"
+msgstr "Jak mohu vyslat obrazovku studenta na všechny ostatní obrazovky?"
 
 msgid ""
 "If you want to transfer a student's screen instead of your own screen in "
@@ -70,24 +79,36 @@ msgid ""
 "remote view window - and therefore the student's screen - to all other "
 "computers."
 msgstr ""
+"Pokud chcete přenést obrazovku studenta namísto své vlastní obrazovky v demo"
+" režimu, nejprve aktivujte demo režim pro všechny počítače. Poté zastavte "
+"demo režim pro studenta, který provádí demo pomocí kontextové nabídky. "
+"Nakonec otevřete vzdálený pohled na počítač studentů. Tím se přenese okno "
+"vzdáleného zobrazení - a tedy obrazovka studenta - na všechny ostatní "
+"počítače."
 
 msgid "Program features"
-msgstr "程式功能"
+msgstr "Funkce programu"
 
 msgid ""
 "Veyon offers a variety of features that let you control and access "
 "computers. All available features are accessible through the buttons in the "
 "toolbar as well as the context menu of individual computers."
 msgstr ""
+"Veyon nabízí celou řadu funkcí, které vám umožňují řídit a přistupovat k "
+"počítačům. Všechny dostupné funkce jsou dostupné prostřednictvím tlačítek na"
+" panelu nástrojů a také z místní nabídky jednotlivých počítačů."
 
 msgid ""
 "If you move the mouse over the individual buttons in the toolbar, a tooltip "
 "with a short help text is displayed unless you have disabled tooltips. "
 "Pressing a button activates the desired feature on all displayed computers."
 msgstr ""
+"Pokud pohnete myší přes jednotlivá tlačítka na panelu nástrojů, zobrazí se "
+"popisek s krátkým textem nápovědy, pokud nemáte zakázané popisky. Stisknutím"
+" tlačítka aktivujete požadovanou funkci na všech zobrazených počítačích."
 
 msgid "Using functions on individual computers"
-msgstr "在單獨電腦上使用功能"
+msgstr "Používání funkcí na jednotlivých počítačích"
 
 msgid ""
 "If you only want to activate a function on a single computer, right-click "
@@ -95,19 +116,27 @@ msgid ""
 "context menu. The entries in the context menu are displayed dynamically "
 "depending on the active functions."
 msgstr ""
+"Pokud chcete aktivovat funkci pouze na jednom počítači, klepněte pravým "
+"tlačítkem myši na počítač v zobrazení monitoru a z kontextové nabídky "
+"vyberte požadovanou funkci. Položky v kontextové nabídce se zobrazují "
+"dynamicky v závislosti na aktivních funkcích."
 
 msgid ""
 "You can also select multiple computers in the monitor view by drawing a "
 "selection rectangle with the mouse that includes all desired computers:"
 msgstr ""
+"Můžete také vybrat více počítačů v zobrazení monitoru nakreslením obdélníku "
+"výběru myší, která obsahuje všechny požadované počítače"
 
 msgid ""
 "Alternatively, you can press the :kbd:`Ctrl` key and add computers "
 "individually to the selection via mouse click."
 msgstr ""
+"Alternativně můžete stisknout klávesu: kbd: `Ctrl` a přidat počítače "
+"jednotlivě do výběru kliknutím myši."
 
 msgid "Monitoring mode"
-msgstr "監視模式"
+msgstr "Monitorovací režim"
 
 msgid ""
 "By default Veyon is running in monitoring mode. In this mode you have an "
@@ -115,6 +144,10 @@ msgid ""
 "screen content is updated almost in real time, so you can monitor all "
 "activity at the selected locations."
 msgstr ""
+"Veyon je ve výchozím nastavení spuštěn v monitorovacím režimu. V tomto "
+"režimu máte přehled o všech počítačích a jejich obsah obrazovky zobrazíte v "
+"miniaturách. Obsah obrazovky je aktualizován téměř v reálném čase, takže "
+"můžete sledovat veškerou aktivitu na vybraných místech."
 
 msgid ""
 "As long as there is no connection to a computer, a computer icon is "
@@ -122,21 +155,31 @@ msgid ""
 " the icon is initially colored gray. As soon as the program detects that the"
 " computer is unreachable or access is denied, the color changes to red."
 msgstr ""
+"Dokud není k počítači připojení, místo obsahu obrazovky se zobrazí ikona "
+"počítače. Po spuštění programu je ikona původně zbarvena šedě. Jakmile "
+"program zjistí, že je počítač nedostupný nebo je přístup odepřen, barva se "
+"změní na červenou."
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
 "computers to a different mode. You can exit the respective mode by "
 "activating monitoring mode again."
-msgstr "下一節中描述的一些功能將遠端電腦切換到其它模式。 您可以透過再次啟動監視模式來結束相應的模式。"
+msgstr ""
+"Některé funkce popsané v následujících částech přepínají vzdálené počítače "
+"do jiného režimu. Příslušný režim můžete ukončit opětovnou aktivací "
+"monitorovacího režimu."
 
 msgid "Demonstration mode"
-msgstr "示範模式"
+msgstr "Demonstrační režim"
 
 msgid ""
 "You can use the demonstration mode (demo mode) to start a presentation. In "
 "this mode, your screen content is broadcasted to all computers and displayed"
 " in real time. You can choose between a full screen and a window demo."
 msgstr ""
+"Můžete použít demo režim pro spuštění prezentace. V tomto režimu je obsah "
+"obrazovky vysílán do všech počítačů a zobrazován v reálném čase. Můžete si "
+"vybrat mezi celou obrazovkou a ukázkou okna."
 
 msgid ""
 "During a full screen demo your screen content will be displayed in full "
@@ -144,6 +187,10 @@ msgid ""
 "for other tasks in this mode because all input devices are locked. In this "
 "way you will gain the full attention of your students."
 msgstr ""
+"Během ukázky na celou obrazovku se obsah obrazovky zobrazí na celé obrazovce"
+" na vzdálených počítačích. Přihlášení uživatelé nemohou v tomto režimu "
+"používat své počítače pro jiné úkoly, protože všechna vstupní zařízení jsou "
+"uzamčena. Tímto způsobem získáte plnou pozornost svých studentů."
 
 msgid ""
 "By contrast, a window demo allows users to switch between the demo window "
@@ -151,11 +198,18 @@ msgid ""
 " windows side by side and try out the demonstrated steps themselves in "
 "parallel. The input devices are therefore not locked in this mode."
 msgstr ""
+"Naproti tomu demo okna umožňuje uživatelům přepínat mezi demo oknem a jejich"
+" vlastními aplikacemi. Účastníci kurzu mohou například uspořádat okna vedle "
+"sebe a vyzkoušet si předvedené kroky paralelně. Vstupní zařízení proto "
+"nejsou v tomto režimu uzamčena."
 
 msgid ""
 "In order to start a full screen or window demo, you just have to press the "
 ":guilabel:`Fullscreen demo` or :guilabel:`Window demo` button:"
 msgstr ""
+"Chcete-li spustit demo na celou obrazovku nebo okno, stačí stisknout "
+"tlačítko: guilabel: `Demo na celou obrazovku`  nebo: guilabel:` Demo na "
+"okno` :"
 
 msgid ""
 "If you want to leave the demonstration mode again, simply press the button "
@@ -163,9 +217,13 @@ msgid ""
 "monitoring mode globally. The context menu can also be used to stop the "
 "demonstration mode on individual computers."
 msgstr ""
+"Pokud chcete opustit demonstrační režim znovu, jednoduše stiskněte tlačítko "
+"znovu nebo klikněte na tlačítko :guilabel:`Monitoring` pro přepnutí zpět do "
+"monitorovacího režimu globálně. Kontextové menu lze také použít k zastavení "
+"demonstračního režimu na jednotlivých počítačích."
 
 msgid "Lock screens"
-msgstr "鎖定螢幕"
+msgstr "Zamknout obrazovky"
 
 msgid ""
 "Another way to draw students' attention is to use the screen lock feature. "
@@ -174,15 +232,24 @@ msgid ""
 "students. In addition, a lock symbol is displayed to prevent distractions "
 "caused by open applications."
 msgstr ""
+"Dalším způsobem, jak upozornit studenty, je použití funkce zámku obrazovky. "
+"Stejně jako během demonstrace na celou obrazovku, jsou všechna vstupní "
+"zařízení v počítačích studentů uzamčena. Počítače pak nemohou studenti dále "
+"používat. Kromě toho je zobrazen symbol zámku, který zabraňuje rozptylování "
+"způsobenému otevřenými aplikacemi."
 
 msgid "Press the :guilabel:`Lock` button to lock all displayed computers:"
-msgstr "按下 :guilabel:`鎖定` 按鈕鎖定所有顯示的電腦"
+msgstr ""
+"Stisknutí tlačítka :guilabel:`Lock` zamkne všechny zobrazené počítače:"
 
 msgid ""
 "If you want to unlock the screens, simply press the button again or click "
 "the :guilabel:`Monitoring` button to switch back to monitoring mode "
 "globally."
 msgstr ""
+"Pokud chcete obrazovky odemknout, jednoduše stiskněte tlačítko znovu nebo "
+"klikněte na tlačítko :guilabel: `Monitoring` pro přepnutí zpět do globálního"
+" monitorovacího režimu."
 
 msgid ""
 "If only individual computers are to be locked, you can select them as "
@@ -201,7 +268,7 @@ msgid ""
 msgstr ""
 
 msgid "Remote access"
-msgstr "遠端存取"
+msgstr "Vzdálený přístup"
 
 msgid ""
 "The feature group *remote access* consists of two very similar features "
@@ -229,7 +296,7 @@ msgid ""
 msgstr ""
 
 msgid "Afterwards a new window opens with the remote access view:"
-msgstr "之後，開啟一個含有遠端存取檢視的新視窗:"
+msgstr ""
 
 msgid ""
 "The remote screen is then displayed within a few seconds and updated in real"
@@ -277,10 +344,10 @@ msgid ""
 msgstr ""
 
 msgid "With the button :guilabel:`Exit` the remote access window is closed."
-msgstr "使用按鈕 :guilabel:`結束` 遠端存取視窗關閉。"
+msgstr ""
 
 msgid "Power on, restart and shutdown computers"
-msgstr "開啟電源、重新開機和關閉電腦"
+msgstr ""
 
 msgid ""
 "The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power "
@@ -304,10 +371,10 @@ msgid ""
 msgstr ""
 
 msgid "The following actions are available:"
-msgstr "以下動作可用:"
+msgstr ""
 
 msgid "Power down now"
-msgstr "立即關閉電源"
+msgstr "Vypnout nyní"
 
 msgid ""
 "The computers will be powered down immediately without further confirmation "
@@ -315,7 +382,7 @@ msgid ""
 msgstr ""
 
 msgid "Install updates and power down"
-msgstr "安裝更新並關閉電源"
+msgstr "Nainstalovat aktualizace a vypnout"
 
 msgid ""
 "If supported by the operating system all available system updates will be "
@@ -324,7 +391,7 @@ msgid ""
 msgstr ""
 
 msgid "Power down after user confirmation"
-msgstr "使用者確認後關閉電源"
+msgstr "Vypnout po po potvrzení uživatelem"
 
 msgid ""
 "With this option each logged on user will be asked whether to shut down the "
@@ -333,12 +400,12 @@ msgid ""
 msgstr ""
 
 msgid "Power down after timeout"
-msgstr "逾時後關閉電源"
+msgstr "Vypnout po uplynutí časového limitu"
 
 msgid ""
 "Selecting this option opens a dialog window where you can set a time after "
 "which the computers will be powered down:"
-msgstr "選取這個選項將開啟一個對話方塊視窗，您可以在其中設定電腦將關閉電源的時間:"
+msgstr ""
 
 msgid ""
 "After accepting the dialog a countdown window is displayed on all computers "
@@ -362,7 +429,7 @@ msgid ""
 msgstr ""
 
 msgid "Log in users"
-msgstr "登入使用者"
+msgstr ""
 
 msgid ""
 "The :guilabel:`Log in` feature allows to remotely log in a particular user "
@@ -376,7 +443,7 @@ msgid ""
 msgstr ""
 
 msgid "Click on :guilabel:`OK` to log in the specified user."
-msgstr "按一下 :guilabel:`確定` 以登入指定的使用者。"
+msgstr ""
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "
@@ -396,7 +463,7 @@ msgid ""
 msgstr ""
 
 msgid "Log off users"
-msgstr "登出使用者"
+msgstr ""
 
 msgid ""
 "The :guilabel:`Log off` feature complements the possibilities described in "
@@ -413,7 +480,7 @@ msgstr ""
 msgid ""
 "A typical use case for this feature can be to end a course for all "
 "participants at the same time."
-msgstr "這個功能的典型用例是同時結束所有參與者的課程。"
+msgstr ""
 
 msgid ""
 "Please note that the logged on users – depending on the program "
@@ -424,7 +491,7 @@ msgid ""
 msgstr ""
 
 msgid "Send text message"
-msgstr "傳送文字訊息"
+msgstr "Poslat textovou zprávu"
 
 msgid ""
 "Another possibility for user interaction is to send a text message to "
@@ -439,10 +506,10 @@ msgid ""
 msgstr ""
 
 msgid "Click on :guilabel:`OK` to send the entered message."
-msgstr "按一下 :guilabel:`確定` 以傳送輸入的訊息。"
+msgstr ""
 
 msgid "Run program"
-msgstr "執行程式"
+msgstr "Spustit aplikaci"
 
 msgid ""
 "If a specific program is to be started on all computers, you can use the "
@@ -490,7 +557,7 @@ msgid ""
 msgstr ""
 
 msgid "Open website"
-msgstr "開啟網站"
+msgstr "Otevřít webovou stránku"
 
 msgid ""
 "If you want all students to open a specific website, you can automatically "
@@ -520,7 +587,7 @@ msgid ""
 msgstr ""
 
 msgid "File transfer"
-msgstr "檔案傳輸"
+msgstr "Přenos souboru"
 
 msgid ""
 "Using the file transfer feature you can easily transfer files to all "
@@ -540,7 +607,7 @@ msgid ""
 msgstr ""
 
 msgid "Overwrite existing files"
-msgstr "覆寫現有檔案"
+msgstr "Přepsat existující soubory"
 
 msgid ""
 "Enable this option to overwrite possibly existing files. This can be useful "
@@ -548,7 +615,7 @@ msgid ""
 msgstr ""
 
 msgid "Transfer only"
-msgstr "只傳輸"
+msgstr "Pouze přenos"
 
 msgid ""
 "In this mode, only files are transferred without further actions being "
@@ -557,7 +624,7 @@ msgid ""
 msgstr ""
 
 msgid "Transfer and open file(s) with associated program"
-msgstr "傳輸並使用關聯的程式開啟檔案"
+msgstr "Přenést a otevřít soubory pomocí přiřazeného programu"
 
 msgid ""
 "In this mode, the transferred files will be opened with the corresponding "
@@ -567,7 +634,7 @@ msgid ""
 msgstr ""
 
 msgid "Transfer and open destination folder"
-msgstr "傳輸並開啟目的地資料夾"
+msgstr "Přenést a otevřít cílovou složku"
 
 msgid ""
 "If you intend to transfer many files at once, opening all of them "
@@ -585,7 +652,7 @@ msgid ""
 msgstr ""
 
 msgid "Screenshot"
-msgstr "螢幕快照"
+msgstr "Snímek obrazovky"
 
 msgid ""
 "Veyon allows you to save the current screen content of single or all "
@@ -606,169 +673,169 @@ msgid ""
 msgstr ""
 
 msgid "Monitoring"
-msgstr "監視"
+msgstr "Dohledování"
 
 msgid "Observation"
-msgstr "觀察"
+msgstr ""
 
 msgid "Computer overview"
-msgstr "電腦概述"
+msgstr ""
 
 msgid "Fullscreen demo"
-msgstr "全螢幕示範"
+msgstr "Ukázka na celou obrazovku"
 
 msgid "Window demo"
-msgstr "視窗示範"
+msgstr "Ukázka v okně"
 
 msgid "Demo mode"
-msgstr "示範模式"
+msgstr ""
 
 msgid "Demonstration"
-msgstr "示範"
+msgstr ""
 
 msgid "Presentation"
-msgstr "簡報"
+msgstr ""
 
 msgid "Screen broadcast"
-msgstr "螢幕廣播"
+msgstr ""
 
 msgid "Screen lock"
-msgstr "螢幕鎖定"
+msgstr "Uzamčení obrazovky"
 
 msgid "Lock screen"
-msgstr "鎖定螢幕"
+msgstr ""
 
 msgid "Lock computers"
-msgstr "鎖定電腦"
+msgstr ""
 
 msgid "Lock input devices"
-msgstr "鎖定輸入裝置"
+msgstr ""
 
 msgid "Remote control"
-msgstr "遠端控制"
+msgstr "Ovládání na dálku"
 
 msgid "Remote view"
-msgstr "遠端檢視"
+msgstr "Vzdálený pohled"
 
 msgid "Power on"
-msgstr "開啟電源"
+msgstr "Zapnout"
 
 msgid "Turn on"
-msgstr "開啟"
+msgstr ""
 
 msgid "Switch on"
-msgstr "開啟"
+msgstr ""
 
 msgid "Power down"
-msgstr "關閉電源"
+msgstr "Vypnout"
 
 msgid "Shutdown"
-msgstr "關機"
+msgstr ""
 
 msgid "Turn off"
-msgstr "關閉"
+msgstr ""
 
 msgid "Restart"
-msgstr "重新啟動"
+msgstr ""
 
 msgid "Reboot"
-msgstr "重新開機"
+msgstr "Restartovat"
 
 msgid "WoL"
-msgstr "WoL"
+msgstr ""
 
 msgid "Wake-on-LAN"
-msgstr "Wake-on-LAN"
+msgstr ""
 
 msgid "Log in"
-msgstr "登入"
+msgstr "Přihlásit"
 
 msgid "Login"
-msgstr "登入"
+msgstr ""
 
 msgid "Logon"
-msgstr "登入"
+msgstr ""
 
 msgid "Log on"
-msgstr "登入"
+msgstr ""
 
 msgid "Log off"
-msgstr "登出"
+msgstr "Odhlásit"
 
 msgid "Log out"
-msgstr "登出"
+msgstr ""
 
 msgid "User log out"
-msgstr "使用者登出"
+msgstr ""
 
 msgid "End of lesson"
-msgstr "課程結束"
+msgstr ""
 
 msgid "Text message"
-msgstr "文字訊息"
+msgstr "Textová zpráva"
 
 msgid "Message"
-msgstr "訊息"
+msgstr ""
 
 msgid "Message window"
-msgstr "訊息視窗"
+msgstr ""
 
 msgid "Start program"
-msgstr "啟動程式"
+msgstr ""
 
 msgid "Execute programm"
-msgstr "執行程式"
+msgstr ""
 
 msgid "Commands"
-msgstr "命令"
+msgstr ""
 
 msgid "Open document"
-msgstr "開啟文件"
+msgstr ""
 
 msgid "Website"
-msgstr "網站"
+msgstr ""
 
 msgid "Open browser"
-msgstr "開啟瀏覽器"
+msgstr ""
 
 msgid "Browser"
-msgstr "瀏覽器"
+msgstr ""
 
 msgid "URL"
 msgstr "URL"
 
 msgid "Web address"
-msgstr "網址"
+msgstr ""
 
 msgid "Files"
-msgstr "檔案"
+msgstr "Soubory"
 
 msgid "Transfer files"
-msgstr "傳輸檔案"
+msgstr ""
 
 msgid "Distribute files"
-msgstr "分發檔案"
+msgstr ""
 
 msgid "Send files"
-msgstr "傳送檔案"
+msgstr ""
 
 msgid "Open files"
-msgstr "開啟檔案"
+msgstr ""
 
 msgid "Destination folder"
-msgstr "目的地資料夾"
+msgstr ""
 
 msgid "Snapshot"
-msgstr "快照"
+msgstr "Snímek obrazovky"
 
 msgid "Glossary"
-msgstr "詞彙"
+msgstr ""
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr "從 Wikipedia，免費的百科全書:"
+msgstr ""
 
 msgid "Button"
-msgstr "按鈕"
+msgstr ""
 
 msgid ""
 "The term button (sometimes known as a command button or push button) refers "
@@ -778,10 +845,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Button_(computing)"
-msgstr "https://en.wikipedia.org/wiki/Button_(computing)"
+msgstr ""
 
 msgid "Context menu"
-msgstr "內容功能表"
+msgstr ""
 
 msgid ""
 "A context menu (also called contextual, shortcut, and pop up or pop-up menu)"
@@ -790,10 +857,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Context_menu"
-msgstr "https://en.wikipedia.org/wiki/Context_menu"
+msgstr ""
 
 msgid "FAQ"
-msgstr "FAQ"
+msgstr ""
 
 msgid ""
 "Frequently Asked Questions (FAQs) are a compilation of frequently asked "
@@ -805,10 +872,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr "https://en.wikipedia.org/wiki/FAQ"
+msgstr ""
 
 msgid "Graphical user interface"
-msgstr "圖形化使用者介面"
+msgstr ""
 
 msgid ""
 "Graphical user interface (GUI) refers to a form of user interface of a "
@@ -820,10 +887,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Graphical_user_interface"
-msgstr "https://en.wikipedia.org/wiki/Graphical_user_interface"
+msgstr ""
 
 msgid "Input device"
-msgstr "輸入裝置"
+msgstr ""
 
 msgid ""
 "Input devices are all devices that can be used to supply information to a "
@@ -831,10 +898,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Input_device"
-msgstr "https://en.wikipedia.org/wiki/Input_device"
+msgstr ""
 
 msgid "Keyboard shortcut"
-msgstr "鍵盤快速鍵"
+msgstr ""
 
 msgid ""
 "A keyboard shortcut is a series of one or several keys, such as \"Ctrl+F\" "
@@ -844,10 +911,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Keyboard_shortcut"
-msgstr "https://en.wikipedia.org/wiki/Keyboard_shortcut"
+msgstr ""
 
 msgid "Password"
-msgstr "密碼"
+msgstr "Heslo"
 
 msgid ""
 "A password is a word or string of characters used for user authentication to"
@@ -857,7 +924,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Password"
-msgstr "https://en.wikipedia.org/wiki/Password"
+msgstr ""
 
 msgid ""
 "A screenshot, also called screen capture or screen grab, is a digital image "
@@ -868,10 +935,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Screenshot"
-msgstr "https://en.wikipedia.org/wiki/Screenshot"
+msgstr ""
 
 msgid "Status bar"
-msgstr "狀態列"
+msgstr ""
 
 msgid ""
 "A status bar is a graphical control element which poses an information area "
@@ -883,10 +950,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Status_bar"
-msgstr "https://en.wikipedia.org/wiki/Status_bar"
+msgstr ""
 
 msgid "Tooltip"
-msgstr "工具提示"
+msgstr ""
 
 msgid ""
 "The tooltip or infotip or a hint is a common graphical user interface "
@@ -897,10 +964,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Tooltip"
-msgstr "https://en.wikipedia.org/wiki/Tooltip"
+msgstr ""
 
 msgid "Username"
-msgstr "使用者名稱"
+msgstr "Uživatelské jméno"
 
 msgid ""
 "A username is a name with which a user can log on to a computer, a website "
@@ -909,16 +976,16 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/User_(computing)"
-msgstr "https://en.wikipedia.org/wiki/User_(computing)"
+msgstr ""
 
 msgid "Veyon User Manual"
-msgstr "Veyon 使用者手冊"
+msgstr ""
 
 msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
+msgstr ""
 
 msgid "Introduction"
-msgstr "介紹"
+msgstr "Úvod"
 
 msgid ""
 "Veyon is an application that lets you monitor and control a group of "
@@ -927,15 +994,15 @@ msgid ""
 msgstr ""
 
 msgid "Program start and login"
-msgstr "程式啟動和登入"
+msgstr ""
 
 msgid "The program is started via the start menu or a desktop icon:"
-msgstr "程式透過 [開始] 功能表或桌面圖示啟動:"
+msgstr ""
 
 msgid ""
 "Depending on the system configuration you will be prompted for your username"
 " and your password:"
-msgstr "根據系統組態，系統將提示您輸入使用者名稱和密碼:"
+msgstr ""
 
 msgid ""
 "Enter your username and password here or – if given – the credentials of a "
@@ -946,12 +1013,12 @@ msgid ""
 msgstr ""
 
 msgid "User interface"
-msgstr "使用者介面"
+msgstr "Uživatelské rozhraní"
 
 msgid ""
 "After the program start you will see the user interface with the toolbar "
 "(1), the monitor view (2) and the status bar with various controls (3):"
-msgstr "程式啟動後,您將看到帶有工具列 (1)、監視器檢視 (2) 和含有各種控制項狀態列的使用者介面 (3):"
+msgstr ""
 
 msgid ""
 "The toolbar contains a number of buttons for activating different features. "
@@ -978,8 +1045,6 @@ msgid ""
 "buttons, you can open and close the :ref:`computer select panel "
 "<ComputerSelectPanel>` and the :ref:`screenshots panel <ScreenshotsPanel>`."
 msgstr ""
-"使用 :guilabel:`位置 & 電腦` 和 :guilabel:`螢幕快照` 按鈕，您可以開啟和關閉 :ref:`電腦選取面板 "
-"<ComputerSelectPanel>` 及 :ref:`螢幕快照面板 <ScreenshotsPanel>`。"
 
 msgid ""
 "The search bar allows you to filter the computers displayed using computer "
@@ -1019,7 +1084,7 @@ msgid ""
 msgstr ""
 
 msgid "Toolbar"
-msgstr "工具列"
+msgstr ""
 
 msgid ""
 "You can customize the appearance and behavior of the toolbar. A right click "
@@ -1040,7 +1105,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer select panel"
-msgstr "電腦選取面板"
+msgstr ""
 
 msgid ""
 "The :guilabel:`Locations & Computers` button in the status bar opens the "
@@ -1078,7 +1143,7 @@ msgid ""
 msgstr ""
 
 msgid "Screenshots panel"
-msgstr "螢幕快照面板"
+msgstr ""
 
 msgid ""
 "Using the screenshot management panel, you can view and delete all captured "
@@ -1098,10 +1163,10 @@ msgid ""
 msgstr ""
 
 msgid "Start menu"
-msgstr "開始功能表"
+msgstr ""
 
 msgid "Desktop icon"
-msgstr "桌面圖示"
+msgstr ""
 
 msgid "Monitor view"
-msgstr "顯示器檢視"
+msgstr ""

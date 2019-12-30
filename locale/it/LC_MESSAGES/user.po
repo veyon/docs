@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2019
 # albanobattistella <albano_battistella@hotmail.com>, 2019
+# Tobias Junghans, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 13:33+0200\n"
+"POT-Creation-Date: 2019-12-28 17:48+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2019\n"
+"Last-Translator: Tobias Junghans, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -146,7 +146,7 @@ msgid ""
 "Alternatively, you can press the :kbd:`Ctrl` key and add computers "
 "individually to the selection via mouse click."
 msgstr ""
-"In alternativa, puoi premere il tasto: kbd: `Ctrl` key e aggiungere i "
+"In alternativa, puoi premere il tasto :kbd:`Ctrl` key e aggiungere i "
 "computer individualmente alla selezione con il clic del mouse."
 
 msgid "Monitoring mode"
@@ -556,7 +556,7 @@ msgid ""
 "on all computers. A corresponding button in the toolbar is available for "
 "this purpose:"
 msgstr ""
-"La funzione: guilabel: `Accedi` consente di accedere in remoto a un "
+"La funzione :guilabel:`Accedi` consente di accedere in remoto a un "
 "determinato utente su tutti i computer. A tale scopo è disponibile un "
 "pulsante corrispondente nella barra degli strumenti:"
 
@@ -568,7 +568,7 @@ msgstr ""
 "possibile inserire nome utente e password per accedere:"
 
 msgid "Click on :guilabel:`OK` to log in the specified user."
-msgstr "Fare clic su: guilabel: `OK` per accedere all'utente specificato."
+msgstr "Fare clic su :guilabel:`OK` per accedere all'utente specificato."
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "
@@ -586,7 +586,7 @@ msgid ""
 msgstr ""
 "Questa funzione è attivata solo su computer su cui non è stato effettuato "
 "l'accesso a nessun utente. Per garantire uno stato coerente su tutti i "
-"computer, prendere in considerazione l'utilizzo della funzione: ref: "
+"computer, prendere in considerazione l'utilizzo della funzione :ref: "
 "`LogOffUsers`."
 
 msgid ""
@@ -716,7 +716,7 @@ msgid ""
 "according item and press the :kbd:`Del` key."
 msgstr ""
 "Per rimuovere un programma personalizzato aggiunto in precedenza, sposta il "
-"mouse sull'elemento corrispondente e premi il tasto: kbd: `Del`."
+"mouse sull'elemento corrispondente e premi il tasto :kbd:`Del`."
 
 msgid ""
 "You can pass an argument to most programs with the name of a file that you "
@@ -786,7 +786,7 @@ msgid ""
 "according item and press the :kbd:`Del` key."
 msgstr ""
 "Per rimuovere un sito Web personalizzato aggiunto in precedenza, spostare il"
-" mouse sull'elemento corrispondente e premere il tasto: kbd: `Del`."
+" mouse sull'elemento corrispondente e premere il tasto :kbd:`Del`."
 
 msgid "File transfer"
 msgstr "Trasferimento di file"
