@@ -25,7 +25,7 @@ copyright = '2017-2020, Veyon Solutions'
 author = 'Veyon Community'
 
 title = os.getenv('TITLE', 'Veyon Documentation')
-version = os.getenv('VERSION', '4.3.1')
+version = os.getenv('VERSION', '4.3.3')
 # The full version, including alpha/beta/rc tags.
 release = version
 
