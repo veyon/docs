@@ -97,7 +97,7 @@ Import and apply a given Veyon configuration automatically after the installatio
 
     veyon-x.y.z-win64-setup.exe /S /ApplyConfig=%cd%\MyConfig.json
 
-.. important:: You must specify an absolute path for the configuration file, since the internally called command line tool (*Veyon CLI*) is executed with in a different working directory. Please use either the suggested ``%cd``-variable or replace with an absolute path.
+.. important:: You must specify an absolute path for the configuration file, since the internally called command line tool (*Veyon CLI*) is executed with in a different working directory. Please use either the suggested ``%cd%``-variable or replace with an absolute path.
 
 Automated installation without the Veyon Master component:
 
