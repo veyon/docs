@@ -3,7 +3,8 @@
 export VEYON_MASTER_CREATE_DOC_FIGURES=1
 export QT_FONT_DPI=96
 
-for i in en $(find ../locale/ -mindepth 1 -maxdepth 1 -type d -printf "%f\n") ; do
+for i in $(find ../locale/ -mindepth 1 -maxdepth 1 -type d -printf "%f\n") ; do
+#for i in en de ; do
 	export LANG=$i.UTF-8
 	export LANGUAGE=$i
 	mkdir -p images/$i

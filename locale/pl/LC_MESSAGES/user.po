@@ -437,7 +437,7 @@ msgid ""
 msgstr ""
 
 msgid "The following actions are available:"
-msgstr ""
+msgstr "Dostępne są następujące działania:"
 
 msgid "Power down now"
 msgstr "Wyłącz natychmiast"
@@ -445,7 +445,7 @@ msgstr "Wyłącz natychmiast"
 msgid ""
 "The computers will be powered down immediately without further confirmation "
 "dialogs."
-msgstr ""
+msgstr "Komputery zostaną natychmiast wyłączone bez  potwierdzenia."
 
 msgid "Install updates and power down"
 msgstr "Zainstaluj aktualizacje i wyłącz"
@@ -455,6 +455,9 @@ msgid ""
 "installed during the shut down process. If no updates are available the "
 "respective computer will be powered down immediately."
 msgstr ""
+"Wszystkie dostępne aktualizacje systemu zostaną zainstalowane podczas "
+"procesu zamykania. Jeśli nie są dostępne żadne aktualizacje, odpowiedni "
+"komputer zostanie natychmiast wyłączony."
 
 msgid "Power down after user confirmation"
 msgstr "Wyłącz po potwierdzeniu przez użytkownika"
@@ -464,6 +467,9 @@ msgid ""
 "respective computer. If no user is logged on a particular computer, it will "
 "be powered down immediately."
 msgstr ""
+"Dzięki tej opcji każdy zalogowany użytkownik zostanie zapytany, czy zamknąć"
+"  komputer. Jeśli żaden użytkownik nie jest zalogowany na danym komputerze, "
+"zostanie natychmiast wyłączony."
 
 msgid "Power down after timeout"
 msgstr "Wyłącz po upływie limitu czasu"
@@ -472,11 +478,16 @@ msgid ""
 "Selecting this option opens a dialog window where you can set a time after "
 "which the computers will be powered down:"
 msgstr ""
+"Wybranie tej opcji powoduje otwarcie okna dialogowego, w którym możesz "
+"ustawić czas, po którym komputery zostaną wyłączone:"
 
 msgid ""
 "After accepting the dialog a countdown window is displayed on all computers "
 "telling the users to save their work and close all applications."
 msgstr ""
+"Po zaakceptowaniu okna dialogowego na wszystkich komputerach wyświetlane "
+"jest okno odliczania, informujące użytkowników aby  zapisali pracę i "
+"zamknęli wszystkie aplikacje."
 
 msgid ""
 "Please note that, depending on the program configuration, the computers will"
@@ -484,6 +495,10 @@ msgid ""
 "always make sure that the logged in users have saved all open documents etc."
 " and closed all programs if possible. This prevents unwanted data loss."
 msgstr ""
+"Uwaga: w zależności od konfiguracji programu komputery zostaną ponownie "
+"uruchomione lub zamknięte bez dalszych okien dialogowych. Dlatego zawsze "
+"upewnij się, że zalogowani użytkownicy zapisali wszystkie otwarte dokumenty "
+"itp. I zamknęli wszystkie programy. Zapobiega to niechcianej utracie danych."
 
 msgid ""
 "Depending on the configuration of the network and the system settings of the"
@@ -493,9 +508,14 @@ msgid ""
 "locations. For this reason, pay attention to the selected computers when "
 "using this feature."
 msgstr ""
+"W zależności od konfiguracji sieci i ustawień systemowych poszczególnych "
+"komputerów włączanie działa tylko w określonych warunkach technicznych. "
+"Jednocześnie po włączeniu nie ma sprawdzania uprawnień dostępu, więc może "
+"być możliwe włączenie komputerów w innych pokojach lub lokalizacjach. Z tego"
+" powodu podczas korzystania z tej funkcji zwróć uwagę na wybrane komputery."
 
 msgid "Log in users"
-msgstr ""
+msgstr "Zaloguj użytkowników"
 
 msgid ""
 "The :guilabel:`Log in` feature allows to remotely log in a particular user "
@@ -507,6 +527,8 @@ msgid ""
 "After pressing the button, a dialog window opens in which you can enter the "
 "username and password to log in:"
 msgstr ""
+"Po naciśnięciu przycisku otwiera się okno dialogowe, w którym możesz wpisać "
+"nazwę użytkownika i hasło, aby się zalogować:"
 
 msgid "Click on :guilabel:`OK` to log in the specified user."
 msgstr ""
@@ -516,6 +538,8 @@ msgid ""
 "select the respective computers and select the desired item in the context "
 "menu."
 msgstr ""
+"Jeśli chcesz użyć tej funkcji tylko dla pojedynczych komputerów, możesz "
+"wybrać odpowiednie komputery i wybrać żądany element w menu kontekstowym."
 
 msgid ""
 "This feature is only activated on computers on which no user is logged in. "
@@ -529,7 +553,7 @@ msgid ""
 msgstr ""
 
 msgid "Log off users"
-msgstr ""
+msgstr "Wyloguj użytkowników"
 
 msgid ""
 "The :guilabel:`Log off` feature complements the possibilities described in "
@@ -547,6 +571,8 @@ msgid ""
 "A typical use case for this feature can be to end a course for all "
 "participants at the same time."
 msgstr ""
+"Typowym przypadkiem użycia tej funkcji może być zakończenie kursu dla "
+"wszystkich uczestników jednocześnie."
 
 msgid ""
 "Please note that the logged on users – depending on the program "
@@ -742,10 +768,10 @@ msgid "Monitoring"
 msgstr "Monitoring"
 
 msgid "Observation"
-msgstr ""
+msgstr "Obserwacja"
 
 msgid "Computer overview"
-msgstr ""
+msgstr "Przegląd komputera"
 
 msgid "Fullscreen demo"
 msgstr "Demonstracja (pełny ekran)"
@@ -754,13 +780,13 @@ msgid "Window demo"
 msgstr "Demonstracja (w oknie)"
 
 msgid "Demo mode"
-msgstr ""
+msgstr "Tryb demo"
 
 msgid "Demonstration"
-msgstr ""
+msgstr "Demonstracja"
 
 msgid "Presentation"
-msgstr ""
+msgstr "Prezentacja"
 
 msgid "Screen broadcast"
 msgstr ""
@@ -769,13 +795,13 @@ msgid "Screen lock"
 msgstr "blokada ekranu"
 
 msgid "Lock screen"
-msgstr ""
+msgstr "Blokada ekranu"
 
 msgid "Lock computers"
-msgstr ""
+msgstr "Zablokuj komputery"
 
 msgid "Lock input devices"
-msgstr ""
+msgstr "Zablokuj urządzenia wejściowe"
 
 msgid "Remote control"
 msgstr "Zdalna kontrola"
@@ -787,73 +813,73 @@ msgid "Power on"
 msgstr "Uruchom"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Włącz"
 
 msgid "Switch on"
-msgstr ""
+msgstr "Włącz"
 
 msgid "Power down"
 msgstr "Wyłącz"
 
 msgid "Shutdown"
-msgstr ""
+msgstr "Wyłącz"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Wyłącz"
 
 msgid "Restart"
-msgstr ""
+msgstr "Restartuj"
 
 msgid "Reboot"
 msgstr "Uruchom ponownie"
 
 msgid "WoL"
-msgstr ""
+msgstr "WoL"
 
 msgid "Wake-on-LAN"
-msgstr ""
+msgstr "Wake-on-LAN"
 
 msgid "Log in"
 msgstr "Zaloguj"
 
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 msgid "Logon"
 msgstr ""
 
 msgid "Log on"
-msgstr ""
+msgstr "Zaloguj"
 
 msgid "Log off"
 msgstr "Wyloguj"
 
 msgid "Log out"
-msgstr ""
+msgstr "Wyloguj"
 
 msgid "User log out"
 msgstr ""
 
 msgid "End of lesson"
-msgstr ""
+msgstr "Koniec lekcji"
 
 msgid "Text message"
 msgstr "Wiadomość tekstowa"
 
 msgid "Message"
-msgstr ""
+msgstr "Wiadomość"
 
 msgid "Message window"
 msgstr ""
 
 msgid "Start program"
-msgstr ""
+msgstr "Uruchom program"
 
 msgid "Execute programm"
 msgstr ""
 
 msgid "Commands"
-msgstr ""
+msgstr "Komendy"
 
 msgid "Open document"
 msgstr ""
@@ -898,7 +924,7 @@ msgid "Glossary"
 msgstr ""
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr ""
+msgstr "Z Wikipedii, wolnej encyklopedii:"
 
 msgid "Button"
 msgstr ""
@@ -926,7 +952,7 @@ msgid "https://en.wikipedia.org/wiki/Context_menu"
 msgstr ""
 
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 msgid ""
 "Frequently Asked Questions (FAQs) are a compilation of frequently asked "
@@ -938,7 +964,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/FAQ"
 
 msgid "Graphical user interface"
 msgstr ""
@@ -1048,7 +1074,7 @@ msgid "Veyon User Manual"
 msgstr ""
 
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 msgid "Introduction"
 msgstr "Wprowadzenie"
