@@ -5,8 +5,8 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
-# Pavel Borecki <pavel.borecki@gmail.com>, 2019
 # Translator En, 2020
+# Pavel Borecki <pavel.borecki@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-08 16:42+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Translator En, 2020\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/veyon-solutions/teams/65452/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1148,7 +1148,7 @@ msgid "Technical glossary"
 msgstr ""
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr ""
+msgstr "Z Wikipedie, svobodné encyklopedie:"
 
 msgid "ACL"
 msgstr ""
@@ -1168,7 +1168,7 @@ msgid "https://en.wikipedia.org/wiki/Client_(computing)"
 msgstr ""
 
 msgid "FAQ"
-msgstr ""
+msgstr "ČKD"
 
 msgid ""
 "a list of frequently asked questions (FAQs) and answers on a particular "
@@ -1176,7 +1176,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://cs.wikipedia.org/wiki/FAQ"
 
 msgid "Host"
 msgstr ""
@@ -1279,7 +1279,7 @@ msgid "Veyon Administrator Manual"
 msgstr ""
 
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 msgid "Installation"
 msgstr "Instalace"
@@ -1577,7 +1577,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon Master"
-msgstr ""
+msgstr "Veyon – hlavní"
 
 msgid ""
 "An application program that can be used to monitor and control other "
@@ -3501,7 +3501,7 @@ msgid "Thumbnail size"
 msgstr ""
 
 msgid "Computer select panel"
-msgstr ""
+msgstr "Panel výběru počítače"
 
 msgid "Empty locations"
 msgstr ""

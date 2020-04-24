@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pavel Borecki <pavel.borecki@gmail.com>, 2019
 # Translator En, 2020
+# Pavel Borecki <pavel.borecki@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-28 17:48+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Translator En, 2020\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/veyon-solutions/teams/65452/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -347,7 +347,7 @@ msgid "With the button :guilabel:`Exit` the remote access window is closed."
 msgstr ""
 
 msgid "Power on, restart and shutdown computers"
-msgstr ""
+msgstr "Zapnout, restartovat a vypnout počítače"
 
 msgid ""
 "The features :guilabel:`Power on`, :guilabel:`Reboot` and :guilabel:`Power "
@@ -379,7 +379,7 @@ msgstr "Vypnout nyní"
 msgid ""
 "The computers will be powered down immediately without further confirmation "
 "dialogs."
-msgstr ""
+msgstr "Počítače budou okamžitě vypnuty, bez dalších potvrzovacích dialogů."
 
 msgid "Install updates and power down"
 msgstr "Nainstalovat aktualizace a vypnout"
@@ -389,6 +389,9 @@ msgid ""
 "installed during the shut down process. If no updates are available the "
 "respective computer will be powered down immediately."
 msgstr ""
+"Pokud je to podporováno operačním systémem, budou v průběhu vypínání "
+"nainstalovány veškeré dostupné aktualizace systému. Pokud nejsou k dispozici"
+" žádné aktualizace, příslušný počítač bude okamžitě vypnut."
 
 msgid "Power down after user confirmation"
 msgstr "Vypnout po po potvrzení uživatelem"
@@ -429,7 +432,7 @@ msgid ""
 msgstr ""
 
 msgid "Log in users"
-msgstr ""
+msgstr "Přihlásit uživatele"
 
 msgid ""
 "The :guilabel:`Log in` feature allows to remotely log in a particular user "
@@ -463,7 +466,7 @@ msgid ""
 msgstr ""
 
 msgid "Log off users"
-msgstr ""
+msgstr "Odhlásit uživatele"
 
 msgid ""
 "The :guilabel:`Log off` feature complements the possibilities described in "
@@ -622,6 +625,9 @@ msgid ""
 "performed. Use this mode to silently distribute teaching material in advance"
 " without disturbing the students."
 msgstr ""
+"V tomto režimu jsou pouze přeneseny soubory a nejsou provedeny žádné další "
+"akce. Tento režim slouží k tiché distribuci výukových materiálů dopředu, "
+"aniž by byli studenti vyrušováni."
 
 msgid "Transfer and open file(s) with associated program"
 msgstr "Přenést a otevřít soubory pomocí přiřazeného programu"
@@ -659,6 +665,9 @@ msgid ""
 "computers in image files. By clicking the button :guilabel:`Screenshot` you "
 "trigger the feature for all displayed computers:"
 msgstr ""
+"Veyon umožňuje uložit stávající obsah obrazovky jednoho či více počítačů do "
+"souborů s obrázky. Kliknutím na tlačítko :guilabel:`Screenshot` tuto funkci "
+"spustíte pro všechny zobrazené počítače:"
 
 msgid ""
 "If you want to use this feature for individual computers only, you can "
@@ -676,10 +685,10 @@ msgid "Monitoring"
 msgstr "Dohledování"
 
 msgid "Observation"
-msgstr ""
+msgstr "Pozorování"
 
 msgid "Computer overview"
-msgstr ""
+msgstr "Přehled počítače"
 
 msgid "Fullscreen demo"
 msgstr "Ukázka na celou obrazovku"
@@ -691,25 +700,25 @@ msgid "Demo mode"
 msgstr ""
 
 msgid "Demonstration"
-msgstr ""
+msgstr "Předvedení"
 
 msgid "Presentation"
-msgstr ""
+msgstr "Prezentace"
 
 msgid "Screen broadcast"
-msgstr ""
+msgstr "Vysílání obrazovky"
 
 msgid "Screen lock"
 msgstr "Uzamčení obrazovky"
 
 msgid "Lock screen"
-msgstr ""
+msgstr "Uzamknout obrazovku"
 
 msgid "Lock computers"
-msgstr ""
+msgstr "Uzamknout počítače"
 
 msgid "Lock input devices"
-msgstr ""
+msgstr "Uzamknout vstupní zařízení"
 
 msgid "Remote control"
 msgstr "Ovládání na dálku"
@@ -721,28 +730,28 @@ msgid "Power on"
 msgstr "Zapnout"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Zapnout"
 
 msgid "Switch on"
-msgstr ""
+msgstr "Zapnout"
 
 msgid "Power down"
 msgstr "Vypnout"
 
 msgid "Shutdown"
-msgstr ""
+msgstr "Vypnout"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Vypnout"
 
 msgid "Restart"
-msgstr ""
+msgstr "Restartovat"
 
 msgid "Reboot"
 msgstr "Restartovat"
 
 msgid "WoL"
-msgstr ""
+msgstr "Probuzení po síti"
 
 msgid "Wake-on-LAN"
 msgstr ""
@@ -763,79 +772,79 @@ msgid "Log off"
 msgstr "Odhlásit"
 
 msgid "Log out"
-msgstr ""
+msgstr "Odhlásit"
 
 msgid "User log out"
-msgstr ""
+msgstr "Odhlášení uživatele"
 
 msgid "End of lesson"
-msgstr ""
+msgstr "Konec lekce"
 
 msgid "Text message"
 msgstr "Textová zpráva"
 
 msgid "Message"
-msgstr ""
+msgstr "Zpráva"
 
 msgid "Message window"
-msgstr ""
+msgstr "Okno se správou"
 
 msgid "Start program"
-msgstr ""
+msgstr "Spustit program"
 
 msgid "Execute programm"
-msgstr ""
+msgstr "Vykonat program"
 
 msgid "Commands"
-msgstr ""
+msgstr "Příkazy"
 
 msgid "Open document"
-msgstr ""
+msgstr "Otevřít dokument"
 
 msgid "Website"
-msgstr ""
+msgstr "Webové stránky"
 
 msgid "Open browser"
-msgstr ""
+msgstr "Otevřít webový prohlížeč"
 
 msgid "Browser"
-msgstr ""
+msgstr "Webový prohlížeč"
 
 msgid "URL"
 msgstr "URL"
 
 msgid "Web address"
-msgstr ""
+msgstr "Webová adresa"
 
 msgid "Files"
 msgstr "Soubory"
 
 msgid "Transfer files"
-msgstr ""
+msgstr "Přenést soubory"
 
 msgid "Distribute files"
-msgstr ""
+msgstr "Distribuování souborů"
 
 msgid "Send files"
-msgstr ""
+msgstr "Odesílání souborů"
 
 msgid "Open files"
-msgstr ""
+msgstr "Otevírání souborů"
 
 msgid "Destination folder"
-msgstr ""
+msgstr "Cílová složka"
 
 msgid "Snapshot"
 msgstr "Snímek obrazovky"
 
 msgid "Glossary"
-msgstr ""
+msgstr "Slovník"
 
 msgid "From Wikipedia, the free encyclopedia:"
-msgstr ""
+msgstr "Z Wikipedie, svobodné encyklopedie:"
 
 msgid "Button"
-msgstr ""
+msgstr "Tlačítko"
 
 msgid ""
 "The term button (sometimes known as a command button or push button) refers "
@@ -845,10 +854,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Button_(computing)"
-msgstr ""
+msgstr "https://cs.wikipedia.org/wiki/Tla%C4%8D%C3%ADtko_(GUI)"
 
 msgid "Context menu"
-msgstr ""
+msgstr "Kontextová nabídka"
 
 msgid ""
 "A context menu (also called contextual, shortcut, and pop up or pop-up menu)"
@@ -857,10 +866,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Context_menu"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Context_menu"
 
 msgid "FAQ"
-msgstr ""
+msgstr "ČKD"
 
 msgid ""
 "Frequently Asked Questions (FAQs) are a compilation of frequently asked "
@@ -872,10 +881,10 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://cs.wikipedia.org/wiki/FAQ"
 
 msgid "Graphical user interface"
-msgstr ""
+msgstr "Grafické uživatelské rozhraní"
 
 msgid ""
 "Graphical user interface (GUI) refers to a form of user interface of a "
@@ -888,9 +897,10 @@ msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Graphical_user_interface"
 msgstr ""
+"https://cs.wikipedia.org/wiki/Grafick%C3%A9_u%C5%BEivatelsk%C3%A9_rozhran%C3%AD"
 
 msgid "Input device"
-msgstr ""
+msgstr "Vstupní zařízení"
 
 msgid ""
 "Input devices are all devices that can be used to supply information to a "
@@ -901,7 +911,7 @@ msgid "https://en.wikipedia.org/wiki/Input_device"
 msgstr ""
 
 msgid "Keyboard shortcut"
-msgstr ""
+msgstr "Klávesová zkratka"
 
 msgid ""
 "A keyboard shortcut is a series of one or several keys, such as \"Ctrl+F\" "
@@ -938,7 +948,7 @@ msgid "https://en.wikipedia.org/wiki/Screenshot"
 msgstr ""
 
 msgid "Status bar"
-msgstr ""
+msgstr "Stavová lišta"
 
 msgid ""
 "A status bar is a graphical control element which poses an information area "
@@ -976,13 +986,13 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/User_(computing)"
-msgstr ""
+msgstr "https://cs.wikipedia.org/wiki/U%C5%BEivatel_(informatika)"
 
 msgid "Veyon User Manual"
-msgstr ""
+msgstr "Uživatelská příručka k Veyon"
 
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 msgid "Introduction"
 msgstr "Úvod"
@@ -992,17 +1002,22 @@ msgid ""
 "computers (e.g. classrooms) on a central computer (e.g. an instructor's "
 "computer) and use various features and modes."
 msgstr ""
+"Veyon je aplikace, která umožňuje ovládat a dohlížet na skupinu počítačů "
+"(např. učebnu) z centrálního počítače (např. s počítače vyučujícího) a "
+"používat různé funkce a režimy."
 
 msgid "Program start and login"
-msgstr ""
+msgstr "Spouštění aplikaci a přihlášení se"
 
 msgid "The program is started via the start menu or a desktop icon:"
-msgstr ""
+msgstr "Aplikace se spouští pomocí nabídky s aplikacemi nebo ikony na ploše:"
 
 msgid ""
 "Depending on the system configuration you will be prompted for your username"
 " and your password:"
 msgstr ""
+"V závislosti na nastavení systému budete dotázáni na vaše uživatelské jméno "
+"a heslo:"
 
 msgid ""
 "Enter your username and password here or – if given – the credentials of a "
@@ -1084,7 +1099,7 @@ msgid ""
 msgstr ""
 
 msgid "Toolbar"
-msgstr ""
+msgstr "Lišta nástrojů"
 
 msgid ""
 "You can customize the appearance and behavior of the toolbar. A right click "
@@ -1105,7 +1120,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer select panel"
-msgstr ""
+msgstr "Panel výběru počítače"
 
 msgid ""
 "The :guilabel:`Locations & Computers` button in the status bar opens the "
@@ -1118,6 +1133,8 @@ msgid ""
 "You can activate individual computers or entire locations by checking them. "
 "All checked computers will then be displayed in the monitoring view."
 msgstr ""
+"Můžete aktivovat jednotlivé počítače nebo celá umístění jejich zaškrtnutím. "
+"Všechny zaškrtnuté počítače poté budou zobrazeny v dohlížecím pohledu."
 
 msgid ""
 "With the :guilabel:`Save computer/user list` button you can save the list of"
@@ -1143,7 +1160,7 @@ msgid ""
 msgstr ""
 
 msgid "Screenshots panel"
-msgstr ""
+msgstr "Panel snímků obrazovky"
 
 msgid ""
 "Using the screenshot management panel, you can view and delete all captured "
@@ -1163,10 +1180,10 @@ msgid ""
 msgstr ""
 
 msgid "Start menu"
-msgstr ""
+msgstr "Nabídka s aplikacemi"
 
 msgid "Desktop icon"
-msgstr ""
+msgstr "Ikona na ploše"
 
 msgid "Monitor view"
-msgstr ""
+msgstr "Dohlížecí pohled"
