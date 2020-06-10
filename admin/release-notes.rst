@@ -19,6 +19,24 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.4
+---------
+
+Overview
+++++++++
+
+Veyon 4.4 is mostly identical to Veyon 4.3. The most notable change is the updated VNC and networking stack which provides even better reliability. As a result Veyon 4.4 uses slightly different techniques and settings when establishing connections to client computers, so the new version should be tested thoroughly before deployment. Apart from this, the risk of regressions is very low.
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.4.
+
+Configuration changes
++++++++++++++++++++++
+
+No configuration keys have been changed or renamed. Various internal settings of the VNC and networking stack (such as timeouts and intervals) are now configurable at the command line for debugging and tuning purposes.
+
 Veyon 4.3
 ---------
 
