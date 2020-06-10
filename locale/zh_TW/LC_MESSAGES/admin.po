@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2019, Veyon Solutions
+# Copyright (C) 2017-2020, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.1\n"
+"Project-Id-Version: Veyon 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-08 16:42+0100\n"
+"POT-Creation-Date: 2020-06-10 15:51+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -1551,10 +1551,8 @@ msgid ""
 "You must specify an absolute path for the configuration file, since the "
 "internally called command line tool (*Veyon CLI*) is executed with in a "
 "different working directory. Please use either the suggested "
-"``%cd``-variable or replace with an absolute path."
+"``%cd%``-variable or replace with an absolute path."
 msgstr ""
-"您必須為設定檔指定絕對路徑，因為內部呼叫的命令列工具 (*Veyon CLI*) 在不同的工作目錄中執行。 請使用建議的 "
-"``%cd``-變數或以絕對路徑取代。"
 
 msgid "Automated installation without the Veyon Master component:"
 msgstr "不含 Veyon Master 元件的自動安裝:"
@@ -3969,6 +3967,33 @@ msgid ""
 msgstr ""
 "如果重新命名組態機碼，為了相容性原因，則始終保留舊機碼，以便更輕鬆地切換回以前的版本。 將來的版本將有一個清理機制，它將移除所有舊組態機碼。"
 
+msgid "Veyon 4.4"
+msgstr ""
+
+msgid ""
+"Veyon 4.4 is mostly identical to Veyon 4.3. The most notable change is the "
+"updated VNC and networking stack which provides even better reliability. As "
+"a result Veyon 4.4 uses slightly different techniques and settings when "
+"establishing connections to client computers, so the new version should be "
+"tested thoroughly before deployment. Apart from this, the risk of "
+"regressions is very low."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "結構變更"
+
+msgid "There are no structural changes in Veyon 4.4."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "組態變更"
+
+msgid ""
+"No configuration keys have been changed or renamed. Various internal "
+"settings of the VNC and networking stack (such as timeouts and intervals) "
+"are now configurable at the command line for debugging and tuning purposes."
+msgstr ""
+
 msgid "Veyon 4.3"
 msgstr "Veyon 4.3"
 
@@ -3985,14 +4010,8 @@ msgstr ""
 "模組已得到改進，可以更智慧地處理特定資料類型 (如 JSON 資料和選項索引)。 升級到 Veyon 4.3 不需要任何組態變更。 "
 "由於只加入了一個新的外掛程式，並且 ``config`` CLI 模組的某些命令已擴展，因此回歸的風險非常低。"
 
-msgid "Structural changes"
-msgstr "結構變更"
-
 msgid "There are no structural changes in Veyon 4.3."
 msgstr "Veyon 4.3 沒有結構變化。"
-
-msgid "Configuration changes"
-msgstr "組態變更"
 
 msgid ""
 "No configuration keys have been changed or renamed. The only new "

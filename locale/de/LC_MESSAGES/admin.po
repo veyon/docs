@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2019, Veyon Solutions
+# Copyright (C) 2017-2020, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.1\n"
+"Project-Id-Version: Veyon 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-08 16:42+0100\n"
+"POT-Creation-Date: 2020-06-10 15:51+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Tobias Junghans, 2020\n"
 "Language-Team: German (https://www.transifex.com/veyon-solutions/teams/65452/de/)\n"
@@ -2085,7 +2085,7 @@ msgid ""
 "You must specify an absolute path for the configuration file, since the "
 "internally called command line tool (*Veyon CLI*) is executed with in a "
 "different working directory. Please use either the suggested "
-"``%cd``-variable or replace with an absolute path."
+"``%cd%``-variable or replace with an absolute path."
 msgstr ""
 "Sie müssen einen absoluten Pfad für die Konfigurationsdatei angeben, da das "
 "intern aufgerufene Kommandozeilenwerkzeug (*Veyon CLI*) in einem anderen "
@@ -5131,6 +5131,43 @@ msgstr ""
 " Version wird es einen Bereinigungsmechanismus geben, der alle veralteten "
 "Konfigurationsschlüssel entfernt."
 
+msgid "Veyon 4.4"
+msgstr "Veyon 4.4"
+
+msgid ""
+"Veyon 4.4 is mostly identical to Veyon 4.3. The most notable change is the "
+"updated VNC and networking stack which provides even better reliability. As "
+"a result Veyon 4.4 uses slightly different techniques and settings when "
+"establishing connections to client computers, so the new version should be "
+"tested thoroughly before deployment. Apart from this, the risk of "
+"regressions is very low."
+msgstr ""
+"Veyon 4.4 ist weitgehend identisch mit Veyon 4.3. Die wichtigste Änderung "
+"ist der aktualisierte VNC- und Netzwerk-Stack, der eine noch höhere "
+"Zuverlässigkeit bietet. Infolgedessen verwendet Veyon 4.4 etwas andere "
+"Techniken und Einstellungen beim Aufbau von Verbindungen zu Client-"
+"Computern, so dass die neue Version vor dem Einsatz gründlich getestet "
+"werden sollte. Abgesehen davon ist das Risiko von Regressionen sehr gering."
+
+msgid "Structural changes"
+msgstr "Strukturelle Änderungen"
+
+msgid "There are no structural changes in Veyon 4.4."
+msgstr "Es gibt keine strukturellen Änderungen in Veyon 4.4."
+
+msgid "Configuration changes"
+msgstr "Konfigurationsänderungen"
+
+msgid ""
+"No configuration keys have been changed or renamed. Various internal "
+"settings of the VNC and networking stack (such as timeouts and intervals) "
+"are now configurable at the command line for debugging and tuning purposes."
+msgstr ""
+"Es wurden keine Konfigurationsschlüssel geändert oder umbenannt. "
+"Verschiedene interne Einstellungen des VNC- und Netzwerkstacks (wie Timeouts"
+" und Intervalle) sind jetzt zu Debugging- und Tuningzwecken an der "
+"Kommandozeile konfigurierbar."
+
 msgid "Veyon 4.3"
 msgstr "Veyon 4.3"
 
@@ -5152,14 +5189,8 @@ msgstr ""
 "einige Befehle des ``config`` CLI-Moduls erweitert wurden, ist das Risiko "
 "von Regressionen sehr gering."
 
-msgid "Structural changes"
-msgstr "Strukturelle Änderungen"
-
 msgid "There are no structural changes in Veyon 4.3."
 msgstr "Es gibt keine strukturellen Änderungen in Veyon 4.3."
-
-msgid "Configuration changes"
-msgstr "Konfigurationsänderungen"
 
 msgid ""
 "No configuration keys have been changed or renamed. The only new "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2019, Veyon Solutions
+# Copyright (C) 2017-2020, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.3.0\n"
+"Project-Id-Version: Veyon 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:45+0200\n"
+"POT-Creation-Date: 2020-06-10 15:51+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Richard Yang <zhongtian.yang@qq.com>, 2019\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
@@ -1422,7 +1422,7 @@ msgid ""
 "You must specify an absolute path for the configuration file, since the "
 "internally called command line tool (*Veyon CLI*) is executed with in a "
 "different working directory. Please use either the suggested "
-"``%cd``-variable or replace with an absolute path."
+"``%cd%``-variable or replace with an absolute path."
 msgstr ""
 
 msgid "Automated installation without the Veyon Master component:"
@@ -3555,6 +3555,33 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.4"
+msgstr ""
+
+msgid ""
+"Veyon 4.4 is mostly identical to Veyon 4.3. The most notable change is the "
+"updated VNC and networking stack which provides even better reliability. As "
+"a result Veyon 4.4 uses slightly different techniques and settings when "
+"establishing connections to client computers, so the new version should be "
+"tested thoroughly before deployment. Apart from this, the risk of "
+"regressions is very low."
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid "There are no structural changes in Veyon 4.4."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid ""
+"No configuration keys have been changed or renamed. Various internal "
+"settings of the VNC and networking stack (such as timeouts and intervals) "
+"are now configurable at the command line for debugging and tuning purposes."
+msgstr ""
+
 msgid "Veyon 4.3"
 msgstr ""
 
@@ -3568,13 +3595,7 @@ msgid ""
 " risk of regressions is very low."
 msgstr ""
 
-msgid "Structural changes"
-msgstr ""
-
 msgid "There are no structural changes in Veyon 4.3."
-msgstr ""
-
-msgid "Configuration changes"
 msgstr ""
 
 msgid ""
