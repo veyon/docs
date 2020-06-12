@@ -61,10 +61,10 @@ Veyon 4.2
 Overview
 ++++++++
 
-Veyon 4.2 continues the Veyon 4 major release series with many internal modernizations, user interface optimizations and performance improvements in many areas. Veyon 4.2 lays the foundation for commercial addons offered starting in the second half of 2019. The following new features and improvements can be found in Veyon 4.2:
+Veyon 4.2 continues the Veyon 4 major release series with many internal modernizations, user interface optimizations and performance improvements in many areas. Veyon 4.2 lays the foundation for commercial add-ons offered starting in the second half of 2019. The following new features and improvements can be found in Veyon 4.2:
 
 * Core
-   - The network object management layer has been revised to allow using multi-level hierarchies in commercial addons.
+   - The network object management layer has been revised to allow using multi-level hierarchies in commercial add-ons.
    - The automatic detection of user interface language in some countries has been improved (e.g. use German in Austria or Switzerland).
    - Context information in log messages have been improved.
 * Master

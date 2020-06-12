@@ -151,10 +151,12 @@ Show notification on remote connection
 
     **Default:** *disabled*
 
+.. _RefMultiSessionMode:
+
 .. index:: Terminal server, Remote desktop server, RDP, Multi-session mode
 
 Multi session mode (for terminal and remote desktop servers)
-    Enabling this option will make the service launch a server process for every interactive session on a computer. Typically this is required to support terminal servers. The server instances will listen on individual network ports based on the :ref:`primary service port <RefPrimaryServerPort>` and the session ID.
+    Enabling this option will make the Veyon Service launch a Veyon Server process for every user session on a computer. This includes both local and remote (RDP) sessions. Typically this is required to support terminal servers. The server instances will listen on individual network ports based on the :ref:`primary service port <RefPrimaryServerPort>` and the session ID. To access multiple sessions on a computer, the corresponding port numbers have to be appended to the hostname in the :ref:`ConfLocationsAndComputers` configuration page. You can use e.g. ``myhost.example.org:11101`` to access the first RDP session on a computer. Alternatively consider using the `NetworkDiscovery add-on <https://veyon.io/addons/#networkdiscovery>`_ which scans computers for sessions and makes them available in Veyon Master automatically.
 
 .. index:: Autostart, System service
 
