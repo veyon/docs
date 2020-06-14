@@ -10,8 +10,8 @@
 # ÉricB. <eric.bugnet@gmail.com>, 2019
 # Benjamin BALET <benjamin.balet@gmail.com>, 2019
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
-# Lachaux Patrick, 2019
 # Tobias Junghans, 2020
+# Lachaux Patrick, 2020
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 08:52+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2020\n"
+"Last-Translator: Lachaux Patrick, 2020\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5152,7 +5152,7 @@ msgstr ""
 "héritées."
 
 msgid "Veyon 4.4"
-msgstr ""
+msgstr "Veyon 4.4"
 
 msgid ""
 "Veyon 4.4 is mostly identical to Veyon 4.3. The most notable change is the "
@@ -5162,12 +5162,19 @@ msgid ""
 "tested thoroughly before deployment. Apart from this, the risk of "
 "regressions is very low."
 msgstr ""
+"Veyon 4.4 est quasiment identique à Veyon 4.3. Le changement le plus notable"
+" est la mise à jour de VNC et de la pile réseau qui offre une plus grande "
+"fiabilité. Ainsi, Veyon 4.4 utilise des techniques et des paramètres "
+"légèrement différents lors de l'établissement des connexions aux ordinateurs"
+" clients, de sorte que la nouvelle version doit être testée minutieusement "
+"avant le déploiement. En dehors de cela, le risque de régression est très "
+"faible."
 
 msgid "Structural changes"
 msgstr "Changements structurels"
 
 msgid "There are no structural changes in Veyon 4.4."
-msgstr ""
+msgstr "Il n'y a aucun changement structurel dans Veyon 4.4."
 
 msgid "Configuration changes"
 msgstr "Changements de configuration"
@@ -5177,6 +5184,10 @@ msgid ""
 "settings of the VNC and networking stack (such as timeouts and intervals) "
 "are now configurable at the command line for debugging and tuning purposes."
 msgstr ""
+"Aucune clé de configuration n'a été modifiée ou renommée. Divers paramètres "
+"internes de VNC et de la pile réseau (tels que les délais d'expiration et "
+"les intervalles) sont désormais configurables en ligne de commande à des "
+"fins de débogage et de réglage."
 
 msgid "Veyon 4.3"
 msgstr "Veyon 4.3"
@@ -5222,6 +5233,12 @@ msgid ""
 "starting in the second half of 2019. The following new features and "
 "improvements can be found in Veyon 4.2:"
 msgstr ""
+"Veyon 4.2 poursuit la série de versions majeures de Veyon 4 avec de "
+"nombreuses modernisations internes, des optimisations d'interface "
+"utilisateur et des améliorations de performances dans de nombreux domaines. "
+"Veyon 4.2 jette les bases des extensions complémentaires commerciales "
+"proposés à partir du second semestre 2019. Les nouvelles fonctionnalités et "
+"améliorations suivantes peuvent être trouvées dans Veyon 4.2:"
 
 msgid "Core"
 msgstr "Cœur"
@@ -5230,6 +5247,9 @@ msgid ""
 "The network object management layer has been revised to allow using multi-"
 "level hierarchies in commercial add-ons."
 msgstr ""
+"La couche de gestion des objets réseau a été révisée pour permettre "
+"l'utilisation de hiérarchies à plusieurs niveaux dans les extensions "
+"complémentaires commerciales."
 
 msgid ""
 "The automatic detection of user interface language in some countries has "
