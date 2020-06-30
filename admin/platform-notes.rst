@@ -69,6 +69,11 @@ Hide desktop
 
     **Default:** *enabled*
 
+Use input device interception driver
+    This option defines whether the Interception driver should be used. This driver is used by the screen lock feature to block special key sequences such as :kbd:`Ctrl+Alt+Del` at the driver level. The Interception driver may cause troubles with RDP sessions and should therefore be disabled and uninstalled when using Veyon in remote desktop environments. In this case, consider not installing the driver at all during the installation of Veyon by either unchecking the Interception driver option or passing the ``/NoInterception`` option to the installer in silent mode. If the driver is already installed, uninstallation is only possible after disabling this option and rebooting the computer. The driver can then be uninstalled using the :file:`uninstall.bat` script in the :file:`interception` subdirectory in Veyon's installation directory.
+
+    **Default:** *enabled*
+
 .. _UltraVNCServerSettings:
 
 UltraVNC server settings
