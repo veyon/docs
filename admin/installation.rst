@@ -105,6 +105,12 @@ Automated installation without the Veyon Master component:
 
     veyon-x.y.z-win64-setup.exe /S /NoMaster
 
+Automated installation without the Interception driver:
+
+.. code-block:: none
+
+    veyon-x.y.z-win64-setup.exe /S /NoInterception
+
 Delete all Veyon-related settings during uninstallation:
 
 .. code-block:: none
