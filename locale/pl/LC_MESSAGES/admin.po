@@ -2930,7 +2930,7 @@ msgid ""
 msgstr ""
 
 msgid "Use input device interception driver"
-msgstr ""
+msgstr "Użyj sterownika przechwytywania urządzenia wejściowego"
 
 msgid ""
 "This option defines whether the Interception driver should be used. This "

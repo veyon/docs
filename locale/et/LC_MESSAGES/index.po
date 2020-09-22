@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2020, Veyon Solutions
+# This file is distributed under the same license as the Veyon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Peeter Ramst <peeter@aste.edu.ee>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Veyon 4.4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-10 15:48+0200\n"
+"PO-Revision-Date: 2019-03-21 09:30+0000\n"
+"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2020\n"
+"Language-Team: Estonian (https://www.transifex.com/veyon-solutions/teams/65452/et/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Veyon Documentation"
+msgstr "Veyoni dokumentatsioon"
+
+msgid "Online documentation"
+msgstr "Veebidokumentatsioon"
+
+msgid "PDF download"
+msgstr "PDF-i allalaadimine"
+
+msgid ""
+"`Veyon Administrator Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-admin-manual-"
+"en_4.4.0.pdf>`_"
+msgstr ""
+"\"Veyoni administraatori käsiraamat PDF "
+"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-admin-manual-"
+"en_4.4.0.pdf>\" _"
+
+msgid ""
+"`Veyon User Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
+"en_4.4.0.pdf>`_"
+msgstr ""
+"\"Veyoni kasutusjuhend PDF "
+"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
+"en_4.4.0.pdf>\" _"

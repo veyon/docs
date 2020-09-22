@@ -8,6 +8,7 @@
 # Sergio Palma <donbalear@gmail.com>, 2019
 # Gleb Shaposhnikov <gshap1995@gmail.com>, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
+# Andrey Atapin <atab@kirovedu.ru>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-30 09:27+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Last-Translator: Andrey Atapin <atab@kirovedu.ru>, 2020\n"
 "Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -126,7 +127,7 @@ msgid ""
 " specific group, the rule only applies, if the said user is *not* a member "
 "of the group."
 msgstr ""
-"Вы можете использовать опцию: guilabel: `Инвертировать все условия`, чтобы "
+"Вы можете использовать опцию :guilabel:`Инвертировать все условия`, чтобы "
 "определить, что все активированные условия инвертированы перед оценкой, что "
 "означает, что активированные условия не должны применяться. Например, если "
 "условие *Ни один пользователь не вошел в систему* активировано, правило "
@@ -139,10 +140,10 @@ msgid "Conditions"
 msgstr "Условия"
 
 msgid "For a rule to be processed, one or more conditions must apply."
-msgstr ""
+msgstr "Для обработки правила должно применяться одно или несколько условий."
 
 msgid "User is member of group"
-msgstr ""
+msgstr "Пользователь является членом группы"
 
 msgid ""
 "With this condition you can define that either the accessing or the locally "
@@ -1005,7 +1006,7 @@ msgid "Private key"
 msgstr ""
 
 msgid "Key file"
-msgstr ""
+msgstr "Ключевой файл"
 
 msgid "Logon authentication"
 msgstr "Аутентификация при входе в систему"
@@ -1619,7 +1620,7 @@ msgid ""
 msgstr ""
 
 msgid "Veyon Master"
-msgstr ""
+msgstr "Veyon Мастер"
 
 msgid ""
 "An application program that can be used to monitor and control other "
@@ -2476,7 +2477,7 @@ msgid ""
 msgstr ""
 
 msgid "Use input device interception driver"
-msgstr ""
+msgstr "Использовать драйвер перехвата устройства ввода"
 
 msgid ""
 "This option defines whether the Interception driver should be used. This "
@@ -3479,7 +3480,7 @@ msgid ""
 msgstr ""
 
 msgid "Authentication method"
-msgstr ""
+msgstr "Метод проверки подлинности"
 
 msgid "Network objects"
 msgstr "Сетевые объекты"
