@@ -544,6 +544,63 @@ Create destination directory if it does not exist
 
     **Default:** *enabled*
 
+WebAPI
+------
+
+Starting with Veyon 4.5, an additional configuration page with settings related to the WebAPI plugin is available in the advanced view.
+
+General
++++++++
+
+Enable WebAPI server
+    This option defines whether to start the WebAPI server along with the Veyon Service.
+
+    **Default:** *disabled*
+
+Network port
+    This setting specifies the network port at which the WebAPI server should listen for incoming requests.
+
+    **Default:** *11080*
+
+Connection settings
++++++++++++++++++++
+
+A connection refers to an authentication resource identified by a connection UUID.
+
+Lifetime
+    Every connection is only valid for a certain period of time, regardless of its activity (in contrast to the idle timeout). This value can be changed to configure shorter or longer connection lifetimes.
+
+    **Default:** *3 h*
+
+Idle timeout
+    If no request is received for a certain connection for longer than specified by this setting, the connection is closed automatically.
+
+    **Default:** *60 s*
+
+Authentication timeout
+    This setting determines the time period within which a connection must be successfully authenticated. Unauthenticated connections will be closed automatically when timed out.
+
+    **Default:** *15 s*
+
+Maximum number of open connections
+    This setting limits the number of simultanous open connections, e.g. to mitigate possible denial of service attacks.
+
+    **Default:** *10*
+
+Connection encryption
++++++++++++++++++++++
+
+Use HTTPS with TLS 1.3 instead of HTTP
+    This option determines whether only HTTPS connections should be allowed instead of HTTP connections. When enabled, appropriate TLS certificate and private key files have to be configured as well.
+
+    **Default:** *disabled*
+
+TLS certificate file
+    The path to the TLS certificate file for the HTTPS server.
+
+TLS private key file
+    The path to the TLS private key file for the HTTPS server.
+
 .. _RefPlaceholderVariables:
 
 Placeholder variables for file paths
