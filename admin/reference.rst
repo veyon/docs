@@ -511,6 +511,38 @@ LDAP
 
 All options for connecting Veyon to an LDAP-compatible server are described in detail in chapter :ref:`LDAP`.
 
+File transfer
+-------------
+
+Starting with Veyon 4.5, an additional configuration page with settings related to the file transfer feature is available in the advanced view.
+
+Directories
++++++++++++
+
+In order to make a configuration generic and independent of the user, you should use placeholder variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
+
+Default source directory
+    This directory will be opened by default when the user starts the file transfer feature and is asked for the files to transfer.
+
+    **Default:** ``%HOME%``
+
+Destination directory
+    All received files will be saved in this directory on the client side. Change it if you do not want to store received files in root of the user's home directory.
+
+    **Default:** ``%HOME%``
+
+Options
++++++++
+
+Remember last source directory
+	When the user is asked for files to transfer, the directory which files have been transferred from previously, is opened if this option is enabled. Disable this option to always open the default source directory.
+
+    **Default:** *enabled*
+
+Create destination directory if it does not exist
+    When using a destination directory other than the default one, it may happen that the destination directory does not exist. Keep this option enabled to create it automatically whenever receiving files on the client side.
+
+    **Default:** *enabled*
 
 .. _RefPlaceholderVariables:
 
