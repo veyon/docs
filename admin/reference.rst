@@ -279,28 +279,28 @@ Thumbnail update interval
 .. index:: Background color
 
 Background color
-    This setting allows to customize the background color of the monitor view.
+    This setting allows customizing the background color of the monitor view.
 
     **Default:** *white*
 
 .. index:: Text color
 
 Text color
-    This setting allows to customize the color which is used for displaying the computer thumbnail caption in the monitor view.
+    This setting allows customizing the color which is used for displaying the computer thumbnail caption in the monitor view.
 
     **Default:** *black*
 
 .. index:: Computer thumbnail caption
 
 Computer thumbnail caption
-    This setting allows to define the caption for computer thumbnails in the monitor view. If the computer name is not important to users only the name of the logged on user can be displayed instead.
+    This setting allows defining the caption for computer thumbnails in the monitor view. If the computer name is not important to users only the name of the logged on user can be displayed instead.
 
     **Default:** *User and computer name*
 
 .. index:: Sort order
 
 Sort order
-    This setting allows to specify the sort order for computers in the monitor view. If the caption is configured to display only user names it may make sense to change the sort order to *Only user name* as well.
+    This setting allows specifying the sort order for computers in the monitor view. If the caption is configured to display only user names it may make sense to change the sort order to *Only user name* as well.
 
     **Default:** *Computer and user name*
 
@@ -374,7 +374,7 @@ Hide empty locations
 .. index:: Computer filter
 
 Hide computer filter field
-    The filter field for searching computers can be hidden through this option. This allows to keep the user interface as simple as possible in small environments.
+    The filter field for searching computers can be hidden through this option. This allows keeping the user interface as simple as possible in small environments.
 
     **Default:** *disabled*
 
@@ -394,7 +394,7 @@ Show confirmation dialog for potentially unsafe actions
 .. index:: Double click
 
 Feature on double click
-    This setting allows to define a feature to be triggered whenever a computer is double-clicked. In most cases it's desired to use the *remote control* or *remote view* feature here.
+    This setting allows defining a feature to be triggered whenever a computer is double-clicked. In most cases it's desired to use the *remote control* or *remote view* feature here.
 
     **Default:** *no function*
 
@@ -473,7 +473,7 @@ Placeholder variables should be used for both base directories. All information 
 .. index:: Public key file base directory
 
 Public key file base directory
-    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual public key file inside. This allows to set individual access permissions for the subdirectories. The public key files are placed in the corresponding subdirectory below the base directory on both creation and import. When loading the respective public key file for authentication the Veyon Server uses this base directory as well.
+    The specified base directory contains subdirectories for each key name (e.g. user role) with the actual public key file inside. This allows setting individual access permissions for the subdirectories. The public key files are placed in the corresponding subdirectory below the base directory on both creation and import. When loading the respective public key file for authentication the Veyon Server uses this base directory as well.
 
     **Default:** *%GLOBALAPPDATA%/keys/public*
 
@@ -636,12 +636,12 @@ Veyon evaluates various optional environment variables allowing to override defa
 
 .. envvar:: VEYON_AUTH_KEY_NAME
 
-    This variable allows to explicitly specify the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
+    This variable allows explicitly specifying the name of the authentication key to use in case multiple authentication keys are available. This can be used to override the default behaviour of Veyon Master which uses the first readable private key even if multiple private key files are available.
 
 .. envvar:: VEYON_LOG_LEVEL
 
-    This variable allows to override the configured log level at runtime, e.g. for debugging purposes.
+    This variable allows overriding the configured log level at runtime, e.g. for debugging purposes.
 
 .. envvar:: VEYON_SESSION_ID
 
-    This variable allows to specify the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port (Primary service port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.
+    This variable allows specifying the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port (Primary service port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.

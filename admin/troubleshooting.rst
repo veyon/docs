@@ -57,7 +57,7 @@ If :ref:`key file authentication <ConfKeyFileAuthentication>` is used the key fi
 Settings for computer access control
 ++++++++++++++++++++++++++++++++++++
 
-An incorrect configuration of computer access control can also lead to computers being inaccessible. Initially it's recommended to disable :ref:`computer access control <ComputerAccessControl>` completely using the Veyon Configurator. This allows to determine which method for computer access control is possibly incorrectly configured.
+An incorrect configuration of computer access control can also lead to computers being inaccessible. Initially it's recommended to disable :ref:`computer access control <ComputerAccessControl>` completely using the Veyon Configurator. This allows determining which method for computer access control is possibly incorrectly configured.
 
 If :ref:`authorized user groups for computer access <RefAuthorizedUserGroups>` are used you should check whether the list of authorized user groups is complete and whether the accessing user is a member of one of these user groups.
 

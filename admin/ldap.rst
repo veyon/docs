@@ -293,7 +293,7 @@ The :ref:`CommandLineInterface` of Veyon allows some LDAP-specific operations. A
 
 .. describe:: query
 
-    This command allows to query LDAP objects (``locations``, ``computers``, ``groups``, ``users``) and is mainly used for testing. The function can also be used to develop scripts for system integration tasks.
+    This command allows querying LDAP objects (``locations``, ``computers``, ``groups``, ``users``) and is mainly used for testing. The function can also be used to develop scripts for system integration tasks.
 
     .. code-block:: none
 

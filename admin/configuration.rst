@@ -135,7 +135,7 @@ Importing/exporting a configuration
 
 An imported prerequisite for the use of Veyon is an identical configuration on all computers. Transferring the Veyon configuration to another computer can be done manually at first, but should be automated later. Different methods are available for both ways.
 
-In the Veyon Configurator you can find the entry :guilabel:`Save settings to file` in the :guilabel:`File` menu. This entry allows to export the current configuration to a file in JSON format. This file can be imported to another computer using the entry :guilabel:`Load settings from file` in the same menu. Please note, that the settings are loaded into the user interface during the import, but are applied and saved in the system only after the :guilabel:`Apply` button has been pressed.
+In the Veyon Configurator you can find the entry :guilabel:`Save settings to file` in the :guilabel:`File` menu. This entry allows exporting the current configuration to a file in JSON format. This file can be imported to another computer using the entry :guilabel:`Load settings from file` in the same menu. Please note, that the settings are loaded into the user interface during the import, but are applied and saved in the system only after the :guilabel:`Apply` button has been pressed.
 
 The :ref:`ConfigurationManagement` module of the :ref:`CommandLineInterface` can be used to automate/script configuration import and export.
 

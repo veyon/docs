@@ -5,7 +5,7 @@
 Command line interface
 ======================
 
-For administrative tasks, the *Veyon Configurator* and the command line tool *Veyon CLI* are available. The program can be started via the command ``veyon-cli`` in the command line. On Windows there's an additional non-console version ``veyon-wcli`` which allows to automate tasks without irritating command line window popups. If the :envvar:`$PATH` (Linux) or :envvar:`%PATH%` (Windows) environment variable does not contain the Veyon installation directory, you must first change to the installation directory or prepend the directory to the program name.
+For administrative tasks, the *Veyon Configurator* and the command line tool *Veyon CLI* are available. The program can be started via the command ``veyon-cli`` in the command line. On Windows there's an additional non-console version ``veyon-wcli`` which allows automating tasks without irritating command line window popups. If the :envvar:`$PATH` (Linux) or :envvar:`%PATH%` (Windows) environment variable does not contain the Veyon installation directory, you must first change to the installation directory or prepend the directory to the program name.
 
 If the program is called with the ``help`` parameter, a list of all available modules is displayed. The list can vary depending on the installed Veyon plugins:
 
@@ -173,7 +173,7 @@ As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a b
 
 .. describe:: export <FILE> [location <LOCATION>] [format <FORMAT-STRING-WITH-VARIABLES>]
 
-    This command can be used to export either the complete network object directory or only the specified location to a text file. The formatting can be controlled via a format string containing placeholder variables. This allows to generate CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
+    This command can be used to export either the complete network object directory or only the specified location to a text file. The formatting can be controlled via a format string containing placeholder variables. This allows generating CSV file easily. Valid variables are ``%type%``, ``%name%``, ``%host%``, ``%mac%`` and ``%location%``. Various examples are given in the command help (``veyon-cli networkobjects help export``).
 
 .. note:: When using this command in batch files or through scheduled tasks on Windows make sure to properly escape the percent sign, i.e. use ``%%type%%`` instead of ``%type%``. Otherwise the individual parts of the format strings will be treated as environment variables and substituted with empty strings in most cases. This will lead to unexpected parse errors.
 
@@ -195,7 +195,7 @@ As described in the section :ref:`ConfLocationsAndComputers`, Veyon provides a b
 Power
 -----
 
-The ``power`` module allows to use power-related functions from the command line.
+The ``power`` module allows using power-related functions from the command line.
 
 .. describe:: on <MAC ADDRESS>
 

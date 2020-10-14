@@ -43,7 +43,7 @@ Veyon 4.3
 Overview
 ++++++++
 
-Veyon 4.3 is mostly identical to Veyon 4.2. A new plugin has been added which allows to log in a particular user remotely on all computers. The ``config`` CLI module has been improved to handle specific data types (such as JSON data and option indices) more intelligently. Upgrading to Veyon 4.3 does not require any configuration changes. Since only a new plugin has been added and some commands of the ``config`` CLI module have been extended the risk of regressions is very low.
+Veyon 4.3 is mostly identical to Veyon 4.2. A new plugin has been added which allows logging in a particular user remotely on all computers. The ``config`` CLI module has been improved to handle specific data types (such as JSON data and option indices) more intelligently. Upgrading to Veyon 4.3 does not require any configuration changes. Since only a new plugin has been added and some commands of the ``config`` CLI module have been extended the risk of regressions is very low.
 
 Structural changes
 ++++++++++++++++++
@@ -75,7 +75,7 @@ Veyon 4.2 continues the Veyon 4 major release series with many internal moderniz
    - New view modes "Standard" and "Advanced" have been added.
    - An authentication test functionality has been added.
 * Plugins
-   - The new file transfer plugin allows to send files to all users and open them automatically if requested.
+   - The new file transfer plugin allows sending files to all users and open them automatically if requested.
    - Wake-on-LAN can be used in the CLI via the power module.
    - The builtin network object directory gained support for importing CSV files with a type column.
    - The power down feature supports additional options to install updates, confirm shutdown or power down after timeout.
@@ -104,7 +104,7 @@ Structural changes
 
 Starting with Veyon 4.2 the more generic term *location* instead of *room* is used wherever appropriate. This affects both the user interface and configuration key names. The wording has been changed to better reflect where computers are located in multi-level hierarchies.
 
-In Veyon 4.2 the command line utility has been renamed to ``veyon-cli``. All occurrences of the old name ``veyon-ctl`` in your scripts and installation routines have to be replaced accordingly. On Windows there's also a new non-console version ``veyon-wcli`` which allows to automate tasks without irritating command line window popups.
+In Veyon 4.2 the command line utility has been renamed to ``veyon-cli``. All occurrences of the old name ``veyon-ctl`` in your scripts and installation routines have to be replaced accordingly. On Windows there's also a new non-console version ``veyon-wcli`` which allows automating tasks without irritating command line window popups.
 
 On Linux the systemd unit has been renamed from ``veyon-service.service`` to ``veyon.service``.
 
@@ -191,7 +191,7 @@ Structural changes
 
 As part of the changes for systemd support on Linux, in Veyon 4.1 the Veyon Service component has been split into two separate components. The Veyon Service no longer contains the actual functions to provide access to a computer. These functions have been moved into the new Veyon Server component which runs as a standalone process in user sessions. The Veyon Service now only monitors user sessions on a computer and starts Veyon Server instances within these sessions.
 
-The ``LocalData`` plugin has been split into the ``BuiltinDirectory`` and ``SystemUserGroups`` plugins. This allows to use different data sources for access control, e.g. computers from an LDAP directory in combination with local user groups. After upgrading you should verify that the appropriate network object directory and access control user groups backend are selected as desired.
+The ``LocalData`` plugin has been split into the ``BuiltinDirectory`` and ``SystemUserGroups`` plugins. This allows using different data sources for access control, e.g. computers from an LDAP directory in combination with local user groups. After upgrading you should verify that the appropriate network object directory and access control user groups backend are selected as desired.
 
 Configuration changes
 +++++++++++++++++++++

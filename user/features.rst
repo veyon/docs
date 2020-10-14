@@ -171,7 +171,7 @@ Log in users
 
 .. index:: Log in, Login, Logon, Log on
 
-The :guilabel:`Log in` feature allows to remotely log in a particular user on all computers. A corresponding button in the toolbar is available for this purpose:
+The :guilabel:`Log in` feature allows logging in a particular user on all computers remotely. A corresponding button in the toolbar is available for this purpose:
 
 .. image:: images/FeatureUserLogin.png
    :align: center

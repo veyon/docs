@@ -22,7 +22,7 @@ Before upgrading to a new release series of Veyon it's recommended to carefully 
 About Veyon
 -----------
 
-Veyon is a free and open source software for computer monitoring and class room management. It allows to monitor and control computer rooms as well as to interact with users, e.g. students. The following features are available in Veyon:
+Veyon is a free and open source software for computer monitoring and class room management. It allows monitoring and controlling computer rooms as well as to interact with users, e.g. students. The following features are available in Veyon:
 
 * Monitoring: overview of a (class) room with screen contents of computers being shown in thumbnails
 * Remote view or control computers
@@ -78,7 +78,7 @@ Veyon Worker
 .. index:: Veyon Configurator, Configuration tool
 
 Veyon Configurator
-    A configuration tool which allows to configure and customize all components of a local Veyon installation through a graphical user interface. The program is started by the administrator with elevated privileges whenever necessary.
+    A configuration tool which allows configuring and customizing all components of a local Veyon installation through a graphical user interface. The program is started by the administrator with elevated privileges whenever necessary.
 
 .. index:: Veyon CLI
 

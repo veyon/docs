@@ -39,7 +39,7 @@ Installation on a Windows computer
 
 Run the installer file with administrative privileges and follow the displayed instructions. On computers that do not require the Veyon Master application (e.g. student computers) you can deselect the component *Veyon Master* in the *Choose Components* dialog.
 
-After the installation is finished the *Veyon Configurator* is started by default. This program allows to set up and customize your Veyon installation. In the next chapter :ref:`Configuration` the usage is described in detail.
+After the installation is finished the *Veyon Configurator* is started by default. This program allows setting up and customize your Veyon installation. In the next chapter :ref:`Configuration` the usage is described in detail.
 
 Installation on a Linux computer
 --------------------------------
