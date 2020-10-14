@@ -9,6 +9,7 @@ Online documentation
 
 	admin/index
 	user/index
+	developer/index
 	addons/index
 
 
