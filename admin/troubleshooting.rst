@@ -35,9 +35,9 @@ If the service is running you have to ensure that it is listening for incoming c
 
     telnet localhost 11100
 
-Besides general program output the character string ``RFB 003.008`` must be displayed. If the output does not contain these characters you should check the :ref:`network settings <RefNetwork>`, especially the primary service port. You should try to reset them to their default values.
+Besides general program output the character string ``RFB 003.008`` must be displayed. If the output does not contain these characters you should check the :ref:`network port number settings <RefNetworkPortNumbers>` and :ref:`Miscellaneous network settings <RefNetworkMisc>`, especially the Veyon server port number. You should try to reset them to their default values.
 
-Next the same access has to be possible from a different computer in the network. The utility ``telnet`` can be used again for the diagnosis. The program argument ``localhost`` has to be replaced with the name or IP address of the corresponding computer. If the access fails please ensure that the option :guilabel:`Allow connections from localhost only` in the :ref:`network settings <RefNetwork>` is disabled. Additionally :ref:`computer access control <ComputerAccessControl>` should be disabled initially as the service otherwise might listen on ``localhost`` only. This can happen if the external access would be denied because of currently matching rules. If both settings are correct the output of
+Next the same access has to be possible from a different computer in the network. The utility ``telnet`` can be used again for the diagnosis. The program argument ``localhost`` has to be replaced with the name or IP address of the corresponding computer. If the access fails please ensure that the option :guilabel:`Allow connections from localhost only` in the :ref:`Miscellaneous network settings <RefNetworkMisc>` is disabled. Additionally :ref:`computer access control <ComputerAccessControl>` should be disabled initially as the service otherwise might listen on ``localhost`` only. This can happen if the external access would be denied because of currently matching rules. If both settings are correct the output of
 
 .. code-block:: none
 
@@ -45,7 +45,7 @@ Next the same access has to be possible from a different computer in the network
 
 has to indicate that the service is not (only) listening on ``localhost`` or ``127.0.0.1`` (status ``LISTEN`` or similar).
 
-If the port access from remote computers still fails usually a firewall prevents the access and has to be reconfigured accordingly. On Linux this concerns settings of ``iptables``, ``ufw`` etc. Consult the corresponding manuals of the used software. On Windows Veyon automatically configures the integrated Windows firewall if the option :guilabel:`Enable firewall exception` in the :ref:`network settings <RefNetwork>` is set to its default value (*enabled*). If a 3rd party firewall solution is used it must be configured to allow external access to TCP ports 11100 (primary service port) and 11400 (demo server).
+If the port access from remote computers still fails usually a firewall prevents the access and has to be reconfigured accordingly. On Linux this concerns settings of ``iptables``, ``ufw`` etc. Consult the corresponding manuals of the used software. On Windows Veyon automatically configures the integrated Windows firewall if the option :guilabel:`Enable firewall exception` in the :ref:`Miscellaneous network settings <RefNetworkMisc>` is set to its default value (*enabled*). If a 3rd party firewall solution is used it must be configured to allow external access to TCP ports 11100 (Veyon server port) and 11400 (demo server).
 
 Authentication settings
 +++++++++++++++++++++++
@@ -104,7 +104,7 @@ In demo mode, only a black screen or window is displayed on client computers
 
 Please make sure that:
 
-* in the configuration page :guilabel:`Service` under :ref:`network settings <RefNetwork>` the demo server port is set to its default value ``11400``
+* in the configuration page :guilabel:`Service` under :ref:`network port numbers <RefNetworkPortNumbers>` the demo server port is set to its default value ``11400``
 * on the configuration page :guilabel:`Service` the firewall exception is enabled on the master computer or a third party firewall is configured to allow incoming connections to TCP port ``11400``
 * the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). In the :ref:`access control ruleset <AccessControlRules>` there may exist a rule prohibiting access to the computer if a teacher is logged on. In this case you should create a rule with the condition :ref:`Accessing computer is localhost <AccessingComputerIsLocalhost>` enabled as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher computer's screen content and distribute it to the client computers.
 

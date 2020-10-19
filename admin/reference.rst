@@ -151,15 +151,6 @@ Show notification on remote connection
 
     **Default:** *disabled*
 
-.. _RefMultiSessionMode:
-
-.. index:: Terminal server, Remote desktop server, RDP, Multi-session mode
-
-Multi session mode (for terminal and remote desktop servers)
-    Enabling this option makes the Veyon Service launch a Veyon Server process for every user session on a computer. This includes both local and remote (RDP) sessions. Typically this is required to support terminal/remote desktop server scenarios. The server instances listen on individual network ports based on the :ref:`primary service port <RefPrimaryServerPort>` and the session ID. To access a session other than the default session, the corresponding port number has to be appended to the hostname in the :ref:`ConfLocationsAndComputers` configuration page. You can use e.g. ``myhost.example.org:11101`` to access the first RDP session on a computer. Alternatively consider using the `NetworkDiscovery add-on <https://veyon.io/addons/#networkdiscovery>`_ which scans computers for sessions and makes them available in Veyon Master automatically.
-
-    **Default:** *disabled*
-
 .. index:: Autostart, System service
 
 Autostart
@@ -168,47 +159,73 @@ Autostart
     **Default:** *enabled*
 
 
-.. _RefNetwork:
+.. _RefSessions:
 
-.. index:: Network settings
+.. index:: Sessions, Session settings, Terminal server, Remote desktop server, RDP, Single session mode, Multi session mode
 
-Network
-+++++++
+Single session mode (create server instance for local/physical session only)
+    Choose this option for single-user scenarios, i.e. each user is working locally on a dedicated computer. In this mode the Veyon Service will always start exactly one server instance for the primary session of the computer, e.g. the console session on Windows.
 
-.. index:: Primary service port, Network port
+    **Default:** *enabled*
 
-.. _RefPrimaryServerPort:
+.. _RefMultiSessionMode:
 
-Primary service port
-    You can use this setting to define the primary network port which the Veyon Server is listening at for incoming connections.
+Multi session mode (for terminal and remote desktop servers)
+    Enabling this option makes the Veyon Service launch a Veyon Server process for every user session on a computer. This includes both local and remote (RDP) sessions. Typically this is required to support terminal/remote desktop server scenarios. The server instances listen on individual network port numbers based on the :ref:`Veyon server port number <RefVeyonServerPort>` and the session ID. To access a session other than the default session, the corresponding port number has to be appended to the hostname in the :ref:`ConfLocationsAndComputers` configuration page. You can use e.g. ``myhost.example.org:11101`` to access the first RDP session on a computer. Alternatively consider using the `NetworkDiscovery add-on <https://veyon.io/addons/#networkdiscovery>`_ which scans computers for sessions and makes them available in Veyon Master automatically.
+
+    **Default:** *disabled*
+
+Maximum session count
+    In multi session mode the number of server instances can be limited through this setting. Per default up to 100 concurrent sessions are supported on a computer. When using numbers higher than 100, make sure to adjust the :ref:`server port numbers <RefNetworkPortNumbers>` to be more than 100 apart. Otherwise port numbers of different instances and server types would overlap and cause malfunctions.
+
+    **Default:** *100*
+
+.. _RefNetworkPortNumbers:
+
+.. index:: Network port, Network port numbers, Port numbers
+
+Network port numbers
+++++++++++++++++++++
+
+.. index:: Veyon Server port number
+
+.. _RefVeyonServerPort:
+
+Veyon server
+    This setting allows you to specify the network port number on which the Veyon Server listens for incoming connections.
 
     **Default:** *11100*
 
-.. index:: Internal VNC server port, Internal VNC server
+.. index:: Internal VNC server port number
 
-Internal VNC server port
-    You can use this setting to define the (localhost only) network port used by the internal VNC server. The VNC server will only listen to it at ``localhost`` so it never is reachable from the network directly. It's solely accessed by the Veyon Service which forwards screen data from and user inputs to the internal VNC server.
+Internal VNC server
+    This setting allows you to specify the network port number used by the internal VNC server. The internal VNC server only listens on ``localhost``, so it is never directly accessible from the network. Only the local Veyon server accesses the internal VNC server and forwards screen data and user input accordingly.
 
     **Default:** *11200*
 
-.. index:: Feature manager port, Feature manager
+.. index:: Feature manager port number
 
-Feature manager port
-    You can use this setting to define the (localhost only) network port used by the feature manager. This internal component is part of the Veyon Service and starts and stops processes to provide specific features. In contrast to the Veyon Service these processes in most cases have to run in the context of the logged on user and therefore have to communicate with the Veyon Service through this network port.
+Feature manager
+    This setting allows you to specify the network port number used by the feature manager. This internal component is part of the Veyon Server and listens at ``localhost`` only. It starts/stops processes to provide specific features. In contrast to the Veyon Service these processes in most cases have to run in the context of the logged on user and therefore have to communicate with the Veyon Server through this network port.
 
     **Default:** *11300*
 
-.. index:: Demo server port, Demo server
+.. index:: Demo server port number
 
-Demo server port
-    You can use this setting to define the network port which the demo server is listening at. The demo server efficiently makes screen data from a selected computer available to all computers participating in a demonstration.
+Demo server
+    This setting allows you to specify the network port number used by the demo server. The demo server is a special high-efficiency VNC server that makes the screen data of the demo computer available to all participating computers.
 
     **Default:** *11400*
+
+.. _RefNetworkMisc:
+
+Miscellaneous network settings
+++++++++++++++++++++++++++++++
 
 .. index:: Firewall exception, Firewall, Windows firewall
 
 Enable firewall exception
-    Depending on the system configuration it may be impossible to access listening ports such as the Veyon Server port from the network. On Windows the Windows firewall usually will block any incoming connections. In order to allow access to the service port and the demo server port, exceptions for the Windows-Firewall must be configured. This is done automatically during the installation process. If this behavior is not desired and manual configuration is preferred, this option can be disabled.
+    Depending on the system configuration it may be impossible to access listening ports such as the Veyon Server port from the network. On Windows the Windows firewall usually blocks any incoming connections. In order to allow access to the Veyon server port and the demo server port, exceptions for the Windows firewall must be configured. This is done automatically during the installation process. If this behavior is not desired and manual configuration is preferred, this option can be disabled.
 
     **Default:** *enabled*
 
@@ -361,6 +378,11 @@ Allow adding hidden locations manually
 
 Hide local computer
     In regular usage scenarios it often is not desired to display the own computer as this would start globally started features on the own computer as well (e.g. screen lock). Enabling this option will always hide the local computer to prevent such issues.
+
+    **Default:** *disabled*
+
+Hide own session
+    Similar to the :ref:`Hide local computer <RefAutoHideLocalComputer>` option, enabling this option hides the own session from the computer list. This is only relevant when using the :ref:`Multi session mode <RefMultiSessionMode>`.
 
     **Default:** *disabled*
 
@@ -583,7 +605,7 @@ Authentication timeout
     **Default:** *15 s*
 
 Maximum number of open connections
-    This setting limits the number of simultanous open connections, e.g. to mitigate possible denial of service attacks.
+    This setting limits the number of simultaneous open connections, e.g. to mitigate possible denial of service attacks.
 
     **Default:** *10*
 
@@ -644,4 +666,4 @@ Veyon evaluates various optional environment variables allowing to override defa
 
 .. envvar:: VEYON_SESSION_ID
 
-    This variable allows specifying the session ID and is evaluated by Veyon Server. When multi session support (multiple graphical sessions on the same host) is enabled each Veyon Server instance has to use distinct network ports for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network ports <RefNetwork>` to determine the port numbers to use. Usually this environment variable is set by Veyon Service for all Veyon Server instances automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port (Primary service port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.
+    This variable allows overriding the session ID and is evaluated by Veyon Server. When multi session mode (multiple local and remote sessions on the same host) is enabled each Veyon Server instance has to use distinct network numbers for not conflicting with other instances. A server therefore adds the numerical value of this environment variable to the configured :ref:`network port numbers <RefNetworkPortNumbers>` to determine the port numbers to use. In the :ref:`RefNetworkObjectDirectory` the absolute port (Veyon server port + session ID) must be specified along with the computer/IP address, e.g. ``192.168.2.3:11104``.

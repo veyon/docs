@@ -120,7 +120,7 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 
     .. code-block:: none
 
-        veyon-cli config get Network/PrimaryServicePort
+        veyon-cli config get Network/VeyonServerPort
 
 .. describe:: set
 
@@ -128,7 +128,7 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
 
     .. code-block:: none
 
-        veyon-cli config set Network/PrimaryServicePort 12345
+        veyon-cli config set Network/VeyonServerPort 12345
         veyon-cli config set Service/Autostart true
         veyon-cli config set UI/Language de_DE
 

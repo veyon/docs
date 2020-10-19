@@ -19,6 +19,79 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.5
+---------
+
+Overview
+++++++++
+
+Veyon 4.5 is the release series with the most changes since Veyon 4.0. Most notably, Veyon 4.5 includes a new WebAPI plugin which allows accessing computers by 3rdparty products via HTTP. Veyon Master introduces the new monitoring panels *Slideshow* and *Spotlight*. The demo mode has been greatly extended and improved. It's now possible to share a student's screen instead of the own screen easily. In environments where multiple monitors are connected to the computer running Veyon Master, the user can now choose to share a specific monitor only. Moreover, the performance and responsiveness of the demo mode is much better thanks to the demo server now being multithreaded. At the same time Veyon 4.5 focuses on application and desktop virtualization environments by delivering extended and improved multi session support. Additionally various compatibility issues on Linux have been fixed and the file transfer plugin received a configuration page.
+
+* Core
+    - The feature plugin API has been revised.
+    - The invocation of worker processes and communication with them has been improved, resulting in increased reliability of certain Veyon features such as the demo mode.
+    - Session IDs are now managed internally. This allows reusing a session ID after a user session has been closed. RDP session IDs (which are increased continuously) are no longer used for calculating server port numbers.
+* Configurator
+    - Several parts of the user interface have been improved.
+    - Settings for new Veyon Master features have been added.
+* Plugins
+    - Demo: The server has been refactored to be multithreaded which improves performance and responsiveness especially with many clients.
+    - Demo: A feature has been added to share a user's screen instead of the own one.
+    - Demo: The modes (window/fullscreen) have been made subfeatures displayed in a drop down menu.
+    - Demo: A feature has been added to share only one of multiple own screens.
+    - FileTransfer: A configuration page has been added allowing to configure source and destination folders.
+    - RemoteAccess: The username is now displayed in the window title.
+    - WebAPI: Added a new plugin offering a RESTful API for accessing Veyon Server instances.
+* Linux
+    - The reboot/poweroff functions now prefer using systemd-logind.
+    - The reboot/poweroff functions now look for binaries in /sbin and /usr/sbin if they are not in the PATH environment variable.
+    - The user session management code has been improved to start Veyon Server more reliably.
+    - The screenlock feature is now working properly with most desktop environments.
+* Master
+    - The new Slideshow panel cycles through all computers and shows a magnified view of each computer for a short time.
+    - The new Spotlight panel shows one or multiple computers in realtime. This allows keeping an eye on users requiring special attention.
+    - The size of computer icons is now always adjusted automatically whenever the panel is resized or computers are added or removed.
+    - States and sizes of panels are now saved when closing the program and restored upon the next start.
+    - The aspect ratio of computer icons is now adjusted to the original screen sizes.
+* Server
+    - A notification is now shown for both incomplete and failed authentication attempts.
+    - Support for external VNC servers without any authentication/password configured has been added.
+* Windows
+    - The Interception driver is now disabled in multi session mode to prevent issues with hanging RDP sessions.
+    - The 3rdparty component UltraVNC has been updated to the latest version.
+    - Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenLDAP 2.4.56, OpenSSL 1.1.1h)
+
+Due to the large number of changes, there's a medium risk for regressions. Therefore especially the initial release (v4.5.0) should be tested throroughly before deploying.
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.5.
+
+Configuration changes
++++++++++++++++++++++
+
+Several configuration keys have been renamed in Veyon 4.5. When upgrading to Veyon 4.5 or newer the new configuration keys will be populated with the value of the old keys automatically.
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Old name
+    - New name
+
+  * - ``Network/PrimaryServicePort``
+    - ``Network/VeyonServerPort``
+
+  * - ``Master/AutoAdjustGridSize``
+    - ``Master/AutoAdjustIconSize``
+
+  * - ``Master/LocalComputerHidden``
+    - ``Master/HideLocalComputer``
+
+  * - ``Master/ComputerFilterHidden``
+    - ``Master/HideComputerFilter``
+
 Veyon 4.4
 ---------
 
