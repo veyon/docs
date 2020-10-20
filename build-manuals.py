@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import gettext
 
-version = '4.4.2'
+version = '4.5.0'
 
 builds = [
 	{ 'language': 'de', 'paper': 'a4paper', 'babel': 'ngerman' },
