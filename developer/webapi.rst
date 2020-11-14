@@ -163,7 +163,8 @@ Feature control
 
 * URL: /api/v1/feature/<FEATURE-UID>
 * Method: **PUT**
-* Data: ``{ "active": [true/false] }``
+* Data: ``{ "active": [true/false], "arguments": <ARGUMENTS> }``
+* Arguments are feature specific and described in the feature table below
 * Headers: ``{ Connection-Uid: <CONNECTION-UID> }``
 * Response: ``{ }``
 
@@ -184,18 +185,34 @@ Available features
 
   * - Name
     - UUID
+    - Arguments
 
   * - ScreenLock
     - ``ccb535a2-1d24-4cc1-a709-8b47d2b2ac79``
+    - <none>
   * - InputDevicesLock (Veyon >= 4.5.0)
     - ``e4a77879-e544-4fec-bc18-e534f33b934c``
+    - <none>
   * - UserLogoff
     - ``7311d43d-ab53-439e-a03a-8cb25f7ed526``
+    - <none>
   * - Reboot
     - ``4f7d98f0-395a-4fff-b968-e49b8d0f748c``
+    - <none>
   * - PowerDown
     - ``6f5a27a0-0e2f-496e-afcc-7aae62eede10``
+    - <none>
+  * - DemoServer
+    - ``e4b6e743-1f5b-491d-9364-e091086200f4``
+    - ``{ "demoAccessToken": <TOKEN> }``
+  * - FullScreenDemoClient
+    - ``7b6231bd-eb89-45d3-af32-f70663b2f878``
+    - ``{ "demoAccessToken": <TOKEN>, "demoServerHost": <DEMO-SERVER-HOST-ADDRESS> }``
+  * - WindowDemoClient
+    - ``ae45c3db-dc2e-4204-ae8b-374cdab8c62c``
+    - ``{ "demoAccessToken": <TOKEN>, "demoServerHost": <DEMO-SERVER-HOST-ADDRESS> }``
 
+* A demo token is an arbitrary ASCII string (e.g. base64-encoded random data) with a recommended length of at least 16 bytes
 
 User information
 ----------------
