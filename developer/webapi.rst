@@ -82,9 +82,9 @@ Connection management & authentication
 * URL: /api/v1/authentication/<HOST>
 * Method: **POST**
 * Data: ``{ "method": "<AUTH-METHOD-UUID>", "credentials": <METHOD-SPECIFIC-CREDENTIALS> }``
-* Response: ``{ "connection-uid": "<CONNECTION-UID>", "validuntil": <UTC-TIMESTAMP> }``
+* Response: ``{ "connection-uid": "<CONNECTION-UID>", "validUntil": <UTC-TIMESTAMP> }``
 * The returned connection UUID identifies a single connection to a host and needs to be passed in the ``Connection-Uid`` header field in all subsequent API calls
-* The connection's lifetime ends at the time specified in the ``validuntil`` field
+* The connection's lifetime ends at the time specified in the ``validUntil`` field
 * ``<HOST>`` should be ``localhost`` when connecting to WebAPI servers running on target computers
 
 .. rubric:: Close connection
@@ -202,5 +202,5 @@ User information
 
 * URL: /api/v1/user
 * Method: **GET**
-* Response: ``{ "login": "<USER-LOGIN-NAME>", "fullname", "<FULL-NAME-OF-USER>", "session": <DESKTOP-SESSION-ID> }``
-* If no user is logged on, the ``login`` and ``fullname`` fields are empty and ``session`` is set to ``-1``
+* Response: ``{ "login": "<USER-LOGIN-NAME>", "fullName", "<FULL-NAME-OF-USER>", "session": <DESKTOP-SESSION-ID> }``
+* If no user is logged on, the ``login`` and ``fullName`` fields are empty and ``session`` is set to ``-1``
