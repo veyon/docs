@@ -1,8 +1,9 @@
-/* override table width restrictions */
-.wy-table-responsive table td, .wy-table-responsive table th {
-    white-space: normal;
+/* always wrap at whitespaces */
+.wy-table-responsive table td, .wy-table-responsive table th, code {
+    white-space: normal !important;
 }
 
+/* override table width restrictions */
 .wy-table-responsive {
     margin-bottom: 24px;
     max-width: 100%;
