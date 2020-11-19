@@ -61,7 +61,7 @@ Veyon 4.5 is the release series with the most changes since Veyon 4.0. Most nota
     - The 3rdparty component UltraVNC has been updated to the latest version.
     - Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenLDAP 2.4.56, OpenSSL 1.1.1h)
 
-Due to the large number of changes, there's a medium risk for regressions. Therefore especially the initial release (v4.5.0) should be tested throroughly before deploying.
+Due to the large number of changes, there's a medium risk for regressions. Therefore especially the initial release (v4.5.0) should be tested thoroughly before deploying.
 
 Structural changes
 ++++++++++++++++++
