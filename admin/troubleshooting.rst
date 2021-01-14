@@ -68,6 +68,11 @@ Anti-virus software
 
 It has been reported by some users that an installed anti-virus software caused problems with Veyon, especially regarding the Veyon Service. As part of the troubleshooting process you should temporarily disable the anti-virus software in order to figure out whether the anti-virus software is the cause of error. If so, try to add an exception for the Veyon Service after enabling the anti-virus software again. Alternatively contact the vendor of your anti-virus software for further assistance.
 
+Time synchronization problems
++++++++++++++++++++++++++++++
+
+When using :ref:`logon authentication <ConfLogonAuthentication>`, Veyon requires the operating system to reliably perform user authentications on all remote computers. Especially in AD/Kerberos-based environments, authentication may not work reliably when the system clock is not synchronized with the domain controller or authentication server and differs significantly. Therefore make sure time synchronization is configured and working properly if you encounter sporadic connectivity problems when using Veyon.
+
 Settings are not correctly saved/loaded
 ---------------------------------------
 
