@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2020, Veyon Solutions
+# Copyright (C) 2017-2021, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Tobias Junghans, 2020
 # LuKi965, 2020
-# Arkadiusz Misiak <lareq@o2.pl>, 2020
+# Arkadiusz Misiak <lareq@o2.pl>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.0\n"
+"Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 08:04+0100\n"
+"POT-Creation-Date: 2021-01-25 09:31+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Arkadiusz Misiak <lareq@o2.pl>, 2020\n"
+"Last-Translator: Arkadiusz Misiak <lareq@o2.pl>, 2021\n"
 "Language-Team: Polish (https://www.transifex.com/veyon-solutions/teams/65452/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1034,20 +1034,16 @@ msgstr ""
 " podpisu nie powiedzie się, połączenie zostanie zamknięte."
 
 msgid ""
-"With **logon authentication** the counterpart encrypts its username and "
-"password and sends this data to the Veyon Service. The Veyon Service then "
-"attempts to perform an internal user login to the local system using the "
-"decrypted credentials. If this process is successful, the username and "
-"password are correct and the authenticity of the counterpart is ensured. If "
-"the login fails, the connection is closed."
+"With **logon authentication** Veyon Master encrypts the username and "
+"password of the accessing user (e.g. teacher) and sends this data to the "
+"Veyon Service on the remote computer. The Veyon Service then initiates an "
+"internal user login on the local system using the decrypted credentials. If "
+"successful, the username and password are correct and the authenticity of "
+"the counterpart is ensured. If the login fails, the connection is closed. "
+"**This method requires identical user accounts to exist on all computers.** "
+"Therefore, the use of this method only makes sense in conjunction with a "
+"central (user) directory service such as ActiveDirectory or LDAP."
 msgstr ""
-"Dzięki **logon authentication** szyfrowana jest  nazwa użytkownika oraz "
-"hasło i wysyłanedo usługi Veyon. Usługa Veyon następnie próbuje wykonać "
-"wewnętrzne logowanie użytkownika do systemu lokalnego przy użyciu "
-"odszyfrowanych danych uwierzytelniających. Jeśli proces ten zakończy się "
-"powodzeniem, nazwa użytkownika i hasło są poprawne i zapewniona jest "
-"autentyczność odpowiednika. Jeśli logowanie się nie powiedzie, połączenie "
-"zostanie zamknięte."
 
 msgid ""
 "Both methods have advantages and disadvantages so the choice of the right "
@@ -3310,7 +3306,7 @@ msgid "Network port numbers"
 msgstr ""
 
 msgid "Veyon server"
-msgstr ""
+msgstr "Serwer Veyon"
 
 msgid ""
 "This setting allows you to specify the network port number on which the "
@@ -3363,7 +3359,7 @@ msgid "**Default:** *11400*"
 msgstr "**Default:** *11400*"
 
 msgid "Miscellaneous network settings"
-msgstr ""
+msgstr "Różne ustawienia sieci"
 
 msgid "Enable firewall exception"
 msgstr "Uruchom wyjątki w zaporze sieciowej"
@@ -4424,7 +4420,7 @@ msgstr ""
 msgid ""
 "Due to the large number of changes, there's a medium risk for regressions. "
 "Therefore especially the initial release (v4.5.0) should be tested "
-"throroughly before deploying."
+"thoroughly before deploying."
 msgstr ""
 
 msgid "Structural changes"
@@ -5079,6 +5075,20 @@ msgstr ""
 "dla usługi Veyon po ponownym włączeniu oprogramowania antywirusowego. "
 "Ewentualnie skontaktuj się ze sprzedawcą oprogramowania antywirusowego, aby "
 "uzyskać dalszą pomoc."
+
+msgid "Time synchronization problems"
+msgstr ""
+
+msgid ""
+"When using :ref:`logon authentication <ConfLogonAuthentication>`, Veyon "
+"requires the operating system to reliably perform user authentications on "
+"all remote computers. Especially in AD/Kerberos-based environments, "
+"authentication may not work reliably when the system clock is not "
+"synchronized with the domain controller or authentication server and differs"
+" significantly. Therefore make sure time synchronization is configured and "
+"working properly if you encounter sporadic connectivity problems when using "
+"Veyon."
+msgstr ""
 
 msgid "Settings are not correctly saved/loaded"
 msgstr "Ustawienia nie zostały poprawnie zapisane / załadowane"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2020, Veyon Solutions
+# Copyright (C) 2017-2021, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.0\n"
+"Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 08:04+0100\n"
+"POT-Creation-Date: 2021-01-25 09:31+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Ksenija Koželj <ksenija.kozelj@gmail.com>, 2020\n"
 "Language-Team: Slovenian (https://www.transifex.com/veyon-solutions/teams/65452/sl/)\n"
@@ -961,19 +961,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With **logon authentication** the counterpart encrypts its username and "
-"password and sends this data to the Veyon Service. The Veyon Service then "
-"attempts to perform an internal user login to the local system using the "
-"decrypted credentials. If this process is successful, the username and "
-"password are correct and the authenticity of the counterpart is ensured. If "
-"the login fails, the connection is closed."
+"With **logon authentication** Veyon Master encrypts the username and "
+"password of the accessing user (e.g. teacher) and sends this data to the "
+"Veyon Service on the remote computer. The Veyon Service then initiates an "
+"internal user login on the local system using the decrypted credentials. If "
+"successful, the username and password are correct and the authenticity of "
+"the counterpart is ensured. If the login fails, the connection is closed. "
+"**This method requires identical user accounts to exist on all computers.** "
+"Therefore, the use of this method only makes sense in conjunction with a "
+"central (user) directory service such as ActiveDirectory or LDAP."
 msgstr ""
-"Z **avtentikacijo pri prijavi** sodelujoči šifrira svoje uporabniško ime in "
-"geslo ter te podatke pošlje Veyon Service. Storitev Veyon nato poskusi "
-"izvesti notranjo prijavo uporabnika v lokalni sistem z uporabo dešifriranih "
-"poverilnic. Če je ta postopek uspešen, sta uporabniško ime in geslo pravilna"
-" in zagotovljena je pristnost nasprotne stranke. Če prijava ne uspe, je "
-"povezava zaprta."
 
 msgid ""
 "Both methods have advantages and disadvantages so the choice of the right "
@@ -4814,7 +4811,7 @@ msgstr ""
 msgid ""
 "Due to the large number of changes, there's a medium risk for regressions. "
 "Therefore especially the initial release (v4.5.0) should be tested "
-"throroughly before deploying."
+"thoroughly before deploying."
 msgstr ""
 
 msgid "Structural changes"
@@ -5459,6 +5456,20 @@ msgid ""
 "cause of error. If so, try to add an exception for the Veyon Service after "
 "enabling the anti-virus software again. Alternatively contact the vendor of "
 "your anti-virus software for further assistance."
+msgstr ""
+
+msgid "Time synchronization problems"
+msgstr ""
+
+msgid ""
+"When using :ref:`logon authentication <ConfLogonAuthentication>`, Veyon "
+"requires the operating system to reliably perform user authentications on "
+"all remote computers. Especially in AD/Kerberos-based environments, "
+"authentication may not work reliably when the system clock is not "
+"synchronized with the domain controller or authentication server and differs"
+" significantly. Therefore make sure time synchronization is configured and "
+"working properly if you encounter sporadic connectivity problems when using "
+"Veyon."
 msgstr ""
 
 msgid "Settings are not correctly saved/loaded"
