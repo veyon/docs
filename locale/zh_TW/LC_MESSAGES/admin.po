@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-25 09:31+0100\n"
+"POT-Creation-Date: 2021-03-15 09:01+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -1559,6 +1559,9 @@ msgstr ""
 
 msgid "Automated installation without the Veyon Master component:"
 msgstr "不含 Veyon Master 元件的自動安裝:"
+
+msgid "Automated installation without creating a start menu folder:"
+msgstr ""
 
 msgid "Automated installation without the Interception driver:"
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2020, Veyon Solutions
+# Copyright (C) 2017-2021, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -7,17 +7,18 @@
 # Алексей Черемных <s-r-grass@mail.ru>, 2019
 # Sergio Palma <donbalear@gmail.com>, 2019
 # Gleb Shaposhnikov <gshap1995@gmail.com>, 2019
-# Andrey Atapin <atab@kirovedu.ru>, 2020
 # AlexL <loginov.alex.valer@gmail.com>, 2020
+# Andrey Atapin <atab@kirovedu.ru>, 2020
+# Denis Basik <denisbasik@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.4.2\n"
+"Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-19 10:35+0200\n"
+"POT-Creation-Date: 2021-03-15 09:01+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2020\n"
+"Last-Translator: Denis Basik <denisbasik@gmail.com>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -784,12 +785,15 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With **logon authentication** the counterpart encrypts its username and "
-"password and sends this data to the Veyon Service. The Veyon Service then "
-"attempts to perform an internal user login to the local system using the "
-"decrypted credentials. If this process is successful, the username and "
-"password are correct and the authenticity of the counterpart is ensured. If "
-"the login fails, the connection is closed."
+"With **logon authentication** Veyon Master encrypts the username and "
+"password of the accessing user (e.g. teacher) and sends this data to the "
+"Veyon Service on the remote computer. The Veyon Service then initiates an "
+"internal user login on the local system using the decrypted credentials. If "
+"successful, the username and password are correct and the authenticity of "
+"the counterpart is ensured. If the login fails, the connection is closed. "
+"**This method requires identical user accounts to exist on all computers.** "
+"Therefore, the use of this method only makes sense in conjunction with a "
+"central (user) directory service such as ActiveDirectory or LDAP."
 msgstr ""
 
 msgid ""
@@ -1279,7 +1283,7 @@ msgid "https://en.wikipedia.org/wiki/IPv6"
 msgstr ""
 
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 msgid ""
 "an endpoint of communication. Physical as well as wireless connections are "
@@ -1477,6 +1481,9 @@ msgid ""
 msgstr ""
 
 msgid "Automated installation without the Veyon Master component:"
+msgstr ""
+
+msgid "Automated installation without creating a start menu folder:"
 msgstr ""
 
 msgid "Automated installation without the Interception driver:"
@@ -2828,26 +2835,6 @@ msgid ""
 "information can be found in chapter :ref:`AccessControlRules`."
 msgstr ""
 
-msgid "Multi session mode (for terminal and remote desktop servers)"
-msgstr ""
-"Режим со многими сеансами (для сервера-терминала и сервера удалённого "
-"рабочего стола)"
-
-msgid ""
-"Enabling this option makes the Veyon Service launch a Veyon Server process "
-"for every user session on a computer. This includes both local and remote "
-"(RDP) sessions. Typically this is required to support terminal/remote "
-"desktop server scenarios. The server instances listen on individual network "
-"ports based on the :ref:`primary service port <RefPrimaryServerPort>` and "
-"the session ID. To access a session other than the default session, the "
-"corresponding port number has to be appended to the hostname in the "
-":ref:`ConfLocationsAndComputers` configuration page. You can use e.g. "
-"``myhost.example.org:11101`` to access the first RDP session on a computer. "
-"Alternatively consider using the `NetworkDiscovery add-on "
-"<https://veyon.io/addons/#networkdiscovery>`_ which scans computers for "
-"sessions and makes them available in Veyon Master automatically."
-msgstr ""
-
 msgid "Autostart"
 msgstr "Автозапуск"
 
@@ -2859,60 +2846,112 @@ msgid ""
 "logon screen will not be accessible in this case."
 msgstr ""
 
-msgid "Network"
-msgstr "Сеть"
-
-msgid "Primary service port"
-msgstr "Порт основного сервиса"
+msgid ""
+"Single session mode (create server instance for local/physical session only)"
+msgstr ""
+"Режим одиночного сеанса (создание сервера только для локального / "
+"физического сеанса)"
 
 msgid ""
-"You can use this setting to define the primary network port which the Veyon "
-"Server is listening at for incoming connections."
+"Choose this option for single-user scenarios, i.e. each user is working "
+"locally on a dedicated computer. In this mode the Veyon Service will always "
+"start exactly one server instance for the primary session of the computer, "
+"e.g. the console session on Windows."
+msgstr ""
+
+msgid "Multi session mode (for terminal and remote desktop servers)"
+msgstr ""
+"Режим со многими сеансами (для сервера-терминала и сервера удалённого "
+"рабочего стола)"
+
+msgid ""
+"Enabling this option makes the Veyon Service launch a Veyon Server process "
+"for every user session on a computer. This includes both local and remote "
+"(RDP) sessions. Typically this is required to support terminal/remote "
+"desktop server scenarios. The server instances listen on individual network "
+"port numbers based on the :ref:`Veyon server port number "
+"<RefVeyonServerPort>` and the session ID. To access a session other than the"
+" default session, the corresponding port number has to be appended to the "
+"hostname in the :ref:`ConfLocationsAndComputers` configuration page. You can"
+" use e.g. ``myhost.example.org:11101`` to access the first RDP session on a "
+"computer. Alternatively consider using the `NetworkDiscovery add-on "
+"<https://veyon.io/addons/#networkdiscovery>`_ which scans computers for "
+"sessions and makes them available in Veyon Master automatically."
+msgstr ""
+
+msgid "Maximum session count"
+msgstr "Максимальное количество сеансов"
+
+msgid ""
+"In multi session mode the number of server instances can be limited through "
+"this setting. Per default up to 100 concurrent sessions are supported on a "
+"computer. When using numbers higher than 100, make sure to adjust the "
+":ref:`server port numbers <RefNetworkPortNumbers>` to be more than 100 "
+"apart. Otherwise port numbers of different instances and server types would "
+"overlap and cause malfunctions."
+msgstr ""
+
+msgid "**Default:** *100*"
+msgstr ""
+
+msgid "Network port numbers"
+msgstr "Номера сетевых портов"
+
+msgid "Veyon server"
+msgstr "Veyon сервер"
+
+msgid ""
+"This setting allows you to specify the network port number on which the "
+"Veyon Server listens for incoming connections."
 msgstr ""
 
 msgid "**Default:** *11100*"
 msgstr ""
 
-msgid "Internal VNC server port"
-msgstr "Порт внутреннего сервера VNC"
+msgid "Internal VNC server"
+msgstr "Встроенный VNC-сервер"
 
 msgid ""
-"You can use this setting to define the (localhost only) network port used by"
-" the internal VNC server. The VNC server will only listen to it at "
-"``localhost`` so it never is reachable from the network directly. It's "
-"solely accessed by the Veyon Service which forwards screen data from and "
-"user inputs to the internal VNC server."
+"This setting allows you to specify the network port number used by the "
+"internal VNC server. The internal VNC server only listens on ``localhost``, "
+"so it is never directly accessible from the network. Only the local Veyon "
+"server accesses the internal VNC server and forwards screen data and user "
+"input accordingly."
 msgstr ""
 
 msgid "**Default:** *11200*"
 msgstr ""
 
-msgid "Feature manager port"
-msgstr "Порт управления функциями"
+msgid "Feature manager"
+msgstr "Менеджер функций"
 
 msgid ""
-"You can use this setting to define the (localhost only) network port used by"
-" the feature manager. This internal component is part of the Veyon Service "
-"and starts and stops processes to provide specific features. In contrast to "
-"the Veyon Service these processes in most cases have to run in the context "
-"of the logged on user and therefore have to communicate with the Veyon "
-"Service through this network port."
+"This setting allows you to specify the network port number used by the "
+"feature manager. This internal component is part of the Veyon Server and "
+"listens at ``localhost`` only. It starts/stops processes to provide specific"
+" features. In contrast to the Veyon Service these processes in most cases "
+"have to run in the context of the logged on user and therefore have to "
+"communicate with the Veyon Server through this network port."
 msgstr ""
 
 msgid "**Default:** *11300*"
 msgstr ""
 
-msgid "Demo server port"
-msgstr "Порт демонстрационного сервера"
+msgid "Demo server"
+msgstr "Демонстрационный сервер"
 
 msgid ""
-"You can use this setting to define the network port which the demo server is"
-" listening at. The demo server efficiently makes screen data from a selected"
-" computer available to all computers participating in a demonstration."
+"This setting allows you to specify the network port number used by the demo "
+"server. The demo server is a special high-efficiency VNC server that makes "
+"the screen data of the demo computer available to all participating "
+"computers."
 msgstr ""
 
 msgid "**Default:** *11400*"
 msgstr ""
+
+msgid "Miscellaneous network settings"
+msgstr "Дополнительные настройки сети"
 
 msgid "Enable firewall exception"
 msgstr "Включить исключения брандмауэра"
@@ -2920,10 +2959,10 @@ msgstr "Включить исключения брандмауэра"
 msgid ""
 "Depending on the system configuration it may be impossible to access "
 "listening ports such as the Veyon Server port from the network. On Windows "
-"the Windows firewall usually will block any incoming connections. In order "
-"to allow access to the service port and the demo server port, exceptions for"
-" the Windows-Firewall must be configured. This is done automatically during "
-"the installation process. If this behavior is not desired and manual "
+"the Windows firewall usually blocks any incoming connections. In order to "
+"allow access to the Veyon server port and the demo server port, exceptions "
+"for the Windows firewall must be configured. This is done automatically "
+"during the installation process. If this behavior is not desired and manual "
 "configuration is preferred, this option can be disabled."
 msgstr ""
 
@@ -3156,6 +3195,16 @@ msgid ""
 "computer to prevent such issues."
 msgstr ""
 
+msgid "Hide own session"
+msgstr ""
+
+msgid ""
+"Similar to the :ref:`Hide local computer <RefAutoHideLocalComputer>` option,"
+" enabling this option hides the own session from the computer list. This is "
+"only relevant when using the :ref:`Multi session mode "
+"<RefMultiSessionMode>`."
+msgstr ""
+
 msgid "Hide empty locations"
 msgstr "Скрыть пустые места"
 
@@ -3350,9 +3399,6 @@ msgstr ""
 msgid "**Default:** *%GLOBALAPPDATA%/keys/private*"
 msgstr ""
 
-msgid "Demo server"
-msgstr "Демонстрационный сервер"
-
 msgid ""
 "In the configuration page for the demo server, you can make some fine "
 "tunings to improve the performance of the demo mode. These settings should "
@@ -3422,7 +3468,7 @@ msgid "Directories"
 msgstr "Каталоги"
 
 msgid "Default source directory"
-msgstr ""
+msgstr "Исходный каталог по умолчанию"
 
 msgid ""
 "This directory will be opened by default when the user starts the file "
@@ -3433,7 +3479,7 @@ msgid "**Default:** ``%HOME%``"
 msgstr ""
 
 msgid "Destination directory"
-msgstr ""
+msgstr "Целевой каталог"
 
 msgid ""
 "All received files will be saved in this directory on the client side. "
@@ -3445,7 +3491,7 @@ msgid "Options"
 msgstr "Параметры"
 
 msgid "Remember last source directory"
-msgstr ""
+msgstr "Запомнить последний исходный каталог"
 
 msgid ""
 "When the user is asked for files to transfer, the directory which files have"
@@ -3454,7 +3500,7 @@ msgid ""
 msgstr ""
 
 msgid "Create destination directory if it does not exist"
-msgstr ""
+msgstr "Создайте целевой каталог, если он не существует"
 
 msgid ""
 "When using a destination directory other than the default one, it may happen"
@@ -3471,7 +3517,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable WebAPI server"
-msgstr ""
+msgstr "Включить Веб-API сервер"
 
 msgid ""
 "This option defines whether to start the WebAPI server along with the Veyon "
@@ -3479,7 +3525,7 @@ msgid ""
 msgstr ""
 
 msgid "Network port"
-msgstr ""
+msgstr "Сетевой порт"
 
 msgid ""
 "This setting specifies the network port at which the WebAPI server should "
@@ -3490,7 +3536,7 @@ msgid "**Default:** *11080*"
 msgstr ""
 
 msgid "Connection settings"
-msgstr ""
+msgstr "Настройки соединения"
 
 msgid ""
 "A connection refers to an authentication resource identified by a connection"
@@ -3498,7 +3544,7 @@ msgid ""
 msgstr ""
 
 msgid "Lifetime"
-msgstr ""
+msgstr "Срок службы"
 
 msgid ""
 "Every connection is only valid for a certain period of time, regardless of "
@@ -3510,7 +3556,7 @@ msgid "**Default:** *3 h*"
 msgstr ""
 
 msgid "Idle timeout"
-msgstr ""
+msgstr "Время ожидания бездействия"
 
 msgid ""
 "If no request is received for a certain connection for longer than specified"
@@ -3521,7 +3567,7 @@ msgid "**Default:** *60 s*"
 msgstr ""
 
 msgid "Authentication timeout"
-msgstr ""
+msgstr "Время ожидания на подключение"
 
 msgid ""
 "This setting determines the time period within which a connection must be "
@@ -3533,10 +3579,10 @@ msgid "**Default:** *15 s*"
 msgstr ""
 
 msgid "Maximum number of open connections"
-msgstr ""
+msgstr "Максимальное число открытых соединений"
 
 msgid ""
-"This setting limits the number of simultanous open connections, e.g. to "
+"This setting limits the number of simultaneous open connections, e.g. to "
 "mitigate possible denial of service attacks."
 msgstr ""
 
@@ -3544,10 +3590,10 @@ msgid "**Default:** *10*"
 msgstr ""
 
 msgid "Connection encryption"
-msgstr ""
+msgstr "Шифрование соединения"
 
 msgid "Use HTTPS with TLS 1.3 instead of HTTP"
-msgstr ""
+msgstr "Использовать HTTPS совместно с TLS 1.3 вместо HTTP"
 
 msgid ""
 "This option determines whether only HTTPS connections should be allowed "
@@ -3556,13 +3602,13 @@ msgid ""
 msgstr ""
 
 msgid "TLS certificate file"
-msgstr ""
+msgstr "Файл TLS сертификата"
 
 msgid "The path to the TLS certificate file for the HTTPS server."
 msgstr ""
 
 msgid "TLS private key file"
-msgstr ""
+msgstr "Файл приватного ключа TLS"
 
 msgid "The path to the TLS private key file for the HTTPS server."
 msgstr ""
@@ -3624,15 +3670,14 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This variable allows specifying the session ID and is evaluated by Veyon "
-"Server. When multi session support (multiple graphical sessions on the same "
-"host) is enabled each Veyon Server instance has to use distinct network "
-"ports for not conflicting with other instances. A server therefore adds the "
-"numerical value of this environment variable to the configured :ref:`network"
-" ports <RefNetwork>` to determine the port numbers to use. Usually this "
-"environment variable is set by Veyon Service for all Veyon Server instances "
-"automatically. In the :ref:`RefNetworkObjectDirectory` the absolute port "
-"(Primary service port + session ID) must be specified along with the "
+"This variable allows overriding the session ID and is evaluated by Veyon "
+"Server. When multi session mode (multiple local and remote sessions on the "
+"same host) is enabled each Veyon Server instance has to use distinct network"
+" numbers for not conflicting with other instances. A server therefore adds "
+"the numerical value of this environment variable to the configured "
+":ref:`network port numbers <RefNetworkPortNumbers>` to determine the port "
+"numbers to use. In the :ref:`RefNetworkObjectDirectory` the absolute port "
+"(Veyon server port + session ID) must be specified along with the "
 "computer/IP address, e.g. ``192.168.2.3:11104``."
 msgstr ""
 
@@ -3666,6 +3711,15 @@ msgstr ""
 msgid "Remote connection notification"
 msgstr ""
 
+msgid "System service"
+msgstr ""
+
+msgid "Sessions"
+msgstr "Сессии"
+
+msgid "Session settings"
+msgstr ""
+
 msgid "Terminal server"
 msgstr ""
 
@@ -3675,19 +3729,25 @@ msgstr ""
 msgid "RDP"
 msgstr ""
 
-msgid "Multi-session mode"
+msgid "Single session mode"
 msgstr ""
 
-msgid "System service"
+msgid "Multi session mode"
 msgstr ""
 
-msgid "Network settings"
+msgid "Port numbers"
 msgstr ""
 
-msgid "Internal VNC server"
+msgid "Veyon Server port number"
 msgstr ""
 
-msgid "Feature manager"
+msgid "Internal VNC server port number"
+msgstr ""
+
+msgid "Feature manager port number"
+msgstr ""
+
+msgid "Demo server port number"
 msgstr ""
 
 msgid "Firewall exception"
@@ -3799,6 +3859,208 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.5"
+msgstr ""
+
+msgid ""
+"Veyon 4.5 is the release series with the most changes since Veyon 4.0. Most "
+"notably, Veyon 4.5 includes a new WebAPI plugin which allows accessing "
+"computers by 3rdparty products via HTTP. Veyon Master introduces the new "
+"monitoring panels *Slideshow* and *Spotlight*. The demo mode has been "
+"greatly extended and improved. It's now possible to share a student's screen"
+" instead of the own screen easily. In environments where multiple monitors "
+"are connected to the computer running Veyon Master, the user can now choose "
+"to share a specific monitor only. Moreover, the performance and "
+"responsiveness of the demo mode is much better thanks to the demo server now"
+" being multithreaded. At the same time Veyon 4.5 focuses on application and "
+"desktop virtualization environments by delivering extended and improved "
+"multi session support. Additionally various compatibility issues on Linux "
+"have been fixed and the file transfer plugin received a configuration page."
+msgstr ""
+
+msgid "Core"
+msgstr ""
+
+msgid "The feature plugin API has been revised."
+msgstr ""
+
+msgid ""
+"The invocation of worker processes and communication with them has been "
+"improved, resulting in increased reliability of certain Veyon features such "
+"as the demo mode."
+msgstr ""
+
+msgid ""
+"Session IDs are now managed internally. This allows reusing a session ID "
+"after a user session has been closed. RDP session IDs (which are increased "
+"continuously) are no longer used for calculating server port numbers."
+msgstr ""
+
+msgid "Configurator"
+msgstr ""
+
+msgid "Several parts of the user interface have been improved."
+msgstr ""
+
+msgid "Settings for new Veyon Master features have been added."
+msgstr ""
+
+msgid "Plugins"
+msgstr ""
+
+msgid ""
+"Demo: The server has been refactored to be multithreaded which improves "
+"performance and responsiveness especially with many clients."
+msgstr ""
+
+msgid ""
+"Demo: A feature has been added to share a user's screen instead of the own "
+"one."
+msgstr ""
+
+msgid ""
+"Demo: The modes (window/fullscreen) have been made subfeatures displayed in "
+"a drop down menu."
+msgstr ""
+
+msgid ""
+"Demo: A feature has been added to share only one of multiple own screens."
+msgstr ""
+
+msgid ""
+"FileTransfer: A configuration page has been added allowing to configure "
+"source and destination folders."
+msgstr ""
+
+msgid "RemoteAccess: The username is now displayed in the window title."
+msgstr ""
+
+msgid ""
+"WebAPI: Added a new plugin offering a RESTful API for accessing Veyon Server"
+" instances."
+msgstr ""
+
+msgid "The reboot/poweroff functions now prefer using systemd-logind."
+msgstr ""
+
+msgid ""
+"The reboot/poweroff functions now look for binaries in /sbin and /usr/sbin "
+"if they are not in the PATH environment variable."
+msgstr ""
+
+msgid ""
+"The user session management code has been improved to start Veyon Server "
+"more reliably."
+msgstr ""
+
+msgid ""
+"The screenlock feature is now working properly with most desktop "
+"environments."
+msgstr ""
+
+msgid ""
+"The new Slideshow panel cycles through all computers and shows a magnified "
+"view of each computer for a short time."
+msgstr ""
+
+msgid ""
+"The new Spotlight panel shows one or multiple computers in realtime. This "
+"allows keeping an eye on users requiring special attention."
+msgstr ""
+
+msgid ""
+"The size of computer icons is now always adjusted automatically whenever the"
+" panel is resized or computers are added or removed."
+msgstr ""
+
+msgid ""
+"States and sizes of panels are now saved when closing the program and "
+"restored upon the next start."
+msgstr ""
+
+msgid ""
+"The aspect ratio of computer icons is now adjusted to the original screen "
+"sizes."
+msgstr ""
+
+msgid "Server"
+msgstr ""
+
+msgid ""
+"A notification is now shown for both incomplete and failed authentication "
+"attempts."
+msgstr ""
+
+msgid ""
+"Support for external VNC servers without any authentication/password "
+"configured has been added."
+msgstr ""
+
+msgid ""
+"The Interception driver is now disabled in multi session mode to prevent "
+"issues with hanging RDP sessions."
+msgstr ""
+
+msgid ""
+"The 3rdparty component UltraVNC has been updated to the latest version."
+msgstr ""
+
+msgid ""
+"Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenLDAP "
+"2.4.56, OpenSSL 1.1.1h)"
+msgstr ""
+
+msgid ""
+"Due to the large number of changes, there's a medium risk for regressions. "
+"Therefore especially the initial release (v4.5.0) should be tested "
+"thoroughly before deploying."
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid "There are no structural changes in Veyon 4.5."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid ""
+"Several configuration keys have been renamed in Veyon 4.5. When upgrading to"
+" Veyon 4.5 or newer the new configuration keys will be populated with the "
+"value of the old keys automatically."
+msgstr ""
+
+msgid "Old name"
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "``Network/PrimaryServicePort``"
+msgstr ""
+
+msgid "``Network/VeyonServerPort``"
+msgstr ""
+
+msgid "``Master/AutoAdjustGridSize``"
+msgstr ""
+
+msgid "``Master/AutoAdjustIconSize``"
+msgstr ""
+
+msgid "``Master/LocalComputerHidden``"
+msgstr ""
+
+msgid "``Master/HideLocalComputer``"
+msgstr ""
+
+msgid "``Master/ComputerFilterHidden``"
+msgstr ""
+
+msgid "``Master/HideComputerFilter``"
+msgstr ""
+
 msgid "Veyon 4.4"
 msgstr ""
 
@@ -3811,13 +4073,7 @@ msgid ""
 "regressions is very low."
 msgstr ""
 
-msgid "Structural changes"
-msgstr ""
-
 msgid "There are no structural changes in Veyon 4.4."
-msgstr ""
-
-msgid "Configuration changes"
 msgstr ""
 
 msgid ""
@@ -3859,9 +4115,6 @@ msgid ""
 "improvements can be found in Veyon 4.2:"
 msgstr ""
 
-msgid "Core"
-msgstr ""
-
 msgid ""
 "The network object management layer has been revised to allow using multi-"
 "level hierarchies in commercial add-ons."
@@ -3887,16 +4140,10 @@ msgid ""
 "The connection and message handling has been improved to reduce latencies."
 msgstr ""
 
-msgid "Configurator"
-msgstr ""
-
 msgid "New view modes \"Standard\" and \"Advanced\" have been added."
 msgstr ""
 
 msgid "An authentication test functionality has been added."
-msgstr ""
-
-msgid "Plugins"
 msgstr ""
 
 msgid ""
@@ -4011,12 +4258,6 @@ msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"
 " Veyon 4.2 or newer the new configuration keys will be populated with the "
 "value of the old keys automatically."
-msgstr ""
-
-msgid "Old name"
-msgstr ""
-
-msgid "New name"
 msgstr ""
 
 msgid "``Service/SoftwareSASEnabled``"
@@ -4274,8 +4515,9 @@ msgstr ""
 msgid ""
 "Besides general program output the character string ``RFB 003.008`` must be "
 "displayed. If the output does not contain these characters you should check "
-"the :ref:`network settings <RefNetwork>`, especially the primary service "
-"port. You should try to reset them to their default values."
+"the :ref:`network port number settings <RefNetworkPortNumbers>` and "
+":ref:`Miscellaneous network settings <RefNetworkMisc>`, especially the Veyon"
+" server port number. You should try to reset them to their default values."
 msgstr ""
 
 msgid ""
@@ -4284,11 +4526,11 @@ msgid ""
 "program argument ``localhost`` has to be replaced with the name or IP "
 "address of the corresponding computer. If the access fails please ensure "
 "that the option :guilabel:`Allow connections from localhost only` in the "
-":ref:`network settings <RefNetwork>` is disabled. Additionally "
-":ref:`computer access control <ComputerAccessControl>` should be disabled "
-"initially as the service otherwise might listen on ``localhost`` only. This "
-"can happen if the external access would be denied because of currently "
-"matching rules. If both settings are correct the output of"
+":ref:`Miscellaneous network settings <RefNetworkMisc>` is disabled. "
+"Additionally :ref:`computer access control <ComputerAccessControl>` should "
+"be disabled initially as the service otherwise might listen on ``localhost``"
+" only. This can happen if the external access would be denied because of "
+"currently matching rules. If both settings are correct the output of"
 msgstr ""
 
 msgid ""
@@ -4302,10 +4544,10 @@ msgid ""
 "concerns settings of ``iptables``, ``ufw`` etc. Consult the corresponding "
 "manuals of the used software. On Windows Veyon automatically configures the "
 "integrated Windows firewall if the option :guilabel:`Enable firewall "
-"exception` in the :ref:`network settings <RefNetwork>` is set to its default"
-" value (*enabled*). If a 3rd party firewall solution is used it must be "
-"configured to allow external access to TCP ports 11100 (primary service "
-"port) and 11400 (demo server)."
+"exception` in the :ref:`Miscellaneous network settings <RefNetworkMisc>` is "
+"set to its default value (*enabled*). If a 3rd party firewall solution is "
+"used it must be configured to allow external access to TCP ports 11100 "
+"(Veyon server port) and 11400 (demo server)."
 msgstr ""
 
 msgid "Authentication settings"
@@ -4377,6 +4619,20 @@ msgid ""
 "cause of error. If so, try to add an exception for the Veyon Service after "
 "enabling the anti-virus software again. Alternatively contact the vendor of "
 "your anti-virus software for further assistance."
+msgstr ""
+
+msgid "Time synchronization problems"
+msgstr ""
+
+msgid ""
+"When using :ref:`logon authentication <ConfLogonAuthentication>`, Veyon "
+"requires the operating system to reliably perform user authentications on "
+"all remote computers. Especially in AD/Kerberos-based environments, "
+"authentication may not work reliably when the system clock is not "
+"synchronized with the domain controller or authentication server and differs"
+" significantly. Therefore make sure time synchronization is configured and "
+"working properly if you encounter sporadic connectivity problems when using "
+"Veyon."
 msgstr ""
 
 msgid "Settings are not correctly saved/loaded"
@@ -4463,8 +4719,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"in the configuration page :guilabel:`Service` under :ref:`network settings "
-"<RefNetwork>` the demo server port is set to its default value ``11400``"
+"in the configuration page :guilabel:`Service` under :ref:`network port "
+"numbers <RefNetworkPortNumbers>` the demo server port is set to its default "
+"value ``11400``"
 msgstr ""
 
 msgid ""

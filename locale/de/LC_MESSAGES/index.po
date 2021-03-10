@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2020
+# Tobias Junghans, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-25 09:31+0100\n"
+"POT-Creation-Date: 2021-03-15 09:01+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Tobias Junghans, 2020\n"
+"Last-Translator: Tobias Junghans, 2021\n"
 "Language-Team: German (https://www.transifex.com/veyon-solutions/teams/65452/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,3 +47,54 @@ msgstr ""
 "`Veyon-Benutzerhandbuch-PDF "
 "<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
 "de_4.4.0.pdf>`_"
+
+msgid "Other languages"
+msgstr "Andere Sprachen"
+
+msgid "`Chinese <https://docs.veyon.io/zh/latest/>`_"
+msgstr "`Chinesisch <https://docs.veyon.io/zh/latest/>`_"
+
+msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
+msgstr "`Chinesisch (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
+
+msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
+msgstr "`Tschechisch <https://docs.veyon.io/cs/latest/>`_"
+
+msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
+msgstr "`Niederländisch <https://docs.veyon.io/nl/latest/>`_"
+
+msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
+msgstr "`Spanisch <https://docs.veyon.io/es/latest/>`_"
+
+msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
+msgstr "`Estonisch <https://docs.veyon.io/et/latest/>`_"
+
+msgid "`French <https://docs.veyon.io/fr/latest/>`_"
+msgstr "`Französisch <https://docs.veyon.io/fr/latest/>`_"
+
+msgid "`German <https://docs.veyon.io/de/latest/>`_"
+msgstr "`Deutsch <https://docs.veyon.io/de/latest/>`_"
+
+msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
+msgstr "`Ungarisch <https://docs.veyon.io/hu/latest/>`_"
+
+msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
+msgstr "`Italienisch <https://docs.veyon.io/it/latest/>`_"
+
+msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
+msgstr "`Litauisch <https://docs.veyon.io/lt/latest/>`_"
+
+msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
+msgstr "`Polnisch <https://docs.veyon.io/pl/latest/>`_"
+
+msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
+msgstr "`Russisch <https://docs.veyon.io/ru/latest/>`_"
+
+msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
+msgstr "`Slowenisch <https://docs.veyon.io/sl/latest/>`_"
+
+msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
+msgstr "`Serbisch <https://docs.veyon.io/sr/latest/>`_"
+
+msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
+msgstr "`Ukrainisch <https://docs.veyon.io/uk/latest/>`_"

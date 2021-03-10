@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-25 09:31+0100\n"
+"POT-Creation-Date: 2021-03-15 09:01+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
 "Last-Translator: Tobias Junghans, 2020\n"
 "Language-Team: Hungarian (https://www.transifex.com/veyon-solutions/teams/65452/hu/)\n"
@@ -48,3 +48,54 @@ msgstr ""
 "`Veyon felhasználói kézikönyv PDF "
 "<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
 "hu_4.4.0.pdf>`_"
+
+msgid "Other languages"
+msgstr ""
+
+msgid "`Chinese <https://docs.veyon.io/zh/latest/>`_"
+msgstr ""
+
+msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
+msgstr ""
+
+msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
+msgstr ""
+
+msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
+msgstr ""
+
+msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
+msgstr ""
+
+msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
+msgstr ""
+
+msgid "`French <https://docs.veyon.io/fr/latest/>`_"
+msgstr ""
+
+msgid "`German <https://docs.veyon.io/de/latest/>`_"
+msgstr ""
+
+msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
+msgstr ""
+
+msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
+msgstr ""
+
+msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
+msgstr ""
+
+msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
+msgstr ""
+
+msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
+msgstr ""
+
+msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
+msgstr ""
+
+msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
+msgstr ""
+
+msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
+msgstr ""

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-25 09:31+0100\n"
+"POT-Creation-Date: 2021-03-15 09:01+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Lachaux Patrick, 2021\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
@@ -2094,6 +2094,9 @@ msgstr ""
 
 msgid "Automated installation without the Veyon Master component:"
 msgstr "Installation automatique sans le composant Veyon Maître:"
+
+msgid "Automated installation without creating a start menu folder:"
+msgstr ""
 
 msgid "Automated installation without the Interception driver:"
 msgstr "Installation automatique sans le pilote d'interception:"
