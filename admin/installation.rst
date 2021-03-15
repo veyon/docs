@@ -105,6 +105,12 @@ Automated installation without the Veyon Master component:
 
     veyon-x.y.z-win64-setup.exe /S /NoMaster
 
+Automated installation without creating a start menu folder:
+
+.. code-block:: none
+
+    veyon-x.y.z-win64-setup.exe /S /NoStartMenuFolder
+
 Automated installation without the Interception driver:
 
 .. code-block:: none
