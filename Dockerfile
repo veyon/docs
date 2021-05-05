@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 MAINTAINER Tobias Junghans <tobydox@veyon.io>
 
 RUN \
@@ -19,6 +19,7 @@ RUN \
 		texlive-lang-german \
 		texlive-lang-italian \
 		texlive-lang-spanish \
+		xindy \
 		&& \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
