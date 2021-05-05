@@ -2263,7 +2263,7 @@ msgid "Send text messages to students"
 msgstr "Textnachrichten an Schüler senden"
 
 msgid "Power on, reboot or shutdown computers remotely"
-msgstr "Computer aus der Ferne ein- oder ausschalten sowie neustarten"
+msgstr "Computer aus der Ferne ein- oder ausschalten sowie neu starten"
 
 msgid "Log out users"
 msgstr "Benutzer abmelden"
@@ -6173,7 +6173,7 @@ msgid ""
 "The shutdown/reboot/session logout mechanisms have been rewritten to use "
 "DBus calls."
 msgstr ""
-"Der Mechanismus zum Herunterfahren/Neustarten/Abmelden wurde mit Hilfe von "
+"Der Mechanismus zum Herunterfahren/Neustart/Abmelden wurde mit Hilfe von "
 "DBus-Aufrufen neu entwickelt."
 
 msgid ""

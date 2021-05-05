@@ -2096,7 +2096,7 @@ msgid "Automated installation without the Veyon Master component:"
 msgstr "Installation automatique sans le composant Veyon Maître:"
 
 msgid "Automated installation without creating a start menu folder:"
-msgstr ""
+msgstr "Installation automatisée sans créer d'entrée dans le menu Démarrer:"
 
 msgid "Automated installation without the Interception driver:"
 msgstr "Installation automatique sans le pilote d'interception:"
