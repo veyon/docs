@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Peeter Ramst <peeter@aste.edu.ee>, 2020
+# Tobias Junghans, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.2\n"
+"Project-Id-Version: Veyon 4.5.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-15 09:01+0100\n"
+"POT-Creation-Date: 2021-05-05 13:11+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2020\n"
+"Last-Translator: Tobias Junghans, 2021\n"
 "Language-Team: Estonian (https://www.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,21 +33,21 @@ msgstr "PDF-i allalaadimine"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-admin-manual-"
-"en_4.4.0.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.5.5/veyon-admin-manual-"
+"en_4.5.5.pdf>`_"
 msgstr ""
 "\"Veyoni administraatori käsiraamat PDF "
-"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-admin-manual-"
-"en_4.4.0.pdf>\" _"
+"<https://github.com/veyon/docs/releases/download/v4.5.5/veyon-admin-manual-"
+"en_4.5.5.pdf>\" _"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
-"en_4.4.0.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.5.5/veyon-user-manual-"
+"en_4.5.5.pdf>`_"
 msgstr ""
 "\"Veyoni kasutusjuhend PDF "
-"<https://github.com/veyon/docs/releases/download/v4.4.0/veyon-user-manual-"
-"en_4.4.0.pdf>\" _"
+"<https://github.com/veyon/docs/releases/download/v4.5.5/veyon-user-manual-"
+"en_4.5.5.pdf>\" _"
 
 msgid "Other languages"
 msgstr ""
