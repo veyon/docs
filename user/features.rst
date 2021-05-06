@@ -48,16 +48,20 @@ Demonstration mode
 
 .. index:: Demonstration mode, Fullscreen demo, Window demo, Demo mode, Demonstration, Presentation, Screen broadcast
 
-You can use the demonstration mode (demo mode) to start a presentation. In this mode, your screen content is broadcasted to all computers and displayed in real time. You can choose between a full screen and a window demo.
+You can use the demonstration mode (demo mode) to start a presentation. In this mode, the content of your or a student's screen is broadcasted to all computers and displayed in real time. You can choose between a full screen and a window demo.
 
 During a full screen demo your screen content will be displayed in full screen on the remote computers. Logged-in users cannot use their computers for other tasks in this mode because all input devices are locked. In this way you will gain the full attention of your students.
 
 By contrast, a window demo allows users to switch between the demo window and their own applications. For example, course participants can arrange the windows side by side and try out the demonstrated steps themselves in parallel. The input devices are therefore not locked in this mode.
 
-In order to start a full screen or window demo, you just have to press the :guilabel:`Fullscreen demo` or :guilabel:`Window demo` button:
+In order to start a demonstration, you have to open the demo menu by pressing the :guilabel:`Demo`:
 
-.. image:: images/FeatureDemonstration.png
+.. image:: images/DemoMenu.png
    :align: center
+
+Now click the desired item in the menu. If you want to share a student's screen, make sure to select it before so the program knows which screen to broadcast.
+
+In case your computer is equipped with multiple screens, you can choose to only broadcast one of the screens. To do this, click the corresponding screen item in the demo menu before sharing your screen.
 
 If you want to leave the demonstration mode again, simply press the button again or click on the :guilabel:`Monitoring` button to switch back to monitoring mode globally. The context menu can also be used to stop the demonstration mode on individual computers.
 
