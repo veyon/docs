@@ -10,6 +10,13 @@ for i in $(find ../locale/ -mindepth 1 -maxdepth 1 -type d -printf "%f\n") ; do
 	mkdir -p images/$i
 	cd images/$i
 	veyon-master
+	wait
+	cd ../..
+done
+
+for i in $(find ../locale/ -mindepth 1 -maxdepth 1 -type d -printf "%f\n") ; do
+	mkdir -p images/$i
+	cd images/$i
 	optipng -o9 Feature*png &
 	optipng -o9 *Menu.png &
 	optipng -o9 *Panel.png &
