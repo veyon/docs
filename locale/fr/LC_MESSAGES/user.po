@@ -7,7 +7,7 @@
 # ÉricB. <eric.bugnet@gmail.com>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2019
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
-# Lachaux Patrick, 2020
+# Lachaux Patrick, 2021
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-06 11:03+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Lachaux Patrick, 2020\n"
+"Last-Translator: Lachaux Patrick, 2021\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -198,6 +198,10 @@ msgid ""
 "computers and displayed in real time. You can choose between a full screen "
 "and a window demo."
 msgstr ""
+"Vous pouvez utiliser le mode démonstration (mode démo) pour démarrer une "
+"présentation. Dans ce mode, le contenu de votre écran ou celui d'un élève "
+"est diffusé sur tous les ordinateurs et affiché en temps réel. Vous pouvez "
+"choisir entre un plein écran et une démo fenêtrée."
 
 msgid ""
 "During a full screen demo your screen content will be displayed in full "
@@ -227,18 +231,27 @@ msgid ""
 "In order to start a demonstration, you have to open the demo menu by "
 "pressing the :guilabel:`Demo`:"
 msgstr ""
+"Pour démarrer une démonstration, vous devez ouvrir le menu démo en appuyant "
+"sur la touche :guilabel:`Démo`:"
 
 msgid ""
 "Now click the desired item in the menu. If you want to share a student's "
 "screen, make sure to select it before so the program knows which screen to "
 "broadcast."
 msgstr ""
+"Cliquez maintenant sur l'élément souhaité dans le menu. Si vous souhaitez "
+"partager l'écran d'un élève, assurez-vous de le sélectionner avant pour que "
+"le programme sache quel écran diffuser."
 
 msgid ""
 "In case your computer is equipped with multiple screens, you can choose to "
 "only broadcast one of the screens. To do this, click the corresponding "
 "screen item in the demo menu before sharing your screen."
 msgstr ""
+"Si votre ordinateur est équipé de plusieurs écrans, vous pouvez choisir de "
+"ne diffuser qu'un seul des écrans. Pour ce faire, cliquez sur l'élément "
+"d'écran correspondant dans le menu de démonstration avant de partager votre "
+"écran."
 
 msgid ""
 "If you want to leave the demonstration mode again, simply press the button "

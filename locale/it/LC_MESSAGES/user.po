@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Tobias Junghans, 2020
-# albanobattistella <albano_battistella@hotmail.com>, 2020
+# albanobattistella <albano_battistella@hotmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-06 11:03+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2020\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2021\n"
 "Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -194,6 +194,10 @@ msgid ""
 "computers and displayed in real time. You can choose between a full screen "
 "and a window demo."
 msgstr ""
+"È possibile utilizzare la modalità dimostrativa (modalità demo) per avviare "
+"una presentazione. In questa modalità, il contenuto del tuo schermo o di uno"
+" studente viene trasmesso a tutti i computer e visualizzato in tempo reale. "
+"Puoi scegliere tra uno schermo intero e una finestra demo."
 
 msgid ""
 "During a full screen demo your screen content will be displayed in full "
@@ -223,18 +227,26 @@ msgid ""
 "In order to start a demonstration, you have to open the demo menu by "
 "pressing the :guilabel:`Demo`:"
 msgstr ""
+"Per avviare una dimostrazione, devi aprire il menu demo premendo: guilabel: "
+"`Demo`:"
 
 msgid ""
 "Now click the desired item in the menu. If you want to share a student's "
 "screen, make sure to select it before so the program knows which screen to "
 "broadcast."
 msgstr ""
+"Ora fai clic sulla voce desiderata nel menu. Se desideri condividere lo "
+"schermo di uno studente, assicurati di selezionarlo prima in modo che il "
+"programma sappia quale schermo trasmettere."
 
 msgid ""
 "In case your computer is equipped with multiple screens, you can choose to "
 "only broadcast one of the screens. To do this, click the corresponding "
 "screen item in the demo menu before sharing your screen."
 msgstr ""
+"Nel caso in cui il tuo computer sia dotato di più schermi, puoi scegliere di"
+" trasmettere solo uno degli schermi. A tale scopo, fare clic sull'elemento "
+"dello schermo corrispondente nel menu demo prima di condividere lo schermo."
 
 msgid ""
 "If you want to leave the demonstration mode again, simply press the button "
