@@ -113,7 +113,7 @@ Log to standard error output
 .. index:: Windows event log
 
 Write to logging system of operating system
-    In some environments it may be desired to write log messages directly to the Windows event log e.g. in order to collect them afterwards. This option does not influence the normal recording of log files. On Linux this option currently has no effect.
+    In some environments it may be desired to write log messages directly to the Windows event log e.g. in order to collect them afterwards. This option does not influence the normal recording of log files. On Linux, this option enables forwarding log messages from Veyon Server processes to the systemd journal of the ``veyon.service`` unit.
 
     **Default:** *disabled*
 
