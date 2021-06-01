@@ -220,6 +220,12 @@ Filter for computer containers
     You can define an LDAP filter for computer containers here, e.g. ``(objectClass=container)`` or ``(objectClass=organizationalUnit)``. If containers/OUs are used as locations, you can filter the displayed locations this way.
 
 
+Query options
++++++++++++++
+
+Query nested user groups (supported by AD only)
+    If you have nested user groups (currently supported by Active Directory only), you can enable this option to make Veyon query all (even indirect) groups of a user. When enabled, you could for example create a group ``Veyon Users`` with the existing user groups ``Teachers`` and ``IT Staff`` as members. The ``Veyon Users`` group can then be used for :ref:`ConfAccessControl` purposes.
+
 Group member identification
 +++++++++++++++++++++++++++
 
