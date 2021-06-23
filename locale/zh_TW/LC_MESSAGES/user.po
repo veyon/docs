@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2020
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.5\n"
+"Project-Id-Version: Veyon 4.5.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 13:28+0200\n"
+"POT-Creation-Date: 2021-08-04 08:15+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2020\n"
+"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2021\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -809,13 +809,9 @@ msgid "FAQ"
 msgstr "FAQ"
 
 msgid ""
-"Frequently Asked Questions (FAQs) are a compilation of frequently asked "
-"questions and the corresponding answers to a topic. FAQs have become well-"
-"known in information technology, especially on the Internet, where many "
-"Usenet newsgroups have created a FAQ collection to relieve the pressure on "
-"the forums. Because the principle of the FAQ has proven itself, it exists in"
-" many areas."
-msgstr ""
+"a list of frequently asked questions (FAQs) and answers on a particular "
+"topic."
+msgstr "常見問題清單 (FAQs) 和特定主題的解答。"
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
 msgstr "https://en.wikipedia.org/wiki/FAQ"

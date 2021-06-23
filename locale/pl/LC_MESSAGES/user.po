@@ -6,17 +6,17 @@
 # Translators:
 # Tobias Junghans, 2019
 # LuKi965, 2020
-# Arkadiusz Misiak <lareq@o2.pl>, 2020
-# Jan Kowalski, 2020
+# 794759c7f894785adc681e3ab8728cca_0cead63, 2020
+# Arkadiusz Misiak <lareq@o2.pl>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.5\n"
+"Project-Id-Version: Veyon 4.5.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 13:28+0200\n"
+"POT-Creation-Date: 2021-08-04 08:15+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Jan Kowalski, 2020\n"
+"Last-Translator: Arkadiusz Misiak <lareq@o2.pl>, 2021\n"
 "Language-Team: Polish (https://www.transifex.com/veyon-solutions/teams/65452/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -963,13 +963,10 @@ msgid "FAQ"
 msgstr "FAQ"
 
 msgid ""
-"Frequently Asked Questions (FAQs) are a compilation of frequently asked "
-"questions and the corresponding answers to a topic. FAQs have become well-"
-"known in information technology, especially on the Internet, where many "
-"Usenet newsgroups have created a FAQ collection to relieve the pressure on "
-"the forums. Because the principle of the FAQ has proven itself, it exists in"
-" many areas."
+"a list of frequently asked questions (FAQs) and answers on a particular "
+"topic."
 msgstr ""
+"lista najczęściej zadawanych pytań (FAQ) i odpowiedzi na określony temat."
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
 msgstr "https://en.wikipedia.org/wiki/FAQ"
