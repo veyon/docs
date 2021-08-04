@@ -22,7 +22,7 @@ Before upgrading to a new release series of Veyon it's recommended to carefully 
 About Veyon
 -----------
 
-Veyon is a free and open source software for computer monitoring and class room management. It allows monitoring and controlling computer rooms as well as to interact with users, e.g. students. The following features are available in Veyon:
+Veyon is a free and open source software for monitoring and controlling computers across multiple platforms. Veyon supports you in teaching in digital learning environments, performing virtual trainings or giving remote support. The following features are available in Veyon:
 
 * Monitoring: overview of a (class) room with screen contents of computers being shown in thumbnails
 * Remote view or control computers
