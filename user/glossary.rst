@@ -16,7 +16,7 @@ From Wikipedia, the free encyclopedia:
       .. seealso:: https://en.wikipedia.org/wiki/Context_menu
 
     FAQ
-      Frequently Asked Questions (FAQs) are a compilation of frequently asked questions and the corresponding answers to a topic. FAQs have become well-known in information technology, especially on the Internet, where many Usenet newsgroups have created a FAQ collection to relieve the pressure on the forums. Because the principle of the FAQ has proven itself, it exists in many areas.
+      a list of frequently asked questions (FAQs) and answers on a particular topic.
 
       .. seealso:: https://en.wikipedia.org/wiki/FAQ
 
