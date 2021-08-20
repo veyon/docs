@@ -61,6 +61,9 @@ General
   * - FramebufferEncodingError
     - 11
     - 500 (InternalServerError)
+  * - ProtocolMismatch
+    - 12
+    - 501 (NotImplemented)
 
 Connection management & authentication
 --------------------------------------
