@@ -147,6 +147,29 @@ The local Veyon configuration can be managed using the ``config`` module. Both t
     With this command the configuration of Veyon and all plugins can be updated and saved. This may be necessary if settings or configuration formats have changed due to program or plugin updates.
 
 
+Feature control
+---------------
+
+.. index:: Feature control, List features
+
+The ``feature`` module provides commands for querying available features and controlling them on remote computers.
+
+.. describe:: list
+
+    Displays a list with the names of all available features.
+
+.. describe:: show
+
+    Displays a table with detailed information about all available features. This information include a description, the UID, the name of the plugin providing the respective feature and some other implementation-related details.
+
+.. describe:: start <FEATURE> <HOST ADRESS> [<ARGUMENTS>]
+
+    Starts the specified feature on the specified host by connecting to the Veyon Server running remotely. The feature can be specified by name or UID. Use the ``show`` command to see all available features. Depending on the feature, additional arguments (such as the text message to display) encoded as a single JSON string have to be specified. Please refer to the developer documentation for more information
+
+.. describe:: stop <FEATURE> <HOST ADRESS>
+
+    Stops the specified feature on the specified host by connecting to the Veyon Server running remotely. The feature can be specified by name or UID. Use the ``show`` command to see all available features.
+
 LDAP
 ----
 
