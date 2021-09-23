@@ -214,6 +214,15 @@ Available features
   * - WindowDemoClient
     - ``ae45c3db-dc2e-4204-ae8b-374cdab8c62c``
     - ``{ "demoAccessToken": <TOKEN>, "demoServerHost": <DEMO-SERVER-HOST-ADDRESS> }``
+  * - StartApp
+    - ``da9ca56a-b2ad-4fff-8f8a-929b2927b442``
+    - ``{ "applications": ["<APP1-PATH-WITH-ARGUMENTS>", "<APP2-PATH-WITH-ARGUMENTS>", ...] }``
+  * - OpenWebsite
+    - ``8a11a75d-b3db-48b6-b9cb-f8422ddd5b0c``
+    - ``{ "websiteUrls": ["<URL1>", "<URL2>", ...] }``
+  * - TextMessage
+    - ``e75ae9c8-ac17-4d00-8f0d-019348346208``
+    - ``{ "text": "..." }``
 
 * A demo token is an arbitrary ASCII string (e.g. base64-encoded random data) with a recommended length of at least 16 bytes
 
