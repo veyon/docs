@@ -19,6 +19,68 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.6
+---------
+
+Overview
+++++++++
+
+Most notably in Veyon 4.6 the remote access module has been redesigned to reuse the computer connection of the main window. This way users get instant access to computers when starting the remote control or view feature and no longer have to wait until the connection has been established (which could take up to several seconds). Also users can now press and hold the left mouse button on a computer. This shows the computer's screen in fullscreen and realtime until the mouse button is released again. Veyon CLI gained two new modules for managing plugins and features. This allows starting and stopping Veyon features remotely on the command line, e.g. for scripting and automation tasks. On Linux the Veyon Service component has been greatly improved to start and stop Veyon Server instances more reliably on session changes (user logon/logoff etc.). In addition to the existing *single and multi session modes*, there's now a new *active session mode* on Windows which starts a single Veyon Server instance for the currently active local or remote session. This is very useful for environments in which some students are logged in locally while others access unoccupied computers via RDP from home.
+
+Since mostly only a few specific modules have been changed or enhanced, there's a rather low risk for regressions in general. Especially Linux users are advised to upgrade soon to solve problems with the Veyon Service.
+
+* Core
+    - Protocol errors during the initial authentication phase are handled more reliably. This fixes problems when connecting to incompatible servers accidentally.
+* CLI
+    - The ``plugin`` and ``feature`` modules have been added.
+    - The ``config`` and ``shell`` plugins have been integrated as static modules.
+* Plugins
+    - Demo: The visual feedback when (re-)connecting has been redesigned.
+    - DesktopServices: The *Run program* feature has been renamed to *Start application*.
+    - RemoteAccess: The visual feedback when (re-)connecting has been redesigned.
+    - RemoteAccess: The computer connection of the main window is reused if available resulting in immediate access to the remote computer.
+    - RemoteAccess: The remote cursor is no longer used in view only mode to prevent occasionally observed render artifacts.
+    - UserSessionControl: Non-user sessions (such as display manager/login screen sessions) are no longer terminated by the user logoff feature.
+    - WebAPI: An error code has been added to report protocol errors occuring while connecting to the Veyon Server.
+    - WebAPI: The connection limit is enforced at the HTTP server level already to properly report the connection limit reached error instead of timing out.
+    - WebAPI: Skip ping for hosts which no connection could be established to. This allows using a higher connection limit on Linux when the number of open file descriptors is limited.
+* Linux
+    - SHM support is being detected more reliably.
+    - Logging off users is now initiated properly through the environment-specific session manager while ``systemd-logind`` is used as fallback only. This fixes the display manager (especially GDM3) not being shown again after logoff.
+    - Reboot and power down via ``systemd-logind`` has been improved while the environment-specific session manager is used as fallback only. The reboot and poweroff binaries are not used any longer.
+* Master
+    - In addition to the hostname, the computer display name is shown in the tooltip of a computer.
+    - A computer's screen is shown in fullscreen and realtime while pressing and holding the left mouse button on a computer.
+    - For Linux clients, *[no user]* is displayed as the user name instead of the name of the display manager user.
+* Server
+    - Hostnames of connected computers (shown in the tooltip of the tray icon) are now reverse resolved in background to keep connections responsive.
+* Windows
+    - The 3rdparty component UltraVNC has been updated to the latest version.
+    - The new *Active session mode* has been implemented.
+    - Querying local and domain user groups has been improved to share more code in common and log more details in case of errors.
+    - The Veyon Service additionally depends on the LanmanWorkstation and LSM services to improve reliability on start.
+    - Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenSSL 1.1.1l, TurboJPEG 2.1.1)
+
+Structural changes
+++++++++++++++++++
+
+In Veyon 4.6 the *Run program* feature has been renamed to *Start application* but works identically.
+
+Configuration changes
++++++++++++++++++++++
+
+One configuration key has been renamed in Veyon 4.6. When upgrading to Veyon 4.6 or newer this new configuration key will be populated with the value of the old key automatically.
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Old name
+    - New name
+
+  * - ``DesktopServices/PredefinedPrograms``
+    - ``DesktopServices/PredefinedApplications``
+
 Veyon 4.5
 ---------
 
