@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Peeter Ramst <peeter@aste.edu.ee>, 2020
 # Tobias Junghans, 2021
+# Peeter Ramst <peeter@aste.edu.ee>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 08:51+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Tobias Junghans, 2021\n"
+"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2021\n"
 "Language-Team: Estonian (https://www.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,52 +50,52 @@ msgstr ""
 "en_4.5.7.pdf>\" _"
 
 msgid "Other languages"
-msgstr ""
+msgstr " Muud keeled"
 
 msgid "`Chinese <https://docs.veyon.io/zh/latest/>`_"
-msgstr ""
+msgstr "`Hiina <https://docs.veyon.io/zh/latest/>`_"
 
 msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
-msgstr ""
+msgstr "`Hiina (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
 
 msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
-msgstr ""
+msgstr "`Tšehhi <https://docs.veyon.io/cs/latest/>`_"
 
 msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
-msgstr ""
+msgstr "`Hollandi <https://docs.veyon.io/nl/latest/>`_"
 
 msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
-msgstr ""
+msgstr "`Hispaania <https://docs.veyon.io/es/latest/>`_"
 
 msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
-msgstr ""
+msgstr "`Eesti <https://docs.veyon.io/et/latest/>`_"
 
 msgid "`French <https://docs.veyon.io/fr/latest/>`_"
-msgstr ""
+msgstr "`Prantsuse <https://docs.veyon.io/fr/latest/>`_"
 
 msgid "`German <https://docs.veyon.io/de/latest/>`_"
-msgstr ""
+msgstr "`Saksa <https://docs.veyon.io/de/latest/>`_"
 
 msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
-msgstr ""
+msgstr "`Ungari <https://docs.veyon.io/hu/latest/>`_"
 
 msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
-msgstr ""
+msgstr "`Itaalia <https://docs.veyon.io/it/latest/>`_"
 
 msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
-msgstr ""
+msgstr "`Leedu <https://docs.veyon.io/lt/latest/>`_"
 
 msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
-msgstr ""
+msgstr "`Poola <https://docs.veyon.io/pl/latest/>`_"
 
 msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
-msgstr ""
+msgstr "`Vene <https://docs.veyon.io/ru/latest/>`_"
 
 msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
-msgstr ""
+msgstr "`Sloveenia <https://docs.veyon.io/sl/latest/>`_"
 
 msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
-msgstr ""
+msgstr "`Serbia <https://docs.veyon.io/sr/latest/>`_"
 
 msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
-msgstr ""
+msgstr "`Ukraina <https://docs.veyon.io/uk/latest/>`_"

@@ -6,17 +6,17 @@
 # Translators:
 # Jure Skarabot <jure.eniac@gmail.com>, 2019
 # Tobias Junghans, 2020
-# Stanislav <stanislav.rupar@gmail.com>, 2020
 # Ksenija Koželj <ksenija.kozelj@gmail.com>, 2020
+# Stanislav <stanislav.rupar@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.6\n"
+"Project-Id-Version: Veyon 4.5.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 08:14+0200\n"
+"POT-Creation-Date: 2021-09-24 13:49+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Ksenija Koželj <ksenija.kozelj@gmail.com>, 2020\n"
+"Last-Translator: Stanislav <stanislav.rupar@gmail.com>, 2021\n"
 "Language-Team: Slovenian (https://www.transifex.com/veyon-solutions/teams/65452/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -619,6 +619,39 @@ msgstr ""
 "vtičnikov. To bo morda potrebno, če se nastavitve ali konfiguracijske oblike"
 " spremenijo zaradi posodobitev programa ali vtičnika."
 
+msgid "Feature control"
+msgstr "Funkcija nadzora"
+
+msgid ""
+"The ``feature`` module provides commands for querying available features and"
+" controlling them on remote computers."
+msgstr ""
+
+msgid "Displays a list with the names of all available features."
+msgstr ""
+
+msgid ""
+"Displays a table with detailed information about all available features. "
+"This information include a description, the UID, the name of the plugin "
+"providing the respective feature and some other implementation-related "
+"details."
+msgstr ""
+
+msgid ""
+"Starts the specified feature on the specified host by connecting to the "
+"Veyon Server running remotely. The feature can be specified by name or UID. "
+"Use the ``show`` command to see all available features. Depending on the "
+"feature, additional arguments (such as the text message to display) encoded "
+"as a single JSON string have to be specified. Please refer to the developer "
+"documentation for more information"
+msgstr ""
+
+msgid ""
+"Stops the specified feature on the specified host by connecting to the Veyon"
+" Server running remotely. The feature can be specified by name or UID. Use "
+"the ``show`` command to see all available features."
+msgstr ""
+
 msgid "LDAP"
 msgstr "LDAP"
 
@@ -843,6 +876,9 @@ msgstr "Veyon CLI"
 
 msgid "Configuration key"
 msgstr "Konfiguracijski ključ"
+
+msgid "List features"
+msgstr ""
 
 msgid "Service registration"
 msgstr "Registracija storitve"
@@ -4672,6 +4708,187 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.6"
+msgstr ""
+
+msgid ""
+"Most notably in Veyon 4.6 the remote access module has been redesigned to "
+"reuse the computer connection of the main window. This way users get instant"
+" access to computers when starting the remote control or view feature and no"
+" longer have to wait until the connection has been established (which could "
+"take up to several seconds). Also users can now press and hold the left "
+"mouse button on a computer. This shows the computer's screen in fullscreen "
+"and realtime until the mouse button is released again. Veyon CLI gained two "
+"new modules for managing plugins and features. This allows starting and "
+"stopping Veyon features remotely on the command line, e.g. for scripting and"
+" automation tasks. On Linux the Veyon Service component has been greatly "
+"improved to start and stop Veyon Server instances more reliably on session "
+"changes (user logon/logoff etc.). In addition to the existing *single and "
+"multi session modes*, there's now a new *active session mode* on Windows "
+"which starts a single Veyon Server instance for the currently active local "
+"or remote session. This is very useful for environments in which some "
+"students are logged in locally while others access unoccupied computers via "
+"RDP from home."
+msgstr ""
+
+msgid ""
+"Since mostly only a few specific modules have been changed or enhanced, "
+"there's a rather low risk for regressions in general. Especially Linux users"
+" are advised to upgrade soon to solve problems with the Veyon Service."
+msgstr ""
+
+msgid "Core"
+msgstr ""
+
+msgid ""
+"Protocol errors during the initial authentication phase are handled more "
+"reliably. This fixes problems when connecting to incompatible servers "
+"accidentally."
+msgstr ""
+
+msgid "The ``plugin`` and ``feature`` modules have been added."
+msgstr ""
+
+msgid ""
+"The ``config`` and ``shell`` plugins have been integrated as static modules."
+msgstr ""
+
+msgid "Plugins"
+msgstr ""
+
+msgid "Demo: The visual feedback when (re-)connecting has been redesigned."
+msgstr ""
+
+msgid ""
+"DesktopServices: The *Run program* feature has been renamed to *Start "
+"application*."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The visual feedback when (re-)connecting has been redesigned."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The computer connection of the main window is reused if "
+"available resulting in immediate access to the remote computer."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The remote cursor is no longer used in view only mode to "
+"prevent occasionally observed render artifacts."
+msgstr ""
+
+msgid ""
+"UserSessionControl: Non-user sessions (such as display manager/login screen "
+"sessions) are no longer terminated by the user logoff feature."
+msgstr ""
+
+msgid ""
+"WebAPI: An error code has been added to report protocol errors occuring "
+"while connecting to the Veyon Server."
+msgstr ""
+
+msgid ""
+"WebAPI: The connection limit is enforced at the HTTP server level already to"
+" properly report the connection limit reached error instead of timing out."
+msgstr ""
+
+msgid ""
+"WebAPI: Skip ping for hosts which no connection could be established to. "
+"This allows using a higher connection limit on Linux when the number of open"
+" file descriptors is limited."
+msgstr ""
+
+msgid "SHM support is being detected more reliably."
+msgstr ""
+
+msgid ""
+"Logging off users is now initiated properly through the environment-specific"
+" session manager while ``systemd-logind`` is used as fallback only. This "
+"fixes the display manager (especially GDM3) not being shown again after "
+"logoff."
+msgstr ""
+
+msgid ""
+"Reboot and power down via ``systemd-logind`` has been improved while the "
+"environment-specific session manager is used as fallback only. The reboot "
+"and poweroff binaries are not used any longer."
+msgstr ""
+
+msgid ""
+"In addition to the hostname, the computer display name is shown in the "
+"tooltip of a computer."
+msgstr ""
+
+msgid ""
+"A computer's screen is shown in fullscreen and realtime while pressing and "
+"holding the left mouse button on a computer."
+msgstr ""
+
+msgid ""
+"For Linux clients, *[no user]* is displayed as the user name instead of the "
+"name of the display manager user."
+msgstr ""
+
+msgid "Server"
+msgstr ""
+
+msgid ""
+"Hostnames of connected computers (shown in the tooltip of the tray icon) are"
+" now reverse resolved in background to keep connections responsive."
+msgstr ""
+
+msgid ""
+"The 3rdparty component UltraVNC has been updated to the latest version."
+msgstr ""
+
+msgid "The new *Active session mode* has been implemented."
+msgstr ""
+
+msgid ""
+"Querying local and domain user groups has been improved to share more code "
+"in common and log more details in case of errors."
+msgstr ""
+
+msgid ""
+"The Veyon Service additionally depends on the LanmanWorkstation and LSM "
+"services to improve reliability on start."
+msgstr ""
+
+msgid ""
+"Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenSSL "
+"1.1.1l, TurboJPEG 2.1.1)"
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid ""
+"In Veyon 4.6 the *Run program* feature has been renamed to *Start "
+"application* but works identically."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid ""
+"One configuration key has been renamed in Veyon 4.6. When upgrading to Veyon"
+" 4.6 or newer this new configuration key will be populated with the value of"
+" the old key automatically."
+msgstr ""
+
+msgid "Old name"
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "``DesktopServices/PredefinedPrograms``"
+msgstr ""
+
+msgid "``DesktopServices/PredefinedApplications``"
+msgstr ""
+
 msgid "Veyon 4.5"
 msgstr ""
 
@@ -4689,9 +4906,6 @@ msgid ""
 "desktop virtualization environments by delivering extended and improved "
 "multi session support. Additionally various compatibility issues on Linux "
 "have been fixed and the file transfer plugin received a configuration page."
-msgstr ""
-
-msgid "Core"
 msgstr ""
 
 msgid "The feature plugin API has been revised."
@@ -4716,9 +4930,6 @@ msgid "Several parts of the user interface have been improved."
 msgstr ""
 
 msgid "Settings for new Veyon Master features have been added."
-msgstr ""
-
-msgid "Plugins"
 msgstr ""
 
 msgid ""
@@ -4796,9 +5007,6 @@ msgid ""
 "sizes."
 msgstr ""
 
-msgid "Server"
-msgstr ""
-
 msgid ""
 "A notification is now shown for both incomplete and failed authentication "
 "attempts."
@@ -4815,10 +5023,6 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The 3rdparty component UltraVNC has been updated to the latest version."
-msgstr ""
-
-msgid ""
 "Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenLDAP "
 "2.4.56, OpenSSL 1.1.1h)"
 msgstr ""
@@ -4829,25 +5033,13 @@ msgid ""
 "thoroughly before deploying."
 msgstr ""
 
-msgid "Structural changes"
-msgstr ""
-
 msgid "There are no structural changes in Veyon 4.5."
-msgstr ""
-
-msgid "Configuration changes"
 msgstr ""
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.5. When upgrading to"
 " Veyon 4.5 or newer the new configuration keys will be populated with the "
 "value of the old keys automatically."
-msgstr ""
-
-msgid "Old name"
-msgstr ""
-
-msgid "New name"
 msgstr ""
 
 msgid "``Network/PrimaryServicePort``"
