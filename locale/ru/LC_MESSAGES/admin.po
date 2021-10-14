@@ -10,15 +10,16 @@
 # Andrey Atapin <atab@kirovedu.ru>, 2020
 # Denis Basik <denisbasik@gmail.com>, 2021
 # Алексей Черемных <s-r-grass@mail.ru>, 2021
+# Olesya Gerasimenko <gammaray@basealt.ru>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.7\n"
+"Project-Id-Version: Veyon 4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-24 13:49+0200\n"
+"POT-Creation-Date: 2021-09-27 08:50+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Алексей Черемных <s-r-grass@mail.ru>, 2021\n"
+"Last-Translator: Olesya Gerasimenko <gammaray@basealt.ru>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -524,7 +525,7 @@ msgid ""
 msgstr ""
 
 msgid "Displays a list with the names of all available features."
-msgstr ""
+msgstr "Показывает список с именами всех доступных функций."
 
 msgid ""
 "Displays a table with detailed information about all available features. "
@@ -532,6 +533,10 @@ msgid ""
 "providing the respective feature and some other implementation-related "
 "details."
 msgstr ""
+"Показывает таблицу с подробной информацией обо всех доступных функциях. Эта "
+"информация включает описание, UID, имя плагина, предоставляющего "
+"соответствующую функцию, и некоторые другие сведения, которые относятся к "
+"реализации."
 
 msgid ""
 "Starts the specified feature on the specified host by connecting to the "
@@ -541,12 +546,23 @@ msgid ""
 "as a single JSON string have to be specified. Please refer to the developer "
 "documentation for more information"
 msgstr ""
+"Запускает указанную функцию на указанном хосте путём соединения с запущенным"
+" удалённо сервером Veyon. Функцию можно указать по имени или UID. "
+"Воспользуйтесь командой \"show\" для просмотра списка всех доступных "
+"функций. В зависимости от функции, могут указываться дополнительные "
+"аргументы (например, текстовое сообщение для показа), которые должны быть "
+"закодированы в одну строку JSON. Чтобы узнать больше, обратитесь к "
+"документации для разработчиков."
 
 msgid ""
 "Stops the specified feature on the specified host by connecting to the Veyon"
 " Server running remotely. The feature can be specified by name or UID. Use "
 "the ``show`` command to see all available features."
 msgstr ""
+"Останавливает указанную функцию на указанном хосте путём соединения с "
+"запущенным удалённо сервером Veyon. Функцию можно указать по имени или UID. "
+"Воспользуйтесь командой \"show\" для просмотра списка всех доступных "
+"функций."
 
 msgid "LDAP"
 msgstr "LDAP"
@@ -2171,10 +2187,10 @@ msgid ""
 msgstr ""
 
 msgid "Query options"
-msgstr ""
+msgstr "Параметры запроса"
 
 msgid "Query nested user groups (supported by AD only)"
-msgstr ""
+msgstr "Опросить вложенные группы пользователей (поддерживается только AD)"
 
 msgid ""
 "If you have nested user groups (currently supported by Active Directory "
@@ -3034,7 +3050,7 @@ msgid "VNC server"
 msgstr "VNC-сервер"
 
 msgid "Plugin"
-msgstr ""
+msgstr "Плагин"
 
 msgid ""
 "By default Veyon uses an internal platform-specific VNC server "
