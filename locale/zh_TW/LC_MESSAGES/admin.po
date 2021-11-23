@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-27 08:50+0200\n"
+"POT-Creation-Date: 2021-11-23 20:06+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2021\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -511,14 +511,14 @@ msgid ""
 msgstr ""
 
 msgid "Displays a list with the names of all available features."
-msgstr ""
+msgstr "顯示包含所有可用功能名稱的清單。"
 
 msgid ""
 "Displays a table with detailed information about all available features. "
 "This information include a description, the UID, the name of the plugin "
 "providing the respective feature and some other implementation-related "
 "details."
-msgstr ""
+msgstr "顯示表格，其中包含有關所有可用功能的詳細資料。 這個資訊包含描述、UID、提供相應功能的外掛程式名稱以及其它一些與實現相關的詳細資料。"
 
 msgid ""
 "Starts the specified feature on the specified host by connecting to the "
@@ -528,12 +528,15 @@ msgid ""
 "as a single JSON string have to be specified. Please refer to the developer "
 "documentation for more information"
 msgstr ""
+"透過連線到遠端執行的 veyon 伺服器來啟動指定主機的指定功能。 該功能可以由名稱或 UID 指定。 使用「show」命令查看所有的可用功能。 "
+"根據功能，必須指定編碼為單一 JSON 字串的附加引數 (比如顯示的文字訊息)。 請參閱開發人員文件取得更多資訊"
 
 msgid ""
 "Stops the specified feature on the specified host by connecting to the Veyon"
 " Server running remotely. The feature can be specified by name or UID. Use "
 "the ``show`` command to see all available features."
 msgstr ""
+"透過連線到遠端執行的 veyon 伺服器來停止指定主機的指定功能。 該功能可以由名稱或 UID 指定。 使用「show」命令查看所有的可用功能。"
 
 msgid "LDAP"
 msgstr "LDAP"
@@ -4253,6 +4256,146 @@ msgid ""
 msgstr ""
 "如果重新命名組態機碼，為了相容性原因，則始終保留舊機碼，以便更輕鬆地切換回以前的版本。 將來的版本將有一個清理機制，它將移除所有舊組態機碼。"
 
+msgid "Veyon 4.7"
+msgstr ""
+
+msgid ""
+"Veyon 4.7 is the last minor release series of Veyon 4. One of the most long-"
+"awaited features is certainly the new screen selection menu in the remote "
+"access window. Also the overall performance and responsiveness has been "
+"improved thanks to a revised mechanism for sending and receiving control "
+"messages. Besides that, several issues from previous versions have been "
+"resolved."
+msgstr ""
+
+msgid "Core"
+msgstr "核心"
+
+msgid ""
+"Fixed binary compatibility issues between different versions of "
+"LibVNCServer/LibVNCClient."
+msgstr ""
+
+msgid ""
+"Messages in log files (especially debug messages) are now much more human "
+"readable."
+msgstr ""
+
+msgid "Plugins"
+msgstr "外掛程式"
+
+msgid ""
+"Demo: Screens in the Demo menu are now displayed with their actual hardware "
+"name and connector type/index."
+msgstr ""
+
+msgid ""
+"LDAP: Fixed querying members of a group when the nested groups option is "
+"enabled."
+msgstr ""
+
+msgid ""
+"TextMessage: Students can now select and copy the text message or parts of "
+"it."
+msgstr ""
+
+msgid ""
+"TextMessage: Rich text (i.e. formatted text including hyperlinks) can now be"
+" entered and sent to students."
+msgstr ""
+
+msgid ""
+"RemoteAccess: For remote computers with multiple screens, a button with a "
+"screen selection menu has been added."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The login name of the remote user is shown in the window "
+"title, if the full name is not available."
+msgstr ""
+
+msgid ""
+"WebAPI: The header field lookup (e.g. for the connection UID) is now case "
+"insensitive."
+msgstr ""
+
+msgid "The parameter order for the ``ping`` utility has been improved."
+msgstr ""
+
+msgid ""
+"Issues regarding the session identification have been fixed, solving various"
+" issues when running ``veyon-server`` manually e.g. via autostart entries."
+msgstr ""
+
+msgid ""
+"A regression in Veyon 4.6.0 has been fixed to make the computer and user "
+"search case insensitive again."
+msgstr ""
+
+msgid ""
+"Control messages between computers are now sent asynchronously which "
+"improves performance and responsiveness while reducing the CPU load."
+msgstr ""
+
+msgid ""
+"When closing the program, it now stops all features on the student computers"
+" and waits until all corresponding control messages have been sent."
+msgstr ""
+
+msgid ""
+"A new filter button has been added to show computers with logged on users "
+"only."
+msgstr ""
+
+msgid ""
+"The dialog for confirming actions such as powering off computers only "
+"emphasizes *ALL* computers if all computers are selected."
+msgstr ""
+
+msgid ""
+"If available, the full name of the user is now preferred in the tooltip."
+msgstr ""
+
+msgid "Server"
+msgstr "伺服器"
+
+msgid ""
+"Server-side framebuffer update rate control has been added which improves "
+"performance and responsive."
+msgstr ""
+
+msgid ""
+"Added an explicit initialization of the WinSock layer to prevent networking "
+"issues."
+msgstr ""
+
+msgid "The service control has been made more resilient."
+msgstr ""
+
+msgid ""
+"The Windows ICMP API is now used to ping computers in favor of calling the "
+"external ``ping`` utility."
+msgstr ""
+
+msgid ""
+"Even though there have been changes to the core and networking layer, "
+"there's only a small to medium risk for regressions, since most of the "
+"features haven't been touched. To benefit from the performance improvements,"
+" both teacher and student computers should be upgraded to Veyon 4.7."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "結構變更"
+
+msgid "There are no structural changes in Veyon 4.7."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "組態變更"
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.7."
+msgstr ""
+
 msgid "Veyon 4.6"
 msgstr ""
 
@@ -4282,9 +4425,6 @@ msgid ""
 " are advised to upgrade soon to solve problems with the Veyon Service."
 msgstr ""
 
-msgid "Core"
-msgstr "核心"
-
 msgid ""
 "Protocol errors during the initial authentication phase are handled more "
 "reliably. This fixes problems when connecting to incompatible servers "
@@ -4297,9 +4437,6 @@ msgstr ""
 msgid ""
 "The ``config`` and ``shell`` plugins have been integrated as static modules."
 msgstr ""
-
-msgid "Plugins"
-msgstr "外掛程式"
 
 msgid "Demo: The visual feedback when (re-)connecting has been redesigned."
 msgstr ""
@@ -4375,9 +4512,6 @@ msgid ""
 "name of the display manager user."
 msgstr ""
 
-msgid "Server"
-msgstr "伺服器"
-
 msgid ""
 "Hostnames of connected computers (shown in the tooltip of the tray icon) are"
 " now reverse resolved in background to keep connections responsive."
@@ -4405,16 +4539,10 @@ msgid ""
 "1.1.1l, TurboJPEG 2.1.1)"
 msgstr ""
 
-msgid "Structural changes"
-msgstr "結構變更"
-
 msgid ""
 "In Veyon 4.6 the *Run program* feature has been renamed to *Start "
 "application* but works identically."
 msgstr ""
-
-msgid "Configuration changes"
-msgstr "組態變更"
 
 msgid ""
 "One configuration key has been renamed in Veyon 4.6. When upgrading to Veyon"
@@ -5331,6 +5459,16 @@ msgid ""
 "upgrading KDE/Qt. As a last resort you can disable the X Damage extension in"
 " the VNC server configuration. This will however decrease overall "
 "performance and increase the CPU load."
+msgstr ""
+
+msgid "Some features such as starting apps or opening websites do not work"
+msgstr ""
+
+msgid ""
+"It has been reported that problems arise if the username and the computer "
+"name are identical. When logging in a user called ``student`` on a computer "
+"with the hostname ``student``, some features will fail to start when the "
+"user session is being controlled via Veyon Master."
 msgstr ""
 
 msgid "Debugging"
