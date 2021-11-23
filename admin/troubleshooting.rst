@@ -117,3 +117,8 @@ Veyon Server crashes with XIO or XCB errors on Linux
 ----------------------------------------------------
 
 There are known issues with specific KDE and Qt versions on Linux causing the Veyon Server to crash. This affects several other VNC server implementations as well. If you're affected by such crashes consider upgrading KDE/Qt. As a last resort you can disable the X Damage extension in the VNC server configuration. This will however decrease overall performance and increase the CPU load.
+
+Some features such as starting apps or opening websites do not work
+-------------------------------------------------------------------
+
+It has been reported that problems arise if the username and the computer name are identical. When logging in a user called ``student`` on a computer with the hostname ``student``, some features will fail to start when the user session is being controlled via Veyon Master.
