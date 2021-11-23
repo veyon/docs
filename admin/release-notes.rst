@@ -19,6 +19,54 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.7
+---------
+
+Overview
+++++++++
+
+Veyon 4.7 is the last minor release series of Veyon 4. One of the most long-awaited features is certainly the new screen selection menu in the remote access window. Also the overall performance and responsiveness has been improved thanks to a revised mechanism for sending and receiving control messages. Besides that, several issues from previous versions have been resolved.
+
+* Core
+    - Fixed binary compatibility issues between different versions of LibVNCServer/LibVNCClient.
+    - Messages in log files (especially debug messages) are now much more human readable.
+* Plugins
+    - Demo: Screens in the Demo menu are now displayed with their actual hardware name and connector type/index.
+    - LDAP: Fixed querying members of a group when the nested groups option is enabled.
+    - TextMessage: Students can now select and copy the text message or parts of it.
+    - TextMessage: Rich text (i.e. formatted text including hyperlinks) can now be entered and sent to students.
+    - RemoteAccess: For remote computers with multiple screens, a button with a screen selection menu has been added.
+    - RemoteAccess: The login name of the remote user is shown in the window title, if the full name is not available.
+    - WebAPI: The header field lookup (e.g. for the connection UID) is now case insensitive.
+* Linux
+    - The parameter order for the ``ping`` utility has been improved.
+    - Issues regarding the session identification have been fixed, solving various issues when running ``veyon-server`` manually e.g. via autostart entries.
+* Master
+    - A regression in Veyon 4.6.0 has been fixed to make the computer and user search case insensitive again.
+    - Control messages between computers are now sent asynchronously which improves performance and responsiveness while reducing the CPU load.
+    - When closing the program, it now stops all features on the student computers and waits until all corresponding control messages have been sent.
+    - A new filter button has been added to show computers with logged on users only.
+    - The dialog for confirming actions such as powering off computers only emphasizes *ALL* computers if all computers are selected.
+    - If available, the full name of the user is now preferred in the tooltip.
+* Server
+    - Server-side framebuffer update rate control has been added which improves performance and responsive.
+* Windows
+    - Added an explicit initialization of the WinSock layer to prevent networking issues.
+    - The service control has been made more resilient.
+    - The Windows ICMP API is now used to ping computers in favor of calling the external ``ping`` utility.
+
+Even though there have been changes to the core and networking layer, there's only a small to medium risk for regressions, since most of the features haven't been touched. To benefit from the performance improvements, both teacher and student computers should be upgraded to Veyon 4.7.
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.7.
+
+Configuration changes
++++++++++++++++++++++
+
+No configuration keys have been changed or renamed in Veyon 4.7.
+
 Veyon 4.6
 ---------
 
