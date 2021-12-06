@@ -6,6 +6,7 @@ Veyon Add-ons Integration Manual
 
 	licensing
 	deployment
+	internet-access-control
 	network-discovery
 
 * :ref:`genindex`
