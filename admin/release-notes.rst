@@ -54,8 +54,11 @@ Veyon 4.7 is the last minor release series of Veyon 4. One of the most long-awai
     - Added an explicit initialization of the WinSock layer to prevent networking issues.
     - The service control has been made more resilient.
     - The Windows ICMP API is now used to ping computers in favor of calling the external ``ping`` utility.
+    - Several 3rdparty libraries have been updated (Qt 5.12.12 snapshot, TurboJPEG 2.1.2, OpenLDAP 2.5.10 snapshot)
 
 Even though there have been changes to the core and networking layer, there's only a small to medium risk for regressions, since most of the features haven't been touched. To benefit from the performance improvements, both teacher and student computers should be upgraded to Veyon 4.7.
+
+Since the underlying LDAP library has been updated, users of Veyon's LDAP backend should test if Veyon 4.7 is able to retrieve all relevant information from your LDAP/AD server as usual.
 
 Structural changes
 ++++++++++++++++++

@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.6.0\n"
+"Project-Id-Version: Veyon 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 20:06+0100\n"
+"POT-Creation-Date: 2021-12-06 10:48+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Predrag Jovanovic <itusluge18@gmail.com>, 2021\n"
 "Language-Team: Serbian (https://www.transifex.com/veyon-solutions/teams/65452/sr/)\n"
@@ -4569,10 +4569,21 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Several 3rdparty libraries have been updated (Qt 5.12.12 snapshot, TurboJPEG"
+" 2.1.2, OpenLDAP 2.5.10 snapshot)"
+msgstr ""
+
+msgid ""
 "Even though there have been changes to the core and networking layer, "
 "there's only a small to medium risk for regressions, since most of the "
 "features haven't been touched. To benefit from the performance improvements,"
 " both teacher and student computers should be upgraded to Veyon 4.7."
+msgstr ""
+
+msgid ""
+"Since the underlying LDAP library has been updated, users of Veyon's LDAP "
+"backend should test if Veyon 4.7 is able to retrieve all relevant "
+"information from your LDAP/AD server as usual."
 msgstr ""
 
 msgid "Structural changes"

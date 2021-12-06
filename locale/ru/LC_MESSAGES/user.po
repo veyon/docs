@@ -7,15 +7,15 @@
 # Алексей Черемных <s-r-grass@mail.ru>, 2019
 # Sergio Palma <donbalear@gmail.com>, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
-# Andrey Atapin <atab@kirovedu.ru>, 2020
+# Andrey Atapin <atab74@gmail.com>, 2020
 # Denis Basik <denisbasik@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.6.0\n"
+"Project-Id-Version: Veyon 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-27 08:50+0200\n"
+"POT-Creation-Date: 2021-12-06 10:00+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Denis Basik <denisbasik@gmail.com>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/veyon-solutions/teams/65452/ru/)\n"
