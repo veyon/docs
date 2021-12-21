@@ -1,0 +1,22 @@
+stages:
+  - build
+  - collect
+
+build-docs:
+  stage: build
+  image: veyon/docbuilder:latest
+  script:
+    - ./build-manuals.py
+  artifacts:
+    paths: [ "veyon*.pdf" ]
+    expire_in: 1 day
+
+collect-artifacts:
+  stage: collect
+  image: veyon/docbuilder:latest
+  dependencies: [ build-docs ]
+  only: [ tags ]
+  script:
+    - ls -la *.pdf
+  artifacts:
+    paths: [ "veyon*.pdf" ]
