@@ -2303,8 +2303,8 @@ msgstr ""
 
 msgid ""
 "Special characters such as ``@`` or ``:`` – especially in the password - can"
-" be specified by using `URL percent-encoding <https://en.wikipedia.org/wiki"
-"/Percent-encoding>`_."
+" be specified by using `URL percent-encoding "
+"<https://en.wikipedia.org/wiki/Percent-encoding>`_."
 msgstr ""
 
 msgid ""
