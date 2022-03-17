@@ -41,6 +41,8 @@ After you have configured the desired subnets or network ranges, you can start t
 
 Normally your DNS server should be able to reverse lookup hostnames from IP addresses for all computers. If not, it's strongly recommended to change your DNS server settings accordingly. For environments where this is not feasible, you can disable the :guilabel:`Reverse lookup hostnames from discovered IP addresses` option to prevent unnecessary DNS timeouts.
 
+.. important:: On Windows, legacy WINS resolution via NetBIOS should be disabled to prevent issues where the NetBIOS hostname does not exactly match the DNS hostname (especially since NetBIOS hostnames always consist of uppercase letters only while the actual DNS hostnames usually do not). If NetBIOS is enabled, Network Discovery may obtain randomly changing hostname types (for a certain IP address) from the operating system on each scan/update. This causes constant reconnects to the computers since from the view of Veyon, a different computer has been discovered each time.
+
 In most cases you can increase the number of :guilabel:`parallel scans` to 100–300. Veyon Master opens the specified number of TCP connections in parallel so make sure to not exhaust the resources of the computer or per-process resource limits set by the operating system.
 
 If all computers are on the same LAN (i.e. ping times of usually less than 1 ms) you can also decrease the :guilabel:`scan timeout` to 25–100 ms. Each computer responding within that timeout is shown in Veyon Master.
