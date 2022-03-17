@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2021, Veyon Solutions
+# Copyright (C) 2017-2022, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Tobias Junghans, 2019
 # albanobattistella <albano_battistella@hotmail.com>, 2021
-# Tobias Junghans, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.0\n"
+"Project-Id-Version: Veyon 4.7.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-25 08:42+0100\n"
+"POT-Creation-Date: 2022-03-17 09:00+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Tobias Junghans, 2022\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2021\n"
 "Language-Team: Italian (https://www.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,21 +33,15 @@ msgstr "Download PDF"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.1/veyon-admin-manual-"
-"en_4.7.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.7.2/veyon-admin-manual-"
+"en_4.7.2.pdf>`_"
 msgstr ""
-"`Manuale Amministratore di Veyon PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.1/veyon-admin-manual-"
-"it_4.7.1.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.1/veyon-user-manual-"
-"en_4.7.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.7.2/veyon-user-manual-"
+"en_4.7.2.pdf>`_"
 msgstr ""
-"`Veyon Manuale dell'utente PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.1/veyon-user-manual-"
-"it_4.7.1.pdf>`_"
 
 msgid "Other languages"
 msgstr "Altre lingue"
