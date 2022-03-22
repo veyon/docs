@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2021, Veyon Solutions
+# Copyright (C) 2017-2022, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.0\n"
+"Project-Id-Version: Veyon 4.7.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-06 10:48+0100\n"
+"POT-Creation-Date: 2022-03-22 11:00+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Stanislav <stanislav.rupar@gmail.com>, 2021\n"
 "Language-Team: Slovenian (https://www.transifex.com/veyon-solutions/teams/65452/sl/)\n"
@@ -3408,9 +3408,9 @@ msgstr "Imenik datoteke dnevnikov"
 
 msgid ""
 "You can use this setting to specify which directory the log files will be "
-"written in. It's strongly recommended to use placeholder variables here. All"
-" information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`."
+"written in. It's strongly recommended to use path variables here. All "
+"information on supported variables can be found in section "
+":ref:`RefPathVariables`."
 msgstr ""
 
 msgid "**Default:** *%TEMP%*"
@@ -3739,14 +3739,10 @@ msgstr "**Imeniki**"
 
 msgid ""
 "In order to make a configuration generic and independent of the user, you "
-"should use placeholder variables instead of absolute paths in the directory "
+"should use path variables instead of absolute paths in the directory "
 "settings. All information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`."
+":ref:`RefPathVariables`."
 msgstr ""
-"Če želite, da je konfiguracija splošna in neodvisna od uporabnika, morate "
-"uporabiti nadomestne spremenljivke namesto absolutnih poti v nastavitvah "
-"imenika. Vse informacije o podprtih spremenljivkah najdete v razdelku "
-":ref:`RefPlaceholderVariables`."
 
 msgid "User configuration"
 msgstr "Uporabniška konfiguracija"
@@ -4171,17 +4167,12 @@ msgid "Key file directories"
 msgstr "Imeniki datoteke ključa "
 
 msgid ""
-"Placeholder variables should be used for both base directories. All "
-"information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`. On Windows `UNC paths "
+"Path variables should be used for both base directories. All information on "
+"supported variables can be found in section :ref:`RefPathVariables`. On "
+"Windows `UNC paths "
 "<https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used "
 "instead of absolute paths."
 msgstr ""
-"Za oba osnovna imenika je treba uporabiti spremenljivke lastnika mesta. Vse "
-"informacije o podprtih spremenljivkah najdete v razdelku "
-":ref:`RefPlaceholderVariables`. Na Windows se lahko namesto absolutnih poti "
-"uporabijo `poti UNC "
-"<https://en.wikipedia.org/wiki/Uniform_Naming_Convention> `_."
 
 msgid "Public key file base directory"
 msgstr "Imenik datoteke z javnim ključem"
@@ -4457,15 +4448,13 @@ msgstr ""
 msgid "The path to the TLS private key file for the HTTPS server."
 msgstr ""
 
-msgid "Placeholder variables for file paths"
-msgstr "Rezervirane spremenljivke za poti datotek"
+msgid "Path variables"
+msgstr ""
 
 msgid ""
-"Placeholder variables have to be supplied in the format ``%VARIABLE%`` on "
-"all platforms."
+"Path variables have to be supplied in the format ``%VARIABLE%`` on all "
+"platforms."
 msgstr ""
-"Ograde spremenljivk je treba posredovati v obliki ``%VARIABLE%`` na vseh "
-"platformah."
 
 msgid ""
 "This variable is expanded to the user-specific directory for application "
@@ -4474,9 +4463,23 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This variable is expanded to the home directory/user profile directory of "
-"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
-":file:`/home/admin` on Linux."
+"This variable is expanded to the local or redirected Desktop directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Desktop` on Windows "
+"or :file:`/home/admin/Desktop` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected documents directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Documents` on "
+"Windows or :file:`/home/admin/Documents` on Linux (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected download directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Downloads` on "
+"Windows or :file:`/home/admin/Downloads` on Linux (requires Veyon 4.7.3 or "
+"newer)."
 msgstr ""
 
 msgid ""
@@ -4486,12 +4489,36 @@ msgid ""
 msgstr ""
 
 msgid ""
+"This variable is expanded to the home directory/user profile directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
+":file:`/home/admin` on Linux."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the hostname of the local computer, allowing to"
+" access files in computer-specific directories (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected pictures directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Pictures` on Windows"
+" or :file:`/home/admin/Pictures` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
+
+msgid ""
 "This variable is expanded to the user-specific directory for temporary "
 "files, e.g. :file:`...\\\\User\\\\AppData\\\\Local\\\\Temp` on Windows or "
 ":file:`/tmp` (or any path specified in the :envvar:`$TMPDIR` environment "
 "variable) on Linux. Processes running with system privileges (Veyon Service,"
 " Veyon Server and all sub processes) use :file:`C:\\\\Windows\\\\Temp` on "
 "Windows and :file:`/tmp` on Linux."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected videos directory of the"
+" logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Videos` on Windows or "
+":file:`/home/admin/Videos` on Linux (requires Veyon 4.7.3 or newer)."
 msgstr ""
 
 msgid "Environment variables"
@@ -4641,9 +4668,6 @@ msgstr "Skupine domene"
 msgid "Authorized user groups"
 msgstr "Pooblaščene skupine uporabnikov"
 
-msgid "Placeholder variables"
-msgstr "Spremenljivke ograde "
-
 msgid "Application data"
 msgstr "Podatki o aplikaciji"
 
@@ -4655,6 +4679,21 @@ msgstr "Domači imenik"
 
 msgid "Temporary files"
 msgstr "Začasne datoteke"
+
+msgid "Desktop directory"
+msgstr ""
+
+msgid "Documents directory"
+msgstr ""
+
+msgid "Downloads directory"
+msgstr ""
+
+msgid "Pictures directory"
+msgstr ""
+
+msgid "Videos directory"
+msgstr ""
 
 msgid "Release notes"
 msgstr ""

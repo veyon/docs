@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2021, Veyon Solutions
+# Copyright (C) 2017-2022, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.0\n"
+"Project-Id-Version: Veyon 4.7.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-06 10:48+0100\n"
+"POT-Creation-Date: 2022-03-22 11:00+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2021\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -3025,12 +3025,10 @@ msgstr "紀錄檔目錄"
 
 msgid ""
 "You can use this setting to specify which directory the log files will be "
-"written in. It's strongly recommended to use placeholder variables here. All"
-" information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`."
+"written in. It's strongly recommended to use path variables here. All "
+"information on supported variables can be found in section "
+":ref:`RefPathVariables`."
 msgstr ""
-"可以使用這個設定指定將寫入日誌檔的目錄。 強烈建議在此處使用預留位置變數。 有關支援變數的所有資訊，請參閱 "
-":ref:`RefPlaceholderVariables` 區。"
 
 msgid "**Default:** *%TEMP%*"
 msgstr "**預設值:** *%TEMP%*"
@@ -3347,12 +3345,10 @@ msgstr "**目錄**"
 
 msgid ""
 "In order to make a configuration generic and independent of the user, you "
-"should use placeholder variables instead of absolute paths in the directory "
+"should use path variables instead of absolute paths in the directory "
 "settings. All information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`."
+":ref:`RefPathVariables`."
 msgstr ""
-"為了使組態通用且獨立於使用者，應在目錄設定中使用預留位置變數而不是絕對路徑。 有關支援變數的所有資訊，請參閱 "
-":ref:`RefPlaceholderVariables` 區。"
 
 msgid "User configuration"
 msgstr "使用者組態"
@@ -3725,15 +3721,12 @@ msgid "Key file directories"
 msgstr "金鑰檔目錄"
 
 msgid ""
-"Placeholder variables should be used for both base directories. All "
-"information on supported variables can be found in section "
-":ref:`RefPlaceholderVariables`. On Windows `UNC paths "
+"Path variables should be used for both base directories. All information on "
+"supported variables can be found in section :ref:`RefPathVariables`. On "
+"Windows `UNC paths "
 "<https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used "
 "instead of absolute paths."
 msgstr ""
-"應使用預留位置變數於兩個基本目錄。 有關支援的變數所有資訊，請參閱 :ref:`RefPlaceholderVariables`。 在 Windows "
-"上可以使用 `UNC 路徑 <https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ "
-"來代替絕對路徑。"
 
 msgid "Public key file base directory"
 msgstr "公開金鑰檔基礎目錄"
@@ -3991,13 +3984,13 @@ msgstr "TLS 私密金鑰檔"
 msgid "The path to the TLS private key file for the HTTPS server."
 msgstr ""
 
-msgid "Placeholder variables for file paths"
-msgstr "檔案路徑的預留位置變數"
+msgid "Path variables"
+msgstr ""
 
 msgid ""
-"Placeholder variables have to be supplied in the format ``%VARIABLE%`` on "
-"all platforms."
-msgstr "預留位置變數必須在所有平臺上以 ``%VARIABLE%`` 的格式提供。"
+"Path variables have to be supplied in the format ``%VARIABLE%`` on all "
+"platforms."
+msgstr ""
 
 msgid ""
 "This variable is expanded to the user-specific directory for application "
@@ -4008,12 +4001,24 @@ msgstr ""
 " 在 Windows 或 :file:`~/.veyon` 在 Linux。"
 
 msgid ""
-"This variable is expanded to the home directory/user profile directory of "
-"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
-":file:`/home/admin` on Linux."
+"This variable is expanded to the local or redirected Desktop directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Desktop` on Windows "
+"or :file:`/home/admin/Desktop` on Linux (requires Veyon 4.7.3 or newer)."
 msgstr ""
-"這個變數已擴展到登入使用者的家目錄/使用者設定檔目錄，例如 :file:`C:\\\\Users\\\\Admin` 在 Windows 或 "
-":file:`/home/admin` on Linux。"
+
+msgid ""
+"This variable is expanded to the local or redirected documents directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Documents` on "
+"Windows or :file:`/home/admin/Documents` on Linux (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected download directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Downloads` on "
+"Windows or :file:`/home/admin/Downloads` on Linux (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
 
 msgid ""
 "This variable is expanded to the system-wide directory for Veyon's "
@@ -4022,6 +4027,26 @@ msgid ""
 msgstr ""
 "這個變數已擴展到 Veyon 應用程式資料的系統範圍目錄，例如 :file:`C:\\\\ProgramData\\\\Veyon` 在 Windows"
 " 或 :file:`/etc/veyon` 在 Linux。"
+
+msgid ""
+"This variable is expanded to the home directory/user profile directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
+":file:`/home/admin` on Linux."
+msgstr ""
+"這個變數已擴展到登入使用者的家目錄/使用者設定檔目錄，例如 :file:`C:\\\\Users\\\\Admin` 在 Windows 或 "
+":file:`/home/admin` on Linux。"
+
+msgid ""
+"This variable is expanded to the hostname of the local computer, allowing to"
+" access files in computer-specific directories (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected pictures directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Pictures` on Windows"
+" or :file:`/home/admin/Pictures` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
 
 msgid ""
 "This variable is expanded to the user-specific directory for temporary "
@@ -4035,6 +4060,12 @@ msgstr ""
 "Windows 或 :file:`/tmp` (或在 :envvar:`$TMPDIR` 環境變數中指定的任何路徑) 在 Linux。 "
 "以系統特權執行的處理程序 (Veyon 服務、Veyon 伺服器和所有子處理程序) 在 Windows 使用 "
 ":file:`C:\\\\Windows\\\\Temp`，在 Linux 使用 :file:`/tmp`。"
+
+msgid ""
+"This variable is expanded to the local or redirected videos directory of the"
+" logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Videos` on Windows or "
+":file:`/home/admin/Videos` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
 
 msgid "Environment variables"
 msgstr "環境變數"
@@ -4180,9 +4211,6 @@ msgstr "網域群組"
 msgid "Authorized user groups"
 msgstr "授權的使用者群組"
 
-msgid "Placeholder variables"
-msgstr "預留位置變數"
-
 msgid "Application data"
 msgstr "應用程式資料"
 
@@ -4194,6 +4222,21 @@ msgstr "家目錄"
 
 msgid "Temporary files"
 msgstr "暫存檔案"
+
+msgid "Desktop directory"
+msgstr ""
+
+msgid "Documents directory"
+msgstr ""
+
+msgid "Downloads directory"
+msgstr ""
+
+msgid "Pictures directory"
+msgstr ""
+
+msgid "Videos directory"
+msgstr ""
 
 msgid "Release notes"
 msgstr "發佈說明"

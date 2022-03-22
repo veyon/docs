@@ -76,7 +76,7 @@ Veyon can log various kinds of messages to component-specific log files or the l
 .. index:: Log file directory
 
 Log file directory
-    You can use this setting to specify which directory the log files will be written in. It's strongly recommended to use placeholder variables here. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
+    You can use this setting to specify which directory the log files will be written in. It's strongly recommended to use path variables here. All information on supported variables can be found in section :ref:`RefPathVariables`.
 
     **Default:** *%TEMP%*
 
@@ -263,7 +263,7 @@ Basic settings
 
 **Directories**
 
-In order to make a configuration generic and independent of the user, you should use placeholder variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
+In order to make a configuration generic and independent of the user, you should use path variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPathVariables`.
 
 .. _RefUserConfiguration:
 
@@ -490,7 +490,7 @@ Authentication keys
 Key file directories
 ++++++++++++++++++++
 
-Placeholder variables should be used for both base directories. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`. On Windows `UNC paths <https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used instead of absolute paths.
+Path variables should be used for both base directories. All information on supported variables can be found in section :ref:`RefPathVariables`. On Windows `UNC paths <https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used instead of absolute paths.
 
 .. index:: Public key file base directory
 
@@ -541,7 +541,7 @@ Starting with Veyon 4.5, an additional configuration page with settings related 
 Directories
 +++++++++++
 
-In order to make a configuration generic and independent of the user, you should use placeholder variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPlaceholderVariables`.
+In order to make a configuration generic and independent of the user, you should use path variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPathVariables`.
 
 Default source directory
     This directory will be opened by default when the user starts the file transfer feature and is asked for the files to transfer.
@@ -623,30 +623,59 @@ TLS certificate file
 TLS private key file
     The path to the TLS private key file for the HTTPS server.
 
-.. _RefPlaceholderVariables:
+.. _RefPathVariables:
 
-Placeholder variables for file paths
-------------------------------------
+Path variables
+--------------
 
-.. index:: Placeholder variables, Application data, User profile directory, Home directory, Temporary files
+.. index:: Path variables, Application data, User profile directory, Home directory, Temporary files, Desktop directory, Documents directory, Downloads directory, Pictures directory, Videos directory
 
-Placeholder variables have to be supplied in the format ``%VARIABLE%`` on all platforms.
+Path variables have to be supplied in the format ``%VARIABLE%`` on all platforms.
 
 .. describe:: %APPDATA%
 
     This variable is expanded to the user-specific directory for application data stored by Veyon, e.g. :file:`...\\User\\AppData\\Veyon` on Windows or :file:`~/.veyon` on Linux.
 
-.. describe:: %HOME%
+.. describe:: %DESKTOP%
 
-    This variable is expanded to the home directory/user profile directory of the logged on user, e.g. :file:`C:\\Users\\Admin` on Windows or :file:`/home/admin` on Linux.
+    This variable is expanded to the local or redirected Desktop directory of the logged on user, e.g. :file:`C:\\Users\\Admin\\Desktop` on Windows or :file:`/home/admin/Desktop` on Linux (requires Veyon 4.7.3 or newer).
+
+.. describe:: %DOCUMENTS%
+
+    This variable is expanded to the local or redirected documents directory of the logged on user, e.g. :file:`C:\\Users\\Admin\\Documents` on Windows or :file:`/home/admin/Documents` on Linux (requires Veyon 4.7.3 or newer).
+
+
+.. describe:: %DOWNLOADS%
+
+    This variable is expanded to the local or redirected download directory of the logged on user, e.g. :file:`C:\\Users\\Admin\\Downloads` on Windows or :file:`/home/admin/Downloads` on Linux (requires Veyon 4.7.3 or newer).
+
 
 .. describe:: %GLOBALAPPDATA%
 
     This variable is expanded to the system-wide directory for Veyon's application data,  e.g. :file:`C:\\ProgramData\\Veyon` on Windows or :file:`/etc/veyon` on Linux.
 
+.. describe:: %HOME%
+
+    This variable is expanded to the home directory/user profile directory of the logged on user, e.g. :file:`C:\\Users\\Admin` on Windows or :file:`/home/admin` on Linux.
+
+.. describe:: %HOSTNAME%
+
+    This variable is expanded to the hostname of the local computer, allowing to access files in computer-specific directories (requires Veyon 4.7.3 or newer).
+
+
+.. describe:: %PICTURES%
+
+    This variable is expanded to the local or redirected pictures directory of the logged on user, e.g. :file:`C:\\Users\\Admin\\Pictures` on Windows or :file:`/home/admin/Pictures` on Linux (requires Veyon 4.7.3 or newer).
+
+
 .. describe:: %TEMP%
 
     This variable is expanded to the user-specific directory for temporary files, e.g. :file:`...\\User\\AppData\\Local\\Temp` on Windows or :file:`/tmp` (or any path specified in the :envvar:`$TMPDIR` environment variable) on Linux. Processes running with system privileges (Veyon Service, Veyon Server and all sub processes) use :file:`C:\\Windows\\Temp` on Windows and :file:`/tmp` on Linux.
+
+.. describe:: %VIDEOS%
+
+    This variable is expanded to the local or redirected videos directory of the logged on user, e.g. :file:`C:\\Users\\Admin\\Videos` on Windows or :file:`/home/admin/Videos` on Linux (requires Veyon 4.7.3 or newer).
+
 
 
 .. _RefEnvironmentVariables:
