@@ -130,7 +130,7 @@ Framebuffer
 
 .. rubric:: Get current framebuffer image
 
-* URL: /api/v1/framebuffer/get?format=[png|jpeg]&compression=[1-9]&quality=[1-100]&width=NNNN&height=NNNN
+* URL: /api/v1/framebuffer?format=[png|jpeg]&compression=[1-9]&quality=[1-100]&width=NNNN&height=NNNN
 * Method: **GET**
 * ``format``
     - Optional
