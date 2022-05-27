@@ -32,7 +32,7 @@ The mixed operation of Veyon on Windows and Linux computers works without any re
 Preparing the installation
 --------------------------
 
-First of all download the installation files for your platform from the `Veyon download page <https://download.veyon.io>`_. For Windows computers it is recommended to use the 64-bit version (`win64`). For 32-bit installations the 32-bit version (`win32`) has to be used.
+First of all download the installation files for your platform from the `Veyon download page <https://veyon.io/download/>`_. For Windows computers it is recommended to use the 64-bit version (`win64`). For 32-bit installations the 32-bit version (`win32`) has to be used.
 
 Installation on a Windows computer
 ----------------------------------
@@ -46,7 +46,7 @@ Installation on a Linux computer
 
 .. index:: Linux
 
-The installation of Veyon on Linux differs depending on the distribution used. If Veyon is available in the package archive of your distribution you can install the program through the appropriate software management application. Alternatively up-to-date binary packages for most major distributions are available at the `Veyon download page <https://download.veyon.io>`_. In all other cases it's always possible to build and install a current version of Veyon from source. For further information please visit the `Github page of Veyon <https://github.com/veyon/veyon/>`_.
+The installation of Veyon on Linux differs depending on the distribution used. If Veyon is available in the package archive of your distribution you can install the program through the appropriate software management application. Alternatively up-to-date binary packages for most major distributions are available at the `Veyon download page <https://veyon.io/download/>`_. In all other cases it's always possible to build and install a current version of Veyon from source. For further information please visit the `Github page of Veyon <https://github.com/veyon/veyon/>`_.
 
 
 .. index:: Automated installation, Unattended installation, Silent installation, Uninstallation, Uninstalling
