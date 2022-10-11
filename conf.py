@@ -29,7 +29,7 @@ version = os.getenv('VERSION', '4.7.3')
 # The full version, including alpha/beta/rc tags.
 release = version
 
-language = os.getenv('LANGUAGE', None)
+language = os.getenv('LANGUAGE', "ru")
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 todo_include_todos = False
