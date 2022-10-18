@@ -10,23 +10,23 @@
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2021
 # Éric B., 2021
-# Tobias Junghans, 2021
 # Lachaux Patrick, 2022
+# Tobias Junghans, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2022-10-18 13:06+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Lachaux Patrick, 2022\n"
+"Last-Translator: Tobias Junghans, 2022\n"
 "Language-Team: French (https://www.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 msgid "Access control rules"
 msgstr "Règles du contrôle d'accès"
@@ -2019,13 +2019,13 @@ msgstr "Préparation de l'installation"
 
 msgid ""
 "First of all download the installation files for your platform from the "
-"`Veyon download page <https://download.veyon.io>`_. For Windows computers it"
-" is recommended to use the 64-bit version (`win64`). For 32-bit "
+"`Veyon download page <https://veyon.io/download/>`_. For Windows computers "
+"it is recommended to use the 64-bit version (`win64`). For 32-bit "
 "installations the 32-bit version (`win32`) has to be used."
 msgstr ""
 "Tout d’abord, téléchargez les fichiers d’installation de votre plate-forme à"
 " partir de la `page de téléchargement de Veyon "
-"<https://download.veyon.io>`_. Pour les ordinateurs Windows, il est "
+"<https://veyon.io/download>`_. Pour les ordinateurs Windows, il est "
 "recommandé d’utiliser la version 64 bits (`win64`). Pour les installations "
 "32 bits, la version 32 bits (`win32`) doit être utilisée."
 
@@ -2064,7 +2064,7 @@ msgid ""
 "can install the program through the appropriate software management "
 "application. Alternatively up-to-date binary packages for most major "
 "distributions are available at the `Veyon download page "
-"<https://download.veyon.io>`_. In all other cases it's always possible to "
+"<https://veyon.io/download/>`_. In all other cases it's always possible to "
 "build and install a current version of Veyon from source. For further "
 "information please visit the `Github page of Veyon "
 "<https://github.com/veyon/veyon/>`_."
@@ -2074,7 +2074,7 @@ msgstr ""
 "installer le programme à l'aide de l'application de gestion de logiciel "
 "appropriée. Des paquets binaires à jour, pour la plupart des distributions "
 "majeures, sont également disponibles sur la page de téléchargement de Veyon "
-"<https://download.veyon.io>`_. Dans tous les autres cas, il est toujours "
+"<https://veyon.io/download>`_. Dans tous les autres cas, il est toujours "
 "possible de créer et d'installer une version actuelle de Veyon à partir des "
 "sources. Pour plus d'informations, veuillez consulter la page `Github de "
 "Veyon <https://github.com/veyon/veyon/>`_."
