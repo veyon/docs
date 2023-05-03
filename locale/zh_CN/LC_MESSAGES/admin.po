@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2021, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Pascal Janus <pascal_janus@163.com>, 2019
 # Tobias Junghans, 2020
-# TeliuTe <teliute@163.com>, 2020
-# Richard Yang <zhongtian.yang@qq.com>, 2020
+# TeliuTe <teliute@163.com>, 2021
+# Richard Yang <zhongtian.yang@qq.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.5.6\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 08:14+0200\n"
+"POT-Creation-Date: 2023-05-03 11:56+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Richard Yang <zhongtian.yang@qq.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
+"Last-Translator: Richard Yang <zhongtian.yang@qq.com>, 2022\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -467,6 +467,39 @@ msgid ""
 "changed due to program or plugin updates."
 msgstr ""
 
+msgid "Feature control"
+msgstr "功能控制"
+
+msgid ""
+"The ``feature`` module provides commands for querying available features and"
+" controlling them on remote computers."
+msgstr ""
+
+msgid "Displays a list with the names of all available features."
+msgstr ""
+
+msgid ""
+"Displays a table with detailed information about all available features. "
+"This information include a description, the UID, the name of the plugin "
+"providing the respective feature and some other implementation-related "
+"details."
+msgstr ""
+
+msgid ""
+"Starts the specified feature on the specified host by connecting to the "
+"Veyon Server running remotely. The feature can be specified by name or UID. "
+"Use the ``show`` command to see all available features. Depending on the "
+"feature, additional arguments (such as the text message to display) encoded "
+"as a single JSON string have to be specified. Please refer to the developer "
+"documentation for more information"
+msgstr ""
+
+msgid ""
+"Stops the specified feature on the specified host by connecting to the Veyon"
+" Server running remotely. The feature can be specified by name or UID. Use "
+"the ``show`` command to see all available features."
+msgstr ""
+
 msgid "LDAP"
 msgstr "LDAP"
 
@@ -645,6 +678,9 @@ msgid "Veyon CLI"
 msgstr ""
 
 msgid "Configuration key"
+msgstr ""
+
+msgid "List features"
 msgstr ""
 
 msgid "Service registration"
@@ -1233,7 +1269,7 @@ msgid "https://en.wikipedia.org/wiki/IPv6"
 msgstr ""
 
 msgid "Port"
-msgstr ""
+msgstr "端口"
 
 msgid ""
 "an endpoint of communication. Physical as well as wireless connections are "
@@ -1344,8 +1380,8 @@ msgstr ""
 
 msgid ""
 "First of all download the installation files for your platform from the "
-"`Veyon download page <https://download.veyon.io>`_. For Windows computers it"
-" is recommended to use the 64-bit version (`win64`). For 32-bit "
+"`Veyon download page <https://veyon.io/download/>`_. For Windows computers "
+"it is recommended to use the 64-bit version (`win64`). For 32-bit "
 "installations the 32-bit version (`win32`) has to be used."
 msgstr ""
 
@@ -1375,7 +1411,7 @@ msgid ""
 "can install the program through the appropriate software management "
 "application. Alternatively up-to-date binary packages for most major "
 "distributions are available at the `Veyon download page "
-"<https://download.veyon.io>`_. In all other cases it's always possible to "
+"<https://veyon.io/download/>`_. In all other cases it's always possible to "
 "build and install a current version of Veyon from source. For further "
 "information please visit the `Github page of Veyon "
 "<https://github.com/veyon/veyon/>`_."
@@ -2225,8 +2261,8 @@ msgstr ""
 
 msgid ""
 "Special characters such as ``@`` or ``:`` – especially in the password - can"
-" be specified by using `URL percent-encoding <https://en.wikipedia.org/wiki"
-"/Percent-encoding>`_."
+" be specified by using `URL percent-encoding "
+"<https://en.wikipedia.org/wiki/Percent-encoding>`_."
 msgstr ""
 
 msgid ""
@@ -2608,6 +2644,19 @@ msgstr ""
 msgid "**Default:** *Use system language setting*"
 msgstr ""
 
+msgid "Style"
+msgstr ""
+
+msgid ""
+"This setting allows to change between certain styles of user interface "
+"controls. While the Fusion style offers a clean and pleasent look and feel, "
+"it's also possible to switch back to the native style of the operating "
+"system or desktop environment."
+msgstr ""
+
+msgid "**Default:** *Fusion*"
+msgstr ""
+
 msgid ""
 "The :ref:`Configuration` chapter describes the "
 ":ref:`ConfAuthenticationMethods` available in Veyon."
@@ -2679,8 +2728,8 @@ msgstr "日志文件存放目录"
 
 msgid ""
 "You can use this setting to specify which directory the log files will be "
-"written in. It's strongly recommended to use path variables here. All"
-" information on supported variables can be found in section "
+"written in. It's strongly recommended to use path variables here. All "
+"information on supported variables can be found in section "
 ":ref:`RefPathVariables`."
 msgstr ""
 
@@ -2937,7 +2986,7 @@ msgid "VNC server"
 msgstr "VNC 服务"
 
 msgid "Plugin"
-msgstr ""
+msgstr "插件"
 
 msgid ""
 "By default Veyon uses an internal platform-specific VNC server "
@@ -3000,6 +3049,32 @@ msgid "**Default:** *%APPDATA%/Screenshots*"
 msgstr ""
 
 msgid "**User interface**"
+msgstr ""
+
+msgid "Image quality in monitoring mode"
+msgstr ""
+
+msgid ""
+"Starting with Veyon 4.8 the quality of the image data transferred between "
+"client and master computers in monitoring mode can be configured such that "
+"it meets the possible network bandwidth constraints. While *Highest* uses "
+"lossless image encodings (default before Veyon 4.8), *Lowest* uses JPEG "
+"encoding which results in significantly reduced bandwidth usage but also "
+"clearly visible image artifacts."
+msgstr ""
+
+msgid "**Default:** *Medium*"
+msgstr ""
+
+msgid "Remote access image quality"
+msgstr ""
+
+msgid ""
+"Like the image quality in monitoring mode, the image quality in remote "
+"access windows can be adjusted to limit bandwidth usage if necessay."
+msgstr ""
+
+msgid "**Default:** *Highest*"
 msgstr ""
 
 msgid "Thumbnail update interval"
@@ -3314,9 +3389,9 @@ msgid "Key file directories"
 msgstr "密钥文件目录"
 
 msgid ""
-"Placeholder variables should be used for both base directories. All "
-"information on supported variables can be found in section "
-":ref:`RefPathVariables`. On Windows `UNC paths "
+"Path variables should be used for both base directories. All information on "
+"supported variables can be found in section :ref:`RefPathVariables`. On "
+"Windows `UNC paths "
 "<https://en.wikipedia.org/wiki/Uniform_Naming_Convention>`_ can be used "
 "instead of absolute paths."
 msgstr ""
@@ -3404,6 +3479,26 @@ msgstr ""
 msgid "**Default:** *128 MB*"
 msgstr ""
 
+msgid "Bandwidth limit"
+msgstr ""
+
+msgid ""
+"As of Veyon 4.8, the total bandwidth used for screen transmission can be "
+"limited.This involves determining the bandwidth used between two key frames "
+"and comparing it with the set limit. If it is above this limit, the demo "
+"server reduces the image quality so that less data is transmitted to the "
+"clients. Conversely, if the bandwidth used is below 80% of the limit, the "
+"image quality is increased again."
+msgstr ""
+
+msgid ""
+"If master and client computers are connected via Wi-Fi, the demo server "
+"bandwidth should be limited according to the available Wi-Fi bandwidth."
+msgstr ""
+
+msgid "**Default:** *100 MB/s*"
+msgstr ""
+
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
 "in detail in chapter :ref:`LDAP`."
@@ -3470,7 +3565,7 @@ msgid ""
 msgstr ""
 
 msgid "Enable WebAPI server"
-msgstr ""
+msgstr "启用 WebAPI 服务器"
 
 msgid ""
 "This option defines whether to start the WebAPI server along with the Veyon "
@@ -3478,7 +3573,7 @@ msgid ""
 msgstr ""
 
 msgid "Network port"
-msgstr ""
+msgstr "网络端口"
 
 msgid ""
 "This setting specifies the network port at which the WebAPI server should "
@@ -3489,7 +3584,7 @@ msgid "**Default:** *11080*"
 msgstr ""
 
 msgid "Connection settings"
-msgstr ""
+msgstr "连接设置"
 
 msgid ""
 "A connection refers to an authentication resource identified by a connection"
@@ -3520,7 +3615,7 @@ msgid "**Default:** *60 s*"
 msgstr ""
 
 msgid "Authentication timeout"
-msgstr ""
+msgstr "验证超时"
 
 msgid ""
 "This setting determines the time period within which a connection must be "
@@ -3543,7 +3638,7 @@ msgid "**Default:** *10*"
 msgstr ""
 
 msgid "Connection encryption"
-msgstr ""
+msgstr "连接加密"
 
 msgid "Use HTTPS with TLS 1.3 instead of HTTP"
 msgstr ""
@@ -3555,7 +3650,7 @@ msgid ""
 msgstr ""
 
 msgid "TLS certificate file"
-msgstr ""
+msgstr "TLS 证书文件"
 
 msgid "The path to the TLS certificate file for the HTTPS server."
 msgstr ""
@@ -3566,12 +3661,12 @@ msgstr ""
 msgid "The path to the TLS private key file for the HTTPS server."
 msgstr ""
 
-msgid "Placeholder variables for file paths"
+msgid "Path variables"
 msgstr ""
 
 msgid ""
-"Placeholder variables have to be supplied in the format ``%VARIABLE%`` on "
-"all platforms."
+"Path variables have to be supplied in the format ``%VARIABLE%`` on all "
+"platforms."
 msgstr ""
 
 msgid ""
@@ -3581,9 +3676,23 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This variable is expanded to the home directory/user profile directory of "
-"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
-":file:`/home/admin` on Linux."
+"This variable is expanded to the local or redirected Desktop directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Desktop` on Windows "
+"or :file:`/home/admin/Desktop` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected documents directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Documents` on "
+"Windows or :file:`/home/admin/Documents` on Linux (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected download directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Downloads` on "
+"Windows or :file:`/home/admin/Downloads` on Linux (requires Veyon 4.7.3 or "
+"newer)."
 msgstr ""
 
 msgid ""
@@ -3593,12 +3702,36 @@ msgid ""
 msgstr ""
 
 msgid ""
+"This variable is expanded to the home directory/user profile directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin` on Windows or "
+":file:`/home/admin` on Linux."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the hostname of the local computer, allowing to"
+" access files in computer-specific directories (requires Veyon 4.7.3 or "
+"newer)."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected pictures directory of "
+"the logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Pictures` on Windows"
+" or :file:`/home/admin/Pictures` on Linux (requires Veyon 4.7.3 or newer)."
+msgstr ""
+
+msgid ""
 "This variable is expanded to the user-specific directory for temporary "
 "files, e.g. :file:`...\\\\User\\\\AppData\\\\Local\\\\Temp` on Windows or "
 ":file:`/tmp` (or any path specified in the :envvar:`$TMPDIR` environment "
 "variable) on Linux. Processes running with system privileges (Veyon Service,"
 " Veyon Server and all sub processes) use :file:`C:\\\\Windows\\\\Temp` on "
 "Windows and :file:`/tmp` on Linux."
+msgstr ""
+
+msgid ""
+"This variable is expanded to the local or redirected videos directory of the"
+" logged on user, e.g. :file:`C:\\\\Users\\\\Admin\\\\Videos` on Windows or "
+":file:`/home/admin/Videos` on Linux (requires Veyon 4.7.3 or newer)."
 msgstr ""
 
 msgid "Environment variables"
@@ -3668,7 +3801,7 @@ msgid "System service"
 msgstr ""
 
 msgid "Sessions"
-msgstr ""
+msgstr "会话"
 
 msgid "Session settings"
 msgstr ""
@@ -3718,6 +3851,9 @@ msgstr ""
 msgid "External VNC server"
 msgstr "外部 VNC 服务"
 
+msgid "Image quality"
+msgstr ""
+
 msgid "Current location"
 msgstr ""
 
@@ -3745,9 +3881,6 @@ msgstr ""
 msgid "Authorized user groups"
 msgstr "通过验证的用户组"
 
-msgid "Placeholder variables"
-msgstr ""
-
 msgid "Application data"
 msgstr ""
 
@@ -3758,6 +3891,21 @@ msgid "Home directory"
 msgstr ""
 
 msgid "Temporary files"
+msgstr ""
+
+msgid "Desktop directory"
+msgstr ""
+
+msgid "Documents directory"
+msgstr ""
+
+msgid "Downloads directory"
+msgstr ""
+
+msgid "Pictures directory"
+msgstr ""
+
+msgid "Videos directory"
 msgstr ""
 
 msgid "Release notes"
@@ -3812,6 +3960,351 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.8"
+msgstr ""
+
+msgid ""
+"Veyon 4.8 introduces image quality control mechanisms to better meet "
+"bandwidth contraints, especially in Wi-Fi networks. A static image quality "
+"can now be configured for monitoring mode and remote access views. The demo "
+"server controls the image quality dynamically based on the used bandwidth "
+"between two key frames and the configured bandwidth limit."
+msgstr ""
+
+msgid ""
+"The Windows version of Veyon is now based on the latest Qt 6.5 framework as "
+"well as OpenSSL 3 and UltraVNC 1.4.2.0. Also the build environment has been "
+"updated to Debian 11 (i.e. GCC 10 and MinGW runtime 8). This allowed us to "
+"enable Link Time Optimization (LTO) resulting in better overall performance."
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid ""
+"The WebAPI has been changed such that the ``/api/v1/user`` endpoint does not"
+" return the session ID any longer. Instead the new ``/api/v1/session`` "
+"endpoint should be used which also provides additional information about the"
+" session."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.8."
+msgstr ""
+
+msgid "Veyon 4.7"
+msgstr ""
+
+msgid ""
+"Veyon 4.7 is the last minor release series of Veyon 4. One of the most long-"
+"awaited features is certainly the new screen selection menu in the remote "
+"access window. Also the overall performance and responsiveness has been "
+"improved thanks to a revised mechanism for sending and receiving control "
+"messages. Besides that, several issues from previous versions have been "
+"resolved."
+msgstr ""
+
+msgid "Core"
+msgstr ""
+
+msgid ""
+"Fixed binary compatibility issues between different versions of "
+"LibVNCServer/LibVNCClient."
+msgstr ""
+
+msgid ""
+"Messages in log files (especially debug messages) are now much more human "
+"readable."
+msgstr ""
+
+msgid "Plugins"
+msgstr ""
+
+msgid ""
+"Demo: Screens in the Demo menu are now displayed with their actual hardware "
+"name and connector type/index."
+msgstr ""
+
+msgid ""
+"LDAP: Fixed querying members of a group when the nested groups option is "
+"enabled."
+msgstr ""
+
+msgid ""
+"TextMessage: Students can now select and copy the text message or parts of "
+"it."
+msgstr ""
+
+msgid ""
+"TextMessage: Rich text (i.e. formatted text including hyperlinks) can now be"
+" entered and sent to students."
+msgstr ""
+
+msgid ""
+"RemoteAccess: For remote computers with multiple screens, a button with a "
+"screen selection menu has been added."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The login name of the remote user is shown in the window "
+"title, if the full name is not available."
+msgstr ""
+
+msgid ""
+"WebAPI: The header field lookup (e.g. for the connection UID) is now case "
+"insensitive."
+msgstr ""
+
+msgid "The parameter order for the ``ping`` utility has been improved."
+msgstr ""
+
+msgid ""
+"Issues regarding the session identification have been fixed, solving various"
+" issues when running ``veyon-server`` manually e.g. via autostart entries."
+msgstr ""
+
+msgid ""
+"A regression in Veyon 4.6.0 has been fixed to make the computer and user "
+"search case insensitive again."
+msgstr ""
+
+msgid ""
+"Control messages between computers are now sent asynchronously which "
+"improves performance and responsiveness while reducing the CPU load."
+msgstr ""
+
+msgid ""
+"When closing the program, it now stops all features on the student computers"
+" and waits until all corresponding control messages have been sent."
+msgstr ""
+
+msgid ""
+"A new filter button has been added to show computers with logged on users "
+"only."
+msgstr ""
+
+msgid ""
+"The dialog for confirming actions such as powering off computers only "
+"emphasizes *ALL* computers if all computers are selected."
+msgstr ""
+
+msgid ""
+"If available, the full name of the user is now preferred in the tooltip."
+msgstr ""
+
+msgid "Server"
+msgstr ""
+
+msgid ""
+"Server-side framebuffer update rate control has been added which improves "
+"performance and responsive."
+msgstr ""
+
+msgid ""
+"Added an explicit initialization of the WinSock layer to prevent networking "
+"issues."
+msgstr ""
+
+msgid "The service control has been made more resilient."
+msgstr ""
+
+msgid ""
+"The Windows ICMP API is now used to ping computers in favor of calling the "
+"external ``ping`` utility."
+msgstr ""
+
+msgid ""
+"Several 3rdparty libraries have been updated (Qt 5.12.12 snapshot, TurboJPEG"
+" 2.1.2, OpenLDAP 2.5.10 snapshot)"
+msgstr ""
+
+msgid ""
+"Even though there have been changes to the core and networking layer, "
+"there's only a small to medium risk for regressions, since most of the "
+"features haven't been touched. To benefit from the performance improvements,"
+" both teacher and student computers should be upgraded to Veyon 4.7."
+msgstr ""
+
+msgid ""
+"Since the underlying LDAP library has been updated, users of Veyon's LDAP "
+"backend should test if Veyon 4.7 is able to retrieve all relevant "
+"information from your LDAP/AD server as usual."
+msgstr ""
+
+msgid "There are no structural changes in Veyon 4.7."
+msgstr ""
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.7."
+msgstr ""
+
+msgid "Veyon 4.6"
+msgstr ""
+
+msgid ""
+"Most notably in Veyon 4.6 the remote access module has been redesigned to "
+"reuse the computer connection of the main window. This way users get instant"
+" access to computers when starting the remote control or view feature and no"
+" longer have to wait until the connection has been established (which could "
+"take up to several seconds). Also users can now press and hold the left "
+"mouse button on a computer. This shows the computer's screen in fullscreen "
+"and realtime until the mouse button is released again. Veyon CLI gained two "
+"new modules for managing plugins and features. This allows starting and "
+"stopping Veyon features remotely on the command line, e.g. for scripting and"
+" automation tasks. On Linux the Veyon Service component has been greatly "
+"improved to start and stop Veyon Server instances more reliably on session "
+"changes (user logon/logoff etc.). In addition to the existing *single and "
+"multi session modes*, there's now a new *active session mode* on Windows "
+"which starts a single Veyon Server instance for the currently active local "
+"or remote session. This is very useful for environments in which some "
+"students are logged in locally while others access unoccupied computers via "
+"RDP from home."
+msgstr ""
+
+msgid ""
+"Since mostly only a few specific modules have been changed or enhanced, "
+"there's a rather low risk for regressions in general. Especially Linux users"
+" are advised to upgrade soon to solve problems with the Veyon Service."
+msgstr ""
+
+msgid ""
+"Protocol errors during the initial authentication phase are handled more "
+"reliably. This fixes problems when connecting to incompatible servers "
+"accidentally."
+msgstr ""
+
+msgid "The ``plugin`` and ``feature`` modules have been added."
+msgstr ""
+
+msgid ""
+"The ``config`` and ``shell`` plugins have been integrated as static modules."
+msgstr ""
+
+msgid "Demo: The visual feedback when (re-)connecting has been redesigned."
+msgstr ""
+
+msgid ""
+"DesktopServices: The *Run program* feature has been renamed to *Start "
+"application*."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The visual feedback when (re-)connecting has been redesigned."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The computer connection of the main window is reused if "
+"available resulting in immediate access to the remote computer."
+msgstr ""
+
+msgid ""
+"RemoteAccess: The remote cursor is no longer used in view only mode to "
+"prevent occasionally observed render artifacts."
+msgstr ""
+
+msgid ""
+"UserSessionControl: Non-user sessions (such as display manager/login screen "
+"sessions) are no longer terminated by the user logoff feature."
+msgstr ""
+
+msgid ""
+"WebAPI: An error code has been added to report protocol errors occuring "
+"while connecting to the Veyon Server."
+msgstr ""
+
+msgid ""
+"WebAPI: The connection limit is enforced at the HTTP server level already to"
+" properly report the connection limit reached error instead of timing out."
+msgstr ""
+
+msgid ""
+"WebAPI: Skip ping for hosts which no connection could be established to. "
+"This allows using a higher connection limit on Linux when the number of open"
+" file descriptors is limited."
+msgstr ""
+
+msgid "SHM support is being detected more reliably."
+msgstr ""
+
+msgid ""
+"Logging off users is now initiated properly through the environment-specific"
+" session manager while ``systemd-logind`` is used as fallback only. This "
+"fixes the display manager (especially GDM3) not being shown again after "
+"logoff."
+msgstr ""
+
+msgid ""
+"Reboot and power down via ``systemd-logind`` has been improved while the "
+"environment-specific session manager is used as fallback only. The reboot "
+"and poweroff binaries are not used any longer."
+msgstr ""
+
+msgid ""
+"In addition to the hostname, the computer display name is shown in the "
+"tooltip of a computer."
+msgstr ""
+
+msgid ""
+"A computer's screen is shown in fullscreen and realtime while pressing and "
+"holding the left mouse button on a computer."
+msgstr ""
+
+msgid ""
+"For Linux clients, *[no user]* is displayed as the user name instead of the "
+"name of the display manager user."
+msgstr ""
+
+msgid ""
+"Hostnames of connected computers (shown in the tooltip of the tray icon) are"
+" now reverse resolved in background to keep connections responsive."
+msgstr ""
+
+msgid ""
+"The 3rdparty component UltraVNC has been updated to the latest version."
+msgstr ""
+
+msgid "The new *Active session mode* has been implemented."
+msgstr ""
+
+msgid ""
+"Querying local and domain user groups has been improved to share more code "
+"in common and log more details in case of errors."
+msgstr ""
+
+msgid ""
+"The Veyon Service additionally depends on the LanmanWorkstation and LSM "
+"services to improve reliability on start."
+msgstr ""
+
+msgid ""
+"Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenSSL "
+"1.1.1l, TurboJPEG 2.1.1)"
+msgstr ""
+
+msgid ""
+"In Veyon 4.6 the *Run program* feature has been renamed to *Start "
+"application* but works identically."
+msgstr ""
+
+msgid ""
+"One configuration key has been renamed in Veyon 4.6. When upgrading to Veyon"
+" 4.6 or newer this new configuration key will be populated with the value of"
+" the old key automatically."
+msgstr ""
+
+msgid "Old name"
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "``DesktopServices/PredefinedPrograms``"
+msgstr ""
+
+msgid "``DesktopServices/PredefinedApplications``"
+msgstr ""
+
 msgid "Veyon 4.5"
 msgstr ""
 
@@ -3829,9 +4322,6 @@ msgid ""
 "desktop virtualization environments by delivering extended and improved "
 "multi session support. Additionally various compatibility issues on Linux "
 "have been fixed and the file transfer plugin received a configuration page."
-msgstr ""
-
-msgid "Core"
 msgstr ""
 
 msgid "The feature plugin API has been revised."
@@ -3856,9 +4346,6 @@ msgid "Several parts of the user interface have been improved."
 msgstr ""
 
 msgid "Settings for new Veyon Master features have been added."
-msgstr ""
-
-msgid "Plugins"
 msgstr ""
 
 msgid ""
@@ -3936,9 +4423,6 @@ msgid ""
 "sizes."
 msgstr ""
 
-msgid "Server"
-msgstr ""
-
 msgid ""
 "A notification is now shown for both incomplete and failed authentication "
 "attempts."
@@ -3955,10 +4439,6 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The 3rdparty component UltraVNC has been updated to the latest version."
-msgstr ""
-
-msgid ""
 "Several 3rdparty libraries have been updated (Qt 5.12.11 snapshot, OpenLDAP "
 "2.4.56, OpenSSL 1.1.1h)"
 msgstr ""
@@ -3969,25 +4449,13 @@ msgid ""
 "thoroughly before deploying."
 msgstr ""
 
-msgid "Structural changes"
-msgstr ""
-
 msgid "There are no structural changes in Veyon 4.5."
-msgstr ""
-
-msgid "Configuration changes"
 msgstr ""
 
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.5. When upgrading to"
 " Veyon 4.5 or newer the new configuration keys will be populated with the "
 "value of the old keys automatically."
-msgstr ""
-
-msgid "Old name"
-msgstr ""
-
-msgid "New name"
 msgstr ""
 
 msgid "``Network/PrimaryServicePort``"
@@ -4704,6 +5172,16 @@ msgid ""
 "upgrading KDE/Qt. As a last resort you can disable the X Damage extension in"
 " the VNC server configuration. This will however decrease overall "
 "performance and increase the CPU load."
+msgstr ""
+
+msgid "Some features such as starting apps or opening websites do not work"
+msgstr ""
+
+msgid ""
+"It has been reported that problems arise if the username and the computer "
+"name are identical. When logging in a user called ``student`` on a computer "
+"with the hostname ``student``, some features will fail to start when the "
+"user session is being controlled via Veyon Master."
 msgstr ""
 
 msgid "Debugging"

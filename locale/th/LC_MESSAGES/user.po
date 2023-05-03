@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,12 +9,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2023-05-03 11:25+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Nuttaplus Rachbuntao <warofdefeat@gmail.com>, 2019\n"
-"Language-Team: Thai (https://www.transifex.com/veyon-solutions/teams/65452/th/)\n"
+"Language-Team: Thai (https://app.transifex.com/veyon-solutions/teams/65452/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1001,11 +1001,17 @@ msgid ""
 "computers."
 msgstr ""
 
+msgid "powered-on"
+msgstr ""
+
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "
 "holding then :kbd:`Ctrl` key, the size can also be changed using the mouse "
 "scroll wheel. The size is adjusted automatically by clicking the button "
 "|zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it."
+msgstr ""
+
+msgid "zoom-fit-best"
 msgstr ""
 
 msgid ""
@@ -1019,9 +1025,18 @@ msgid ""
 "arrangement again, simply deactivate the |exchange-positions-zorder| button."
 msgstr ""
 
+msgid "exchange-positions-zorder"
+msgstr ""
+
+msgid "align-grid"
+msgstr ""
+
 msgid ""
 "The |help-about| button (:guilabel:`About`) opens a dialog with information "
 "about Veyon such as version, manufacturer and license terms."
+msgstr ""
+
+msgid "help-about"
 msgstr ""
 
 msgid "Toolbar"

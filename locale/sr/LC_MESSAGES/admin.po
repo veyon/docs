@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,12 +10,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-18 13:06+0200\n"
+"POT-Creation-Date: 2023-05-03 11:56+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Predrag Jovanovic <itusluge18@gmail.com>, 2021\n"
-"Language-Team: Serbian (https://www.transifex.com/veyon-solutions/teams/65452/sr/)\n"
+"Language-Team: Serbian (https://app.transifex.com/veyon-solutions/teams/65452/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3230,6 +3230,19 @@ msgstr ""
 msgid "**Default:** *Use system language setting*"
 msgstr "**Default:** *Upotreba sistemskih postavki jezika*"
 
+msgid "Style"
+msgstr ""
+
+msgid ""
+"This setting allows to change between certain styles of user interface "
+"controls. While the Fusion style offers a clean and pleasent look and feel, "
+"it's also possible to switch back to the native style of the operating "
+"system or desktop environment."
+msgstr ""
+
+msgid "**Default:** *Fusion*"
+msgstr ""
+
 msgid ""
 "The :ref:`Configuration` chapter describes the "
 ":ref:`ConfAuthenticationMethods` available in Veyon."
@@ -3624,6 +3637,32 @@ msgstr "**Default:** *%APPDATA%/Screenshots*"
 
 msgid "**User interface**"
 msgstr "**User interface**"
+
+msgid "Image quality in monitoring mode"
+msgstr ""
+
+msgid ""
+"Starting with Veyon 4.8 the quality of the image data transferred between "
+"client and master computers in monitoring mode can be configured such that "
+"it meets the possible network bandwidth constraints. While *Highest* uses "
+"lossless image encodings (default before Veyon 4.8), *Lowest* uses JPEG "
+"encoding which results in significantly reduced bandwidth usage but also "
+"clearly visible image artifacts."
+msgstr ""
+
+msgid "**Default:** *Medium*"
+msgstr ""
+
+msgid "Remote access image quality"
+msgstr ""
+
+msgid ""
+"Like the image quality in monitoring mode, the image quality in remote "
+"access windows can be adjusted to limit bandwidth usage if necessay."
+msgstr ""
+
+msgid "**Default:** *Highest*"
+msgstr ""
 
 msgid "Thumbnail update interval"
 msgstr "Interval ažuriranja sličica"
@@ -4027,6 +4066,26 @@ msgstr ""
 msgid "**Default:** *128 MB*"
 msgstr "**Default:** *128 MB*"
 
+msgid "Bandwidth limit"
+msgstr ""
+
+msgid ""
+"As of Veyon 4.8, the total bandwidth used for screen transmission can be "
+"limited.This involves determining the bandwidth used between two key frames "
+"and comparing it with the set limit. If it is above this limit, the demo "
+"server reduces the image quality so that less data is transmitted to the "
+"clients. Conversely, if the bandwidth used is below 80% of the limit, the "
+"image quality is increased again."
+msgstr ""
+
+msgid ""
+"If master and client computers are connected via Wi-Fi, the demo server "
+"bandwidth should be limited according to the available Wi-Fi bandwidth."
+msgstr ""
+
+msgid "**Default:** *100 MB/s*"
+msgstr ""
+
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
 "in detail in chapter :ref:`LDAP`."
@@ -4379,6 +4438,9 @@ msgstr "localhost"
 msgid "External VNC server"
 msgstr "Spoljni VNC server"
 
+msgid "Image quality"
+msgstr ""
+
 msgid "Current location"
 msgstr "Trenutna lokacija"
 
@@ -4483,6 +4545,40 @@ msgid ""
 "compatibility reasons allowing to switch back to a previous version more "
 "easily. There'll be a clean up mechanism in a future release which will "
 "remove all legacy configuration keys."
+msgstr ""
+
+msgid "Veyon 4.8"
+msgstr ""
+
+msgid ""
+"Veyon 4.8 introduces image quality control mechanisms to better meet "
+"bandwidth contraints, especially in Wi-Fi networks. A static image quality "
+"can now be configured for monitoring mode and remote access views. The demo "
+"server controls the image quality dynamically based on the used bandwidth "
+"between two key frames and the configured bandwidth limit."
+msgstr ""
+
+msgid ""
+"The Windows version of Veyon is now based on the latest Qt 6.5 framework as "
+"well as OpenSSL 3 and UltraVNC 1.4.2.0. Also the build environment has been "
+"updated to Debian 11 (i.e. GCC 10 and MinGW runtime 8). This allowed us to "
+"enable Link Time Optimization (LTO) resulting in better overall performance."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "Strukturne promene"
+
+msgid ""
+"The WebAPI has been changed such that the ``/api/v1/user`` endpoint does not"
+" return the session ID any longer. Instead the new ``/api/v1/session`` "
+"endpoint should be used which also provides additional information about the"
+" session."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "Konfiguraciske promene"
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.8."
 msgstr ""
 
 msgid "Veyon 4.7"
@@ -4624,14 +4720,8 @@ msgid ""
 "information from your LDAP/AD server as usual."
 msgstr ""
 
-msgid "Structural changes"
-msgstr "Strukturne promene"
-
 msgid "There are no structural changes in Veyon 4.7."
 msgstr ""
-
-msgid "Configuration changes"
-msgstr "Konfiguraciske promene"
 
 msgid "No configuration keys have been changed or renamed in Veyon 4.7."
 msgstr ""

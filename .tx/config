@@ -2,19 +2,19 @@
 host = https://www.transifex.com
 minimum_perc = 20
 
-[veyon.admin-manual]
+[o:veyon-solutions:p:veyon:r:admin-manual]
 file_filter = locale/<lang>/LC_MESSAGES/admin.po
 source_file = _build/gettext/admin.pot
 source_lang = en
 type = PO
 
-[veyon.user-manual]
+[o:veyon-solutions:p:veyon:r:user-manual]
 file_filter = locale/<lang>/LC_MESSAGES/user.po
 source_file = _build/gettext/user.pot
 source_lang = en
 type = PO
 
-[veyon.manual-index]
+[o:veyon-solutions:p:veyon:r:manual-index]
 file_filter = locale/<lang>/LC_MESSAGES/index.po
 source_file = _build/gettext/index.pot
 source_lang = en

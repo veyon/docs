@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,12 +10,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2023-05-03 11:25+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Haris Hrnjic <harishrnjic@outlook.com>, 2021\n"
-"Language-Team: Serbian (https://www.transifex.com/veyon-solutions/teams/65452/sr/)\n"
+"Language-Team: Serbian (https://app.transifex.com/veyon-solutions/teams/65452/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1334,6 +1334,9 @@ msgstr ""
 "ili delimično zauzetih prostorija, istovremeno fokusirajući se na stvarno "
 "aktivne računare."
 
+msgid "powered-on"
+msgstr ""
+
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "
 "holding then :kbd:`Ctrl` key, the size can also be changed using the mouse "
@@ -1344,6 +1347,9 @@ msgstr ""
 "držite :kbd: `Ctrl` taster, veličina se takođe može menjati pomoću točkića"
 " za pomicanje miša. Veličina se automatski podešava klikom na dugme |zum-"
 "fit-best| (:guilabel:`Adjust optimal size`) desno od njeg."
+
+msgid "zoom-fit-best"
+msgstr ""
 
 msgid ""
 "It is also possible to use a custom computer arrangement, e.g. to represent "
@@ -1364,12 +1370,21 @@ msgstr ""
 "computers to grid`) dugme. Ako želite ponovo koristiti sortirani standardni "
 "raspored, jednostavno deaktivirajte |exchange-positions-zorder| dugme."
 
+msgid "exchange-positions-zorder"
+msgstr ""
+
+msgid "align-grid"
+msgstr ""
+
 msgid ""
 "The |help-about| button (:guilabel:`About`) opens a dialog with information "
 "about Veyon such as version, manufacturer and license terms."
 msgstr ""
 "|help-about| button (:guilabel:`About`) taster otvara dijalog sa "
 "informacijama o Veyon-u, kao što su verzija, proizvođač i uslovi licence."
+
+msgid "help-about"
+msgstr ""
 
 msgid "Toolbar"
 msgstr "Alatna traka"

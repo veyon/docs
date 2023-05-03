@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,12 +9,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2023-05-03 11:25+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2021\n"
-"Language-Team: Estonian (https://www.transifex.com/veyon-solutions/teams/65452/et/)\n"
+"Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1341,6 +1341,9 @@ msgstr ""
 "arvuteid või osaliselt asustatud ruume, keskendudes tegelikult aktiivsetele "
 "arvutitele."
 
+msgid "powered-on"
+msgstr ""
+
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "
 "holding then :kbd:`Ctrl` key, the size can also be changed using the mouse "
@@ -1351,6 +1354,9 @@ msgstr ""
 "all klahvi :kbd:`Ctrl`, saab suurust muuta ka hiire kerimisratta abil. "
 "Suurust reguleeritakse automaatselt, klõpsates nuppu |zoom-fit-best| "
 "(:guilabel:`Reguleeri optimaalset suurust`) sellest paremal."
+
+msgid "zoom-fit-best"
+msgstr ""
 
 msgid ""
 "It is also possible to use a custom computer arrangement, e.g. to represent "
@@ -1371,12 +1377,21 @@ msgstr ""
 "(:guilabel:`Joondage arvutid`) nupp. Kui soovite sorditud standardkorraldust"
 " uuesti kasutada, deaktiveerige lihtsalt |exchange-position-zorder| nuppu."
 
+msgid "exchange-positions-zorder"
+msgstr ""
+
+msgid "align-grid"
+msgstr ""
+
 msgid ""
 "The |help-about| button (:guilabel:`About`) opens a dialog with information "
 "about Veyon such as version, manufacturer and license terms."
 msgstr ""
 "|Abiteave| nupp (:guilabel: `Programmist`) avab dialoogi Veyoni kohta käiva "
 "teabega, nagu versioon, tootja ja litsentsitingimused."
+
+msgid "help-about"
+msgstr ""
 
 msgid "Toolbar"
 msgstr "Tööriistariba"

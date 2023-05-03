@@ -19,6 +19,26 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.8
+---------
+
+Overview
+++++++++
+
+Veyon 4.8 introduces image quality control mechanisms to better meet bandwidth contraints, especially in Wi-Fi networks. A static image quality can now be configured for monitoring mode and remote access views. The demo server controls the image quality dynamically based on the used bandwidth between two key frames and the configured bandwidth limit.
+
+The Windows version of Veyon is now based on the latest Qt 6.5 framework as well as OpenSSL 3 and UltraVNC 1.4.2.0. Also the build environment has been updated to Debian 11 (i.e. GCC 10 and MinGW runtime 8). This allowed us to enable Link Time Optimization (LTO) resulting in better overall performance.
+
+Structural changes
+++++++++++++++++++
+
+The WebAPI has been changed such that the ``/api/v1/user`` endpoint does not return the session ID any longer. Instead the new ``/api/v1/session`` endpoint should be used which also provides additional information about the session.
+
+Configuration changes
++++++++++++++++++++++
+
+No configuration keys have been changed or renamed in Veyon 4.8.
+
 Veyon 4.7
 ---------
 

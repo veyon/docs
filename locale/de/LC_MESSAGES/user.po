@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,12 +9,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2023-05-03 11:25+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Tobias Junghans, 2021\n"
-"Language-Team: German (https://www.transifex.com/veyon-solutions/teams/65452/de/)\n"
+"Language-Team: German (https://app.transifex.com/veyon-solutions/teams/65452/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1423,6 +1423,9 @@ msgstr ""
 "teilweise besetzten Räumen bei gleichzeitiger Fokussierung auf die "
 "tatsächlich aktiven Computer."
 
+msgid "powered-on"
+msgstr ""
+
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "
 "holding then :kbd:`Ctrl` key, the size can also be changed using the mouse "
@@ -1435,6 +1438,9 @@ msgstr ""
 "Anpassung auf die optimale Größe erfolgt bei Betätigung der rechts hiervon "
 "befindlichen Schaltfläche |zoom-fit-best| (:guilabel:`Optimale Größe "
 "einstellen`)."
+
+msgid "zoom-fit-best"
+msgstr ""
 
 msgid ""
 "It is also possible to use a custom computer arrangement, e.g. to represent "
@@ -1458,6 +1464,12 @@ msgstr ""
 "werden, genügt es, die Schaltfläche |exchange-positions-zorder| wieder zu "
 "deaktivieren."
 
+msgid "exchange-positions-zorder"
+msgstr ""
+
+msgid "align-grid"
+msgstr ""
+
 msgid ""
 "The |help-about| button (:guilabel:`About`) opens a dialog with information "
 "about Veyon such as version, manufacturer and license terms."
@@ -1465,6 +1477,9 @@ msgstr ""
 "Die Schaltfläche |help-about| (:guilabel:`Über`) öffnet einen Dialog mit "
 "Informationen über Veyon wie z. B. Version, Hersteller und "
 "Lizenzbestimmungen."
+
+msgid "help-about"
+msgstr ""
 
 msgid "Toolbar"
 msgstr "Werkzeugleiste"

@@ -232,4 +232,16 @@ User information
 * URL: /api/v1/user
 * Method: **GET**
 * Response: ``{ "login": "<USER-LOGIN-NAME>", "fullName", "<FULL-NAME-OF-USER>", "session": <DESKTOP-SESSION-ID> }``
-* If no user is logged on, the ``login`` and ``fullName`` fields are empty and ``session`` is set to ``-1``
+* If no user is logged on, the ``login`` and ``fullName`` fields are empty
+
+Session information
+-------------------
+
+* URL: /api/v1/session
+* Method: **GET**
+* Response: ``{ "sessionId": <SESSION-ID>, "sessionUptime", <SESSION-UPTIME-IN-SECONDS>, "sessionClientAddress": "<ADDRESS-OF-SESSION-CLIENT>", "sessionClientName": "<SESSION-CLIENT-NAME>", "sessionHostName": "<NAME-OF-SESSION-HOST>" }``
+    - ``sessionId`` - an integer representing the session ID assigned by the Veyon Service - to be used as offset to the server ports to access the corresponding session server
+    - ``sessionId`` - the number of seconds that elapsed since the session has been opened (e.g. user logon time)
+    - ``sessionClientAddress`` - the host/IP address of the client which is connected to the session (e.g. the host running an RDP client)
+    - ``sessionClientName`` - the name the client which is connected to the session (e.g. the host running an RDP client)
+    - ``sessionHostName`` - the name of the host on which the session is running, usually the local hostname

@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2022
+# Tobias Junghans, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-18 13:06+0200\n"
+"POT-Creation-Date: 2023-05-03 11:56+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2022\n"
-"Language-Team: German (https://www.transifex.com/veyon-solutions/teams/65452/de/)\n"
+"Last-Translator: Tobias Junghans, 2023\n"
+"Language-Team: German (https://app.transifex.com/veyon-solutions/teams/65452/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3856,6 +3856,23 @@ msgstr ""
 msgid "**Default:** *Use system language setting*"
 msgstr " **Vorgabe:** *Spracheinstellung des Systems verwenden*"
 
+msgid "Style"
+msgstr "Stil"
+
+msgid ""
+"This setting allows to change between certain styles of user interface "
+"controls. While the Fusion style offers a clean and pleasent look and feel, "
+"it's also possible to switch back to the native style of the operating "
+"system or desktop environment."
+msgstr ""
+"Mit dieser Einstellung können Sie zwischen bestimmten Stilen der "
+"Benutzeroberflächenelemente wechseln. Während der Fusion-Stil ein sauberes "
+"und ansprechendes Look & Feel bietet, ist es auch möglich, zurück zum "
+"nativen Stil des Betriebssystems oder der Desktop-Umgebung zu wechseln."
+
+msgid "**Default:** *Fusion*"
+msgstr "**Vorgabe:** *Fusion*"
+
 msgid ""
 "The :ref:`Configuration` chapter describes the "
 ":ref:`ConfAuthenticationMethods` available in Veyon."
@@ -4424,6 +4441,42 @@ msgstr "**Vorgabe:** *%APPDATA%/Screenshots*"
 
 msgid "**User interface**"
 msgstr "**Benutzeroberfläche**"
+
+msgid "Image quality in monitoring mode"
+msgstr "Bildqualität im Beobachtungsmodus"
+
+msgid ""
+"Starting with Veyon 4.8 the quality of the image data transferred between "
+"client and master computers in monitoring mode can be configured such that "
+"it meets the possible network bandwidth constraints. While *Highest* uses "
+"lossless image encodings (default before Veyon 4.8), *Lowest* uses JPEG "
+"encoding which results in significantly reduced bandwidth usage but also "
+"clearly visible image artifacts."
+msgstr ""
+"Ab Veyon 4.8 kann die Qualität der Bilddaten, die im Beobachtungsmodus "
+"zwischen Client- und Masterrechner übertragen werden, so konfiguriert "
+"werden, dass sie den etwaigen Bandbreitenbeschränkungen im Netzwerk "
+"entspricht. Während *Höchste* verlustfreie Bildkodierungen verwendet "
+"(Standard vor Veyon 4.8), verwendet *Niedrigste* eine JPEG-Kodierung, die zu"
+" einer deutlich geringeren Bandbreitennutzung, aber auch zu deutlich "
+"sichtbaren Bildartefakten führt."
+
+msgid "**Default:** *Medium*"
+msgstr "**Vorgabe:** *Medium*"
+
+msgid "Remote access image quality"
+msgstr "Bildqualität beim Fernzugriff"
+
+msgid ""
+"Like the image quality in monitoring mode, the image quality in remote "
+"access windows can be adjusted to limit bandwidth usage if necessay."
+msgstr ""
+"Wie die Bildqualität im Beobachtungsmodus kann auch die Bildqualität in "
+"Fernzugriffsfenstern angepasst werden, um die Bandbreitennutzung "
+"gegebenenfalls zu begrenzen."
+
+msgid "**Default:** *Highest*"
+msgstr "**Vorgabe:** *Höchste*"
 
 msgid "Thumbnail update interval"
 msgstr "Aktualisierungsintervall Computerminiaturbild"
@@ -5016,6 +5069,36 @@ msgstr ""
 msgid "**Default:** *128 MB*"
 msgstr "**Vorgabe:** *128 MB*"
 
+msgid "Bandwidth limit"
+msgstr "Bandbreitenbeschränkung"
+
+msgid ""
+"As of Veyon 4.8, the total bandwidth used for screen transmission can be "
+"limited.This involves determining the bandwidth used between two key frames "
+"and comparing it with the set limit. If it is above this limit, the demo "
+"server reduces the image quality so that less data is transmitted to the "
+"clients. Conversely, if the bandwidth used is below 80% of the limit, the "
+"image quality is increased again."
+msgstr ""
+"Ab Veyon 4.8 kann die für die Bildschirmübertragung genutzte "
+"Gesamtbandbreite begrenzt werden, indem die zwischen zwei Key-Frames "
+"genutzte Bandbreite ermittelt und mit dem eingestellten Limit verglichen "
+"wird. Liegt sie über dieser Grenze, reduziert der Demo-Server die "
+"Bildqualität, so dass weniger Daten an die Clients übertragen werden. Liegt "
+"die genutzte Bandbreite dagegen unter 80% des Limits, wird die Bildqualität "
+"wieder erhöht."
+
+msgid ""
+"If master and client computers are connected via Wi-Fi, the demo server "
+"bandwidth should be limited according to the available Wi-Fi bandwidth."
+msgstr ""
+"Wenn Master- und Client-Computer über WLAN verbunden sind, sollte die "
+"Bandbreite des Demoservers entsprechend der verfügbaren WLAN-Bandbreite "
+"begrenzt werden."
+
+msgid "**Default:** *100 MB/s*"
+msgstr "**Vorgabe:** *100 MB/s*"
+
 msgid ""
 "All options for connecting Veyon to an LDAP-compatible server are described "
 "in detail in chapter :ref:`LDAP`."
@@ -5477,6 +5560,9 @@ msgstr "localhost"
 msgid "External VNC server"
 msgstr "Externer VNC-Server"
 
+msgid "Image quality"
+msgstr "Bildqualität"
+
 msgid "Current location"
 msgstr "Aktueller Standort"
 
@@ -5612,6 +5698,56 @@ msgstr ""
 "Wechsel zu einer früheren Version leichter möglich ist. In einer zukünftigen"
 " Version wird es einen Bereinigungsmechanismus geben, der alle veralteten "
 "Konfigurationsschlüssel entfernt."
+
+msgid "Veyon 4.8"
+msgstr "Veyon 4.8"
+
+msgid ""
+"Veyon 4.8 introduces image quality control mechanisms to better meet "
+"bandwidth contraints, especially in Wi-Fi networks. A static image quality "
+"can now be configured for monitoring mode and remote access views. The demo "
+"server controls the image quality dynamically based on the used bandwidth "
+"between two key frames and the configured bandwidth limit."
+msgstr ""
+"Veyon 4.8 führt Mechanismen zur Steuerung der Bildqualität ein, um "
+"Einschränkungen bei der Bandbreite, insbesondere in WLAN-Netzwerken, besser "
+"gerecht zu werden. Für den Überwachungsmodus und die Fernzugriffsansichten "
+"kann nun eine statische Bildqualität konfiguriert werden. Der Demoserver "
+"steuert die Bildqualität dynamisch, basierend auf der genutzten Bandbreite "
+"zwischen zwei Key-Frames und dem konfigurierten Bandbreitenlimit."
+
+msgid ""
+"The Windows version of Veyon is now based on the latest Qt 6.5 framework as "
+"well as OpenSSL 3 and UltraVNC 1.4.2.0. Also the build environment has been "
+"updated to Debian 11 (i.e. GCC 10 and MinGW runtime 8). This allowed us to "
+"enable Link Time Optimization (LTO) resulting in better overall performance."
+msgstr ""
+"Die Windows-Version von Veyon basiert nun auf dem neuesten Qt 6.5 Framework "
+"sowie OpenSSL 3 und UltraVNC 1.4.2.0. Auch die Build-Umgebung wurde auf "
+"Debian 11 aktualisiert (d.h. GCC 10 und MinGW Runtime 8). Dies ermöglichte "
+"es uns, Link Time Optimization (LTO) zu aktivieren, was zu einer besseren "
+"Gesamtperformance führt."
+
+msgid "Structural changes"
+msgstr "Strukturelle Änderungen"
+
+msgid ""
+"The WebAPI has been changed such that the ``/api/v1/user`` endpoint does not"
+" return the session ID any longer. Instead the new ``/api/v1/session`` "
+"endpoint should be used which also provides additional information about the"
+" session."
+msgstr ""
+"Die WebAPI wurde dahingehend geändert, dass der Endpunkt ``/api/v1/user`` "
+"nicht mehr die Session-ID zurückgibt. Stattdessen sollte der neue Endpunkt "
+"``/api/v1/session`` verwendet werden, der auch zusätzliche Informationen "
+"über die Sitzung bietet."
+
+msgid "Configuration changes"
+msgstr "Konfigurationsänderungen"
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.8."
+msgstr ""
+"In Veyon 4.8 wurden keine Konfigurationsschlüssel geändert oder umbenannt."
 
 msgid "Veyon 4.7"
 msgstr "Veyon 4.7"
@@ -5811,14 +5947,8 @@ msgstr ""
 " des LDAP-Backends von Veyon testen, ob Veyon 4.7 wie gewohnt alle "
 "relevanten Informationen von Ihrem LDAP/AD-Server abrufen kann."
 
-msgid "Structural changes"
-msgstr "Strukturelle Änderungen"
-
 msgid "There are no structural changes in Veyon 4.7."
 msgstr "Es gibt keine strukturellen Änderungen in Veyon 4.7."
-
-msgid "Configuration changes"
-msgstr "Konfigurationsänderungen"
 
 msgid "No configuration keys have been changed or renamed in Veyon 4.7."
 msgstr ""

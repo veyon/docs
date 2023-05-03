@@ -24,6 +24,10 @@ Language
 
     **Default:** *Use system language setting*
 
+Style
+    This setting allows to change between certain styles of user interface controls. While the Fusion style offers a clean and pleasent look and feel, it's also possible to switch back to the native style of the operating system or desktop environment.
+
+    **Default:** *Fusion*
 
 .. _RefAuthentication:
 
@@ -286,6 +290,18 @@ Screenshots
 
 **User interface**
 
+.. index:: Image quality
+
+Image quality in monitoring mode
+    Starting with Veyon 4.8 the quality of the image data transferred between client and master computers in monitoring mode can be configured such that it meets the possible network bandwidth constraints. While *Highest* uses lossless image encodings (default before Veyon 4.8), *Lowest* uses JPEG encoding which results in significantly reduced bandwidth usage but also clearly visible image artifacts.
+
+    **Default:** *Medium*
+
+Remote access image quality
+   Like the image quality in monitoring mode, the image quality in remote access windows can be adjusted to limit bandwidth usage if necessay.
+
+    **Default:** *Highest*
+
 .. index:: Thumbnail update interval
 
 Thumbnail update interval
@@ -526,6 +542,14 @@ Memory limit
     All screen update data is stored by the demo server in an internal buffer and then distributed to clients. To prevent the internal buffer between two key frames from occupying too much memory due to too many incremental updates, the value specified here is used as a limit. This limit is a soft limit, so that if it is exceeded, a key frame update is attempted (even if the key frame interval has not yet expired), but the buffer still retains all data. The buffer is only reset when the double value is exceeded (hard limit). If there are repeated interruptions or delays while broadcasting a screen, this value should be increased.
 
     **Default:** *128 MB*
+
+Bandwidth limit
+
+   As of Veyon 4.8, the total bandwidth used for screen transmission can be limited.This involves determining the bandwidth used between two key frames and comparing it with the set limit. If it is above this limit, the demo server reduces the image quality so that less data is transmitted to the clients. Conversely, if the bandwidth used is below 80% of the limit, the image quality is increased again.
+
+    If master and client computers are connected via Wi-Fi, the demo server bandwidth should be limited according to the available Wi-Fi bandwidth.
+
+    **Default:** *100 MB/s*
 
 
 LDAP

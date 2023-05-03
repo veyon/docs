@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2022, Veyon Solutions
+# Copyright (C) 2017-2023, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # turbo YJ <casco1004@gmail.com>, 2019
-# Tobias Junghans, 2022
+# Tobias Junghans, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.7.3\n"
+"Project-Id-Version: Veyon 4.8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 13:33+0200\n"
+"POT-Creation-Date: 2023-05-03 11:26+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Tobias Junghans, 2022\n"
-"Language-Team: Korean (https://www.transifex.com/veyon-solutions/teams/65452/ko/)\n"
+"Last-Translator: Tobias Junghans, 2023\n"
+"Language-Team: Korean (https://app.transifex.com/veyon-solutions/teams/65452/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,21 +33,21 @@ msgstr "PDF 다운로드"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.3/veyon-admin-manual-"
-"en_4.7.3.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.0/veyon-admin-manual-"
+"en_4.8.0.pdf>`_"
 msgstr ""
 "`Veyon 관리자 매뉴얼 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.3/veyon-admin-manual-"
-"en_4.7.3.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.0/veyon-admin-manual-"
+"en_4.8.0.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.3/veyon-user-manual-"
-"en_4.7.3.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.0/veyon-user-manual-"
+"en_4.8.0.pdf>`_"
 msgstr ""
 "`Veyon 사용자 매뉴얼 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.7.3/veyon-user-manual-"
-"en_4.7.3.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.0/veyon-user-manual-"
+"en_4.8.0.pdf>`_"
 
 msgid "Other languages"
 msgstr ""
