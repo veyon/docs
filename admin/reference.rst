@@ -544,7 +544,7 @@ Memory limit
     **Default:** *128 MB*
 
 Bandwidth limit
-   As of Veyon 4.8, the total bandwidth used for screen transmission can be limited.This involves determining the bandwidth used between two key frames and comparing it with the set limit. If it is above this limit, the demo server reduces the image quality so that less data is transmitted to the clients. Conversely, if the bandwidth used is below 80% of the limit, the image quality is increased again.
+    As of Veyon 4.8, the total bandwidth used for screen transmission can be limited.This involves determining the bandwidth used between two key frames and comparing it with the set limit. If it is above this limit, the demo server reduces the image quality so that less data is transmitted to the clients. Conversely, if the bandwidth used is below 80% of the limit, the image quality is increased again.
 
     If master and client computers are connected via Wi-Fi, the demo server bandwidth should be limited according to the available Wi-Fi bandwidth.
 
