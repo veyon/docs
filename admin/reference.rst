@@ -223,8 +223,8 @@ Demo server
 
 .. _RefNetworkMisc:
 
-Miscellaneous network settings
-++++++++++++++++++++++++++++++
+Miscellaneous settings
+++++++++++++++++++++++
 
 .. index:: Firewall exception, Firewall, Windows firewall
 
@@ -240,6 +240,8 @@ Allow connections from localhost only
 
     **Default:** *disabled*
 
+Disable clipboard synchronization
+    If you do not want the clipboard contents to be synchronized when remote controlling a computer, enable this option. This may also help to fix unspecific clipboard-related issues occurring while the Veyon Server is running.
 
 .. index:: VNC server, Internal VNC server, External VNC server
 
@@ -298,7 +300,7 @@ Image quality in monitoring mode
     **Default:** *Medium*
 
 Remote access image quality
-   Like the image quality in monitoring mode, the image quality in remote access windows can be adjusted to limit bandwidth usage if necessay.
+   Like the image quality in monitoring mode, the image quality in remote access windows can be adjusted to limit bandwidth usage if necessary.
 
     **Default:** *Highest*
 
@@ -544,7 +546,7 @@ Memory limit
     **Default:** *128 MB*
 
 Bandwidth limit
-    As of Veyon 4.8, the total bandwidth used for screen transmission can be limited.This involves determining the bandwidth used between two key frames and comparing it with the set limit. If it is above this limit, the demo server reduces the image quality so that less data is transmitted to the clients. Conversely, if the bandwidth used is below 80% of the limit, the image quality is increased again.
+    As of Veyon 4.8, the total bandwidth used for screen transmission can be limited. This involves determining the bandwidth used between two key frames and comparing it with the set limit. If it is above this limit, the demo server reduces the image quality so that less data is transmitted to the clients. Conversely, if the bandwidth used is below 80% of the limit, the image quality is increased again.
 
     If master and client computers are connected via Wi-Fi, the demo server bandwidth should be limited according to the available Wi-Fi bandwidth.
 
@@ -580,7 +582,7 @@ Options
 +++++++
 
 Remember last source directory
-	When the user is asked for files to transfer, the directory which files have been transferred from previously, is opened if this option is enabled. Disable this option to always open the default source directory.
+    When the user is asked for files to transfer, the directory which files have been transferred from previously, is opened if this option is enabled. Disable this option to always open the default source directory.
 
     **Default:** *enabled*
 
