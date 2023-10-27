@@ -9,6 +9,7 @@
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
 # miles teg <varota@gmail.com>, 2019
 # Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019
+# Kocsi Bence, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-03 11:25+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2019\n"
+"Last-Translator: Kocsi Bence, 2023\n"
 "Language-Team: Hungarian (https://app.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -192,6 +193,10 @@ msgid ""
 "computers and displayed in real time. You can choose between a full screen "
 "and a window demo."
 msgstr ""
+"Egy előadás elindításához a demonstrációs mód (bemutató mód) használható. "
+"Ebben a módban a saját képernyő tartalma lesz elküldve minden számítógépnek "
+"és azokon valós időben fog megjelenni. Választani lehet a teljes képernyős "
+"és az ablakban futó bemutató között."
 
 msgid ""
 "During a full screen demo your screen content will be displayed in full "
@@ -890,7 +895,7 @@ msgid "Login"
 msgstr "Bejelentkezés"
 
 msgid "Logon"
-msgstr ""
+msgstr "Bejelentkezés"
 
 msgid "Log on"
 msgstr ""

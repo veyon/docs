@@ -10,6 +10,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
+    'sphinx_rtd_theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -25,7 +26,7 @@ copyright = '2017-2023, Veyon Solutions'
 author = 'Veyon Community'
 
 title = os.getenv('TITLE', 'Veyon Documentation')
-version = os.getenv('VERSION', '4.8.0')
+version = os.getenv('VERSION', '4.8.2')
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -34,7 +35,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 todo_include_todos = False
 
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
