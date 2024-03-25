@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.8.0\n"
+"Project-Id-Version: Veyon 4.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 17:11+0200\n"
+"POT-Creation-Date: 2024-03-25 08:52+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -1476,26 +1476,26 @@ msgid ""
 "systems are supported:"
 msgstr "從軟體的角度來看，必須使用製造商或社群支援的最新作業系統。 支援以下作業系統:"
 
-msgid "Windows 7, 8 or 10 (32/64 Bit)"
-msgstr "Windows 7, 8 或 10 (32/64 位元)"
+msgid "Windows 10 or 11 (32/64 Bit)"
+msgstr ""
 
-msgid "Linux with at least version 5.5 of Qt"
-msgstr "Linux 具有至少 5.5 版本的 Qt"
+msgid "Linux with at least version 5.7 of Qt"
+msgstr ""
 
-msgid "Debian 9 or higher"
-msgstr "Debian 9 或以上"
+msgid "Debian 10 or newer"
+msgstr ""
 
-msgid "Ubuntu 16.04 or higher"
-msgstr "Ubuntu 16.04 或以上"
+msgid "Ubuntu 20.04 or newer"
+msgstr ""
 
-msgid "openSUSE 42.2 or higher"
-msgstr "openSUSE 42.2 或以上"
+msgid "openSUSE 15.4 or newer"
+msgstr ""
 
-msgid "Fedora 24 or higher"
-msgstr "Fedora 24 或以上"
+msgid "Fedora 38 or newer"
+msgstr ""
 
-msgid "CentOS 7.3 or higher"
-msgstr "CentOS 7.3 或以上"
+msgid "CentOS 7.9 or newer"
+msgstr ""
 
 msgid ""
 "The mixed operation of Veyon on Windows and Linux computers works without "

@@ -19,13 +19,13 @@ All computers must be connected through a TCP-/IP-compatible network. Both wired
 
 From a software point of view, an up-to-date operating system supported by the manufacturer or the community must be used. The following operating systems are supported:
 
-* Windows 7, 8 or 10 (32/64 Bit)
-* Linux with at least version 5.5 of Qt
-    * Debian 9 or higher
-    * Ubuntu 16.04 or higher
-    * openSUSE 42.2 or higher
-    * Fedora 24 or higher
-    * CentOS 7.3 or higher
+* Windows 10 or 11 (32/64 Bit)
+* Linux with at least version 5.7 of Qt
+    * Debian 10 or newer
+    * Ubuntu 20.04 or newer
+    * openSUSE 15.4 or newer
+    * Fedora 38 or newer
+    * CentOS 7.9 or newer
 
 The mixed operation of Veyon on Windows and Linux computers works without any restrictions.
 

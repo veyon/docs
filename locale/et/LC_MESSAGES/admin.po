@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Peeter Ramst <peeter@aste.edu.ee>, 2022
-# Tobias Junghans, 2022
 # Peeter Ramst <peeter.ramst@aste.edu.ee>, 2023
+# Tobias Junghans, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.8.0\n"
+"Project-Id-Version: Veyon 4.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 17:11+0200\n"
+"POT-Creation-Date: 2024-03-25 08:52+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2023\n"
+"Last-Translator: Tobias Junghans, 2024\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1872,26 +1872,26 @@ msgstr ""
 "Tarkvara seisukohast tuleb kasutada ajakohast opsüsteemi, mida tootja või "
 "kogukond toetab. Toetatakse järgmisi operatsioonisüsteeme:"
 
-msgid "Windows 7, 8 or 10 (32/64 Bit)"
-msgstr "Windows 7, 8 või 10 (32/64 Bit)"
+msgid "Windows 10 or 11 (32/64 Bit)"
+msgstr "Windows 10 või 11 (32/64 Bit)"
 
-msgid "Linux with at least version 5.5 of Qt"
-msgstr "Linux vähemalt Qt versiooniga 5.5"
+msgid "Linux with at least version 5.7 of Qt"
+msgstr "Linux vähemalt Qt versiooniga 5.7"
 
-msgid "Debian 9 or higher"
-msgstr "Debian 9 või uuem"
+msgid "Debian 10 or newer"
+msgstr "Debian 10 või uuem"
 
-msgid "Ubuntu 16.04 or higher"
-msgstr "Ubuntu 16.04 või uuem"
+msgid "Ubuntu 20.04 or newer"
+msgstr "Ubuntu 20.04 või uuem"
 
-msgid "openSUSE 42.2 or higher"
-msgstr "openSUSE 42.2 või uuem"
+msgid "openSUSE 15.4 or newer"
+msgstr "openSUSE 15.4 või uuem"
 
-msgid "Fedora 24 or higher"
-msgstr "Fedora 24 või uuem"
+msgid "Fedora 38 or newer"
+msgstr "Fedora 38 või uuem"
 
-msgid "CentOS 7.3 or higher"
-msgstr "CentOS 7.3 või uuem"
+msgid "CentOS 7.9 or newer"
+msgstr "CentOS 7.9 või uuem"
 
 msgid ""
 "The mixed operation of Veyon on Windows and Linux computers works without "

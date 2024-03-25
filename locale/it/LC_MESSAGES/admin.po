@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2023
-# albanobattistella <albano_battistella@hotmail.com>, 2023
+# albanobattistella <albanobattistella@gmail.com>, 2023
+# Tobias Junghans, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.8.0\n"
+"Project-Id-Version: Veyon 4.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 17:11+0200\n"
+"POT-Creation-Date: 2024-03-25 08:52+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2023\n"
+"Last-Translator: Tobias Junghans, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1957,26 +1957,26 @@ msgstr ""
 "operativo aggiornato supportato dal produttore o dalla comunità. Sono "
 "supportati i seguenti sistemi operativi:"
 
-msgid "Windows 7, 8 or 10 (32/64 Bit)"
-msgstr "Windows 7, 8 o 10 (32/64 Bit)"
+msgid "Windows 10 or 11 (32/64 Bit)"
+msgstr "Windows 10 o 11 (32/64 Bit)"
 
-msgid "Linux with at least version 5.5 of Qt"
-msgstr "Linux con almeno la versione 5.5 di Qt"
+msgid "Linux with at least version 5.7 of Qt"
+msgstr "Linux con almeno la versione 5.7 di Qt"
 
-msgid "Debian 9 or higher"
-msgstr "Debian 9 o versioni successive"
+msgid "Debian 10 or newer"
+msgstr "Debian 10 o successivo"
 
-msgid "Ubuntu 16.04 or higher"
-msgstr "Ubuntu 16.04 o successivo"
+msgid "Ubuntu 20.04 or newer"
+msgstr "Ubuntu 20.04 o successivo"
 
-msgid "openSUSE 42.2 or higher"
-msgstr "openSUSE 42.2 o versione successiva"
+msgid "openSUSE 15.4 or newer"
+msgstr "openSUSE 15.4 o successivo"
 
-msgid "Fedora 24 or higher"
-msgstr "Fedora 24 o superiore"
+msgid "Fedora 38 or newer"
+msgstr "Fedora 38 o successivo"
 
-msgid "CentOS 7.3 or higher"
-msgstr "CentOS 7.3 o successivo"
+msgid "CentOS 7.9 or newer"
+msgstr "CentOS 7.9 o successivo"
 
 msgid ""
 "The mixed operation of Veyon on Windows and Linux computers works without "
@@ -4323,6 +4323,10 @@ msgid ""
 "unspecific clipboard-related issues occurring while the Veyon Server is "
 "running."
 msgstr ""
+"Se non si desidera sincronizzare il contenuto degli appunti durante il "
+"controllo remoto di un computer, abilitare questa opzione. Ciò può anche "
+"aiutare a risolvere problemi non specifici relativi agli appunti che si "
+"verificano mentre il server Veyon è in esecuzione."
 
 msgid "VNC server"
 msgstr "Server VNC"
