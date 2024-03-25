@@ -1,10 +1,10 @@
-FROM ubuntu:focal
+FROM debian:bookworm-slim
 MAINTAINER Tobias Junghans <tobydox@veyon.io>
 
 RUN \
 	apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
-		make python3-sphinx sphinx-intl \
+		make python3-sphinx sphinx-intl python3-sphinx-rtd-theme \
 		fonts-linuxlibertine \
 		gettext \
 		latexmk \
