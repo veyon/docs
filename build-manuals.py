@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import gettext
 
-version = '4.8.2'
+version = '4.8.3'
 
 builds = [
 	{ 'language': 'de', 'paper': 'a4paper', 'babel': 'ngerman' },
@@ -14,6 +14,7 @@ builds = [
 	{ 'language': 'fr', 'paper': 'a4paper', 'babel': 'french' },
 	{ 'language': 'hu', 'paper': 'a4paper', 'babel': 'magyar' },
 	{ 'language': 'it', 'paper': 'a4paper', 'babel': 'italian' },
+	{ 'language': 'nl', 'paper': 'a4paper', 'babel': 'dutch' },
 	{ 'language': 'ru', 'paper': 'a4paper', 'babel': 'russian' },
 	{ 'language': 'sl', 'paper': 'a4paper', 'babel': 'slovene' },
 	{ 'language': 'uk', 'paper': 'a4paper', 'babel': 'ukrainian' },

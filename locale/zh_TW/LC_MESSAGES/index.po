@@ -4,16 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2023
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2021
+# Tobias Junghans, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-25 08:49+0100\n"
+"POT-Creation-Date: 2024-03-25 09:19+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2023\n"
+"Last-Translator: Tobias Junghans, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,21 +33,21 @@ msgstr "PDF 下載"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.8.2/veyon-admin-manual-"
-"en_4.8.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.3/veyon-admin-manual-"
+"en_4.8.3.pdf>`_"
 msgstr ""
 "`Veyon 管理員手冊 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.8.2/veyon-admin-manual-"
-"en_4.8.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.3/veyon-admin-manual-"
+"en_4.8.3.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.8.2/veyon-user-manual-"
-"en_4.8.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.3/veyon-user-manual-"
+"en_4.8.3.pdf>`_"
 msgstr ""
 "`Veyon 使用者手冊 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.8.2/veyon-user-manual-"
-"en_4.8.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.8.3/veyon-user-manual-"
+"en_4.8.3.pdf>`_"
 
 msgid "Other languages"
 msgstr "其它語言"

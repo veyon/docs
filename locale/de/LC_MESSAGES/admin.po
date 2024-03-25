@@ -1996,7 +1996,7 @@ msgid ""
 "systems are supported:"
 msgstr ""
 "Aus softwaretechnischer Sicht muss ein aktuelles, vom Hersteller oder der "
-"Community unterstütztes Betriebssystem verwendet werden. The folgenden "
+"Community unterstütztes Betriebssystem verwendet werden. Die folgenden "
 "Betriebssysteme werden unterstützt:"
 
 msgid "Windows 10 or 11 (32/64 Bit)"

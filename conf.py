@@ -22,11 +22,11 @@ master_doc = os.getenv('INDEX', 'index')
 
 # General information about the project.
 project = 'Veyon'
-copyright = '2017-2023, Veyon Solutions'
+copyright = '2017-2024, Veyon Solutions'
 author = 'Veyon Community'
 
 title = os.getenv('TITLE', 'Veyon Documentation')
-version = os.getenv('VERSION', '4.8.2')
+version = os.getenv('VERSION', '4.8.3')
 # The full version, including alpha/beta/rc tags.
 release = version
 
