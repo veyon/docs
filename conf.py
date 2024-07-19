@@ -35,6 +35,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 todo_include_todos = False
 
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+if os.environ.get("READTHEDOCS", "") == "True":
+	if "html_context" not in globals():
+		html_context = {}
+	html_context["READTHEDOCS"] = True
+
 html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
