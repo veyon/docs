@@ -196,6 +196,9 @@ Available features
   * - InputDevicesLock (Veyon >= 4.5.0)
     - ``e4a77879-e544-4fec-bc18-e534f33b934c``
     - <none>
+  * - UserLogin
+    - ``7310707d-3918-460d-a949-65bd152cb958``
+    - ``{ "username": <USERNAME>, "password": <PASSWORD> }``
   * - UserLogoff
     - ``7311d43d-ab53-439e-a03a-8cb25f7ed526``
     - <none>
