@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2023, Veyon Solutions
+# Copyright (C) 2017-2024, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.8.2\n"
+"Project-Id-Version: Veyon 4.8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-25 08:52+0100\n"
+"POT-Creation-Date: 2024-09-11 18:06+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Stanislav <stanislav.rupar@gmail.com>, 2021\n"
 "Language-Team: Slovenian (https://app.transifex.com/veyon-solutions/teams/65452/sl/)\n"
@@ -4811,6 +4811,54 @@ msgid ""
 "remove all legacy configuration keys."
 msgstr ""
 
+msgid "Veyon 4.9"
+msgstr ""
+
+msgid ""
+"Veyon 4.9 comes with the new commercial Entra ID Connector add-on, allowing "
+"to work with devices, users and groups from the Entra ID cloud platform. The"
+" Windows version of Veyon is now based on the latest Qt 6.7 framework and "
+"OpenSSL 3.3."
+msgstr ""
+
+msgid "Structural changes"
+msgstr ""
+
+msgid ""
+"The user groups backend is no longer specific to the access control feature "
+"but used in other scopes as well. This allows e.g. changing the access group"
+" of authentication keys to Entra ID groups. While this has no effect on "
+"existing features, the relevant configuration keys have been renamed to "
+"matcht the new scope. See the next subsection for details."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr ""
+
+msgid ""
+"Two configuration keys have been renamed in Veyon 4.9. When upgrading to "
+"Veyon 4.9 or newer the new configuration keys will be populated with the "
+"values of the old keys automatically."
+msgstr ""
+
+msgid "Old name"
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "``AccessControl/UserGroupsBackend``"
+msgstr ""
+
+msgid "``UserGroups/Backend``"
+msgstr ""
+
+msgid "``AccessControl/DomainGroupsEnabled``"
+msgstr ""
+
+msgid "``UserGroups/UseDomainUserGroups``"
+msgstr ""
+
 msgid "Veyon 4.8"
 msgstr ""
 
@@ -4829,17 +4877,11 @@ msgid ""
 "enable Link Time Optimization (LTO) resulting in better overall performance."
 msgstr ""
 
-msgid "Structural changes"
-msgstr ""
-
 msgid ""
 "The WebAPI has been changed such that the ``/api/v1/user`` endpoint does not"
 " return the session ID any longer. Instead the new ``/api/v1/session`` "
 "endpoint should be used which also provides additional information about the"
 " session."
-msgstr ""
-
-msgid "Configuration changes"
 msgstr ""
 
 msgid "No configuration keys have been changed or renamed in Veyon 4.8."
@@ -5144,12 +5186,6 @@ msgid ""
 " the old key automatically."
 msgstr ""
 
-msgid "Old name"
-msgstr ""
-
-msgid "New name"
-msgstr ""
-
 msgid "``DesktopServices/PredefinedPrograms``"
 msgstr ""
 
@@ -5306,7 +5342,7 @@ msgstr ""
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.5. When upgrading to"
 " Veyon 4.5 or newer the new configuration keys will be populated with the "
-"value of the old keys automatically."
+"values of the old keys automatically."
 msgstr ""
 
 msgid "``Network/PrimaryServicePort``"
@@ -5529,7 +5565,7 @@ msgstr ""
 msgid ""
 "Several configuration keys have been renamed in Veyon 4.2. When upgrading to"
 " Veyon 4.2 or newer the new configuration keys will be populated with the "
-"value of the old keys automatically."
+"values of the old keys automatically."
 msgstr ""
 
 msgid "``Service/SoftwareSASEnabled``"
@@ -5853,26 +5889,16 @@ msgstr ""
 msgid ""
 "If :ref:`key file authentication <ConfKeyFileAuthentication>` is used the "
 "key files on master and client computers must match exactly. On client "
-"computers the public key file must have exactly the same content as on the "
-"master computer. If the access still fails the access permissions to the key"
-" files may be wrong. The Veyon Service needs to have read permissions on the"
-" *public key file* while the user of Veyon Master has to be able to read the"
-" *private key file*. If the problem persists the :ref:`key file directories "
-"<RefKeyFileDirectories>` of the key files should be deleted on all computers"
-" and a new keypair generated on the master computer. The public key must "
-"then be imported again on all client computers."
+"computers the public key file must have exactly the same content **and the "
+"same name** as on the master computer. If the access still fails the access "
+"permissions to the key files may be wrong. The Veyon Service needs to have "
+"read permissions on the *public key file* while the user of Veyon Master has"
+" to be able to read the *private key file*. If the problem persists the "
+":ref:`key file directories <RefKeyFileDirectories>` of the key files should "
+"be deleted on all computers and a new key pair generated on the master "
+"computer. The public key must then be imported again on all client "
+"computers."
 msgstr ""
-"Če je :ref:`key file authentication <ConfKeyFileAuthentication>` "
-"uporabljeno, se morajo ključne datoteke na glavnem in odjemalskem "
-"računalniku natančno ujemati. Na odjemalskih računalnikih mora imeti "
-"datoteka javnega ključa popolnoma enako vsebino kot na glavnem računalniku. "
-"Če dostop še vedno ne uspe, so dovoljenja za dostop do ključnih datotek "
-"morda napačna. Storitev Veyon mora imeti dovoljenja za branje datoteke "
-"*javnega ključa*, medtem ko mora uporabnik Veyon Master imeti možnost, da "
-"prebere datoteko *zasebnega ključa*. Če se težava nadaljuje, morate "
-"izbrisati :ref:`key file directories <RefKeyFileDirectories>` na vseh "
-"računalnikih in na glavnem računalniku ustvariti nov par ključev. Javni "
-"ključ morate nato ponovno uvoziti na vse odjemalske računalnike."
 
 msgid "Settings for computer access control"
 msgstr "Nastavitve za nadzor dostopa do računalnika"
@@ -5881,8 +5907,8 @@ msgid ""
 "An incorrect configuration of computer access control can also lead to "
 "computers being inaccessible. Initially it's recommended to disable "
 ":ref:`computer access control <ComputerAccessControl>` completely using the "
-"Veyon Configurator. This allows determining which method for computer access"
-" control is possibly incorrectly configured."
+"Veyon Configurator. This allows you to determine which method of computer "
+"access control may be configured incorrectly."
 msgstr ""
 
 msgid ""

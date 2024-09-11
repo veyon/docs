@@ -52,12 +52,12 @@ Authentication settings
 
 Another cause of the error can be wrong or insufficient :ref:`authentication settings <RefAuthentication>`. For first tests you should select :ref:`logon authentication <ConfLogonAuthentication>` instead of :ref:`key file authentication <ConfKeyFileAuthentication>` on both computers. As soon as the authentication test is successful on the local computer external access will also work.
 
-If :ref:`key file authentication <ConfKeyFileAuthentication>` is used the key files on master and client computers must match exactly. On client computers the public key file must have exactly the same content as on the master computer. If the access still fails the access permissions to the key files may be wrong. The Veyon Service needs to have read permissions on the *public key file* while the user of Veyon Master has to be able to read the *private key file*. If the problem persists the :ref:`key file directories <RefKeyFileDirectories>` of the key files should be deleted on all computers and a new keypair generated on the master computer. The public key must then be imported again on all client computers.
+If :ref:`key file authentication <ConfKeyFileAuthentication>` is used the key files on master and client computers must match exactly. On client computers the public key file must have exactly the same content **and the same name** as on the master computer. If the access still fails the access permissions to the key files may be wrong. The Veyon Service needs to have read permissions on the *public key file* while the user of Veyon Master has to be able to read the *private key file*. If the problem persists the :ref:`key file directories <RefKeyFileDirectories>` of the key files should be deleted on all computers and a new key pair generated on the master computer. The public key must then be imported again on all client computers.
 
 Settings for computer access control
 ++++++++++++++++++++++++++++++++++++
 
-An incorrect configuration of computer access control can also lead to computers being inaccessible. Initially it's recommended to disable :ref:`computer access control <ComputerAccessControl>` completely using the Veyon Configurator. This allows determining which method for computer access control is possibly incorrectly configured.
+An incorrect configuration of computer access control can also lead to computers being inaccessible. Initially it's recommended to disable :ref:`computer access control <ComputerAccessControl>` completely using the Veyon Configurator. This allows you to determine which method of computer access control may be configured incorrectly.
 
 If :ref:`authorized user groups for computer access <RefAuthorizedUserGroups>` are used you should check whether the list of authorized user groups is complete and whether the accessing user is a member of one of these user groups.
 

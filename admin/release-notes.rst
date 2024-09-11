@@ -19,6 +19,38 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.9
+---------
+
+Overview
+++++++++
+
+Veyon 4.9 comes with the new commercial Entra ID Connector add-on, allowing to work with devices, users and groups from the Entra ID cloud platform. The Windows version of Veyon is now based on the latest Qt 6.7 framework and OpenSSL 3.3.
+
+Structural changes
+++++++++++++++++++
+
+The user groups backend is no longer specific to the access control feature but used in other scopes as well. This allows e.g. changing the access group of authentication keys to Entra ID groups. While this has no effect on existing features, the relevant configuration keys have been renamed to matcht the new scope. See the next subsection for details.
+
+Configuration changes
++++++++++++++++++++++
+
+Two configuration keys have been renamed in Veyon 4.9. When upgrading to Veyon 4.9 or newer the new configuration keys will be populated with the values of the old keys automatically.
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Old name
+    - New name
+
+  * - ``AccessControl/UserGroupsBackend``
+    - ``UserGroups/Backend``
+
+  * - ``AccessControl/DomainGroupsEnabled``
+    - ``UserGroups/UseDomainUserGroups``
+
+
 Veyon 4.8
 ---------
 
@@ -204,7 +236,7 @@ There are no structural changes in Veyon 4.5.
 Configuration changes
 +++++++++++++++++++++
 
-Several configuration keys have been renamed in Veyon 4.5. When upgrading to Veyon 4.5 or newer the new configuration keys will be populated with the value of the old keys automatically.
+Several configuration keys have been renamed in Veyon 4.5. When upgrading to Veyon 4.5 or newer the new configuration keys will be populated with the values of the old keys automatically.
 
 .. list-table::
   :widths: auto
@@ -319,7 +351,7 @@ The Veyon Configurator no longer shows all configuration options per default in 
 Configuration changes
 +++++++++++++++++++++
 
-Several configuration keys have been renamed in Veyon 4.2. When upgrading to Veyon 4.2 or newer the new configuration keys will be populated with the value of the old keys automatically.
+Several configuration keys have been renamed in Veyon 4.2. When upgrading to Veyon 4.2 or newer the new configuration keys will be populated with the values of the old keys automatically.
 
 .. list-table::
   :widths: auto
