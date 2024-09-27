@@ -30,7 +30,7 @@ Veyon 4.9 comes with the new commercial Entra ID Connector add-on, allowing to w
 Structural changes
 ++++++++++++++++++
 
-The user groups backend is no longer specific to the access control feature but used in other scopes as well. This allows e.g. changing the access group of authentication keys to Entra ID groups. While this has no effect on existing features, the relevant configuration keys have been renamed to matcht the new scope. See the next subsection for details.
+The user groups backend is no longer specific to the access control feature but used in other scopes as well. This allows e.g. changing the access group of authentication keys to Entra ID groups. While this has no effect on existing features, the relevant configuration keys have been renamed to match the new scope. See the next subsection for details.
 
 Configuration changes
 +++++++++++++++++++++

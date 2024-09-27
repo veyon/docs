@@ -8,5 +8,6 @@ Veyon Add-ons Integration Manual
 	deployment
 	internet-access-control
 	network-discovery
+	entra-id-connector
 
 * :ref:`genindex`

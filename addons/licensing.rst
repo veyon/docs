@@ -18,9 +18,7 @@ In order to access the licensed addons you have to restart all Veyon-related pro
 Transferring installed licenses to other computers
 --------------------------------------------------
 
-Some addons require a valid license on all involved computers. For example the Internet Access Control addon not only adds control elements to Veyon Master but also implements the actual internet access control functionality on client computers.
-
-In order to transfer licenses to other computers you have to export the configuration on the computer on which you imported the licenses. The exported configuration then contains both the installation ID and the imported licenses. It can be imported on all client computers as desired. See chapter :ref:`ConfImportExport` in the administrator manual for details.
+If you want to use Veyon Master with the addons on other computers, you have to transfer the licenses to them. You can easily do this by exporting the configuration on the computer on which you imported the licenses. The exported configuration then contains both the installation ID and the imported licenses. It can be imported on all client computers as desired. See chapter :ref:`ConfImportExport` in the administrator manual for details.
 
 Command line interface
 ----------------------

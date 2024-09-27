@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Peeter Ramst <peeter@aste.edu.ee>, 2021
+# Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.8.3\n"
+"Project-Id-Version: Veyon 4.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-25 09:21+0100\n"
+"POT-Creation-Date: 2024-09-13 17:40+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2021\n"
+"Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1342,7 +1343,7 @@ msgstr ""
 "arvutitele."
 
 msgid "powered-on"
-msgstr ""
+msgstr "sisselülitatud"
 
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "
@@ -1356,7 +1357,7 @@ msgstr ""
 "(:guilabel:`Reguleeri optimaalset suurust`) sellest paremal."
 
 msgid "zoom-fit-best"
-msgstr ""
+msgstr "zoom-fit-best"
 
 msgid ""
 "It is also possible to use a custom computer arrangement, e.g. to represent "
@@ -1378,10 +1379,10 @@ msgstr ""
 " uuesti kasutada, deaktiveerige lihtsalt |exchange-position-zorder| nuppu."
 
 msgid "exchange-positions-zorder"
-msgstr ""
+msgstr "exchange-positions-zorder"
 
 msgid "align-grid"
-msgstr ""
+msgstr "joondus-võrk"
 
 msgid ""
 "The |help-about| button (:guilabel:`About`) opens a dialog with information "
@@ -1391,7 +1392,7 @@ msgstr ""
 "teabega, nagu versioon, tootja ja litsentsitingimused."
 
 msgid "help-about"
-msgstr ""
+msgstr "help-about"
 
 msgid "Toolbar"
 msgstr "Tööriistariba"

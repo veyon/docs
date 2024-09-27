@@ -12,7 +12,7 @@ The Veyon Network Discovery add-on extends Veyon Master to scan configured netwo
 Initial setup
 -------------
 
-First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.7.1 requires Veyon Add-ons 4.7.1 while for Veyon 4.5.7 you need to install version 4.5.7 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
+First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.9.0 requires Veyon Add-ons 4.9.0 while for Veyon 4.8.3 you need to install version 4.8.3 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
 
 After the installation has completed, you'll see some new configuration pages in the Veyon Configurator program. One of them is called :guilabel:`Network discovery` and allows to set up the add-on:
 
@@ -52,15 +52,17 @@ With a scan timeout of 25 ms and 250 parallel scans Veyon is able to scan ``25*2
 Computer and location names
 ---------------------------
 
-Depending on the mode, discovered computers are shown in the *Discovered computers* folder or in folders named like the configured network ranges groups. However if the hostnames also contain the room or location information, you can make Network Discovery extract the location folder name and optionally also the displayed computer name from the hostname. This is done by applying a regular expression on the hostnames. To match capture groups with the corresponding information (location/computer name), a special variable syntax has to be used:
+Depending on the mode, discovered computers are shown in the *Discovered computers* folder or in folders named like the configured network ranges groups. However if the hostnames also contain the room or location information, you can make Network Discovery extract the location folder name and optionally also the displayed computer name from the hostname. This is done by applying a regular expression on the hostnames. The first capture group of the regular expression is then used as location / computer name.
 
-``(%<VARIABLE>%:…)``
+If you for example have hostnames in the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMBER>`` (e.g. ``r101-c01.example.org``), you can change the location data source to :guilabel:`Extract from computer names` and use the following regular expression to extract the location name:
 
-Currently the variables ``%location%`` and ``%name%`` are available.
+``([^-]*)-.*``
 
-If you for example have hostnames in the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMBER>`` (e.g. ``r101-c01.example.org``), you can use the following regular expression to extract the location (``r101``) and computer name (``c01``):
+The first capture (in braces) captures everything until the first minus sign, so the location displayed in Veyon Master will be ``r101``.
 
-``(%location%:[^-]*)-(%name%:[^.]*)``
+The same substring extraction is possible for computer names as well (excepf for :guilabel:`Data source` is set to :guilabel:`IP address`). For the example hostname scheme, a regular expression to extract the computer name (i.e. strip location and domain name) would be:
+
+``[^-]*-.([^.]*)*``
 
 Please refer to the `Wikipedia article on regular expressions <https://en.wikipedia.org/wiki/Regular_expression>`_ for more information on the concept, syntax and available pattern options.
 

@@ -12,7 +12,7 @@ The Veyon Internet Access Control add-on allows blocking the access to the Inter
 Initial setup
 -------------
 
-First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.7.1 requires Veyon Add-ons 4.7.1 while for Veyon 4.5.7 you need to install version 4.5.7 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
+First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.9.0 requires Veyon Add-ons 4.9.0 while for Veyon 4.8.3 you need to install version 4.8.3 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
 
 After the installation has completed, you'll see some new configuration pages in the Veyon Configurator program. One of them is called :guilabel:`Internet access control` and allows to set up the add-on:
 
