@@ -41,7 +41,7 @@ Clicking :guilabel:`New registration` opens a new dialog where you have to enter
 
    App registration of the Veyon Entra ID Connector – Step 2
 
-After the app has been registered, you can already see the the required IDs in the :guilabel:`Overview` page. Copy the *Application (client) ID* and *Directory (tenant) ID* to the corresponding fields in the Veyon Configurator:
+After the app has been registered, you can already see the required IDs in the :guilabel:`Overview` page. Copy the *Application (client) ID* and *Directory (tenant) ID* to the corresponding fields in the Veyon Configurator:
 
 .. figure:: images/entra-id-azure-portal-app-reg-3.png
    :class: image-drop-shadow

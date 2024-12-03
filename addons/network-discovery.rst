@@ -60,7 +60,7 @@ If you for example have hostnames in the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMB
 
 The first capture (in braces) captures everything until the first minus sign, so the location displayed in Veyon Master will be ``r101``.
 
-The same substring extraction is possible for computer names as well (excepf for :guilabel:`Data source` is set to :guilabel:`IP address`). For the example hostname scheme, a regular expression to extract the computer name (i.e. strip location and domain name) would be:
+The same substring extraction is possible for computer names as well (except for :guilabel:`Data source` is set to :guilabel:`IP address`). For the example hostname scheme, a regular expression to extract the computer name (i.e. strip location and domain name) would be:
 
 ``[^-]*-.([^.]*)*``
 
