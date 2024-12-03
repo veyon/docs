@@ -104,14 +104,15 @@ Screen lock can be bypassed via Ctrl+Alt+Del
 
 To completely block all keystrokes and keyboard shortcuts in screen lock mode, you must restart your computer after installing Veyon on Windows. Without a restart, the Veyon-specific driver for input devices is not yet active and keystrokes cannot be intercepted.
 
-In demo mode, only a black screen or window is displayed on client computers
-----------------------------------------------------------------------------
+In demo mode, only a black screen or window with a blue loading spinner is displayed on client computers
+--------------------------------------------------------------------------------------------------------
 
 Please make sure that:
 
+* the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). When using the :ref:`key file authentication <ConfKeyFileAuthentication>` make sure the public key is deployed to both student **and** teacher computers.
+* in the :ref:`access control ruleset <AccessControlRules>` there's no rule preventing the teacher from accessing its own computer, e.g. a rule prohibiting access to a computer if a teacher is logged on. In this case you should create a rule with the condition :ref:`Accessing computer is localhost <AccessingComputerIsLocalhost>` enabled as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher computer's screen content and distribute it to the client computers.
 * in the configuration page :guilabel:`Service` under :ref:`network port numbers <RefNetworkPortNumbers>` the demo server port is set to its default value ``11400``
 * on the configuration page :guilabel:`Service` the firewall exception is enabled on the master computer or a third party firewall is configured to allow incoming connections to TCP port ``11400``
-* the user of Veyon Master has access to its own computer (i.e. the local Veyon Service). In the :ref:`access control ruleset <AccessControlRules>` there may exist a rule prohibiting access to the computer if a teacher is logged on. In this case you should create a rule with the condition :ref:`Accessing computer is localhost <AccessingComputerIsLocalhost>` enabled as far up the list of rules as possible. Otherwise the demo server is unable to access the teacher computer's screen content and distribute it to the client computers.
 
 Veyon Server crashes with XIO or XCB errors on Linux
 ----------------------------------------------------

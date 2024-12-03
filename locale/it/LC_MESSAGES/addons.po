@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2024
 # albanobattistella <albanobattistella@gmail.com>, 2024
+# Tobias Junghans, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-19 11:16+0200\n"
+"POT-Creation-Date: 2024-09-27 13:42+0200\n"
 "PO-Revision-Date: 2024-09-13 09:03+0000\n"
-"Last-Translator: albanobattistella <albanobattistella@gmail.com>, 2024\n"
+"Last-Translator: Tobias Junghans, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -158,8 +158,8 @@ msgid "App registration of the Veyon Entra ID Connector – Step 2"
 msgstr "Registrazione dell'app del connettore ID Veyon Entra – Fase 2"
 
 msgid ""
-"After the app has been registered, you can already see the the required IDs "
-"in the :guilabel:`Overview` page. Copy the *Application (client) ID* and "
+"After the app has been registered, you can already see the required IDs in "
+"the :guilabel:`Overview` page. Copy the *Application (client) ID* and "
 "*Directory (tenant) ID* to the corresponding fields in the Veyon "
 "Configurator:"
 msgstr ""
@@ -699,7 +699,7 @@ msgstr ""
 "meno, quindi la posizione visualizzata in Veyon Master sarà ``r101``."
 
 msgid ""
-"The same substring extraction is possible for computer names as well (excepf"
+"The same substring extraction is possible for computer names as well (except"
 " for :guilabel:`Data source` is set to :guilabel:`IP address`). For the "
 "example hostname scheme, a regular expression to extract the computer name "
 "(i.e. strip location and domain name) would be:"
