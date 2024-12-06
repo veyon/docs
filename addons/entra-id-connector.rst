@@ -12,7 +12,7 @@ The Veyon Entra ID Connector add-on extends Veyon Master to read devices and the
 Initial setup
 -------------
 
-First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.9.0 requires Veyon Add-ons 4.9.0 while for Veyon 4.8.3 you need to install version 4.8.3 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
+First of all the Veyon Add-ons package needs to be installed. Make sure to download and install the version corresponding to your Veyon installation, i.e. Veyon 4.9.1 requires Veyon Add-ons 4.9.1 while for Veyon 4.8.3 you need to install version 4.8.3 of the add-ons. Please refer to :ref:`DeployingAddons` for further information.
 
 After the installation has completed, you'll see some new configuration pages in the Veyon Configurator program. One of them is called :guilabel:`Entra ID Connector` and allows to set up the add-on:
 
@@ -106,15 +106,42 @@ The last step is to grant admin consent for these permissions. This can easily b
 Filters
 -------
 
-Filters make it possible to read out only certain objects (devices, users and groups) and make them available for Veyon. This depends largely on how the objects are structured in your Entra ID instance and which of them are required for Veyon. If, for example, security groups are used as locations (rooms), the device group filter can be adjusted accordingly so that only groups starting with ``Room`` are used as locations. In that case a suitable filter would be ``startsWith(displayName, 'Room')``.
+Filters make it possible to read out only certain objects (devices, users and groups) and make them available for Veyon. This depends largely on how the objects are structured in your Entra ID instance and which of them are required for Veyon. If, for example, security groups are used as locations (rooms), the :guilabel:`Device groups filter` can be adjusted accordingly so that only groups starting with ``Room`` are used as locations. In that case a suitable filter would be ``startsWith(displayName, 'Room')``.
 
 See `Operators and functions supported in filter expressions <https://learn.microsoft.com/en-US/graph/filter-query-parameter?tabs=http#operators-and-functions-supported-in-filter-expressions>`_ for further information.
 
-Device attributes
------------------
+Devices
+-------
+
+In this section you can configure how certain device properties are retrieved. While the display name is always used as computer name, both hostname and the MAC address can be determined in different ways.
+
+Hostname source
+	If all device names match the hostnames and can be resolved to IP addresses using an internal DNS server (BIND, AD DS etc.) you can keep the default option :guilabel:`Device name`. You should not rely on legacy name resolution protocols such as NetBIOS. You can easily verify this by running ``nslookup <HOSTNAME>``. If the device names can't be resolved by a DNS server in your network, it's recommended to either resolve them via `multicast DNS <https://en.wikipedia.org/wiki/Multicast_DNS>`_ or store the actual hostname or host address in a custom :guilabel:`Hostname attribute`.
+
+MAC address source
+	Veyon uses MAC addresses for powering on computers via `Wake-on-LAN <https://en.wikipedia.org/wiki/Wake-on-LAN>`_. If you want to take advantage of this feature you can populate each device's MAC addresses in a a certain (extension) attribute and enter the name of this attribute in the :guilabel:`MAC address attribute` field. If your devices are managed via Microsoft Intune you can also change the setting to use the Ethernet or Wi-Fi MAC addresses stored in Intune. Depending on the selected option, only the Ethernet or Wi-Fi MAC addresses are read or one of them while the first one is prioritized (i.e. the 2nd address only used if the 1st address is empty).
 
 Locations
 ---------
+
+In Veyon all computers are grouped into locations (rooms). To properly group the devices read from Entra ID, a suitable mapping mode needs to be chosen:
+
+Use device groups
+	Select this mode if your devices belong to (security) groups which correspond to locations. This is the most preferred way since in Entra ID it's quite easy to create groups for each room and add the devices to the corresponding groups. Most likely you will have to configure a suitable :guilabel:`Device groups filter` in the :guilabel:`Filters` section such that only these groups (e.g. starting with name ``Room``) are displayed as locations. Optionally you can configure the name of the group attribute which to use as location name. Per default the group's display name is used.
+
+Use location attribute of device
+	 As an alternative to location-based groups, the location of each computer can also be stored in an (extension) attribute. In this case, the name of this attribute must be specified.
+
+Extract from hostname via regular expression
+	If the hostnames contain the room or location name, you can let Entra ID Connector extract the location name. This is done by applying a regular expression on the hostnames. The first capture group of the regular expression is then used as location / computer name.
+
+	For example, if the hostnames hostnames have the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMBER>`` (e.g. ``r101-c01.example.org``), you can use the following regular expression to extract the location name:
+
+	``([^-]*)-.*``
+
+	The first capture (in braces) captures everything until the first minus sign, so the location displayed in Veyon Master will be ``r101``.
+
+	Please refer to the `Wikipedia article on regular expressions <https://en.wikipedia.org/wiki/Regular_expression>`_ for more information on the concept, syntax and available pattern options.
 
 Completion
 ----------

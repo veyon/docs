@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2024, Veyon Solutions
+# This file is distributed under the same license as the Veyon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Joan Montané, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Veyon 4.9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-13 17:40+0200\n"
+"PO-Revision-Date: 2019-03-21 09:30+0000\n"
+"Last-Translator: Joan Montané, 2021\n"
+"Language-Team: Catalan (Spain) (https://app.transifex.com/veyon-solutions/teams/65452/ca_ES/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Veyon Documentation"
+msgstr "Documentació de Veyon"
+
+msgid "Online documentation"
+msgstr "Documentació en línia"
+
+msgid "PDF download"
+msgstr "Baixada en PDF"
+
+msgid ""
+"`Veyon Administrator Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.9.0/veyon-admin-manual-"
+"en_4.9.0.pdf>`_"
+msgstr ""
+
+msgid ""
+"`Veyon User Manual PDF "
+"<https://github.com/veyon/docs/releases/download/v4.9.0/veyon-user-manual-"
+"en_4.9.0.pdf>`_"
+msgstr ""
+
+msgid "Other languages"
+msgstr "Altres llengües"
+
+msgid "`Chinese <https://docs.veyon.io/zh/latest/>`_"
+msgstr "`Xinès <https://docs.veyon.io/zh/latest/>`_"
+
+msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
+msgstr "`Xinès (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
+
+msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
+msgstr "`Txec <https://docs.veyon.io/cs/latest/>`_"
+
+msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
+msgstr "`Neerlandès <https://docs.veyon.io/nl/latest/>`_"
+
+msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
+msgstr "`Castellà <https://docs.veyon.io/es/latest/>`_"
+
+msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
+msgstr "`Estonià <https://docs.veyon.io/et/latest/>`_"
+
+msgid "`French <https://docs.veyon.io/fr/latest/>`_"
+msgstr "`Francès <https://docs.veyon.io/fr/latest/>`_"
+
+msgid "`German <https://docs.veyon.io/de/latest/>`_"
+msgstr "`Alemany <https://docs.veyon.io/de/latest/>`_"
+
+msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
+msgstr "`Hongarès <https://docs.veyon.io/hu/latest/>`_"
+
+msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
+msgstr "`Italià <https://docs.veyon.io/it/latest/>`_"
+
+msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
+msgstr "`Lituà <https://docs.veyon.io/lt/latest/>`_"
+
+msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
+msgstr "`Polonès <https://docs.veyon.io/pl/latest/>`_"
+
+msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
+msgstr "`Rus <https://docs.veyon.io/ru/latest/>`_"
+
+msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
+msgstr "`Eslové <https://docs.veyon.io/sl/latest/>`_"
+
+msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
+msgstr "`Serbi <https://docs.veyon.io/sr/latest/>`_"
+
+msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
+msgstr "`Ucraïnès <https://docs.veyon.io/uk/latest/>`_"
