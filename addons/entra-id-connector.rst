@@ -119,7 +119,7 @@ Hostname source
 	If all device names match the hostnames and can be resolved to IP addresses using an internal DNS server (BIND, AD DS etc.) you can keep the default option :guilabel:`Device name`. You should not rely on legacy name resolution protocols such as NetBIOS. You can easily verify this by running ``nslookup <HOSTNAME>``. If the device names can't be resolved by a DNS server in your network, it's recommended to either resolve them via `multicast DNS <https://en.wikipedia.org/wiki/Multicast_DNS>`_ or store the actual hostname or host address in a custom :guilabel:`Hostname attribute`.
 
 MAC address source
-	Veyon uses MAC addresses for powering on computers via `Wake-on-LAN <https://en.wikipedia.org/wiki/Wake-on-LAN>`_. If you want to take advantage of this feature you can populate each device's MAC addresses in a a certain (extension) attribute and enter the name of this attribute in the :guilabel:`MAC address attribute` field. If your devices are managed via Microsoft Intune you can also change the setting to use the Ethernet or Wi-Fi MAC addresses stored in Intune. Depending on the selected option, only the Ethernet or Wi-Fi MAC addresses are read or one of them while the first one is prioritized (i.e. the 2nd address only used if the 1st address is empty).
+	Veyon uses MAC addresses for powering on computers via `Wake-on-LAN <https://en.wikipedia.org/wiki/Wake-on-LAN>`_. If you want to take advantage of this feature you can populate each device's MAC addresses in a certain (extension) attribute and enter the name of this attribute in the :guilabel:`MAC address attribute` field. If your devices are managed via Microsoft Intune you can also change the setting to use the Ethernet or Wi-Fi MAC addresses stored in Intune. Depending on the selected option, only the Ethernet or Wi-Fi MAC addresses are read or one of them while the first one is prioritized (i.e. the 2nd address only used if the 1st address is empty).
 
 Locations
 ---------
@@ -135,7 +135,7 @@ Use location attribute of device
 Extract from hostname via regular expression
 	If the hostnames contain the room or location name, you can let Entra ID Connector extract the location name. This is done by applying a regular expression on the hostnames. The first capture group of the regular expression is then used as location / computer name.
 
-	For example, if the hostnames hostnames have the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMBER>`` (e.g. ``r101-c01.example.org``), you can use the following regular expression to extract the location name:
+	For example, if the hostnames have the format ``r<ROOM-NUMBER>-c<COMPUTER-NUMBER>`` (e.g. ``r101-c01.example.org``), you can use the following regular expression to extract the location name:
 
 	``([^-]*)-.*``
 

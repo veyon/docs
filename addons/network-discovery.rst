@@ -67,7 +67,7 @@ User login name / Full name of user
 	Select one of these options to use the login or full name of the logged in user as computer name.
 
 Session client name / Session client address
-	Select one of these option to use the name or address of the client (i.e. the workstation or thin client connected to the discovered remote desktop session) as computer name.
+	Select one of these options to use the name or address of the client (i.e. the workstation or thin client connected to the discovered remote desktop session) as computer name.
 
 Hostname of session host
 	Select this option to use the hostname of the remote desktop server (which is hosting the discovered remote desktop session) as computer name.
@@ -78,7 +78,7 @@ Environment variable
 Registry key
 	Select this option to use the value of a registry key as computer name. The registry is read in the context of the logged in user so either a key in ``HKEY_CURRENT_USER`` or any other globally readable key can be read from.
 
-.. note:: For all data sources except for :guilabel:`IP address` and :guilabel:`DNS name` Network Discovery establish temporary connections to all discovered computers to obtain the configured property. This slows down the scanning process and sligtly increases CPU load on the hosts while being scanned.
+.. note:: For all data sources except for :guilabel:`IP address` and :guilabel:`DNS name` Network Discovery establishes temporary connections to all discovered computers to obtain the configured property. This slows down the scanning process and sligtly increases CPU load on the hosts while being scanned.
 
 Optionally computers whose names can't be resolved can be excluded from being shown in Veyon Master.
 
