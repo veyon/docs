@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Predrag Jovanovic <itusluge18@gmail.com>, 2021\n"
 "Language-Team: Serbian (https://app.transifex.com/veyon-solutions/teams/65452/sr/)\n"
@@ -3300,6 +3300,40 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Default:** *60 seconds*"
 
+msgid "User groups"
+msgstr ""
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr ""
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+
 msgid "Logging"
 msgstr "Prijavljivanje"
 
@@ -3851,6 +3885,17 @@ msgid ""
 "environments."
 msgstr ""
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Načini i svojstva**"
 
@@ -3901,29 +3946,6 @@ msgid ""
 "A feature can be moved from one list to the other by selecting it and "
 "clicking the respective button with the arrow icon. Alternatively a feature "
 "can simply be double-clicked to move it to the other list."
-msgstr ""
-
-msgid "User groups backend"
-msgstr "Backend korisničkih grupa"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-
-msgid "Enable usage of domain groups"
-msgstr "Omogući korišćenje domen grupa"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
 msgstr ""
 
 msgid "Grant access to every authenticated user (default)"
@@ -4376,6 +4398,12 @@ msgstr "Pomoćni/pozadina-backend direktorij/a mrežnog objekta"
 msgid "Network object directory update interval"
 msgstr "Interval ažuriranja direktorija mrežnog objekta"
 
+msgid "User groups backend"
+msgstr "Backend korisničkih grupa"
+
+msgid "Domain groups"
+msgstr "Domenske grupe"
+
 msgid "Standard error output"
 msgstr "Standardna greška izlaza"
 
@@ -4469,11 +4497,11 @@ msgstr "Prazne lokacije"
 msgid "Computer filter"
 msgstr "Filtriranje kompjutera"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Dvostruki klik"
-
-msgid "Domain groups"
-msgstr "Domenske grupe"
 
 msgid "Authorized user groups"
 msgstr "Autorizovane grupe korisnika"

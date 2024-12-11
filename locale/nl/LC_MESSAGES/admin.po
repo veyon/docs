@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# christoph vermeiren <ict@stella-matutina.be>, 2019
 # Koen Degraeve <koen.degraeve@vsop.be>, 2019
+# christoph vermeiren <ict@stella-matutina.be>, 2019
 # R. van den Hoek, 2019
 # Lrobben52 <lrobben@telenet.be>, 2019
 # 425526ed1f8bf401a74c2eb95fa32529_b267230 <4a462d278d8cf83757a3d1dd08695cb5_776931>, 2019
@@ -19,9 +19,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/veyon-solutions/teams/65452/nl/)\n"
@@ -3876,6 +3876,52 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Standaard:** *60 seconden*"
 
+msgid "User groups"
+msgstr "Gebruikersgroepen"
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+"Een gebruikersgroep backend biedt gebruikersgroepen en hun leden "
+"(gebruikers) die nodig zijn voor toegangscontrole. Terwijl de standaard "
+"backend geschikt is voor systeemgebruikersgroepen, zullen de LDAP backends "
+"LDAP/AD gebruikersgroepen beschikbaar maken voor toegangscontrole."
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr "Gebruikersgroepen uit domein opnemen"
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+"Bij gebruik van toegangscontrole in combinatie met de standaard backend zijn"
+" standaard alleen de lokale systeemgroepen beschikbaar. Door deze optie in "
+"te schakelen kunnen alle groepen van het domein waartoe een computer "
+"behoort, worden opgevraagd en gebruikt. Deze optie is standaard niet "
+"ingeschakeld om prestatieredenen. In omgevingen met een groot aantal "
+"domeingroepen kan het uitvoeren van toegangscontrole veel tijd kosten. In "
+"dergelijke scenario's kunt u overwegen om de :ref:`LDAP/AD integratie "
+"<LDAP>` in te stellen en een van de *LDAP* backends te gebruiken."
+
 msgid "Logging"
 msgstr "Loggen"
 
@@ -4657,6 +4703,17 @@ msgstr ""
 "worden. Hierdoor kan de gebruikersinterface zo eenvoudig mogelijk worden "
 "gehouden in kleine omgevingen."
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Modi en functies**"
 
@@ -4729,41 +4786,6 @@ msgstr ""
 "Een kenmerk kan van de ene naar de andere lijst worden verplaatst door het "
 "te selecteren en op de betreffende knop met het pijlpictogram te klikken. Je"
 " kunt ook dubbelklikken om een kenmerk naar de andere lijst te verplaatsen."
-
-msgid "User groups backend"
-msgstr "Gebruikersgroepen backend"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-"Een gebruikersgroep backend biedt gebruikersgroepen en hun leden "
-"(gebruikers) die nodig zijn voor toegangscontrole. Terwijl de standaard "
-"backend geschikt is voor systeemgebruikersgroepen, zullen de LDAP backends "
-"LDAP/AD gebruikersgroepen beschikbaar maken voor toegangscontrole."
-
-msgid "Enable usage of domain groups"
-msgstr "Gebruik van domeingroepen inschakelen"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
-msgstr ""
-"Bij gebruik van toegangscontrole in combinatie met de standaard backend zijn"
-" standaard alleen de lokale systeemgroepen beschikbaar. Door deze optie in "
-"te schakelen kunnen alle groepen van het domein waartoe een computer "
-"behoort, worden opgevraagd en gebruikt. Deze optie is standaard niet "
-"ingeschakeld om prestatieredenen. In omgevingen met een groot aantal "
-"domeingroepen kan het uitvoeren van toegangscontrole veel tijd kosten. In "
-"dergelijke scenario's kunt u overwegen om de :ref:`LDAP/AD integratie "
-"<LDAP>` in te stellen en een van de *LDAP* backends te gebruiken."
 
 msgid "Grant access to every authenticated user (default)"
 msgstr "Verleen toegang aan elke geauthenticeerde gebruiker (standaard)"
@@ -5400,6 +5422,12 @@ msgstr "Netwerk object map backend"
 msgid "Network object directory update interval"
 msgstr "Update-interval van netwerkobjectmap"
 
+msgid "User groups backend"
+msgstr "Gebruikersgroepen backend"
+
+msgid "Domain groups"
+msgstr "Domeingroepen"
+
 msgid "Standard error output"
 msgstr "Standaard fout-uitvoer"
 
@@ -5493,11 +5521,11 @@ msgstr "Lege locaties"
 msgid "Computer filter"
 msgstr "Computer filter"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Dubbelklik"
-
-msgid "Domain groups"
-msgstr "Domeingroepen"
 
 msgid "Authorized user groups"
 msgstr "Geautoriseerde gebruikersgroepen"

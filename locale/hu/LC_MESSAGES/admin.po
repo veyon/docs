@@ -6,18 +6,18 @@
 # Translators:
 # Nagy Gergő, 2019
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
-# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024
 # Tobias Junghans, 2024
 # Balázs Pásztor, 2024
+# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Balázs Pásztor, 2024\n"
+"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3871,6 +3871,53 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Alapértelmezett:** *60 másodperc*"
 
+msgid "User groups"
+msgstr "Felhasználói csoportok"
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+"Egy felhasználói csoport háttérrendszer biztosítja a felhasználói "
+"csoportokat és tagjaikat (felhasználókat) a hozzáférési vezérléshez. Bár az "
+"alapértelmezett háttérrendszer alkalmas a rendszerfelhasználói csoportokhoz,"
+" az LDAP háttérrendszerek elérhetővé teszik az LDAP/AD felhasználói "
+"csoportokat a hozzáférési vezérléshez."
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr ""
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+"Amikor hozzáférési ellenőrzést használunk az alapértelmezett háttérrel "
+"kombinálva, csak a helyi rendszer csoportok érhetők el alapértelmezetten. "
+"Ezzel a lehetőséggel engedélyezve lehet lekérdezni és használni a "
+"számítógéphez tartozó tartomány összes csoportját. Ez a lehetőség "
+"alapértelmezetten nincs engedélyezve a teljesítmény okokból. Nagy számú "
+"tartományi csoporttal rendelkező környezetekben az hozzáférési ellenőrzés "
+"hosszú időt vehet igénybe. Ilyen esetekben érdemes fontolóra venni az "
+":ref:`LDAP/AD integrációt <LDAP>` és az egyik *LDAP* háttér használatát."
+
 msgid "Logging"
 msgstr "Naplózás"
 
@@ -4651,6 +4698,17 @@ msgstr ""
 "segítségével. Ez lehetővé teszi, hogy a felhasználói felület a lehető "
 "legegyszerűbb maradjon kis környezetekben."
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Módok és funkciók**"
 
@@ -4725,42 +4783,6 @@ msgstr ""
 "kiválasztjuk, majd rákattintunk a megfelelő nyíl ikonra. Egyéb lehetőségként"
 " a jellemző egyszerűen duplán kattintható a másik listára való "
 "áthelyezéshez."
-
-msgid "User groups backend"
-msgstr "Felhasználói csoportok háttere"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-"Egy felhasználói csoport háttérrendszer biztosítja a felhasználói "
-"csoportokat és tagjaikat (felhasználókat) a hozzáférési vezérléshez. Bár az "
-"alapértelmezett háttérrendszer alkalmas a rendszerfelhasználói csoportokhoz,"
-" az LDAP háttérrendszerek elérhetővé teszik az LDAP/AD felhasználói "
-"csoportokat a hozzáférési vezérléshez."
-
-msgid "Enable usage of domain groups"
-msgstr "Domain csoportok használatának bekapcsolása"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
-msgstr ""
-"Amikor hozzáférési ellenőrzést használunk az alapértelmezett háttérrel "
-"kombinálva, csak a helyi rendszer csoportok érhetők el alapértelmezetten. "
-"Ezzel a lehetőséggel engedélyezve lehet lekérdezni és használni a "
-"számítógéphez tartozó tartomány összes csoportját. Ez a lehetőség "
-"alapértelmezetten nincs engedélyezve a teljesítmény okokból. Nagy számú "
-"tartományi csoporttal rendelkező környezetekben az hozzáférési ellenőrzés "
-"hosszú időt vehet igénybe. Ilyen esetekben érdemes fontolóra venni az "
-":ref:`LDAP/AD integrációt <LDAP>` és az egyik *LDAP* háttér használatát."
 
 msgid "Grant access to every authenticated user (default)"
 msgstr ""
@@ -5397,6 +5419,12 @@ msgstr "Hálózatobjektum-mappa háttere"
 msgid "Network object directory update interval"
 msgstr "Hálózatobjektum-mappa frissítési időköze"
 
+msgid "User groups backend"
+msgstr "Felhasználói csoportok háttere"
+
+msgid "Domain groups"
+msgstr "Domaincsoportok"
+
 msgid "Standard error output"
 msgstr "Standard hibakimenet"
 
@@ -5490,11 +5518,11 @@ msgstr "Üres helyszínek"
 msgid "Computer filter"
 msgstr "Száamítógépszűrő"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Dupla kattintás"
-
-msgid "Domain groups"
-msgstr "Domaincsoportok"
 
 msgid "Authorized user groups"
 msgstr "Hitelesített felhasználói csoportok"

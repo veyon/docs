@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Peeter Ramst <peeter@aste.edu.ee>, 2022
 # Tobias Junghans, 2024
+# Peeter Ramst <peeter@aste.edu.ee>, 2024
 # Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
@@ -3744,6 +3744,52 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Vaikimisi:** *60 sekundit*"
 
+msgid "User groups"
+msgstr "Kasutajagrupid"
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+"Kasutajarühma taustaprogramm pakub juurdepääsu kontrollimiseks vajalikke "
+"kasutajagruppe ja nende liikmeid (kasutajaid). Ehkki vaiketeenus sobib "
+"süsteemi kasutajagruppidele, muudavad LDAP-taustaprogrammid LDAP / AD-"
+"kasutajagrupid juurdepääsu kontrollimiseks kättesaadavaks."
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr "Kaasake domeeni kasutajarühmad"
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+"Kasutades juurdepääsu kontrolli koos vaikimisi taustaprogrammiga, on "
+"vaikimisi saadaval ainult kohalikud süsteemirühmad. Selle suvandi lubamisega"
+" saab pärida ja kasutada kõiki domeeni rühmi, kuhu arvuti kuulub. Toimivuse "
+"kaalutlustel pole see suvand vaikimisi lubatud. Suure hulga "
+"domeenigruppidega juurdepääsukontrolli teostavates keskkondades võib kuluda "
+"palju aega. Selliste stsenaariumide korral peaksite kaaluma :ref:`LDAP/AD "
+"integratsiooni <LDAP>` seadistamist ja kasutama ühte *LDAP* "
+"taustaprogrammidest."
+
 msgid "Logging"
 msgstr "Logimine"
 
@@ -4491,6 +4537,17 @@ msgstr ""
 "Selle valiku abil saab arvutite otsimiseks filtri välja peita. See võimaldab"
 " hoida kasutajaliidest väikestes keskkondades võimalikult lihtsana."
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Režiimid ja funktsioonid**"
 
@@ -4561,41 +4618,6 @@ msgstr ""
 "Funktsiooni saab teisaldada ühest loendist teise, valides selle ja klõpsates"
 " nooleikooniga vastavat nuppu. Teise võimalusena saab funktsiooni teise "
 "loendisse viimiseks lihtsalt topeltklõpsata."
-
-msgid "User groups backend"
-msgstr "Kasutajarühmade taustaprogramm"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-"Kasutajarühma taustaprogramm pakub juurdepääsu kontrollimiseks vajalikke "
-"kasutajagruppe ja nende liikmeid (kasutajaid). Ehkki vaiketeenus sobib "
-"süsteemi kasutajagruppidele, muudavad LDAP-taustaprogrammid LDAP / AD-"
-"kasutajagrupid juurdepääsu kontrollimiseks kättesaadavaks."
-
-msgid "Enable usage of domain groups"
-msgstr "Domeeni gruppide juurdepääsu lubamine"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
-msgstr ""
-"Kasutades juurdepääsu kontrolli koos vaikimisi taustaprogrammiga, on "
-"vaikimisi saadaval ainult kohalikud süsteemirühmad. Selle suvandi lubamisega"
-" saab pärida ja kasutada kõiki domeeni rühmi, kuhu arvuti kuulub. Toimivuse "
-"kaalutlustel pole see suvand vaikimisi lubatud. Suure hulga "
-"domeenigruppidega juurdepääsukontrolli teostavates keskkondades võib kuluda "
-"palju aega. Selliste stsenaariumide korral peaksite kaaluma :ref:`LDAP/AD "
-"integratsiooni <LDAP>` seadistamist ja kasutama ühte *LDAP* "
-"taustaprogrammidest."
 
 msgid "Grant access to every authenticated user (default)"
 msgstr "Andke juurdepääs igale autentitud kasutajale (vaikimisi)"
@@ -5207,6 +5229,12 @@ msgstr "Võrguobjektide kataloogi taustaprogramm"
 msgid "Network object directory update interval"
 msgstr "Võrguobjektide kataloogi värskendamise intervall"
 
+msgid "User groups backend"
+msgstr "Kasutajarühmade taustaprogramm"
+
+msgid "Domain groups"
+msgstr "Domeenigrupid"
+
 msgid "Standard error output"
 msgstr "Standardne veaväljund"
 
@@ -5300,11 +5328,11 @@ msgstr "Tühjad asukohad"
 msgid "Computer filter"
 msgstr "Arvuti filter"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Topeltklõps"
-
-msgid "Domain groups"
-msgstr "Domeenigrupid"
 
 msgid "Authorized user groups"
 msgstr "Volitatud kasutajagrupid"

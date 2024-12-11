@@ -66,6 +66,27 @@ Update interval
 
     **Default:** *60 seconds*
 
+.. _UserGroupsBackend:
+
+User groups
++++++++++++
+
+.. index:: User groups, User groups backend
+
+Veyon uses information about user groups and their members for performing :ref:`ConfAccessControl` and setting access groups for :ref:`authentication keys <ConfKeyFileAuthentication>`. In most cases the default backend is a good choice. If you want to use e.g. dedicated LDAP groups or Entra ID groups you can change the backend accordingly.
+
+Backend
+    A user group backend provides user groups and their members (users) required for access control. While the default backend is suitable for system user groups the LDAP backends will make LDAP/AD user groups available for access control.
+
+    **Default:** *Default (system user groups)*
+
+.. index:: Domain groups
+
+Include user groups from domain
+    When using access control in combination with the default backend only the local system groups are available per default. By enabling this option all groups of the domain which a computer belongs to can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups performing access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends.
+
+    **Default:** *disabled*
+
 .. _RefLogging:
 
 Logging
@@ -418,6 +439,12 @@ Hide computer filter field
 
     **Default:** *disabled*
 
+.. index:: Expand locations
+
+Always expand all locations
+    This option specifies whether all locations in the :guilabel:`Locations & computers` panel should be expanded automatically when starting Veyon Master or adding locations manually. It only makes sense to activate this option if you only have a few locations or have activated the :guilabel:`Show current location only` option.
+
+    **Default:** *disabled*
 
 **Modes and features**
 
@@ -456,18 +483,6 @@ Access control
 
 Computer access control
 +++++++++++++++++++++++
-
-.. index:: User groups backend
-
-User groups backend
-    A user group backend provides user groups and their members (users) required for access control. While the default backend is suitable for system user groups the LDAP backends will make LDAP/AD user groups available for access control.
-
-.. index:: Domain groups
-
-Enable usage of domain groups
-    When using access control in combination with the default backend only the local system groups are available per default. By enabling this option all groups of the domain which a computer belongs to can be queried and used. This option is not enabled per default for performance reasons. In environments with a huge number of domain groups performing access control can take a long time. In such scenarios you should consider setting up the :ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends.
-
-    **Default:** *disabled*
 
 Grant access to every authenticated user (default)
     If the selected authentication scheme is sufficient (e.g. when using a key file authentication with restricted access to the key files), this option can be enabled. In this mode no further access control is performed.

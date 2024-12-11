@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# MS-PC, 2020
 # José Antonio Muñoz Jiménez <jamj2000@gmail.com>, 2023
 # Tobias Junghans, 2024
+# MS-PC, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2024\n"
+"Last-Translator: MS-PC, 2024\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/veyon-solutions/teams/65452/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3910,6 +3910,53 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Valor predeterminado:** *60 segundos*"
 
+msgid "User groups"
+msgstr "Grupos de usuarios"
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+"Un backend de grupo de usuarios proporciona grupos de usuarios y sus "
+"miembros (usuarios) necesarios para el control de acceso. Si bien el backend"
+" predeterminado es adecuado para los grupos de usuarios del sistema, los "
+"backends LDAP harán que los grupos de usuarios LDAP/AD estén disponibles "
+"para el control de acceso."
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr ""
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+"Cuando se usa el control de acceso en combinación con el backend "
+"predeterminado, solo los grupos del sistema local están disponibles por "
+"defecto. Al habilitar esta opción, se pueden consultar y usar todos los "
+"grupos del dominio al que pertenece una computadora. Esta opción no está "
+"habilitada por defecto por razones de rendimiento. En entornos con una gran "
+"cantidad de grupos de dominio, el control de acceso puede llevar mucho "
+"tiempo. En tales escenarios, debe considerar la configuración de "
+":ref:`Integración LDAP/AD <LDAP>` y usar uno de los backends *LDAP*."
+
 msgid "Logging"
 msgstr "Registro"
 
@@ -4694,6 +4741,17 @@ msgstr ""
 "esta opción. Esto permite mantener la interfaz de usuario lo más simple "
 "posible en entornos pequeños."
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Modos y características**"
 
@@ -4769,42 +4827,6 @@ msgstr ""
 " clic en el botón correspondiente con el icono de flecha. Alternativamente, "
 "se puede hacer doble clic en una característica para moverla a la otra "
 "lista."
-
-msgid "User groups backend"
-msgstr "Backend para grupos de usuarios"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-"Un backend de grupo de usuarios proporciona grupos de usuarios y sus "
-"miembros (usuarios) necesarios para el control de acceso. Si bien el backend"
-" predeterminado es adecuado para los grupos de usuarios del sistema, los "
-"backends LDAP harán que los grupos de usuarios LDAP/AD estén disponibles "
-"para el control de acceso."
-
-msgid "Enable usage of domain groups"
-msgstr "Habilitar el uso de grupos de dominio"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
-msgstr ""
-"Cuando se usa el control de acceso en combinación con el backend "
-"predeterminado, solo los grupos del sistema local están disponibles por "
-"defecto. Al habilitar esta opción, se pueden consultar y usar todos los "
-"grupos del dominio al que pertenece una computadora. Esta opción no está "
-"habilitada por defecto por razones de rendimiento. En entornos con una gran "
-"cantidad de grupos de dominio, el control de acceso puede llevar mucho "
-"tiempo. En tales escenarios, debe considerar la configuración de "
-":ref:`Integración LDAP/AD <LDAP>` y usar uno de los backends *LDAP*."
 
 msgid "Grant access to every authenticated user (default)"
 msgstr "Conceder acceso a cada usuario autenticado (predeterminado)"
@@ -5441,6 +5463,12 @@ msgstr "Backend de directorio de objetos de red"
 msgid "Network object directory update interval"
 msgstr "Intervalo de actualización del directorio de objetos de red"
 
+msgid "User groups backend"
+msgstr "Backend para grupos de usuarios"
+
+msgid "Domain groups"
+msgstr "Grupos de dominio"
+
 msgid "Standard error output"
 msgstr "Salida de error estándar"
 
@@ -5534,11 +5562,11 @@ msgstr "Ubicaciones vacías"
 msgid "Computer filter"
 msgstr "Filtro de equipos"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Doble click"
-
-msgid "Domain groups"
-msgstr "Grupos de dominio"
 
 msgid "Authorized user groups"
 msgstr "Grupos de usuarios autorizados"

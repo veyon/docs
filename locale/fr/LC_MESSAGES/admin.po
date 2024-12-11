@@ -10,17 +10,17 @@
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2021
 # Éric B., 2021
-# Lachaux Patrick, 2022
 # Tobias Junghans, 2024
+# Lachaux Patrick, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 08:07+0100\n"
+"POT-Creation-Date: 2024-12-11 09:59+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2024\n"
+"Last-Translator: Lachaux Patrick, 2024\n"
 "Language-Team: French (https://app.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3973,6 +3973,54 @@ msgstr ""
 msgid "**Default:** *60 seconds*"
 msgstr "**Défaut:** *60 secondes*"
 
+msgid "User groups"
+msgstr "Groupes d'utilisateurs"
+
+msgid ""
+"Veyon uses information about user groups and their members for performing "
+":ref:`ConfAccessControl` and setting access groups for :ref:`authentication "
+"keys <ConfKeyFileAuthentication>`. In most cases the default backend is a "
+"good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
+"groups you can change the backend accordingly."
+msgstr ""
+
+msgid ""
+"A user group backend provides user groups and their members (users) required"
+" for access control. While the default backend is suitable for system user "
+"groups the LDAP backends will make LDAP/AD user groups available for access "
+"control."
+msgstr ""
+"Un processus d'arrière plan de groupe d'utilisateurs fournit les groupes "
+"d'utilisateurs et leurs membres (utilisateurs) nécessaires au contrôle "
+"d'accès. Alors que le processus d'arrière plan par défaut convient aux "
+"groupes d'utilisateurs système, les processus d'arrière plan LDAP rendent "
+"les groupes d'utilisateurs LDAP/AD disponibles pour le contrôle d'accès."
+
+msgid "**Default:** *Default (system user groups)*"
+msgstr ""
+
+msgid "Include user groups from domain"
+msgstr ""
+
+msgid ""
+"When using access control in combination with the default backend only the "
+"local system groups are available per default. By enabling this option all "
+"groups of the domain which a computer belongs to can be queried and used. "
+"This option is not enabled per default for performance reasons. In "
+"environments with a huge number of domain groups performing access control "
+"can take a long time. In such scenarios you should consider setting up the "
+":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
+msgstr ""
+"Lorsque vous utilisez le contrôle d'accès combiné avec le moteur par défaut,"
+" seuls les groupes de systèmes locaux sont disponibles par défaut. En "
+"activant cette option, tous les groupes du domaine auquel appartient un "
+"ordinateur peuvent être interrogés et utilisés. Cette option n'est pas "
+"activée par défaut pour des raisons de performances. Dans les environnements"
+" avec un grand nombre de groupes de domaines, le contrôle d'accès peut "
+"prendre beaucoup de temps. Dans de tels scénarios, vous devriez envisager de"
+" configurer l' :ref:`LDAP/AD integration <LDAP>` et d'utiliser un des "
+"processus *LDAP* d'arrière plan."
+
 msgid "Logging"
 msgstr "Journalisation"
 
@@ -4754,6 +4802,17 @@ msgstr ""
 "cette option. Cela permet de garder l'interface utilisateur aussi simple que"
 " possible dans les petits environnements."
 
+msgid "Always expand all locations"
+msgstr ""
+
+msgid ""
+"This option specifies whether all locations in the :guilabel:`Locations & "
+"computers` panel should be expanded automatically when starting Veyon Master"
+" or adding locations manually. It only makes sense to activate this option "
+"if you only have a few locations or have activated the :guilabel:`Show "
+"current location only` option."
+msgstr ""
+
 msgid "**Modes and features**"
 msgstr "**Modes et fonctionnalités**"
 
@@ -4830,43 +4889,6 @@ msgstr ""
 "sélectionnant et en cliquant sur le bouton correspondant avec l'icône en "
 "forme de flèche. Vous pouvez également cliquer deux fois sur une "
 "fonctionnalité pour la déplacer dans une autre liste."
-
-msgid "User groups backend"
-msgstr "Processus d'arrière plan de groupes d'utilisateurs"
-
-msgid ""
-"A user group backend provides user groups and their members (users) required"
-" for access control. While the default backend is suitable for system user "
-"groups the LDAP backends will make LDAP/AD user groups available for access "
-"control."
-msgstr ""
-"Un processus d'arrière plan de groupe d'utilisateurs fournit les groupes "
-"d'utilisateurs et leurs membres (utilisateurs) nécessaires au contrôle "
-"d'accès. Alors que le processus d'arrière plan par défaut convient aux "
-"groupes d'utilisateurs système, les processus d'arrière plan LDAP rendent "
-"les groupes d'utilisateurs LDAP/AD disponibles pour le contrôle d'accès."
-
-msgid "Enable usage of domain groups"
-msgstr "Activer l'utilisation des groupes de domaine"
-
-msgid ""
-"When using access control in combination with the default backend only the "
-"local system groups are available per default. By enabling this option all "
-"groups of the domain which a computer belongs to can be queried and used. "
-"This option is not enabled per default for performance reasons. In "
-"environments with a huge number of domain groups performing access control "
-"can take a long time. In such scenarios you should consider setting up the "
-":ref:`LDAP/AD integration <LDAP>` and use one of the *LDAP* backends."
-msgstr ""
-"Lorsque vous utilisez le contrôle d'accès combiné avec le moteur par défaut,"
-" seuls les groupes de systèmes locaux sont disponibles par défaut. En "
-"activant cette option, tous les groupes du domaine auquel appartient un "
-"ordinateur peuvent être interrogés et utilisés. Cette option n'est pas "
-"activée par défaut pour des raisons de performances. Dans les environnements"
-" avec un grand nombre de groupes de domaines, le contrôle d'accès peut "
-"prendre beaucoup de temps. Dans de tels scénarios, vous devriez envisager de"
-" configurer l' :ref:`LDAP/AD integration <LDAP>` et d'utiliser un des "
-"processus *LDAP* d'arrière plan."
 
 msgid "Grant access to every authenticated user (default)"
 msgstr "Accorder l'accès à tous les utilisateurs authentifiés (par défaut)"
@@ -5504,6 +5526,12 @@ msgstr "Processus d'arrière plan d'annuaire d'objets réseau"
 msgid "Network object directory update interval"
 msgstr "Intervalle de mise à jour du répertoire de l'objet réseau"
 
+msgid "User groups backend"
+msgstr "Processus d'arrière plan de groupes d'utilisateurs"
+
+msgid "Domain groups"
+msgstr "Groupes de domaines"
+
 msgid "Standard error output"
 msgstr "Sortie d'erreur standard"
 
@@ -5597,11 +5625,11 @@ msgstr "Emplacements vides"
 msgid "Computer filter"
 msgstr "Filtre ordinateur"
 
+msgid "Expand locations"
+msgstr ""
+
 msgid "Double click"
 msgstr "Double clic"
-
-msgid "Domain groups"
-msgstr "Groupes de domaines"
 
 msgid "Authorized user groups"
 msgstr "Groupe d'utilisateurs autorisés"
