@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2024
 # Tobias Junghans, 2024
+# Yuri Chornoivan <yurchor@ukr.net>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:38+0100\n"
+"POT-Creation-Date: 2024-12-11 11:21+0100\n"
 "PO-Revision-Date: 2024-09-13 09:03+0000\n"
-"Last-Translator: Tobias Junghans, 2024\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/veyon-solutions/teams/65452/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -525,18 +525,19 @@ msgstr ""
 ":guilabel:`Керування доступом до інтернету` і надає можливість налаштувати "
 "додаток:"
 
+msgid "Internet Access Control configuration page"
+msgstr ""
+
 msgid ""
 "In most cases you can leave the default settings and continue with deploying"
-" the add-on to the student computers. If you make changes to the "
-"configuration, remember to always deploy the updated configuration to the "
-"student computers, since all settings affect the way the Internet access is "
-"blocked client-side."
+" the add-on to the student computers."
 msgstr ""
-"У більшості випадків ви можете не змінювати типові налаштування і продовжити"
-" розгортання додатка на студентських комп’ютерах. Якщо ви змінюєте "
-"налаштування, не забувайте завжди розгортати оновлені налаштування на "
-"комп’ютерах студентів, оскільки всі параметри впливають на блокування "
-"доступу до інтернету на боці клієнта."
+
+msgid ""
+"If you make changes to the configuration, remember to always deploy the "
+"updated configuration to the student computers! Only the client-side "
+"settings affect the way the Internet access is blocked on the clients."
+msgstr ""
 
 msgid ""
 "Now you can start Veyon Master and can click the :guilabel:`Internet access`"
@@ -554,6 +555,115 @@ msgstr ""
 "комп’ютерах більше не зможуть відкривати сайти в інтернеті. Якщо вони все ще"
 " є, будь ласка, перевірте налаштування та, можливо, спробуйте інший режим "
 "блокування або модуль обробки."
+
+msgid "Backends"
+msgstr ""
+
+msgid ""
+"There are currently two backends providing different mechanisms to block the"
+" Internet access. Both backends are described in the following subsections."
+msgstr ""
+
+msgid "Block internet access via system firewall"
+msgstr "Блокувати доступ до інтернету за допомогою брандмауера"
+
+msgid ""
+"This is the standard backend that should preferably be used, as it offers "
+"the most flexibility and works most reliably. When this backend is used, the"
+" Veyon Service makes changes to the system firewall to block Internet "
+"access. There are platform-specific differences here:"
+msgstr ""
+
+msgid "Windows"
+msgstr "Windows"
+
+msgid ""
+"Veyon controls the integrated Windows firewall and makes temporary changes "
+"to its configuration. This means that the Windows firewall must be "
+"activated. In addition, changes to the configuration of the Windows firewall"
+" must not be prevented by group policies."
+msgstr ""
+
+msgid "Linux"
+msgstr "Linux"
+
+msgid ""
+"Veyon works on the basis of *nftables* and calls the related command line "
+"tool ``nft``. This is used to temporarily add additional rules to block "
+"Internet access."
+msgstr ""
+
+msgid ""
+"For both operating systems, the backend configuration is identical. In "
+"general different modes are available. The mode selection depends on the "
+"network environment and the desired blocking behavior."
+msgstr ""
+
+msgid "Block all outbound traffic for TCP ports"
+msgstr "Блокувати надсилання будь-яких вихідних даних до портів TCP"
+
+msgid ""
+"This is the default mode and should work in most environments. In this mode "
+"the Veyon Service adds special rules to the firewall which block any traffic"
+" to the configured ports. Use this mode if blocking the TCP ports 80/443 and"
+" one or multiple custom ports (separated by space) is sufficient. To block "
+"all traffic use the second mode."
+msgstr ""
+
+msgid "Block all outbound traffic to non-local subnets"
+msgstr "Блокувати надсилання будь-яких вихідних даних до нелокальних мереж"
+
+msgid ""
+"In this mode, all network traffic directed to networks outside the local "
+"subnets is blocked. On Windows, the Veyon service temporarily changes the "
+"configuration of all firewall profiles (domain, private, public) to “ "
+"Outbound connections that do not match a rule are blocked”. If "
+":guilabel:`Exceptions` are configured, appropriate rules are added to allow "
+"access to these networks, hosts or ports. This can be used, for example, to "
+"preserve access to the intranet and other internally hosted platforms. "
+"External websites can also be defined as exceptions here under certain "
+"circumstances, but the addresses of all servers/CDNs from which the website "
+"loads resources must then also be specified."
+msgstr ""
+
+msgid "Block traffic to (e.g. proxy or DNS) servers"
+msgstr "Блокувати обмін даними з серверами (наприклад, проксі або DNS)"
+
+msgid ""
+"If the student computers access the Internet via a proxy server, you can "
+"select this option. A firewall rule is then added that simply blocks all "
+"traffic to the proxy address. Alternatively, access to certain DNS servers "
+"can also be blocked, although in most cases this leads to problems when "
+"accessing internal resources such as network drives etc."
+msgstr ""
+
+msgid "Enable preconfigured firewall rule"
+msgstr "Увімкнути попередньо налаштоване правило брандмауера"
+
+msgid ""
+"If the three modes above are not suitable for your network you can also "
+"configure an own custom rule in the Windows Firewall. This rule should be "
+"disabled by default. The Veyon Service will enable this rule while the "
+"Internet access is to be blocked. On Linux the Veyon Service calls ``nft`` "
+"to load the nftables rules from the file "
+"``/etc/veyon/iac/firewall/rules.d/<RULENAME>``. You can define any nftables "
+"rules in this file."
+msgstr ""
+
+msgid "Block internet access by modifying routing table"
+msgstr "Блокувати доступ до інтернету зміною таблиці маршрутизації"
+
+msgid ""
+"If the firewall backend cannot be used (e.g. if a 3rdparty firewall software"
+" is used instead of the Windows Firewall), you can use this backend as a "
+"fallback. It works in a very simple way by temporarily removing the default "
+"route from the routing table and/or adding a user-defined (possibly "
+"deliberately invalid) route to block Internet access. In any case, the "
+"settings should be made carefully so that access to the internal network "
+"continues to function properly. Especially in larger segmented networks, "
+"both options should be combined by removing the default route on the one "
+"hand and adding a route to the internal network on the other."
+msgstr ""
 
 msgid "Licensing"
 msgstr "Ліцензування"
