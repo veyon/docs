@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024
-# Peeter Ramst <peeter@aste.edu.ee>, 2024
+# Peeter Ramst <peeter@aste.edu.ee>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:21+0100\n"
+"POT-Creation-Date: 2025-02-07 14:59+0100\n"
 "PO-Revision-Date: 2024-09-13 09:03+0000\n"
-"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2024\n"
+"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2025\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -525,15 +525,15 @@ msgid ""
 "network environment and the desired blocking behavior."
 msgstr ""
 
-msgid "Block all outbound traffic for TCP ports"
-msgstr "Blokeerige TCP-portide kogu väljaminev liiklus"
+msgid "Block all outbound traffic for TCP and UDP ports"
+msgstr ""
 
 msgid ""
 "This is the default mode and should work in most environments. In this mode "
 "the Veyon Service adds special rules to the firewall which block any traffic"
-" to the configured ports. Use this mode if blocking the TCP ports 80/443 and"
-" one or multiple custom ports (separated by space) is sufficient. To block "
-"all traffic use the second mode."
+" to the configured ports. Use this mode if blocking the TCP and UDP ports "
+"80/443 and one or multiple custom ports (separated by space) is sufficient. "
+"To block all traffic use the second mode."
 msgstr ""
 
 msgid "Block all outbound traffic to non-local subnets"
@@ -960,6 +960,38 @@ msgstr ""
 
 msgid "``[^-]*-.([^.]*)*``"
 msgstr "``[^-]*-.([^.]*)*``"
+
+msgid "Advanced settings"
+msgstr "Täpsemad seaded"
+
+msgid ""
+"In the :guilabel:`Advanced` view mode several options for fine-tuning the "
+"behavior are available:"
+msgstr ""
+
+msgid "Property for generating persistent network object IDs"
+msgstr ""
+
+msgid ""
+"Per default Veyon calculates unique internal IDs for each network object "
+"based on multiple information such as hostname, computer name etc. These IDs"
+" are used when saving and loading custom computer positions in Veyon Master."
+" In order to use fixed positions for computers based on their host or "
+"computer name (especially if the computer name is configured to equal e.g. "
+"the user name), you can choose the corresponding option."
+msgstr ""
+
+msgid "Data retrieval timeout"
+msgstr ""
+
+msgid ""
+"This setting influences the maximum time Network Discovery waits to obtain "
+"the computer name via DNS or to query certain session-related "
+"characteristics from a remote computer."
+msgstr ""
+
+msgid "**Default:** *5000 ms*"
+msgstr ""
 
 msgid ""
 "The CLI module ``networkdiscovery`` allows scanning for computers at the "

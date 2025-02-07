@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,19 +9,19 @@
 # AlexL <loginov.alex.valer@gmail.com>, 2020
 # Andrey Atapin <atab74@gmail.com>, 2020
 # Алексей Черемных <s-r-grass@mail.ru>, 2021
-# Olesya Gerasimenko <gammaray@basealt.ru>, 2021
 # Tobias Junghans, 2022
 # Denis Basik <denisbasik@gmail.com>, 2024
 # Elena Mishina, 2024
+# Olesya Gerasimenko <gammaray@basealt.ru>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Elena Mishina, 2024\n"
+"Last-Translator: Olesya Gerasimenko <gammaray@basealt.ru>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4120,11 +4120,10 @@ msgstr ""
 "вам придется запустить сервер Veyon в пользовательских сеансах вручную. В "
 "этом случае экран входа в систему будет недоступен."
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
-"Режим одиночного сеанса (создание сервера только для локального / "
-"физического сеанса)"
+"Режим локального сеанса (один экземпляр сервера для основного локального "
+"сеанса)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -4136,6 +4135,22 @@ msgstr ""
 "пользователь работает локально на выделенном компьютере. В этом режиме "
 "служба Veyon всегда запускает ровно один экземпляр сервера для основного "
 "сеанса компьютера, например, консольного сеанса в Windows."
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+"Режим активного сеанса (один экземпляр сервера для активного локального или "
+"удалённого сеанса)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr ""
@@ -5450,8 +5465,11 @@ msgstr "Сервер удаленного рабочего стола"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "Режим одиночной сессии"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
+msgstr ""
 
 msgid "Multi session mode"
 msgstr "Многосессионный режим"

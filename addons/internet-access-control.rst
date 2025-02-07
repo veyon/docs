@@ -47,8 +47,8 @@ Linux
 
 For both operating systems, the backend configuration is identical. In general different modes are available. The mode selection depends on the network environment and the desired blocking behavior.
 
-Block all outbound traffic for TCP ports
-    This is the default mode and should work in most environments. In this mode the Veyon Service adds special rules to the firewall which block any traffic to the configured ports. Use this mode if blocking the TCP ports 80/443 and one or multiple custom ports (separated by space) is sufficient. To block all traffic use the second mode.
+Block all outbound traffic for TCP and UDP ports
+    This is the default mode and should work in most environments. In this mode the Veyon Service adds special rules to the firewall which block any traffic to the configured ports. Use this mode if blocking the TCP and UDP ports 80/443 and one or multiple custom ports (separated by space) is sufficient. To block all traffic use the second mode.
 
 Block all outbound traffic to non-local subnets
     In this mode, all network traffic directed to networks outside the local subnets is blocked. On Windows, the Veyon service temporarily changes the configuration of all firewall profiles (domain, private, public) to “ Outbound connections that do not match a rule are blocked”. If :guilabel:`Exceptions` are configured, appropriate rules are added to allow access to these networks, hosts or ports. This can be used, for example, to preserve access to the intranet and other internally hosted platforms. External websites can also be defined as exceptions here under certain circumstances, but the addresses of all servers/CDNs from which the website loads resources must then also be specified.

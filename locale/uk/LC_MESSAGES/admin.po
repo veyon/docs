@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Tobias Junghans, 2024
-# Yuri Chornoivan <yurchor@ukr.net>, 2024
+# Yuri Chornoivan <yurchor@ukr.net>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2024\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/veyon-solutions/teams/65452/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3898,6 +3898,12 @@ msgid ""
 "good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
 "groups you can change the backend accordingly."
 msgstr ""
+"Veyon використовує дані про групи користувачів та їхніх учасників для "
+"виконання завдання :ref:`ConfAccessControl` і налаштування груп доступу для "
+":ref:`ключів розпізнавання <ConfKeyFileAuthentication>`. У більшості "
+"випадків не варто змінювати типового обробника. Якщо ви хочете "
+"використовувати напр. виокремлені групи LDAP або групи Entra ID, ви можете "
+"відповідно змінити обробник."
 
 msgid ""
 "A user group backend provides user groups and their members (users) required"
@@ -3912,7 +3918,7 @@ msgstr ""
 "LDAP/AD для керування доступом до комп'ютерів."
 
 msgid "**Default:** *Default (system user groups)*"
-msgstr ""
+msgstr "**Типове значення**: *типове (групи користувачів системи)*"
 
 msgid "Include user groups from domain"
 msgstr "Включити групи користувачів з домену"
@@ -4143,11 +4149,10 @@ msgstr ""
 "Veyon у сеансах користувачів слід запускати вручну. У такому випадку доступ "
 "до вікна входу до системи не надаватиметься."
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
-"Режим єдиного сеансу (створювати екземпляр сервера лише для "
-"локального/фізичного сеансу)"
+"Режим локального сеансу (один екземпляр сервера для основного локального "
+"сеансу)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -4159,6 +4164,22 @@ msgstr ""
 "за яких кожен користувач працює локально на власному комп'ютері. У цьому "
 "режимі служба Veyon завжди запускатиме лише один екземпляр сервера для "
 "основного сеансу комп'ютера, наприклад консольного сеансу у Windows."
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+"Режим активного сеансу (один екземпляр сервера для активного локального або "
+"віддаленого сеансу)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr ""
@@ -4734,6 +4755,11 @@ msgid ""
 "if you only have a few locations or have activated the :guilabel:`Show "
 "current location only` option."
 msgstr ""
+"Цей параметр визначає, чи всі місця на панелі :guilabel:`Місця і комп’ютери`"
+" мають автоматично розгортатися після запуску Veyon Master або додавання "
+"місць вручну. Позначення цього пункту має сенс, лише якщо у вас є лише "
+"кілька місць або ви позначили пункт :guilabel:`Показувати лише поточне "
+"місце`."
 
 msgid "**Modes and features**"
 msgstr "**Режими і можливості**"
@@ -5496,8 +5522,11 @@ msgstr "Сервер віддаленої стільниці"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "Режим єдиного сеансу"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
+msgstr ""
 
 msgid "Multi session mode"
 msgstr "Режим декількох сеансів"
@@ -5554,7 +5583,7 @@ msgid "Computer filter"
 msgstr "Фільтр комп'ютерів"
 
 msgid "Expand locations"
-msgstr ""
+msgstr "Розгортати місця"
 
 msgid "Double click"
 msgstr "Подвійне клацання"

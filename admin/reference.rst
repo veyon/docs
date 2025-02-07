@@ -186,12 +186,17 @@ Autostart
 
 .. _RefSessions:
 
-.. index:: Sessions, Session settings, Terminal server, Remote desktop server, RDP, Single session mode, Multi session mode
+.. index:: Sessions, Session settings, Terminal server, Remote desktop server, RDP, Local session mode, Active session mode, Multi session mode
 
-Single session mode (create server instance for local/physical session only)
+Local session mode (single server instance for primary local session)
     Choose this option for single-user scenarios, i.e. each user is working locally on a dedicated computer. In this mode the Veyon Service will always start exactly one server instance for the primary session of the computer, e.g. the console session on Windows.
 
     **Default:** *enabled*
+
+Active session mode (single server instance for active local or remote session)
+    Choose this option if you always want to view or access the active session, no matter if it's a local or remote session or the session type changes in inbetween. If e.g. a local session is being taken over via Remote Desktop, the Veyon Server instance is restarted inside the remote session and switches back to the local session as soon as the remote session is terminated.
+
+    **Default:** *disabled*
 
 .. _RefMultiSessionMode:
 

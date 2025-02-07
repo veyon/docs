@@ -22,15 +22,15 @@ master_doc = os.getenv('INDEX', 'index')
 
 # General information about the project.
 project = 'Veyon'
-copyright = '2017-2024, Veyon Solutions'
+copyright = '2017-2025, Veyon Solutions'
 author = 'Veyon Community'
 
 title = os.getenv('TITLE', 'Veyon Documentation')
-version = os.getenv('VERSION', '4.9.1')
+version = os.getenv('VERSION', '4.9.2')
 # The full version, including alpha/beta/rc tags.
 release = version
 
-language = os.getenv('LANGUAGE', None)
+language = os.getenv('LANGUAGE', 'en')
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 todo_include_todos = False

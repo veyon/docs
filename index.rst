@@ -16,8 +16,8 @@ Online documentation
 PDF download
 ------------
 
-* `Veyon Administrator Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.1/veyon-admin-manual-en_4.9.1.pdf>`_
-* `Veyon User Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.1/veyon-user-manual-en_4.9.1.pdf>`_
+* `Veyon Administrator Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-en_4.9.2.pdf>`_
+* `Veyon User Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-en_4.9.2.pdf>`_
 
 Other languages
 ---------------

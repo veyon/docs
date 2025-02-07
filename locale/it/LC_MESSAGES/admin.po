@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Tobias Junghans, 2024
-# albanobattistella <albanobattistella@gmail.com>, 2024
+# albanobattistella <albanobattistella@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: albanobattistella <albanobattistella@gmail.com>, 2024\n"
+"Last-Translator: albanobattistella <albanobattistella@gmail.com>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3927,6 +3927,11 @@ msgid ""
 "good choice. If you want to use e.g. dedicated LDAP groups or Entra ID "
 "groups you can change the backend accordingly."
 msgstr ""
+"Veyon usa informazioni sui gruppi di utenti e sui loro membri per eseguire "
+":ref:`ConfAccessControl` e impostare gruppi di accesso per :ref:`chiavi di "
+"autenticazione<ConfKeyFileAuthentication>`. Nella maggior parte dei casi il "
+"backend predefinito è una buona scelta. Se vuoi usare ad esempio gruppi LDAP"
+" dedicati o gruppi Entra ID puoi cambiare il backend di conseguenza."
 
 msgid ""
 "A user group backend provides user groups and their members (users) required"
@@ -3941,7 +3946,7 @@ msgstr ""
 "accessi."
 
 msgid "**Default:** *Default (system user groups)*"
-msgstr ""
+msgstr "**Predefinito:** *Predefinito (gruppi di utenti di sistema)*"
 
 msgid "Include user groups from domain"
 msgstr "Includi gruppi di utenti dal dominio"
@@ -4175,11 +4180,10 @@ msgstr ""
 "Veyon nelle sessioni utente. La schermata di accesso non sarà accessibile in"
 " questo caso."
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
-"Modalità sessione singola (crea istanza del server solo per sessione "
-"locale/fisica)"
+"Modalità sessione locale (singola istanza del server per la sessione locale "
+"primaria)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -4191,6 +4195,22 @@ msgstr ""
 "lavora localmente su un computer dedicato. In questa modalità il servizio "
 "Veyon avvierà sempre esattamente un'istanza del server per la sessione "
 "principale del computer, ad es. la sessione della console su Windows."
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+"Modalità sessione attiva (istanza server singola per sessione attiva locale "
+"o remota)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr "Modalità multi sessione (per terminali e server desktop remoti)"
@@ -4770,6 +4790,11 @@ msgid ""
 "if you only have a few locations or have activated the :guilabel:`Show "
 "current location only` option."
 msgstr ""
+"Questa opzione specifica se tutte le posizioni nel pannello "
+":guilabel:`Posizioni e computer` devono essere espanse automaticamente "
+"all'avvio di Veyon Master o aggiungendo posizioni manualmente. Ha senso "
+"attivare questa opzione solo se hai solo poche posizioni o hai attivato "
+"l'opzione :guilabel:`Mostra solo posizione corrente`."
 
 msgid "**Modes and features**"
 msgstr "** Modalità e caratteristiche **"
@@ -5540,8 +5565,11 @@ msgstr "Server desktop remoto"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "Modalità sessione singola"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
+msgstr ""
 
 msgid "Multi session mode"
 msgstr "Modalità multisessione"
@@ -5598,7 +5626,7 @@ msgid "Computer filter"
 msgstr "Filtro per computer"
 
 msgid "Expand locations"
-msgstr ""
+msgstr "Espandi posizioni"
 
 msgid "Double click"
 msgstr "Doppio click"

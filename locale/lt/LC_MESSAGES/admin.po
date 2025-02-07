@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Irmantas Audėjas <iirmantass@gmail.com>, 2021\n"
 "Language-Team: Lithuanian (https://app.transifex.com/veyon-solutions/teams/65452/lt/)\n"
@@ -2935,8 +2935,7 @@ msgid ""
 "logon screen will not be accessible in this case."
 msgstr ""
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
 
 msgid ""
@@ -2944,6 +2943,20 @@ msgid ""
 "locally on a dedicated computer. In this mode the Veyon Service will always "
 "start exactly one server instance for the primary session of the computer, "
 "e.g. the console session on Windows."
+msgstr ""
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
 msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
@@ -3902,7 +3915,10 @@ msgstr "Remote desktop serveris"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
 msgstr ""
 
 msgid "Multi session mode"

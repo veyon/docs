@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # Elena Mishina, 2023
-# Tobias Junghans, 2024
+# Tobias Junghans, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.0\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:33+0100\n"
+"POT-Creation-Date: 2025-02-07 14:17+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Tobias Junghans, 2024\n"
+"Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,21 +34,21 @@ msgstr "Скачать PDF"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.1/veyon-admin-manual-"
-"en_4.9.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
+"en_4.9.2.pdf>`_"
 msgstr ""
 "`Руководство администратора Veyon в PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.1/veyon-admin-manual-"
-"ru_4.9.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
+"ru_4.9.2.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.1/veyon-user-manual-"
-"en_4.9.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
+"en_4.9.2.pdf>`_"
 msgstr ""
 "`Руководство пользователя Veyon в PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.1/veyon-user-manual-"
-"ru_4.9.1.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
+"ru_4.9.2.pdf>`_"
 
 msgid "Other languages"
 msgstr "На других языках"

@@ -37,7 +37,7 @@ Finally, the network object directory backend needs to be changed to *Network di
    :align: center
 
    Change network object directory backend to Network Discovery
-	
+
 Now you can start Veyon Master and should see the computers in your network running a Veyon Server. Depending on the size of the subnet or network range(s), the initial scan process might take a while (up to 1-2 minutes in the worst case).
 
 Options
@@ -117,6 +117,19 @@ The same substring extraction is possible for computer names as well (except for
 ``[^-]*-.([^.]*)*``
 
 Please refer to the `Wikipedia article on regular expressions <https://en.wikipedia.org/wiki/Regular_expression>`_ for more information on the concept, syntax and available pattern options.
+
+Advanced settings
+-----------------
+
+In the :guilabel:`Advanced` view mode several options for fine-tuning the behavior are available:
+
+Property for generating persistent network object IDs
+	Per default Veyon calculates unique internal IDs for each network object based on multiple information such as hostname, computer name etc. These IDs are used when saving and loading custom computer positions in Veyon Master. In order to use fixed positions for computers based on their host or computer name (especially if the computer name is configured to equal e.g. the user name), you can choose the corresponding option.
+
+Data retrieval timeout
+	This setting influences the maximum time Network Discovery waits to obtain the computer name via DNS or to query certain session-related characteristics from a remote computer.
+
+	**Default:** *5000 ms*
 
 Command line interface
 ----------------------

@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tobias Junghans, 2024
+# Tobias Junghans, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Tobias Junghans, 2024\n"
+"Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: German (https://app.transifex.com/veyon-solutions/teams/65452/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4212,11 +4212,9 @@ msgstr ""
 " der Veyon-Server in Benutzersitzungen manuell gestartet werden und es kann "
 "zudem nicht auf den Anmeldebildschirm zugegriffen werden."
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
-"Einzelsitzungsmodus (Serverinstanz nur für lokale/physische Sitzung "
-"erstellen)"
+"Lokaler Sitzungsmodus (einzelne Serverinstanz für primäre lokale Sitzung)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -4228,6 +4226,28 @@ msgstr ""
 "arbeitet lokal auf einem dedizierten Rechner. In diesem Modus startet der "
 "Veyon-Dienst immer genau eine Server-Instanz für die primäre Sitzung des "
 "Rechners, z.B. die Konsolensitzung unter Windows."
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+"Aktiver Sitzungsmodus (einzelne Serverinstanz für aktive lokale oder "
+"entfernte Sitzung)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
+"Wählen Sie diese Option, wenn Sie immer die aktive Sitzung sehen oder darauf"
+" zugreifen möchten, unabhängig davon, ob es sich um eine lokale oder "
+"entfernte Sitzung handelt oder der Sitzungstyp sich zwischendurch ändert. "
+"Wenn z.B. eine lokale Sitzung über Remote Desktop übernommen wird, wird die "
+"Veyon Server-Instanz innerhalb der Remote-Sitzung neu gestartet und schaltet"
+" zurück zur lokalen Sitzung, sobald die Remote-Sitzung beendet ist."
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr "Mehrfachsitzungs-Modus (für Terminal- und Remote-Desktop-Server)"
@@ -5578,8 +5598,11 @@ msgstr "Remote-Desktop-Server"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "Einzelsitzungsmodus"
+msgid "Local session mode"
+msgstr "Lokaler Sitzunsmodus"
+
+msgid "Active session mode"
+msgstr "Aktiver Sitzungsmodus"
 
 msgid "Multi session mode"
 msgstr "Mehrfachsitzungsmodus"

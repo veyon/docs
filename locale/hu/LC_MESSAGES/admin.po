@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,16 +8,16 @@
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
 # Tobias Junghans, 2024
 # Balázs Pásztor, 2024
-# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024
+# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024\n"
+"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4121,11 +4121,10 @@ msgstr ""
 "elindítania a Veyon szervert a felhasználói munkamenetekben. Ebben az "
 "esetben a bejelentkezési képernyő nem lesz elérhető."
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
+msgid "Local session mode (single server instance for primary local session)"
 msgstr ""
-"Egyszeres munkamenet mód (kiszolgálópéldány létrehozása csak helyi/fizika "
-"munkamenetekhez)"
+"Helyi munkamenet mód (egyetlen kiszolgálópéldány az elsődleges helyi "
+"munkamenethez)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -4138,6 +4137,22 @@ msgstr ""
 "Veyon szolgáltatás mindig pontosan egy szerver példányt indít a számítógép "
 "elsődleges munkamenetéhez, például a konzol munkamenethez Windows "
 "rendszeren."
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr ""
+"Aktív munkamenet mód (egyetlen kiszolgálópéldány az aktív hely vagy távoli "
+"munkamenethez)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr "Többmunka-menetes mód (terminál és távoli asztal szerverekhez)"
@@ -5461,8 +5476,11 @@ msgstr "Távoli asztali szerver"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "Egyetlen munkamenet mód"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
+msgstr ""
 
 msgid "Multi session mode"
 msgstr "Többszörös munkamenet mód"

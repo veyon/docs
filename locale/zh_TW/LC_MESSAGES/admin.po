@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2024, Veyon Solutions
+# Copyright (C) 2017-2025, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Tobias Junghans, 2020
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2024
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.1\n"
+"Project-Id-Version: Veyon 4.9.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 09:59+0100\n"
+"POT-Creation-Date: 2025-02-07 14:38+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2024\n"
+"Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3271,9 +3271,8 @@ msgstr ""
 "安裝 Veyon 後，Veyon 服務註冊為系統服務，以便為使用者工作階段自動啟動 Veyon 伺服器。 可以透過停用這個選項來防止 Veyon "
 "服務的啟動。 然後，您必須在使用者工作階段中手動啟動 Veyon 伺服器。 在這種情形下，無法存取登入畫面。"
 
-msgid ""
-"Single session mode (create server instance for local/physical session only)"
-msgstr "單一工作階段模式 (只為本機/實體工作階段建立伺服器實例)"
+msgid "Local session mode (single server instance for primary local session)"
+msgstr "本機工作階段模式 (主要本機工作階段的單一伺服器實例)"
 
 msgid ""
 "Choose this option for single-user scenarios, i.e. each user is working "
@@ -3283,6 +3282,20 @@ msgid ""
 msgstr ""
 "對於單一使用者場景，即每個使用者都在一台專用電腦上本機工作，請選擇這個選項。 在此模式下，Veyon "
 "服務將始終為電腦的主工作階段啟動一個伺服器實例，例如 Windows 上的主控台工作階段。"
+
+msgid ""
+"Active session mode (single server instance for active local or remote "
+"session)"
+msgstr "使用中工作階段模式 (使用中本機或遠端工作階段的單ㄧ伺服器實例)"
+
+msgid ""
+"Choose this option if you always want to view or access the active session, "
+"no matter if it's a local or remote session or the session type changes in "
+"inbetween. If e.g. a local session is being taken over via Remote Desktop, "
+"the Veyon Server instance is restarted inside the remote session and "
+"switches back to the local session as soon as the remote session is "
+"terminated."
+msgstr ""
 
 msgid "Multi session mode (for terminal and remote desktop servers)"
 msgstr "多重工作階段模式 (適用於終端機和遠端桌面伺服器)"
@@ -4345,8 +4358,11 @@ msgstr "遠端桌面伺服器"
 msgid "RDP"
 msgstr "RDP"
 
-msgid "Single session mode"
-msgstr "單一工作階段模式"
+msgid "Local session mode"
+msgstr ""
+
+msgid "Active session mode"
+msgstr ""
 
 msgid "Multi session mode"
 msgstr "多重工作階段模式"
