@@ -41,13 +41,13 @@ Conditions
 For a rule to be processed, one or more conditions must apply.
 
 User is member of group
-    With this condition you can define that either the accessing or the locally logged on user must be a member of a specific group. The desired group can be chosen. If no or only wrong groups are selectable, the *User groups backend* under the general settings for :ref:`ComputerAccessControl` may have to be adjusted.
+    You can use this condition to specify that either the accessing or the locally logged in user must be a member of a specific group. The desired group can be selected. If no or only wrong groups are selectable, the *User groups backend* under the general settings for :ref:`ComputerAccessControl` may have to be adjusted. Alternatively, a regular expression can be entered to control access from or to certain groups whose names match a certain pattern, e.g. ``/Class 20\d\d-\d\d/`` for the class groups 20NN-NN.
 
 Computer is located at
-    With this condition you can define that either the accessing or the local computer has to be located at a specific location. The desired location can be chosen. If no or only wrong locations are selectable the :ref:`RefNetworkObjectDirectory` has to be adjusted.
+    With this condition you can define that either the accessing or the local computer has to be located at a specific location. The desired location can be selected. If no or only wrong locations are selectable the :ref:`RefNetworkObjectDirectory` has to be adjusted. Alternatively, a regular expression can be entered to control access from or to multiple locations whose names match a certain pattern.
 
 Accessing computer and local computer are at the same location
-    With this condition you can determine that the accessing computer and the local computer have to be located at the same location. This can for example be used to prevent teachers from accessing computers in different classroom.
+    You can use this condition to specify that the accessing computer and the local computer must be in the same location. This can be used, for example, to prevent teachers from accessing computers outside their own classroom.
 
 .. _AccessingComputerIsLocalhost:
 
@@ -66,6 +66,8 @@ Accessing user is already connected
 No user logged on
     This condition determines how a computer can be accessed when no user is logged on. For easier computer administration, it can be helpful to always be able to access a computer when no user is logged on.
 
+Local computer is already being accessed
+    If this condition is activated, the rule takes effect if there is already at least one connection to the local Veyon Service. This can be used, for example, to prevent parallel access to a computer.
 
 Action
 ++++++

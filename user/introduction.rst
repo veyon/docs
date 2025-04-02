@@ -11,14 +11,16 @@ Program start and login
 
 The program is started via the start menu or a desktop icon:
 
-.. image:: images/desktop-symbol.png
+.. figure:: images/desktop-symbol.png
+   :class: image-drop-shadow
    :align: center
 
 .. index:: Login, Username, Password
 
 Depending on the system configuration you will be prompted for your username and your password:
 
-.. image:: images/LogonDialog.png
+.. figure:: images/LogonDialog.png
+   :class: image-drop-shadow
    :align: center
 
 Enter your username and password here or – if given – the credentials of a special teacher account. If the entered data is correct and and a login can be performed, the program will start. Otherwise, the login will be denied and an error message will be displayed. In this case you can try the login with corrected data again.
@@ -31,7 +33,8 @@ User interface
 
 After the program start you will see the user interface with the toolbar (1), the monitor view (2) and the status bar with various controls (3):
 
-.. image:: images/master-user-interface.png
+.. figure:: images/master-user-interface.png
+   :class: image-drop-shadow
    :align: center
 
 The toolbar contains a number of buttons for activating different features. A detailed description of the individual features can be found in chapter :ref:`ProgramFeatures`. The appearance and behavior of the toolbar can be customized as described in section :ref:`Toolbar`.
@@ -48,7 +51,9 @@ Using the :guilabel:`Locations & computers` and :guilabel:`Screenshots` buttons,
 
 The search bar allows you to filter the computers displayed using computer names or user names as search terms. Technically savvy users can even enter regular expressions here to define advanced search filters.
 
-The |powered-on| (:guilabel:`Only show powered on computers`) button hides all computers that are not powered on, disconnected or not reachable for some other reason. This allows simultaneous monitoring of a large number of computers or partially occupied rooms while focusing on the actually active computers.
+The |powered-on| (:guilabel:`Only show powered on computers`) button hides all computers that are not powered on, not connected or not accessible for other reasons. This makes it possible to monitor a large number of computers or partially occupied rooms at the same time while concentrating on the computers that are actually switched on.
+
+The |logged-on-users| (:guilabel:`Only show computers with logged on users`) button hides all computers on which no users are logged in. This makes it possible to monitor a large number of computers or partially occupied rooms at the same time while concentrating on the computers actually in use.
 
 Use the slider to control the size of the computer screens displayed. When holding then :kbd:`Ctrl` key, the size can also be changed using the mouse scroll wheel. The size is adjusted automatically by clicking the button |zoom-fit-best| (:guilabel:`Adjust optimal size`) to the right of it.
 
@@ -69,6 +74,10 @@ The |help-about| button (:guilabel:`About`) opens a dialog with information abou
   :align: middle
 
 .. |powered-on| image:: images/powered-on.png
+  :scale: 20%
+  :align: middle
+
+.. |logged-on-users| image:: images/logged-on-users.png
   :scale: 20%
   :align: middle
 
@@ -102,14 +111,16 @@ The :guilabel:`Locations & Computers` button in the status bar opens the compute
 
 You can activate individual computers or entire locations by checking them. All checked computers will then be displayed in the monitoring view.
 
-.. image:: images/computer-room-management.png
+.. figure:: images/computer-room-management.png
+   :class: image-drop-shadow
    :align: center
 
 With the :guilabel:`Save computer/user list` button you can save the list of computers and logged in users in a CSV file. Typical use cases for this are subsequent presence checks or IT-based exams.
 
 Depending on the system configuration, the button :guilabel:`Add location` is also available. This allows you to add more computer locations to the view. A click on the button opens a dialog where you can see all available locations:
 
-.. image:: images/LocationDialog.png
+.. figure:: images/LocationDialog.png
+   :class: image-drop-shadow
    :align: center
 
 You can filter the list using the input field, i.e. enter a search term. The list then only displays the location names containing the specified search term. Advanced users can also use regular expressions for the filter. Next you can select the location and confirm with :guilabel:`OK`. The selected location is now available in the location list until the next program start. You can also remove a previously added location by clicking on the location and pressing the :kbd:`Del` key.
@@ -123,7 +134,8 @@ Screenshots panel
 
 Using the screenshot management panel, you can view and delete all captured screenshots. Information on how to take screenshots are given in the :ref:`Program features <ProgramFeatures>` chapter in section :ref:`Screenshot <FeatureScreenshot>`.
 
-.. image:: images/ScreenshotManagementPanel.png
+.. figure:: images/ScreenshotManagementPanel.png
+   :class: image-drop-shadow
    :align: center
 
 You can now select individual screenshots from the list. Details of the screenshot, such as the date it was taken, user name, and computer, are then displayed in the table below. The :guilabel:`Show` button or a double-click in the list displays the selected screenshot in full size. If you no longer need the screenshot, you can permanently delete it using the :guilabel:`Delete` button. Please note that this process cannot be undone and the files will not be moved to the trash.

@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Ali Anıl REYHAN <anilreyhan@gmail.com>, 2021
+# 3909d6133b383976bde86621da215840_711025d, 2025
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-07 14:17+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: Ali Anıl REYHAN <anilreyhan@gmail.com>, 2021\n"
+"Last-Translator: 3909d6133b383976bde86621da215840_711025d, 2025\n"
 "Language-Team: Turkish (https://app.transifex.com/veyon-solutions/teams/65452/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,25 +23,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Veyon Documentation"
-msgstr ""
+msgstr "Veyon Belgeleri"
 
 msgid "Online documentation"
-msgstr ""
+msgstr "Çevrimiçi belgeler"
 
 msgid "PDF download"
-msgstr ""
+msgstr "PDF indir"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
 "en_4.9.2.pdf>`_"
 msgstr ""
+"`Veyon Yönetici Kılavuzu PDF'si "
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
+"en_4.9.2.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
 "<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
 "en_4.9.2.pdf>`_"
 msgstr ""
+"`Veyon Kullanım Kılavuzu PDF'si "
+"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
+"en_4.9.2.pdf>`_"
 
 msgid "Other languages"
 msgstr "Diğer diller"
@@ -52,16 +59,16 @@ msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
 msgstr "`Çince (Tayvan) <https://docs.veyon.io/zh_TW/latest/>`_"
 
 msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
-msgstr ""
+msgstr "`Çekçe <https://docs.veyon.io/cs/latest/>`_"
 
 msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
-msgstr ""
+msgstr "`Hollandaca <https://docs.veyon.io/nl/latest/>`_"
 
 msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
 msgstr "`İspanyolca <https://docs.veyon.io/es/latest/>`_"
 
 msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
-msgstr ""
+msgstr "`Estonyaca <https://docs.veyon.io/et/latest/>`_"
 
 msgid "`French <https://docs.veyon.io/fr/latest/>`_"
 msgstr "`Fransızca <https://docs.veyon.io/fr/latest/>`_"
@@ -70,25 +77,25 @@ msgid "`German <https://docs.veyon.io/de/latest/>`_"
 msgstr "`Almanca <https://docs.veyon.io/de/latest/>`_"
 
 msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
-msgstr ""
+msgstr "`Macarca <https://docs.veyon.io/hu/latest/>`_"
 
 msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
 msgstr "`İtalyanca <https://docs.veyon.io/it/latest/>`_"
 
 msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
-msgstr ""
+msgstr "`Litvanca <https://docs.veyon.io/lt/latest/>`_"
 
 msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
-msgstr ""
+msgstr "`Lehçe <https://docs.veyon.io/pl/latest/>`_"
 
 msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
 msgstr "`Rusça <https://docs.veyon.io/ru/latest/>`_"
 
 msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
-msgstr ""
+msgstr "`Slovence <https://docs.veyon.io/sl/latest/>`_"
 
 msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
-msgstr ""
+msgstr "`Sırpça <https://docs.veyon.io/sr/latest/>`_"
 
 msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
-msgstr ""
+msgstr "`Ukraynaca <https://docs.veyon.io/uk/latest/>`_"

@@ -35,7 +35,7 @@ Monitoring mode
 
 By default Veyon is running in monitoring mode. In this mode you have an overview of all computers and see their screen contents in thumbnails. The screen content is updated almost in real time, so you can monitor all activity at the selected locations.
 
-As long as there is no connection to a computer, a computer icon is displayed instead of the screen content. After the program has been started, the icon is initially colored gray. As soon as the program detects that the computer is unreachable or access is denied, the color changes to red.
+As long as there is no connection to a computer, a computer icon is displayed instead of the screen content. After the program has been started, the icon is initially colored gray. As soon as the program detects that the computer is unreachable or access is denied, the icon changes accordingly and a status message is shown in the tooltip of the computer.
 
 Some of the features described in the next sections switch the remote computers to a different mode. You can exit the respective mode by activating monitoring mode again.
 
