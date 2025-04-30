@@ -313,6 +313,13 @@ Screenshots
 
     **Default:** *%APPDATA%/Screenshots*
 
+.. index:: Configuration templates
+
+Configuration templates
+    This directory can hold a configuration template for the user-specific Veyon Master configuration. This can for example be used to globally specify the arrangement of computers for all users. One possibility is to copy :file:`VeyonMaster.json` from the user configuration directory of a reference user to this directory to predefine all settings. Alternatively use the drop-down menu of the :guilabel:`Use custom computer arrangement` button in Veyon Master and choose :guilabel:`Save computer positions`. The saved file can then be used as configuration template and only includes the custom computer arrangement.
+
+    **Default:** *%GLOBALAPPDATA%/Config/Templates*
+
 
 .. index:: User interface
 
