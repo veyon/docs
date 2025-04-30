@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Tobias Junghans, 2019
-# Yuri Chornoivan <yurchor@ukr.net>, 2023
+# Yuri Chornoivan <yurchor@ukr.net>, 2025
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-02 14:44+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2023\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/veyon-solutions/teams/65452/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -171,6 +171,12 @@ msgid ""
 " computer is unreachable or access is denied, the icon changes accordingly "
 "and a status message is shown in the tooltip of the computer."
 msgstr ""
+"Доки з комп'ютером не буде встановлено з'єднання, буде показано його "
+"піктограму, замість вмісту екрана. Після запуску програми у початковому "
+"стані піктограму буде показано сірим кольором. Щойно програма виявить, що "
+"комп'ютер недоступний або у доступі до нього буде відмовлено, піктограму "
+"буде змінено відповідним чином і буде показано повідомлення  щодо стану на "
+"панелі підказки щодо комп'ютера."
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
@@ -1391,6 +1397,12 @@ msgid ""
 " or partially occupied rooms at the same time while concentrating on the "
 "computers that are actually switched on."
 msgstr ""
+"Натискання кнопки |powered-on| (:guilabel:`Показувати лише увімкнені "
+"комп'ютери`) призведе до приховування усіх комп'ютерів, які не увімкнено, не"
+" з'єднано, або комп'ютерів, які є недоступними з певних причин. Це надає "
+"змогу спостерігати за великою кількістю комп'ютерів або частково заповнених "
+"класів одночасно, концентруючись лише на комп'ютерах, які насправді "
+"увімкнено."
 
 msgid "powered-on"
 msgstr "powered-on"
@@ -1401,9 +1413,14 @@ msgid ""
 "possible to monitor a large number of computers or partially occupied rooms "
 "at the same time while concentrating on the computers actually in use."
 msgstr ""
+"Натискання кнопки |logged-on-users| (:guilabel:`Показувати лише комп'ютери, "
+"до яких увійшли користувачі`) призведе до приховування усіх комп'ютерів, до "
+"систем яких не увійшов жоден користувач. Це уможливлює спостереження за "
+"великою кількістю комп'ютерів або частково заповнених класів одночасно, "
+"концентруючись лише на комп'ютерах, якими справді користуються."
 
 msgid "logged-on-users"
-msgstr ""
+msgstr "logged-on-users"
 
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "

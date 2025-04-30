@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.2\n"
+"Project-Id-Version: Veyon 4.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 12:25+0200\n"
+"POT-Creation-Date: 2025-04-30 13:51+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -3523,6 +3523,24 @@ msgstr "使用螢幕截圖功能產生的所有圖片檔都存儲在這個目錄
 
 msgid "**Default:** *%APPDATA%/Screenshots*"
 msgstr "**預設值:** *%APPDATA%/Screenshots*"
+
+msgid "Configuration templates"
+msgstr "組態範本"
+
+msgid ""
+"This directory can hold a configuration template for the user-specific Veyon"
+" Master configuration. This can for example be used to globally specify the "
+"arrangement of computers for all users. One possibility is to copy "
+":file:`VeyonMaster.json` from the user configuration directory of a "
+"reference user to this directory to predefine all settings. Alternatively "
+"use the drop-down menu of the :guilabel:`Use custom computer arrangement` "
+"button in Veyon Master and choose :guilabel:`Save computer positions`. The "
+"saved file can then be used as configuration template and only includes the "
+"custom computer arrangement."
+msgstr ""
+
+msgid "**Default:** *%GLOBALAPPDATA%/Config/Templates*"
+msgstr ""
 
 msgid "**User interface**"
 msgstr "**使用者介面**"

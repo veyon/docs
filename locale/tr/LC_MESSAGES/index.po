@@ -6,15 +6,16 @@
 # Translators:
 # Ali Anıl REYHAN <anilreyhan@gmail.com>, 2021
 # 3909d6133b383976bde86621da215840_711025d, 2025
+# Tobias Junghans, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.2\n"
+"Project-Id-Version: Veyon 4.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 14:17+0100\n"
+"POT-Creation-Date: 2025-04-30 14:48+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: 3909d6133b383976bde86621da215840_711025d, 2025\n"
+"Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: Turkish (https://app.transifex.com/veyon-solutions/teams/65452/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,21 +34,21 @@ msgstr "PDF indir"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
-"en_4.9.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
+"en_4.9.5.pdf>`_"
 msgstr ""
 "`Veyon Yönetici Kılavuzu PDF'si "
-"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-"
-"en_4.9.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
+"en_4.9.5.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
-"en_4.9.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
+"en_4.9.5.pdf>`_"
 msgstr ""
 "`Veyon Kullanım Kılavuzu PDF'si "
-"<https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-"
-"en_4.9.2.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
+"en_4.9.5.pdf>`_"
 
 msgid "Other languages"
 msgstr "Diğer diller"
@@ -96,6 +97,12 @@ msgstr "`Slovence <https://docs.veyon.io/sl/latest/>`_"
 
 msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
 msgstr "`Sırpça <https://docs.veyon.io/sr/latest/>`_"
+
+msgid "`Swedish <https://docs.veyon.io/sv/latest/>`_"
+msgstr ""
+
+msgid "`Turkish <https://docs.veyon.io/tr/latest/>`_"
+msgstr ""
 
 msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
 msgstr "`Ukraynaca <https://docs.veyon.io/uk/latest/>`_"

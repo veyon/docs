@@ -16,8 +16,8 @@ Online documentation
 PDF download
 ------------
 
-* `Veyon Administrator Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.2/veyon-admin-manual-en_4.9.2.pdf>`_
-* `Veyon User Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.2/veyon-user-manual-en_4.9.2.pdf>`_
+* `Veyon Administrator Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-en_4.9.5.pdf>`_
+* `Veyon User Manual PDF <https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-en_4.9.5.pdf>`_
 
 Other languages
 ---------------
@@ -37,4 +37,6 @@ Other languages
 * `Russian <https://docs.veyon.io/ru/latest/>`_
 * `Slovenian <https://docs.veyon.io/sl/latest/>`_
 * `Serbian <https://docs.veyon.io/sr/latest/>`_
+* `Swedish <https://docs.veyon.io/sv/latest/>`_
+* `Turkish <https://docs.veyon.io/tr/latest/>`_
 * `Ukrainian <https://docs.veyon.io/uk/latest/>`_
