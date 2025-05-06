@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Tobias Junghans, 2024
-# Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024
 # Peeter Ramst <peeter@aste.edu.ee>, 2025
+# Peeter Ramst <peeter.ramst@aste.edu.ee>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.4\n"
+"Project-Id-Version: Veyon 4.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 13:51+0200\n"
+"POT-Creation-Date: 2025-05-06 10:24+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Peeter Ramst <peeter@aste.edu.ee>, 2025\n"
+"Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2025\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4224,6 +4224,45 @@ msgstr ""
 "Platvormipõhist teavet individuaalse sisemise VNC-serveri konfigureerimise "
 "kohta leiate peatükist :ref:`Platvormi märkused`."
 
+msgid "Session metadata"
+msgstr ""
+
+msgid ""
+"This section (only visible in advanced view mode) allows configuring what "
+"kind of additional session-specific information the Veyon Service provides "
+"as so called *session metadata*. This metadata can be used by Veyon Master "
+"for example as computer name or as computer UID role (see "
+":guilabel:`Advanced settings` in :ref:`RefMaster`)."
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid ""
+"Specify what kind of entity to read and provide as session metadata. "
+"Currently either the value of an environment variable or a registry key can "
+"be read."
+msgstr ""
+
+msgid "Environment variable name"
+msgstr ""
+
+msgid ""
+"Specify the name of the environment variable whose value should be provided "
+"as session metadata. Make sure to set :guilabel:`Content` to "
+":guilabel:`Value of an environment variable`."
+msgstr ""
+
+msgid "Registry key"
+msgstr "Registrivõti"
+
+msgid ""
+"Specify the full name of a registry key (such as "
+"``HKEY_CURRENT_USER\\Software\\Example\\Value``) whose value should be "
+"provided as session metadata. Make sure to set :guilabel:`Content` to "
+":guilabel:`Value of a registry key`."
+msgstr ""
+
 msgid "Master"
 msgstr "Master"
 
@@ -4344,6 +4383,18 @@ msgstr ""
 "värskendatakse. Mida lühem on intervall, seda suurem on põhimasina "
 "protsessori koormus ja kogu võrgu koormus."
 
+msgid "Thumbnail aspect ratio"
+msgstr "Pisipildi kuvasuhe"
+
+msgid ""
+"Choose one of the available aspect ratios if the screens of the monitored "
+"computers have different aspect ratios and you want the thumbnails appear "
+"uniformly."
+msgstr ""
+
+msgid "**Default:** *Auto*"
+msgstr ""
+
 msgid "Background color"
 msgstr "Taustavärv"
 
@@ -4396,6 +4447,54 @@ msgstr ""
 
 msgid "**Default:** *Computer and user name*"
 msgstr "**Vaikimisi:** *Arvuti ja kasutaja nimi*"
+
+msgid "Thumbnail spacing"
+msgstr "Pisipiltide vahe"
+
+msgid ""
+"The vertical and horizontal spacing between thumbnails can be configured "
+"through this setting."
+msgstr ""
+
+msgid "**Default:** *16 px*"
+msgstr ""
+
+msgid "**Advanced**"
+msgstr ""
+
+msgid "This section is only visible in advanced view mode."
+msgstr ""
+
+msgid "Computer name source"
+msgstr ""
+
+msgid ""
+"By default Veyon Master uses the computer name from the configured network "
+"object directory as computer name and displays it below the thumbnails, "
+"depending on user interface settings. If no dedicated computer name is "
+"available, the host address (hostname or IP address) of the computer is "
+"used. This behavior can be overridden by setting the computer name source to"
+" one of the available options."
+msgstr ""
+
+msgid "Computer UID role"
+msgstr ""
+
+msgid ""
+"Veyon Master computes internal UIDs for each computer to store which "
+"computers are selected and where they were placed manually (when using "
+"custom computer arrangement). By default the UID is calculated from the "
+"computer name, host address and MAC address. When working with thin clients,"
+" usually the Veyon Service runs in the virtual sessions/machines which thin "
+"clients connect to. Computer UIDs then are related to the names or addresses"
+" of the virtual sessions/machines and not to the thin clients. It's "
+"therefore not possible to create a persistent custom computer arrangements "
+"representing the thin clients with their physical positions. The recommended"
+" solution is to configure the Veyon Service such that it provides name or "
+"address of the thin clients in the :ref:`session metadata "
+"<RefSessionMetadata>` and to set the computer UID role to :guilabel:`Session"
+" metadata hash`."
+msgstr ""
 
 msgid "Behaviour"
 msgstr "Käitumine"
@@ -5341,6 +5440,9 @@ msgstr "localhost"
 
 msgid "External VNC server"
 msgstr "Väline VNC-server"
+
+msgid "User session"
+msgstr ""
 
 msgid "Image quality"
 msgstr "Pildikvaliteet"

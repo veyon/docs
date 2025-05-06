@@ -283,6 +283,26 @@ Plugin
 
 .. hint:: Platform-specific information on how to configure the individual internal VNC server can be found in chapter :ref:`PlatformNotes`.
 
+.. index:: Session metadata, User session
+
+.. _RefSessionMetadata:
+
+Session metadata
+++++++++++++++++
+
+This section (only visible in advanced view mode) allows configuring what kind of additional session-specific information the Veyon Service provides as so called *session metadata*. This metadata can be used by Veyon Master for example as computer name or as computer UID role (see :guilabel:`Advanced settings` in :ref:`RefMaster`).
+
+Content
+    Specify what kind of entity to read and provide as session metadata. Currently either the value of an environment variable or a registry key can be read.
+
+    **Default:** *None*
+
+Environment variable name
+    Specify the name of the environment variable whose value should be provided as session metadata. Make sure to set :guilabel:`Content` to :guilabel:`Value of an environment variable`.
+
+Registry key
+    Specify the full name of a registry key (such as ``HKEY_CURRENT_USER\Software\Example\Value``) whose value should be provided as session metadata. Make sure to set :guilabel:`Content` to :guilabel:`Value of a registry key`.
+
 .. _RefMaster:
 
 Master
@@ -344,6 +364,13 @@ Thumbnail update interval
 
     **Default:** *1000 ms*
 
+.. index:: Thumbnail aspect ratio
+
+Thumbnail aspect ratio
+    Choose one of the available aspect ratios if the screens of the monitored computers have different aspect ratios and you want the thumbnails appear uniformly.
+
+    **Default:** *Auto*
+
 .. index:: Background color
 
 Background color
@@ -371,6 +398,23 @@ Sort order
     This setting allows specifying the sort order for computers in the monitor view. If the caption is configured to display only user names it may make sense to change the sort order to *Only user name* as well.
 
     **Default:** *Computer and user name*
+
+.. index:: Thumbnail spacing
+
+Thumbnail spacing
+    The vertical and horizontal spacing between thumbnails can be configured through this setting.
+
+    **Default:** *16 px*
+
+**Advanced**
+
+This section is only visible in advanced view mode.
+
+Computer name source
+    By default Veyon Master uses the computer name from the configured network object directory as computer name and displays it below the thumbnails, depending on user interface settings. If no dedicated computer name is available, the host address (hostname or IP address) of the computer is used. This behavior can be overridden by setting the computer name source to one of the available options.
+
+Computer UID role
+    Veyon Master computes internal UIDs for each computer to store which computers are selected and where they were placed manually (when using custom computer arrangement). By default the UID is calculated from the computer name, host address and MAC address. When working with thin clients, usually the Veyon Service runs in the virtual sessions/machines which thin clients connect to. Computer UIDs then are related to the names or addresses of the virtual sessions/machines and not to the thin clients. It's therefore not possible to create a persistent custom computer arrangements representing the thin clients with their physical positions. The recommended solution is to configure the Veyon Service such that it provides name or address of the thin clients in the :ref:`session metadata <RefSessionMetadata>` and to set the computer UID role to :guilabel:`Session metadata hash`.
 
 
 Behaviour
