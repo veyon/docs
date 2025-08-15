@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.5\n"
+"Project-Id-Version: Veyon 4.9.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 13:27+0200\n"
+"POT-Creation-Date: 2025-08-15 21:29+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: German (https://app.transifex.com/veyon-solutions/teams/65452/de/)\n"
@@ -3477,6 +3477,9 @@ msgstr ""
 "Fensters, das das Problem verursacht, korrigieren, den zugehörigen Prozess "
 "beenden oder den Benutzer abmelden. Die entsprechende Maßnahme kann je nach "
 "gewünschtem Verhalten ausgewählt werden. "
+
+msgid "**Default:** *Fix window attributes*"
+msgstr "**Vorgabe:** *Fensterattribute anpassen*"
 
 msgid "User authentication"
 msgstr "Benutzerauthentifizierung"
