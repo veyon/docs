@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yi-Fei Yang <fei249@yahoo.com.tw>, 2021
+# Yi-Fei Yang <fei249@yahoo.com.tw>, 2025
 # Tobias Junghans, 2025
 # 
 #, fuzzy
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 14:48+0200\n"
+"POT-Creation-Date: 2025-08-15 13:32+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
 "Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -33,21 +33,21 @@ msgstr "PDF 下載"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
+"en_4.9.7.pdf>`_"
 msgstr ""
 "`Veyon 管理員手冊 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
+"en_4.9.7.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
+"en_4.9.7.pdf>`_"
 msgstr ""
 "`Veyon 使用者手冊 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
+"en_4.9.7.pdf>`_"
 
 msgid "Other languages"
 msgstr "其它語言"
@@ -98,10 +98,10 @@ msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
 msgstr "`Serbian <https://docs.veyon.io/sr/latest/>`_"
 
 msgid "`Swedish <https://docs.veyon.io/sv/latest/>`_"
-msgstr ""
+msgstr "`Swedish <https://docs.veyon.io/sv/latest/>`_"
 
 msgid "`Turkish <https://docs.veyon.io/tr/latest/>`_"
-msgstr ""
+msgstr "`Turkish <https://docs.veyon.io/tr/latest/>`_"
 
 msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
 msgstr "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"

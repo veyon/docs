@@ -226,6 +226,13 @@ Query options
 Query nested user groups (supported by AD only)
     If you have nested user groups (currently supported by Active Directory only), you can enable this option to make Veyon query all (even indirect) groups of a user. When enabled, you could for example create a group ``Veyon Users`` with the existing user groups ``Teachers`` and ``IT Staff`` as members. The ``Veyon Users`` group can then be used for :ref:`ConfAccessControl` purposes.
 
+    **Default:** *disabled*
+
+Map container/OU structure 1:1 to locations
+	When using the :ref:`LDAPComputerLocations` option *Computer containers or OUs*, all containers/OUs are shown in a flat list per default. If instead the original container/OU structure should be displayed, simply enable this option.
+
+    **Default:** *disabled*
+
 Group member identification
 +++++++++++++++++++++++++++
 

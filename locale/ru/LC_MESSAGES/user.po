@@ -10,16 +10,16 @@
 # Andrey Atapin <atab74@gmail.com>, 2020
 # Denis Basik <denisbasik@gmail.com>, 2021
 # Tobias Junghans, 2022
-# Elena Mishina, 2023
+# Elena Mishina, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.4\n"
+"Project-Id-Version: Veyon 4.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 14:44+0200\n"
+"POT-Creation-Date: 2025-04-30 13:55+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Elena Mishina, 2023\n"
+"Last-Translator: Elena Mishina, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/veyon-solutions/teams/65452/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,6 +169,11 @@ msgid ""
 " computer is unreachable or access is denied, the icon changes accordingly "
 "and a status message is shown in the tooltip of the computer."
 msgstr ""
+"До тех пор, пока нет связи с компьютером, вместо содержимого экрана "
+"отображается значок компьютера. После запуска программы значок изначально "
+"окрашен в серый цвет. Как только программа обнаруживает, что компьютер "
+"недоступен или доступ запрещен, значок соответствующим образом меняется, а в"
+" подсказке компьютера отображается сообщение о состоянии."
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
@@ -1368,6 +1373,11 @@ msgid ""
 " or partially occupied rooms at the same time while concentrating on the "
 "computers that are actually switched on."
 msgstr ""
+"Кнопка |powered-on| (:guilabel:`Показывать только работающие компьютеры`) "
+"скрывает все компьютеры, которые выключены, не подключены или недоступны по "
+"другим причинам. Это позволяет контролировать большое количество компьютеров"
+" или частично занятых комнат одновременно, концентрируясь на компьютерах, "
+"которые фактически включены."
 
 msgid "powered-on"
 msgstr "powered-on"
@@ -1378,9 +1388,14 @@ msgid ""
 "possible to monitor a large number of computers or partially occupied rooms "
 "at the same time while concentrating on the computers actually in use."
 msgstr ""
+"Кнопка |logged-on-users| (:guilabel:`Показывать только те компьютеры, где "
+"пользователи выполнили вход в систему`) скрывает все компьютеры, на которых "
+"нет залогиненных пользователей. Это позволяет одновременно контролировать "
+"большое количество компьютеров или частично занятых комнат, концентрируясь "
+"на фактически используемых компьютерах."
 
 msgid "logged-on-users"
-msgstr ""
+msgstr "logged-on-users"
 
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "

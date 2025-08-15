@@ -5,6 +5,7 @@
 # 
 # Translators:
 # turbo YJ <casco1004@gmail.com>, 2019
+# Gihun Ham <progh2@gmail.com>, 2025
 # Tobias Junghans, 2025
 # 
 #, fuzzy
@@ -12,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 14:48+0200\n"
+"POT-Creation-Date: 2025-08-15 13:32+0200\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
 "Last-Translator: Tobias Junghans, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/veyon-solutions/teams/65452/ko/)\n"
@@ -33,75 +34,75 @@ msgstr "PDF 다운로드"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
+"en_4.9.7.pdf>`_"
 msgstr ""
 "`Veyon 관리자 매뉴얼 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-admin-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
+"en_4.9.7.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
+"en_4.9.7.pdf>`_"
 msgstr ""
 "`Veyon 사용자 매뉴얼 PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.5/veyon-user-manual-"
-"en_4.9.5.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
+"en_4.9.7.pdf>`_"
 
 msgid "Other languages"
-msgstr ""
+msgstr "다른 언어"
 
 msgid "`Chinese <https://docs.veyon.io/zh/latest/>`_"
-msgstr ""
+msgstr "`중국어 <https://docs.veyon.io/zh/latest/>`_"
 
 msgid "`Chinese (Taiwan) <https://docs.veyon.io/zh_TW/latest/>`_"
-msgstr ""
+msgstr "`중국어 (대만) <https://docs.veyon.io/zh_TW/latest/>`_"
 
 msgid "`Czech <https://docs.veyon.io/cs/latest/>`_"
-msgstr ""
+msgstr "`체코어 <https://docs.veyon.io/cs/latest/>`_"
 
 msgid "`Dutch <https://docs.veyon.io/nl/latest/>`_"
-msgstr ""
+msgstr "`네덜란어 <https://docs.veyon.io/nl/latest/>`_"
 
 msgid "`Spanish <https://docs.veyon.io/es/latest/>`_"
-msgstr ""
+msgstr "`스페인어 <https://docs.veyon.io/es/latest/>`_"
 
 msgid "`Estonian <https://docs.veyon.io/et/latest/>`_"
-msgstr ""
+msgstr "`에스토니아어 <https://docs.veyon.io/et/latest/>`_"
 
 msgid "`French <https://docs.veyon.io/fr/latest/>`_"
-msgstr ""
+msgstr "`프랑스어 <https://docs.veyon.io/fr/latest/>`_"
 
 msgid "`German <https://docs.veyon.io/de/latest/>`_"
-msgstr ""
+msgstr "`독일어 <https://docs.veyon.io/de/latest/>`_"
 
 msgid "`Hungarian <https://docs.veyon.io/hu/latest/>`_"
-msgstr ""
+msgstr "`헝가리어 <https://docs.veyon.io/hu/latest/>`_"
 
 msgid "`Italian <https://docs.veyon.io/it/latest/>`_"
-msgstr ""
+msgstr "`이탈리아어 <https://docs.veyon.io/it/latest/>`_"
 
 msgid "`Lithuanian <https://docs.veyon.io/lt/latest/>`_"
-msgstr ""
+msgstr "`리투아니아어 <https://docs.veyon.io/lt/latest/>`_"
 
 msgid "`Polish <https://docs.veyon.io/pl/latest/>`_"
-msgstr ""
+msgstr "`폴란드어 <https://docs.veyon.io/pl/latest/>`_"
 
 msgid "`Russian <https://docs.veyon.io/ru/latest/>`_"
-msgstr ""
+msgstr "`러시아어 <https://docs.veyon.io/ru/latest/>`_"
 
 msgid "`Slovenian <https://docs.veyon.io/sl/latest/>`_"
-msgstr ""
+msgstr "`슬로베니아어 <https://docs.veyon.io/sl/latest/>`_"
 
 msgid "`Serbian <https://docs.veyon.io/sr/latest/>`_"
-msgstr ""
+msgstr "`세르비아어 <https://docs.veyon.io/sr/latest/>`_"
 
 msgid "`Swedish <https://docs.veyon.io/sv/latest/>`_"
-msgstr ""
+msgstr "`스위스어 <https://docs.veyon.io/sv/latest/>`_"
 
 msgid "`Turkish <https://docs.veyon.io/tr/latest/>`_"
-msgstr ""
+msgstr "`튀르키예어 <https://docs.veyon.io/tr/latest/>`_"
 
 msgid "`Ukrainian <https://docs.veyon.io/uk/latest/>`_"
-msgstr ""
+msgstr "`우크라이나어 <https://docs.veyon.io/uk/latest/>`_"

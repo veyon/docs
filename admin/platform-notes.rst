@@ -20,6 +20,9 @@ Enable SAS generation by software (Ctrl+Alt+Del)
 
     **Default:** *enabled*
 
+Handling of interfering windows
+    Applications (or dedicated tools) may sometimes interfere with the Veyon screen capture mechanisms, either unintentionally or intentionally. This manifests itself in Veyon displaying a black screen, even though the user can see and use the desktop interface normally. In this case, Veyon can either correct the properties of the window causing the problem, terminate the associated process, or log the user out. The appropriate action can be selected depending on the desired behavior.
+
 .. index:: User authentication, Authentication mechanism
 
 User authentication
