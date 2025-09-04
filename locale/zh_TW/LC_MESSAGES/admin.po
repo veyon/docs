@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.5\n"
+"Project-Id-Version: Veyon 4.9.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 13:27+0200\n"
+"POT-Creation-Date: 2025-08-15 21:29+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -2695,6 +2695,9 @@ msgid ""
 "the associated process, or log the user out. The appropriate action can be "
 "selected depending on the desired behavior."
 msgstr ""
+
+msgid "**Default:** *Fix window attributes*"
+msgstr "**預設值:** *修復視窗屬性*"
 
 msgid "User authentication"
 msgstr "使用者身份驗證"
