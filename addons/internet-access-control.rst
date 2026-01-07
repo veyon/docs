@@ -40,7 +40,7 @@ This is the standard backend that should preferably be used, as it offers the mo
 
 
 Windows
-    Veyon controls the integrated Windows firewall and makes temporary changes to its configuration. This means that the Windows firewall must be activated. In addition, changes to the configuration of the Windows firewall must not be prevented by group policies.
+    Veyon controls the integrated Windows Firewall and makes temporary changes to its configuration. This means that the **Windows Firewall must be activated**. In addition, changes to the **configuration of the Windows Firewall must not be prevented by group policies.**
 
 Linux
     Veyon works on the basis of *nftables* and calls the related command line tool ``nft``. This is used to temporarily add additional rules to block Internet access.
@@ -51,7 +51,7 @@ Block all outbound traffic for TCP and UDP ports
     This is the default mode and should work in most environments. In this mode the Veyon Service adds special rules to the firewall which block any traffic to the configured ports. Use this mode if blocking the TCP and UDP ports 80/443 and one or multiple custom ports (separated by space) is sufficient. To block all traffic use the second mode.
 
 Block all outbound traffic to non-local subnets
-    In this mode, all network traffic directed to networks outside the local subnets is blocked. On Windows, the Veyon service temporarily changes the configuration of all firewall profiles (domain, private, public) to “ Outbound connections that do not match a rule are blocked”. If :guilabel:`Exceptions` are configured, appropriate rules are added to allow access to these networks, hosts or ports. This can be used, for example, to preserve access to the intranet and other internally hosted platforms. External websites can also be defined as exceptions here under certain circumstances, but the addresses of all servers/CDNs from which the website loads resources must then also be specified.
+    In this mode, all network traffic directed to networks outside the local subnets is blocked. On Windows, the Veyon service temporarily changes the configuration of all firewall profiles (domain, private, public) to "Outbound connections that do not match a rule are blocked". If :guilabel:`Exceptions` are configured, appropriate rules are added to allow access to these networks, hosts or ports. This can be used, for example, to preserve access to the intranet and other internally hosted platforms. External websites can also be defined as exceptions here under certain circumstances, but the addresses of all servers/CDNs from which the website loads resources must then also be specified.
 
 Block traffic to (e.g. proxy or DNS) servers
     If the student computers access the Internet via a proxy server, you can select this option. A firewall rule is then added that simply blocks all traffic to the proxy address. Alternatively, access to certain DNS servers can also be blocked, although in most cases this leads to problems when accessing internal resources such as network drives etc.

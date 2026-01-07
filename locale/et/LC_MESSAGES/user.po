@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2025, Veyon Solutions
+# Copyright (C) 2017-2026, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Peeter Ramst <peeter@aste.edu.ee>, 2021
-# Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024
+# Peeter Ramst <peeter.ramst@aste.edu.ee>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.5\n"
+"Project-Id-Version: Veyon 4.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 13:55+0200\n"
+"POT-Creation-Date: 2026-01-07 18:19+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2024\n"
+"Last-Translator: Peeter Ramst <peeter.ramst@aste.edu.ee>, 2025\n"
 "Language-Team: Estonian (https://app.transifex.com/veyon-solutions/teams/65452/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,6 +162,10 @@ msgid ""
 " computer is unreachable or access is denied, the icon changes accordingly "
 "and a status message is shown in the tooltip of the computer."
 msgstr ""
+"Seni kuni arvutiga ühendus puudub, kuvatakse ekraanisisu asemel arvutiikoon."
+" Pärast programmi käivitamist on ikoon esialgu hall. Niipea kui programm "
+"tuvastab, et arvuti pole kättesaadav või juurdepääs on keelatud, muutub "
+"ikoon vastavalt ja arvuti kohtspikris kuvatakse olekuteade."
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
@@ -1333,6 +1337,11 @@ msgid ""
 " or partially occupied rooms at the same time while concentrating on the "
 "computers that are actually switched on."
 msgstr ""
+"Nupp |sisse lülitatud| (:guilabel:`Kuva ainult sisse lülitatud arvuteid`) "
+"peidab kõik arvutid, mis pole sisse lülitatud, ühendatud või muul põhjusel "
+"ligipääsmatud. See võimaldab jälgida korraga suurt hulka arvuteid või "
+"osaliselt hõivatud ruume, keskendudes samal ajal arvutitele, mis on "
+"tegelikult sisse lülitatud."
 
 msgid "powered-on"
 msgstr "sisselülitatud"
@@ -1343,9 +1352,13 @@ msgid ""
 "possible to monitor a large number of computers or partially occupied rooms "
 "at the same time while concentrating on the computers actually in use."
 msgstr ""
+"Nupp |logitud kasutajad| (:guilabel:`Kuva ainult sisselogitud kasutajatega "
+"arvuteid`) peidab kõik arvutid, kuhu ükski kasutaja pole sisse logitud. See "
+"võimaldab jälgida korraga suurt hulka arvuteid või osaliselt hõivatud ruume,"
+" keskendudes samal ajal tegelikult kasutusel olevatele arvutitele."
 
 msgid "logged-on-users"
-msgstr ""
+msgstr "sisselogitud kasutajad"
 
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "

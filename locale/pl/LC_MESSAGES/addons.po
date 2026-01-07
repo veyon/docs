@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2025, Veyon Solutions
+# Copyright (C) 2017-2026, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -14,9 +14,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.5\n"
+"Project-Id-Version: Veyon 4.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 13:00+0200\n"
+"POT-Creation-Date: 2026-01-07 18:19+0100\n"
 "PO-Revision-Date: 2024-09-13 09:03+0000\n"
 "Last-Translator: Dariusz Koryto <dariusz@koryto.eu>, 2025\n"
 "Language-Team: Polish (https://app.transifex.com/veyon-solutions/teams/65452/pl/)\n"
@@ -449,15 +449,11 @@ msgid "Windows"
 msgstr "Windows"
 
 msgid ""
-"Veyon controls the integrated Windows firewall and makes temporary changes "
-"to its configuration. This means that the Windows firewall must be "
-"activated. In addition, changes to the configuration of the Windows firewall"
-" must not be prevented by group policies."
+"Veyon controls the integrated Windows Firewall and makes temporary changes "
+"to its configuration. This means that the **Windows Firewall must be "
+"activated**. In addition, changes to the **configuration of the Windows "
+"Firewall must not be prevented by group policies.**"
 msgstr ""
-"Aplikacja Veyon kontroluje zintegrowaną zaporę systemu Windows i wprowadza "
-"tymczasowe zmiany w jej konfiguracji. Oznacza to, że zapora systemu Windows "
-"musi być aktywowana. Ponadto zmiany w konfiguracji zapory systemu Windows "
-"nie mogą być blokowane przez zasady grupy."
 
 msgid "Linux"
 msgstr "Linux"
@@ -491,8 +487,8 @@ msgstr "Zablokuj cały ruch wychodzący do nielokalnych podsieci"
 msgid ""
 "In this mode, all network traffic directed to networks outside the local "
 "subnets is blocked. On Windows, the Veyon service temporarily changes the "
-"configuration of all firewall profiles (domain, private, public) to “ "
-"Outbound connections that do not match a rule are blocked”. If "
+"configuration of all firewall profiles (domain, private, public) to "
+"\"Outbound connections that do not match a rule are blocked\". If "
 ":guilabel:`Exceptions` are configured, appropriate rules are added to allow "
 "access to these networks, hosts or ports. This can be used, for example, to "
 "preserve access to the intranet and other internally hosted platforms. "

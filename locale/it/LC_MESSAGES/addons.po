@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2025, Veyon Solutions
+# Copyright (C) 2017-2026, Veyon Solutions
 # This file is distributed under the same license as the Veyon package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# albanobattistella <albanobattistella@gmail.com>, 2025
 # Tobias Junghans, 2025
+# albanobattistella <albanobattistella@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.5\n"
+"Project-Id-Version: Veyon 4.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 13:00+0200\n"
+"POT-Creation-Date: 2026-01-07 18:19+0100\n"
 "PO-Revision-Date: 2024-09-13 09:03+0000\n"
-"Last-Translator: Tobias Junghans, 2025\n"
+"Last-Translator: albanobattistella <albanobattistella@gmail.com>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/veyon-solutions/teams/65452/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -611,15 +611,15 @@ msgid "Windows"
 msgstr "Windows"
 
 msgid ""
-"Veyon controls the integrated Windows firewall and makes temporary changes "
-"to its configuration. This means that the Windows firewall must be "
-"activated. In addition, changes to the configuration of the Windows firewall"
-" must not be prevented by group policies."
+"Veyon controls the integrated Windows Firewall and makes temporary changes "
+"to its configuration. This means that the **Windows Firewall must be "
+"activated**. In addition, changes to the **configuration of the Windows "
+"Firewall must not be prevented by group policies.**"
 msgstr ""
-"Veyon controlla il firewall Windows integrato e apporta modifiche temporanee"
-" alla sua configurazione. Ciò significa che il firewall Windows deve essere "
-"attivato. Inoltre, le modifiche alla configurazione del firewall Windows non"
-" devono essere impedite dai criteri di gruppo."
+"Veyon controlla il firewall integrato di Windows e apporta modifiche "
+"temporanee alla sua configurazione. Ciò significa che **Windows Firewall "
+"deve essere attivato**. Inoltre, le modifiche alla **configurazione di "
+"Windows Firewall non devono essere impedite dalle policies di gruppo.**"
 
 msgid "Linux"
 msgstr "Linux"
@@ -665,8 +665,8 @@ msgstr "Blocca tutto il traffico in uscita verso subnet non locali"
 msgid ""
 "In this mode, all network traffic directed to networks outside the local "
 "subnets is blocked. On Windows, the Veyon service temporarily changes the "
-"configuration of all firewall profiles (domain, private, public) to “ "
-"Outbound connections that do not match a rule are blocked”. If "
+"configuration of all firewall profiles (domain, private, public) to "
+"\"Outbound connections that do not match a rule are blocked\". If "
 ":guilabel:`Exceptions` are configured, appropriate rules are added to allow "
 "access to these networks, hosts or ports. This can be used, for example, to "
 "preserve access to the intranet and other internally hosted platforms. "
@@ -678,13 +678,13 @@ msgstr ""
 "subnet locali viene bloccato. Su Windows, il servizio Veyon modifica "
 "temporaneamente la configurazione di tutti i profili firewall (dominio, "
 "privato, pubblico) in \"Le connessioni in uscita che non corrispondono a una"
-" regola vengono bloccate\". Se sono configurate :guilabel:`Eccezioni`, "
+" regola vengono bloccate\". Se vengono configurate delle `Eccezioni`, "
 "vengono aggiunte regole appropriate per consentire l'accesso a queste reti, "
 "host o porte. Questo può essere utilizzato, ad esempio, per preservare "
 "l'accesso all'intranet e ad altre piattaforme ospitate internamente. Anche i"
-" siti Web esterni possono essere definiti come eccezioni in determinate "
-"circostanze, ma devono essere specificati anche gli indirizzi di tutti i "
-"server/CDN da cui il sito Web carica risorse."
+" siti web esterni possono essere definiti come eccezioni in determinate "
+"circostanze, ma è necessario specificare anche gli indirizzi di tutti i "
+"server/CDN da cui il sito web carica le risorse."
 
 msgid "Block traffic to (e.g. proxy or DNS) servers"
 msgstr "Blocca il traffico ai server (ad esempio proxy o DNS)"
