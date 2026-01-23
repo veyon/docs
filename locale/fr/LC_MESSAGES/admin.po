@@ -11,16 +11,16 @@
 # 8b12f30325c377a17c6703ed025b6ed4, 2021
 # Éric B., 2021
 # Tobias Junghans, 2024
-# Lachaux Patrick, 2025
+# Lachaux Patrick, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.8\n"
+"Project-Id-Version: Veyon 4.10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 18:19+0100\n"
+"POT-Creation-Date: 2026-01-23 18:40+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Lachaux Patrick, 2025\n"
+"Last-Translator: Lachaux Patrick, 2026\n"
 "Language-Team: French (https://app.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3836,6 +3836,65 @@ msgstr ""
 ":guilabel:`Authentification par identifiant` et cliquer sur le bouton  "
 ":guilabel:`Test`."
 
+msgid "User sessions"
+msgstr "Sessions utilisateurs"
+
+msgid "Minimum session lifetime before server start"
+msgstr "Durée de vie minimale de la session avant le démarrage du serveur"
+
+msgid ""
+"This setting specifies the amount of seconds to wait before starting a Veyon"
+" Server instance in a new session. Increase this value if you encounter "
+"issues with improperly initialized Veyon Server instances or the tray icon."
+msgstr ""
+
+msgid "**Default:** *3 s*"
+msgstr ""
+
+msgid "Login key sequence"
+msgstr "Séquence de touches de connexion"
+
+msgid ""
+"If the default sequence for logging in users does not work, alternative "
+"schemes can be configured. Such a sequence should always contain the "
+"``%username%`` and ``%password%`` placeholders and can be embraced by "
+"arbitrary characters or key symbols. All key symbols supported by "
+"``XStringToKeysym()`` can be used while the ``XK_`` prefix should be "
+"omitted."
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait before sending the "
+"first character of the username. This value can be increased on slow "
+"computers to ensure that the username input field is ready."
+msgstr ""
+
+msgid "Key press interval for text input"
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait between the "
+"individual simulated key presses when entering text in the username or "
+"password field. Increase this value if you encounter logon failures caused "
+"by missing characters."
+msgstr ""
+
+msgid "**Default:** *5 ms*"
+msgstr ""
+
+msgid "Key press interval to control input fields"
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait after simulating key"
+" presses affecting input field selection (such as :guilabel:`Tab` or "
+":guilabel:`Return`). Increase this value if you encounter logon failures "
+"caused by improperly switched input fields."
+msgstr ""
+
+msgid "**Default:** *100 ms*"
+msgstr "**Défaut:** *100 ms*"
+
 msgid "SAS generation"
 msgstr "Génération touches SAS"
 
@@ -4777,6 +4836,20 @@ msgid ""
 " metadata hash`."
 msgstr ""
 
+msgid "Identify users in guest sessions"
+msgstr ""
+
+msgid ""
+"When this option is enabled and guest users are logged in to remote "
+"computers, a pop-up will appear on those computers, requesting that the "
+"users enter their names. This can be useful for exams where special "
+"anonymous accounts are used. After successful identification, the entered "
+"username is displayed in the monitoring view as it is for regular users."
+msgstr ""
+
+msgid "**Default:** *Never*"
+msgstr ""
+
 msgid "Behaviour"
 msgstr "Comportement"
 
@@ -5216,9 +5289,6 @@ msgstr ""
 "plus faible entraîne une charge de processeur plus élevée et un trafic "
 "réseau accru."
 
-msgid "**Default:** *100 ms*"
-msgstr "**Défaut:** *100 ms*"
-
 msgid "Key frame interval"
 msgstr "Intervalle entre les images clés "
 
@@ -5308,14 +5378,18 @@ msgstr "Transfert de fichier"
 
 msgid ""
 "Starting with Veyon 4.5, an additional configuration page with settings "
-"related to the file transfer feature is available in the advanced view."
+"related to the file transfer features is available in the advanced view."
 msgstr ""
-"À partir de Veyon 4.5, une page de configuration supplémentaire avec des "
-"paramètres liés à la fonction de transfert de fichiers est disponible dans "
-"la vue avancée."
 
-msgid "Directories"
-msgstr "Répertoires"
+msgid ""
+"In order to make a configuration generic and independent of the user, you "
+"should use path variables instead of absolute paths for all directory-"
+"related settings. All information on supported variables can be found in "
+"section :ref:`RefPathVariables`."
+msgstr ""
+
+msgid "Settings for distributing files"
+msgstr ""
 
 msgid "Default source directory"
 msgstr "Répertoire source par défaut"
@@ -5342,9 +5416,6 @@ msgstr ""
 "Modifiez-le si vous ne souhaitez pas stocker les fichiers reçus à la racine "
 "du répertoire de base de l'utilisateur."
 
-msgid "Options"
-msgstr "Options"
-
 msgid "Remember last source directory"
 msgstr "Se souvenir du dernier répertoire source"
 
@@ -5370,6 +5441,100 @@ msgstr ""
 "défaut, il peut arriver que le répertoire de destination n'existe pas. "
 "Gardez cette option activée pour le créer automatiquement à chaque réception"
 " de fichiers côté client."
+
+msgid "Settings for collecting files"
+msgstr ""
+
+msgid ""
+"Starting with Veyon 4.10, settings for the new file collecting feature are "
+"available."
+msgstr ""
+
+msgid ""
+"The first three options are effective on the client side only. Make sure to "
+"adjust them on student devices or in the configuration file which is "
+"deployed to these devies."
+msgstr ""
+
+msgid "Source directory (remote)"
+msgstr ""
+
+msgid ""
+"When the :guilabel:`Collect files` feature is executed on the master device,"
+" files will be collected from the specified directory for each remote "
+"computer."
+msgstr ""
+
+msgid "**Default:** ``%DOCUMENTS%``"
+msgstr ""
+
+msgid "Files to exclude"
+msgstr ""
+
+msgid ""
+"This setting allows specifying wildcards for files which should not be "
+"collected. This can be useful when specifying the desktop as source "
+"directory and all files but shortcuts should be collected. Multiple entries "
+"can be separated by semicolon or space."
+msgstr ""
+
+msgid "**Default:** ``*.lnk;*.desktop``"
+msgstr ""
+
+msgid "Collect files recursively"
+msgstr ""
+
+msgid ""
+"Enable this option if subdirectories inside the source directory should be "
+"collected as well."
+msgstr ""
+
+msgid ""
+"This setting specifies where collected files are stored on the master "
+"computer. Depending on the related settings below, appropriate "
+"subdirectories are created automatically."
+msgstr ""
+
+msgid "Store collected files in"
+msgstr ""
+
+msgid ""
+"Files can either be stored in the destination directory directly or in "
+"appropriate subdirectories. When choosing :guilabel:`Subdirectory based on "
+"date & time` a subdirectory will be created automatically whenever a file "
+"collection process is started. Alternatively it's possible to let the "
+"collecting user enter a name each time."
+msgstr ""
+
+msgid "**Default:** *Directly in the destination directory*"
+msgstr ""
+
+msgid "Group collected files"
+msgstr ""
+
+msgid ""
+"In addition to store files in subdirectories for individual file collection "
+"processes, it's also possible to group the collected files itself by a "
+"grouping attribute (login name, device name etc.). The configured grouping "
+"attribute can be prepended to the filenames of the corresponding collected "
+"files. Alternatively subdirectories are created for the respective users or "
+"devices."
+msgstr ""
+
+msgid ""
+"**Default:** *Store files in subdirectories based on the grouping attribute*"
+msgstr ""
+
+msgid "Grouping attribute"
+msgstr ""
+
+msgid ""
+"This setting specifies the attribute which is used for grouping collected "
+"files into subdirectories or as filename prefix."
+msgstr ""
+
+msgid "**Default:** *User login name*"
+msgstr ""
 
 msgid "WebAPI"
 msgstr "WebAPI"
@@ -5906,6 +6071,29 @@ msgstr ""
 "dans une prochaine version qui supprimera toutes les clés de configuration "
 "héritées."
 
+msgid "Veyon 4.10"
+msgstr ""
+
+msgid ""
+"Veyon 4.10 introduces a new feature for collecting files, complementing the "
+"existing feature for distributing files. There's also a new setting to "
+"request users in guest/anonymous sessions to enter their names in order to "
+"identify themselves. The real names are then shown in Veyon Master and can "
+"also be used for grouping collected files."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "Changements structurels"
+
+msgid "There are no structural changes in Veyon 4.10."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "Changements de configuration"
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.10."
+msgstr ""
+
 msgid "Veyon 4.9"
 msgstr ""
 
@@ -5916,9 +6104,6 @@ msgid ""
 "OpenSSL 3.3."
 msgstr ""
 
-msgid "Structural changes"
-msgstr "Changements structurels"
-
 msgid ""
 "The user groups backend is no longer specific to the access control feature "
 "but used in other scopes as well. This allows e.g. changing the access group"
@@ -5926,9 +6111,6 @@ msgid ""
 "existing features, the relevant configuration keys have been renamed to "
 "match the new scope. See the next subsection for details."
 msgstr ""
-
-msgid "Configuration changes"
-msgstr "Changements de configuration"
 
 msgid ""
 "Two configuration keys have been renamed in Veyon 4.9. When upgrading to "

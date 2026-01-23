@@ -125,3 +125,32 @@ Custom PAM service for user authentication
     If you want to use a dedicated PAM service configuration to authenticate Veyon users you can enter a custom PAM service name here. A simple identifier such as ``veyon`` should be used. If for example set to ``veyon``, the Veyon Authentication helper will use the PAM service ``veyon``, i.e. configuration is taken from the file ``/etc/pam.d/veyon``. Please make sure to provide the PAM service configuration file before using this setting. Otherwise authentication will always fail.
 
     To verify that the custom PAM service is set up properly you can change the :ref:`authentication method <RefAuthentication>` to :guilabel:`Logon authentication` and click the :guilabel:`Test` button.
+
+User sessions
++++++++++++++
+
+Minimum session lifetime before server start
+    This setting specifies the amount of seconds to wait before starting a Veyon Server instance in a new session. Increase this value if you encounter issues with improperly initialized Veyon Server instances or the tray icon.
+
+    **Default:** *3 s*
+
+User login
+++++++++++
+
+Login key sequence
+    If the default sequence for logging in users does not work, alternative schemes can be configured. Such a sequence should always contain the ``%username%`` and ``%password%`` placeholders and can be embraced by arbitrary characters or key symbols. All key symbols supported by ``XStringToKeysym()`` can be used while the ``XK_`` prefix should be omitted.
+
+Input start delay
+	This value specifies the number of milliseconds to wait before sending the first character of the username. This value can be increased on slow computers to ensure that the username input field is ready.
+
+	**Default:** *1000 ms*
+
+Key press interval for text input
+	This value specifies the number of milliseconds to wait between the individual simulated key presses when entering text in the username or password field. Increase this value if you encounter logon failures caused by missing characters.
+
+	**Default:** *5 ms*
+
+Key press interval to control input fields
+	This value specifies the number of milliseconds to wait after simulating key presses affecting input field selection (such as :guilabel:`Tab` or :guilabel:`Return`). Increase this value if you encounter logon failures caused by improperly switched input fields.
+
+	**Default:** *100 ms*

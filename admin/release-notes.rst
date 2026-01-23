@@ -19,6 +19,24 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.10
+----------
+
+Overview
+++++++++
+
+Veyon 4.10 introduces a new feature for collecting files, complementing the existing feature for distributing files. There's also a new setting to request users in guest/anonymous sessions to enter their names in order to identify themselves. The real names are then shown in Veyon Master and can also be used for grouping collected files.
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.10.
+
+Configuration changes
++++++++++++++++++++++
+
+No configuration keys have been changed or renamed in Veyon 4.10.
+
 Veyon 4.9
 ---------
 

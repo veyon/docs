@@ -6,17 +6,17 @@
 # Translators:
 # Ali Anıl REYHAN <anilreyhan@gmail.com>, 2021
 # 3909d6133b383976bde86621da215840_711025d, 2025
-# Tobias Junghans, 2025
 # yok yok, 2025
+# Tobias Junghans, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Veyon 4.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 18:19+0100\n"
+"POT-Creation-Date: 2026-01-23 16:57+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
-"Last-Translator: yok yok, 2025\n"
+"Last-Translator: Tobias Junghans, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/veyon-solutions/teams/65452/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,21 +35,21 @@ msgstr "PDF indir"
 
 msgid ""
 "`Veyon Administrator Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
-"en_4.9.7.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.10.0/veyon-admin-manual-"
+"en_4.10.0.pdf>`_"
 msgstr ""
 "`Veyon Yönetici Kılavuzu PDF'si "
-"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-admin-manual-"
-"en_4.9.7.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.10.0/veyon-admin-manual-"
+"en_4.10.0.pdf>`_"
 
 msgid ""
 "`Veyon User Manual PDF "
-"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
-"en_4.9.7.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.10.0/veyon-user-manual-"
+"en_4.10.0.pdf>`_"
 msgstr ""
 "`Veyon Kullanım Kılavuzu PDF'si "
-"<https://github.com/veyon/docs/releases/download/v4.9.7/veyon-user-manual-"
-"en_4.9.7.pdf>`_"
+"<https://github.com/veyon/docs/releases/download/v4.10.0/veyon-user-manual-"
+"en_4.10.0.pdf>`_"
 
 msgid "Other languages"
 msgstr "Diğer diller"

@@ -6,16 +6,16 @@
 # Translators:
 # Adam Tjernström, 2019
 # Tobias Junghans, 2019
-# Daniel Nylander <po@danielnylander.se>, 2025
+# Daniel Nylander <po@danielnylander.se>, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.8\n"
+"Project-Id-Version: Veyon 4.10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 18:19+0100\n"
+"POT-Creation-Date: 2026-01-23 18:40+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/veyon-solutions/teams/65452/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3687,6 +3687,65 @@ msgstr ""
 "kan du ändra :ref:`authentication method <RefAuthentication>` till "
 ":guilabel:`Logon authentication` och klicka på :guilabel:`Test`."
 
+msgid "User sessions"
+msgstr "Användarsessioner"
+
+msgid "Minimum session lifetime before server start"
+msgstr "Minsta sessionslivslängd före serverstart"
+
+msgid ""
+"This setting specifies the amount of seconds to wait before starting a Veyon"
+" Server instance in a new session. Increase this value if you encounter "
+"issues with improperly initialized Veyon Server instances or the tray icon."
+msgstr ""
+
+msgid "**Default:** *3 s*"
+msgstr ""
+
+msgid "Login key sequence"
+msgstr "Tangentsekvens för inloggning"
+
+msgid ""
+"If the default sequence for logging in users does not work, alternative "
+"schemes can be configured. Such a sequence should always contain the "
+"``%username%`` and ``%password%`` placeholders and can be embraced by "
+"arbitrary characters or key symbols. All key symbols supported by "
+"``XStringToKeysym()`` can be used while the ``XK_`` prefix should be "
+"omitted."
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait before sending the "
+"first character of the username. This value can be increased on slow "
+"computers to ensure that the username input field is ready."
+msgstr ""
+
+msgid "Key press interval for text input"
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait between the "
+"individual simulated key presses when entering text in the username or "
+"password field. Increase this value if you encounter logon failures caused "
+"by missing characters."
+msgstr ""
+
+msgid "**Default:** *5 ms*"
+msgstr ""
+
+msgid "Key press interval to control input fields"
+msgstr ""
+
+msgid ""
+"This value specifies the number of milliseconds to wait after simulating key"
+" presses affecting input field selection (such as :guilabel:`Tab` or "
+":guilabel:`Return`). Increase this value if you encounter logon failures "
+"caused by improperly switched input fields."
+msgstr ""
+
+msgid "**Default:** *100 ms*"
+msgstr "**Förval:** *100 ms*"
+
 msgid "SAS generation"
 msgstr "SAS generation"
 
@@ -4653,6 +4712,20 @@ msgstr ""
 "metadata <RefSessionMetadata>` och att ställa in dator-UID-rollen till "
 ":guilabel:`Hash för sessionsmetadata`."
 
+msgid "Identify users in guest sessions"
+msgstr ""
+
+msgid ""
+"When this option is enabled and guest users are logged in to remote "
+"computers, a pop-up will appear on those computers, requesting that the "
+"users enter their names. This can be useful for exams where special "
+"anonymous accounts are used. After successful identification, the entered "
+"username is displayed in the monitoring view as it is for regular users."
+msgstr ""
+
+msgid "**Default:** *Never*"
+msgstr ""
+
 msgid "Behaviour"
 msgstr "Beteende"
 
@@ -5077,9 +5150,6 @@ msgstr ""
 "uppdateringsfrekvensen och desto smidigare blir skärmöverföringen. Ett lägre"
 " värde leder dock till högre CPU-belastning och ökad nätverkstrafik."
 
-msgid "**Default:** *100 ms*"
-msgstr "**Förval:** *100 ms*"
-
 msgid "Key frame interval"
 msgstr "Intervall för nyckelram"
 
@@ -5175,13 +5245,18 @@ msgstr "Filöverföring"
 
 msgid ""
 "Starting with Veyon 4.5, an additional configuration page with settings "
-"related to the file transfer feature is available in the advanced view."
+"related to the file transfer features is available in the advanced view."
 msgstr ""
-"Från och med Veyon 4.5 finns en ytterligare konfigurationssida med "
-"inställningar relaterade till filöverföringsfunktionen i den avancerade vyn."
 
-msgid "Directories"
-msgstr "Kataloger"
+msgid ""
+"In order to make a configuration generic and independent of the user, you "
+"should use path variables instead of absolute paths for all directory-"
+"related settings. All information on supported variables can be found in "
+"section :ref:`RefPathVariables`."
+msgstr ""
+
+msgid "Settings for distributing files"
+msgstr "Inställningar för distribuering av filer"
 
 msgid "Default source directory"
 msgstr "Standard källkatalog"
@@ -5208,9 +5283,6 @@ msgstr ""
 "Alla mottagna filer kommer att sparas i denna katalog på klientsidan. Ändra "
 "om du inte vill lagra mottagna filer i roten av användarens hemkatalog."
 
-msgid "Options"
-msgstr "Alternativ"
-
 msgid "Remember last source directory"
 msgstr "Kom ihåg den senaste källkatalogen"
 
@@ -5234,6 +5306,100 @@ msgstr ""
 "När du använder en annan destinationskatalog än standardkatalogen kan det "
 "hända att destinationskatalogen inte finns. Om det här alternativet är "
 "aktiverat skapas den automatiskt när filer tas emot på klientsidan."
+
+msgid "Settings for collecting files"
+msgstr "Inställningar för insamling av filer"
+
+msgid ""
+"Starting with Veyon 4.10, settings for the new file collecting feature are "
+"available."
+msgstr ""
+
+msgid ""
+"The first three options are effective on the client side only. Make sure to "
+"adjust them on student devices or in the configuration file which is "
+"deployed to these devies."
+msgstr ""
+
+msgid "Source directory (remote)"
+msgstr ""
+
+msgid ""
+"When the :guilabel:`Collect files` feature is executed on the master device,"
+" files will be collected from the specified directory for each remote "
+"computer."
+msgstr ""
+
+msgid "**Default:** ``%DOCUMENTS%``"
+msgstr ""
+
+msgid "Files to exclude"
+msgstr ""
+
+msgid ""
+"This setting allows specifying wildcards for files which should not be "
+"collected. This can be useful when specifying the desktop as source "
+"directory and all files but shortcuts should be collected. Multiple entries "
+"can be separated by semicolon or space."
+msgstr ""
+
+msgid "**Default:** ``*.lnk;*.desktop``"
+msgstr ""
+
+msgid "Collect files recursively"
+msgstr "Samla in filer rekursivt"
+
+msgid ""
+"Enable this option if subdirectories inside the source directory should be "
+"collected as well."
+msgstr ""
+
+msgid ""
+"This setting specifies where collected files are stored on the master "
+"computer. Depending on the related settings below, appropriate "
+"subdirectories are created automatically."
+msgstr ""
+
+msgid "Store collected files in"
+msgstr ""
+
+msgid ""
+"Files can either be stored in the destination directory directly or in "
+"appropriate subdirectories. When choosing :guilabel:`Subdirectory based on "
+"date & time` a subdirectory will be created automatically whenever a file "
+"collection process is started. Alternatively it's possible to let the "
+"collecting user enter a name each time."
+msgstr ""
+
+msgid "**Default:** *Directly in the destination directory*"
+msgstr ""
+
+msgid "Group collected files"
+msgstr ""
+
+msgid ""
+"In addition to store files in subdirectories for individual file collection "
+"processes, it's also possible to group the collected files itself by a "
+"grouping attribute (login name, device name etc.). The configured grouping "
+"attribute can be prepended to the filenames of the corresponding collected "
+"files. Alternatively subdirectories are created for the respective users or "
+"devices."
+msgstr ""
+
+msgid ""
+"**Default:** *Store files in subdirectories based on the grouping attribute*"
+msgstr ""
+
+msgid "Grouping attribute"
+msgstr ""
+
+msgid ""
+"This setting specifies the attribute which is used for grouping collected "
+"files into subdirectories or as filename prefix."
+msgstr ""
+
+msgid "**Default:** *User login name*"
+msgstr ""
 
 msgid "WebAPI"
 msgstr "WebAPI"
@@ -5758,6 +5924,29 @@ msgstr ""
 "tidigare version. Det kommer att finnas en uppstädningsmekanism i en "
 "framtida version som tar bort alla äldre konfigurationsnycklar."
 
+msgid "Veyon 4.10"
+msgstr ""
+
+msgid ""
+"Veyon 4.10 introduces a new feature for collecting files, complementing the "
+"existing feature for distributing files. There's also a new setting to "
+"request users in guest/anonymous sessions to enter their names in order to "
+"identify themselves. The real names are then shown in Veyon Master and can "
+"also be used for grouping collected files."
+msgstr ""
+
+msgid "Structural changes"
+msgstr "Strukturella förändringar"
+
+msgid "There are no structural changes in Veyon 4.10."
+msgstr ""
+
+msgid "Configuration changes"
+msgstr "Konfigurationsändringar"
+
+msgid "No configuration keys have been changed or renamed in Veyon 4.10."
+msgstr ""
+
 msgid "Veyon 4.9"
 msgstr "Veyon 4.9"
 
@@ -5772,9 +5961,6 @@ msgstr ""
 " ID:s molnplattform. Windows-versionen av Veyon är nu baserad på det senaste"
 " ramverket Qt 6.7 och OpenSSL 3.3."
 
-msgid "Structural changes"
-msgstr "Strukturella förändringar"
-
 msgid ""
 "The user groups backend is no longer specific to the access control feature "
 "but used in other scopes as well. This allows e.g. changing the access group"
@@ -5788,9 +5974,6 @@ msgstr ""
 "grupper. Detta har ingen effekt på befintliga funktioner, men de relevanta "
 "konfigurationsnycklarna har bytt namn för att matcha den nya omfattningen. "
 "Se nästa underavsnitt för mer information."
-
-msgid "Configuration changes"
-msgstr "Konfigurationsändringar"
 
 msgid ""
 "Two configuration keys have been renamed in Veyon 4.9. When upgrading to "

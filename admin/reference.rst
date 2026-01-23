@@ -416,6 +416,10 @@ Computer name source
 Computer UID role
     Veyon Master computes internal UIDs for each computer to store which computers are selected and where they were placed manually (when using custom computer arrangement). By default the UID is calculated from the computer name, host address and MAC address. When working with thin clients, usually the Veyon Service runs in the virtual sessions/machines which thin clients connect to. Computer UIDs then are related to the names or addresses of the virtual sessions/machines and not to the thin clients. It's therefore not possible to create a persistent custom computer arrangements representing the thin clients with their physical positions. The recommended solution is to configure the Veyon Service such that it provides name or address of the thin clients in the :ref:`session metadata <RefSessionMetadata>` and to set the computer UID role to :guilabel:`Session metadata hash`.
 
+Identify users in guest sessions
+    When this option is enabled and guest users are logged in to remote computers, a pop-up will appear on those computers, requesting that the users enter their names. This can be useful for exams where special anonymous accounts are used. After successful identification, the entered username is displayed in the monitoring view as it is for regular users.
+
+    **Default:** *Never*
 
 Behaviour
 +++++++++
@@ -632,12 +636,12 @@ All options for connecting Veyon to an LDAP-compatible server are described in d
 File transfer
 -------------
 
-Starting with Veyon 4.5, an additional configuration page with settings related to the file transfer feature is available in the advanced view.
+Starting with Veyon 4.5, an additional configuration page with settings related to the file transfer features is available in the advanced view.
 
-Directories
-+++++++++++
+.. hint:: In order to make a configuration generic and independent of the user, you should use path variables instead of absolute paths for all directory-related settings. All information on supported variables can be found in section :ref:`RefPathVariables`.
 
-In order to make a configuration generic and independent of the user, you should use path variables instead of absolute paths in the directory settings. All information on supported variables can be found in section :ref:`RefPathVariables`.
+Settings for distributing files
++++++++++++++++++++++++++++++++
 
 Default source directory
     This directory will be opened by default when the user starts the file transfer feature and is asked for the files to transfer.
@@ -649,9 +653,6 @@ Destination directory
 
     **Default:** ``%HOME%``
 
-Options
-+++++++
-
 Remember last source directory
     When the user is asked for files to transfer, the directory which files have been transferred from previously, is opened if this option is enabled. Disable this option to always open the default source directory.
 
@@ -661,6 +662,48 @@ Create destination directory if it does not exist
     When using a destination directory other than the default one, it may happen that the destination directory does not exist. Keep this option enabled to create it automatically whenever receiving files on the client side.
 
     **Default:** *enabled*
+
+Settings for collecting files
++++++++++++++++++++++++++++++
+
+Starting with Veyon 4.10, settings for the new file collecting feature are available.
+
+.. important:: The first three options are effective on the client side only. Make sure to adjust them on student devices or in the configuration file which is deployed to these devies.
+
+Source directory (remote)
+    When the :guilabel:`Collect files` feature is executed on the master device, files will be collected from the specified directory for each remote computer.
+
+    **Default:** ``%DOCUMENTS%``
+
+Files to exclude
+    This setting allows specifying wildcards for files which should not be collected. This can be useful when specifying the desktop as source directory and all files but shortcuts should be collected. Multiple entries can be separated by semicolon or space.
+
+    **Default:** ``*.lnk;*.desktop``
+
+Collect files recursively
+    Enable this option if subdirectories inside the source directory should be collected as well.
+
+    **Default:** *disabled*
+
+Destination directory
+    This setting specifies where collected files are stored on the master computer. Depending on the related settings below, appropriate subdirectories are created automatically.
+
+    **Default:** ``%HOME%``
+
+Store collected files in
+    Files can either be stored in the destination directory directly or in appropriate subdirectories. When choosing :guilabel:`Subdirectory based on date & time` a subdirectory will be created automatically whenever a file collection process is started. Alternatively it's possible to let the collecting user enter a name each time.
+
+    **Default:** *Directly in the destination directory*
+
+Group collected files
+    In addition to store files in subdirectories for individual file collection processes, it's also possible to group the collected files itself by a grouping attribute (login name, device name etc.). The configured grouping attribute can be prepended to the filenames of the corresponding collected files. Alternatively subdirectories are created for the respective users or devices.
+
+    **Default:** *Store files in subdirectories based on the grouping attribute*
+
+Grouping attribute
+    This setting specifies the attribute which is used for grouping collected files into subdirectories or as filename prefix.
+
+    **Default:** *User login name*
 
 WebAPI
 ------
