@@ -6,18 +6,19 @@
 # Translators:
 # Tobias Junghans, 2019
 # TeliuTe <teliute@163.com>, 2019
+# Richard Yang <zhongtian.yang@qq.com>, 2019
 # jiangsx <jiangsx715@hotmail.com>, 2020
 # Pascal Janus <pascal_janus@163.com>, 2020
-# Richard Yang <zhongtian.yang@qq.com>, 2020
+# Cata_a, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.8\n"
+"Project-Id-Version: Veyon 4.10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 18:19+0100\n"
+"POT-Creation-Date: 2026-01-23 18:05+0100\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Richard Yang <zhongtian.yang@qq.com>, 2020\n"
+"Last-Translator: Cata_a, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/veyon-solutions/teams/65452/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -476,7 +477,7 @@ msgstr ""
 msgid ""
 "After pressing the button, a dialog window opens in which you can enter the "
 "message to be displayed:"
-msgstr ""
+msgstr "按下按钮后，您可以在弹出的窗口中输入需要显示的消息："
 
 msgid "Click on :guilabel:`OK` to send the entered message."
 msgstr ""
@@ -513,7 +514,7 @@ msgstr ""
 msgid ""
 "To remove a previously added custom program, move the mouse over the "
 "according item and press the :kbd:`Del` key."
-msgstr ""
+msgstr "要删除之前添加的自定义程序，将鼠标移至相应项目上并按 :kbd:`Del` 键。"
 
 msgid ""
 "You can pass an argument to most programs with the name of a file that you "
@@ -557,7 +558,7 @@ msgstr ""
 msgid ""
 "To remove a previously added custom website, move the mouse over the "
 "according item and press the :kbd:`Del` key."
-msgstr ""
+msgstr "要删除之前添加的自定义网站，将鼠标移至相应项目上并按 :kbd:`Del` 键。"
 
 msgid "File transfer"
 msgstr "发布文件"
@@ -571,7 +572,7 @@ msgstr ""
 
 msgid ""
 "After selecting the desired files the actual file transfer dialog opens:"
-msgstr ""
+msgstr "在选择需要传输的文件后，将打开文件传输对话框："
 
 msgid ""
 "In this dialog further options can be chosen before starting the file "
@@ -721,16 +722,16 @@ msgid "Wake-on-LAN"
 msgstr "局域网唤醒"
 
 msgid "Log in"
-msgstr "登陆"
+msgstr "登入"
 
 msgid "Login"
 msgstr "登录"
 
 msgid "Logon"
-msgstr "登录"
+msgstr "登陆"
 
 msgid "Log on"
-msgstr ""
+msgstr "登陆"
 
 msgid "Log off"
 msgstr "注销"
@@ -784,19 +785,19 @@ msgid "Files"
 msgstr "文件"
 
 msgid "Transfer files"
-msgstr ""
+msgstr "传输文件"
 
 msgid "Distribute files"
-msgstr ""
+msgstr "分发文件"
 
 msgid "Send files"
-msgstr ""
+msgstr "发送文件"
 
 msgid "Open files"
-msgstr ""
+msgstr "打开文件"
 
 msgid "Destination folder"
-msgstr ""
+msgstr "打开目标文件夹"
 
 msgid "Snapshot"
 msgstr "屏幕截图"
@@ -830,7 +831,7 @@ msgid ""
 msgstr ""
 
 msgid "https://en.wikipedia.org/wiki/Context_menu"
-msgstr ""
+msgstr "https://zh.wikipedia.org/wiki/%E7%92%B0%E5%A2%83%E9%81%B8%E5%96%AE"
 
 msgid "FAQ"
 msgstr "常见问答"
@@ -838,7 +839,7 @@ msgstr "常见问答"
 msgid ""
 "a list of frequently asked questions (FAQs) and answers on a particular "
 "topic."
-msgstr ""
+msgstr "常见问题与解答"
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
 msgstr "https://en.wikipedia.org/wiki/FAQ"
@@ -948,7 +949,7 @@ msgid "https://en.wikipedia.org/wiki/User_(computing)"
 msgstr "https://en.wikipedia.org/wiki/User_(computing)"
 
 msgid "Veyon User Manual"
-msgstr "Veyon用户手册"
+msgstr "Veyon 用户手册"
 
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
@@ -971,7 +972,7 @@ msgstr "程序通过开始菜单或桌面图标启动："
 msgid ""
 "Depending on the system configuration you will be prompted for your username"
 " and your password:"
-msgstr ""
+msgstr "根据系统配置，您将需要输入用户名和密码："
 
 msgid ""
 "Enter your username and password here or – if given – the credentials of a "
@@ -1007,7 +1008,7 @@ msgstr ""
 msgid ""
 "The elements in the status bar are used to control the program interface and"
 " are described in detail in the following section."
-msgstr ""
+msgstr "状态栏中的元素用于调整程序界面，将在下一节中详细描述。"
 
 msgid ""
 "Using the :guilabel:`Locations & computers` and :guilabel:`Screenshots` "

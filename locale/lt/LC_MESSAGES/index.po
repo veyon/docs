@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.9.8\n"
+"Project-Id-Version: Veyon 4.10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 16:57+0100\n"
+"POT-Creation-Date: 2026-01-23 18:05+0100\n"
 "PO-Revision-Date: 2019-03-21 09:30+0000\n"
 "Last-Translator: Tobias Junghans, 2026\n"
 "Language-Team: Lithuanian (https://app.transifex.com/veyon-solutions/teams/65452/lt/)\n"
