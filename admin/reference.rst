@@ -421,6 +421,11 @@ Identify users in guest sessions
 
     **Default:** *Never*
 
+Guest user identity extension
+    When guest session users identify themselves (see option :guilabel:`Identify users in guest sessions`), the entered name can be extended by a prefix or suffix. This can be helpful to either clearly indicate that the displayed username is the result of a manual user identification or to distinguish user accounts from anonymous exam accounts (where the actually displayed names may be identical).
+
+    **Default:** *None*
+
 Behaviour
 +++++++++
 
