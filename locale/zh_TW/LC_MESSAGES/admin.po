@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.10.2\n"
+"Project-Id-Version: Veyon 4.10.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 14:46+0200\n"
+"POT-Creation-Date: 2026-07-29 08:59+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Yi-Fei Yang <fei249@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/veyon-solutions/teams/65452/zh_TW/)\n"
@@ -3012,7 +3012,7 @@ msgid ""
 msgstr ""
 
 msgid "Key press interval for text input"
-msgstr ""
+msgstr "文字輸入的按鍵間隔"
 
 msgid ""
 "This value specifies the number of milliseconds to wait between the "
@@ -3025,7 +3025,7 @@ msgid "**Default:** *5 ms*"
 msgstr ""
 
 msgid "Key press interval to control input fields"
-msgstr ""
+msgstr "控制輸入欄位的按鍵間隔"
 
 msgid ""
 "This value specifies the number of milliseconds to wait after simulating key"
@@ -3838,7 +3838,7 @@ msgstr ""
 "角色設定為 :guilabel:`工作階段中繼資料雜湊`。"
 
 msgid "Identify users in guest sessions"
-msgstr ""
+msgstr "識別訪客工作階段中的使用者"
 
 msgid ""
 "When this option is enabled and guest users are logged in to remote "
@@ -3852,7 +3852,7 @@ msgid "**Default:** *Never*"
 msgstr ""
 
 msgid "Guest user identity extension"
-msgstr ""
+msgstr "訪客使用者身份擴展"
 
 msgid ""
 "When guest session users identify themselves (see option :guilabel:`Identify"
@@ -4288,7 +4288,7 @@ msgid ""
 msgstr ""
 
 msgid "Settings for distributing files"
-msgstr ""
+msgstr "分發檔案的設定"
 
 msgid "Default source directory"
 msgstr "預設來源目錄"
@@ -4329,7 +4329,7 @@ msgid ""
 msgstr "使用預設目錄以外的目標目錄時，可能會出現目標目錄不存在的情況。 保持啟用這個選項，以便在用戶端接收檔案時自動建立它。"
 
 msgid "Settings for collecting files"
-msgstr ""
+msgstr "收集檔案的設定"
 
 msgid ""
 "Starting with Veyon 4.10, settings for the new file collecting feature are "
@@ -4368,7 +4368,7 @@ msgid "**Default:** ``*.lnk;*.desktop``"
 msgstr ""
 
 msgid "Collect files recursively"
-msgstr ""
+msgstr "遞迴收集檔案"
 
 msgid ""
 "Enable this option if subdirectories inside the source directory should be "

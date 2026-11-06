@@ -10,17 +10,17 @@
 # Eric Gaudillat <egaudillat@ac-noumea.nc>, 2019
 # 8b12f30325c377a17c6703ed025b6ed4, 2021
 # Éric B., 2021
-# Tobias Junghans, 2024
 # Lachaux Patrick, 2026
+# Tobias Junghans, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.10.2\n"
+"Project-Id-Version: Veyon 4.10.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 14:46+0200\n"
+"POT-Creation-Date: 2026-07-29 08:59+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Lachaux Patrick, 2026\n"
+"Last-Translator: Tobias Junghans, 2026\n"
 "Language-Team: French (https://app.transifex.com/veyon-solutions/teams/65452/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -270,7 +270,7 @@ msgstr ""
 " utilisateur n'est connecté."
 
 msgid "Local computer is already being accessed"
-msgstr ""
+msgstr "L'ordinateur local est déjà en cours d'accès"
 
 msgid ""
 "If this condition is activated, the rule takes effect if there is already at"
@@ -3114,7 +3114,7 @@ msgstr ""
 "utilisé pour :ref:`ConfAccessControl` ."
 
 msgid "Map container/OU structure 1:1 to locations"
-msgstr ""
+msgstr "Associer 1:1 la structure des conteneurs/OU aux emplacements"
 
 msgid ""
 "When using the :ref:`LDAPComputerLocations` option *Computer containers or "
@@ -3449,7 +3449,7 @@ msgstr ""
 "plupart des cas, le raccourci :kbd:`Ctrl+Alt+Del` doit être produit avant."
 
 msgid "Handling of interfering windows"
-msgstr ""
+msgstr "Gestion des fenêtres interférentes"
 
 msgid ""
 "Applications (or dedicated tools) may sometimes interfere with the Veyon "
@@ -3867,7 +3867,7 @@ msgid ""
 msgstr ""
 
 msgid "Key press interval for text input"
-msgstr ""
+msgstr "Intervalle entre les frappes pour la saisie de texte"
 
 msgid ""
 "This value specifies the number of milliseconds to wait between the "
@@ -3880,7 +3880,7 @@ msgid "**Default:** *5 ms*"
 msgstr ""
 
 msgid "Key press interval to control input fields"
-msgstr ""
+msgstr "Intervalle entre les frappes pour contrôler les champs de saisie"
 
 msgid ""
 "This value specifies the number of milliseconds to wait after simulating key"
@@ -4080,7 +4080,7 @@ msgid "**Default:** *Default (system user groups)*"
 msgstr ""
 
 msgid "Include user groups from domain"
-msgstr ""
+msgstr "Inclure les groupes d'utilisateurs du domaine"
 
 msgid ""
 "When using access control in combination with the default backend only the "
@@ -4519,7 +4519,7 @@ msgstr ""
 "démonstration n'est pas affecté par cette option."
 
 msgid "Disable clipboard synchronization"
-msgstr ""
+msgstr "Désactiver la synchronisation du presse-papiers"
 
 msgid ""
 "If you do not want the clipboard contents to be synchronized when remote "
@@ -4563,7 +4563,7 @@ msgstr ""
 "votre environement sont disponibles au chapitre :ref:`PlatformNotes`."
 
 msgid "Session metadata"
-msgstr ""
+msgstr "Métadonnées de session"
 
 msgid ""
 "This section (only visible in advanced view mode) allows configuring what "
@@ -4574,7 +4574,7 @@ msgid ""
 msgstr ""
 
 msgid "Content"
-msgstr ""
+msgstr "Contenu"
 
 msgid ""
 "Specify what kind of entity to read and provide as session metadata. "
@@ -4583,7 +4583,7 @@ msgid ""
 msgstr ""
 
 msgid "Environment variable name"
-msgstr ""
+msgstr "Nom de la variable d'environnement"
 
 msgid ""
 "Specify the name of the environment variable whose value should be provided "
@@ -4592,7 +4592,7 @@ msgid ""
 msgstr ""
 
 msgid "Registry key"
-msgstr ""
+msgstr "Clé de registre"
 
 msgid ""
 "Specify the full name of a registry key (such as "
@@ -4657,7 +4657,7 @@ msgid "**Default:** *%APPDATA%/Screenshots*"
 msgstr "**Défaut:** *%APPDATA%/Captures_d_ecrans*"
 
 msgid "Configuration templates"
-msgstr ""
+msgstr "Modèles de configuration"
 
 msgid ""
 "This directory can hold a configuration template for the user-specific Veyon"
@@ -4803,7 +4803,7 @@ msgid "This section is only visible in advanced view mode."
 msgstr ""
 
 msgid "Computer name source"
-msgstr ""
+msgstr "Source du nom de l'ordinateur"
 
 msgid ""
 "By default Veyon Master uses the computer name from the configured network "
@@ -4815,7 +4815,7 @@ msgid ""
 msgstr ""
 
 msgid "Computer UID role"
-msgstr ""
+msgstr "Rôle UID de l'ordinateur"
 
 msgid ""
 "Veyon Master computes internal UIDs for each computer to store which "
@@ -4834,7 +4834,7 @@ msgid ""
 msgstr ""
 
 msgid "Identify users in guest sessions"
-msgstr ""
+msgstr "Identifier les utilisateurs dans les sessions invités"
 
 msgid ""
 "When this option is enabled and guest users are logged in to remote "
@@ -4848,7 +4848,7 @@ msgid "**Default:** *Never*"
 msgstr ""
 
 msgid "Guest user identity extension"
-msgstr ""
+msgstr "Extension d'identité de l'utilisateur invité"
 
 msgid ""
 "When guest session users identify themselves (see option :guilabel:`Identify"
@@ -5041,7 +5041,7 @@ msgstr ""
 " possible dans les petits environnements."
 
 msgid "Always expand all locations"
-msgstr ""
+msgstr "Toujours afficher tous les emplacements"
 
 msgid ""
 "This option specifies whether all locations in the :guilabel:`Locations & "
@@ -5398,7 +5398,7 @@ msgid ""
 msgstr ""
 
 msgid "Settings for distributing files"
-msgstr ""
+msgstr "Paramètres de partage de fichiers"
 
 msgid "Default source directory"
 msgstr "Répertoire source par défaut"
@@ -5452,7 +5452,7 @@ msgstr ""
 " de fichiers côté client."
 
 msgid "Settings for collecting files"
-msgstr ""
+msgstr "Paramètres de collecte des fichiers"
 
 msgid ""
 "Starting with Veyon 4.10, settings for the new file collecting feature are "
@@ -5491,7 +5491,7 @@ msgid "**Default:** ``*.lnk;*.desktop``"
 msgstr ""
 
 msgid "Collect files recursively"
-msgstr ""
+msgstr "Collecter les fichiers de manière récursive"
 
 msgid ""
 "Enable this option if subdirectories inside the source directory should be "

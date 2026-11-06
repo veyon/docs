@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.10.2\n"
+"Project-Id-Version: Veyon 4.10.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 17:07+0200\n"
+"POT-Creation-Date: 2026-07-29 08:59+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
 "Last-Translator: Alexander Gabilondo <alexgabi@disroot.org>, 2026\n"
 "Language-Team: Basque (https://app.transifex.com/veyon-solutions/teams/65452/eu/)\n"
@@ -961,15 +961,17 @@ msgid "https://en.wikipedia.org/wiki/Context_menu"
 msgstr ""
 
 msgid "FAQ"
-msgstr ""
+msgstr "Ohiko galderak"
 
 msgid ""
 "a list of frequently asked questions (FAQs) and answers on a particular "
 "topic."
 msgstr ""
+"gai jakin bati buruzko maiz egiten diren galderen (FAQ) eta erantzunen "
+"zerrenda."
 
 msgid "https://en.wikipedia.org/wiki/FAQ"
-msgstr ""
+msgstr "https://eu.wikipedia.org/wiki/FAQ"
 
 msgid "Graphical user interface"
 msgstr ""

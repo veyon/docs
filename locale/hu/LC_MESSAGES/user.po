@@ -9,16 +9,16 @@
 # Gyula Rácz <gyula_racz25@hotmail.com>, 2019
 # miles teg <varota@gmail.com>, 2019
 # Kocsi Bence, 2023
-# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024
+# Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Veyon 4.10.2\n"
+"Project-Id-Version: Veyon 4.10.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 17:07+0200\n"
+"POT-Creation-Date: 2026-07-29 08:59+0200\n"
 "PO-Revision-Date: 2019-03-21 09:29+0000\n"
-"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2024\n"
+"Last-Translator: Kiss-Kálmán Dániel <kisskalmandaniel@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/veyon-solutions/teams/65452/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -171,6 +171,11 @@ msgid ""
 " computer is unreachable or access is denied, the icon changes accordingly "
 "and a status message is shown in the tooltip of the computer."
 msgstr ""
+"Amíg nincs számítógépkapcsolat, a képernyő tartalma helyett egy számítógép "
+"ikonja jelenik meg. A program elindítása után az ikon kezdetben szürke "
+"színű. Amint a program érzékeli, hogy a számítógép nem érhető el, vagy a "
+"hozzáférés meg van tagadva, az ikon ennek megfelelően megváltozik, és egy "
+"állapotüzenet jelenik meg a számítógép eszköztippjében."
 
 msgid ""
 "Some of the features described in the next sections switch the remote "
@@ -1381,6 +1386,11 @@ msgid ""
 " or partially occupied rooms at the same time while concentrating on the "
 "computers that are actually switched on."
 msgstr ""
+"A |bekapcsolt| (:guilabel:`Csak a bekapcsolt számítógépek megjelenítése`) "
+"gomb elrejti az összes olyan számítógépet, amely nincs bekapcsolva, nincs "
+"csatlakoztatva, vagy egyéb okból nem érhető el. Ez lehetővé teszi nagyszámú "
+"számítógép vagy részben foglalt szobák egyidejű megfigyelését, miközben a "
+"ténylegesen bekapcsolt számítógépekre koncentrálunk."
 
 msgid "powered-on"
 msgstr "bekapcsolt"
@@ -1391,9 +1401,15 @@ msgid ""
 "possible to monitor a large number of computers or partially occupied rooms "
 "at the same time while concentrating on the computers actually in use."
 msgstr ""
+"A |bejelentkezett-felhasználók| (:guilabel:`Csak a bejelentkezett "
+"felhasználókkal rendelkező számítógépek megjelenítése`) gomb elrejti az "
+"összes olyan számítógépet, amelyen nincsenek bejelentkezve felhasználók. Ez "
+"lehetővé teszi nagyszámú számítógép vagy részben foglalt szobák egyidejű "
+"megfigyelését, miközben a ténylegesen használatban lévő számítógépekre "
+"koncentrálhatunk."
 
 msgid "logged-on-users"
-msgstr ""
+msgstr "bejelentkezett felhasználók"
 
 msgid ""
 "Use the slider to control the size of the computer screens displayed. When "

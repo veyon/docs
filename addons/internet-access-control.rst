@@ -31,10 +31,10 @@ Now you can start Veyon Master and can click the :guilabel:`Internet access` but
 Backends
 --------
 
-There are currently two backends providing different mechanisms to block the Internet access. Both backends are described in the following subsections.
+There are currently three backends providing different mechanisms to block the Internet access. All backends are described in the following subsections.
 
-Block internet access via system firewall
-+++++++++++++++++++++++++++++++++++++++++
+Block Internet access via system firewall
+++++++++++++++++++++++++++++++++++++++++++
 
 This is the standard backend that should preferably be used, as it offers the most flexibility and works most reliably. When this backend is used, the Veyon Service makes changes to the system firewall to block Internet access. There are platform-specific differences here:
 
@@ -59,7 +59,12 @@ Block traffic to (e.g. proxy or DNS) servers
 Enable preconfigured firewall rule
     If the three modes above are not suitable for your network you can also configure an own custom rule in the Windows Firewall. This rule should be disabled by default. The Veyon Service will enable this rule while the Internet access is to be blocked. On Linux the Veyon Service calls ``nft`` to load the nftables rules from the file ``/etc/veyon/iac/firewall/rules.d/<RULENAME>``. You can define any nftables rules in this file.
 
-Block internet access by modifying routing table
+Block Internet access by modifying routing table
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 If the firewall backend cannot be used (e.g. if a 3rdparty firewall software is used instead of the Windows Firewall), you can use this backend as a fallback. It works in a very simple way by temporarily removing the default route from the routing table and/or adding a user-defined (possibly deliberately invalid) route to block Internet access. In any case, the settings should be made carefully so that access to the internal network continues to function properly. Especially in larger segmented networks, both options should be combined by removing the default route on the one hand and adding a route to the internal network on the other.
+
+Block Internet access via proxy redirection
+++++++++++++++++++++++++++++++++++++++++++++
+
+On Windows, another possibility is to let Veyon temporarily change the local Interntet connection settings such that they point to a non-existing (dummy) proxy server. All browsers honoring the operating system's internet proxy settings are supported. It's possible to configure static exceptions e.g. to Intranet and learning platforms. Unlike the two other backends, it also supports wildcards to whitelist all subdomains or servers of a domain.
